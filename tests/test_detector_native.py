@@ -57,12 +57,20 @@ def test_real_native_loss_gradients_frozen_state_and_reset():
     cfg = AdaptConfig(steps=1, regularization_weight=0)
     for variant in ('det_pseudo', 'det_stable', 'det_stable_js'):
         loss = DetectorNativeLoss(detector, support('cuda'), variant)
-        a, b = adapt(image, isp, loss, config=cfg), adapt(image, isp, loss, config=cfg)
+        a = adapt(image, isp, loss, config=cfg)
         assert a.phi.isfinite().all() and a.phi.norm() > 0
         assert torch.equal(a.phi0, torch.zeros_like(a.phi0))
-        torch.testing.assert_close(a.phi, b.phi, atol=1e-6, rtol=1e-6)
         assert torch.equal(isp.phi, torch.zeros_like(isp.phi))
         assert not loss.boxes.requires_grad and not loss.weights.requires_grad
     for k, v in detector.state_dict().items():
         assert torch.equal(v.cpu(), state[k])
     assert all(not p.requires_grad and p.grad is None for p in detector.parameters())
+    # CUDA ROI/backbone backward is nondeterministic. Keep the same numerical
+    # repeat assertion on CPU, and test GPU gradient/freeze invariants above.
+    detector, isp, image = detector.cpu(), isp.cpu(), image.cpu()
+    torch.set_num_threads(1)
+    for variant in ('det_pseudo', 'det_stable', 'det_stable_js'):
+        loss = DetectorNativeLoss(detector, support(), variant)
+        a, b = adapt(image, isp, loss, config=cfg), adapt(image, isp, loss, config=cfg)
+        torch.testing.assert_close(a.phi, b.phi, atol=1e-6, rtol=1e-6)
+        assert torch.equal(a.phi0, b.phi0) and torch.equal(isp.phi, torch.zeros(8))

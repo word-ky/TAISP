@@ -72,3 +72,9 @@ The new empty-support test initially asserted bitwise equality to the raw image;
 phi stayed exactly0 but existing ISP identity arithmetic differs by roundoff.
 Corrected the assertion to exact unchanged ISP(phi0) output (and exact phi0),
 not a widened tolerance or changed ISP. This is the no-update contract.
+
+Loss gate20260912-063551:14 passed,1 failed5.45s. GPU repeat-update comparison
+maxabs1.49682e-5 vs1e-6 tolerance, consistent with documented CUDA backward
+variability in T003/T004. Preserve log. Keep numerical repeat assertion/tolerance
+on real CPU path; GPU tests verify nonzero finite gradients/frozen state/phi0 reset.
+No loss/update/scientific configuration changed; fresh g_det remains paired.

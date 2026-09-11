@@ -693,3 +693,12 @@ CLIP revision `3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268`; SHA256 `a63082132ba4f9
 - Remote artifacts: /home/liujianhua/wjq/TAISP/runs/20260912-051214-taisp-t004-coco200/artifacts/study; reports/recovery notes mirrored under project research_log.
 - Source: shared CLIP geometry/patch extension, spatial loss, region mapper, spatial diagnostics/runner/config/tests and report script. Existing ISP, adaptation, detector, COCO and oracle/evaluator owners were reused.
 - T004 NEEDS_REVIEW. Await research lead acceptance/next explicit task. Heartbeat executes newly assigned work directly; do not rerun this completed study or start meta-training automatically.
+
+## T005 IN_PROGRESS — R007 acknowledged
+
+T004 accepted/closed. T005 pre-run definitions in research_log/T005_plan.md;
+fixed-ROI signal and detached stable support implemented. Baseline42real tests
+pass; ROI5tests pass. Native CE/JS/fallback CPU unit tests pass. GPU repeated
+update discrepancy1.49682e-5 retained; validating reset on real CPU with unchanged
+1e-6 tolerance and GPU nonzero gradients/frozen model checks. No full run yet.
+No meta-training, spatial ISP, annotation inputs or tuned hyperparameters added.
