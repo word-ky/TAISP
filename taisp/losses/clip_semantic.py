@@ -23,6 +23,13 @@ NEGATIVE_PROMPTS = (
 )
 
 
+def resize_crop_geometry(height, width, size=224):
+    """The same integer resize/floor crop for image tensors and region boxes."""
+    rh, rw = ((size, size * width // height) if height <= width
+              else (size * height // width, size))
+    return rh, rw, (rh-size)//2, (rw-size)//2
+
+
 class CLIPTensorPreprocess(nn.Module):
     """Shortest-side 224 bicubic antialias -> center crop -> CLIP RGB normalize.
 
@@ -40,12 +47,10 @@ class CLIPTensorPreprocess(nn.Module):
         h, w = image.shape[-2:]
         # Fix shortest side exactly; float 612 * (224 / 612) rounds below
         # 224, which would produce a 223x223 crop and the wrong patch count.
-        rh, rw = ((self.size, self.size * w // h) if h <= w
-                  else (self.size * h // w, self.size))
+        rh, rw, top, left = resize_crop_geometry(h, w, self.size)
         x = F.interpolate(image, size=(rh, rw), mode="bicubic", align_corners=False, antialias=True)
         # Transformers' pinned CLIPImageProcessor uses floor, not round, when
         # an odd difference leaves two possible center-crop placements.
-        top, left = (rh - self.size) // 2, (rw - self.size) // 2
         return (x[..., top:top + self.size, left:left + self.size] - self.mean) / self.std
 
 
@@ -58,6 +63,17 @@ class FrozenCLIPEncoder(nn.Module):
     def forward(self, image):
         self.model.eval()
         return F.normalize(self.model.get_image_features(pixel_values=self.preprocess(image)), dim=-1)
+
+    def patch_features(self, image):
+        """B x 49 x 512 final patch tokens in projected text dimensionality.
+
+        Post-LN and the global visual projection are applied token-wise; this is
+        diagnostic text alignment, not guaranteed by CLIP's CLS-only pretraining.
+        """
+        self.model.eval()
+        vision = self.model.vision_model(pixel_values=self.preprocess(image), return_dict=True)
+        patches = self.model.vision_model.post_layernorm(vision.last_hidden_state[:, 1:])
+        return F.normalize(self.model.visual_projection(patches), dim=-1)
 
 
 def load_clip_guidance(device="cpu", *, local_files_only=False):
