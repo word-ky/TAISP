@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-010621-taisp-t002-detector-tests",
+  "releaseId": "20260912-010617-taisp-t002-detector",
+  "sessionName": "autodl-20260912-010621-taisp-t002-detector-tests",
+  "command": "export OMP_NUM_THREADS=1; export TAISP_REAL_MODELS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests/test_detector.py -q"
+}

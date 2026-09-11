@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-013058-taisp-t002-parity-after",
+  "releaseId": "20260912-013054-taisp-t002-hf-parity",
+  "sessionName": "autodl-20260912-013058-taisp-t002-parity-after",
+  "command": "export USE_TF=0; export OMP_NUM_THREADS=1; export TAISP_REAL_MODELS=1; export PATH=/home/liujianhua/wjq/TAISP/.venv/bin:$PATH; python -m pytest -q && PYTHONPATH=$PWD python scripts/check_clip_preprocess_parity.py --image /home/liujianhua/wjq/TAISP/shared/coco200/val2017/000000105335.jpg --output \"$AUTODL_ARTIFACTS_DIR/parity.json\""
+}

@@ -1,0 +1,2 @@
+# Preliminary results — superseded by R003 preprocessing correction
+This run completed all 200 images/1200 cases, but the subsequent required HF processor parity diagnostic found a one-pixel crop offset on some odd dimensions. Preserve these raw receipts; do not use this run as final scientific evidence. The same fixed study is rerun after correcting crop floor placement and passing forward parity.

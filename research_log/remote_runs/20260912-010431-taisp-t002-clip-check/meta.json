@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-010431-taisp-t002-clip-check",
+  "releaseId": "20260912-010428-taisp-t002-clip-check",
+  "sessionName": "autodl-20260912-010431-taisp-t002-clip-check",
+  "command": "export OMP_NUM_THREADS=1; export TAISP_REAL_MODELS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests/test_clip_semantic.py -q"
+}

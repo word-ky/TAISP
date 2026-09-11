@@ -1,0 +1,293 @@
+{
+  "reference": "transformers==4.44.2 CLIPImageProcessor; explicit pinned OpenAI ViT-B/32 settings",
+  "source_image": "000000105335.jpg",
+  "seed": 20260912,
+  "predeclared_tolerance": {
+    "geometry_max_abs_diff": 1e-07,
+    "normalized_rmse": 0.02
+  },
+  "geometry_pass": true,
+  "content_pass": true,
+  "rows": [
+    {
+      "height": 612,
+      "width": 612,
+      "content": "natural",
+      "reference_resize_shape": [
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.003877149196341634,
+      "normalized_rmse": 0.00468306103721261,
+      "normalized_p99_abs": 0.010508040897548199,
+      "normalized_max_abs": 0.014096081256866455
+    },
+    {
+      "height": 612,
+      "width": 612,
+      "content": "noise",
+      "reference_resize_shape": [
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.00401318771764636,
+      "normalized_rmse": 0.004805193282663822,
+      "normalized_p99_abs": 0.010626254603266716,
+      "normalized_max_abs": 0.03561723232269287
+    },
+    {
+      "height": 479,
+      "width": 641,
+      "content": "natural",
+      "reference_resize_shape": [
+        224,
+        299
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.003936449997127056,
+      "normalized_rmse": 0.004788631107658148,
+      "normalized_p99_abs": 0.010937761515378952,
+      "normalized_max_abs": 0.01602959632873535
+    },
+    {
+      "height": 479,
+      "width": 641,
+      "content": "noise",
+      "reference_resize_shape": [
+        224,
+        299
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.004123112186789513,
+      "normalized_rmse": 0.0049750623293221,
+      "normalized_p99_abs": 0.011130007915198803,
+      "normalized_max_abs": 0.052731871604919434
+    },
+    {
+      "height": 641,
+      "width": 479,
+      "content": "natural",
+      "reference_resize_shape": [
+        299,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.003951932303607464,
+      "normalized_rmse": 0.004810085985809565,
+      "normalized_p99_abs": 0.010986275970935822,
+      "normalized_max_abs": 0.014527320861816406
+    },
+    {
+      "height": 641,
+      "width": 479,
+      "content": "noise",
+      "reference_resize_shape": [
+        299,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.0041273911483585835,
+      "normalized_rmse": 0.004985996522009373,
+      "normalized_p99_abs": 0.011147704906761646,
+      "normalized_max_abs": 0.09000277519226074
+    },
+    {
+      "height": 333,
+      "width": 517,
+      "content": "natural",
+      "reference_resize_shape": [
+        224,
+        347
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.004114414565265179,
+      "normalized_rmse": 0.005068803671747446,
+      "normalized_p99_abs": 0.011829890310764313,
+      "normalized_max_abs": 0.023512721061706543
+    },
+    {
+      "height": 333,
+      "width": 517,
+      "content": "noise",
+      "reference_resize_shape": [
+        224,
+        347
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.004449761006981134,
+      "normalized_rmse": 0.005910955369472504,
+      "normalized_p99_abs": 0.012374158017337322,
+      "normalized_max_abs": 0.152510404586792
+    },
+    {
+      "height": 517,
+      "width": 333,
+      "content": "natural",
+      "reference_resize_shape": [
+        347,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.004150021821260452,
+      "normalized_rmse": 0.005108023062348366,
+      "normalized_p99_abs": 0.011881114915013313,
+      "normalized_max_abs": 0.015312060713768005
+    },
+    {
+      "height": 517,
+      "width": 333,
+      "content": "noise",
+      "reference_resize_shape": [
+        347,
+        224
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.004424869082868099,
+      "normalized_rmse": 0.005853910464793444,
+      "normalized_p99_abs": 0.012241723947227001,
+      "normalized_max_abs": 0.18473482131958008
+    },
+    {
+      "height": 480,
+      "width": 640,
+      "content": "natural",
+      "reference_resize_shape": [
+        224,
+        298
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.003947883378714323,
+      "normalized_rmse": 0.004803861957043409,
+      "normalized_p99_abs": 0.010983888059854507,
+      "normalized_max_abs": 0.014834508299827576
+    },
+    {
+      "height": 480,
+      "width": 640,
+      "content": "noise",
+      "reference_resize_shape": [
+        224,
+        298
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.00412341021001339,
+      "normalized_rmse": 0.004987639840692282,
+      "normalized_p99_abs": 0.011109976097941399,
+      "normalized_max_abs": 0.09499168395996094
+    },
+    {
+      "height": 391,
+      "width": 641,
+      "content": "natural",
+      "reference_resize_shape": [
+        224,
+        367
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.004034164361655712,
+      "normalized_rmse": 0.004950260277837515,
+      "normalized_p99_abs": 0.011483559384942055,
+      "normalized_max_abs": 0.019382834434509277
+    },
+    {
+      "height": 391,
+      "width": 641,
+      "content": "noise",
+      "reference_resize_shape": [
+        224,
+        367
+      ],
+      "output_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "geometry_max_abs_diff": 0.0,
+      "normalized_mae": 0.0042506675235927105,
+      "normalized_rmse": 0.0052663106471300125,
+      "normalized_p99_abs": 0.011710550636053085,
+      "normalized_max_abs": 0.11816930770874023
+    }
+  ]
+}

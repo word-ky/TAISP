@@ -36,6 +36,18 @@ def test_real_coco_square_rounding_regression():
     assert torch.isfinite(x.grad).all() and x.grad.norm() > 0
 
 
+def test_hf_reference_crop_uses_floor_for_odd_offset():
+    from torch.nn import functional as F
+
+    torch.manual_seed(14)
+    x = torch.rand(1, 3, 333, 517)
+    preprocess = CLIPTensorPreprocess()
+    resized = F.interpolate(x, (224, 347), mode="bicubic", align_corners=False, antialias=True)
+    # Pinned HF crop: (347 - 224) // 2 = 61, whereas round(61.5)=62.
+    expected = (resized[..., 61:285] - preprocess.mean) / preprocess.std
+    torch.testing.assert_close(preprocess(x), expected, atol=0, rtol=0)
+
+
 @pytest.mark.skipif(os.environ.get("TAISP_REAL_MODELS") != "1", reason="explicit pretrained-model integration run")
 def test_real_clip_frozen_image_phi_gradients_and_episode_reset():
     device = "cuda:0"
