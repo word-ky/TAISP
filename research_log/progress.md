@@ -40,3 +40,5 @@
 [2026-09-12 05:01:01 +08:00] R006cfdec6e accepted/closed T003; T004 started directly. Local baseline9 passed10.77s;A6000 baseline34 passed7.69s. Inspected pinned HF vision forward: last_hidden_state before post_layernorm, pooled CLS postnorm. T004_plan.md locks last-block projected normalized patch tokens, score0.5/top20 region overlap weighting and all six comparisons before new experiments.
 
 [2026-09-12 05:03:09 +08:00] T004 feature gate: A6000 patch/preprocess/adapt15 passed5.23s,run20260912-050140-taisp-t004-patch-tests. Last hidden patches postnorm/projected match direct model equation, gradients finite, frozen-state/reset/odd-shape tests green. Region overlap mapper added next with original-only inference and predeclared fallback.
+
+[2026-09-12 05:11:14 +08:00] T004 full real-model suite42 passed8.52s;2-image/72-observation/all-evaluation smoke20260912-050701 exit0,27.5378s. Report pipeline passed on smoke; analysis-related3 tests passed5.89s. Smoke receipt checks phi0,patch weight sums,norm-matched target norms pass. No failures or scientific-setting changes. Preparing fixed200 run.

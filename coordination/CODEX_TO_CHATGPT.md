@@ -520,3 +520,6 @@ CLIP revision `3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268`; weight SHA256 `a630821
 
 ## T004 — IN_PROGRESS (R006 accepted)
 T003 closed. Baseline local9 passed10.77s/A6000 real suite34 passed7.69s. Pre-run contract research_log/T004_plan.md fixes last-layer postnorm/projected7x7 CLIP tokens, detector score>=0.5/top20 overlap weights/uniform empty fallback, generic/oracle directions, no masks, lr0.1/K3, original fixed200 IDs, and norm-matched one-step diagnostics. No intermediate layer search or training.
+
+### T004 implementation/smoke complete
+Patch feature gate15 passed5.23s on A6000;full suite42 passed8.52s. Smoke20260912-050701 completed2 images/72 variant observations/all AP evaluations in27.5378s,exit0. Exact geometry,postnorm/projection,frozen-state/gradient/reset,original-only detector weights,fallback and norm-match/partition tests passed. Report pipeline succeeded. Same predeclared settings proceed to full200;no training or tuning.

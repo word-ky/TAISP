@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-050140-taisp-t004-patch-tests",
+  "releaseId": "20260912-050136-taisp-t004-patches",
+  "sessionName": "autodl-20260912-050140-taisp-t004-patch-tests",
+  "command": "TAISP_REAL_MODELS=1 /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q tests/test_spatial_clip.py tests/test_clip_semantic.py tests/test_adapt.py"
+}
