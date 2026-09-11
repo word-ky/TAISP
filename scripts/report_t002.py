@@ -5,6 +5,8 @@ import csv
 import json
 from pathlib import Path
 
+import numpy as np
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -16,6 +18,27 @@ def main():
     environment = json.loads((study / "environment.json").read_text())
     completion = json.loads((study / "completion.json").read_text())
     rows = [json.loads(line) for line in (study / "samples.jsonl").read_text().splitlines()]
+    semantic_gradients = np.array([r["g_sem"] for r in rows])
+    detector_gradients = np.array([r["g_det"] for r in rows])
+    observations = {
+        "observations": len(rows), "unique_images": len({r["image_id"] for r in rows}),
+        "all_gradients_finite": bool(np.isfinite(semantic_gradients).all() and np.isfinite(detector_gradients).all()),
+        "semantic_zero_norm_count": int((np.linalg.norm(semantic_gradients, axis=1) == 0).sum()),
+        "detector_zero_norm_count": int((np.linalg.norm(detector_gradients, axis=1) == 0).sum()),
+        "overall_mean_cosine": float(np.mean([r["gradient_cosine"] for r in rows])),
+        "positive_alignment_fraction": float(np.mean([r["gradient_cosine"] > 0 for r in rows])),
+        "detector_loss_decrease_fraction": float(np.mean([r["det_loss_delta_sem1"] < 0 for r in rows])),
+        "semantic_loss_decrease_3_fraction": float(np.mean([r["semantic_loss_3"] < r["semantic_loss_before"] for r in rows])),
+        "mean_absolute_semantic_gradient": np.abs(semantic_gradients).mean(0).tolist(), "cases": {},
+    }
+    for case in summary:
+        group = [r for r in rows if f"{r['family']}_s{r['severity']}" == case]
+        observations["cases"][case] = {
+            "mean_signed_physical_change_3": np.mean([r["physical_change_3"] for r in group], axis=0).tolist(),
+            "saturation_3_p95": float(np.quantile([r["saturation_3"] for r in group], .95)),
+            "fraction_saturation_3_above_10pct": float(np.mean([r["saturation_3"] > .1 for r in group])),
+        }
+    (study / "observations.json").write_text(json.dumps(observations, indent=2) + "\n")
     fields = ["case", "n", "AP_corrupted", "AP_semantic1", "AP_semantic3", "AP_oracle1",
               "cosine_mean", "cosine_median", "positive_alignment_pct", "loss_decrease_pct",
               "loss_delta_sem1", "loss_delta_sem3", "loss_delta_oracle", "semantic_loss_3",

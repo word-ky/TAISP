@@ -1,13 +1,12 @@
 # Current project state
 
-Updated: 2026-09-12 (Asia/Shanghai).
+Updated: 2026-09-12, Asia/Shanghai.
 
-- Latest research decision: `19f362d`, R002 accepts and closes T001.
-- T001_handoff.md is the historical implementation receipt; its pending-acceptance statement is superseded by R002.
-- Current task: T002, IN_PROGRESS. User explicitly authorized direct execution of all clearly assigned queued tasks, without asking whether to start. Frozen real CLIP and detector integration tests have passed. The fixed 200-image COCO-val subset is available on A6000 under shared/coco200. Full protocol: research_log/T002_plan.md.
-- Current A6000 run: `20260912-013248-taisp-t002-coco200-final`, full 200-image/1200-corruption study. Tested source revision `0b8a888`; release `20260912-013244-taisp-t002-final-parity`. Do not launch a duplicate. Two-image smoke completed (12 corruption samples, all 25 comparisons) and all 25 tests passed before this run.
-- Active Codex thread heartbeat: id `taisp`, name `TAISP 项目检查`, interval 15 minutes. It now executes clearly assigned new tasks, resumes existing implementation/experiments, collects results, reports and pushes stages automatically within their assigned scope. Check project logs to avoid duplicate jobs. No repeated unchanged-status notifications.
-- No TAISP automation was found before creating this one.
-- Durable implementation receipts: research_log/T001_handoff.md and research_log/remote_runs/20260912-003812-taisp-t001-a6000/.
-
-
+- T001 accepted/closed by R002. Latest research review R003 (d6fd863) accepted T002's implementation checkpoint and required Taylor diagnostics plus preprocessing parity.
+- T002 implementation, final200-image experiment and all R003 diagnostics are complete. Status NEEDS_REVIEW; no experiment is active. Read research_log/T002_report.md for final interpretation and exact receipts.
+- Final run: 20260912-013248-taisp-t002-coco200-final, source0b8a888, release20260912-013244-taisp-t002-final-parity; exit0 at01:41:17+08,200 images/1200 observations. Raw results and generated reports are under research_log/remote_runs/<run>/artifacts/study/.
+- Do not use 20260912-011915-taisp-t002-coco200-fixed as final evidence: it is marked PRELIMINARY because R003 found a one-pixel odd crop mismatch. Earlier 20260912-011328-taisp-t002-coco200 failed on612-square resize and is retained.
+- Final parity: 14 cases exact geometry; max normalized RMSE0.005910955 below0.02. Full model/regression suite27 passed; local Taylor/cluster test1 passed.
+- Conclusion: generic CLIP direction has weak heterogeneous detector alignment; mean cosine0.0453, detector-loss decrease47.58%, Taylor sign agreement54.75%, mixed AP changes. No automatic meta-training. Follow research lead's next explicit diagnostic task.
+- User explicitly authorized direct execution of newly assigned tasks without asking whether to start. Active heartbeat id taisp checks every15 minutes and resumes/implements/tests/experiments/reports/pushes assigned work. It remains quiet on unchanged non-actionable state.
+- Remote project /home/liujianhua/wjq/TAISP; use project .autodl/config.json with the existing AutoDL workflow. All final recovery notes/results are mirrored under project-local research_log; current final report supersedes the earlier live handoff.

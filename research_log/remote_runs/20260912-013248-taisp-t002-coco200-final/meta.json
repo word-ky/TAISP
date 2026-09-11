@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-013248-taisp-t002-coco200-final",
+  "releaseId": "20260912-013244-taisp-t002-final-parity",
+  "sessionName": "autodl-20260912-013248-taisp-t002-coco200-final",
+  "command": "export OMP_NUM_THREADS=1; export TAISP_SOURCE_REVISION=0b8a888; export PATH=/home/liujianhua/wjq/TAISP/.venv/bin:$PATH; python -m taisp.analysis.run_t002 --data-root /home/liujianhua/wjq/TAISP/shared/coco200 --output \"$AUTODL_ARTIFACTS_DIR/study\""
+}
