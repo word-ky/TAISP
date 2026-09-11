@@ -1,0 +1,114 @@
+{
+  "config": {
+    "seed": 20260912,
+    "count": 200,
+    "device": "cuda:0",
+    "threads": 1,
+    "semantic_lr": 0.1,
+    "semantic_steps": 3,
+    "consistency_weight": 0.0,
+    "regularization_weight": 0.0,
+    "temperature": 0.05,
+    "variants": [
+      "soft",
+      "oracle_prompt",
+      "soft_gate",
+      "soft_oracle_gate",
+      "oracle_both"
+    ]
+  },
+  "source_revision": "35d074b",
+  "python": "3.12.12",
+  "packages": {
+    "torch": "2.4.0",
+    "torchvision": "0.19.0+cu121",
+    "transformers": "4.44.2",
+    "pycocotools": "2.0.10",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0"
+  },
+  "cuda": "12.1",
+  "gpu": "NVIDIA RTX A6000",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "clip_sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+  "detector_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "positive_prompts": [
+    "a clear natural photograph",
+    "a well-lit photograph with natural colors",
+    "a sharp and clear photograph with good visibility"
+  ],
+  "negative_prompts": [
+    "a dark underexposed photograph",
+    "a poorly lit photograph with low visibility",
+    "a low contrast washed-out photograph",
+    "a hazy photograph with faded details",
+    "a photograph with an unnatural color cast",
+    "a photograph with distorted and unbalanced colors"
+  ],
+  "interpretation": "Fixed COCO-val subset feasibility; no full benchmark claim",
+  "evaluated_image_ids": [
+    23034,
+    23272
+  ],
+  "smoke_limit": 2,
+  "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "negative_concept_banks": [
+    [
+      "a dark underexposed photograph",
+      "a poorly lit photograph with low visibility"
+    ],
+    [
+      "a low contrast washed-out photograph",
+      "a hazy photograph with faded details"
+    ],
+    [
+      "a photograph with an unnatural color cast",
+      "a photograph with distorted and unbalanced colors"
+    ]
+  ],
+  "concept_order": [
+    "darkness",
+    "low_contrast",
+    "color_cast"
+  ],
+  "masks": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "baseline_study": "/home/liujianhua/wjq/TAISP/runs/20260912-013248-taisp-t002-coco200-final/artifacts/study",
+  "baseline_source": "0b8a888",
+  "baseline_samples_sha256": "270a220ba38bd250b81be62f1c39051c120bbc026a47e572671c57ed5420e2fc",
+  "baseline_metrics_sha256": "1fce3c6630448728ae9a4dac471937e135e5fc3f7903c077974f74e4f0cfd995",
+  "oracle": "family choices only in analysis; no annotated gradients in conditioning/gating",
+  "gradient_definition": "g_sem is effective gated update; raw objective gradient saved separately",
+  "timing": "condition inference + variant setup + three-step adapt including diagnostics; excludes evaluation"
+}

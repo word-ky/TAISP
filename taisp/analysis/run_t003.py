@@ -63,6 +63,7 @@ def run(config, data_root, baseline, output, limit=None):
                 baseline_metrics_sha256=hashlib.sha256((baseline / 'metrics.json').read_bytes()).hexdigest(),
                 oracle='family choices only in analysis; no annotated gradients in conditioning/gating',
                 gradient_definition='g_sem is effective gated update; raw objective gradient saved separately',
+                baseline_reuse='T002 clean/corrupted AP only; fresh g_det shared across all six variants; generic rerun',
                 timing='condition inference + variant setup + three-step adapt including diagnostics; excludes evaluation')
     (output / 'environment.json').write_text(json.dumps(meta, indent=2) + '\n')
     shutil.copyfile(data.root / 'subset.json', output / 'subset.json')
@@ -77,30 +78,31 @@ def run(config, data_root, baseline, output, limit=None):
             for family, severity in CASES:
                 x = corrupt(clean, family, severity)
                 base = saved[image_id, family, severity]
-                g_det = x.new_tensor(base['g_det'])
-                loss0 = base['det_loss_before']
                 seed = config['seed'] + image_id
-                # Smoke verifies reusing initial gradients/outcomes from the same
-                # images/models/ISP is legitimate, before the new fixed full run.
+                phi0 = torch.zeros(8, device=device, requires_grad=True)
+                initial_loss, _ = detector_task_loss(detector, isp(x, phi0), targets, seed=seed)
+                g_det = torch.autograd.grad(initial_loss, phi0)[0].detach()
+                loss0 = initial_loss.item()
+                del initial_loss
+                baseline_check = {'image_id': image_id, 'family': family, 'severity': severity,
+                    'loss_abs_error': abs(loss0-base['det_loss_before']),
+                    'gradient_max_abs_error': (g_det-x.new_tensor(base['g_det'])).abs().max().item()}
+                # Repeated native detector backward was observed to vary while
+                # its forward loss was exact. Share one fresh gradient across
+                # variants; do not widen equality tolerances for cached gradients.
                 if limit is not None:
-                    phi0 = torch.zeros(8, device=device, requires_grad=True)
-                    check_loss, _ = detector_task_loss(detector, isp(x, phi0), targets, seed=seed)
-                    check_grad = torch.autograd.grad(check_loss, phi0)[0]
-                    torch.testing.assert_close(check_loss.detach(), x.new_tensor(loss0), atol=1e-6, rtol=1e-5)
-                    torch.testing.assert_close(check_grad, g_det, atol=1e-6, rtol=1e-5)
+                    torch.testing.assert_close(x.new_tensor(loss0), x.new_tensor(base['det_loss_before']), atol=1e-6, rtol=1e-5)
                     repeat = adapt(x, isp, generic, config=settings)
                     torch.testing.assert_close(repeat.phi, x.new_tensor(base['diagnostics'][-1]['phi']), atol=1e-7, rtol=1e-5)
-                    baseline_checks.append({'image_id': image_id, 'family': family, 'severity': severity,
-                        'loss_abs_error': abs(check_loss.item()-loss0),
-                        'gradient_max_abs_error': (check_grad-g_det).abs().max().item(),
-                        'generic_phi3_max_abs_error': (repeat.phi-x.new_tensor(base['diagnostics'][-1]['phi'])).abs().max().item()})
-                    del check_loss, check_grad, repeat
+                    baseline_check['generic_phi3_max_abs_error'] = (repeat.phi-x.new_tensor(base['diagnostics'][-1]['phi'])).abs().max().item()
+                    del repeat
+                baseline_checks.append(baseline_check)
                 for variant in config['variants']:
                     torch.cuda.synchronize()
                     torch.cuda.reset_peak_memory_stats()
                     start = time.perf_counter()
-                    episode = conditioner.prepare(x)
-                    guidance, gate = choose_variant(variant, episode, conditioner, family)
+                    episode = None if variant == 'generic' else conditioner.prepare(x)
+                    guidance, gate = (generic, None) if episode is None else choose_variant(variant, episode, conditioner, family)
                     result = adapt(x, isp, guidance, config=settings, coordinate_gate=gate)
                     torch.cuda.synchronize()
                     duration = time.perf_counter() - start
@@ -118,6 +120,7 @@ def run(config, data_root, baseline, output, limit=None):
                         for k, enhanced in ((1, sem1), (3, result.enhanced)):
                             predictions[f'{family}_s{severity}_{variant}{k}'].extend(prediction_records(image_id, detector(enhanced)[0]))
                     row = {**base, 'variant': variant,
+                        'g_det': g_det.cpu().tolist(), 'g_det_norm': g_det.norm().item(), 'det_loss_before': loss0,
                         'gradient_cosine': (torch.dot(effective, g_det) / norm).item() if norm > 0 else None,
                         'g_sem': effective.cpu().tolist(), 'g_sem_raw': raw,
                         'g_sem_norm': effective.norm().item(),
@@ -132,8 +135,8 @@ def run(config, data_root, baseline, output, limit=None):
                         'saturation_1': result.diagnostics[1]['saturation_rate'],
                         'saturation_3': result.diagnostics[-1]['saturation_rate'],
                         'adapt_seconds_3': duration, 'peak_allocated_mb': peak,
-                        'condition_weights': episode.weights.flatten().cpu().tolist(),
-                        'condition_similarities': episode.similarities.flatten().cpu().tolist(),
+                        'condition_weights': episode.weights.flatten().cpu().tolist() if episode else None,
+                        'condition_similarities': episode.similarities.flatten().cpu().tolist() if episode else None,
                         'coordinate_gate': gate.flatten().cpu().tolist() if gate is not None else [1.]*8,
                         'direction': guidance.direction.flatten().cpu().tolist(),
                         'diagnostics': result.diagnostics}

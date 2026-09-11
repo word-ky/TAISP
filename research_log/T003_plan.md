@@ -64,3 +64,6 @@ also cross-talk within buckets. This is descriptive, not causal conditioning.
 Source attribution: all reused code is this repository's verified T001/T002
 implementation. No external code port, new model, learned prompts, predictor
 training, meta-training, smooth clamp or detector updates.
+
+## Observed-failure amendment before full run (03:05)
+Smoke failed on strict cached-detector-gradient reuse. Four repeated native detector backwards in one process gave identical forward loss0.3455415964 but max gradient differences2.36e-5 to7.35e-5 between repeats; cross-run smoke mismatch1.08e-4. No prompts/temperature/lr changed. Repair: compute one fresh initial g_det per image-condition and share it across ALL six variants; rerun generic direction within T003. Stage A still uses original T002 receipts. Only clean/corrupted AP reused (same deterministic forward); report T003-vs-T002 generic numerical differences and original gradient discrepancy. No tolerance widening. This removes cross-run mixing of gradient evidence and supplies contemporaneous paired comparisons.
