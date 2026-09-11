@@ -22,3 +22,5 @@
 [2026-09-12 02:56:10 +08:00] Synced R004 edf75c0: T002 accepted/closed; T003 directly started. Baseline A6000 suite27 passed6.24s; local12 passed7.43s. Fixed prompts/temperature0.05/masks/comparisons recorded in T003_plan.md before new experiments.
 
 [2026-09-12 02:59:04 +08:00] T003 Stage A complete from1200 saved T002 observations; hand-computed decomposition test1 passed0.38s. Overall outside-subspace norm0.8244, outside energy0.7205. Full per-coordinate and joint saturation strata saved research_log/T003_stage_a/coordinates.{json,md}; no GPU rerun.
+
+[2026-09-12 03:02:23 +08:00] Conditioner/gate real A6000 suite32 passed8.18s (run20260912-025949-taisp-t003-conditioner-tests,release20260912-025945-taisp-t003-conditioner,source2416208). Deployment weights/gates detached; exact frozen-state and fresh-episode tests pass. Analysis driver reuses T002 initial oracle gradients and generic receipts, with per-case two-image numerical equivalence checks in smoke before full reuse.
