@@ -26,7 +26,7 @@ class AdaptResult:
     phi: torch.Tensor
     enhanced: torch.Tensor
     prediction: torch.Tensor | None
-    diagnostics: list[dict[str, float | int]]
+    diagnostics: list[dict]
 
 
 @torch.enable_grad()
@@ -89,11 +89,18 @@ def adapt(
             "semantic": semantic.detach().item(),
             "consistency": consistency.detach().item(),
             "regularization": regularization.detach().item(),
+            "phi": phi.detach().cpu().tolist(),
+            "physical": {key: value.detach().cpu().tolist()
+                         for key, value in isp.decode(phi).items()},
+            "saturation_rate": ((enhanced <= 1e-4) | (enhanced >= 1 - 1e-4))
+                .float().mean().detach().item(),
         })
         if step == config.steps:
             break
         gradient = torch.autograd.grad(total, phi, create_graph=differentiable)[0]
         history[-1]["gradient_norm"] = gradient.detach().norm().item()
+        history[-1]["gradient_per_coordinate"] = gradient.detach().cpu().tolist()
+        history[-1]["gradient_abs_per_coordinate"] = gradient.detach().abs().cpu().tolist()
         phi = phi - config.lr * gradient
         if not differentiable:
             phi = phi.detach().requires_grad_(True)

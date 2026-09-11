@@ -30,6 +30,12 @@ def test_loss_decreases_and_episodes_reset():
     assert not first.phi.requires_grad and not first.enhanced.requires_grad
     assert isp.phi.grad is None
     assert len(first.diagnostics) == 16
+    assert first.diagnostics[-1]["physical"]["brightness"] > 0
+    assert first.diagnostics[-1]["physical"]["gamma"] < 1
+    for record in first.diagnostics[:-1]:
+        gradients = torch.tensor(record["gradient_per_coordinate"])
+        assert gradients.shape == (8,) and torch.isfinite(gradients).all()
+        assert 0 <= record["saturation_rate"] <= 1
 
 
 def test_downstream_and_predictor_state_unchanged_and_final_prediction():
@@ -85,3 +91,25 @@ def test_zero_steps_and_outer_no_grad():
     torch.testing.assert_close(result.enhanced, image())
     assert len(result.diagnostics) == 1
     assert all("label" not in name for name in inspect.signature(adapt).parameters)
+
+
+def test_outer_loss_reaches_predictor_through_inner_update():
+    predictor = ParameterPredictor().double()
+    result = adapt(image().double(), DifferentiableISP().double(), synthetic_loss,
+                   predictor=predictor, config=AdaptConfig(steps=2), differentiable=True)
+    output_grad, head_grad = torch.autograd.grad(
+        result.enhanced.square().mean(), (result.phi0, predictor.head.weight))
+    assert torch.isfinite(output_grad).all() and output_grad.norm() > 0
+    assert torch.isfinite(head_grad).all() and head_grad.norm() > 0
+
+
+def test_saturation_reports_clipped_zero_gradients():
+    isp = DifferentiableISP()
+    x = torch.ones(1, 3, 6, 7)
+    phi0 = torch.zeros(8)
+    phi0[1:4] = 0.5
+    result = adapt(x, isp, synthetic_loss, phi0=phi0,
+                   config=AdaptConfig(steps=1, regularization_weight=0))
+    assert result.diagnostics[0]["saturation_rate"] == 1.0
+    assert result.diagnostics[0]["gradient_norm"] == 0.0
+    torch.testing.assert_close(result.phi, phi0)
