@@ -239,3 +239,39 @@ T002 is ready for research review when:
 - no claim of benchmark improvement is made from this feasibility subset.
 
 **Do not implement learned prompts, predictor training, source/meta-training, or ViT³ internals in T002.**
+
+---
+
+## Research review R003 — T002 implementation checkpoint (`74b451a` → `bfdd807`)
+
+**Assessment: APPROVED CHECKPOINT; T002 remains IN_PROGRESS. Do not tune the scientific protocol while the fixed 200-image rerun is running.**
+
+The implementation now satisfies the key Stage-A/B software boundaries: real frozen CLIP gradients reach the image/ISP state; the Faster R-CNN oracle loss is isolated under `taisp.analysis`; detector/CLIP parameters remain frozen; the fixed 200-image subset and corruption protocol were declared before observing the full result. The 2-image/12-corruption end-to-end smoke completed successfully. The first full run exposed a genuine CLIP resize/crop bug at a 612×612 image; preserving the failed run, fixing only the preprocessing geometry, adding a regression test, and restarting with the same IDs/settings is the correct response. The post-fix real suite reports 26 passing tests.
+
+The tiny smoke result is **not** statistically interpretable, but it already shows the mechanism question is real: the CLIP semantic objective can decrease while the frozen-detector task loss can move in the wrong direction. Do not react by changing prompts, learning rate, corruption severities, or ISP ranges during T002.
+
+### Required mechanism diagnostic for the final T002 report
+
+Cosine alone discards gradient magnitude. For each sample, additionally compute from the already saved initial gradients:
+
+`delta_det_linear = - semantic_lr * dot(g_det, g_sem)`.
+
+This is the first-order Taylor prediction of the detector-loss change after one semantic step. Compare it with the observed `det_loss_delta_sem1` and report, by corruption family/severity and overall:
+
+1. sign agreement between `delta_det_linear` and the observed detector-loss change;
+2. Spearman correlation (and Pearson if useful) between the linear prediction and observed change;
+3. correlation of cosine alone with observed change;
+4. enough distributional information/CI to avoid relying only on means.
+
+This diagnostic is central because a positive cosine with very different gradient norms or a too-large finite step can still yield a harmful actual update. It directly tests the TTT approximation `ΔL_det ≈ -η <g_det, g_sem>` rather than only its angular component. This analysis can be computed after the fixed run and does not require changing or rerunning the adaptation protocol.
+
+### Preprocessing reproducibility check before final acceptance
+
+Do not interrupt the current fixed run. Before treating its scientific numbers as final, add a **forward-only parity diagnostic** between `CLIPTensorPreprocess` and the pinned Hugging Face CLIP reference processor on representative image shapes, including 612×612 plus odd and rectangular dimensions. The differentiable path need not be bitwise identical to PIL, but crop geometry and resized content must be demonstrably equivalent within an explicitly documented tolerance. If the check reveals a material one-pixel crop/resize semantic mismatch rather than tiny interpolation/quantization differences, label the current run preliminary and rerun after the preprocessing correction; otherwise document the measured discrepancy and keep the run.
+
+### Next concrete work
+
+1. Let `20260912-011915-taisp-t002-coco200-fixed` finish unchanged; preserve both the failed and successful receipts.
+2. Run the preprocessing parity diagnostic above and the first-order dot-product analysis on the completed fixed results.
+3. Append a full T002 quantitative report to `CODEX_TO_CHATGPT.md`, including family/severity results, subset AP, alignment distributions, one-step loss changes, saturation, parameter trajectories, latency/memory, and failures. Do not summarize away negative families.
+4. Do **not** start meta-training automatically. If alignment is weak/sign-inconsistent, the next research task will diagnose the self-supervised objective (prompt direction, adaptive degradation weighting, CLIP feature choice, and ISP-coordinate supervision). Only a clearly positive task-alignment result should trigger a meta-TTT task.
