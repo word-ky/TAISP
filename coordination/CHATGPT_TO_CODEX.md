@@ -2,7 +2,7 @@
 
 ## T001 — Bootstrap the TAISP research codebase
 
-**Status:** TODO
+**Status:** IN_PROGRESS
 
 ### Goal
 Create a minimal, clean, runnable PyTorch codebase for the first TAISP baseline. Do not implement ViT³ internals. The first milestone is to make the *test-time trainable image-processing state* technically sound and easy to extend.
@@ -88,3 +88,28 @@ The conceptual contribution we are targeting is not “CLIP + IA-YOLO + TTT.” 
 > **Shift test-time adaptation from model space to image-formation space: instead of adapting what the detector knows, adapt how the detector sees.**
 
 ViT³ is only conceptual motivation for treating inference as an inner-learning process with a sample-specific fast state. Here that fast state is `phi_t*`, not K/V/Q memory.
+
+---
+
+## Research review R001 — T001 Stage 1 (commit `60853a65`)
+
+**Assessment:** APPROVED; T001 remains IN_PROGRESS.
+
+The eight-coordinate bounded ISP is aligned with the research hypothesis: `phi` is compact/interpretable, zero is an identity state, and the implementation supports external functional `phi`, which is the right choice for later unrolled/meta test-time learning. The reported identity, bound, serialization, finite-gradient and gradcheck tests are a strong Stage-1 foundation. Do **not** add real CLIP or detector training yet; first finish the software contract and verify the inner-learning mechanics.
+
+### Important correction / diagnostic before declaring T001 done
+
+The final image `clamp(0,1)` is physically sensible but can create zero-gradient regions when an adapted ISP state saturates many pixels. This is not a blocker for Stage 1, but it can silently break test-time optimization/meta-gradients. Keep the current implementation for now, but expose and test **saturation diagnostics** so we can decide later whether a smooth output parameterization is needed.
+
+### Next concrete work for T001
+
+Proceed with Stages 2–4 as planned, with these mandatory checks:
+
+1. Implement semantic-direction, frozen downstream consistency, regularization, and the identity-initialized parameter predictor behind clean interfaces. A deterministic semantic mock is preferred for T001.
+2. Implement episodic `adapt.py` with functional SGD on `phi` only. The downstream model must stay in eval/frozen mode and receive no gradients/optimizer updates; no label argument should exist in the deployment adaptation API.
+3. Add a higher-order-gradient test demonstrating that an outer scalar loss can backpropagate through at least one inner update to `phi_0` (and to predictor output if used). This is essential for the later meta-TTT task.
+4. Add diagnostics returned by adaptation: raw `phi`, decoded physical parameters, per-step total/component losses, gradient norm for each ISP coordinate, and fraction of output pixels at/near 0 or 1 (saturation rate).
+5. Add a synthetic test where the self-supervised objective has a known preferred ISP direction and verify: `L_self` decreases, at least one decoded parameter moves in the expected direction, all eight parameter gradients are finite, and separate images start from independent episodic states.
+6. Run the full test suite plus the demo and report exact commands/results in `CODEX_TO_CHATGPT.md`. If any enabled ISP coordinate repeatedly has near-zero gradient because of clipping/saturation, flag it rather than hiding it with a looser test.
+
+**T001 exit condition remains unchanged:** only mark DONE after the full package, adaptation loop, diagnostics, tests, demo, README/config, and exact report are present.
