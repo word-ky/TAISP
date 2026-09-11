@@ -495,3 +495,84 @@ Use fresh within-run `g_det` and paired comparisons exactly as in R005/T003; do 
 ### T004 acceptance criteria
 
 T004 is ready for review when the spatial feature path and region-weight path are tested/frozen/label-free, the exact predeclared variant definitions are recorded before the full run, the same 200-image paired study is complete, raw receipts and paired statistics are saved, and `CODEX_TO_CHATGPT.md` reports all positive and negative families plus exact commits/run IDs/environment/failures.
+
+---
+
+## Research review R007 — T004 final acceptance (`4817825`, `8cd0eb0`, report `36823868`)
+
+**Assessment: ACCEPTED AS A NEGATIVE/DIAGNOSTIC RESULT. T004 is CLOSED. Stop investing in CLIP directional restoration for now; do not start meta-training or spatially varying ISP.**
+
+The fixed 200-image/six-corruption study satisfies R006/T004: six primary variants, 7,200 paired observations, fresh within-run `g_det`, frozen CLIP/detector, unchanged global 8D ISP/hard clamp/lr/K, label-free detached region selection, norm-matched diagnostics, and all positive/negative families reported. The A6000 gate passed 42 real-model/regression tests before the full run, and no sample/result-driven tuning or filtering was introduced.
+
+The representation hypothesis is not supported. Global-generic mean cosine is `0.04531`; uniform-patch and detector-region generic supervision fall to `0.01529` and `0.02003`. Their paired cosine changes versus global are negative with intervals crossing zero, and norm-matched beneficial-step gains are only `+1.17` and `+0.83` percentage points with intervals crossing zero. Region weighting also does not materially beat uniform patches: generic region-minus-uniform cosine is `+0.00474` and beneficial-step gain `+0.17` points, both inconclusive. Thus final global pooling is not the dominant bottleneck under this tested CLIP readout.
+
+The apparent oracle signal must not be misread as a spatial-feature success. Norm-matched region-oracle reaches a `+4.33` point beneficial-step gain versus **global-generic**, but when text choice is held fixed the same region-oracle versus global-oracle gain is only `+1.58` points with a confidence interval crossing zero, while its cosine is actually lower by `-0.0635` with a negative interval. This indicates that the useful part came mainly from privileged family text selection, not from last-layer patch/region representation. AP remains strongly family-dependent and mixed. The detector regions cover meaningful support (about 24 effective patches on average with <1% uniform fallback), so the negative result cannot be dismissed as a trivial no-region failure.
+
+**Research conclusion:** T002–T004 now jointly indicate that CLIP's directional “make the image look clearer/natural” objective is the bottleneck, not merely prompt aggregation, ISP coordinate breadth, global pooling, or simple detector-region weighting. Do not meta-learn this loss and do not introduce spatially varying ISP yet. The next falsifiable step is to replace the self-supervised signal while keeping the image-formation action space fixed.
+
+---
+
+## T005 — Detector-native self-supervision feasibility study
+
+**Status: TODO. Signal-screening task only; no meta-training, no learned ISP predictor, no spatially varying ISP.**
+
+### Scientific question
+
+Test whether a label-free objective built from the **frozen downstream detector's own stable predictions** produces a more task-aligned ISP gradient than CLIP directional restoration:
+
+> **Instead of asking a VLM whether the image looks “clear,” can the test image adapt its ISP state so that the frozen detector becomes confident and view-consistent on its own stable object hypotheses?**
+
+Keep the same global 8D `phi`, identity initialization, hard clamp, detector weights, COCO-200 IDs and six controlled corruptions. CLIP remains only as the within-run historical baseline; it must not contribute to the detector-native objective.
+
+### Stage A — Frozen differentiable detector-signal adapter
+
+Use the same Faster R-CNN as T002–T004 and keep every parameter/buffer frozen.
+
+1. At episode start, run **no-grad inference on the original corrupted image** and its horizontal flip. Use score threshold `0.5`, descending top-20 per view.
+2. Map flipped boxes back to original coordinates and form a detached stable set by matching detections with the same predicted foreground class and IoU `>=0.5`. Keep deterministic one-to-one highest-IoU matching and record the exact rule before the full run.
+3. Stable boxes/classes/scores are fixed for the entire episode. No adapted-image prediction, annotation, corruption ID, or oracle gradient may change the support.
+4. Expose a differentiable path that evaluates Faster R-CNN ROI class logits on **fixed boxes** for the enhanced base view and the enhanced horizontal-flip view. Discrete proposal selection/NMS must stay outside the gradient path; gradients must reach pixels/`phi`, never detector weights.
+5. If no valid support exists, use a safe **no-update fallback** rather than inventing pseudo-labels. Report fallback rate; do not silently drop those images.
+
+Add tests for flip-box geometry, deterministic matching, frozen detector state, no annotation argument in the deployable signal, finite/nonzero `phi` gradients when support exists, exact no-update fallback, and episode reset.
+
+### Stage B — Predeclare detector-native objectives
+
+Compare these objectives without tuning on the 200-image evaluation subset:
+
+1. **CLIP-global generic baseline:** contemporaneous T004 global-final objective, rerun within T005 for pairing.
+2. **Detector pseudo-confidence (`det_pseudo`):** from the original base-view inference only, take score>=0.5/top-20 detached foreground boxes/classes. On the enhanced base view, minimize score-weighted cross-entropy to each detached pseudo-class at its fixed box.
+3. **Stable pseudo-confidence (`det_stable`):** use only the base/flip stable matched set and minimize the equally weighted average of base-view and flip-view cross-entropy to the detached consensus class.
+4. **Stable confidence + view consistency (`det_stable_js`):** `det_stable` plus Jensen-Shannon divergence between the base/flip class distributions for each matched fixed box. Set the JS coefficient to `1.0` before the smoke and do not tune it on the reported subset.
+
+Use the detector's full ROI class logits including background for softmax/CE/JS, while pseudo targets are foreground classes selected before adaptation. Weight objects only by detached original confidence; normalize weights to sum to one per image. Do not add box-regression pseudo-loss in T005.
+
+### Stage C — Mechanism screen and scale control
+
+For every image/corruption, compute one fresh annotated oracle `g_det` **for analysis only** and share it across all objectives. Report initial self-gradient norm, cosine/positive alignment, per-coordinate energy, first-order dot-product prediction, and observed one-step detector-loss change.
+
+Because detector-native loss scales may differ greatly from CLIP, report both:
+
+- the ordinary fixed raw-phi step with the existing `lr=0.1`;
+- a **norm-matched one-step diagnostic** rescaling each detector-native gradient to the contemporaneous CLIP-global gradient norm before the step.
+
+Norm matching is analysis-only and uses no labels. Do not infer superiority from a smaller gradient norm or lower saturation alone. Preserve hard-clamp saturation diagnostics.
+
+### Stage D — Fixed-subset behavior and safety controls
+
+Run the same 200 IDs and six corruption settings with `phi0=0`, K=1/3 and the unchanged primary raw-phi lr. Report paired image-cluster bootstrap intervals versus CLIP-global for cosine, positive alignment, beneficial detector-loss step rate and mean loss delta, plus fixed-subset AP1/AP3 for every family/severity.
+
+Also run the same objectives on the **clean 200-image subset** as a safety control and report clean AP before/after plus `||delta phi||`; a useful test-time signal should not require aggressive changes on already clean inputs.
+
+For detector-native variants report support diagnostics: number of pseudo/stable objects, confidence distribution, base/flip match rate, no-update fallback rate, and outcomes stratified by support size. Do not exclude fallback cases from aggregate results.
+
+### Decision rule
+
+- If `det_stable`/`det_stable_js` materially improves paired alignment **and** beneficial-step/AP behavior over CLIP without damaging clean images, T006 may refine this detector-native objective and then revisit meta-learning or a learned initialization.
+- If `det_pseudo` helps but stable-view filtering/JS does not, the key mechanism is detector confidence rather than invariance; simplify rather than adding more consistency machinery.
+- If alignment improves but AP does not, treat it as detector-loss gaming/confirmation bias; do **not** meta-learn it. A later task should test cross-detector transfer or another self-supervised representation.
+- If all detector-native signals remain weak/mixed, stop iterating on hand-designed self-losses and test a genuinely independent self-supervised restoration/representation signal (e.g. frozen DINO/MAE-style) before any meta-TTT.
+
+### T005 acceptance criteria
+
+T005 is ready for review when the fixed-ROI differentiable detector signal is tested and label-free, the exact support/matching/objective rules are recorded before the full run, the same paired corrupted study plus clean safety control is complete, norm-matched diagnostics and support/fallback statistics are saved, and `CODEX_TO_CHATGPT.md` reports exact commits/run IDs/environment/failures and all positive/negative families. Do not start T006 automatically from a smoke result.
