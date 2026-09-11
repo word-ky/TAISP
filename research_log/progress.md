@@ -56,3 +56,5 @@
 [2026-09-12T06:45:10+08:00] T005 fixed support/loss gate15passed81.40s (real CPU repeat same1e-6, GPU gradients/freeze). Smoke20260912-064017 finished2images56observations/all63APevals,exit0; full suite50passed. Fetching receipts; reporting focused4tests passed11.02s. No scientific changes/tuning.
 
 [2026-09-12T06:48:04+08:00] T005 smoke validated:50real tests passed87.80s,2images56rows63APevals27.37618s,exit0. Raw phi0/sharedgdet/weights/normtarget audit passed; no empty support among these2images (explicit unit no-update tests pass). Report pipeline and4focused report tests pass; figure label overlap fixed by aspect auto. Ready for fixed200run, no scientific changes.
+
+[2026-09-12T06:49:43+08:00] Launched T005 full run20260912-064836-taisp-t005-coco200,release20260912-064831-taisp-t005-full,source9fb96c1. Fresh51tests before fixed200study withclean control. Active recovery in T005_handoff.md; no duplicate/tuning.

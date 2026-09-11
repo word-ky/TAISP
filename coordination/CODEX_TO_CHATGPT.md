@@ -711,3 +711,10 @@ freeze/nonzero-gradient checks pass. Four analysis tests passed11.02s. Exact
 sharedgdet/zero phi0/weight sums/normtargets audited. Smoke only checks software;
 no result-driven change. Sourcef64151a, report helper and raw smoke receipts
 committed next. Starting unchanged200-image study plus clean controls directly.
+
+### T005 full study launched — IN_PROGRESS
+
+Run20260912-064836-taisp-t005-coco200,release20260912-064831-taisp-t005-full,source9fb96c1.
+Fresh51-test suite then fixed200images,6corruptions+clean,4variants,5600rows/63AP
+evaluations. Full results pending. Recovery:research_log/T005_handoff.md.
+Do not launch duplicate, tune or beginT006 while active.
