@@ -59,3 +59,5 @@ RPN/NMS. No annotations/adapted predictions/family in the deployable adapter.
 All seven per-image cases share ID clusters in appropriate report groups;
 corrupted overall excludes clean. No zero-gradient sample dropped. Undefined
 rawcosine=null; zero-coded for explicitly labeled aggregate paired measures.
+
+Latest verification:51real tests passed85.36s;first2/200images26.0s. Run active.

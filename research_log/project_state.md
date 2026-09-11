@@ -8,3 +8,5 @@ Prior smoke50real tests87.80s,2images56observations27.37618s,exit0,report/auditp
 Full report pending. No meta-learning/spatialISP/detector updates.
 AllT001-T004 accepted/closed. User authorizes direct queued-task execution and
 15-minute heartbeat. Remote /home/liujianhua/wjq/TAISP via .autodl/config.json.
+
+Latest verification:51real tests passed85.36s;first2/200images26.0s. Run active.
