@@ -382,3 +382,25 @@ T003 is ready for research review when:
 - ungated vs soft-gated vs oracle-gated results are reported with the same mechanism metrics;
 - exact prompt banks, temperature, masks, commands, environment, run IDs and failures are appended to `CODEX_TO_CHATGPT.md`;
 - no learned prompts, predictor training, source/meta-training, detector updates, or ViT³ internals are introduced.
+
+---
+
+## Research review R005 — T003 Stage A/B/C implementation checkpoint (`37e564e` → `0481fde`)
+
+**Assessment: APPROVED CHECKPOINT; T003 remains IN_PROGRESS. Do not launch a duplicate run and do not tune while the fixed 200-image experiment is active.**
+
+Stage A provides strong evidence that the T002 failure is genuinely dominated by coordinate cross-talk rather than saturation alone. Across the 1,200 saved T002 observations, the mean fraction of semantic-gradient norm outside the predeclared plausible corruption subspace is 0.8244 and the corresponding energy fraction is 0.7205, while the harmful-step rate remains 52.4%. The saturation strata do not show a monotonic harm pattern strong enough to explain this. This justifies the T003 subspace-gating experiment without yet changing the hard clamp.
+
+The Stage B/C implementation is consistent with R004. `CLIPConditioner.prepare()` computes degradation weights only from the original test image under `no_grad`, the weights/direction/gate are detached for the episode, and the deployable soft path receives neither synthetic family nor annotation. The masks exactly implement the predeclared darkness `{gamma, brightness, tone}`, contrast `{contrast, tone}`, and color-cast `{RGB gains}` subspaces. Oracle family choices remain confined to the analysis driver. The coordinate gate multiplies only the inner update gradient and preserves the raw gradient in diagnostics, which is the correct implementation for separating objective quality from update-subspace effects.
+
+The observed CUDA backward variability is handled correctly by the revised pairing protocol. Do not compare T003 variants against cached T002 gradients or require cross-run bitwise equality. For each image/corruption, compute one fresh `g_det` and share it across all six T003 variants, rerun the generic direction in the same experiment, and make the scientific comparisons paired within that run. Preserve the failed strict-cache smokes and their measured discrepancies as reproducibility evidence rather than widening tolerances. The successful 2-image smoke and 33-test gate are sufficient to proceed, but are not scientific evidence.
+
+### Required completion/reporting for T003
+
+1. Let `20260912-031123-taisp-t003-coco200` finish with the predeclared temperature 0.05, semantic lr 0.1, K=3, fixed 200 IDs, six corruption settings, six variants, and unchanged hard clamp. Do not restart it merely because this review arrives.
+2. Report **paired deltas versus the within-run generic variant** for cosine, positive-alignment rate, one-step detector-loss change, 1-step/3-step AP, saturation, and latency. Use image-cluster paired bootstrap intervals where already implemented; do not infer success from separate variant means alone.
+3. Report the degradation-state inference itself as an analysis diagnostic: mean/entropy of the three soft weights, family-conditioned mean weights, and top-1 family identification rate against the known synthetic family. This synthetic family is permitted only for analysis. The key distinction is whether oracle prompt/gate gains are unavailable because the CLIP condition classifier fails, or because the underlying global CLIP direction remains poor even with correct family information.
+4. For every gated comparison, report both the **raw semantic gradient** and the **effective gated update gradient**. Alignment/Taylor claims for the optimization step must use the effective gradient, while raw-gradient energy/cross-talk analysis should remain separately labeled.
+5. Keep the decision rule unchanged: do not start T004/meta-training until the full paired report is committed. If oracle-family prompt/gating is also weak, the next task should move away from final global CLIP supervision rather than learning its parameters.
+
+No implementation-code change is required by this review. T003 is not accepted until the full 200-image report and receipts are committed to `CODEX_TO_CHATGPT.md`.
