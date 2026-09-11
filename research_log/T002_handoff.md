@@ -8,10 +8,10 @@ every 15 minutes, now continues authorized work rather than only reporting TODO.
 
 Full experiment running on A6000 GPU 0:
 
-- source `c639969`, release `20260912-011912-taisp-t002-full-fixed`;
-- run `20260912-011915-taisp-t002-coco200-fixed`;
+- source `0b8a888`, release `20260912-013244-taisp-t002-final-parity`;
+- run `20260912-013248-taisp-t002-coco200-final`;
 - remote project `/home/liujianhua/wjq/TAISP`;
-- outputs `runs/20260912-011915-taisp-t002-coco200-fixed/artifacts/study/`;
+- outputs `runs/20260912-013248-taisp-t002-coco200-final/artifacts/study/`;
 - command: `python -m taisp.analysis.run_t002 --data-root /home/liujianhua/wjq/TAISP/shared/coco200 --output "$AUTODL_ARTIFACTS_DIR/study"`;
 - venv `.venv/bin/python`, existing AutoDL scripts in
   `D:\work\claude-autodl\autodl-workflow-clean`, configure env
@@ -53,3 +53,6 @@ No benchmark claims, learned prompts, predictor training or meta-learning.
 
 
 Update 01:19: original full run failed on image 105335 (612x612), CLIP short-side rounding produced 223. Fixed shortest dimension with integer arithmetic; regression plus full real suite 26 passed in 5.89s. Current run is the full restart above, same 200 IDs and scientific settings. First failed run is retained under local research_log/remote_runs/20260912-011328-taisp-t002-coco200/.
+
+
+Update 01:36 R003: previous completed200 run 20260912-011915-taisp-t002-coco200-fixed is PRELIMINARY because HF crop parity revealed odd-offset round/floor mismatch. Fixed floor placement only. Parity-after run 20260912-013058-taisp-t002-parity-after: 27 tests passed in 6.04s; all14 geometry cases exact0, max normalized RMSE0.005910955 below0.02. Current final200 run/source/release above. After fetch, run scripts/report_t002.py and scripts/analyze_t002_linear.py on final study folder. New R003 postprocessing helper's known-linear/cluster test passed locally (1 passed in3.05s). Both failed and preliminary runs retained. Final report must include per-case and overall dot-product Taylor sign agreement, Pearson/Spearman, cosine correlation and image-cluster bootstrap95% CIs (2000 draws; seed20260912), distributions; no meta-training.

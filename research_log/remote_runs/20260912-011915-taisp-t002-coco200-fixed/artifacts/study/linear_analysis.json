@@ -1,0 +1,643 @@
+{
+  "formula": "delta_det_linear = -semantic_lr * dot(g_det, g_sem)",
+  "semantic_lr": 0.1,
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20260912,
+    "unit": "image_id clusters; all six conditions kept together overall",
+    "interval": "95% percentile, exploratory without multiplicity adjustment"
+  },
+  "sign_rule": "exact numpy.sign; zeros counted and not discarded",
+  "groups": {
+    "overall": {
+      "observations": 1200,
+      "image_clusters": 200,
+      "zero_predicted": 0,
+      "zero_observed": 0,
+      "sign_agreement": {
+        "estimate": 0.5358333333333334,
+        "ci95": [
+          0.5074791666666666,
+          0.5633333333333334
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_linear_observed": {
+        "estimate": 0.13472246855726983,
+        "ci95": [
+          0.07118326338774698,
+          0.1960954796448094
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_linear_observed": {
+        "estimate": 0.285553628710444,
+        "ci95": [
+          0.17609336299235107,
+          0.3840374096707456
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_cosine_observed": {
+        "estimate": -0.1169691506730213,
+        "ci95": [
+          -0.1735482785332984,
+          -0.061718603582512105
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_cosine_observed": {
+        "estimate": -0.12706665347051527,
+        "ci95": [
+          -0.17525206426824552,
+          -0.07756666578697215
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_mean": {
+        "estimate": -6.604579747318385e-05,
+        "ci95": [
+          -0.0004711852431362076,
+          0.00034481050474892064
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "observed_mean": {
+        "estimate": 0.001967916521243751,
+        "ci95": [
+          5.200308126707872e-06,
+          0.003922977166910034
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_quantiles": {
+        "p05": -0.007360035019323664,
+        "p25": -0.0008305991867097496,
+        "p50": -5.4983225895325e-05,
+        "p75": 0.0007872014526462726,
+        "p95": 0.006621711318246534
+      },
+      "observed_quantiles": {
+        "p05": -0.04048709869384766,
+        "p25": -0.00861097127199173,
+        "p50": 0.0007699728012084961,
+        "p75": 0.010988086462020874,
+        "p95": 0.04415666759014124
+      },
+      "cosine_quantiles": {
+        "p05": -0.811795511841774,
+        "p25": -0.39804304391145706,
+        "p50": 0.06248857267200947,
+        "p75": 0.501570388674736,
+        "p95": 0.8625412672758102
+      },
+      "absolute_taylor_error_quantiles": {
+        "p05": 0.0007325815433507273,
+        "p25": 0.004103125968321542,
+        "p50": 0.009652910836481603,
+        "p75": 0.021885410571031546,
+        "p95": 0.05505951656772359
+      }
+    },
+    "gamma_s1": {
+      "observations": 200,
+      "image_clusters": 200,
+      "zero_predicted": 0,
+      "zero_observed": 0,
+      "sign_agreement": {
+        "estimate": 0.43,
+        "ci95": [
+          0.36,
+          0.495
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_linear_observed": {
+        "estimate": -0.15881797044926124,
+        "ci95": [
+          -0.30711375807331315,
+          -0.01857803823465534
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_linear_observed": {
+        "estimate": -0.07171645071780737,
+        "ci95": [
+          -0.23350477652001123,
+          0.06839311720416423
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_cosine_observed": {
+        "estimate": 0.10019650491262282,
+        "ci95": [
+          -0.03724338152818606,
+          0.237765287497659
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_cosine_observed": {
+        "estimate": 0.06696644703260198,
+        "ci95": [
+          -0.06907326107543073,
+          0.20248390561945298
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_mean": {
+        "estimate": -0.0001656225485378831,
+        "ci95": [
+          -0.0009308988320957597,
+          0.0005936505700964706
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "observed_mean": {
+        "estimate": 0.0025695084594190122,
+        "ci95": [
+          -0.000716492515988648,
+          0.0060943621303886164
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_quantiles": {
+        "p05": -0.006322713764558864,
+        "p25": -0.0008375048694820241,
+        "p50": -0.0001030587840618572,
+        "p75": 0.0009160424759810559,
+        "p95": 0.005549823465813049
+      },
+      "observed_quantiles": {
+        "p05": -0.038183259963989254,
+        "p25": -0.006698109209537506,
+        "p50": 0.0005716681480407715,
+        "p75": 0.012553364038467407,
+        "p95": 0.043137961626052844
+      },
+      "cosine_quantiles": {
+        "p05": -0.81620052754879,
+        "p25": -0.3915882334113121,
+        "p50": 0.08017447590827942,
+        "p75": 0.4274715706706047,
+        "p95": 0.8186537265777587
+      },
+      "absolute_taylor_error_quantiles": {
+        "p05": 0.0004934906094490145,
+        "p25": 0.004446660774814039,
+        "p50": 0.009885646847573506,
+        "p75": 0.022025208110262238,
+        "p95": 0.052220248876804
+      }
+    },
+    "gamma_s2": {
+      "observations": 200,
+      "image_clusters": 200,
+      "zero_predicted": 0,
+      "zero_observed": 0,
+      "sign_agreement": {
+        "estimate": 0.46,
+        "ci95": [
+          0.389875,
+          0.525
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_linear_observed": {
+        "estimate": 0.0013710342758568965,
+        "ci95": [
+          -0.15665070962357172,
+          0.16451966589726308
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_linear_observed": {
+        "estimate": 0.4480150845766799,
+        "ci95": [
+          0.03961264220886147,
+          0.7030320096479572
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_cosine_observed": {
+        "estimate": 0.0390084752118803,
+        "ci95": [
+          -0.10276394657230889,
+          0.1811834749457997
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_cosine_observed": {
+        "estimate": -0.07443273538428163,
+        "ci95": [
+          -0.18444399857494254,
+          0.10933428387945582
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_mean": {
+        "estimate": 0.0003014420019427971,
+        "ci95": [
+          -0.0005701102527987065,
+          0.0011432139050870558
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "observed_mean": {
+        "estimate": 0.008900123313069344,
+        "ci95": [
+          0.0032873861310072244,
+          0.015935122849885373
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_quantiles": {
+        "p05": -0.006286740900257483,
+        "p25": -0.000692820445996885,
+        "p50": -7.4472379585232295e-06,
+        "p75": 0.0009056403821733682,
+        "p95": 0.006460809237278886
+      },
+      "observed_quantiles": {
+        "p05": -0.029989174753427505,
+        "p25": -0.0076113492250442505,
+        "p50": 0.0027029290795326233,
+        "p75": 0.017685629427433014,
+        "p95": 0.05658904016017904
+      },
+      "cosine_quantiles": {
+        "p05": -0.8165446609258652,
+        "p25": -0.40534477680921555,
+        "p50": 0.01160027040168643,
+        "p75": 0.36145082116127014,
+        "p95": 0.844071528315544
+      },
+      "absolute_taylor_error_quantiles": {
+        "p05": 0.0009589429623740613,
+        "p25": 0.005093518943499986,
+        "p50": 0.010821835626087024,
+        "p75": 0.02467723518309678,
+        "p95": 0.0634823372195033
+      }
+    },
+    "contrast_s1": {
+      "observations": 200,
+      "image_clusters": 200,
+      "zero_predicted": 0,
+      "zero_observed": 0,
+      "sign_agreement": {
+        "estimate": 0.545,
+        "ci95": [
+          0.475,
+          0.615
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_linear_observed": {
+        "estimate": 0.1940793519837996,
+        "ci95": [
+          0.043462230511067616,
+          0.33797979907075304
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_linear_observed": {
+        "estimate": 0.2238833650124108,
+        "ci95": [
+          0.05754021096202181,
+          0.38222567831453064
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_cosine_observed": {
+        "estimate": -0.16074551863796596,
+        "ci95": [
+          -0.29124171430128126,
+          -0.02127352663057186
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_cosine_observed": {
+        "estimate": -0.1571374932571624,
+        "ci95": [
+          -0.27865138624964786,
+          -0.03101494666576896
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_mean": {
+        "estimate": -0.00043452243579387734,
+        "ci95": [
+          -0.0011346528631448582,
+          0.00032170144312463917
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "observed_mean": {
+        "estimate": -0.002585053453221917,
+        "ci95": [
+          -0.006292253386462107,
+          0.0014306333474814882
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_quantiles": {
+        "p05": -0.00914705363307271,
+        "p25": -0.0014411015339172867,
+        "p50": -0.00021484317497211914,
+        "p75": 0.0006272413659054196,
+        "p95": 0.006469195589404949
+      },
+      "observed_quantiles": {
+        "p05": -0.047407588362693785,
+        "p25": -0.012795522809028625,
+        "p50": -8.100271224975586e-05,
+        "p75": 0.0072927530854940414,
+        "p95": 0.03799097239971157
+      },
+      "cosine_quantiles": {
+        "p05": -0.814646527171135,
+        "p25": -0.3130827769637108,
+        "p50": 0.22346851974725723,
+        "p75": 0.6140078008174896,
+        "p95": 0.8821116298437118
+      },
+      "absolute_taylor_error_quantiles": {
+        "p05": 0.0009856717670173125,
+        "p25": 0.004373067918450121,
+        "p50": 0.00978862659123141,
+        "p75": 0.024650431469992573,
+        "p95": 0.06014949096301671
+      }
+    },
+    "contrast_s2": {
+      "observations": 200,
+      "image_clusters": 200,
+      "zero_predicted": 0,
+      "zero_observed": 0,
+      "sign_agreement": {
+        "estimate": 0.655,
+        "ci95": [
+          0.59,
+          0.72
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_linear_observed": {
+        "estimate": 0.45451286282157055,
+        "ci95": [
+          0.3142102822413785,
+          0.5795785301465699
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_linear_observed": {
+        "estimate": 0.45829439640141323,
+        "ci95": [
+          0.3622150114412652,
+          0.5649424259781091
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_cosine_observed": {
+        "estimate": -0.3994629865746644,
+        "ci95": [
+          -0.507436229759313,
+          -0.28035083559137874
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_cosine_observed": {
+        "estimate": -0.35738407584842097,
+        "ci95": [
+          -0.4582507830182199,
+          -0.26505235000612287
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_mean": {
+        "estimate": -5.3497339846550335e-05,
+        "ci95": [
+          -0.0016424886834050505,
+          0.0014011744632469877
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "observed_mean": {
+        "estimate": 0.001910681976005435,
+        "ci95": [
+          -0.0027516031463164837,
+          0.005932357172016049
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_quantiles": {
+        "p05": -0.012542642028569887,
+        "p25": -0.0016951288576141626,
+        "p50": 2.0279576755573907e-06,
+        "p75": 0.002669797942321093,
+        "p95": 0.01265931042545707
+      },
+      "observed_quantiles": {
+        "p05": -0.04687345027923584,
+        "p25": -0.010506704449653625,
+        "p50": 0.0011378675699234009,
+        "p75": 0.014071661978960037,
+        "p95": 0.05060529112815837
+      },
+      "cosine_quantiles": {
+        "p05": -0.8323735654354095,
+        "p25": -0.4963091239333153,
+        "p50": -0.0007899777265265584,
+        "p75": 0.5872881859540939,
+        "p95": 0.9085663199424743
+      },
+      "absolute_taylor_error_quantiles": {
+        "p05": 0.0007979877595302309,
+        "p25": 0.003080174320240127,
+        "p50": 0.009005072354274628,
+        "p75": 0.022342145272967736,
+        "p95": 0.061958496953059425
+      }
+    },
+    "color_cast_s1": {
+      "observations": 200,
+      "image_clusters": 200,
+      "zero_predicted": 0,
+      "zero_observed": 0,
+      "sign_agreement": {
+        "estimate": 0.555,
+        "ci95": [
+          0.48,
+          0.6201249999999993
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_linear_observed": {
+        "estimate": 0.14271806795169878,
+        "ci95": [
+          -0.0104408943114129,
+          0.2901055556248316
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_linear_observed": {
+        "estimate": -0.026154485220491495,
+        "ci95": [
+          -0.2143245886685457,
+          0.1530300108924697
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_cosine_observed": {
+        "estimate": -0.13582539563489088,
+        "ci95": [
+          -0.2721267383727587,
+          0.009249493832272904
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_cosine_observed": {
+        "estimate": -0.12109104295338971,
+        "ci95": [
+          -0.2523036818350136,
+          0.007244517676001598
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_mean": {
+        "estimate": -0.0001417403167718619,
+        "ci95": [
+          -0.0006388924486541732,
+          0.00046215034862707663
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "observed_mean": {
+        "estimate": 0.0010279187001287938,
+        "ci95": [
+          -0.0021790911951102315,
+          0.003930559433531015
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_quantiles": {
+        "p05": -0.005486559172042209,
+        "p25": -0.0005322130132731928,
+        "p50": -6.44529168817025e-05,
+        "p75": 0.00032501980552741914,
+        "p95": 0.003836354463060102
+      },
+      "observed_quantiles": {
+        "p05": -0.02486002743244171,
+        "p25": -0.006907954812049866,
+        "p50": 0.00047945231199264526,
+        "p75": 0.0091092549264431,
+        "p95": 0.032224956154823285
+      },
+      "cosine_quantiles": {
+        "p05": -0.7523798167705535,
+        "p25": -0.3683198317885399,
+        "p50": 0.0661227572709322,
+        "p75": 0.4435631111264229,
+        "p95": 0.8287134855985642
+      },
+      "absolute_taylor_error_quantiles": {
+        "p05": 0.0006668855304150545,
+        "p25": 0.0040446634239198875,
+        "p50": 0.00843242074862876,
+        "p75": 0.017965304402217056,
+        "p95": 0.04291870512147534
+      }
+    },
+    "color_cast_s2": {
+      "observations": 200,
+      "image_clusters": 200,
+      "zero_predicted": 0,
+      "zero_observed": 0,
+      "sign_agreement": {
+        "estimate": 0.57,
+        "ci95": [
+          0.5,
+          0.64
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_linear_observed": {
+        "estimate": 0.09940598514962874,
+        "ci95": [
+          -0.05810212160689102,
+          0.25574378380144075
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_linear_observed": {
+        "estimate": 0.22776125411984863,
+        "ci95": [
+          -0.0038382849022763846,
+          0.399002038503062
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "spearman_cosine_observed": {
+        "estimate": -0.06846171154278857,
+        "ci95": [
+          -0.21402578024129107,
+          0.07907577538113726
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "pearson_cosine_observed": {
+        "estimate": -0.037324005612339374,
+        "ci95": [
+          -0.1849111837175718,
+          0.10896595061834553
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_mean": {
+        "estimate": 9.7665854168272e-05,
+        "ci95": [
+          -0.00048107207932068975,
+          0.0007212726002092916
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "observed_mean": {
+        "estimate": -1.5679867938160897e-05,
+        "ci95": [
+          -0.0030894573307596145,
+          0.0029352553340140715
+        ],
+        "valid_bootstrap_replicates": 2000
+      },
+      "linear_quantiles": {
+        "p05": -0.004907599777506778,
+        "p25": -0.0006953630031554245,
+        "p50": -3.5339301476523435e-05,
+        "p75": 0.0006038856679891989,
+        "p95": 0.0037378111501798605
+      },
+      "observed_quantiles": {
+        "p05": -0.040145513415336606,
+        "p25": -0.008261567912995815,
+        "p50": 0.0005426816642284393,
+        "p75": 0.010861501097679138,
+        "p95": 0.032051306962966895
+      },
+      "cosine_quantiles": {
+        "p05": -0.7709486901760101,
+        "p25": -0.4110090136528015,
+        "p50": 0.0575086884200573,
+        "p75": 0.5528127998113632,
+        "p95": 0.8556597769260406
+      },
+      "absolute_taylor_error_quantiles": {
+        "p05": 0.0003888209624787691,
+        "p25": 0.004769472525704808,
+        "p50": 0.009964735522468664,
+        "p75": 0.018937532705196346,
+        "p95": 0.0451267609020338
+      }
+    }
+  }
+}
