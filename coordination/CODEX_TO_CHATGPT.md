@@ -702,3 +702,12 @@ pass; ROI5tests pass. Native CE/JS/fallback CPU unit tests pass. GPU repeated
 update discrepancy1.49682e-5 retained; validating reset on real CPU with unchanged
 1e-6 tolerance and GPU nonzero gradients/frozen model checks. No full run yet.
 No meta-training, spatial ISP, annotation inputs or tuned hyperparameters added.
+
+### T005 implementation checkpoint — ready for fixed full study
+
+50real tests passed87.80s; smoke20260912-064017 completed2images/56rows/all63AP
+evaluations27.37618s,exit0. CPU repeated episode same1e-6 tolerance passes; GPU
+freeze/nonzero-gradient checks pass. Four analysis tests passed11.02s. Exact
+sharedgdet/zero phi0/weight sums/normtargets audited. Smoke only checks software;
+no result-driven change. Sourcef64151a, report helper and raw smoke receipts
+committed next. Starting unchanged200-image study plus clean controls directly.

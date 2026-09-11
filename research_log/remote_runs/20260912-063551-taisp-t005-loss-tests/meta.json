@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-063551-taisp-t005-loss-tests",
+  "releaseId": "20260912-063546-taisp-t005-loss",
+  "sessionName": "autodl-20260912-063551-taisp-t005-loss-tests",
+  "command": "TAISP_REAL_MODELS=1 /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q tests/test_detector_native.py tests/test_detector_signal.py tests/test_adapt.py"
+}

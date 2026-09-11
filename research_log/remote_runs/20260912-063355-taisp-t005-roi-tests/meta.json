@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-063355-taisp-t005-roi-tests",
+  "releaseId": "20260912-063351-taisp-t005-roi",
+  "sessionName": "autodl-20260912-063355-taisp-t005-roi-tests",
+  "command": "TAISP_REAL_MODELS=1 /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q tests/test_detector_signal.py tests/test_detector.py"
+}
