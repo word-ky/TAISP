@@ -79,6 +79,16 @@ def main():
                 g['paired_region_vs_uniform']={'cosine':paired_delta(vr,uniform,lambda r:r['gradient_cosine']),
                     'benefit':paired_delta(vr,uniform,lambda r:float(r['det_loss_delta_sem1']<0)),
                     'loss_delta':paired_delta(vr,uniform,lambda r:r['det_loss_delta_sem1'])}
+            if not v.startswith('global_'):
+                # Stage C: isolate visual representation while holding the
+                # generic/oracle text choice fixed, including equal-norm steps.
+                same_global=[r for r in chosen if r['variant']=='global_'+v.split('_')[1]]
+                g['paired_vs_matching_global']={
+                    'reference':'global_'+v.split('_')[1],
+                    'cosine':paired_delta(vr,same_global,lambda r:r['gradient_cosine']),
+                    'benefit':paired_delta(vr,same_global,lambda r:float(r['det_loss_delta_sem1']<0)),
+                    'norm_matched_benefit':paired_delta(nr,norm_rows(same_global),lambda r:float(r['det_loss_delta_sem1']<0)),
+                    'norm_matched_loss':paired_delta(nr,norm_rows(same_global),lambda r:r['det_loss_delta_sem1'])}
             groups[case][v]=g
         print(f'Analyzed {case}',flush=True)
     payload={'groups':groups,'source_revision':env['source_revision'],
@@ -134,6 +144,18 @@ def main():
             if 'paired_region_vs_uniform' in g:
                 d=g['paired_region_vs_uniform']
                 lines.append(f"| {c} | {v} | {interval(d['cosine'])} | {interval(d['benefit'],100)} | {interval(d['loss_delta'])} |")
+    lines+=['','## Visual representation with text choice held fixed','',
+        'Local generic compares with global generic; local oracle compares with global oracle. '
+        'Both sides of the last two columns use the same global-generic target norm. '
+        'These controls distinguish a visual-representation effect from privileged text selection.','',
+        '| Group | Variant | Reference | Δcosine [95% CI] | Δprimary benefit pp [95% CI] | Δnorm-matched benefit pp [95% CI] | Δnorm-matched loss [95% CI] |',
+        '|---|---|---|---:|---:|---:|---:|']
+    for c,vg in groups.items():
+        for v,g in vg.items():
+            if 'paired_vs_matching_global' in g:
+                d=g['paired_vs_matching_global']
+                lines.append(f"| {c} | {v} | {d['reference']} | {interval(d['cosine'])} | "
+                    f"{interval(d['benefit'],100)} | {interval(d['norm_matched_benefit'],100)} | {interval(d['norm_matched_loss'])} |")
     lines+=['','## Patch support and contribution','',
         'Object support is any positive predicted-box overlap in the CLIP crop, not GT objects. Region '
         'background loss is zero by construction except empty-region uniform fallback. Gradient partitions '

@@ -44,3 +44,7 @@
 [2026-09-12 05:11:14 +08:00] T004 full real-model suite42 passed8.52s;2-image/72-observation/all-evaluation smoke20260912-050701 exit0,27.5378s. Report pipeline passed on smoke; analysis-related3 tests passed5.89s. Smoke receipt checks phi0,patch weight sums,norm-matched target norms pass. No failures or scientific-setting changes. Preparing fixed200 run.
 
 [2026-09-12T05:14:35+08:00] T004 full run20260912-051214-taisp-t004-coco200 active;release20260912-051210-taisp-t004-full,source4817825. Fresh42 real tests passed8.17s,first4/200 images52.3s. Recovery in T004_handoff.md. Memory reporting explicitly scoped to adaptation-phase peak; original detector inference peak not separately recorded; no run change.
+
+[2026-09-12T06:04:16+08:00] T004 full run20260912-051214-taisp-t004-coco200 finished200 images/7200 observations/72 AP evaluations at05:56:05+08,exit0,2612.53855s. All raw receipts fetched; count/zero-phi0/shared-gdet/norm-match/patch-weight audit passed. Raw JSONL96709726 bytes fits GitHub limit and is retained without compression. Final paired analysis running.
+
+[2026-09-12T06:06:49+08:00] T004 postprocessing added Stage C matched-text global controls for all local variants (generic/global_generic and oracle/global_oracle, primary and norm-matched). This separates privileged direction choice from visual representation; no data/model/protocol change. Three focused paired/norm/partition tests passed6.85s. Recomputing report; no experiment rerun.
