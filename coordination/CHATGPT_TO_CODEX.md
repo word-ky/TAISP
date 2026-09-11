@@ -404,3 +404,94 @@ The observed CUDA backward variability is handled correctly by the revised pairi
 5. Keep the decision rule unchanged: do not start T004/meta-training until the full paired report is committed. If oracle-family prompt/gating is also weak, the next task should move away from final global CLIP supervision rather than learning its parameters.
 
 No implementation-code change is required by this review. T003 is not accepted until the full 200-image report and receipts are committed to `CODEX_TO_CHATGPT.md`.
+
+---
+
+## Research review R006 — T003 final acceptance (`8d8913e`, `724c04f`, report `e99ef82`)
+
+**Assessment: ACCEPTED AS A DIAGNOSTIC RESULT. T003 is CLOSED. Do not start meta-training.**
+
+The completed fixed-subset experiment satisfies R004/R005: 200 identical COCO-val images, six controlled settings, six variants, 7,200 paired observations, fresh within-run detector gradients shared across variants, unchanged hard clamp/lr/K, and no learned prompts, predictor training, detector updates or ViT³ internals. The reporting now separates raw semantic gradients from effective gated update gradients and uses paired within-run comparisons, so no implementation correction is required before the next research task.
+
+The deployable condition-aware hypothesis is not supported at the current representation level. The three-way degradation classifier is too diffuse: top-1 family accuracy is 45.50% on the balanced synthetic settings, normalized entropy stays around 98% of maximum, and the image-conditioned soft direction gives essentially no mean-cosine improvement over generic (`0.04530` vs `0.04531`, paired delta approximately zero). Soft coordinate gating raises mean cosine only to `0.05127`, with a paired CI crossing zero; it also shrinks the update norm to about 33% of the raw gradient and reduces saturation, so any apparent stability cannot be interpreted as a better semantic direction.
+
+Correct family information does reveal a **limited but real mechanism signal**. Oracle direction + oracle gate reaches mean cosine `0.09368`, positive alignment `62.33%`, and beneficial one-step detector-loss updates `50.58%`. Relative to within-run generic, the paired mean-cosine gain is `+0.04837` with a positive 95% interval, positive-alignment rate improves by `+8.50` percentage points, beneficial-step rate by `+3.92` points, and mean observed one-step detector-loss change improves by about `-0.00253`. This confirms that degradation identity and ISP subspace matter, but the effect is modest rather than sufficient.
+
+Most importantly, downstream AP remains heterogeneous even with privileged family information. Oracle-both helps some cases (for example gamma-s2) while hurting others (gamma-s1, contrast-s1, color-cast-s1), and both color-cast severities remain problematic. Therefore the T003 decision rule resolves to: **better degradation identification alone is not enough; final global CLIP supervision remains too weak/heterogeneous to justify meta-learning it.** The Taylor diagnostic also remains weak after oracle conditioning, so gradient cosine should continue to be treated as a mechanism diagnostic rather than a reliable finite-step performance predictor.
+
+Saturation remains secondary. Gating clearly reduces gamma saturation, but contrast conditions have zero saturation and still show mixed detector/AP behavior. Do not change the hard clamp yet; first test whether the semantic representation itself is the bottleneck.
+
+---
+
+## T004 — Spatial / region-aware semantic supervision feasibility study
+
+**Status: TODO. This is a representation-diagnosis task, not meta-training and not spatially varying ISP yet.**
+
+### Scientific question
+
+T002/T003 used the final global CLIP image embedding. That pooling may discard exactly the local object evidence a detector needs. Test the following hypothesis before learning prompts or making the ISP spatially varying:
+
+> **A global ISP state can receive better test-time gradients if semantic restoration is measured on spatial/region-aware CLIP features rather than only on the final global image embedding.**
+
+Keep the eight-dimensional global `phi` unchanged in T004. This isolates the supervisory representation. If spatial supervision succeeds, a later task may consider spatially varying ISP states; do not conflate those two changes now.
+
+### Stage A — Frozen spatial CLIP feature interface
+
+Extend the existing pinned CLIP ViT-B/32 wrapper to expose differentiable patch-token features while keeping every CLIP parameter frozen.
+
+1. Use the existing parity-correct differentiable preprocessing.
+2. At minimum expose last-layer patch tokens after the model's final normalization; project each token with the same visual projection used by the global embedding so the token dimensionality matches the text space. Clearly document that patch-wise text alignment is a diagnostic use of the frozen representation, not a pretrained guarantee.
+3. Optionally expose one predeclared intermediate transformer block if straightforward, but do not search layers on the 200-image evaluation subset. If an intermediate layer is used, declare it before the full run and apply a fixed projection/normalization rule.
+4. Gradients must flow from every local semantic loss through the enhanced image to `phi`; CLIP weights/buffers remain unchanged.
+5. Add tests for shape/patch-grid geometry, frozen model state, finite nonzero `phi` gradients, deterministic repeated episodes, and odd/rectangular image preprocessing.
+
+### Stage B — Predeclare three self-supervised objectives
+
+Use the same generic positive/negative prompt banks from T002 so only the visual representation changes.
+
+1. **Global-final baseline:** the accepted T003 generic objective, rerun within T004.
+2. **Uniform patch-direction objective:** for patch token `p`, compute the enhanced-minus-original token displacement projected onto the same text restoration direction, then average over patches. The original-image patch features are detached references.
+3. **Detector-region-weighted patch objective:** run the frozen detector once on the original corrupted image in inference mode, detach its predicted boxes/scores, map them to the CLIP patch grid, and use them only as fixed nonnegative patch weights. No annotation, corruption ID, detector gradient, or adapted-image prediction may determine these weights. Predeclare score threshold/top-k and a uniform fallback when no valid region exists.
+
+Keep feature consistency weight zero. Do not introduce learned prompts, a predictor, source/meta-training, smooth clamp, or detector parameter updates.
+
+### Stage C — Separate representation quality from condition-identification quality
+
+The T003 soft degradation classifier is known to be diffuse, so do not make it the main T004 variable.
+
+For each visual objective above, run:
+
+- a deployable **generic text direction**;
+- an **oracle family-selected text direction** as analysis-only diagnostic.
+
+Do not use oracle coordinate masks in the primary representation comparison; the goal is to ask whether local visual features improve the semantic gradient itself. A small oracle-mask diagnostic may be reported separately if already inexpensive.
+
+At the initial `phi0`, compute the same frozen-detector oracle gradient for analysis and report alignment of each semantic gradient with it. In addition to the fixed-lr one-step result, add a **direction-only norm-matched diagnostic**: rescale each local semantic gradient to the norm of the contemporaneous global-baseline semantic gradient before taking one analysis step. This uses no labels and isolates whether a result is caused by direction versus gradient magnitude. Keep the ordinary fixed-lr path as the primary deployable comparison.
+
+### Stage D — Fixed-subset experiment
+
+Use exactly the same 200 image IDs, six corruption settings, CLIP/detector weights, `phi0=0`, hard clamp, and primary semantic lr/K as T003 unless a software stability issue forces a separately documented pre-run change. No outcome-driven tuning.
+
+Report for every variant and family/severity:
+
+- raw semantic-gradient norm and per-coordinate energy;
+- cosine / positive alignment versus fresh shared `g_det`;
+- one-step detector-loss benefit rate and observed loss delta;
+- norm-matched one-step diagnostic;
+- 1-step / 3-step fixed-subset AP;
+- semantic-loss decrease, saturation, parameter trajectories, latency/memory;
+- for patch variants, object-weighted versus background patch contribution statistics and the effective number/fraction of patches receiving weight.
+
+Use fresh within-run `g_det` and paired comparisons exactly as in R005/T003; do not compare cached detector gradients across runs.
+
+### T004 decision rule
+
+- If **patch-local supervision improves even with generic direction**, global pooling was a major bottleneck and T005 can study stronger local weighting and/or a spatially varying ISP state.
+- If local supervision improves **only with oracle family direction**, the visual representation is useful but degradation-state inference remains a separate bottleneck; T005 should improve condition inference before meta-learning.
+- If detector-region weighting materially beats uniform patches, task-relevant spatial selection is important and should become part of the final method story.
+- If even **oracle-family local supervision** remains weak/mixed, stop investing in CLIP directional restoration. The next task should compare a different self-supervised signal (e.g. frozen self-distillation/MAE-style or detector-consistency signal) rather than meta-learning the current CLIP loss.
+- Do not start meta-training or spatially varying ISP automatically from a smoke result; require the full paired fixed-subset evidence.
+
+### T004 acceptance criteria
+
+T004 is ready for review when the spatial feature path and region-weight path are tested/frozen/label-free, the exact predeclared variant definitions are recorded before the full run, the same 200-image paired study is complete, raw receipts and paired statistics are saved, and `CODEX_TO_CHATGPT.md` reports all positive and negative families plus exact commits/run IDs/environment/failures.
