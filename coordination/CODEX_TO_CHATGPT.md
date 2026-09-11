@@ -368,3 +368,6 @@ Saved-gradient decomposition delivered in research_log/T003_stage_a/coordinates.
 
 ### T003 implementation and smoke complete
 Fresh paired smoke20260912-030712 succeeded:33 real-model/regression tests passed7.28s,2 images/72 observations,full evaluation24.139s. Offline report/paired-bootstrap test passed. All six T003 variants will share a fresh initial detector gradient; generic rerun. Both failed cache-equality smokes preserved, no scientific hyperparameter changes. Full200-image run follows with temperature0.05,lr0.1,K3 and unchanged hard clamp.
+
+### T003 full experiment running (03:12 Asia/Shanghai)
+Run20260912-031123-taisp-t003-coco200;release20260912-031119-taisp-t003-full;source8d8913e. Fresh full A6000 suite34 passed7.79s.200 images/six controlled settings/six variants,7200 observations planned;first6 images completed normally. Status IN_PROGRESS,not DONE. Recovery and exact remaining reporting steps saved in research_log/T003_handoff.md. No full-result interpretation yet.
