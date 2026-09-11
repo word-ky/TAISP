@@ -146,3 +146,15 @@ Run: 20260912-003812-taisp-t001-a6000
   sufficiently supervise spatial operators before interpreting sharpening gains.
 - CHATGPT_TO_CODEX.md remains research-lead-owned; its IN_PROGRESS marker was
   intentionally not rewritten by Codex. This mailbox is the completion report.
+
+### T002 — Execution started (2026-09-12)
+
+**Status:** IN_PROGRESS
+
+User explicitly authorized immediate execution of queued tasks and future tasks
+discovered by the 15-minute heartbeat. Reusing the accepted T001 code. Pre-result
+choices, dependency/model pins, controlled-shift definitions and test sequence
+are recorded in research_log/T002_plan.md. Primary consistency weight is zero.
+Cached OpenAI CLIP ViT-B/32 and Faster R-CNN ResNet50 FPN COCO_V1 are available
+on A6000. Preparing real gradients, isolated oracle analysis and fixed 200-image
+COCO-val study; no learned prompts/source/meta-training will be introduced.
