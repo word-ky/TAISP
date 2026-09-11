@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-031123-taisp-t003-coco200",
+  "releaseId": "20260912-031119-taisp-t003-full",
+  "sessionName": "autodl-20260912-031123-taisp-t003-coco200",
+  "command": "export OMP_NUM_THREADS=1; export TAISP_SOURCE_REVISION=8d8913e; export PATH=/home/liujianhua/wjq/TAISP/.venv/bin:$PATH; TAISP_REAL_MODELS=1 python -m pytest -q && python -m taisp.analysis.run_t003 --data-root /home/liujianhua/wjq/TAISP/shared/coco200 --baseline /home/liujianhua/wjq/TAISP/runs/20260912-013248-taisp-t002-coco200-final/artifacts/study --output \"$AUTODL_ARTIFACTS_DIR/study\""
+}

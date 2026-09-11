@@ -1,4 +1,17 @@
-# T003 active experiment handoff
+# T003 experiment handoff — FINAL UPDATE
+
+2026-09-12: T003 completed, NEEDS_REVIEW. No active experiments. Run below ended
+03:45:51+08,exit0,200 images/7200 rows,2049.095 seconds. R00543fa056 reporting
+requirements complete; final report T003_report.md and full CODEX_TO_CHATGPT entry
+supersede the historical active-run notes below. Analysis source724c04f.
+Final real suite34 passed7.79s; R005 focused analysis2 passed1.18s; full receipt
+audit passed (counts, zero phi0, shared g_det/loss, masked gradient equation).
+Raw samples exceed GitHub100MB limit: lossless samples.jsonl.gz tracked and
+round-trip/SHA verified; raw remains local and remote. ARCHIVE.md explains recovery.
+Await research lead review or a new explicit task; do not duplicate this run or
+start meta-training. See final report for paired findings and negative families.
+
+## Historical launch notes
 
 Updated 2026-09-12 03:12 Asia/Shanghai. Status IN_PROGRESS, not DONE.
 

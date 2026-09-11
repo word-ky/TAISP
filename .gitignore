@@ -5,3 +5,5 @@ __pycache__/
 build/
 dist/
 .autodl/
+# T003 raw JSONL exceeds GitHub's file limit; tracked lossless .jsonl.gz beside it.
+/research_log/remote_runs/20260912-031123-taisp-t003-coco200/artifacts/study/samples.jsonl
