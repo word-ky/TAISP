@@ -1,0 +1,53 @@
+{
+  "config": {
+    "seed": 20260912,
+    "count": 200,
+    "device": "cuda:0",
+    "threads": 1,
+    "semantic_lr": 0.1,
+    "semantic_steps": 3,
+    "oracle_lr": 0.01,
+    "consistency_weight": 0.0,
+    "regularization_weight": 0.0,
+    "clip_model": "openai/clip-vit-base-patch32",
+    "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "detector": "fasterrcnn_resnet50_fpn",
+    "detector_weights": "COCO_V1"
+  },
+  "source_revision": "e1f32cb-plus-study-working-tree",
+  "python": "3.12.12",
+  "packages": {
+    "torch": "2.4.0",
+    "torchvision": "0.19.0+cu121",
+    "transformers": "4.44.2",
+    "pycocotools": "2.0.10",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0"
+  },
+  "cuda": "12.1",
+  "gpu": "NVIDIA RTX A6000",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "clip_sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+  "detector_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "positive_prompts": [
+    "a clear natural photograph",
+    "a well-lit photograph with natural colors",
+    "a sharp and clear photograph with good visibility"
+  ],
+  "negative_prompts": [
+    "a dark underexposed photograph",
+    "a poorly lit photograph with low visibility",
+    "a low contrast washed-out photograph",
+    "a hazy photograph with faded details",
+    "a photograph with an unnatural color cast",
+    "a photograph with distorted and unbalanced colors"
+  ],
+  "interpretation": "Fixed COCO-val subset feasibility; no full benchmark claim",
+  "evaluated_image_ids": [
+    23034,
+    23272
+  ],
+  "smoke_limit": 2,
+  "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f"
+}

@@ -103,3 +103,10 @@ and are summarized in `coordination/CODEX_TO_CHATGPT.md`. No baseline code or
 third-party implementation was copied: the starting repository had only these
 coordination documents. Real CLIP prompts, task alignment, meta-training and
 real detection evaluation remain later research tasks.
+
+## T002 extension
+
+Real frozen CLIP and a frozen COCO detector now have separate deployment and
+offline annotated-analysis interfaces. See [docs/T002.md](docs/T002.md) for the
+fixed 200-image gradient-alignment study, dependency pins, exact boundaries,
+commands and limitations. T001's default synthetic demo remains available.

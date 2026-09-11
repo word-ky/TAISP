@@ -1,0 +1,13 @@
+seed: 20260912
+count: 200
+device: cuda:0
+threads: 1
+semantic_lr: 0.1
+semantic_steps: 3
+oracle_lr: 0.01
+consistency_weight: 0.0
+regularization_weight: 0.0
+clip_model: openai/clip-vit-base-patch32
+clip_revision: 3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268
+detector: fasterrcnn_resnet50_fpn
+detector_weights: COCO_V1
