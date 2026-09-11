@@ -158,3 +158,5 @@ are recorded in research_log/T002_plan.md. Primary consistency weight is zero.
 Cached OpenAI CLIP ViT-B/32 and Faster R-CNN ResNet50 FPN COCO_V1 are available
 on A6000. Preparing real gradients, isolated oracle analysis and fixed 200-image
 COCO-val study; no learned prompts/source/meta-training will be introduced.
+
+T002 Stages A/B: real CLIP gate 3 passed in 3.09s; real detector/oracle gate 2 passed in 4.12s. CLIP/detector parameters remain frozen, image/phi gradients pass, oracle RNG and model state checks pass. Fixed 200 COCO-val images prepared. CUDA bicubic-backward numerical nondeterminism (~1e-10) is documented in T002_plan; episode initial state remains exact.
