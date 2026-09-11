@@ -359,3 +359,6 @@ Three disclosed implementation observations:
 
 ## T003 — IN_PROGRESS (2026-09-12)
 R004 synced; T002 closed. Baseline regression:27 real-model tests passed on A6000 (6.24s),12 focused local tests passed (7.43s). Pre-run formulas/prompts/temperature0.05/masks and comparisons recorded in research_log/T003_plan.md. Stage A will reuse final T002 receipts; all deployment conditioning is image-only and detached. No meta-training or output-map changes.
+
+### T003 Stage A completed
+Saved-gradient decomposition delivered in research_log/T003_stage_a/coordinates.md and coordinates.json. Overall outside-subspace norm fraction0.8244, energy0.7205; full signed contributions/sign agreement/energy and initial/post-step saturation strata retained. This is descriptive, not causal. Hand-computed coordinate/saturation test passed. Proceeding with unchanged predeclared Stage B/C settings.

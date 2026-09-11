@@ -20,3 +20,5 @@
 [2026-09-12 01:46:19 +08:00] T002 final run 20260912-013248-taisp-t002-coco200-final exit0: 200 images/1200 observations,499.2096s. R003 postprocessing complete; overall cosine0.04530, positive alignment53.83%, semantic step detector-loss decrease47.58%; Taylor sign agreement54.75% (CI52.00-57.25), Spearman0.153 (CI0.094-0.213). AP mixed; no meta-training recommendation. Full report/receipts prepared; status NEEDS_REVIEW.
 
 [2026-09-12 02:56:10 +08:00] Synced R004 edf75c0: T002 accepted/closed; T003 directly started. Baseline A6000 suite27 passed6.24s; local12 passed7.43s. Fixed prompts/temperature0.05/masks/comparisons recorded in T003_plan.md before new experiments.
+
+[2026-09-12 02:59:04 +08:00] T003 Stage A complete from1200 saved T002 observations; hand-computed decomposition test1 passed0.38s. Overall outside-subspace norm0.8244, outside energy0.7205. Full per-coordinate and joint saturation strata saved research_log/T003_stage_a/coordinates.{json,md}; no GPU rerun.
