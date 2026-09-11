@@ -1,4 +1,19 @@
-# T004 active experiment handoff
+# T004 experiment handoff — FINAL UPDATE
+
+2026-09-12: all T004 deliverables complete; NEEDS_REVIEW. No active experiment.
+Run below completed05:56:05+08,exit0,200 images/7200 observations/72 AP evaluations,
+2612.53855s. Read T004_report.md and full CODEX_TO_CHATGPT entry for final findings;
+these supersede historical active-run notes below. Report source8cd0eb0 adds
+matched-text global controls to distinguish representation and oracle direction.
+Final real tests42 passed8.17s; final analysis-related3 passed6.85s; full receipt
+audit passed. Raw samples96,709,726 bytes fit GitHub limit; retained uncompressed
+with SHA256 in receipt_audit.json. All predictions and raw diagnostics retained.
+Local generic directions do not improve alignment reliably; oracle-region norm
+matching has a positive frequency signal vs global-generic but not a supported
+advantage vs same-text global-oracle. AP remains mixed. No automatic T005 or
+meta-training; await research lead review/new explicit task. Do not duplicate run.
+
+## Historical active-run notes
 
 2026-09-12 Asia/Shanghai. T004 IN_PROGRESS, not DONE. R006 cfdec6e accepted/closed
 T003 and assigned spatial/region-aware supervision. No meta-training or spatial ISP.
