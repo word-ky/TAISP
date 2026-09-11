@@ -43,5 +43,10 @@ def test_real_clip_frozen_image_phi_gradients_and_episode_reset():
     first = adapt(x.detach(), isp, guidance, config=config)
     adapt(x.detach() * 0.9, isp, guidance, config=config)
     repeat = adapt(x.detach(), isp, guidance, config=config)
-    torch.testing.assert_close(first.phi, repeat.phi, atol=0, rtol=0)
+    # CUDA antialiased bicubic backward is not bitwise deterministic (PyTorch
+    # 2.4 raises for this op under deterministic_algorithms). Episode initial
+    # states must be exact; updates allow only small floating-point noise.
+    torch.testing.assert_close(first.phi0, repeat.phi0, atol=0, rtol=0)
+    torch.testing.assert_close(first.phi0, torch.zeros_like(first.phi0), atol=0, rtol=0)
+    torch.testing.assert_close(first.phi, repeat.phi, atol=1e-8, rtol=1e-5)
     torch.testing.assert_close(isp.phi, torch.zeros_like(isp.phi))

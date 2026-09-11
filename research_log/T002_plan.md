@@ -54,3 +54,14 @@ are retained. No learned prompts/predictor/source/meta-training.
 Remote inventory found cached CLIP and detector weights; initial depth-limited
 search did not find COCO val annotations. Data will be obtained from official
 COCO endpoints if no reusable complete copy is available.
+
+01:04 implementation observation: real CLIP's frozen weights and image/phi
+gradients passed. An initially bitwise-exact CUDA episode-output assertion failed
+at max difference 8.15e-10. A no-intervening-episode reproducer also differs by
+2.91e-10 with deterministic cuDNN; deterministic_algorithms with configured
+CuBLAS explicitly identifies upsample_bicubic2d_aa_backward_out_cuda as lacking
+a deterministic implementation. Corrected the test contract to exact zero
+episode initialization plus numerical update reproducibility (atol=1e-8,
+rtol=1e-5). Tensor preprocessing forward remains deterministic. This is a
+documented CUDA numerical limit, not episode leakage or a near-zero-gradient
+test relaxation. Keep the predeclared tensor bicubic method unchanged.
