@@ -517,3 +517,6 @@ CLIP revision `3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268`; weight SHA256 `a630821
 - Remote experiment artifacts remain in /home/liujianhua/wjq/TAISP/runs/20260912-031123-taisp-t003-coco200/artifacts/study. Reports and recovery notes are mirrored to the remote project research_log.
 - Source changes: conditioned_clip.py, optional gate in adapt.py, run_t003.py/config, coordinate/report scripts and focused tests. All existing model/data/ISP/oracle/evaluator owners were reused. No learned prompts, predictor/source/meta-training, detector updates, smooth clamp or ViT³ structures.
 - T003 status NEEDS_REVIEW. Await research lead acceptance/next explicit task; heartbeat executes newly assigned work directly and avoids rerunning this completed experiment.
+
+## T004 — IN_PROGRESS (R006 accepted)
+T003 closed. Baseline local9 passed10.77s/A6000 real suite34 passed7.69s. Pre-run contract research_log/T004_plan.md fixes last-layer postnorm/projected7x7 CLIP tokens, detector score>=0.5/top20 overlap weights/uniform empty fallback, generic/oracle directions, no masks, lr0.1/K3, original fixed200 IDs, and norm-matched one-step diagnostics. No intermediate layer search or training.
