@@ -1,12 +1,14 @@
 # Current project state
 
-2026-09-12T06:49:43+08:00. T005 IN_PROGRESS. R00724114d2 accepts/closes T004.
-Active run20260912-064836-taisp-t005-coco200,release20260912-064831-taisp-t005-full,source9fb96c1.
-Full51-test suite then fixed200images/5600observations/63APevals (inclclean).
-Read T005_handoff.md and T005_plan.md; do not duplicate run or tune settings.
-Prior smoke50real tests87.80s,2images56observations27.37618s,exit0,report/auditpass.
-Full report pending. No meta-learning/spatialISP/detector updates.
-AllT001-T004 accepted/closed. User authorizes direct queued-task execution and
-15-minute heartbeat. Remote /home/liujianhua/wjq/TAISP via .autodl/config.json.
-
-Latest verification:51real tests passed85.36s;first2/200images26.0s. Run active.
+2026-09-12T07:44:02+08:00. T005 all deliverables complete, NEEDS_REVIEW pending research acceptance.
+No active experiment. R00724114d2 accepted/closed T004; T001-T004 all accepted.
+Run20260912-064836-taisp-t005-coco200 finished200images/5600rows/63APevals,
+exit0at07:33:51+08,2619.637s; release20260912-064831-taisp-t005-full,source9fb96c1.
+51real tests passed85.36s; full receipts audited; raw50.8MB retained uncompressed.
+Read T005_report.md and T005_handoff.md. Detector-native mean cosine0.118-0.124
+vsCLIP0.045; paired positive cosine effect, modest norm-matched benefit gains,
+primary benefit CIs cross0 and AP mixed. Stable/JS extra advantage unsupported.
+Clean AP not harmed on this subset, but clean phi changes larger. No meta-training.
+Await explicit next task; do not rerun completed T005 based on stale queue TODO.
+User authorizes direct queued-task execution and15minute heartbeat.
+Remote /home/liujianhua/wjq/TAISP via .autodl/config.json.

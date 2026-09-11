@@ -60,3 +60,9 @@
 [2026-09-12T06:49:43+08:00] Launched T005 full run20260912-064836-taisp-t005-coco200,release20260912-064831-taisp-t005-full,source9fb96c1. Fresh51tests before fixed200study withclean control. Active recovery in T005_handoff.md; no duplicate/tuning.
 
 [2026-09-12T06:51:12+08:00] T005 full run20260912-064836 passed51real tests85.36s;first2/200images complete26.0s, no blocking error. Active state mirrored remote. No intervention/tuning/duplicate.
+
+[2026-09-12T07:38:49+08:00] T005 full run20260912-064836 completed200images/5600observations at07:33:51+08,exit0. No active experiment. Fetching packed raw receipts for final paired/clean/support analysis.
+
+[2026-09-12T07:44:02+08:00] T005 final paired/clean/support analysis complete,NEEDS_REVIEW. Mean cosine0.04532/0.11757/0.12431/0.12271; allnative paired cosine CIs positive. Raw benefit46.83/50.25/50.00/50.17%, differencesCIcross0; norm-matched improvements3.17-3.75pp positive exploratoryCIs. APmixed; cleanAPpositive but largerphi; stable/JS incremental benefit unsupported. Full rawauditpassed5600rows63metrics,fallbackzero. Raw50817303bytesSHA87554e26f6452d2063e92a50fb27d4cb9dcd5931dfd62942f48b6fac47e7bd87. Report/figure complete, no active run or meta-training.
+
+[2026-09-12T07:45:09+08:00] Final report remote mirror tar initially refused writing through research_log/remote_runs symlink (invalid cross-device link). Re-extracted generated artifacts to actual runs target via archive path transform; succeeded. Raw SHA matches local. No experiment/data change.

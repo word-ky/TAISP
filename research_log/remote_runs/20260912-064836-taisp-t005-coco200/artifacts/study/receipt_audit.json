@@ -1,0 +1,20 @@
+{
+  "images": 200,
+  "rows": 5600,
+  "groups": 28,
+  "rows_per_group": 200,
+  "AP_evaluations": 63,
+  "exact_shared_gdet_loss_support": true,
+  "zero_phi0": true,
+  "weights_normalized": true,
+  "norm_matched_nonzero_pass": true,
+  "fallback_zero_phi_and_gradient_pass": true,
+  "fallback_by_variant": {
+    "det_pseudo": 4,
+    "det_stable": 6,
+    "det_stable_js": 6
+  },
+  "fallback_max_abs_detector_loss_delta": 0.0,
+  "raw_bytes": 50817303,
+  "raw_sha256": "87554e26f6452d2063e92a50fb27d4cb9dcd5931dfd62942f48b6fac47e7bd87"
+}
