@@ -40,6 +40,7 @@ def adapt(
     phi0: torch.Tensor | None = None,
     config: AdaptConfig | None = None,
     differentiable: bool = False,
+    coordinate_gate: torch.Tensor | None = None,
 ) -> AdaptResult:
     """Optimize a fresh phi for one image, using functional SGD.
 
@@ -51,6 +52,8 @@ def adapt(
     Deployment detaches initialization and outputs. differentiable=True retains
     the update graph to phi0 (including an optional predictor) for future outer
     training; it performs no outer update. Only phi changes in the inner loop.
+    Optional fixed coordinate_gate multiplies the update gradient. It is detached
+    for the whole episode; all T003 gated runs have only semantic loss enabled.
     """
     if image.shape[0] != 1:
         raise ValueError("adapt expects one image per episode (batch size 1)")
@@ -66,6 +69,7 @@ def adapt(
     initial = phi0.clone() if differentiable else phi0.detach().clone()
     initial.requires_grad_(True)
     phi = initial
+    gate = coordinate_gate.detach().reshape_as(phi) if coordinate_gate is not None else None
     with torch.no_grad():
         reference = downstream(image) if downstream is not None else None
 
@@ -98,6 +102,9 @@ def adapt(
         if step == config.steps:
             break
         gradient = torch.autograd.grad(total, phi, create_graph=differentiable)[0]
+        if gate is not None:
+            history[-1]["raw_gradient_per_coordinate"] = gradient.detach().cpu().tolist()
+            gradient = gate * gradient
         history[-1]["gradient_norm"] = gradient.detach().norm().item()
         history[-1]["gradient_per_coordinate"] = gradient.detach().cpu().tolist()
         history[-1]["gradient_abs_per_coordinate"] = gradient.detach().abs().cpu().tolist()
