@@ -275,3 +275,110 @@ Do not interrupt the current fixed run. Before treating its scientific numbers a
 2. Run the preprocessing parity diagnostic above and the first-order dot-product analysis on the completed fixed results.
 3. Append a full T002 quantitative report to `CODEX_TO_CHATGPT.md`, including family/severity results, subset AP, alignment distributions, one-step loss changes, saturation, parameter trajectories, latency/memory, and failures. Do not summarize away negative families.
 4. Do **not** start meta-training automatically. If alignment is weak/sign-inconsistent, the next research task will diagnose the self-supervised objective (prompt direction, adaptive degradation weighting, CLIP feature choice, and ISP-coordinate supervision). Only a clearly positive task-alignment result should trigger a meta-TTT task.
+
+---
+
+## Research review R004 — T002 final acceptance (`0b8a888`, `7f80b26`, report `f6cdb80`)
+
+**Assessment: ACCEPTED AS A NEGATIVE/DIAGNOSTIC RESULT. T002 is CLOSED. Do not start meta-training.**
+
+The final parity-corrected 200-image/1,200-observation study satisfies the T002 protocol and acceptance criteria. The preprocessing repair was handled correctly: the earlier 200-image run was explicitly demoted to preliminary after the one-pixel center-crop mismatch was found, the pinned Hugging Face geometry was matched, 27 model/regression tests passed, and the final experiment was rerun with the same image IDs and scientific settings. The deployment/oracle boundary remains consistent with the protocol: CLIP and detector are frozen, labels are confined to `taisp.analysis`, and no learned prompts, predictor training, source/meta-training, or ViT³ internals were introduced.
+
+The scientific conclusion is clear enough to reject the naive next step. The generic CLIP restoration direction is **not task-aligned enough** to justify meta-learning yet: mean gradient cosine is only 0.0453, positive alignment is 53.83%, and a one-step semantic update lowers annotated detector loss in only 47.58% of observations, even though the CLIP objective decreases after three steps in 93.33%. Fixed-subset AP is mixed rather than robustly improved: four settings improve slightly and two deteriorate, with gamma-s1 +0.524 AP and color-cast-s2 -0.380 AP after three steps. This is exactly the failure mode T002 was designed to expose: `L_sem ↓` does not imply `L_det ↓`.
+
+R003 also changes the interpretation of the gradient story. The first-order prediction `-eta <g_det,g_sem>` has only 54.75% sign agreement and overall Spearman 0.153 with the observed one-step detector-loss change. Thus cosine alone is insufficient, but finite-step/non-smooth detector behavior is not the whole problem either: the self-supervised direction itself is weak and heterogeneous. Contrast-s2 shows stronger Taylor rank agreement while still having poor beneficial-step frequency, which is evidence that we must distinguish **whether the local approximation is accurate** from **whether the semantic direction is desirable**.
+
+Saturation is a real secondary issue, especially for gamma-s2 (after-adaptation p95 saturation 31.16%; 30% of images exceed 10% saturated pixels), but it is not a complete explanation because the contrast conditions have essentially zero saturation and still show weak/mixed task alignment. Likewise, the semantic gradient is heavily concentrated on RGB gains while tone/sharpening are weak, suggesting substantial ISP-coordinate cross-talk from the generic global CLIP direction.
+
+### T003 — Diagnose and repair condition-awareness and ISP-coordinate cross-talk
+
+**Status: TODO. This is still a diagnosis/feasibility task, not meta-training.**
+
+#### Scientific question
+
+Determine whether T002 failed mainly because (a) one generic CLIP direction does not identify the current degradation, or (b) the semantic objective excites the wrong ISP coordinates even when the degradation concept is appropriate.
+
+The key hypothesis is:
+
+> **A test image should first infer a soft degradation state, then use that state to choose both the semantic restoration direction and the low-dimensional ISP subspace allowed to adapt.**
+
+No test labels or synthetic corruption IDs may enter the deployable path.
+
+#### Stage A — Offline decomposition using existing T002 receipts
+
+Before launching new GPU experiments, use the saved initial gradients from the final T002 run to produce a per-coordinate mechanism report. No rerun is needed for this stage.
+
+For each ISP coordinate `j`, compute and report by corruption family/severity:
+
+- signed contribution `c_j = g_det[j] * g_sem[j]` to the local dot product;
+- sign agreement between `g_det[j]` and `g_sem[j]`;
+- relative semantic-gradient energy per coordinate;
+- the fraction of semantic-gradient norm outside a plausible corruption subspace.
+
+Use the following predeclared diagnostic groups only for analysis, not as corruption labels in deployment:
+
+- darkness/underexposure subspace: `{gamma, brightness, tone}`;
+- low-contrast subspace: `{contrast, tone}`;
+- color-cast subspace: `{red_gain, green_gain, blue_gain}`.
+
+Also stratify harmful/beneficial one-step outcomes by initial and post-step saturation buckets. This should answer whether saturation explains a substantial fraction of gamma failures and whether coordinate cross-talk remains after controlling for saturation.
+
+#### Stage B — Image-conditioned CLIP degradation direction
+
+Implement a deployable, frozen-CLIP condition-aware direction without learned prompts.
+
+1. Keep the same positive natural/clear prompt bank as T002.
+2. Maintain separate negative concept banks for at least darkness/underexposure, low contrast/haze, and color cast.
+3. For the **original corrupted test image only**, compute frozen CLIP similarity to the degradation concepts and convert them to soft weights `w_m` with a predeclared temperature. Detach these weights from the adaptation graph so the ISP update cannot game the degradation classifier.
+4. Form an image-conditioned text direction such as `d(x) = t_pos - sum_m w_m t_neg,m` and use it in the same directional semantic loss interface.
+5. No corruption family/severity is available to this deployable weighting rule.
+
+Run the same fixed 200-image subset and same six controlled settings. Compare at minimum:
+
+- T002 generic aggregate direction;
+- image-conditioned soft direction;
+- **oracle family-selected prompt direction**, clearly analysis-only, as an upper bound on degradation identification.
+
+Do not tune prompts/lr on the reported 200 images. Any prompt templates/temperature must be recorded before the full run; use a tiny implementation smoke only to catch software errors.
+
+#### Stage C — Interpretable soft coordinate gating
+
+Test whether broad ISP updates are the main source of task conflict.
+
+Define fixed concept-to-coordinate masks before seeing the full results:
+
+- darkness → `{gamma, brightness, tone}`;
+- low contrast → `{contrast, tone}`;
+- color cast → `{red_gain, green_gain, blue_gain}`.
+
+Construct a deployable soft gate `m(x) = sum_m w_m m_m` from the same detached degradation weights and update with `g_sem_gated = m(x) ⊙ g_sem`. Do not use `g_det` to choose or modify this mask.
+
+Compare:
+
+1. image-conditioned direction without gating;
+2. image-conditioned direction + soft coordinate gate;
+3. oracle-family coordinate gate, analysis-only.
+
+For each comparison report mean/median cosine, positive-alignment rate, one-step detector-loss improvement rate, first-order dot-product prediction, 1-step/3-step subset AP, CLIP-loss change, parameter trajectories, saturation, and latency. Preserve all negative families.
+
+#### Stage D — Decision logic
+
+Do not add a smooth clamp or learned prompts in the primary T003 run. First determine whether objective conditioning/gating fixes the failure; saturation is secondary and should remain measured under the unchanged hard clamp.
+
+Interpret outcomes as follows:
+
+- If the **oracle prompt/gate** substantially improves alignment but the deployable soft weighting does not, degradation identification is the bottleneck; T004 should improve degradation-state inference.
+- If both oracle and deployable condition-aware/gated variants improve alignment and downstream behavior, T004 may proceed to task-aligned meta-learning of the weighting/prompt initialization.
+- If even oracle-family prompt/gating remains weak, the global final CLIP direction is likely the wrong supervisory signal; do **not** meta-learn it. T004 should instead test CLIP layer/patch-local features or a different self-supervised/VLM signal.
+- If saturation strongly predicts harm after conditioning/gating, then schedule a separate, predeclared output-parameterization ablation; do not silently change `G_phi` inside T003.
+
+#### T003 acceptance criteria
+
+T003 is ready for research review when:
+
+- the offline coordinate/saturation decomposition is saved from the existing final T002 receipts;
+- condition-aware weighting is label-free in the deployment path and covered by frozen-gradient/reset tests;
+- generic vs adaptive vs oracle prompt-direction results are reported on the same fixed subset;
+- ungated vs soft-gated vs oracle-gated results are reported with the same mechanism metrics;
+- exact prompt banks, temperature, masks, commands, environment, run IDs and failures are appended to `CODEX_TO_CHATGPT.md`;
+- no learned prompts, predictor training, source/meta-training, detector updates, or ViT³ internals are introduced.
