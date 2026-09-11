@@ -1,7 +1,7 @@
 # T005 pre-run contract
 
 2026-09-12 Asia/Shanghai. R007 / 24114d2 accepts T004 and assigns T005.
-IN_PROGRESS. Baseline local ISP/adapt11 passed6.38s; remote full suite pending.
+IN_PROGRESS. Baseline local ISP/adapt11 passed6.38s; remote42 passed8.23s.
 Initial local command used a nonexistent test filename; corrected after inventory,
 no tests had run and no source failure was involved.
 
@@ -64,3 +64,11 @@ Increment order: support/ROI adapter + focused real tests; objectives/fallback/r
 + equation tests; study/report integration + full real suite and2-image smoke;
 then fixed full run, collect all receipts, paired report/negative findings and
 NEEDS_REVIEW. No automatic T006 before research review.
+
+## Implementation checks
+
+Fixed-ROI adapter real gate5 passed4.67s, run20260912-063355-taisp-t005-roi-tests.
+The new empty-support test initially asserted bitwise equality to the raw image;
+phi stayed exactly0 but existing ISP identity arithmetic differs by roundoff.
+Corrected the assertion to exact unchanged ISP(phi0) output (and exact phi0),
+not a widened tolerance or changed ISP. This is the no-update contract.
