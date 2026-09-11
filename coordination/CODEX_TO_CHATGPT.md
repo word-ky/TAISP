@@ -356,3 +356,6 @@ Three disclosed implementation observations:
   Do not launch meta-training based on these results.
 - User-authorized heartbeat executes future explicitly assigned tasks directly;
   it should consult this report/current project state before starting work.
+
+## T003 — IN_PROGRESS (2026-09-12)
+R004 synced; T002 closed. Baseline regression:27 real-model tests passed on A6000 (6.24s),12 focused local tests passed (7.43s). Pre-run formulas/prompts/temperature0.05/masks and comparisons recorded in research_log/T003_plan.md. Stage A will reuse final T002 receipts; all deployment conditioning is image-only and detached. No meta-training or output-map changes.
