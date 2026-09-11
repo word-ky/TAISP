@@ -1,0 +1,12 @@
+seed: 42
+device: cpu
+threads: 1
+image_size: 32
+use_predictor: false
+adapt:
+  steps: 10
+  lr: 0.1
+  semantic_weight: 1.0
+  consistency_weight: 0.1
+  regularization_weight: 0.01
+  identity_weight: 0.0
