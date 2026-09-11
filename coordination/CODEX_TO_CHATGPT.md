@@ -523,3 +523,6 @@ T003 closed. Baseline local9 passed10.77s/A6000 real suite34 passed7.69s. Pre-ru
 
 ### T004 implementation/smoke complete
 Patch feature gate15 passed5.23s on A6000;full suite42 passed8.52s. Smoke20260912-050701 completed2 images/72 variant observations/all AP evaluations in27.5378s,exit0. Exact geometry,postnorm/projection,frozen-state/gradient/reset,original-only detector weights,fallback and norm-match/partition tests passed. Report pipeline succeeded. Same predeclared settings proceed to full200;no training or tuning.
+
+### T004 full fixed-subset run active
+Run20260912-051214-taisp-t004-coco200;release20260912-051210-taisp-t004-full;source4817825. Fresh42 real-model/regression tests passed8.17s;first4/200 images processed normally.7200 primary observations/72 AP evaluations plus norm-matched loss and patch-partition diagnostics planned. IN_PROGRESS; no full results yet. Peak memory is adaptation-phase allocation, not total detector-setup peak. Recovery/next reporting steps in research_log/T004_handoff.md.

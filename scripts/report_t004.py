@@ -151,7 +151,8 @@ def main():
     lines+=['','## Loss, saturation and measured runtime','',
         'Deploy latency adds one original detector inference/map for region variants; the same inference is '
         'used only as an excluded analysis diagnostic for global/uniform variants. All adaptation timing '
-        'includes diagnostics/synchronization and excludes annotated loss/AP/norm-matched/partition work.','',
+        'includes diagnostics/synchronization and excludes annotated loss/AP/norm-matched/partition work. '
+        'Peak memory is adaptation-phase allocated memory; the original detector inference peak was not separately recorded.','',
         '| Group | Variant | Own loss1 / loss3 | Own loss3 decreases | Sat0 / Sat1 / Sat3 | Adapt / deploy seconds3 | Peak MiB |',
         '|---|---|---:|---:|---:|---:|---:|']
     for c,vg in groups.items():
