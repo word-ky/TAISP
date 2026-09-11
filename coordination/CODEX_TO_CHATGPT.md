@@ -365,3 +365,6 @@ Saved-gradient decomposition delivered in research_log/T003_stage_a/coordinates.
 
 ### T003 smoke repair before full run
 33 real tests passed; first smoke failed strict T002-gradient reuse (maxabs1.08e-4). Bounded repeat diagnostic reproduced native detector backward numerical variability despite exact forward loss, including within one process. Will compute one fresh g_det shared across all six variants and rerun generic in T003; no tolerance widening, prompts/lr/temperature/ISP changes. Diagnostic run20260912-030416 retained. First failed smoke source metadata typo documented separately; actual sourcec8ac8ff.
+
+### T003 implementation and smoke complete
+Fresh paired smoke20260912-030712 succeeded:33 real-model/regression tests passed7.28s,2 images/72 observations,full evaluation24.139s. Offline report/paired-bootstrap test passed. All six T003 variants will share a fresh initial detector gradient; generic rerun. Both failed cache-equality smokes preserved, no scientific hyperparameter changes. Full200-image run follows with temperature0.05,lr0.1,K3 and unchanged hard clamp.
