@@ -33,6 +33,16 @@ def summarize_variant(rows, reference, lr):
         'benefit_fraction': float(np.mean([r['det_loss_delta_sem1'] < 0 for r in rows])),
         'own_semantic_decrease3_fraction': float(np.mean([r['semantic_loss_3'] < r['semantic_loss_before'] for r in rows])),
         'taylor': taylor, 'coordinate_decomposition': decomposition(rows), 'saturation_strata': saturation_groups(rows)}
+    raw_rows = [{**r, 'g_sem': r['g_sem_raw']} for r in rows]
+    raw = np.array([r['g_sem_raw'] for r in rows])
+    effective = np.array([r['g_sem'] for r in rows])
+    det = np.array([r['g_det'] for r in rows])
+    raw_norm = np.linalg.norm(raw, axis=1)
+    raw_cos = (raw*det).sum(1)/(raw_norm*np.linalg.norm(det, axis=1))
+    result['raw_coordinate_decomposition'] = decomposition(raw_rows)
+    result['raw_gradient'] = {'cosine_mean': float(raw_cos.mean()), 'cosine_median': float(np.median(raw_cos)),
+        'positive_fraction': float((raw_cos > 0).mean()), 'norm_mean': float(raw_norm.mean()),
+        'effective_to_raw_norm_ratio_mean': float((np.linalg.norm(effective, axis=1)/raw_norm).mean())}
     for field in ('semantic_loss_1', 'semantic_loss_3', 'generic_semantic_loss_1', 'generic_semantic_loss_3',
                   'det_loss_delta_sem1', 'det_loss_delta_sem3', 'saturation_before', 'saturation_1', 'saturation_3',
                   'adapt_seconds_3', 'peak_allocated_mb', 'g_sem_norm'):
@@ -45,8 +55,12 @@ def summarize_variant(rows, reference, lr):
     result['raw_phi_trajectory_mean'] = np.array([[d['phi'] for d in r['diagnostics']] for r in rows]).mean(0).tolist()
     result['paired_vs_generic'] = {
         'cosine': paired_delta(rows, reference, lambda r: r['gradient_cosine']),
+        'positive_rate': paired_delta(rows, reference, lambda r: float(r['gradient_cosine'] > 0)),
         'benefit_rate': paired_delta(rows, reference, lambda r: float(r['det_loss_delta_sem1'] < 0)),
         'loss_delta1': paired_delta(rows, reference, lambda r: r['det_loss_delta_sem1']),
+        'saturation1': paired_delta(rows, reference, lambda r: r['saturation_1']),
+        'saturation3': paired_delta(rows, reference, lambda r: r['saturation_3']),
+        'latency3': paired_delta(rows, reference, lambda r: r['adapt_seconds_3']),
     }
     return result
 
@@ -69,6 +83,10 @@ def main():
         reference = [r for r in chosen if r['variant'] == 'generic']
         groups[case] = {v: summarize_variant([r for r in chosen if r['variant'] == v], reference,
                                             env['config']['semantic_lr']) for v in variants}
+        if case != 'overall':
+            for v in variants:
+                groups[case][v]['paired_AP_delta_vs_generic'] = {
+                    f'step{k}': 100*(metrics[f'{case}_{v}{k}']['AP']-metrics[f'{case}_generic{k}']['AP']) for k in (1, 3)}
         print(f'Analyzed {case}', flush=True)
     condition = {}
     for case in cases:
@@ -101,6 +119,13 @@ def main():
     for case in cases:
         cells = [f'{100*metrics[f"{case}_{v}1"]["AP"]:.3f} / {100*metrics[f"{case}_{v}3"]["AP"]:.3f}' for v in variants]
         lines.append(f'| {case} | {100*baseline[case+"_corrupted"]["AP"]:.3f} | '+ ' | '.join(cells)+' |')
+    lines += ['', '### AP differences versus the within-run generic (same fixed image subset)', '',
+        'Subset AP differences in points, without bootstrap intervals; do not treat AP as an average of per-image AP.', '',
+        '| Case | Soft Δ1 / Δ3 | Oracle prompt Δ1 / Δ3 | Soft gate Δ1 / Δ3 | Soft + oracle gate Δ1 / Δ3 | Oracle both Δ1 / Δ3 |',
+        '|---|---:|---:|---:|---:|---:|']
+    for case in cases:
+        cells = [' / '.join(f'{groups[case][v]["paired_AP_delta_vs_generic"][f"step{k}"]:+.3f}' for k in (1, 3)) for v in variants if v != 'generic']
+        lines.append(f'| {case} | '+' | '.join(cells)+' |')
     lines += ['', f'Clean subset AP: {100*baseline["clean"]["AP"]:.3f}. Full AP50/AP75/size metrics are in metrics.json.', '',
         '## Gradient and measured one-step behavior', '',
         'Cosines and Taylor predictions use the effective gated gradient. A smaller gate also shortens '
@@ -122,6 +147,28 @@ def main():
             if v != 'generic':
                 p = g['paired_vs_generic']
                 lines.append(f"| {case} | {v} | {interval(p['cosine'])} | {interval(p['benefit_rate'], 100)} | {interval(p['loss_delta1'])} |")
+    lines += ['', '### Paired alignment-rate, saturation and runtime differences', '',
+        'Rates and saturation are percentage points; latency is seconds. Same paired image-cluster intervals.', '',
+        '| Group | Variant | Δ positive alignment [95% CI] | Δ saturation1 [95% CI] | Δ saturation3 [95% CI] | Δ seconds3 [95% CI] |',
+        '|---|---|---:|---:|---:|---:|']
+    for case, vg in groups.items():
+        for v, g in vg.items():
+            if v != 'generic':
+                p = g['paired_vs_generic']
+                lines.append(f"| {case} | {v} | {interval(p['positive_rate'], 100)} | {interval(p['saturation1'], 100)} | "
+                             f"{interval(p['saturation3'], 100)} | {interval(p['latency3'])} |")
+    lines += ['', '## Raw objective gradient versus effective gated update', '',
+        'Raw gradient energy/cross-talk describes the semantic objective before gating. Effective energy/cosine '
+        'describes the actual update. Both are reported separately; norm ratios show gate-induced step shrinkage.', '',
+        '| Group | Variant | Raw / effective mean cosine | Raw / effective norm | Mean effective/raw norm ratio | Raw / effective outside-subspace energy |',
+        '|---|---|---:|---:|---:|---:|']
+    for case, vg in groups.items():
+        for v, g in vg.items():
+            raw = g['raw_gradient']
+            lines.append(f"| {case} | {v} | {raw['cosine_mean']:.4f} / {g['cosine_mean']:.4f} | "
+                f"{raw['norm_mean']:.5f} / {g['g_sem_norm']['mean']:.5f} | {raw['effective_to_raw_norm_ratio_mean']:.3f} | "
+                f"{100*g['raw_coordinate_decomposition']['outside_energy_fraction_mean']:.2f}% / "
+                f"{100*g['coordinate_decomposition']['outside_energy_fraction_mean']:.2f}% |")
     lines += ['', '## Original-image condition inference (analysis labels only for this table)', '',
         '| Case | Darkness / contrast / color weight | Correct top-1 | Max weight | Normalized entropy |',
         '|---|---:|---:|---:|---:|']
