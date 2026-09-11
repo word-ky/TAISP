@@ -38,8 +38,10 @@ class CLIPTensorPreprocess(nn.Module):
 
     def forward(self, image):
         h, w = image.shape[-2:]
-        scale = self.size / min(h, w)
-        rh, rw = int(h * scale), int(w * scale)
+        # Fix shortest side exactly; float 612 * (224 / 612) rounds below
+        # 224, which would produce a 223x223 crop and the wrong patch count.
+        rh, rw = ((self.size, self.size * w // h) if h <= w
+                  else (self.size * h // w, self.size))
         x = F.interpolate(image, size=(rh, rw), mode="bicubic", align_corners=False, antialias=True)
         top, left = int(round((rh - self.size) / 2)), int(round((rw - self.size) / 2))
         return (x[..., top:top + self.size, left:left + self.size] - self.mean) / self.std

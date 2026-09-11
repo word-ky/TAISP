@@ -26,6 +26,16 @@ def test_tensor_preprocess_constant_color():
     torch.testing.assert_close(preprocess(x), expected)
 
 
+def test_real_coco_square_rounding_regression():
+    # COCO 105335 is 612x612; float multiply-then-int yielded 223x223.
+    preprocess = CLIPTensorPreprocess()
+    x = torch.full((1, 3, 612, 612), 0.5, requires_grad=True)
+    result = preprocess(x)
+    assert result.shape == (1, 3, 224, 224)
+    result.mean().backward()
+    assert torch.isfinite(x.grad).all() and x.grad.norm() > 0
+
+
 @pytest.mark.skipif(os.environ.get("TAISP_REAL_MODELS") != "1", reason="explicit pretrained-model integration run")
 def test_real_clip_frozen_image_phi_gradients_and_episode_reset():
     device = "cuda:0"

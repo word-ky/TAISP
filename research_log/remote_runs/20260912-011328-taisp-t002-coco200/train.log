@@ -1,0 +1,108 @@
+[autodl] run_id=20260912-011328-taisp-t002-coco200
+[autodl] started_at=2026-09-12T01:13:32+08:00
+/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+loading annotations into memory...
+Done (t=0.35s)
+creating index...
+index created!
+completed 1/200 image_id=23034 elapsed=2.8s
+completed 2/200 image_id=23272 elapsed=5.1s
+completed 3/200 image_id=25181 elapsed=7.5s
+completed 4/200 image_id=25228 elapsed=9.9s
+completed 5/200 image_id=25394 elapsed=12.3s
+completed 6/200 image_id=25560 elapsed=14.6s
+completed 7/200 image_id=33221 elapsed=17.0s
+completed 8/200 image_id=33368 elapsed=19.4s
+completed 9/200 image_id=39405 elapsed=21.7s
+completed 10/200 image_id=40036 elapsed=24.1s
+completed 11/200 image_id=42070 elapsed=26.4s
+completed 12/200 image_id=44260 elapsed=28.8s
+completed 13/200 image_id=46872 elapsed=31.3s
+completed 14/200 image_id=50145 elapsed=33.7s
+completed 15/200 image_id=51598 elapsed=36.2s
+completed 16/200 image_id=54593 elapsed=38.6s
+completed 17/200 image_id=57725 elapsed=40.9s
+completed 18/200 image_id=57760 elapsed=43.4s
+completed 19/200 image_id=58655 elapsed=45.8s
+completed 20/200 image_id=60090 elapsed=48.3s
+completed 21/200 image_id=61268 elapsed=50.7s
+completed 22/200 image_id=63047 elapsed=52.9s
+completed 23/200 image_id=63154 elapsed=55.3s
+completed 24/200 image_id=65074 elapsed=57.7s
+completed 25/200 image_id=65288 elapsed=60.2s
+completed 26/200 image_id=70229 elapsed=62.4s
+completed 27/200 image_id=71451 elapsed=65.0s
+completed 28/200 image_id=73702 elapsed=67.3s
+completed 29/200 image_id=75393 elapsed=69.7s
+completed 30/200 image_id=78404 elapsed=72.1s
+completed 31/200 image_id=78959 elapsed=74.7s
+completed 32/200 image_id=79565 elapsed=77.0s
+completed 33/200 image_id=82812 elapsed=79.5s
+completed 34/200 image_id=83172 elapsed=81.9s
+completed 35/200 image_id=86755 elapsed=84.2s
+completed 36/200 image_id=88218 elapsed=86.5s
+completed 37/200 image_id=89556 elapsed=88.9s
+completed 38/200 image_id=99054 elapsed=91.3s
+completed 39/200 image_id=101420 elapsed=93.6s
+completed 40/200 image_id=102331 elapsed=96.0s
+completed 41/200 image_id=102356 elapsed=98.4s
+completed 42/200 image_id=102805 elapsed=100.8s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/liujianhua/wjq/TAISP/releases/20260912-011324-taisp-t002-full/taisp/analysis/run_t002.py", line 197, in <module>
+    main()
+  File "/home/liujianhua/wjq/TAISP/releases/20260912-011324-taisp-t002-full/taisp/analysis/run_t002.py", line 193, in main
+    run(yaml.safe_load(args.config.read_text()), args.data_root, args.output, args.limit)
+  File "/home/liujianhua/wjq/TAISP/releases/20260912-011324-taisp-t002-full/taisp/analysis/run_t002.py", line 127, in run
+    result = adapt(x, isp, guidance, config=settings)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liujianhua/wjq/TAISP/releases/20260912-011324-taisp-t002-full/taisp/tta/adapt.py", line 76, in adapt
+    semantic = semantic_loss(image, enhanced)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liujianhua/wjq/TAISP/releases/20260912-011324-taisp-t002-full/taisp/losses/semantic.py", line 33, in forward
+    reference = self.encoder(original)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liujianhua/wjq/TAISP/releases/20260912-011324-taisp-t002-full/taisp/losses/clip_semantic.py", line 56, in forward
+    return F.normalize(self.model.get_image_features(pixel_values=self.preprocess(image)), dim=-1)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/models/clip/modeling_clip.py", line 1237, in get_image_features
+    vision_outputs = self.vision_model(
+                     ^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/models/clip/modeling_clip.py", line 1029, in forward
+    hidden_states = self.embeddings(pixel_values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/models/clip/modeling_clip.py", line 196, in forward
+    embeddings = embeddings + self.position_embedding(self.position_ids)
+                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RuntimeError: The size of tensor a (37) must match the size of tensor b (50) at non-singleton dimension 1
+[autodl] finished_at=2026-09-12T01:15:19+08:00
+[autodl] exit_code=1
