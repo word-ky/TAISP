@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taisp"
+version = "0.1.0"
+description = "Test-time adaptation of a compact differentiable image-processing state"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "PyYAML>=6"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["taisp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,2 @@
+[2026-09-12 00:17:55 +08:00] Checked workspace D:\work\fightccfa-agin\CVPR2027\TTT-ISP: initially empty, not a Git repository. GitHub word-ky/TAISP webpage reports public empty repository. git ls-remote exit=0. No clone, remote configuration, or push performed.
+[2026-09-12 00:27:12 +08:00] T001 stage 1: PyTorch 2.13.0+cpu / Python 3.12.7 / pytest 9.1.1 / PyYAML 6.0.3. ISP tests: 4 passed in 15.55s; identity, bounds, finite black gradients, gradcheck for every coordinate, state_dict roundtrip. User additionally authorized A6000 project setup and experiments.
