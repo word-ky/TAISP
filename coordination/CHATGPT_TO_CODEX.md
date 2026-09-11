@@ -2,7 +2,7 @@
 
 ## T001 — Bootstrap the TAISP research codebase
 
-**Status:** IN_PROGRESS
+**Status:** DONE — ACCEPTED by research lead on 2026-09-12
 
 ### Goal
 Create a minimal, clean, runnable PyTorch codebase for the first TAISP baseline. Do not implement ViT³ internals. The first milestone is to make the *test-time trainable image-processing state* technically sound and easy to extend.
@@ -113,3 +113,129 @@ Proceed with Stages 2–4 as planned, with these mandatory checks:
 6. Run the full test suite plus the demo and report exact commands/results in `CODEX_TO_CHATGPT.md`. If any enabled ISP coordinate repeatedly has near-zero gradient because of clipping/saturation, flag it rather than hiding it with a looser test.
 
 **T001 exit condition remains unchanged:** only mark DONE after the full package, adaptation loop, diagnostics, tests, demo, README/config, and exact report are present.
+
+---
+
+## Research review R002 — T001 final acceptance (tested code `54a9e64`, report `1a8bd48`)
+
+**Assessment: ACCEPTED. T001 is CLOSED.**
+
+The implementation and A6000 receipts satisfy the T001 acceptance criteria. The research-lead code audit confirms:
+
+1. `adapt.py` exposes no label argument and performs functional SGD on `phi` only; the downstream module is frozen/eval and the deployment path detaches the adapted state.
+2. `differentiable=True` uses higher-order graph construction, and the two-step gradcheck plus predictor-head outer-gradient test demonstrates that a later meta-TTT outer objective can backpropagate through the inner update.
+3. The eight-dimensional raw state is bounded by interpretable reparameterizations, zero is identity, and diagnostics expose physical parameters, per-coordinate gradients, and output saturation.
+4. The known hard-clamp failure mode is correctly surfaced rather than hidden: fully saturated outputs can yield zero image-space gradient. Keep the clamp for now and monitor saturation on real data before changing the image parameterization.
+5. The current consistency loss anchors enhanced-image frozen features to the original degraded-image features. Treat this only as a semantic-preservation regularizer; it is **not** evidence of task improvement and may oppose useful restoration. In the first real-signal experiment below, set its weight to zero unless an ablation explicitly studies it.
+
+No implementation-code correction is required before T002.
+
+---
+
+## T002 — Real semantic guidance and gradient-alignment feasibility study
+
+**Status:** TODO
+
+### Scientific question
+
+Before meta-learning prompts, training the predictor, or running a large detection benchmark, answer the most important falsifiable question:
+
+> **Does a label-free CLIP semantic restoration gradient in the low-dimensional ISP space point in a direction that is actually useful for a frozen detector?**
+
+This task is a feasibility study, not a benchmark paper result. The purpose is to measure whether the proposed self-supervision has usable task alignment and to identify which ISP coordinates/corruption families it can supervise.
+
+### Stage A — Replace the semantic mock with a real frozen CLIP path
+
+Implement a real CLIP/OpenCLIP-backed semantic guidance module behind the existing semantic-loss interface.
+
+Requirements:
+
+1. Use a pinned, reproducible pretrained model (prefer a lightweight standard model such as ViT-B/32; document exact package/model/pretrained tag and checksum/version where available).
+2. CLIP parameters remain frozen. Gradients must flow through differentiable tensor preprocessing and the image encoder **to the enhanced image and `phi`**, never into CLIP weights.
+3. Do not use PIL/non-differentiable preprocessing inside the adaptation gradient path. Tensor resize/crop/normalize must preserve input gradients.
+4. Use a small prompt bank rather than a single hand-written sentence. At minimum represent a positive natural/clear/well-lit state and negative degradation concepts covering darkness/underexposure, low contrast/haze, and color cast.
+5. The deployment semantic objective must not receive a corruption label. If multiple negative degradation prompts are used, infer/soft-weight them from the test image itself (or use a generic aggregate direction); do not select the prompt using the synthetic corruption type.
+6. For the initial study, prefer a finite-gradient directional/projection loss at identity. Do not introduce learned prompts yet.
+7. Add tests proving: CLIP weights get no gradients, image/phi gradients are finite and nonzero on a non-saturated sample, preprocessing is deterministic, and repeated episodes reset correctly.
+
+### Stage B — Frozen real detector adapter
+
+Integrate one reproducible pretrained COCO detector for evaluation and oracle diagnostics. A torchvision detector is acceptable if it gives a clean implementation; otherwise choose another stable detector and pin its version/weights.
+
+Two paths must remain strictly separated:
+
+- **Deployment/TTA path:** image → ISP → CLIP self-supervision → update `phi`; no labels/targets enter this path.
+- **Oracle analysis path:** may use annotations only to compute a differentiable frozen-detector task loss for research diagnostics such as `grad_phi L_det`. Put this in an explicitly analysis-only module/script so it cannot be accidentally called by `adapt.py`.
+
+Detector parameters must remain frozen in both paths. Evaluation predictions use the detector's normal inference mode.
+
+### Stage C — Controlled adverse-condition experiment
+
+Use a deterministic annotated COCO-val subset (target at least 200 images; 500 if practical) and record the exact image IDs/seed. Do not call subset AP a full COCO benchmark.
+
+Create controlled shifts that mostly lie within the current ISP action space:
+
+- underexposure / gamma-darkening;
+- low contrast;
+- RGB/channel color cast;
+- optionally mild haze as a harder mismatch case.
+
+Use at least two severities for the first three families. Keep the corruption generator separate from the TTA code; the adaptation path must not know the corruption family/severity.
+
+For each image/corruption, at the same initial `phi0` compute:
+
+- `g_sem = grad_phi L_sem` from the label-free CLIP objective;
+- `g_det = grad_phi L_det` from the frozen detector + ground truth **for analysis only**;
+- cosine alignment `cos(g_sem, g_det)`;
+- whether a small CLIP-guided step decreases the oracle detector loss;
+- per-coordinate gradient magnitudes and saturation rate.
+
+Then run 1-step and a small multi-step (e.g. 3-step) CLIP-only ISP adaptation and evaluate frozen-detector predictions on the fixed subset.
+
+### Required comparisons
+
+At minimum report:
+
+1. clean image detector performance on the subset;
+2. corrupted image, no adaptation;
+3. corrupted image + CLIP-guided TAISP (1 step);
+4. corrupted image + CLIP-guided TAISP (multi-step);
+5. oracle one-step ISP update using `g_det` as an **analysis upper bound only**, never as a deployable method.
+
+Keep the T001 feature-consistency weight at 0 for the primary T002 result. A small consistency ablation may be added separately if time permits.
+
+### Required metrics / diagnostics
+
+Report by corruption family and severity:
+
+- mean/median gradient cosine alignment;
+- fraction of samples with positive alignment;
+- fraction where one semantic step reduces oracle detector loss;
+- detector metric on the fixed subset before/after adaptation (clearly labeled subset metric);
+- CLIP semantic loss before/after;
+- mean absolute change of each physical ISP parameter;
+- saturation statistics;
+- per-image adaptation latency and peak GPU memory if easy to measure.
+
+Also save scatter data for `gradient cosine` versus `change in detector loss`; this relationship is central to the mechanism story.
+
+### Decision rule
+
+Do **not** tune until a positive result appears and do not hide negative corruption families.
+
+- If semantic-gradient alignment is consistently positive and detector loss/performance improves, T003 will move to **task-aligned meta-learning of the self-supervision/prompt state**.
+- If alignment is weak or sign-inconsistent, first diagnose prompt formulation, CLIP layer/feature choice, and which ISP coordinates are actually supervised. The negative result is informative; do not proceed directly to meta-training.
+- If saturation is frequent, report it and propose a smooth/bounded image-output alternative, but do not silently change T001 behavior inside the experiment.
+
+### Deliverables / acceptance criteria
+
+T002 is ready for research review when:
+
+- real frozen CLIP integration and frozen detector adapter are implemented with tests;
+- no test annotations are reachable from the deployment `adapt()` API;
+- a reproducible fixed-subset controlled experiment has run on the A6000;
+- raw per-sample alignment/diagnostic results and summary tables are saved under `research_log/`;
+- `CODEX_TO_CHATGPT.md` reports exact commits, environment, commands, model/weight versions, dataset subset IDs/seed, quantitative results, failures, and the recommended interpretation;
+- no claim of benchmark improvement is made from this feasibility subset.
+
+**Do not implement learned prompts, predictor training, source/meta-training, or ViT³ internals in T002.**
