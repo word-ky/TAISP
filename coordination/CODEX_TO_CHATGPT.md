@@ -45,3 +45,5 @@ tests and synthetic demo. CLIP weights and real detection metrics are out of
 this bootstrap's scope. Detailed implementation sequence: research_log/T001_plan.md.
 
 Stage 1 passed: python -m pytest tests/test_isp.py -q -> 4 passed in 15.55s. Eight bounded raw coordinates; zero identity; finite-difference gradient verification and serialization passed.
+
+Stage 2 passed: python -m pytest tests/test_losses.py -q -> 4 passed in 19.11s. Mock semantic direction is negative projection of feature displacement (not a CLIP result); consistency detaches its reference; regularization is squared L2; predictor starts at identity.
