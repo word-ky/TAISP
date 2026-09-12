@@ -16,7 +16,8 @@ def main():
     parser.add_argument("--root", type=Path, required=True)
     parser.add_argument("--count", type=int, default=200)
     parser.add_argument("--seed", type=int, default=20260912)
-    parser.add_argument("--exclude-manifest", type=Path)
+    parser.add_argument("--exclude-manifest", type=Path, action="append", default=[])
+    parser.add_argument("--replication-block-size", type=int)
     parser.add_argument("--annotations-from", type=Path)
     args = parser.parse_args()
     args.root.mkdir(parents=True, exist_ok=True)
@@ -32,8 +33,10 @@ def main():
                 annotations.write_bytes(z.read("annotations/instances_val2017.json"))
     data = json.loads(annotations.read_text())
     images = {x["id"]: x for x in data["images"]}
-    excluded = set(json.loads(args.exclude_manifest.read_text())["image_ids"]) if args.exclude_manifest else set()
-    ids = sorted(random.Random(args.seed).sample(sorted(set(images)-excluded), args.count))
+    excluded_sets = [set(json.loads(path.read_text())["image_ids"]) for path in args.exclude_manifest]
+    excluded = set().union(*excluded_sets)
+    selection_order = random.Random(args.seed).sample(sorted(set(images)-excluded), args.count)
+    ids = sorted(selection_order)
     destination = args.root / "val2017"
     destination.mkdir(exist_ok=True)
 
@@ -53,7 +56,15 @@ def main():
                 "images": records}
     if args.exclude_manifest:
         manifest.update(excluded_image_ids=sorted(excluded), overlap_count=len(set(ids)&excluded),
-                        excluded_manifest_sha256=hashlib.sha256(args.exclude_manifest.read_bytes()).hexdigest())
+                        excluded_manifest_sha256=hashlib.sha256(args.exclude_manifest[0].read_bytes()).hexdigest(),
+                        exclusions=[{'manifest': path.name, 'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
+                                     'count': len(old), 'overlap_count': len(set(ids)&old)}
+                                    for path, old in zip(args.exclude_manifest, excluded_sets)])
+    if args.replication_block_size:
+        manifest.update(selection_order=selection_order, replication_blocks={
+            f'block_{i//args.replication_block_size+1}': selection_order[i:i+args.replication_block_size]
+            for i in range(0, len(selection_order), args.replication_block_size)},
+            execution_order='image_ids is sorted; replication_blocks preserve the original random selection order')
     (args.root / "subset.json").write_text(json.dumps(manifest, indent=2) + "\n")
     print(f"Prepared {len(records)} images: {args.root / 'subset.json'}", flush=True)
 

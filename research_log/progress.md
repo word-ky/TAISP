@@ -107,3 +107,7 @@ Full report T008_report.md and raw/CSV/figures in T008/. T008NEEDS_REVIEW: FP co
 ## 2026-09-12T13:23:30+08:00 — T008 delivered
 
 Report/data commit702e5da pushed toGitHubmain. A6000archiveSHA256 9a5d95f35f9926bceffd227bd498d69f35395766f629d7637e0d92b8500f962b matched; remoteanalysis/proxies/pairedhashes and19600/22400rows verified. Durabledata under/home/liujianhua/wjq/TAISP/research_log/T008. Existingtaispheartbeat confirmedACTIVE every15min; no duplicateautomation. No activeexperiment; awaitR011/researchreview.
+
+## 2026-09-12T14:14:29+08:00 — R011/T009 started
+
+Fetched184a3a0/5885716. T008accepted/closed. Baseline3tests pass10.74s,1real skip; cohort extension2tests pass0.57s. Preparing1000 disjoint IDs/JPEGhashes and5random-order blocks before any T009model execution. PlanT009_plan.md; no adaptation changes.
