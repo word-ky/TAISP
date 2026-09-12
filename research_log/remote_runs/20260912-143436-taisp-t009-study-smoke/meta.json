@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-143436-taisp-t009-study-smoke",
+  "releaseId": "20260912-143351-taisp-t009-smoke",
+  "sessionName": "autodl-20260912-143436-taisp-t009-study-smoke",
+  "command": "export TAISP_SOURCE_REVISION=be5c797 TAISP_REAL_MODELS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.run_t009 --data-root /home/liujianhua/wjq/TAISP/shared/coco1000_t009 --limit 2 --output \"$AUTODL_ARTIFACTS_DIR/study\" && /home/liujianhua/wjq/TAISP/.venv/bin/python -m scripts.report_t009 --study \"$AUTODL_ARTIFACTS_DIR/study\""
+}

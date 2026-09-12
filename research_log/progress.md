@@ -127,3 +127,11 @@ Release20260912-142737-taisp-t009-ssd-compat,run20260912-142824-taisp-t009-ssd-c
 ## 2026-09-12T14:33:39+08:00 — SSD compatibility passed
 
 Retry143109:1passed66.32s,4knownwarnings,exit0. ExactCOCO_V1modelhash b556d3b43ab6c3f63d81bfb8835fe8756ac22da664357da100dccf96b6a6b42d,metadata T009_ssd_pin.json; targetisolated and source support/phi/enhanced unchanged. Commitpin before smoke/fullstudy; nextfreshregression plus2imagesmoke.
+
+## 2026-09-12T14:35:42+08:00 — T009 smoke/regression started
+
+Run20260912-143436-taisp-t009-study-smoke,release143351,sourcebe5c797. Fullfreshsuite then2imageK3three-detector/APblocksmoke/report. SSDpinbe5c797 andcohorte98a7fd precede study; exactmethodunchanged.
+
+## 2026-09-12T14:43:08+08:00 — T009 regression/smoke green
+
+Run20260912-143436,sourcebe5c797:70real-model/regressiontests passed183.95s(9knownwarnings);2images42rows84predictionfiles252APevals16.453258s,exit0at14:38:14. Manifest/modelpins/sharedsupport/phi0/all3updates/hybridnormtransfer/terminalno-update audited; maxreconstructednormtransferroundingerror1.31e-8. Smoke signs retained,notusedfortuning. Report-onlypartialcohortcriterion now unassessed(null),figureexplicitlySMOKE; regeneratedreport/plot exit0 andvisualchecked. No adaptation/driver changes after fullsuite; preparingfull1000.

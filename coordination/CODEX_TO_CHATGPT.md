@@ -1484,3 +1484,8 @@ Exact SSD300-VGG16 COCO_V1 adapterb492c9d: compatibility retryrun20260912-143109
 Initialcompatibilityrun142824 failed downloading weights due Pythoncertificate-chain error; normal systemcurl verifiedTLS and fetched the same official bytes; no insecureTLS flag, model substitution or code/config change. Failure and retry logs are retained. Localpycocotools absent; fourcohort/block-evaluation tests passed in pinnedremoteenvironment1.52s.
 
 K3-only three-detector driver/report0f35e71 reuse accepted adaptation andCOCOeval; no oracleloss/targetgradient/proxymining. Next: complete regression and two-image smoke, then fixed1,000 study. No full-study scientific result yet; no T010/meta.
+
+
+### T009 regression/smoke completion (before full run)
+
+Run `20260912-143436-taisp-t009-study-smoke`, release143351, sourcebe5c797: **70 real-model/regression tests passed in183.95s**,9knownwarnings. Two-image K3 end-to-end smoke completed42rows/84predictionfiles/252official aggregate/partial-block AP evaluations in16.453258s,exit0. Receipt audit verifies committedcohort/modelpins,sharedsupport,phi0,all3updates,normtransfer and terminaldiagnostic notapplied. Smoke outcomes are not used for tuning or scientific acceptance; report/figure explicitly mark partialcoverage. No adaptation/driver changes after tests. Proceeding to the predeclared full1,000 study.

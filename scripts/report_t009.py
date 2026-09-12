@@ -52,7 +52,7 @@ def main():
                 'aggregate': contrasts['aggregate'][detector][H][reference]['macro_corruption_AP_delta'],
                 'blocks': block_values, 'positive_blocks': sum(x > 0 for x in block_values.values())}
     full_five_blocks = len(contrasts) == 6 and len(env['evaluated_image_ids']) == 1000
-    criterion = full_five_blocks and all(replication[d]['no_adapt']['aggregate'] > 0 and
+    criterion = None if not full_five_blocks else all(replication[d]['no_adapt']['aggregate'] > 0 and
         replication[d]['det_pseudo']['aggregate'] > 0 and replication[d]['no_adapt']['positive_blocks'] >= 4
         for d in ('target', 'ssd'))
     analysis = {'contrasts': contrasts, 'safety': safety, 'replication': replication,
@@ -81,7 +81,8 @@ def main():
     for detector, refs in replication.items():
         for reference, r in refs.items():
             lines.append(f"| {detector} | {reference} | {r['aggregate']:+.4f} | "+' / '.join(f'{k}: {v:+.4f}' for k, v in r['blocks'].items())+f" | {r['positive_blocks']}/{len(r['blocks'])} |")
-    lines.extend(['', f'Full 1,000-image/five-block coverage: {full_five_blocks}. External AP criterion: {criterion}. Clean outcomes still require review.', '',
+    criterion_text = str(criterion) if full_five_blocks else 'not assessed on a partial/smoke cohort'
+    lines.extend(['', f'Full 1,000-image/five-block coverage: {full_five_blocks}. External AP criterion: {criterion_text}. Clean outcomes still require review.', '',
                   '## Aggregate AP / AP50 / AP75', '', '| Detector | Condition | Method | AP / AP50 / AP75 | AP delta no-adapt / CLIP / raw |', '| --- | --- | --- | ---: | ---: |'])
     for r in rows:
         if r['group'] == 'aggregate':
