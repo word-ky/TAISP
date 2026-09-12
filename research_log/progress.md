@@ -143,3 +143,15 @@ Run20260912-144439-taisp-t009-coco1000,release20260912-144331-taisp-t009-full,so
 ## 2026-09-12T14:48:12+08:00 — T009 launch handoff synchronized
 
 Active-runhandoffcad6205 pushed and mirrored under A6000 projectrootresearch_log/coordination. Verifiedactual started_at14:44:47+08; latest27/1000images elapsed156.2s,normal. Launchreceipt research_log/T009/launch_receipt.json. No finalscientificresultyet; scheduledmonitorcontinues.
+
+## 2026-09-12T16:26:00+08:00 — T009 inference complete, official AP running
+
+Active run20260912-144439 completed1000/1000inference at5913.0s. Exactly21000sample rows and84predictionfiles saved; source/target/SSD aggregate+5block COCOeval stillrunning. Packaging immutable input/trajectory/prediction receipts whileevaluation continues; no protocolchanges or scientificconclusion frompartialmetrics.
+
+## 2026-09-12T16:36:30+08:00 — T009 raw receipt audit passed
+
+Remote audit scripts/audit_t009_raw.py exit0:1000images21000unique rows7000sharedsupport84predictionfiles; cohort/model/config pins match,allphi0/allthree updates/hybridscale verified. Maxphi rounding9.39e-8,maxtransfer5.60e-8. Samples125507835bytes SHAcdbe9cf51feb17dc5ec2e60f0ea396227f4b4af301b2f6dc135f7382f0e8910c. Receipt fetched toT009/receipt_audit.json. APstillrunning. Rawarchive download session9887 active; no duplicate inference.
+
+## 2026-09-12T16:47:00+08:00 — T009 formal completion and audited report
+
+Formalrun20260912-144439 exit0at16:41:56;1000images21000rows84predictions504APevals;driver7011.39484s. Rawintegritycheckedremotely;finalderivedarchivehashverifiedlocally. Independentlyreconstructed4536metricdeltas/allmacrocounts. PlotPNG/PDFgeneratedlocallyandvisuallychecked. ExternalAPcriterionpasseswithtinygains FCOS+.070272 SSD+.032161vsnoadapt,each4/5positiveblocks;vsraweach3/5positiveblocks. Cleanphi54.263%lowerbut99.3%stillupdates. ReportNEEDS_REVIEW;noT010/meta. Raw371MBarchivedownloadsession9887ongoing;remoteallrawsavedandhashed;derivedscienceoutputsreadyforGitHubnow.

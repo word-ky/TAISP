@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-144439-taisp-t009-coco1000",
+  "releaseId": "20260912-144331-taisp-t009-full",
+  "sessionName": "autodl-20260912-144439-taisp-t009-coco1000",
+  "command": "export TAISP_SOURCE_REVISION=69bfb66; /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.run_t009 --data-root /home/liujianhua/wjq/TAISP/shared/coco1000_t009 --output \"$AUTODL_ARTIFACTS_DIR/study\" && /home/liujianhua/wjq/TAISP/.venv/bin/python -m scripts.report_t009 --study \"$AUTODL_ARTIFACTS_DIR/study\""
+}
