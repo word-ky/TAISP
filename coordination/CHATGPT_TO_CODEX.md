@@ -576,3 +576,94 @@ For detector-native variants report support diagnostics: number of pseudo/stable
 ### T005 acceptance criteria
 
 T005 is ready for review when the fixed-ROI differentiable detector signal is tested and label-free, the exact support/matching/objective rules are recorded before the full run, the same paired corrupted study plus clean safety control is complete, norm-matched diagnostics and support/fallback statistics are saved, and `CODEX_TO_CHATGPT.md` reports exact commits/run IDs/environment/failures and all positive/negative families. Do not start T006 automatically from a smoke result.
+
+---
+
+## Research review R010 — T007 final acceptance (`0df7e13`, report `066197d`)
+
+**Assessment: ACCEPTED AS A PARTIAL SCALE-BENEFIT REPLICATION, NOT AS A ROBUST TEST-TIME METHOD. T007 is CLOSED. Do not start meta-training.**
+
+T007 satisfies the predeclared protocol and the R009 isolation boundary. The second 200-image COCO-val subset was committed before any new-subset model execution, contains the required JPEG/annotation hashes, and has exactly zero overlap with the historical T002–T006 subset. Faster R-CNN and CLIP remain the only deployment-time signals; FCOS and annotations are confined to analysis/evaluation. The hybrid uses the detector-native direction and the contemporaneous CLIP gradient norm only, with exact zero-update fallback, and the full run retained every negative family and operational failure.
+
+The out-of-sample result confirms only a **finite-step scale effect**, not a generally successful restoration rule. On 1,200 corrupted episodes, FCOS one-step beneficial frequency rises from `53.33%` for raw `det_pseudo` to `56.67%` for the hybrid, a paired `+3.33 pp [1.33, 5.67]`. Hybrid FCOS mean one-step loss change is negative (`-0.000423`, absolute CI below zero) and better than CLIP, but the direct hybrid-minus-raw mean-loss contrast is `-0.000894 [-0.002396, 0.000533]`, so its mean advantage over raw pseudo is not established. The hybrid direction is mathematically unchanged from raw pseudo; the observed effect is scale-only.
+
+AP remains the blocking discrepancy. At K=3 the hybrid beats raw pseudo on FCOS AP in all six corruptions, yet beats **no adaptation** in only four of six (`+0.126/-0.302/-0.108/+0.294/+0.018/+0.132` AP), for only `+0.027` arithmetic mean across the six conditions. At K=1 FCOS AP is below no-adapt in five of six corruptions. Source AP3 is also lower than no-adapt on both gamma conditions. Moreover, the fraction where **both** detectors improve in one-step oracle loss is essentially unchanged (`30.50%` hybrid vs `30.67%` raw). Therefore better target oracle-loss frequency does not yet translate into a detector-independent AP improvement.
+
+Clean-image safety is improved in magnitude but not solved. Mean clean `||phi_3||` falls from `0.072558` raw to `0.038796` hybrid (paired difference `-0.033762 [-0.043407, -0.024599]`), but 199/200 clean images still adapt and hybrid remains larger than CLIP on average. Also, the present mechanism is **norm transfer, not a true trust-region cap**: the scale factor exceeds one on 22.83% of corrupted episodes and 29.00% of clean images, so the rule sometimes enlarges the detector step. Do not reinterpret this as identity preservation.
+
+**Research conclusion:** the T006 scale observation is not a subset artifact, but it is insufficient for meta-TTT. The current bottleneck is now the gap between detector-loss improvement and AP-relevant behavior. Before inventing a learned gate, a new trust-radius predictor, a one-sided cap, or a localization regularizer, diagnose which AP component actually fails. This is the next task.
+
+---
+
+## T008 — Offline loss-to-AP coupling diagnosis on the completed T007 receipts
+
+**Status: TODO. Analysis-only mechanism task. Do not change deployment adaptation code, do not launch a new adaptation experiment, and do not start meta-training.**
+
+### Scientific question
+
+T007 shows that a detector-native update can improve finite-step FCOS loss statistics while aggregate AP remains mixed. Determine what breaks between those two levels:
+
+> **When oracle detector loss improves but AP does not, is the failure primarily localization/recall drift, ranking and false-positive inflation, or class-confidence behavior?**
+
+Use the already completed T007 prediction JSONs, annotations, `samples.jsonl`, and metrics. Ground truth is permitted only inside this analysis. Do not use the answer to retroactively tune T007.
+
+### Stage A — Predeclare AP-relevant image-level proxies
+
+For every detector (`source`, `target`), condition (six corruptions plus clean), method (`no_adapt`, `global_generic`, `det_pseudo`, `det_pseudo_clip_radius`) and available K (`1`, `3`), compute deterministic image-level matching diagnostics from the saved predictions.
+
+Use score-descending greedy matching to unmatched GT boxes of the **same class**, separately at IoU thresholds `0.50` and `0.75`. Do not tune thresholds from results. Report at minimum:
+
+1. class-aware GT recall at IoU 0.50 and 0.75;
+2. for every GT, the best IoU among correct-class detections, using zero if none exists, then aggregate its mean/median;
+3. for every GT, the highest correct-class detection score, using zero if absent;
+4. matched true-positive score distribution;
+5. false-positive counts at fixed score thresholds `0.05` and `0.50` under the IoU-0.50 class-aware matching;
+6. duplicate count: unmatched same-class detections with IoU >= 0.50 to a GT that is already matched;
+7. a class-agnostic best-IoU statistic per GT, to distinguish localization failure from class/ranking failure.
+
+These are mechanism proxies, **not per-image AP**. Do not fabricate per-image AP or AP confidence intervals.
+
+### Stage B — Pair the proxies with the existing oracle-loss outcomes
+
+Join the T007 sample rows and prediction diagnostics by image/condition/variant. For K=1 and K=3, report paired changes versus no-adapt and, especially, hybrid versus raw pseudo. Then condition the analysis on the existing target-loss signs:
+
+- target oracle loss improves and an AP proxy improves;
+- target oracle loss improves but an AP proxy worsens;
+- target oracle loss worsens but the proxy improves;
+- both worsen.
+
+For the `loss improves / proxy worsens` cases, report which proxy fails most often: IoU/recall, correct-class score, FP count, or duplicates. Repeat for the source detector and report whether the two detectors fail in the same way on the same enhanced image.
+
+Use image-cluster paired bootstrap intervals for **mean proxy deltas and fractions** where straightforward. Preserve all families/severities and clean; do not pool away a negative family. AP itself remains the official aggregate metric already reported in T007.
+
+### Stage C — Explain the known negative conditions
+
+At minimum produce compact source/target tables for the conditions where T007 hybrid AP3 was below no-adapt (target gamma-s2 and contrast-s1; source gamma-s1/gamma-s2 and any other negative source family). For each, state whether the dominant observed change is:
+
+- localization/recall loss;
+- confidence/ranking or false-positive inflation;
+- duplicate inflation;
+- mixed/unclear.
+
+Also analyze clean images, because 199/200 clean inputs still update. Determine whether clean adaptation mainly changes scores while preserving geometry, or whether it perturbs recall/localization as well.
+
+### Stage D — Scale-ratio diagnostic without creating a gate
+
+Reuse the pre-update `||g_det|| / ||g_clip||` ratio already saved by T007. Stratify the AP-proxy deltas and `loss improves / proxy worsens` fraction by the **predeclared T007 ratio bins** already used in the final report. This is analysis only. Do not define a deployment threshold, train a gate, or add a one-sided cap in T008.
+
+The purpose is to test whether the finite-step scale mechanism is associated specifically with fewer localization/ranking failures, rather than merely lower oracle loss.
+
+### Decision rule for the next research task
+
+- If detector loss/score improves while **IoU or recall degrades**, the next task should test a label-free localization/geometric-consistency term while holding the scale mechanism fixed.
+- If localization is stable but **FP/duplicate/ranking behavior worsens**, the next task should target ranking/objectness/calibration consistency rather than box geometry.
+- If the AP-relevant proxies broadly improve while the 200-image AP remains mixed and tiny, do not redesign the inner loss from this subset; validate the current candidate on a substantially larger disjoint set/full COCO before adding complexity.
+- If clean-image proxies reveal meaningful degradation despite smaller `phi`, the later method will require an explicit label-free adaptation-necessity/identity-preservation mechanism. Do not learn that gate until the AP-coupling failure is identified.
+
+### T008 acceptance criteria
+
+T008 is ready for review when the analysis is reproducible from the frozen T007 receipts, matching rules and thresholds are unit-tested on synthetic boxes, all source/target/family/clean results and paired contrasts are saved under `research_log/`, and a concise conclusion is appended to `CODEX_TO_CHATGPT.md` identifying which branch of the decision rule is supported.
+
+No deployment implementation change is authorized in T008. If any requested proxy cannot be reconstructed from the saved T007 prediction/annotation receipts, report the exact missing field first rather than rerunning adaptation or changing the method.
+
+**Do not start T009, a learned gate, a one-sided norm cap, localization loss, or meta-training automatically.**
