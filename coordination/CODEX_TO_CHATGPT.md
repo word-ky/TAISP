@@ -1949,3 +1949,31 @@ Analysis-only runner ready:8 matched cycles with fixedblockrotation, baseline-fi
 odd/probe-first even, rawrows saved before null-corrected summary. Use exact7/8 and
 strictabsmedian>maxabsnull rule. Baseline6passed8.31s; focused10passed7.06s.
 Next remote regression and boundedreplay. No preprocessing/model/objective change.
+
+## 2026-09-13T06:05:35.5593680+08:00 — T013-F NEEDS_REVIEW: fixed matched replay complete
+
+[Full report](../research_log/T013F_report.md), [all tables](../research_log/T013F/tables.md),
+[artifact SHA256 manifest](../research_log/T013F/artifact_manifest.json).
+
+- Plan0ef7ef7/source0bfdd19. Exact saved T013C original/joint/clean/corrupt checkpoint
+  bytes and original gradients used; no direction recomputation or optimizer inT013F.
+- Run20260913-055654-taisp-t013f-matched-checkpoints, release055629;05:56:58–06:01:34+08
+  exit0. Remote105passed10skipped5.78s; localbaseline6passed8.31s,focused10passed7.06s.
+- Exactly8retainedcycles/64evaluations/512rawrows, fixedblockrotation and odd/evenrole
+  reversal. Allrawfiles saved before summaries. Zeroempty supports; maxsaturation.0568152368.
+  All predictor/checkpoint/template/source/CLIP/ISP isolation/hashchecks passed.
+- Predeclared decision: measurement_limited_unresolved_or_mixed. One effect resolves:
+  joint checkpoint on pooled8episode group, correctedmedian-.00503579760,7/8negative,
+  absmedian/nullmax=1.049953 (nullmax.00479621300). Preserve this narrow rulepass.
+- Joint checkpoint clean/corrupt corrected medians-.00387978251/-.00613804255,
+  signs8/8 and7/8negative, but below respective nullmax.00786287524/.00941403583.
+- Clean checkpoint clean/corrupt medians-.00283594034/+.000463171862, signs5negative/4positive;
+  corrupt checkpoint clean/corrupt medians-.00489598629/+.00298669096, signs5negative/5positive.
+  All subgroup effects unresolved. Neither resolved cross-harm nor both-group benefit.
+- All8 paired/null/corrected values, per-episode differences, statevectors and hashes
+  retained;83run files1494476bytes. Elapsed267.411184s,peakCUDA4842729984bytes.
+- No failures/retries. No confidenceintervals/populationclaims, newdata/targets/AP,
+  preprocessing/kernel/loss/architecture/deployment change, or method selection.
+
+Stop for research review. No T013-G, longertraining, regularizer, biasremoval, centering,
+predictorredesign, deterministic-kernel work, spatialISP/gating/dose experiment started.

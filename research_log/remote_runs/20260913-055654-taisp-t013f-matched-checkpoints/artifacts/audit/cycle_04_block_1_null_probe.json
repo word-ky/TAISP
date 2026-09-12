@@ -1,0 +1,345 @@
+{
+  "cycle": 4,
+  "pair": "null",
+  "block_position": 1,
+  "role": "probe",
+  "evaluation_position": 0,
+  "checkpoint": "original",
+  "episodes": [
+    {
+      "image_id": 65088,
+      "case": "clean_s0",
+      "outer_loss": 0.021751925349235535,
+      "components": {
+        "loss_classifier": 0.0029961280524730682,
+        "loss_box_reg": 0.01715926080942154,
+        "loss_objectness": 2.103593578794971e-05,
+        "loss_rpn_box_reg": 0.001575498841702938
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.0038981768302619457,
+        -0.016098476946353912,
+        0.005717518739402294,
+        0.006357239093631506,
+        -0.007380196824669838,
+        0.0024255788885056973,
+        0.0018289221916347742,
+        -0.009130270220339298
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.022237777709960938,
+      "saturation_rate": 0.002255238126963377,
+      "support_count": 1,
+      "cycle": 4,
+      "pair": "null",
+      "block_position": 1,
+      "role": "probe",
+      "evaluation_position": 0,
+      "empty_support": false
+    },
+    {
+      "image_id": 65088,
+      "case": "gamma_s2",
+      "outer_loss": 0.031895436346530914,
+      "components": {
+        "loss_classifier": 0.004555104300379753,
+        "loss_box_reg": 0.025777310132980347,
+        "loss_objectness": 2.9396753234323114e-05,
+        "loss_rpn_box_reg": 0.0015336255310103297
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        0.012240320444107056,
+        0.001844173762947321,
+        -0.005856891628354788,
+        -0.010432794690132141,
+        0.009257413446903229,
+        -0.01705685444176197,
+        -0.00269898003898561,
+        -0.006363391876220703
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.026847459375858307,
+      "saturation_rate": 0.05155238136649132,
+      "support_count": 1,
+      "cycle": 4,
+      "pair": "null",
+      "block_position": 1,
+      "role": "probe",
+      "evaluation_position": 0,
+      "empty_support": false
+    },
+    {
+      "image_id": 426525,
+      "case": "clean_s0",
+      "outer_loss": 0.3840988874435425,
+      "components": {
+        "loss_classifier": 0.09232921153306961,
+        "loss_box_reg": 0.2666451334953308,
+        "loss_objectness": 0.0025808170903474092,
+        "loss_rpn_box_reg": 0.02254372090101242
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.020837076008319855,
+        0.05338186398148537,
+        -0.0025891740806400776,
+        -0.02544044703245163,
+        0.03037434071302414,
+        -0.003552277572453022,
+        0.006733483634889126,
+        0.0008073531207628548
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.07013513892889023,
+      "saturation_rate": 0.027079647406935692,
+      "support_count": 4,
+      "cycle": 4,
+      "pair": "null",
+      "block_position": 1,
+      "role": "probe",
+      "evaluation_position": 0,
+      "empty_support": false
+    },
+    {
+      "image_id": 426525,
+      "case": "contrast_s2",
+      "outer_loss": 0.9282856583595276,
+      "components": {
+        "loss_classifier": 0.5545628666877747,
+        "loss_box_reg": 0.3358505964279175,
+        "loss_objectness": 0.02121553383767605,
+        "loss_rpn_box_reg": 0.016656648367643356
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        0.003289361484348774,
+        -0.004117767792195082,
+        0.010910674929618835,
+        -0.006679879501461983,
+        0.0036800894886255264,
+        -0.002570786513388157,
+        -0.0011370832799002528,
+        0.0003174182784277946
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.014594013802707195,
+      "saturation_rate": 0.0,
+      "support_count": 2,
+      "cycle": 4,
+      "pair": "null",
+      "block_position": 1,
+      "role": "probe",
+      "evaluation_position": 0,
+      "empty_support": false
+    },
+    {
+      "image_id": 541157,
+      "case": "clean_s0",
+      "outer_loss": 0.4710868000984192,
+      "components": {
+        "loss_classifier": 0.16764017939567566,
+        "loss_box_reg": 0.25662553310394287,
+        "loss_objectness": 0.03822844475507736,
+        "loss_rpn_box_reg": 0.008592646569013596
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        0.0738481655716896,
+        0.09638592600822449,
+        0.003519919468089938,
+        -0.07213833183050156,
+        0.03333191201090813,
+        -0.0039652143605053425,
+        -0.033834654837846756,
+        -0.01215156726539135
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.1495971530675888,
+      "saturation_rate": 0.02514488995075226,
+      "support_count": 12,
+      "cycle": 4,
+      "pair": "null",
+      "block_position": 1,
+      "role": "probe",
+      "evaluation_position": 0,
+      "empty_support": false
+    },
+    {
+      "image_id": 541157,
+      "case": "color_cast_s2",
+      "outer_loss": 0.8304436206817627,
+      "components": {
+        "loss_classifier": 0.33950522541999817,
+        "loss_box_reg": 0.353342205286026,
+        "loss_objectness": 0.12541595101356506,
+        "loss_rpn_box_reg": 0.012180198915302753
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.00482585746794939,
+        -0.0036492198705673218,
+        0.0004002123896498233,
+        0.013071543537080288,
+        -0.0023600116837769747,
+        0.008795594796538353,
+        0.0012850133934989572,
+        0.0008508256869390607
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.01711544394493103,
+      "saturation_rate": 5.511111157829873e-05,
+      "support_count": 6,
+      "cycle": 4,
+      "pair": "null",
+      "block_position": 1,
+      "role": "probe",
+      "evaluation_position": 0,
+      "empty_support": false
+    },
+    {
+      "image_id": 129068,
+      "case": "clean_s0",
+      "outer_loss": 0.5575662851333618,
+      "components": {
+        "loss_classifier": 0.18256337940692902,
+        "loss_box_reg": 0.3131745457649231,
+        "loss_objectness": 0.03436554595828056,
+        "loss_rpn_box_reg": 0.02746286615729332
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.007668859325349331,
+        -0.008731028065085411,
+        -0.03385979309678078,
+        0.017830494791269302,
+        -0.01659397780895233,
+        -0.005920829251408577,
+        0.003631344996392727,
+        -0.006289713084697723
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.04430144280195236,
+      "saturation_rate": 0.0012901476584374905,
+      "support_count": 8,
+      "cycle": 4,
+      "pair": "null",
+      "block_position": 1,
+      "role": "probe",
+      "evaluation_position": 0,
+      "empty_support": false
+    },
+    {
+      "image_id": 129068,
+      "case": "gamma_s1",
+      "outer_loss": 0.615634560585022,
+      "components": {
+        "loss_classifier": 0.22033460438251495,
+        "loss_box_reg": 0.33993616700172424,
+        "loss_objectness": 0.027782004326581955,
+        "loss_rpn_box_reg": 0.027581728994846344
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.007971885614097118,
+        -0.003616785630583763,
+        -0.013615475967526436,
+        0.012130513787269592,
+        -0.005364556796848774,
+        0.00018933936371468008,
+        0.0029782727360725403,
+        -0.002316160360351205
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.021265268325805664,
+      "saturation_rate": 0.0012901476584374905,
+      "support_count": 8,
+      "cycle": 4,
+      "pair": "null",
+      "block_position": 1,
+      "role": "probe",
+      "evaluation_position": 0,
+      "empty_support": false
+    }
+  ],
+  "predictor_unchanged": true,
+  "predictor_grad_none": true,
+  "isp_unchanged": true,
+  "frozen_models_unchanged": true,
+  "frozen_grad_none": true,
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "clip_state_sha256": "6b38ac3696ff07a4e0cdbe436db05551707486e413df526256526b5777fe147c"
+}

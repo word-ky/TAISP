@@ -1,0 +1,345 @@
+{
+  "cycle": 8,
+  "pair": "null",
+  "block_position": 1,
+  "role": "baseline",
+  "evaluation_position": 1,
+  "checkpoint": "original",
+  "episodes": [
+    {
+      "image_id": 65088,
+      "case": "clean_s0",
+      "outer_loss": 0.018277011811733246,
+      "components": {
+        "loss_classifier": 0.0016046157106757164,
+        "loss_box_reg": 0.01507745124399662,
+        "loss_objectness": 2.0977809981559403e-05,
+        "loss_rpn_box_reg": 0.0015739689115434885
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.0038432488217949867,
+        -0.016105469316244125,
+        0.006176004186272621,
+        0.005998220294713974,
+        -0.007365421857684851,
+        0.0024818202946335077,
+        0.0018077632412314415,
+        -0.009161774069070816
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.022268662229180336,
+      "saturation_rate": 0.002260952489450574,
+      "support_count": 1,
+      "cycle": 8,
+      "pair": "null",
+      "block_position": 1,
+      "role": "baseline",
+      "evaluation_position": 1,
+      "empty_support": false
+    },
+    {
+      "image_id": 65088,
+      "case": "gamma_s2",
+      "outer_loss": 0.031946394592523575,
+      "components": {
+        "loss_classifier": 0.004591926466673613,
+        "loss_box_reg": 0.025791283696889877,
+        "loss_objectness": 2.9494523914763704e-05,
+        "loss_rpn_box_reg": 0.0015336903743445873
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        0.012233274057507515,
+        0.0016329020727425814,
+        -0.005740861874073744,
+        -0.01024421863257885,
+        0.009564314037561417,
+        -0.017210207879543304,
+        -0.0027025300078094006,
+        -0.0063027273863554
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.026924269273877144,
+      "saturation_rate": 0.051563810557127,
+      "support_count": 1,
+      "cycle": 8,
+      "pair": "null",
+      "block_position": 1,
+      "role": "baseline",
+      "evaluation_position": 1,
+      "empty_support": false
+    },
+    {
+      "image_id": 426525,
+      "case": "clean_s0",
+      "outer_loss": 0.394401490688324,
+      "components": {
+        "loss_classifier": 0.10518170893192291,
+        "loss_box_reg": 0.26415398716926575,
+        "loss_objectness": 0.0025572620797902346,
+        "loss_rpn_box_reg": 0.022508537396788597
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.020321078598499298,
+        0.052071474492549896,
+        -0.001993382815271616,
+        -0.025575630366802216,
+        0.028852621093392372,
+        -0.0030755246989428997,
+        0.006579887121915817,
+        0.0008185985498130322
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.0683254599571228,
+      "saturation_rate": 0.027079647406935692,
+      "support_count": 4,
+      "cycle": 8,
+      "pair": "null",
+      "block_position": 1,
+      "role": "baseline",
+      "evaluation_position": 1,
+      "empty_support": false
+    },
+    {
+      "image_id": 426525,
+      "case": "contrast_s2",
+      "outer_loss": 0.9291072487831116,
+      "components": {
+        "loss_classifier": 0.5551557540893555,
+        "loss_box_reg": 0.3360411822795868,
+        "loss_objectness": 0.021253807470202446,
+        "loss_rpn_box_reg": 0.016656458377838135
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        0.0032869987189769745,
+        -0.0041066985577344894,
+        0.010898418724536896,
+        -0.0066786534152925014,
+        0.003678005887195468,
+        -0.002569254720583558,
+        -0.0011360985226929188,
+        0.0003156252787448466
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.01457972638309002,
+      "saturation_rate": 0.0,
+      "support_count": 2,
+      "cycle": 8,
+      "pair": "null",
+      "block_position": 1,
+      "role": "baseline",
+      "evaluation_position": 1,
+      "empty_support": false
+    },
+    {
+      "image_id": 541157,
+      "case": "clean_s0",
+      "outer_loss": 0.453839510679245,
+      "components": {
+        "loss_classifier": 0.15586361289024353,
+        "loss_box_reg": 0.2512080669403076,
+        "loss_objectness": 0.038189709186553955,
+        "loss_rpn_box_reg": 0.008578116074204445
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        0.07302181422710419,
+        0.09743465483188629,
+        -0.0008293332066386938,
+        -0.06992542743682861,
+        0.03375039994716644,
+        -0.005064102821052074,
+        -0.03319902718067169,
+        -0.01195940375328064
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.1487477421760559,
+      "saturation_rate": 0.025248000398278236,
+      "support_count": 12,
+      "cycle": 8,
+      "pair": "null",
+      "block_position": 1,
+      "role": "baseline",
+      "evaluation_position": 1,
+      "empty_support": false
+    },
+    {
+      "image_id": 541157,
+      "case": "color_cast_s2",
+      "outer_loss": 0.8290996551513672,
+      "components": {
+        "loss_classifier": 0.3451366722583771,
+        "loss_box_reg": 0.34643834829330444,
+        "loss_objectness": 0.12534181773662567,
+        "loss_rpn_box_reg": 0.012182764708995819
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.004857572726905346,
+        -0.0037525724619627,
+        0.0003823240695055574,
+        0.013048838824033737,
+        -0.002436738694086671,
+        0.008747253566980362,
+        0.001316188252530992,
+        0.0008444187697023153
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.017117058858275414,
+      "saturation_rate": 5.511111157829873e-05,
+      "support_count": 6,
+      "cycle": 8,
+      "pair": "null",
+      "block_position": 1,
+      "role": "baseline",
+      "evaluation_position": 1,
+      "empty_support": false
+    },
+    {
+      "image_id": 129068,
+      "case": "clean_s0",
+      "outer_loss": 0.5597543120384216,
+      "components": {
+        "loss_classifier": 0.18220774829387665,
+        "loss_box_reg": 0.3157704770565033,
+        "loss_objectness": 0.034320395439863205,
+        "loss_rpn_box_reg": 0.027455689385533333
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.007873350754380226,
+        -0.009040690958499908,
+        -0.033584464341402054,
+        0.01762242242693901,
+        -0.016825128346681595,
+        -0.005928956903517246,
+        0.0037451330572366714,
+        -0.006418203003704548
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.044222693890333176,
+      "saturation_rate": 0.0012868923367932439,
+      "support_count": 8,
+      "cycle": 8,
+      "pair": "null",
+      "block_position": 1,
+      "role": "baseline",
+      "evaluation_position": 1,
+      "empty_support": false
+    },
+    {
+      "image_id": 129068,
+      "case": "gamma_s1",
+      "outer_loss": 0.6092397570610046,
+      "components": {
+        "loss_classifier": 0.2138729840517044,
+        "loss_box_reg": 0.33999425172805786,
+        "loss_objectness": 0.027796797454357147,
+        "loss_rpn_box_reg": 0.02757575735449791
+      },
+      "phi0": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi3": [
+        -0.007992969825863838,
+        -0.0036212680861353874,
+        -0.013589373789727688,
+        0.012074186466634274,
+        -0.005410407669842243,
+        0.00019734451780095696,
+        0.002985518192872405,
+        -0.0023213562089949846
+      ],
+      "phi0_norm": 0.0,
+      "phi3_norm": 0.021238448098301888,
+      "saturation_rate": 0.0012901476584374905,
+      "support_count": 8,
+      "cycle": 8,
+      "pair": "null",
+      "block_position": 1,
+      "role": "baseline",
+      "evaluation_position": 1,
+      "empty_support": false
+    }
+  ],
+  "predictor_unchanged": true,
+  "predictor_grad_none": true,
+  "isp_unchanged": true,
+  "frozen_models_unchanged": true,
+  "frozen_grad_none": true,
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "clip_state_sha256": "6b38ac3696ff07a4e0cdbe436db05551707486e413df526256526b5777fe147c"
+}

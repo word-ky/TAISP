@@ -1,10 +1,18 @@
 # Current project state
 
-2026-09-13T05:56:13.8490767+08:00 — T013-F IN_PROGRESS under R020/7efdb89; T013-E CLOSED as correctly blocked.
-Pre-outcome plan0ef7ef7. Baseline6passed8.31s; focused10passed7.06s.
-All three exact T013-C saved checkpoints available and hashes pinned; no new optimizer
-or original gradient computation. Analysis-only matched_replay runner ready.
-Exactly8 cycles,4pairs,2evaluations,8episodes=512rows. Rotation and reversed even-cycle
-roles predeclared. Null-corrected rule >=7/8 median-sign and absmedian > maxabsnull.
-Normal nondeterministic CUDA runtime; no CUBLAS variable, preprocessing or method change.
-Next commit/deploy, fullremote regression then fixed512episode replay. Stop after T013-F.
+2026-09-13T06:05:35.5593680+08:00 — T013-F NEEDS_REVIEW under R020/7efdb89; T013-E CLOSED.
+Plan0ef7ef7, source0bfdd19. Read T013F_report.md and T013F/tables.md.
+Run20260913-055654-taisp-t013f-matched-checkpoints, release055629.
+Started05:56:58+08, finished06:01:34+08exit0. Regression105passed10skipped5.78s.
+Exactly8 matchedcycles,64evaluations,512rawrows; zero optimizersteps, fixedT013C
+checkpoint bytes/statehashes unchanged. All source/CLIP/ISP/predictor checks passed.
+Predeclared outcome: measurement_limited_unresolved_or_mixed.
+Only joint checkpoint pooled effect resolved: correctedmedian-.00503579760,
+7/8negative, maxabsnull.00479621300 (ratio1.04995). Clean/corrupt subgroups
+unresolved for all checkpoints; neither resolved cross-harm nor both-group benefit.
+Do not flatten pooled exception or claim optimizer/objective superiority.
+Empty supports0/512; maxsaturation.0568152368; elapsed267.411184s, peakCUDA4842729984bytes.
+All83run files fetched, SHAmanifest/table/report retained. No active TAISP job.
+Stop after T013-F; wait explicit research review. No T013-G/training/regularizer/
+redesign/preprocessing/kernel/newdata/targetAP/spatialISP/gating/dose change.
+15-minute heartbeat remains active and consumes explicit new tasks only.

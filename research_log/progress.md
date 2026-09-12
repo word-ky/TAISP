@@ -474,3 +474,16 @@ Reuse exact original/joint/clean/corrupted T013C checkpoint bytes; allhashes pin
 No gradient recomputation/optimizer. New scheduler/effectsummary only; existing models,
 ISP, losses, episode lifecycle unchanged. Baseline6passed8.31s; focused10passed7.06s.
 Next fullremote tests and8 matchedcycles. Keep all512raw episode rows before summary.
+
+## 2026-09-13T05:58:08.0226457+08:00 — T013-F launched
+Run20260913-055654-taisp-t013f-matched-checkpoints, source0bfdd19, release055629. Fullregression then exactly8cycles/512episodes, no optimizer.
+
+## 2026-09-13T06:05:35.5593680+08:00 — T013-F finished; all matched outcomes retained
+
+Run055654/source0bfdd19 exit0 at06:01:34+08.105passed10skipped5.78s.
+8cycles/64evaluations/512rows, zerooptimizersteps; allstate/hash/isolation checks passed.
+Only joint pooled effect resolved under exact7/8+strictnullmax rule: median-.00503579760,
+7/8negative versus maxabsnull.00479621300,ratio1.049953. All subgroup effects unresolved;
+no resolved cross-harm or both-group improvement. Scientificdecision measurement-limited.
+No extra repeats/tuning. All83files fetched and hashed; offline renderer succeeded,
+full tables andreport ready. NEEDS_REVIEW; stopafterT013F, no nextmethod task automatically.

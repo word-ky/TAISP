@@ -1,0 +1,24 @@
+{
+  "source_revision": "0bfdd19",
+  "status": "completed",
+  "cycles": 8,
+  "pairs_per_cycle": 4,
+  "evaluations": 64,
+  "episode_rows": 512,
+  "optimizer_steps": 0,
+  "all_checkpoints_unchanged": true,
+  "frozen_models_unchanged": true,
+  "decision": {
+    "rule": "measurement_limited_unresolved_or_mixed",
+    "clean_only_cross_harm": false,
+    "corrupt_only_cross_harm": false,
+    "resolved_both_group_improvement": {
+      "joint": false,
+      "clean": false,
+      "corrupted": false
+    },
+    "next_action": "Stop for research review; no T013-G or method change."
+  },
+  "elapsed_seconds": 267.41118361102417,
+  "peak_cuda_allocated_bytes": 4842729984
+}
