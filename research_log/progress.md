@@ -192,3 +192,7 @@ allmacro/sign/rule outcomes independentlyrecomputed. Finalplotexit0/visuallychec
 FCOS+.036793/SSD+.032926vsnoadapt,4/5and5/5blocks. Tinygain,FCOSvsfull-.033478,
 clean/corruptcoveragessimilar;noindependentneeddiscriminationclaim. Allnegativesretained.
 T009rawarchivalpushsession56743 completeda23b618. Noactivejobs/transfers,nonewT011/meta.
+
+## 2026-09-12T19:32:06+08:00 — R013 accepted; T011 matched-random control started
+
+Syncedad06718/R01326ff476;T010closed. LatestpointerlocatesR013appendinmainqueue(initialguessedcontinuationfilenameabsent,correctqueueimmediatelyread). PlanT011 freezesexactcandidatevectorand200seeds2026091600..2026091799,35stratumcounts,hashrule,percentile/tail conventions beforeAP. Remoteofflinebaseline14passed2.31s. No scientificparameter ormodelchange.
