@@ -1458,3 +1458,18 @@ Step0/1/2/3 detector/CLIP/update norms, ratios/scales, collinearity, support, so
 
 ![Hybrid target and source AP3 deltas](../research_log/remote_runs/20260912-105119-taisp-t007-coco200/artifacts/study/transfer_ap.png)
 
+
+
+## T008 final offline report — NEEDS_REVIEW
+
+R010/T008 completed using frozen T007 run `20260912-105119-taisp-t007-coco200` only. Plan `a85e3b3`; matching/analysis `cff2193`; final code `38627d4`. No deployment changes, inference/adaptation rerun, T009, gate, cap, localization loss or meta-training.
+
+**Conclusion: mixed/unclear target AP failure; qualified source confidence/FP lead.** FCOS hybrid-minus-raw reduces retained FP05 by -0.1833 [-0.3592,-0.0233] at K1 and -0.3183 [-0.5533,-0.1150] at K3 per image. K1 FP50 also decreases, but class-aware recall/IoU advantages remain uncertain overall. Source hybrid-minus-no-adapt raises both class-presence score and FP counts; clean source FP50 rises +0.100 [+0.015,+0.185]. Yet target gamma-s2/contrast-s1 and source gamma-s1/gamma-s2 AP3 failures remain mixed/unclear at condition level. Do not claim a resolved localization or ranking cause.
+
+Clean adaptation changes recall on 20.60% source /15.58% FCOS of 199 GT-valid images; smaller phi is not score-only or geometry-preserving behavior. Aggregate clean geometry harm is not established. Initial-ratio strata do not support a simple shrink-only mechanism: ratio<1 improves target recall75/IoU, while ratio[2,4) reduces FP but also lowers IoU at K3. All strata/negative conditions are retained, analysis-only.
+
+Branch recommendation: review the qualified FP/objectness lead and clean concern, while keeping target failure explicitly unresolved. The premises for choosing one universal geometry/ranking branch or declaring broad proxy improvement are not met. No next method or larger experiment has been started.
+
+**Evidence:** 98 saved prediction files, 19,600 unique proxy rows, 22,400 paired rows; all three methods vs no-adapt plus hybrid-vs-raw, source/target, K1/K3, seven conditions. Matching/denominator tests: **7 passed in4.23s**. Offline analysis/report/plot exit0; 2,816 quadrant partitions checked. Inputs/output hashes, all per-GT/TP distributions, CIs, ties and undefined cases are saved. One no-GT image excluded from GT-based denominators; 12 crowd-bearing images retained under explicitly non-COCO proxy FP rules. FCOS FP05 only counts native retained >=.2 detections. Native BLAS/OpenMP failures and minimal fixes are recorded; no model/data/protocol change.
+
+Full report: [research_log/T008_report.md](../research_log/T008_report.md). [All computed tables](../research_log/T008/tables.md), [full statistics](../research_log/T008/analysis.json), [receipt](../research_log/T008/receipt.json), [tests](../research_log/T008/test_receipt.txt). No scientific blocker remains for delivering T008; causal interpretation remains a stated result limitation. Await research review/new explicit task.

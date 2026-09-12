@@ -1,0 +1,897 @@
+contrast,group,event,estimate,ci_low,ci_high,valid_observations
+global_generic-minus-no_adapt/K1,corrupted_overall,source_only_fail,0.25583333333333336,0.22833333333333333,0.28418749999999987,1200
+global_generic-minus-no_adapt/K1,corrupted_overall,target_only_fail,0.22333333333333333,0.19833333333333333,0.25,1200
+global_generic-minus-no_adapt/K1,corrupted_overall,both_any_fail,0.13916666666666666,0.11916666666666667,0.1591874999999999,1200
+global_generic-minus-no_adapt/K1,corrupted_overall,both_geometry,0.046063651591289785,0.035175879396984924,0.0575,1194
+global_generic-minus-no_adapt/K1,corrupted_overall,both_class_score,0.046063651591289785,0.03367003367003367,0.059166666666666666,1194
+global_generic-minus-no_adapt/K1,corrupted_overall,both_false_positives,0.008333333333333333,0.0033333333333333335,0.014166666666666666,1200
+global_generic-minus-no_adapt/K1,corrupted_overall,both_duplicates,0.0016666666666666668,0.0,0.004166666666666667,1200
+global_generic-minus-no_adapt/K1,gamma_s1,source_only_fail,0.25,0.195,0.31,200
+global_generic-minus-no_adapt/K1,gamma_s1,target_only_fail,0.25,0.19,0.31,200
+global_generic-minus-no_adapt/K1,gamma_s1,both_any_fail,0.1,0.06,0.145,200
+global_generic-minus-no_adapt/K1,gamma_s1,both_geometry,0.035175879396984924,0.015,0.06060606060606061,199
+global_generic-minus-no_adapt/K1,gamma_s1,both_class_score,0.02512562814070352,0.005049870564945942,0.046020408163264755,199
+global_generic-minus-no_adapt/K1,gamma_s1,both_false_positives,0.005,0.0,0.015,200
+global_generic-minus-no_adapt/K1,gamma_s1,both_duplicates,0.0,0.0,0.0,200
+global_generic-minus-no_adapt/K1,gamma_s2,source_only_fail,0.315,0.255,0.38,200
+global_generic-minus-no_adapt/K1,gamma_s2,target_only_fail,0.125,0.08,0.175,200
+global_generic-minus-no_adapt/K1,gamma_s2,both_any_fail,0.17,0.12,0.225,200
+global_generic-minus-no_adapt/K1,gamma_s2,both_geometry,0.06030150753768844,0.03,0.09547738693467336,199
+global_generic-minus-no_adapt/K1,gamma_s2,both_class_score,0.06030150753768844,0.03,0.095,199
+global_generic-minus-no_adapt/K1,gamma_s2,both_false_positives,0.02,0.005,0.04,200
+global_generic-minus-no_adapt/K1,gamma_s2,both_duplicates,0.0,0.0,0.0,200
+global_generic-minus-no_adapt/K1,contrast_s1,source_only_fail,0.235,0.175,0.295,200
+global_generic-minus-no_adapt/K1,contrast_s1,target_only_fail,0.255,0.195,0.32,200
+global_generic-minus-no_adapt/K1,contrast_s1,both_any_fail,0.135,0.09,0.185,200
+global_generic-minus-no_adapt/K1,contrast_s1,both_geometry,0.035175879396984924,0.015,0.0603091213643977,199
+global_generic-minus-no_adapt/K1,contrast_s1,both_class_score,0.04020100502512563,0.01507537688442211,0.07035175879396985,199
+global_generic-minus-no_adapt/K1,contrast_s1,both_false_positives,0.01,0.0,0.025,200
+global_generic-minus-no_adapt/K1,contrast_s1,both_duplicates,0.005,0.0,0.015,200
+global_generic-minus-no_adapt/K1,contrast_s2,source_only_fail,0.26,0.2,0.325,200
+global_generic-minus-no_adapt/K1,contrast_s2,target_only_fail,0.245,0.185,0.31,200
+global_generic-minus-no_adapt/K1,contrast_s2,both_any_fail,0.115,0.07,0.16,200
+global_generic-minus-no_adapt/K1,contrast_s2,both_geometry,0.03015075376884422,0.01,0.05555555555555555,199
+global_generic-minus-no_adapt/K1,contrast_s2,both_class_score,0.020100502512562814,0.005,0.04020100502512563,199
+global_generic-minus-no_adapt/K1,contrast_s2,both_false_positives,0.005,0.0,0.015,200
+global_generic-minus-no_adapt/K1,contrast_s2,both_duplicates,0.0,0.0,0.0,200
+global_generic-minus-no_adapt/K1,color_cast_s1,source_only_fail,0.26,0.2,0.325,200
+global_generic-minus-no_adapt/K1,color_cast_s1,target_only_fail,0.205,0.15,0.26,200
+global_generic-minus-no_adapt/K1,color_cast_s1,both_any_fail,0.165,0.11487500000000002,0.22,200
+global_generic-minus-no_adapt/K1,color_cast_s1,both_geometry,0.05527638190954774,0.02512562814070352,0.09045226130653267,199
+global_generic-minus-no_adapt/K1,color_cast_s1,both_class_score,0.07035175879396985,0.03535353535353535,0.11,199
+global_generic-minus-no_adapt/K1,color_cast_s1,both_false_positives,0.005,0.0,0.015,200
+global_generic-minus-no_adapt/K1,color_cast_s1,both_duplicates,0.005,0.0,0.015,200
+global_generic-minus-no_adapt/K1,color_cast_s2,source_only_fail,0.215,0.155,0.275,200
+global_generic-minus-no_adapt/K1,color_cast_s2,target_only_fail,0.26,0.205,0.3151249999999993,200
+global_generic-minus-no_adapt/K1,color_cast_s2,both_any_fail,0.15,0.105,0.2,200
+global_generic-minus-no_adapt/K1,color_cast_s2,both_geometry,0.06030150753768844,0.03,0.09547738693467336,199
+global_generic-minus-no_adapt/K1,color_cast_s2,both_class_score,0.06030150753768844,0.03,0.09547738693467336,199
+global_generic-minus-no_adapt/K1,color_cast_s2,both_false_positives,0.005,0.0,0.015,200
+global_generic-minus-no_adapt/K1,color_cast_s2,both_duplicates,0.0,0.0,0.0,200
+global_generic-minus-no_adapt/K1,clean_s0,source_only_fail,0.275,0.215,0.34,200
+global_generic-minus-no_adapt/K1,clean_s0,target_only_fail,0.185,0.13,0.24,200
+global_generic-minus-no_adapt/K1,clean_s0,both_any_fail,0.155,0.105,0.205,200
+global_generic-minus-no_adapt/K1,clean_s0,both_geometry,0.07035175879396985,0.03552850843459981,0.11,199
+global_generic-minus-no_adapt/K1,clean_s0,both_class_score,0.05527638190954774,0.02512562814070352,0.09,199
+global_generic-minus-no_adapt/K1,clean_s0,both_false_positives,0.015,0.0,0.035,200
+global_generic-minus-no_adapt/K1,clean_s0,both_duplicates,0.005,0.0,0.015,200
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",source_only_fail,0.2826855123674912,0.22221274175199088,0.3381845217979047,283
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",target_only_fail,0.21201413427561838,0.15893648201181315,0.27106227106227104,283
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_any_fail,0.13074204946996468,0.09029979595040025,0.17347293083900225,283
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_geometry,0.04332129963898917,0.02027027027027027,0.06875189777327935,277
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_class_score,0.039711191335740074,0.01492260917634052,0.06622969267384105,277
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_false_positives,0.014134275618374558,0.0032674433409727527,0.02962962962962963,283
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_duplicates,0.0035335689045936395,0.0,0.011857707509881422,283
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",source_only_fail,0.27167630057803466,0.20359281437125748,0.34091237519705725,173
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",target_only_fail,0.2023121387283237,0.13608904682274248,0.26948555718751166,173
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_any_fail,0.1329479768786127,0.08092485549132948,0.19101990567346366,173
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_geometry,0.046242774566473986,0.01666208791208791,0.08421200473092844,173
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_class_score,0.057803468208092484,0.022727272727272728,0.09677908113391981,173
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_false_positives,0.011560693641618497,0.0,0.02976190476190476,173
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_duplicates,0.0,0.0,0.0,173
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",source_only_fail,0.2681992337164751,0.21454595580438562,0.3218509546879452,261
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",target_only_fail,0.24904214559386972,0.19303875303875304,0.301660589855777,261
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_any_fail,0.13793103448275862,0.0946969696969697,0.18315018315018314,261
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_geometry,0.06130268199233716,0.03408769296740995,0.08984375,261
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_class_score,0.03065134099616858,0.011234906926043937,0.05185555555555554,261
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_false_positives,0.007662835249042145,0.0,0.019762845849802372,261
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_duplicates,0.0038314176245210726,0.0,0.012195121951219513,261
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",source_only_fail,0.2277432712215321,0.18863806404415923,0.2712906647807638,483
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",target_only_fail,0.2236024844720497,0.18639710070631124,0.26078667994219257,483
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_any_fail,0.14699792960662525,0.11649920975389479,0.17959512837393019,483
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_geometry,0.039337474120082816,0.023808238198087008,0.056112224448897796,483
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_class_score,0.053830227743271224,0.034481110305268015,0.07399310745723302,483
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_false_positives,0.004140786749482402,0.0,0.010504754533392302,483
+global_generic-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_duplicates,0.0,0.0,0.0,483
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [0,1)",source_only_fail,0.2711864406779661,0.1694915254237288,0.3898305084745763,59
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [0,1)",target_only_fail,0.1016949152542373,0.03389830508474576,0.1864406779661017,59
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_any_fail,0.23728813559322035,0.13559322033898305,0.3559322033898305,59
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_geometry,0.1206896551724138,0.05084745762711865,0.20689655172413793,58
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_class_score,0.13793103448275862,0.06779661016949153,0.23214285714285715,58
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_false_positives,0.03389830508474576,0.0,0.0847457627118644,59
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_duplicates,0.0,0.0,0.0,59
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [1,2)",source_only_fail,0.22580645161290322,0.0967741935483871,0.3870967741935484,31
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [1,2)",target_only_fail,0.1935483870967742,0.06451612903225806,0.3225806451612903,31
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_any_fail,0.16129032258064516,0.03225806451612903,0.3225806451612903,31
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_geometry,0.06451612903225806,0.0,0.16129032258064516,31
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_class_score,0.0,0.0,0.0,31
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_false_positives,0.03225806451612903,0.0,0.0967741935483871,31
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_duplicates,0.03225806451612903,0.0,0.0967741935483871,31
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [2,4)",source_only_fail,0.23255813953488372,0.11627906976744186,0.37209302325581395,43
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [2,4)",target_only_fail,0.20930232558139536,0.09302325581395349,0.3488372093023256,43
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_any_fail,0.16279069767441862,0.06976744186046512,0.27906976744186046,43
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_geometry,0.06976744186046512,0.0,0.16279069767441862,43
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_class_score,0.046511627906976744,0.0,0.11627906976744186,43
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_false_positives,0.0,0.0,0.0,43
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_duplicates,0.0,0.0,0.0,43
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",source_only_fail,0.3283582089552239,0.22388059701492538,0.44776119402985076,67
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",target_only_fail,0.23880597014925373,0.13432835820895522,0.34328358208955223,67
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_any_fail,0.07462686567164178,0.014925373134328358,0.14925373134328357,67
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_geometry,0.029850746268656716,0.0,0.07462686567164178,67
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_class_score,0.014925373134328358,0.0,0.04477611940298507,67
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_false_positives,0.0,0.0,0.0,67
+global_generic-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_duplicates,0.0,0.0,0.0,67
+global_generic-minus-no_adapt/K3,corrupted_overall,source_only_fail,0.24916666666666668,0.225,0.2725,1200
+global_generic-minus-no_adapt/K3,corrupted_overall,target_only_fail,0.22333333333333333,0.19666666666666666,0.25002083333333325,1200
+global_generic-minus-no_adapt/K3,corrupted_overall,both_any_fail,0.15583333333333332,0.13583333333333333,0.17585416666666656,1200
+global_generic-minus-no_adapt/K3,corrupted_overall,both_geometry,0.04187604690117253,0.03098827470686767,0.052763819095477386,1194
+global_generic-minus-no_adapt/K3,corrupted_overall,both_class_score,0.048576214405360134,0.03749312605752961,0.06,1194
+global_generic-minus-no_adapt/K3,corrupted_overall,both_false_positives,0.021666666666666667,0.014166666666666666,0.03,1200
+global_generic-minus-no_adapt/K3,corrupted_overall,both_duplicates,0.0075,0.0033333333333333335,0.0125,1200
+global_generic-minus-no_adapt/K3,gamma_s1,source_only_fail,0.25,0.19,0.31,200
+global_generic-minus-no_adapt/K3,gamma_s1,target_only_fail,0.23,0.17,0.29,200
+global_generic-minus-no_adapt/K3,gamma_s1,both_any_fail,0.16,0.11,0.21,200
+global_generic-minus-no_adapt/K3,gamma_s1,both_geometry,0.06030150753768844,0.030146984924623116,0.09547738693467336,199
+global_generic-minus-no_adapt/K3,gamma_s1,both_class_score,0.05527638190954774,0.02512562814070352,0.09045226130653267,199
+global_generic-minus-no_adapt/K3,gamma_s1,both_false_positives,0.025,0.005,0.05,200
+global_generic-minus-no_adapt/K3,gamma_s1,both_duplicates,0.015,0.0,0.035,200
+global_generic-minus-no_adapt/K3,gamma_s2,source_only_fail,0.28,0.22,0.345,200
+global_generic-minus-no_adapt/K3,gamma_s2,target_only_fail,0.175,0.125,0.23,200
+global_generic-minus-no_adapt/K3,gamma_s2,both_any_fail,0.13,0.085,0.18,200
+global_generic-minus-no_adapt/K3,gamma_s2,both_geometry,0.02512562814070352,0.005025125628140704,0.05,199
+global_generic-minus-no_adapt/K3,gamma_s2,both_class_score,0.02512562814070352,0.005025125628140704,0.04568527918781726,199
+global_generic-minus-no_adapt/K3,gamma_s2,both_false_positives,0.04,0.015,0.07,200
+global_generic-minus-no_adapt/K3,gamma_s2,both_duplicates,0.005,0.0,0.015,200
+global_generic-minus-no_adapt/K3,contrast_s1,source_only_fail,0.24,0.18,0.295,200
+global_generic-minus-no_adapt/K3,contrast_s1,target_only_fail,0.26,0.2,0.32,200
+global_generic-minus-no_adapt/K3,contrast_s1,both_any_fail,0.15,0.105,0.2,200
+global_generic-minus-no_adapt/K3,contrast_s1,both_geometry,0.02512562814070352,0.005025125628140704,0.05,199
+global_generic-minus-no_adapt/K3,contrast_s1,both_class_score,0.05025125628140704,0.025,0.08040201005025126,199
+global_generic-minus-no_adapt/K3,contrast_s1,both_false_positives,0.015,0.0,0.035,200
+global_generic-minus-no_adapt/K3,contrast_s1,both_duplicates,0.0,0.0,0.0,200
+global_generic-minus-no_adapt/K3,contrast_s2,source_only_fail,0.255,0.195,0.315,200
+global_generic-minus-no_adapt/K3,contrast_s2,target_only_fail,0.215,0.16,0.275,200
+global_generic-minus-no_adapt/K3,contrast_s2,both_any_fail,0.145,0.1,0.195,200
+global_generic-minus-no_adapt/K3,contrast_s2,both_geometry,0.02512562814070352,0.005025125628140704,0.05,199
+global_generic-minus-no_adapt/K3,contrast_s2,both_class_score,0.04020100502512563,0.015,0.07035175879396985,199
+global_generic-minus-no_adapt/K3,contrast_s2,both_false_positives,0.01,0.0,0.025,200
+global_generic-minus-no_adapt/K3,contrast_s2,both_duplicates,0.01,0.0,0.025,200
+global_generic-minus-no_adapt/K3,color_cast_s1,source_only_fail,0.26,0.2,0.325,200
+global_generic-minus-no_adapt/K3,color_cast_s1,target_only_fail,0.21,0.155,0.265,200
+global_generic-minus-no_adapt/K3,color_cast_s1,both_any_fail,0.155,0.105,0.205,200
+global_generic-minus-no_adapt/K3,color_cast_s1,both_geometry,0.04020100502512563,0.01507537688442211,0.0700087939698492,199
+global_generic-minus-no_adapt/K3,color_cast_s1,both_class_score,0.06532663316582915,0.035,0.1,199
+global_generic-minus-no_adapt/K3,color_cast_s1,both_false_positives,0.015,0.0,0.035,200
+global_generic-minus-no_adapt/K3,color_cast_s1,both_duplicates,0.01,0.0,0.025,200
+global_generic-minus-no_adapt/K3,color_cast_s2,source_only_fail,0.21,0.155,0.265,200
+global_generic-minus-no_adapt/K3,color_cast_s2,target_only_fail,0.25,0.19,0.31,200
+global_generic-minus-no_adapt/K3,color_cast_s2,both_any_fail,0.195,0.14,0.255,200
+global_generic-minus-no_adapt/K3,color_cast_s2,both_geometry,0.07537688442211055,0.04020100502512563,0.115,199
+global_generic-minus-no_adapt/K3,color_cast_s2,both_class_score,0.05527638190954774,0.025252525252525252,0.09045226130653267,199
+global_generic-minus-no_adapt/K3,color_cast_s2,both_false_positives,0.025,0.005,0.05,200
+global_generic-minus-no_adapt/K3,color_cast_s2,both_duplicates,0.005,0.0,0.015,200
+global_generic-minus-no_adapt/K3,clean_s0,source_only_fail,0.29,0.23,0.355,200
+global_generic-minus-no_adapt/K3,clean_s0,target_only_fail,0.185,0.135,0.24,200
+global_generic-minus-no_adapt/K3,clean_s0,both_any_fail,0.165,0.115,0.215,200
+global_generic-minus-no_adapt/K3,clean_s0,both_geometry,0.06030150753768844,0.03,0.09547738693467336,199
+global_generic-minus-no_adapt/K3,clean_s0,both_class_score,0.05025125628140704,0.025,0.08080808080808081,199
+global_generic-minus-no_adapt/K3,clean_s0,both_false_positives,0.03,0.01,0.055,200
+global_generic-minus-no_adapt/K3,clean_s0,both_duplicates,0.01,0.0,0.025,200
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",source_only_fail,0.254416961130742,0.19927468126838835,0.30619674065408775,283
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",target_only_fail,0.22968197879858657,0.17542763157894736,0.2847089774243772,283
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_any_fail,0.10247349823321555,0.06737499104520381,0.13910462130937093,283
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_geometry,0.02527075812274368,0.008724488863715261,0.043658424908424864,277
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_class_score,0.039711191335740074,0.0195293500729572,0.0636042402826855,277
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_false_positives,0.02120141342756184,0.006711409395973154,0.0390631361970684,283
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_duplicates,0.0035335689045936395,0.0,0.011238075047699797,283
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",source_only_fail,0.24855491329479767,0.18748282967032967,0.3157962912462503,173
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",target_only_fail,0.2138728323699422,0.15590501792114694,0.27528510394940453,173
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_any_fail,0.1791907514450867,0.12138290418637239,0.237501726519337,173
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_geometry,0.05202312138728324,0.01910525679271144,0.09239366046745412,173
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_class_score,0.04046242774566474,0.012268068232829568,0.07142857142857142,173
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_false_positives,0.023121387283236993,0.005555555555555556,0.04764069264069252,173
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_duplicates,0.005780346820809248,0.0,0.018292682926829267,173
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",source_only_fail,0.26436781609195403,0.2131782945736434,0.31699311171009276,261
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",target_only_fail,0.2222222222222222,0.16979832120041596,0.2775671321160042,261
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_any_fail,0.1724137931034483,0.1274024024024024,0.21457276078941653,261
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_geometry,0.04597701149425287,0.023074712643678164,0.07170490280160087,261
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_class_score,0.05747126436781609,0.03064841624989032,0.08527131782945736,261
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_false_positives,0.03065134099616858,0.011450381679389313,0.05158913196274818,261
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_duplicates,0.011494252873563218,0.0,0.025456867949568668,261
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",source_only_fail,0.23809523809523808,0.2016289172853295,0.27557960118633396,483
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",target_only_fail,0.2236024844720497,0.1823940388837246,0.2654729603293413,483
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_any_fail,0.16977225672877846,0.13645162014456613,0.20196384803921566,483
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_geometry,0.045548654244306416,0.027942720137414414,0.06410505836575874,483
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_class_score,0.051759834368530024,0.033469316596931656,0.07143222319602685,483
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_false_positives,0.016563146997929608,0.00631578947368421,0.029282591414944336,483
+global_generic-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_duplicates,0.008281573498964804,0.0019454308488534623,0.016844781445138256,483
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [0,1)",source_only_fail,0.2711864406779661,0.1694915254237288,0.3898305084745763,59
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [0,1)",target_only_fail,0.2033898305084746,0.1016949152542373,0.3050847457627119,59
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_any_fail,0.15254237288135594,0.06779661016949153,0.2542372881355932,59
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_geometry,0.06896551724137931,0.01694915254237288,0.13793103448275862,58
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_class_score,0.06896551724137931,0.01694915254237288,0.13793103448275862,58
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_false_positives,0.01694915254237288,0.0,0.05084745762711865,59
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_duplicates,0.0,0.0,0.0,59
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [1,2)",source_only_fail,0.22580645161290322,0.0967741935483871,0.3870967741935484,31
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [1,2)",target_only_fail,0.22580645161290322,0.0967741935483871,0.3870967741935484,31
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_any_fail,0.1935483870967742,0.06451612903225806,0.3225806451612903,31
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_geometry,0.03225806451612903,0.0,0.0967741935483871,31
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_class_score,0.03225806451612903,0.0,0.0967741935483871,31
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_false_positives,0.03225806451612903,0.0,0.0967741935483871,31
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_duplicates,0.03225806451612903,0.0,0.0967741935483871,31
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [2,4)",source_only_fail,0.3023255813953488,0.18604651162790697,0.4418604651162791,43
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [2,4)",target_only_fail,0.13953488372093023,0.046511627906976744,0.2558139534883721,43
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_any_fail,0.2558139534883721,0.13953488372093023,0.3953488372093023,43
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_geometry,0.11627906976744186,0.023255813953488372,0.20930232558139536,43
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_class_score,0.06976744186046512,0.0,0.16279069767441862,43
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_false_positives,0.06976744186046512,0.0,0.16279069767441862,43
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_duplicates,0.023255813953488372,0.0,0.06976744186046512,43
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",source_only_fail,0.3283582089552239,0.22388059701492538,0.44776119402985076,67
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",target_only_fail,0.1791044776119403,0.08955223880597014,0.2835820895522388,67
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_any_fail,0.1044776119402985,0.04477611940298507,0.17947761194029646,67
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_geometry,0.029850746268656716,0.0,0.07462686567164178,67
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_class_score,0.029850746268656716,0.0,0.07462686567164178,67
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_false_positives,0.014925373134328358,0.0,0.04477611940298507,67
+global_generic-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_duplicates,0.0,0.0,0.0,67
+det_pseudo-minus-no_adapt/K1,corrupted_overall,source_only_fail,0.2175,0.19416666666666665,0.2425,1200
+det_pseudo-minus-no_adapt/K1,corrupted_overall,target_only_fail,0.2275,0.20414583333333333,0.25083333333333335,1200
+det_pseudo-minus-no_adapt/K1,corrupted_overall,both_any_fail,0.2,0.1775,0.22416666666666665,1200
+det_pseudo-minus-no_adapt/K1,corrupted_overall,both_geometry,0.05611390284757119,0.0425,0.07000549915397629,1194
+det_pseudo-minus-no_adapt/K1,corrupted_overall,both_class_score,0.04438860971524288,0.031825795644891124,0.05778894472361809,1194
+det_pseudo-minus-no_adapt/K1,corrupted_overall,both_false_positives,0.05,0.035833333333333335,0.06502083333333322,1200
+det_pseudo-minus-no_adapt/K1,corrupted_overall,both_duplicates,0.015833333333333335,0.009166666666666667,0.0225,1200
+det_pseudo-minus-no_adapt/K1,gamma_s1,source_only_fail,0.235,0.175,0.295,200
+det_pseudo-minus-no_adapt/K1,gamma_s1,target_only_fail,0.275,0.215,0.34,200
+det_pseudo-minus-no_adapt/K1,gamma_s1,both_any_fail,0.165,0.115,0.215,200
+det_pseudo-minus-no_adapt/K1,gamma_s1,both_geometry,0.03015075376884422,0.01,0.05555555555555555,199
+det_pseudo-minus-no_adapt/K1,gamma_s1,both_class_score,0.05025125628140704,0.025,0.08080808080808081,199
+det_pseudo-minus-no_adapt/K1,gamma_s1,both_false_positives,0.04,0.015,0.07,200
+det_pseudo-minus-no_adapt/K1,gamma_s1,both_duplicates,0.01,0.0,0.025,200
+det_pseudo-minus-no_adapt/K1,gamma_s2,source_only_fail,0.25,0.19,0.31,200
+det_pseudo-minus-no_adapt/K1,gamma_s2,target_only_fail,0.235,0.18,0.295,200
+det_pseudo-minus-no_adapt/K1,gamma_s2,both_any_fail,0.165,0.115,0.21512499999999932,200
+det_pseudo-minus-no_adapt/K1,gamma_s2,both_geometry,0.05025125628140704,0.02019948225978377,0.08080808080808081,199
+det_pseudo-minus-no_adapt/K1,gamma_s2,both_class_score,0.02512562814070352,0.005025125628140704,0.05,199
+det_pseudo-minus-no_adapt/K1,gamma_s2,both_false_positives,0.055,0.025,0.09,200
+det_pseudo-minus-no_adapt/K1,gamma_s2,both_duplicates,0.01,0.0,0.025,200
+det_pseudo-minus-no_adapt/K1,contrast_s1,source_only_fail,0.2,0.145,0.255,200
+det_pseudo-minus-no_adapt/K1,contrast_s1,target_only_fail,0.145,0.095,0.195,200
+det_pseudo-minus-no_adapt/K1,contrast_s1,both_any_fail,0.265,0.205,0.325,200
+det_pseudo-minus-no_adapt/K1,contrast_s1,both_geometry,0.08040201005025126,0.045,0.12,199
+det_pseudo-minus-no_adapt/K1,contrast_s1,both_class_score,0.07035175879396985,0.035175879396984924,0.10606060606060606,199
+det_pseudo-minus-no_adapt/K1,contrast_s1,both_false_positives,0.055,0.025,0.09,200
+det_pseudo-minus-no_adapt/K1,contrast_s1,both_duplicates,0.02,0.005,0.04,200
+det_pseudo-minus-no_adapt/K1,contrast_s2,source_only_fail,0.19,0.135,0.245,200
+det_pseudo-minus-no_adapt/K1,contrast_s2,target_only_fail,0.245,0.185,0.305,200
+det_pseudo-minus-no_adapt/K1,contrast_s2,both_any_fail,0.225,0.17,0.285,200
+det_pseudo-minus-no_adapt/K1,contrast_s2,both_geometry,0.07537688442211055,0.04020100502512563,0.115,199
+det_pseudo-minus-no_adapt/K1,contrast_s2,both_class_score,0.04522613065326633,0.02,0.07537688442211055,199
+det_pseudo-minus-no_adapt/K1,contrast_s2,both_false_positives,0.07,0.035,0.11,200
+det_pseudo-minus-no_adapt/K1,contrast_s2,both_duplicates,0.035,0.01,0.06,200
+det_pseudo-minus-no_adapt/K1,color_cast_s1,source_only_fail,0.2,0.145,0.26,200
+det_pseudo-minus-no_adapt/K1,color_cast_s1,target_only_fail,0.225,0.17,0.285,200
+det_pseudo-minus-no_adapt/K1,color_cast_s1,both_any_fail,0.19,0.14,0.245,200
+det_pseudo-minus-no_adapt/K1,color_cast_s1,both_geometry,0.03015075376884422,0.01,0.05527638190954774,199
+det_pseudo-minus-no_adapt/K1,color_cast_s1,both_class_score,0.035175879396984924,0.010101010101010102,0.06091370558375635,199
+det_pseudo-minus-no_adapt/K1,color_cast_s1,both_false_positives,0.04,0.015,0.07,200
+det_pseudo-minus-no_adapt/K1,color_cast_s1,both_duplicates,0.015,0.0,0.035,200
+det_pseudo-minus-no_adapt/K1,color_cast_s2,source_only_fail,0.23,0.17,0.29,200
+det_pseudo-minus-no_adapt/K1,color_cast_s2,target_only_fail,0.24,0.18,0.3,200
+det_pseudo-minus-no_adapt/K1,color_cast_s2,both_any_fail,0.19,0.13987500000000003,0.245,200
+det_pseudo-minus-no_adapt/K1,color_cast_s2,both_geometry,0.07035175879396985,0.03535353535353535,0.10607406552838018,199
+det_pseudo-minus-no_adapt/K1,color_cast_s2,both_class_score,0.04020100502512563,0.015,0.07035175879396985,199
+det_pseudo-minus-no_adapt/K1,color_cast_s2,both_false_positives,0.04,0.015,0.07,200
+det_pseudo-minus-no_adapt/K1,color_cast_s2,both_duplicates,0.005,0.0,0.015,200
+det_pseudo-minus-no_adapt/K1,clean_s0,source_only_fail,0.25,0.19487500000000002,0.31,200
+det_pseudo-minus-no_adapt/K1,clean_s0,target_only_fail,0.305,0.24,0.37,200
+det_pseudo-minus-no_adapt/K1,clean_s0,both_any_fail,0.185,0.13,0.24,200
+det_pseudo-minus-no_adapt/K1,clean_s0,both_geometry,0.07035175879396985,0.03535353535353535,0.11,199
+det_pseudo-minus-no_adapt/K1,clean_s0,both_class_score,0.035175879396984924,0.015,0.06030150753768844,199
+det_pseudo-minus-no_adapt/K1,clean_s0,both_false_positives,0.035,0.015,0.065,200
+det_pseudo-minus-no_adapt/K1,clean_s0,both_duplicates,0.01,0.0,0.025,200
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",source_only_fail,0.22968197879858657,0.17856518481518482,0.2777777777777778,283
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",target_only_fail,0.20848056537102475,0.16901408450704225,0.24638622247317896,283
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_any_fail,0.1413427561837456,0.10038574155674526,0.18478633114949372,283
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_geometry,0.04693140794223827,0.021119424882629106,0.0753473933182221,277
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_class_score,0.039711191335740074,0.018346112636442778,0.06397516086128184,277
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_false_positives,0.01060070671378092,0.0,0.023892830426854916,283
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_duplicates,0.0,0.0,0.0,283
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",source_only_fail,0.1791907514450867,0.1257476475620188,0.23837209302325582,173
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",target_only_fail,0.34104046242774566,0.26993865030674846,0.42135677541627176,173
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_any_fail,0.15606936416184972,0.10714285714285714,0.2075497473966388,173
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_geometry,0.028901734104046242,0.005847953216374269,0.05495179666958804,173
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_class_score,0.046242774566473986,0.017543859649122806,0.07692307692307693,173
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_false_positives,0.023121387283236993,0.00546448087431694,0.04663591188679815,173
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_duplicates,0.005780346820809248,0.0,0.0189873417721519,173
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",source_only_fail,0.20689655172413793,0.16091440886699507,0.2557274099059116,261
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",target_only_fail,0.18773946360153257,0.14073784722222224,0.23488042439050297,261
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_any_fail,0.2681992337164751,0.21770415530242257,0.3203125,261
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_geometry,0.0842911877394636,0.05241549117680117,0.11953011922348057,261
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_class_score,0.06130268199233716,0.03320994931941021,0.0928612956810631,261
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_false_positives,0.06513409961685823,0.03717472118959108,0.09579080459770112,261
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_duplicates,0.019157088122605363,0.003875594863966957,0.03731343283582089,261
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",source_only_fail,0.22981366459627328,0.19342339868344596,0.2669642281385821,483
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",target_only_fail,0.2194616977225673,0.18162816407267146,0.259636264289196,483
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_any_fail,0.21325051759834368,0.17306211498973306,0.2527563722584469,483
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_geometry,0.055900621118012424,0.03482723289994347,0.08017072980153149,483
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_class_score,0.037267080745341616,0.020403009688723973,0.05738185536020131,483
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_false_positives,0.07453416149068323,0.04741157584787853,0.10251046025104603,483
+det_pseudo-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_duplicates,0.026915113871635612,0.014344262295081968,0.04130693581780537,483
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [0,1)",source_only_fail,0.1864406779661017,0.1016949152542373,0.288135593220339,59
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [0,1)",target_only_fail,0.2542372881355932,0.15254237288135594,0.3728813559322034,59
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_any_fail,0.2033898305084746,0.1016949152542373,0.3220338983050847,59
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_geometry,0.08620689655172414,0.017543859649122806,0.16378274268104698,58
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_class_score,0.05172413793103448,0.0,0.11864406779661017,58
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_false_positives,0.05084745762711865,0.0,0.11864406779661017,59
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_duplicates,0.0,0.0,0.0,59
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [1,2)",source_only_fail,0.2903225806451613,0.12903225806451613,0.45161290322580644,31
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [1,2)",target_only_fail,0.3225806451612903,0.16129032258064516,0.5161290322580645,31
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_any_fail,0.0967741935483871,0.0,0.22580645161290322,31
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_geometry,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_class_score,0.06451612903225806,0.0,0.16129032258064516,31
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_false_positives,0.0,0.0,0.0,31
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_duplicates,0.0,0.0,0.0,31
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [2,4)",source_only_fail,0.37209302325581395,0.23255813953488372,0.5116279069767442,43
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [2,4)",target_only_fail,0.3488372093023256,0.20930232558139536,0.4883720930232558,43
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_any_fail,0.16279069767441862,0.06976744186046512,0.27906976744186046,43
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_geometry,0.046511627906976744,0.0,0.11627906976744186,43
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_class_score,0.0,0.0,0.0,43
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_false_positives,0.023255813953488372,0.0,0.06976744186046512,43
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_duplicates,0.0,0.0,0.0,43
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",source_only_fail,0.208955223880597,0.11940298507462686,0.31343283582089554,67
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",target_only_fail,0.31343283582089554,0.208955223880597,0.43283582089552236,67
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_any_fail,0.22388059701492538,0.13432835820895522,0.3283582089552239,67
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_geometry,0.08955223880597014,0.029850746268656716,0.16417910447761194,67
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_class_score,0.029850746268656716,0.0,0.07462686567164178,67
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_false_positives,0.04477611940298507,0.0,0.1044776119402985,67
+det_pseudo-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_duplicates,0.029850746268656716,0.0,0.07462686567164178,67
+det_pseudo-minus-no_adapt/K3,corrupted_overall,source_only_fail,0.2075,0.18416666666666667,0.23416666666666666,1200
+det_pseudo-minus-no_adapt/K3,corrupted_overall,target_only_fail,0.24583333333333332,0.22083333333333333,0.2725,1200
+det_pseudo-minus-no_adapt/K3,corrupted_overall,both_any_fail,0.20833333333333334,0.18416666666666667,0.23333333333333334,1200
+det_pseudo-minus-no_adapt/K3,corrupted_overall,both_geometry,0.052763819095477386,0.04020100502512563,0.06514839425554164,1194
+det_pseudo-minus-no_adapt/K3,corrupted_overall,both_class_score,0.04103852596314908,0.02847571189279732,0.05416666666666667,1194
+det_pseudo-minus-no_adapt/K3,corrupted_overall,both_false_positives,0.06916666666666667,0.05416666666666667,0.085,1200
+det_pseudo-minus-no_adapt/K3,corrupted_overall,both_duplicates,0.019166666666666665,0.010833333333333334,0.028333333333333332,1200
+det_pseudo-minus-no_adapt/K3,gamma_s1,source_only_fail,0.19,0.135,0.245,200
+det_pseudo-minus-no_adapt/K3,gamma_s1,target_only_fail,0.26,0.205,0.32,200
+det_pseudo-minus-no_adapt/K3,gamma_s1,both_any_fail,0.17,0.12,0.225,200
+det_pseudo-minus-no_adapt/K3,gamma_s1,both_geometry,0.04020100502512563,0.015,0.07,199
+det_pseudo-minus-no_adapt/K3,gamma_s1,both_class_score,0.04522613065326633,0.02,0.07537688442211055,199
+det_pseudo-minus-no_adapt/K3,gamma_s1,both_false_positives,0.02,0.005,0.04,200
+det_pseudo-minus-no_adapt/K3,gamma_s1,both_duplicates,0.01,0.0,0.025,200
+det_pseudo-minus-no_adapt/K3,gamma_s2,source_only_fail,0.235,0.18,0.29,200
+det_pseudo-minus-no_adapt/K3,gamma_s2,target_only_fail,0.25,0.19,0.31,200
+det_pseudo-minus-no_adapt/K3,gamma_s2,both_any_fail,0.21,0.15,0.27,200
+det_pseudo-minus-no_adapt/K3,gamma_s2,both_geometry,0.04522613065326633,0.02,0.07537688442211055,199
+det_pseudo-minus-no_adapt/K3,gamma_s2,both_class_score,0.035175879396984924,0.015,0.06092147518906035,199
+det_pseudo-minus-no_adapt/K3,gamma_s2,both_false_positives,0.09,0.05,0.13,200
+det_pseudo-minus-no_adapt/K3,gamma_s2,both_duplicates,0.025,0.005,0.05,200
+det_pseudo-minus-no_adapt/K3,contrast_s1,source_only_fail,0.19,0.135,0.245,200
+det_pseudo-minus-no_adapt/K3,contrast_s1,target_only_fail,0.27,0.205,0.335,200
+det_pseudo-minus-no_adapt/K3,contrast_s1,both_any_fail,0.25,0.19,0.31,200
+det_pseudo-minus-no_adapt/K3,contrast_s1,both_geometry,0.07537688442211055,0.04039896451956754,0.115,199
+det_pseudo-minus-no_adapt/K3,contrast_s1,both_class_score,0.06532663316582915,0.035,0.10050251256281408,199
+det_pseudo-minus-no_adapt/K3,contrast_s1,both_false_positives,0.075,0.04,0.11,200
+det_pseudo-minus-no_adapt/K3,contrast_s1,both_duplicates,0.015,0.0,0.035,200
+det_pseudo-minus-no_adapt/K3,contrast_s2,source_only_fail,0.18,0.125,0.235,200
+det_pseudo-minus-no_adapt/K3,contrast_s2,target_only_fail,0.23,0.175,0.29,200
+det_pseudo-minus-no_adapt/K3,contrast_s2,both_any_fail,0.275,0.215,0.335,200
+det_pseudo-minus-no_adapt/K3,contrast_s2,both_geometry,0.07035175879396985,0.04,0.10606060606060606,199
+det_pseudo-minus-no_adapt/K3,contrast_s2,both_class_score,0.04522613065326633,0.02,0.07537688442211055,199
+det_pseudo-minus-no_adapt/K3,contrast_s2,both_false_positives,0.105,0.065,0.15,200
+det_pseudo-minus-no_adapt/K3,contrast_s2,both_duplicates,0.04,0.015,0.07,200
+det_pseudo-minus-no_adapt/K3,color_cast_s1,source_only_fail,0.235,0.18,0.295,200
+det_pseudo-minus-no_adapt/K3,color_cast_s1,target_only_fail,0.245,0.19,0.3051249999999993,200
+det_pseudo-minus-no_adapt/K3,color_cast_s1,both_any_fail,0.155,0.105,0.21,200
+det_pseudo-minus-no_adapt/K3,color_cast_s1,both_geometry,0.020100502512562814,0.005,0.04020100502512563,199
+det_pseudo-minus-no_adapt/K3,color_cast_s1,both_class_score,0.03015075376884422,0.01,0.05527638190954774,199
+det_pseudo-minus-no_adapt/K3,color_cast_s1,both_false_positives,0.055,0.025,0.085,200
+det_pseudo-minus-no_adapt/K3,color_cast_s1,both_duplicates,0.015,0.0,0.035,200
+det_pseudo-minus-no_adapt/K3,color_cast_s2,source_only_fail,0.215,0.16,0.275,200
+det_pseudo-minus-no_adapt/K3,color_cast_s2,target_only_fail,0.22,0.165,0.28,200
+det_pseudo-minus-no_adapt/K3,color_cast_s2,both_any_fail,0.19,0.135,0.245,200
+det_pseudo-minus-no_adapt/K3,color_cast_s2,both_geometry,0.06532663316582915,0.035,0.10101010101010101,199
+det_pseudo-minus-no_adapt/K3,color_cast_s2,both_class_score,0.02512562814070352,0.005025125628140704,0.05,199
+det_pseudo-minus-no_adapt/K3,color_cast_s2,both_false_positives,0.07,0.035,0.11,200
+det_pseudo-minus-no_adapt/K3,color_cast_s2,both_duplicates,0.01,0.0,0.025,200
+det_pseudo-minus-no_adapt/K3,clean_s0,source_only_fail,0.275,0.215,0.335,200
+det_pseudo-minus-no_adapt/K3,clean_s0,target_only_fail,0.27,0.205,0.335,200
+det_pseudo-minus-no_adapt/K3,clean_s0,both_any_fail,0.225,0.165,0.285,200
+det_pseudo-minus-no_adapt/K3,clean_s0,both_geometry,0.05527638190954774,0.02512562814070352,0.09045226130653267,199
+det_pseudo-minus-no_adapt/K3,clean_s0,both_class_score,0.05527638190954774,0.025122487437185932,0.09,199
+det_pseudo-minus-no_adapt/K3,clean_s0,both_false_positives,0.065,0.03,0.1,200
+det_pseudo-minus-no_adapt/K3,clean_s0,both_duplicates,0.02,0.005,0.04,200
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",source_only_fail,0.20848056537102475,0.16114907819453272,0.25723501794119014,283
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",target_only_fail,0.26148409893992935,0.2081750273681499,0.31366621424834934,283
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_any_fail,0.13780918727915195,0.09454402290622763,0.18251573357807785,283
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_geometry,0.05415162454873646,0.026515151515151516,0.08746686392116952,277
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_class_score,0.04693140794223827,0.02,0.07692307692307693,277
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_false_positives,0.01060070671378092,0.0,0.02400763888888885,283
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_duplicates,0.007067137809187279,0.0,0.018521973466003296,283
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",source_only_fail,0.19653179190751446,0.13661964417307085,0.26011560693641617,173
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",target_only_fail,0.28901734104046245,0.22598870056497175,0.35716314935064924,173
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_any_fail,0.2138728323699422,0.1533990002483855,0.2802197802197802,173
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_geometry,0.05202312138728324,0.022857142857142857,0.08888888888888889,173
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_class_score,0.046242774566473986,0.01764705882352941,0.07784431137724551,173
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_false_positives,0.057803468208092484,0.02824858757062147,0.09412319644839065,173
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_duplicates,0.028901734104046242,0.005318445345041089,0.06289308176100629,173
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",source_only_fail,0.210727969348659,0.15662543412082494,0.26692375021523274,261
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",target_only_fail,0.2222222222222222,0.16603699008128867,0.2783928571428571,261
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_any_fail,0.23371647509578544,0.1855987762237762,0.2846441947565543,261
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_geometry,0.04597701149425287,0.022813688212927757,0.07393718081225677,261
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_class_score,0.04597701149425287,0.02316379566379566,0.07114661515003479,261
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_false_positives,0.07662835249042145,0.04510741138560687,0.11231985832926233,261
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_duplicates,0.011494252873563218,0.0,0.026717557251908396,261
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",source_only_fail,0.20910973084886128,0.17083204732510288,0.24950955734406433,483
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",target_only_fail,0.23395445134575568,0.19214671146845183,0.2786254083144422,483
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_any_fail,0.23395445134575568,0.19480048936570676,0.2721683364793572,483
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_geometry,0.055900621118012424,0.035643460572472335,0.07771423958669678,483
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_class_score,0.033126293995859216,0.016628587350236836,0.053063434035031325,483
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_false_positives,0.10351966873706005,0.07515534419884057,0.13152538182617293,483
+det_pseudo-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_duplicates,0.026915113871635612,0.012898441771459815,0.04330345136709993,483
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [0,1)",source_only_fail,0.3389830508474576,0.22033898305084745,0.4576271186440678,59
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [0,1)",target_only_fail,0.23728813559322035,0.13559322033898305,0.3389830508474576,59
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_any_fail,0.22033898305084745,0.11864406779661017,0.3389830508474576,59
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_geometry,0.08620689655172414,0.017241379310344827,0.15789473684210525,58
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_class_score,0.05172413793103448,0.0,0.1206896551724138,58
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_false_positives,0.03389830508474576,0.0,0.0847457627118644,59
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_duplicates,0.01694915254237288,0.0,0.05084745762711865,59
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [1,2)",source_only_fail,0.16129032258064516,0.03225806451612903,0.2903225806451613,31
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [1,2)",target_only_fail,0.3225806451612903,0.16129032258064516,0.4838709677419355,31
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_any_fail,0.1935483870967742,0.06451612903225806,0.3225806451612903,31
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_geometry,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_class_score,0.12903225806451613,0.03225806451612903,0.25806451612903225,31
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_false_positives,0.06451612903225806,0.0,0.16129032258064516,31
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_duplicates,0.0,0.0,0.0,31
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [2,4)",source_only_fail,0.27906976744186046,0.13953488372093023,0.4186046511627907,43
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [2,4)",target_only_fail,0.23255813953488372,0.11627906976744186,0.34941860465115965,43
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_any_fail,0.23255813953488372,0.11627906976744186,0.34941860465115965,43
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_geometry,0.046511627906976744,0.0,0.11627906976744186,43
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_class_score,0.023255813953488372,0.0,0.06976744186046512,43
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_false_positives,0.06976744186046512,0.0,0.16279069767441862,43
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_duplicates,0.046511627906976744,0.0,0.11627906976744186,43
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",source_only_fail,0.26865671641791045,0.16417910447761194,0.373134328358209,67
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",target_only_fail,0.29850746268656714,0.19402985074626866,0.40298507462686567,67
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_any_fail,0.23880597014925373,0.13432835820895522,0.34328358208955223,67
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_geometry,0.04477611940298507,0.0,0.1044776119402985,67
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_class_score,0.04477611940298507,0.0,0.1044776119402985,67
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_false_positives,0.08955223880597014,0.029850746268656716,0.16417910447761194,67
+det_pseudo-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_duplicates,0.014925373134328358,0.0,0.04477611940298507,67
+det_pseudo_clip_radius-minus-no_adapt/K1,corrupted_overall,source_only_fail,0.23083333333333333,0.2075,0.255,1200
+det_pseudo_clip_radius-minus-no_adapt/K1,corrupted_overall,target_only_fail,0.2633333333333333,0.23666666666666666,0.2891666666666667,1200
+det_pseudo_clip_radius-minus-no_adapt/K1,corrupted_overall,both_any_fail,0.15333333333333332,0.13333333333333333,0.175,1200
+det_pseudo_clip_radius-minus-no_adapt/K1,corrupted_overall,both_geometry,0.04438860971524288,0.03350083752093802,0.056666666666666664,1194
+det_pseudo_clip_radius-minus-no_adapt/K1,corrupted_overall,both_class_score,0.048576214405360134,0.035833333333333335,0.06250264382402705,1194
+det_pseudo_clip_radius-minus-no_adapt/K1,corrupted_overall,both_false_positives,0.018333333333333333,0.010833333333333334,0.02666666666666667,1200
+det_pseudo_clip_radius-minus-no_adapt/K1,corrupted_overall,both_duplicates,0.004166666666666667,0.0008333333333333334,0.008333333333333333,1200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s1,source_only_fail,0.19,0.135,0.245,200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s1,target_only_fail,0.3,0.24,0.365,200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s1,both_any_fail,0.135,0.09,0.185,200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s1,both_geometry,0.04522613065326633,0.02,0.07537688442211055,199
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s1,both_class_score,0.06532663316582915,0.035,0.10152284263959391,199
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s1,both_false_positives,0.015,0.0,0.03,200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s1,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s2,source_only_fail,0.3,0.24,0.365,200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s2,target_only_fail,0.25,0.19,0.31,200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s2,both_any_fail,0.125,0.08,0.17,200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s2,both_geometry,0.04522613065326633,0.02,0.07575757575757576,199
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s2,both_class_score,0.04522613065326633,0.02,0.07537688442211055,199
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s2,both_false_positives,0.015,0.0,0.035,200
+det_pseudo_clip_radius-minus-no_adapt/K1,gamma_s2,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s1,source_only_fail,0.215,0.16,0.275,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s1,target_only_fail,0.245,0.185,0.305,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s1,both_any_fail,0.17,0.12,0.225,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s1,both_geometry,0.05527638190954774,0.025,0.09,199
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s1,both_class_score,0.05527638190954774,0.02512562814070352,0.09,199
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s1,both_false_positives,0.02,0.005,0.04,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s1,both_duplicates,0.0,0.0,0.0,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s2,source_only_fail,0.16,0.11,0.2101249999999993,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s2,target_only_fail,0.315,0.25,0.38,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s2,both_any_fail,0.195,0.145,0.255,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s2,both_geometry,0.05025125628140704,0.02030456852791878,0.085,199
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s2,both_class_score,0.05527638190954774,0.02512562814070352,0.09,199
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s2,both_false_positives,0.02,0.005,0.04,200
+det_pseudo_clip_radius-minus-no_adapt/K1,contrast_s2,both_duplicates,0.01,0.0,0.025,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s1,source_only_fail,0.24,0.18,0.3,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s1,target_only_fail,0.26,0.2,0.32,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s1,both_any_fail,0.13,0.085,0.18,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s1,both_geometry,0.03015075376884422,0.01,0.05527638190954774,199
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s1,both_class_score,0.03015075376884422,0.01,0.05527638190954774,199
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s1,both_false_positives,0.015,0.0,0.035,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s1,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s2,source_only_fail,0.28,0.22,0.34,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s2,target_only_fail,0.21,0.155,0.27,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s2,both_any_fail,0.165,0.115,0.22,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s2,both_geometry,0.04020100502512563,0.015151515151515152,0.07,199
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s2,both_class_score,0.04020100502512563,0.01507537688442211,0.07,199
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s2,both_false_positives,0.025,0.005,0.05,200
+det_pseudo_clip_radius-minus-no_adapt/K1,color_cast_s2,both_duplicates,0.0,0.0,0.0,200
+det_pseudo_clip_radius-minus-no_adapt/K1,clean_s0,source_only_fail,0.255,0.195,0.315,200
+det_pseudo_clip_radius-minus-no_adapt/K1,clean_s0,target_only_fail,0.325,0.26,0.39,200
+det_pseudo_clip_radius-minus-no_adapt/K1,clean_s0,both_any_fail,0.14,0.095,0.19,200
+det_pseudo_clip_radius-minus-no_adapt/K1,clean_s0,both_geometry,0.020100502512562814,0.005,0.04020100502512563,199
+det_pseudo_clip_radius-minus-no_adapt/K1,clean_s0,both_class_score,0.03015075376884422,0.01,0.05527638190954774,199
+det_pseudo_clip_radius-minus-no_adapt/K1,clean_s0,both_false_positives,0.025,0.005,0.05,200
+det_pseudo_clip_radius-minus-no_adapt/K1,clean_s0,both_duplicates,0.0,0.0,0.0,200
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",source_only_fail,0.24381625441696114,0.19572760328021044,0.2890749947390572,283
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",target_only_fail,0.254416961130742,0.20063106796116506,0.3108120761210649,283
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_any_fail,0.1166077738515901,0.07638756361323155,0.15602893345981841,283
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_geometry,0.04332129963898917,0.019681194635826772,0.07117467881054346,277
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_class_score,0.04693140794223827,0.02089697389146103,0.07500408496732024,277
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_false_positives,0.007067137809187279,0.0,0.018119247857822898,283
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [0,1)",both_duplicates,0.007067137809187279,0.0,0.018249846260795156,283
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",source_only_fail,0.17341040462427745,0.11763884324679592,0.23165102905569002,173
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",target_only_fail,0.3179190751445087,0.2556786616161616,0.38506790599113844,173
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_any_fail,0.16184971098265896,0.10752688172043011,0.21978021978021978,173
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_geometry,0.017341040462427744,0.0,0.038461538461538464,173
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_class_score,0.057803468208092484,0.023809523809523808,0.09444444444444444,173
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_false_positives,0.028901734104046242,0.005952380952380952,0.05521472392638037,173
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [1,2)",both_duplicates,0.0,0.0,0.0,173
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",source_only_fail,0.21455938697318008,0.16551464869069224,0.2627554179566563,261
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",target_only_fail,0.2260536398467433,0.17623982952344053,0.27626854575938753,261
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_any_fail,0.18007662835249041,0.13961421832884097,0.2243364719619173,261
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_geometry,0.04597701149425287,0.023713080825371137,0.07197045454545455,261
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_class_score,0.05747126436781609,0.03064841624989032,0.08614562679004184,261
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_false_positives,0.02681992337164751,0.008063706438657857,0.04743083003952569,261
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [2,4)",both_duplicates,0.007662835249042145,0.0,0.019609773043075488,261
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",source_only_fail,0.2525879917184265,0.21321139142457354,0.29591836734693877,483
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",target_only_fail,0.2691511387163561,0.22755029417346748,0.31187403345694,483
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_any_fail,0.15734989648033126,0.12757097515869445,0.18750322164948452,483
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_geometry,0.053830227743271224,0.034482758620689655,0.0744472152061304,483
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_class_score,0.041407867494824016,0.023853322751239598,0.06060912771439086,483
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_false_positives,0.016563146997929608,0.005714313020873157,0.030991735537190084,483
+det_pseudo_clip_radius-minus-no_adapt/K1,"corrupted_overall ratio [4,inf)",both_duplicates,0.002070393374741201,0.0,0.006438114356915407,483
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [0,1)",source_only_fail,0.288135593220339,0.1694915254237288,0.4067796610169492,59
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [0,1)",target_only_fail,0.22033898305084745,0.11864406779661017,0.3220338983050847,59
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_any_fail,0.1864406779661017,0.0847457627118644,0.288135593220339,59
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_geometry,0.05172413793103448,0.0,0.11864406779661017,58
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_class_score,0.017241379310344827,0.0,0.05263157894736842,58
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_false_positives,0.01694915254237288,0.0,0.05084745762711865,59
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [0,1)",both_duplicates,0.0,0.0,0.0,59
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [1,2)",source_only_fail,0.25806451612903225,0.12903225806451613,0.41935483870967744,31
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [1,2)",target_only_fail,0.3548387096774194,0.1935483870967742,0.5483870967741935,31
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_any_fail,0.0967741935483871,0.0,0.1935483870967742,31
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_geometry,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_class_score,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_false_positives,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [1,2)",both_duplicates,0.0,0.0,0.0,31
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [2,4)",source_only_fail,0.2558139534883721,0.13953488372093023,0.3953488372093023,43
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [2,4)",target_only_fail,0.37209302325581395,0.23255813953488372,0.5116279069767442,43
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_any_fail,0.11627906976744186,0.023255813953488372,0.23255813953488372,43
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_geometry,0.0,0.0,0.0,43
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_class_score,0.046511627906976744,0.0,0.11627906976744186,43
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_false_positives,0.0,0.0,0.0,43
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [2,4)",both_duplicates,0.0,0.0,0.0,43
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",source_only_fail,0.22388059701492538,0.13432835820895522,0.3283582089552239,67
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",target_only_fail,0.373134328358209,0.26865671641791045,0.4925373134328358,67
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_any_fail,0.13432835820895522,0.05970149253731343,0.22388059701492538,67
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_geometry,0.0,0.0,0.0,67
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_class_score,0.029850746268656716,0.0,0.07462686567164178,67
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_false_positives,0.04477611940298507,0.0,0.1044776119402985,67
+det_pseudo_clip_radius-minus-no_adapt/K1,"clean_s0 ratio [4,inf)",both_duplicates,0.0,0.0,0.0,67
+det_pseudo_clip_radius-minus-no_adapt/K3,corrupted_overall,source_only_fail,0.21333333333333335,0.19,0.23666666666666666,1200
+det_pseudo_clip_radius-minus-no_adapt/K3,corrupted_overall,target_only_fail,0.27,0.24416666666666667,0.2958541666666666,1200
+det_pseudo_clip_radius-minus-no_adapt/K3,corrupted_overall,both_any_fail,0.18416666666666667,0.16166666666666665,0.20833333333333334,1200
+det_pseudo_clip_radius-minus-no_adapt/K3,corrupted_overall,both_geometry,0.05611390284757119,0.043328680203045686,0.07,1194
+det_pseudo_clip_radius-minus-no_adapt/K3,corrupted_overall,both_class_score,0.04355108877721943,0.03198653198653199,0.05611390284757119,1194
+det_pseudo_clip_radius-minus-no_adapt/K3,corrupted_overall,both_false_positives,0.041666666666666664,0.03,0.055,1200
+det_pseudo_clip_radius-minus-no_adapt/K3,corrupted_overall,both_duplicates,0.010833333333333334,0.005833333333333334,0.016666666666666666,1200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s1,source_only_fail,0.21,0.155,0.26512499999999933,200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s1,target_only_fail,0.245,0.185,0.305,200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s1,both_any_fail,0.205,0.15,0.26012499999999933,200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s1,both_geometry,0.07537688442211055,0.04020100502512563,0.115,199
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s1,both_class_score,0.06532663316582915,0.035,0.10050251256281408,199
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s1,both_false_positives,0.045,0.02,0.075,200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s1,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s2,source_only_fail,0.225,0.165,0.285,200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s2,target_only_fail,0.25,0.19,0.315,200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s2,both_any_fail,0.15,0.105,0.2,200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s2,both_geometry,0.04020100502512563,0.01507537688442211,0.07035175879396985,199
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s2,both_class_score,0.035175879396984924,0.015,0.061224489795918366,199
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s2,both_false_positives,0.035,0.01,0.065,200
+det_pseudo_clip_radius-minus-no_adapt/K3,gamma_s2,both_duplicates,0.02,0.005,0.045,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s1,source_only_fail,0.22,0.165,0.28,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s1,target_only_fail,0.26,0.205,0.325,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s1,both_any_fail,0.195,0.144875,0.25,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s1,both_geometry,0.06030150753768844,0.03,0.09547738693467336,199
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s1,both_class_score,0.06030150753768844,0.03,0.09547738693467336,199
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s1,both_false_positives,0.03,0.01,0.055,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s1,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s2,source_only_fail,0.17,0.12,0.225,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s2,target_only_fail,0.325,0.26,0.39,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s2,both_any_fail,0.2,0.15,0.255,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s2,both_geometry,0.05527638190954774,0.02512562814070352,0.09045226130653267,199
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s2,both_class_score,0.03015075376884422,0.01,0.05527638190954774,199
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s2,both_false_positives,0.055,0.025,0.09,200
+det_pseudo_clip_radius-minus-no_adapt/K3,contrast_s2,both_duplicates,0.015,0.0,0.035,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s1,source_only_fail,0.21,0.155,0.265,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s1,target_only_fail,0.28,0.22,0.345,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s1,both_any_fail,0.175,0.125,0.23,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s1,both_geometry,0.04020100502512563,0.01507537688442211,0.07035175879396985,199
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s1,both_class_score,0.02512562814070352,0.005025125628140704,0.05,199
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s1,both_false_positives,0.035,0.01,0.065,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s1,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s2,source_only_fail,0.245,0.185,0.305,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s2,target_only_fail,0.26,0.2,0.3201249999999993,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s2,both_any_fail,0.18,0.13,0.23,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s2,both_geometry,0.06532663316582915,0.035175879396984924,0.10101010101010101,199
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s2,both_class_score,0.04522613065326633,0.02,0.07537688442211055,199
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s2,both_false_positives,0.05,0.025,0.085,200
+det_pseudo_clip_radius-minus-no_adapt/K3,color_cast_s2,both_duplicates,0.015,0.0,0.035,200
+det_pseudo_clip_radius-minus-no_adapt/K3,clean_s0,source_only_fail,0.185,0.135,0.24,200
+det_pseudo_clip_radius-minus-no_adapt/K3,clean_s0,target_only_fail,0.29,0.23,0.3501249999999993,200
+det_pseudo_clip_radius-minus-no_adapt/K3,clean_s0,both_any_fail,0.225,0.17,0.28,200
+det_pseudo_clip_radius-minus-no_adapt/K3,clean_s0,both_geometry,0.06532663316582915,0.035,0.10051520227399618,199
+det_pseudo_clip_radius-minus-no_adapt/K3,clean_s0,both_class_score,0.04522613065326633,0.02,0.07537688442211055,199
+det_pseudo_clip_radius-minus-no_adapt/K3,clean_s0,both_false_positives,0.04,0.015,0.07,200
+det_pseudo_clip_radius-minus-no_adapt/K3,clean_s0,both_duplicates,0.01,0.0,0.025,200
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",source_only_fail,0.18021201413427562,0.12866240579861837,0.23390749081427042,283
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",target_only_fail,0.2826855123674912,0.23246859741324685,0.3333333333333333,283
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_any_fail,0.14487632508833923,0.0984251968503937,0.1891919697475253,283
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_geometry,0.04693140794223827,0.021942429581493263,0.07758685023160061,277
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_class_score,0.04332129963898917,0.01967740950985778,0.06620816789563241,277
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_false_positives,0.02120141342756184,0.006779661016949152,0.038168601569126374,283
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [0,1)",both_duplicates,0.0035335689045936395,0.0,0.011235955056179775,283
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",source_only_fail,0.1907514450867052,0.13414463823409184,0.2528106031254036,173
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",target_only_fail,0.27167630057803466,0.2068917356963976,0.34517917573120616,173
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_any_fail,0.2138728323699422,0.1520377488665484,0.28146002113420204,173
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_geometry,0.06358381502890173,0.028735632183908046,0.10429447852760736,173
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_class_score,0.04046242774566474,0.012195121951219513,0.07407407407407407,173
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_false_positives,0.04046242774566474,0.012191448721716134,0.07362573201338536,173
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [1,2)",both_duplicates,0.011560693641618497,0.0,0.030125045637093804,173
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",source_only_fail,0.19923371647509577,0.15174240971118538,0.25172665492071483,261
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",target_only_fail,0.23371647509578544,0.1850530305153137,0.2840052631578947,261
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_any_fail,0.22988505747126436,0.17999218749999998,0.2803030303030303,261
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_geometry,0.07662835249042145,0.04597701149425287,0.10757278577995708,261
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_class_score,0.06513409961685823,0.03543307086614173,0.09876777918603012,261
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_false_positives,0.06130268199233716,0.033959072208823944,0.09124122283589131,261
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [2,4)",both_duplicates,0.019157088122605363,0.003937007874015748,0.03614457831325301,261
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",source_only_fail,0.2484472049689441,0.21236488597313338,0.28601263667244614,483
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",target_only_fail,0.2815734989648033,0.23746721157051143,0.3274888237724933,483
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_any_fail,0.17184265010351968,0.13607743997198327,0.20659386068476976,483
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_geometry,0.047619047619047616,0.02857142857142857,0.06876444327731085,483
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_class_score,0.033126293995859216,0.019313304721030045,0.048193402540981534,483
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_false_positives,0.043478260869565216,0.023809523809523808,0.06473857723120692,483
+det_pseudo_clip_radius-minus-no_adapt/K3,"corrupted_overall ratio [4,inf)",both_duplicates,0.010351966873706004,0.002083225051975052,0.02040816326530612,483
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [0,1)",source_only_fail,0.1694915254237288,0.0847457627118644,0.2711864406779661,59
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [0,1)",target_only_fail,0.2711864406779661,0.1694915254237288,0.3898305084745763,59
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_any_fail,0.22033898305084745,0.11864406779661017,0.32245762711864173,59
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_geometry,0.06896551724137931,0.01694915254237288,0.13793103448275862,58
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_class_score,0.05172413793103448,0.0,0.11864406779661017,58
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_false_positives,0.05084745762711865,0.0,0.11864406779661017,59
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [0,1)",both_duplicates,0.01694915254237288,0.0,0.05084745762711865,59
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [1,2)",source_only_fail,0.16129032258064516,0.03225806451612903,0.2903225806451613,31
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [1,2)",target_only_fail,0.2903225806451613,0.12903225806451613,0.45161290322580644,31
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_any_fail,0.16129032258064516,0.03225806451612903,0.2903225806451613,31
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_geometry,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_class_score,0.0967741935483871,0.0,0.1935483870967742,31
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_false_positives,0.0,0.0,0.0,31
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [1,2)",both_duplicates,0.0,0.0,0.0,31
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [2,4)",source_only_fail,0.27906976744186046,0.13953488372093023,0.4186046511627907,43
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [2,4)",target_only_fail,0.3023255813953488,0.16279069767441862,0.4418604651162791,43
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_any_fail,0.20930232558139536,0.09302325581395349,0.32558139534883723,43
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_geometry,0.06976744186046512,0.0,0.16279069767441862,43
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_class_score,0.046511627906976744,0.0,0.11627906976744186,43
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_false_positives,0.023255813953488372,0.0,0.06976744186046512,43
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [2,4)",both_duplicates,0.023255813953488372,0.0,0.06976744186046512,43
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",source_only_fail,0.14925373134328357,0.07462686567164178,0.23880597014925373,67
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",target_only_fail,0.29850746268656714,0.19402985074626866,0.40298507462686567,67
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_any_fail,0.26865671641791045,0.16417910447761194,0.3880597014925373,67
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_geometry,0.07462686567164178,0.014925373134328358,0.14925373134328357,67
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_class_score,0.014925373134328358,0.0,0.04477611940298507,67
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_false_positives,0.05970149253731343,0.014925373134328358,0.11940298507462686,67
+det_pseudo_clip_radius-minus-no_adapt/K3,"clean_s0 ratio [4,inf)",both_duplicates,0.0,0.0,0.0,67
+det_pseudo_clip_radius-minus-det_pseudo/K1,corrupted_overall,source_only_fail,0.22916666666666666,0.20416666666666666,0.25333333333333335,1200
+det_pseudo_clip_radius-minus-det_pseudo/K1,corrupted_overall,target_only_fail,0.2125,0.18833333333333332,0.23833333333333334,1200
+det_pseudo_clip_radius-minus-det_pseudo/K1,corrupted_overall,both_any_fail,0.1575,0.1375,0.18083333333333335,1200
+det_pseudo_clip_radius-minus-det_pseudo/K1,corrupted_overall,both_geometry,0.04355108877721943,0.03166666666666667,0.05611390284757119,1194
+det_pseudo_clip_radius-minus-det_pseudo/K1,corrupted_overall,both_class_score,0.05778894472361809,0.045,0.07191488321471995,1194
+det_pseudo_clip_radius-minus-det_pseudo/K1,corrupted_overall,both_false_positives,0.030833333333333334,0.020833333333333332,0.041666666666666664,1200
+det_pseudo_clip_radius-minus-det_pseudo/K1,corrupted_overall,both_duplicates,0.013333333333333334,0.0075,0.02,1200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s1,source_only_fail,0.25,0.19,0.31,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s1,target_only_fail,0.205,0.15,0.26,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s1,both_any_fail,0.12,0.07987500000000002,0.17,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s1,both_geometry,0.035175879396984924,0.01015228426395939,0.065,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s1,both_class_score,0.05025125628140704,0.020202020202020204,0.08542713567839195,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s1,both_false_positives,0.01,0.0,0.025,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s1,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s2,source_only_fail,0.235,0.175,0.295,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s2,target_only_fail,0.205,0.15,0.265,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s2,both_any_fail,0.155,0.11,0.205,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s2,both_geometry,0.035175879396984924,0.010151002409885658,0.065,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s2,both_class_score,0.035175879396984924,0.01020408163265306,0.06030150753768844,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s2,both_false_positives,0.035,0.015,0.06,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,gamma_s2,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s1,source_only_fail,0.17,0.12,0.225,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s1,target_only_fail,0.23,0.175,0.29,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s1,both_any_fail,0.125,0.08,0.17,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s1,both_geometry,0.03015075376884422,0.01,0.05527638190954774,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s1,both_class_score,0.04522613065326633,0.02,0.07538640170549712,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s1,both_false_positives,0.02,0.005,0.04,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s1,both_duplicates,0.02,0.005,0.04,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s2,source_only_fail,0.21,0.155,0.27,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s2,target_only_fail,0.25,0.195,0.31,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s2,both_any_fail,0.18,0.13,0.2351249999999993,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s2,both_geometry,0.06030150753768844,0.03,0.09548944216029637,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s2,both_class_score,0.04522613065326633,0.02,0.07575757575757576,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s2,both_false_positives,0.045,0.02,0.08,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,contrast_s2,both_duplicates,0.015,0.0,0.035,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s1,source_only_fail,0.25,0.19,0.315,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s1,target_only_fail,0.2,0.145,0.26,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s1,both_any_fail,0.195,0.14,0.25,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s1,both_geometry,0.05025125628140704,0.020202020202020204,0.085,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s1,both_class_score,0.07537688442211055,0.040811146793742877,0.1111111111111111,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s1,both_false_positives,0.045,0.02,0.075,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s1,both_duplicates,0.025,0.005,0.05,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s2,source_only_fail,0.26,0.2,0.32,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s2,target_only_fail,0.185,0.13,0.24,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s2,both_any_fail,0.17,0.12,0.225,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s2,both_geometry,0.05025125628140704,0.020302004819771315,0.0821249999999996,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s2,both_class_score,0.09547738693467336,0.05527638190954774,0.13638094139363163,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s2,both_false_positives,0.03,0.01,0.055,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,color_cast_s2,both_duplicates,0.01,0.0,0.025,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,clean_s0,source_only_fail,0.255,0.195,0.315,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,clean_s0,target_only_fail,0.195,0.14,0.255,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,clean_s0,both_any_fail,0.16,0.11,0.21,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,clean_s0,both_geometry,0.02512562814070352,0.005025125628140704,0.05,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,clean_s0,both_class_score,0.05527638190954774,0.02512562814070352,0.09,199
+det_pseudo_clip_radius-minus-det_pseudo/K1,clean_s0,both_false_positives,0.03,0.01,0.055,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,clean_s0,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [0,1)",source_only_fail,0.1872791519434629,0.1408437992576397,0.23448275862068965,283
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [0,1)",target_only_fail,0.26148409893992935,0.20577114177536826,0.3205672026556172,283
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [0,1)",both_any_fail,0.08833922261484099,0.055939182768451064,0.12167394186511907,283
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [0,1)",both_geometry,0.02888086642599278,0.01056245366938473,0.05185313341022683,277
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [0,1)",both_class_score,0.036101083032490974,0.016525538544912614,0.05785123966942149,277
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [0,1)",both_false_positives,0.01060070671378092,0.0,0.023348583414396874,283
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [0,1)",both_duplicates,0.0035335689045936395,0.0,0.011630178052325569,283
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [1,2)",source_only_fail,0.26011560693641617,0.19779900332225914,0.3254437869822485,173
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [1,2)",target_only_fail,0.1676300578034682,0.11494252873563218,0.22641509433962265,173
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [1,2)",both_any_fail,0.15606936416184972,0.10695103084115293,0.2012084909625892,173
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [1,2)",both_geometry,0.028901734104046242,0.005952380952380952,0.05405812438944967,173
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [1,2)",both_class_score,0.08670520231213873,0.051421266233766236,0.12300802139037427,173
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [1,2)",both_false_positives,0.011560693641618497,0.0,0.029244066047471595,173
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [1,2)",both_duplicates,0.005780346820809248,0.0,0.01818458980044344,173
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [2,4)",source_only_fail,0.26053639846743293,0.20634920634920634,0.31429709732498573,261
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [2,4)",target_only_fail,0.20689655172413793,0.1621594915073176,0.25190839694656486,261
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [2,4)",both_any_fail,0.16475095785440613,0.12109375,0.21094184027777776,261
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [2,4)",both_geometry,0.038314176245210725,0.015383141762452108,0.06440622831367099,261
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [2,4)",both_class_score,0.04597701149425287,0.023076923076923078,0.07142857142857142,261
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [2,4)",both_false_positives,0.01532567049808429,0.0035967999793713418,0.03125,261
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [2,4)",both_duplicates,0.011494252873563218,0.0,0.025179856115107913,261
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [4,inf)",source_only_fail,0.22567287784679088,0.18574223044192395,0.26724697157409316,483
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [4,inf)",target_only_fail,0.2028985507246377,0.16874935699588478,0.23628691983122363,483
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [4,inf)",both_any_fail,0.19461697722567287,0.15961931006327823,0.23176036722280646,483
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [4,inf)",both_geometry,0.060041407867494824,0.03949604626460522,0.08333333333333333,483
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [4,inf)",both_class_score,0.06625258799171843,0.044205263157894734,0.09090909090909091,483
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [4,inf)",both_false_positives,0.057971014492753624,0.03594048689091162,0.08227848101265822,483
+det_pseudo_clip_radius-minus-det_pseudo/K1,"corrupted_overall ratio [4,inf)",both_duplicates,0.022774327122153208,0.010330578512396695,0.036887139394755436,483
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [0,1)",source_only_fail,0.1694915254237288,0.0847457627118644,0.2711864406779661,59
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [0,1)",target_only_fail,0.23728813559322035,0.13559322033898305,0.3394067796610146,59
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [0,1)",both_any_fail,0.22033898305084745,0.11864406779661017,0.3389830508474576,59
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [0,1)",both_geometry,0.034482758620689655,0.0,0.08620689655172414,58
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [0,1)",both_class_score,0.05172413793103448,0.0,0.11864406779661017,58
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [0,1)",both_false_positives,0.0,0.0,0.0,59
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [0,1)",both_duplicates,0.0,0.0,0.0,59
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [1,2)",source_only_fail,0.3548387096774194,0.1935483870967742,0.5161290322580645,31
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [1,2)",target_only_fail,0.12903225806451613,0.03225806451612903,0.25806451612903225,31
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [1,2)",both_any_fail,0.25806451612903225,0.0967741935483871,0.41935483870967744,31
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [1,2)",both_geometry,0.06451612903225806,0.0,0.16129032258064516,31
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [1,2)",both_class_score,0.12903225806451613,0.03225806451612903,0.25806451612903225,31
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [1,2)",both_false_positives,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [1,2)",both_duplicates,0.0,0.0,0.0,31
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [2,4)",source_only_fail,0.27906976744186046,0.16279069767441862,0.4186046511627907,43
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [2,4)",target_only_fail,0.2558139534883721,0.13953488372093023,0.3953488372093023,43
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [2,4)",both_any_fail,0.06976744186046512,0.0,0.16279069767441862,43
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [2,4)",both_geometry,0.023255813953488372,0.0,0.06976744186046512,43
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [2,4)",both_class_score,0.023255813953488372,0.0,0.06976744186046512,43
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [2,4)",both_false_positives,0.046511627906976744,0.0,0.11627906976744186,43
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [2,4)",both_duplicates,0.0,0.0,0.0,43
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [4,inf)",source_only_fail,0.26865671641791045,0.16417910447761194,0.373134328358209,67
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [4,inf)",target_only_fail,0.14925373134328357,0.05970149253731343,0.23880597014925373,67
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [4,inf)",both_any_fail,0.11940298507462686,0.04477611940298507,0.208955223880597,67
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [4,inf)",both_geometry,0.0,0.0,0.0,67
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [4,inf)",both_class_score,0.04477611940298507,0.0,0.1044776119402985,67
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [4,inf)",both_false_positives,0.04477611940298507,0.0,0.1044776119402985,67
+det_pseudo_clip_radius-minus-det_pseudo/K1,"clean_s0 ratio [4,inf)",both_duplicates,0.014925373134328358,0.0,0.04477611940298507,67
+det_pseudo_clip_radius-minus-det_pseudo/K3,corrupted_overall,source_only_fail,0.23333333333333334,0.20916666666666667,0.2575,1200
+det_pseudo_clip_radius-minus-det_pseudo/K3,corrupted_overall,target_only_fail,0.19666666666666666,0.17333333333333334,0.22,1200
+det_pseudo_clip_radius-minus-det_pseudo/K3,corrupted_overall,both_any_fail,0.17083333333333334,0.14914583333333334,0.19335416666666655,1200
+det_pseudo_clip_radius-minus-det_pseudo/K3,corrupted_overall,both_geometry,0.051926298157453935,0.04,0.06532663316582915,1194
+det_pseudo_clip_radius-minus-det_pseudo/K3,corrupted_overall,both_class_score,0.06030150753768844,0.04606001948518101,0.07538640170549712,1194
+det_pseudo_clip_radius-minus-det_pseudo/K3,corrupted_overall,both_false_positives,0.035833333333333335,0.025833333333333333,0.0475,1200
+det_pseudo_clip_radius-minus-det_pseudo/K3,corrupted_overall,both_duplicates,0.011666666666666667,0.006645833333333335,0.0175,1200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s1,source_only_fail,0.23,0.175,0.285,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s1,target_only_fail,0.19,0.14,0.245,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s1,both_any_fail,0.205,0.155,0.26,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s1,both_geometry,0.08040201005025126,0.04522613065326633,0.12060301507537688,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s1,both_class_score,0.08040201005025126,0.045,0.12,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s1,both_false_positives,0.035,0.01,0.06,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s1,both_duplicates,0.0,0.0,0.0,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s2,source_only_fail,0.255,0.195,0.32,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s2,target_only_fail,0.19,0.13987500000000003,0.25,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s2,both_any_fail,0.135,0.095,0.185,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s2,both_geometry,0.04020100502512563,0.01507537688442211,0.07035175879396985,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s2,both_class_score,0.035175879396984924,0.010050251256281407,0.06060606060606061,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s2,both_false_positives,0.025,0.005,0.05,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,gamma_s2,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s1,source_only_fail,0.2,0.15,0.255,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s1,target_only_fail,0.195,0.14,0.25,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s1,both_any_fail,0.16,0.11,0.21,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s1,both_geometry,0.04522613065326633,0.02,0.07537688442211055,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s1,both_class_score,0.06030150753768844,0.03015075376884422,0.09547738693467336,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s1,both_false_positives,0.04,0.015,0.07,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s1,both_duplicates,0.015,0.0,0.035,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s2,source_only_fail,0.2,0.145,0.255,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s2,target_only_fail,0.225,0.16987500000000003,0.285,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s2,both_any_fail,0.155,0.105,0.21,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s2,both_geometry,0.035175879396984924,0.010101010101010102,0.065,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s2,both_class_score,0.04522613065326633,0.020097989949748745,0.07537688442211055,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s2,both_false_positives,0.04,0.015,0.07,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,contrast_s2,both_duplicates,0.035,0.01,0.06,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s1,source_only_fail,0.23,0.17,0.29,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s1,target_only_fail,0.205,0.15,0.26,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s1,both_any_fail,0.19,0.135,0.25,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s1,both_geometry,0.05025125628140704,0.025,0.08131281725888273,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s1,both_class_score,0.06532663316582915,0.035,0.10101010101010101,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s1,both_false_positives,0.055,0.025,0.09,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s1,both_duplicates,0.01,0.0,0.025,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s2,source_only_fail,0.285,0.225,0.35,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s2,target_only_fail,0.175,0.125,0.23,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s2,both_any_fail,0.18,0.13,0.235,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s2,both_geometry,0.06030150753768844,0.03015075376884422,0.09595959595959595,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s2,both_class_score,0.07537688442211055,0.04020100502512563,0.115,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s2,both_false_positives,0.02,0.005,0.04,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,color_cast_s2,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,clean_s0,source_only_fail,0.195,0.14,0.25,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,clean_s0,target_only_fail,0.245,0.19,0.31,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,clean_s0,both_any_fail,0.155,0.105,0.21,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,clean_s0,both_geometry,0.03015075376884422,0.01,0.05527638190954774,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,clean_s0,both_class_score,0.035175879396984924,0.010101010101010102,0.06091370558375635,199
+det_pseudo_clip_radius-minus-det_pseudo/K3,clean_s0,both_false_positives,0.02,0.005,0.04,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,clean_s0,both_duplicates,0.005,0.0,0.015,200
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [0,1)",source_only_fail,0.16607773851590105,0.11881033415841584,0.21374177415109238,283
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [0,1)",target_only_fail,0.24028268551236748,0.19548656123066285,0.2857272256728778,283
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [0,1)",both_any_fail,0.15901060070671377,0.114088585827223,0.20996530249110318,283
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [0,1)",both_geometry,0.05415162454873646,0.028877694605598553,0.08171387036581661,277
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [0,1)",both_class_score,0.039711191335740074,0.016945591796040452,0.06405693950177936,277
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [0,1)",both_false_positives,0.01060070671378092,0.0,0.02381155533885908,283
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [0,1)",both_duplicates,0.0035335689045936395,0.0,0.01123701106699332,283
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [1,2)",source_only_fail,0.3063583815028902,0.24095580181689324,0.375,173
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [1,2)",target_only_fail,0.1676300578034682,0.11583088029156155,0.22353328173374612,173
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [1,2)",both_any_fail,0.14450867052023122,0.09411277218069548,0.1976776130845898,173
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [1,2)",both_geometry,0.04046242774566474,0.012343785503294706,0.07142857142857142,173
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [1,2)",both_class_score,0.06936416184971098,0.030115972873530048,0.1139931572426222,173
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [1,2)",both_false_positives,0.011560693641618497,0.0,0.029411764705882353,173
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [1,2)",both_duplicates,0.0,0.0,0.0,173
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [2,4)",source_only_fail,0.23371647509578544,0.18630727706697012,0.28458646060013915,261
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [2,4)",target_only_fail,0.16475095785440613,0.11523757892252316,0.2180503341687552,261
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [2,4)",both_any_fail,0.1839080459770115,0.13636363636363635,0.23049042036030878,261
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [2,4)",both_geometry,0.04980842911877394,0.026512650085763294,0.07851587891169094,261
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [2,4)",both_class_score,0.06130268199233716,0.03357587064676617,0.09157579062159214,261
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [2,4)",both_false_positives,0.038314176245210725,0.016527225113083698,0.06273062730627306,261
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [2,4)",both_duplicates,0.0038314176245210726,0.0,0.0141355286569932,261
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [4,inf)",source_only_fail,0.2463768115942029,0.20903595735027222,0.2877908734708276,483
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [4,inf)",target_only_fail,0.19875776397515527,0.160254329004329,0.24008354111665198,483
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [4,inf)",both_any_fail,0.18012422360248448,0.1468809617966981,0.21684658454647254,483
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [4,inf)",both_geometry,0.055900621118012424,0.034623217922606926,0.07926829268292683,483
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [4,inf)",both_class_score,0.06832298136645963,0.04311944208923197,0.09825420818870599,483
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [4,inf)",both_false_positives,0.057971014492753624,0.037266776275727685,0.08064766579843717,483
+det_pseudo_clip_radius-minus-det_pseudo/K3,"corrupted_overall ratio [4,inf)",both_duplicates,0.024844720496894408,0.010892654163114522,0.039069374353002034,483
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [0,1)",source_only_fail,0.11864406779661017,0.03389830508474576,0.22033898305084745,59
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [0,1)",target_only_fail,0.3389830508474576,0.22033898305084745,0.4576271186440678,59
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [0,1)",both_any_fail,0.11864406779661017,0.03389830508474576,0.2033898305084746,59
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [0,1)",both_geometry,0.05172413793103448,0.0,0.11864406779661017,58
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [0,1)",both_class_score,0.034482758620689655,0.0,0.08771929824561403,58
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [0,1)",both_false_positives,0.0,0.0,0.0,59
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [0,1)",both_duplicates,0.0,0.0,0.0,59
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [1,2)",source_only_fail,0.3225806451612903,0.16129032258064516,0.4838709677419355,31
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [1,2)",target_only_fail,0.16129032258064516,0.03225806451612903,0.2903225806451613,31
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [1,2)",both_any_fail,0.1935483870967742,0.06451612903225806,0.3548387096774194,31
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [1,2)",both_geometry,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [1,2)",both_class_score,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [1,2)",both_false_positives,0.03225806451612903,0.0,0.0967741935483871,31
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [1,2)",both_duplicates,0.0,0.0,0.0,31
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [2,4)",source_only_fail,0.20930232558139536,0.09302325581395349,0.3488372093023256,43
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [2,4)",target_only_fail,0.2558139534883721,0.13953488372093023,0.3953488372093023,43
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [2,4)",both_any_fail,0.18604651162790697,0.06976744186046512,0.3023255813953488,43
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [2,4)",both_geometry,0.023255813953488372,0.0,0.06976744186046512,43
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [2,4)",both_class_score,0.09302325581395349,0.023255813953488372,0.18604651162790697,43
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [2,4)",both_false_positives,0.0,0.0,0.0,43
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [2,4)",both_duplicates,0.0,0.0,0.0,43
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [4,inf)",source_only_fail,0.19402985074626866,0.1044776119402985,0.29850746268656714,67
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [4,inf)",target_only_fail,0.19402985074626866,0.1044776119402985,0.28395522388059496,67
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [4,inf)",both_any_fail,0.14925373134328357,0.07462686567164178,0.23880597014925373,67
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [4,inf)",both_geometry,0.014925373134328358,0.0,0.04477611940298507,67
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [4,inf)",both_class_score,0.0,0.0,0.0,67
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [4,inf)",both_false_positives,0.04477611940298507,0.0,0.1044776119402985,67
+det_pseudo_clip_radius-minus-det_pseudo/K3,"clean_s0 ratio [4,inf)",both_duplicates,0.014925373134328358,0.0,0.04477611940298507,67
