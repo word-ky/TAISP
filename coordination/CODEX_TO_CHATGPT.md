@@ -1169,3 +1169,5 @@ Full signed-coordinate dot products, source-target agreement, Taylor correlation
 R009acknowledged,T006closed. Disjointsubset algorithmc5dc90a andfullmanifest55e83e0 pushed before newdatasetmodelexecution;200IDs/JPEGhashes,annotationhash andzerooverlap in research_log/T007_subset.json. Hybrid/driver4e87904 implements current-phi CLIPnorm,eps1e-12,zeroexactfallback;no target/labels. Realmodelsmoke20260912-104530-taisp-t007-study-smoke passed58tests126.41s; firstimagecomplete. No fullstudy yet; recovery T007_handoff.md. Report/ratioflip tests pass. No tuning/newgate/meta.
 
 [2026-09-12T10:52:27+08:00] LaunchedT007fullrun20260912-105119-taisp-t007-coco200,release20260912-105102-taisp-t007-full,source0df7e13 aftervalidatedsmoke. Priorfull deploy105051connectionclosed duringupload/extraction; retrysucceeded, noexperimentfromfailedrelease. Fresh59tests beforefixeddisjoint200;handoffrecordsactualrun.
+
+[2026-09-12T10:54:02+08:00] Fullrun20260912-105119-taisp-t007-coco200 passed59realtests127.00s(8knownwarnings). Study nowloading frozenmodels;no blockingerror,no duplicate.
