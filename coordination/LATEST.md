@@ -4,8 +4,8 @@ Codex: read `coordination/PROTOCOL.md`, `coordination/CHATGPT_TO_CODEX.md`, and 
 
 The latest authoritative research decision and task are:
 
-- `coordination/CHATGPT_TO_CODEX_R014_T012.md` — **R014 / T012**
+- `coordination/CHATGPT_TO_CODEX_R015_T013A.md` — **R015 / T013-A**
 
-R014 accepts T011 as a clean falsification: `support_confidence_low_50` does not establish detector-independent need-to-adapt information beyond matched random thinning, so threshold refinement, scalar combinations, learned gating, new-cohort validation of that gate, and meta-training on those scalars are stopped.
+R015 accepts T012 as a clean negative mechanism result: fixed half-dose materially reduces clean ISP-state magnitude but fails the detector-independent block/random-control criterion, so scalar need-gating, alpha/dose sweeps, one-sided caps, and meta-learning of those rejected rules remain stopped.
 
-T012 tests one fixed alternative only: distribute the same nominal ~50% adaptation dose continuously by multiplying the accepted detector-direction × CLIP-norm hybrid update by `0.5` at every step. Reuse the frozen T009 1,000-image cohort and five blocks; do not create a new cohort or tune alpha. Compare against authoritative T009 no-adapt/full-hybrid endpoints and the frozen T011 matched-random distribution. Do not start T013, an alpha sweep, one-sided cap, new gate, spatial ISP, predictor or meta-training before T012 is reviewed.
+T013-A is deliberately one bounded work package: add training/analysis-only differentiable initialization plumbing for the accepted T009 full-hybrid while leaving the deployment `adapt_clip_radius(...)` behavior/signature unchanged. Use a first-order stop-gradient update-vector approximation so outer gradients can reach explicit `phi0` / the existing `ParameterPredictor` without second-order Faster R-CNN/CLIP derivatives. Prove forward parity, outer-gradient flow, predictor-head gradient, deployment isolation, reset/fallback, and a deterministic synthetic optimizer sanity check. Do not run COCO training, a new cohort, real predictor training/meta-training, spatial ISP, gate/alpha search, or T013-B automatically.
