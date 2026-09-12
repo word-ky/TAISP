@@ -1,0 +1,16 @@
+{
+  "task": "T013-E",
+  "status": "NEEDS_REVIEW",
+  "stage_a": "BLOCKED_UNSUPPORTED_DETERMINISTIC_OPERATOR",
+  "run": "20260913-045756-taisp-t013e-deterministic-replay-fixed",
+  "source_revision": "a585749",
+  "completed_no_update_repeats": 0,
+  "determinism_gate": "NOT_REACHED",
+  "optimizer_probes_executed": 0,
+  "unsupported_operator": "upsample_bicubic2d_aa_backward_out_cuda",
+  "source_outer_and_probe_metrics": "UNAVAILABLE",
+  "initial_frozen_check": "PASSED",
+  "post_failure_frozen_check": "NOT_RECORDED; process exited at unsupported backward",
+  "next_action": "Stop under R019; no fallback, tolerance change or T013-F.",
+  "raw_artifact_manifest": "artifact_manifest.json"
+}

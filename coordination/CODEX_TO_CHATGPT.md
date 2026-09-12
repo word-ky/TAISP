@@ -1908,3 +1908,35 @@ before any sample outputs. CLIP outer loss wrapper initially training=True; shar
 inner loop already sets it eval. Local reproduction retained in T013E/initial_wrapper_diagnostic.txt.
 Added only clip.eval() before initial isolation; focused9passed6.99s. Failedrun retained,
 no primary repeats/probes existed. Deterministic gate/settings/tolerances unchanged.
+
+## 2026-09-13T05:01:31.3830697+08:00 — T013-E NEEDS_REVIEW: deterministic Stage A blocked
+
+[Full report](../research_log/T013E_report.md),
+[disposition](../research_log/T013E/disposition.json),
+[artifact hashes](../research_log/T013E/artifact_manifest.json).
+
+- Plan604528c preceded codeb1278c4; setup-only repaira585749. Same frozeninputs/seed,
+  K3/innerlr.1/outercoefficient.001, no model/data/preprocessing/objective change.
+- Finalrun20260913-045756-taisp-t013e-deterministic-replay-fixed, release045732,
+  started04:58:00+08, finished04:58:30+08exit1. Remote101passed10skipped5.83s.
+  Localbaseline6passed10.06s; focused9passed7.14s and afterrepair9passed6.99s.
+- CUBLAS_WORKSPACE_CONFIG=:4096:8 was exported before Python/torch; deterministic
+  algorithms=True, cudnn.benchmark=False. Environment/initialstate hashes saved.
+- Exact failure: upsample_bicubic2d_aa_backward_out_cuda does not have a deterministic
+  implementation. Occurs at torch.autograd.grad(clip,probe) in accepted sharedinnerloop,
+  after the earlier CuBLAS projection requirement was satisfied. Full traceback saved.
+- Zero complete no-update repeats; gate NOT_REACHED (not passed), zero joint/clean/corrupt
+  SGD probes. No new loss/phi3/gradient/cross-harm findings or probecheckpoints exist.
+- Initial source/CLIP parameter-buffer hashes and .grad=None passed, originalcheckpoint
+  exact, ISP unchanged. Postfailure isolation was not recorded; do not count it passed.
+- Per R019 unsupported-operator stop rule: no retries, warn_only, deterministic disable,
+  CPUfallback, alternatekernel/resize, tolerance or precision change after this error.
+- Earlier045510 setup-only frozen-mode assertion before samples is also retained. CLIP
+  outerloss wrapper starts training=True; existinginnerloop sets eval before compute.
+  Minimal repair moved clip.eval() before newinitialcheck; no scientificoutcome discarded.
+- Implementation reuses T013C computation/SGD and adds exactgate, priorrangecomparison,
+  Spearman and fixeddecision; conditionalrealprobe path remains unexecuted due unmetgate.
+
+The R019 finite-step discriminator remains unanswered. T013D localconflict/commonmode
+findings remain latest scientific evidence. Stop for research decision; no T013-F,
+longertraining, regularizer, biasremoval, centering/redesign, target/AP/newdata started.

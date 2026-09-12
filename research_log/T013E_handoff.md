@@ -1,13 +1,17 @@
-# T013-E running handoff
+# T013-E stopped handoff — NEEDS_REVIEW
 
-2026-09-13T04:55:41.6601322+08:00 — IN_PROGRESS, R019/74cbdce; plan604528c, sourceb1278c4.
-Run20260913-045510-taisp-t013e-deterministic-replay.
-Release20260913-045442-taisp-t013e-deterministic.
-Remote/home/liujianhua/wjq/TAISP/runs/20260913-045510-taisp-t013e-deterministic-replay.
-CUBLAS_WORKSPACE_CONFIG=:4096:8 exported before Python; deterministic algorithms
-are enabled in runner. Three exact no-update repeats gate three independent SGD1e-3
-probes. Keep all outcomes; no repeat/fallback/workaround if determinism fails.
-Localbaseline6passed10.06s,focused9passed7.14s. Fullremote tests/results pending.
-Exact command retained in run metadata. Read logs/fetch before any launch to avoid duplicate.
-Next report raw repeats/gate/prior-range comparison and conditionalprobes; commit/push/mirror.
-Stop after T013-E, no T013-F or model/data/objective/deployment change automatically.
+2026-09-13T05:01:31.3830697+08:00 — Stage A blocked; read T013E_report.md, T013E/disposition.json.
+R019/74cbdce; pre-outcome plan604528c, final runnera585749.
+Final run20260913-045756-taisp-t013e-deterministic-replay-fixed, release20260913-045732-taisp-t013e-eval-init.
+Remote/home/liujianhua/wjq/TAISP/runs/20260913-045756-taisp-t013e-deterministic-replay-fixed.
+04:58:00–04:58:30+08, exit1. 101passed/10skipped5.83s then CLIP backward raises
+upsample_bicubic2d_aa_backward_out_cuda: no deterministic implementation.
+CUBLAS_WORKSPACE_CONFIG=:4096:8 before Python confirmed, deterministic=True,
+cudnn.benchmark=False. No complete no-update repeats, gate not reached, zero probes.
+Do not rerun or add workaround: R019 explicitly stops on another unsupported operator.
+Initial frozen state hashes/checkpoint equality passed; no post-error isolation receipt.
+First run045510 setup-only wrapper.training assertion and minimal clip.eval() repair
+are preserved; it produced no sample outcomes. All files retained locally in
+research_log/remote_runs/<both run IDs>, hashes in T013E/artifact_manifest.json.
+No active job/transfer. No T013-F, longertraining, objective/architecture/deployment,
+resize/kernel/precision/tolerance change, data expansion or AP until explicit new task.

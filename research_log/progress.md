@@ -452,3 +452,17 @@ reproduces frozen check False before wrapper.eval(), True after, with unchangeds
 Smallest repair: call clip.eval() before the new initial check in analysis runner only.
 Focused9passed6.99s. No deterministic-operator failure, no output mismatch, no scientific
 outcome rerun or tolerance relaxation. Relaunch same predeclared protocol after deploy.
+
+## 2026-09-13T04:58:16.3274215+08:00 — T013-E setup repair deployed, fixed run launched
+Run20260913-045756-taisp-t013e-deterministic-replay-fixed, sourcea585749, release045732. Prior failedrun retained; no duplicate activejob.
+
+## 2026-09-13T05:01:31.3830697+08:00 — T013-E exact operator blocker; stopped for review
+
+Finalrun045756/sourcea585749 exit1 at04:58:30+08, regression101passed10skipped5.83s.
+CUBLAS env fixed beforeimport and runtime recorded. First attempted CLIP gradient
+failed at upsample_bicubic2d_aa_backward_out_cuda, no deterministic implementation.
+No complete repeats, exact gate not reached, zero SGD probes. Per R019 stoppedbranch
+with full traceback, no workaround/alternatekernel/warn_only/tolerance change.
+Initial isolation passed; postfailure check not recorded. Bothrun receipts fetched,
+artifact SHAmanifest/disposition/report retained. No finite-step scientific conclusion;
+NEEDS_REVIEW with StageA blocked. No T013-F or method changes automatically.

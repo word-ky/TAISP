@@ -1,0 +1,56 @@
+{
+  "config": {
+    "seed": 20260913,
+    "inner_steps": 3,
+    "inner_lr": 0.1,
+    "outer_lr": 0.001
+  },
+  "source_revision": "a585749",
+  "python": "3.12.12",
+  "packages": {
+    "torch": "2.4.0",
+    "torchvision": "0.19.0+cu121",
+    "transformers": "4.44.2",
+    "pycocotools": "2.0.10",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0"
+  },
+  "cuda": "12.1",
+  "gpu": "NVIDIA RTX A6000",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "clip_sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+  "detector_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "positive_prompts": [
+    "a clear natural photograph",
+    "a well-lit photograph with natural colors",
+    "a sharp and clear photograph with good visibility"
+  ],
+  "negative_prompts": [
+    "a dark underexposed photograph",
+    "a poorly lit photograph with low visibility",
+    "a low contrast washed-out photograph",
+    "a hazy photograph with faded details",
+    "a photograph with an unnatural color cast",
+    "a photograph with distorted and unbalanced colors"
+  ],
+  "interpretation": "T013-E fixed train2017 deterministic replay; no validation or AP.",
+  "cublas_workspace_config_before_torch": ":4096:8",
+  "deterministic_algorithms": true,
+  "cudnn_benchmark": false,
+  "pins": {
+    "manifest": "164bef1b809fd8fa763ed8954386ea39443a2d7786b90c54ca0673de4bf49493",
+    "supports": "6523a277cf2183a66412f3ad0a0099687a3851a0c6ff6ce4c81939b3c6112e35",
+    "prior": "7c35fb9e5f7b1c923c06f625ddf806d443e763b56aa52d8027594f0b95cce943",
+    "original": "a0eb1023150395de2a882d564dc28887a9f80065590ad77e92267896b313e120"
+  },
+  "control_manifest_sha256": "6e689f25b061f94018499d25d889f29143e79f64bfa593339f9c907093a40afb",
+  "initial_isolation": {
+    "frozen_models_unchanged": true,
+    "frozen_grad_none": true,
+    "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+    "clip_state_sha256": "6b38ac3696ff07a4e0cdbe436db05551707486e413df526256526b5777fe147c",
+    "original_predictor_unchanged": true,
+    "isp_unchanged": true
+  }
+}
