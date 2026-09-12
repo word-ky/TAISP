@@ -139,3 +139,7 @@ Run20260912-143436,sourcebe5c797:70real-model/regressiontests passed183.95s(9kno
 ## 2026-09-12T14:46:53+08:00 — T009 full study started
 
 Run20260912-144439-taisp-t009-coco1000,release20260912-144331-taisp-t009-full,source/report69bfb66. Formal1000cohort/fiveblocks,3detectors7conditions4methodsK3. Earlier70tests+2imagesmoke passed; driver/adaptationunchanged. First6/1000normal (~35.7s); no activeblockingerror. RemoteMatplotlibabsent,finalplotwilluseexistinglocalruntime; no remotepackageupgrade. Monitoring via15minheartbeat; fullscientificresultspending.
+
+## 2026-09-12T14:48:12+08:00 — T009 launch handoff synchronized
+
+Active-runhandoffcad6205 pushed and mirrored under A6000 projectrootresearch_log/coordination. Verifiedactual started_at14:44:47+08; latest27/1000images elapsed156.2s,normal. Launchreceipt research_log/T009/launch_receipt.json. No finalscientificresultyet; scheduledmonitorcontinues.
