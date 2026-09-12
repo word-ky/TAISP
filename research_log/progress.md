@@ -196,3 +196,7 @@ T009rawarchivalpushsession56743 completeda23b618. Noactivejobs/transfers,nonewT0
 ## 2026-09-12T19:32:06+08:00 — R013 accepted; T011 matched-random control started
 
 Syncedad06718/R01326ff476;T010closed. LatestpointerlocatesR013appendinmainqueue(initialguessedcontinuationfilenameabsent,correctqueueimmediatelyread). PlanT011 freezesexactcandidatevectorand200seeds2026091600..2026091799,35stratumcounts,hashrule,percentile/tail conventions beforeAP. Remoteofflinebaseline14passed2.31s. No scientificparameter ormodelchange.
+
+## 2026-09-12T19:37:10+08:00 — T011 selector preparation green
+
+5matched-control/preparation/statistic tests passed8.05s. Two-imageexistingT010fixture:14rows203configs200controls14partialstrata exactcounts,exit0. Partialstrataoneimageeachmakeidenticalrandommasks;smokehasnoscientificinterpretation. Fullcandidatevector isreadverbatim,notreranked. Code/seedrule readyforfull35-stratumpreparationbeforeAP.

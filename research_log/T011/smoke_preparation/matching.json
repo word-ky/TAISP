@@ -1,0 +1,33 @@
+{
+  "candidate": "support_confidence_low_50",
+  "candidate_decision_sha256": "a083561810d1a692a0544b41462fc4fc50fc48c5d2acae58257fc2b6532102b0",
+  "candidate_cutoff": {
+    "selected": 7,
+    "total": 14,
+    "cutoff_score": 0.8063294802393232,
+    "boundary_image_id": 1353,
+    "boundary_row_ordinal": 7
+  },
+  "stratum_selected_counts": {
+    "gamma_s1/block_2": 0,
+    "gamma_s2/block_2": 0,
+    "contrast_s1/block_2": 0,
+    "contrast_s2/block_2": 1,
+    "color_cast_s1/block_2": 0,
+    "color_cast_s2/block_2": 0,
+    "clean_s0/block_2": 1,
+    "gamma_s1/block_1": 1,
+    "gamma_s2/block_1": 0,
+    "contrast_s1/block_1": 1,
+    "contrast_s2/block_1": 0,
+    "color_cast_s1/block_1": 1,
+    "color_cast_s2/block_1": 1,
+    "clean_s0/block_1": 1
+  },
+  "strata": 14,
+  "draws": 200,
+  "all_stratum_counts_equal": true,
+  "unique_random_masks": 1,
+  "hash_payload": "TAISP-T011|{seed}|{image_id}|{case}",
+  "order": "digest bytes ascending then image ID"
+}
