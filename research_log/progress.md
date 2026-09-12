@@ -335,3 +335,17 @@ Full local suite84passed/14skipped/1failed19.40s: missingpycocotools in existing
 replication test. No scientific code repair needed. Use existing remote environment
 for complete non-real regression and one optional synthetic-image real-model smoke.
 No dataset/COCO training or real predictor optimizer. Receipts inresearch_log/T013A.
+
+## 2026-09-13T00:14:32.7268912+08:00 — T013-A ready for review with optional CUDA numerical limitation
+
+Required synthetic initialization plumbing and predictor-gradient checks complete.
+Plan cd3060c; source bfd2484. Remote full regression 89 passed/10 skipped in5.09s.
+Synthetic seed20260913,8 outer SGD steps, loss .005294277333 -> .001558897318.
+Optional strict real CUDA smoke failed bitwise parity (2.11827e-5 phi discrepancy).
+Bounded same-fixture diagnostic records repeated original drift8.58842e-6,
+connected drift9.04803e-6; outer phi0/head gradients .1245225221/.0540611036;
+frozen parameters/buffers/support unchanged. No algorithm/tolerance changed.
+Report T013A_report.md preserves this limitation and all operational failures:
+relative venv127, SSH255, uncaptured manual resume, local missing pycocotools.
+All available logs/JSON/source receipts fetched under research_log. No active
+job/transfer or COCO/real predictor training. T013-A NEEDS_REVIEW, await next task.

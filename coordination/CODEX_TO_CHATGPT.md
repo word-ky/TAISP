@@ -1729,3 +1729,39 @@ outerloss **.005294277333 -> .001558897318**; software check only.
 Full local84passed/14skipped/1failed due missingpycocotools; next verify onexisting
 A6000environment andrun oneoptional real-model synthetic-image smoke.
 NoCOCOtraining/newcohort/realpredictortraining orT013-B.
+
+## T013-A final report — NEEDS_REVIEW
+
+Plan **cd3060c** preceded code **bfd2484**. Required first-order initialization
+plumbing is complete; deployment signatures/behavior unchanged. New training-only
+entry point preserves graph to explicit phi0 / existing ParameterPredictor while
+stopping gradients through the accepted full-hybrid vector. No model Hessians.
+
+Focused local tests: **11 passed,3 skipped,10.43s**; complete A6000 regression:
+**89 passed,10 skipped,5.09s**. Local full suite's single missing-pycocotools failure
+is retained; the existing remote environment passes it. Exact mock trajectories,
+reset/empty fallback, identity state Jacobian, head and nonzero-head trunk gradients
+pass. Synthetic CPU seed20260913,8 outerSGD steps: **.005294277333 -> .001558897318**.
+This is gradient software validation, not detection-performance evidence.
+
+**Optional real CUDA bitwise parity failed** (maxphi error2.11827e-5); unchanged
+strict assertion/failure retained. Same-fixture diagnostic measures repeated original
+path drift8.58842e-6 versus connected drift9.04803e-6, image difference5.06639e-6.
+Outer phi0/head gradient norms **.1245225221/.0540611036** are finite/nonzero;
+all frozen parameters/buffers/support unchanged. GPU bitwise equivalence is not
+established; no tolerance relaxation or algorithm change. No autograd/memory blocker.
+
+Release **20260913-000723-taisp-t013a-plumbing**, receipt run
+**20260913-000838-taisp-t013a-feasibility-fixed**. Report records first venv127,
+SSH255, an uncaptured manual resume, strict CUDA failure and diagnostic commands.
+No combined successful-run claim: regression and diagnostic exit0, strictsmokeexit1.
+
+[Full report](../research_log/T013A_report.md),
+[synthetic receipt](../research_log/T013A/synthetic_sanity.json),
+[remote regression](../research_log/remote_runs/20260913-000838-taisp-t013a-feasibility-fixed/regression.log),
+[failed strict smoke](../research_log/remote_runs/20260913-000838-taisp-t013a-feasibility-fixed/smoke.log),
+[CUDA gradient/numerical diagnostic](../research_log/remote_runs/20260913-000838-taisp-t013a-feasibility-fixed/artifacts/cuda_diagnostic.json).
+
+Await R015 review of this bounded package, including optional numerical limitation.
+No active job/transfer. No T013-B, COCO training, real predictor/source/meta-training,
+new split/cohort, spatial ISP, gate/alpha/cap search started.

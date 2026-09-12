@@ -1,0 +1,10 @@
+.............s..s.........s....s..s...s....s....................s..s.... [ 72%]
+..........................s                                              [100%]
+=============================== warnings summary ===============================
+tests/test_demo.py::test_cuda_demo_matches_cpu
+tests/test_initialization.py::test_forward_parity_entire_trajectory_and_deployment_detachment[0.0]
+  /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+    warnings.warn("Can't initialize NVML")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+89 passed, 10 skipped, 2 warnings in 5.09s

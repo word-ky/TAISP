@@ -1,0 +1,54 @@
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+{
+  "purpose": "Real frozen-model autograd smoke on one synthetic image; no detection evidence.",
+  "source_revision": "bfd2484",
+  "seed": 20260913,
+  "python": "3.12.12",
+  "torch": "2.4.0+cu121",
+  "device": "cuda:0",
+  "gpu": "NVIDIA RTX A6000",
+  "image_shape": [
+    1,
+    3,
+    129,
+    161
+  ],
+  "support": "one fixed synthetic box/label/score; detached",
+  "steps": 3,
+  "lr": 0.1,
+  "eps": 1e-12,
+  "approximation": "FOMAML-style",
+  "repeat_full_phi_max_abs_error": 8.588423952460289e-06,
+  "phi_max_abs_error": 9.048031643033028e-06,
+  "image_max_abs_error": 5.066394805908203e-06,
+  "phi0_gradient_norm": 0.12452252209186554,
+  "predictor_head_gradient_norm": 0.054061103612184525,
+  "frozen_parameters_and_buffers_unchanged": true,
+  "support_unchanged": true,
+  "phi0": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "phi3": [
+    0.001280762255191803,
+    -0.0013564627151936293,
+    -0.011957510374486446,
+    0.008967829868197441,
+    -0.0022663879208266735,
+    -0.0015011192299425602,
+    -0.0010761647718027234,
+    0.0012706317938864231
+  ],
+  "elapsed_seconds": 3.591553965001367
+}

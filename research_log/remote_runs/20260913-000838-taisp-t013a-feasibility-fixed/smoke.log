@@ -1,0 +1,19 @@
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/liujianhua/wjq/TAISP/releases/20260913-000723-taisp-t013a-plumbing/scripts/smoke_t013a.py", line 75, in <module>
+    receipt = run_smoke()
+              ^^^^^^^^^^^
+  File "/home/liujianhua/wjq/TAISP/releases/20260913-000723-taisp-t013a-plumbing/scripts/smoke_t013a.py", line 43, in run_smoke
+    torch.testing.assert_close(connected.phi.flatten(), full.phi, rtol=0, atol=0)
+  File "/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1524, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not equal!
+
+Mismatched elements: 8 / 8 (100.0%)
+Greatest absolute difference: 2.1182699128985405e-05 at index (1,)
+Greatest relative difference: 0.015858473256230354 at index (1,)

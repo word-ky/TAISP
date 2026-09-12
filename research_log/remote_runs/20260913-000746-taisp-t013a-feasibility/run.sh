@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -uo pipefail
+cd '/home/liujianhua/wjq/TAISP/current'
+export AUTODL_RUN_ID='20260913-000746-taisp-t013a-feasibility'
+export AUTODL_RUN_DIR='/home/liujianhua/wjq/TAISP/runs/20260913-000746-taisp-t013a-feasibility'
+export AUTODL_ARTIFACTS_DIR='/home/liujianhua/wjq/TAISP/runs/20260913-000746-taisp-t013a-feasibility/artifacts'
+mkdir -p "$AUTODL_ARTIFACTS_DIR"
+echo "[autodl] run_id=$AUTODL_RUN_ID"
+echo "[autodl] started_at=$(date -Is)"
+{
+export TAISP_SOURCE_REVISION=bfd2484 TAISP_REAL_MODELS=0 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; .venv/bin/python -m pytest tests -q && .venv/bin/python -m scripts.smoke_t013a --output "$AUTODL_ARTIFACTS_DIR/real_model_smoke.json"
+}
+status=$?
+echo "[autodl] finished_at=$(date -Is)"
+echo "[autodl] exit_code=$status"
+exit $status
