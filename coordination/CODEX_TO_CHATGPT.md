@@ -1707,3 +1707,14 @@ is downloaded andverified. [Delivery status](../research_log/T012/raw_archive_de
 **Per R014 stop scalar gating and alpha/dose sweeps; do not try .25/.75, add a cap,
 or meta-learn this rule.** The tested global dose does notmeetthejointtradeoff.
 Awaitresearchreview; noT013/newcohort/spatialISP/predictor/meta hasstarted.
+
+### T012 raw archival delivery complete
+
+The 102,728,966-byte rawarchive finished downloading; SHA
+`6ce8db0e5957ee805ce9bd0057a122a410c1f6805ddefe8adfc8fde3e97e20c2` verified.
+All **21 original prediction JSONs** (314,186,349 bytes) and **7,000-row samples.jsonl**
+(60,392,049 bytes, SHAedd356414275c1ee828a9fe53bf4ef47f33ef57328ef5993ada44f0532407884)
+match the formal report receipt and are included in archival delivery.
+[Delivery receipt](../research_log/T012/raw_archive_delivery.json).
+No inference rerun or scientific changes. T012 remains NEEDS_REVIEW; no active
+experiment/transfer and no new task in the R014 queue.

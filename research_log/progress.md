@@ -315,3 +315,11 @@ plotvisuallychecked. R014FAIL:SSD3positiveblocks;FCOS/SSD3/2abovecontrolmedians;
 SSDaggregatelowerthancontrolmedian. Cleanratio.530583,allcleanAPbounds pass.
 T012_report.md/mailbox NEEDS_REVIEW. Rawdownload75110stillactive,102728966expectedbytes;
 noactiveexperiment. No alpha/dose/gate/newcohort/T013/meta expansion.
+
+## 2026-09-12T23:07:03+08:00 — T012 raw archival verified and ready for GitHub delivery
+
+Download75110 completedexit0;102728966bytearchiveSHA matches. All21predictionSHA
+values match report_receipt,314186349bytes total,max31194559. Samples60392049bytes,
+7000rows,SHAedd356414275c1ee828a9fe53bf4ef47f33ef57328ef5993ada44f0532407884
+verified. Originalfiles retained unmodified. Noactiveexperiment/transfer; science
+unchanged from591425b. GitHub taskqueue stillR014/T012,awaitresearchreview.
