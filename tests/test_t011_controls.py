@@ -86,3 +86,11 @@ def test_preparation_preserves_candidate_vector_and_all_200_masks(tmp_path):
         assert np.all(masks[3:, indexes].sum(axis=1) == candidate[indexes].sum())
     meta = json.loads((output/'manifest.json').read_text())
     assert meta['labels_or_prediction_files_read'] is False and meta['random_draws'] == 200
+
+
+def test_configuration_batches_cover_each_config_once_and_keep_old_default():
+    from scripts.analyze_t010 import configuration_ranges
+    assert configuration_ranges(44, None) == [None]
+    ranges = configuration_ranges(203, 25)
+    assert len(ranges) == 9 and ranges[-1] == (200, 203)
+    assert [j for start, stop in ranges for j in range(start, stop)] == list(range(203))

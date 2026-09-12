@@ -15,12 +15,19 @@ from taisp.analysis.gating import HYBRID, compose_predictions
 from taisp.analysis.replication import replication_ap
 
 
-def evaluate_case(study, prepared, annotations, output, detector, case):
+def configuration_ranges(count, batch_size):
+    return [None] if batch_size is None else [(start, min(start+batch_size, count)) for start in range(0, count, batch_size)]
+
+
+def evaluate_case(study, prepared, annotations, output, detector, case, config_range=None):
     from pycocotools.coco import COCO
     read = lambda p: json.loads(p.read_text(encoding='utf-8'))
     manifest, configs = read(prepared/'manifest.json'), read(prepared/'grid.json')
     rows = [json.loads(s) for s in (prepared/'scores.jsonl').read_text(encoding='utf-8').splitlines()]
     masks = np.load(prepared/'decisions.npz')['selected']
+    if config_range is not None:
+        start, stop = config_range
+        configs, masks = configs[start:stop], masks[start:stop]
     ids = manifest['image_ids']
     indexes = [j for j, r in enumerate(rows) if r['case'] == case]
     paths = [study/'predictions'/f'{detector}_{case}_{v}.json' for v in ('no_adapt', HYBRID)]
@@ -46,13 +53,14 @@ def evaluate_case(study, prepared, annotations, output, detector, case):
         panel['configs'][config['name']] = {'decision_sha256': config['decision_sha256'],
             'selected_image_ids': sorted(selected), 'composed_prediction_sha256': digest, 'evaluations': values}
         print(f"evaluated {detector}/{case}/{config['name']}", flush=True)
-    target = output/'panels'/f'{detector}_{case}.json'
+    suffix = '' if config_range is None else f'_configs_{config_range[0]:03d}_{config_range[1]:03d}'
+    target = output/'panels'/f'{detector}_{case}{suffix}.json'
     target.write_text(json.dumps(panel, indent=2)+'\n', encoding='utf-8')
     return {'panel': target.name, 'sha256': hashlib.sha256(target.read_bytes()).hexdigest(),
             'evaluations': sum(len(c['evaluations']) for c in panel['configs'].values())}
 
 
-def run(study, prepared, annotations, output, workers):
+def run(study, prepared, annotations, output, workers, config_batch_size=None):
     started = time.time()
     output.mkdir(parents=True, exist_ok=True)
     (output/'panels').mkdir(exist_ok=True)
@@ -61,10 +69,11 @@ def run(study, prepared, annotations, output, workers):
     assert hashlib.sha256(annotations.read_bytes()).hexdigest() == env['annotation_sha256']
     for name, expected in manifest['outputs_sha256'].items():
         assert hashlib.sha256((prepared/name).read_bytes()).hexdigest() == expected, name
-    jobs = [(d, c) for d in env['detectors'] for c in manifest['cases']]
+    jobs = [(d, c, r) for r in configuration_ranges(manifest['configurations'], config_batch_size)
+            for d in env['detectors'] for c in manifest['cases']]
     receipts = []
     with ProcessPoolExecutor(max_workers=workers) as pool:
-        futures = [pool.submit(evaluate_case, study, prepared, annotations, output, d, c) for d, c in jobs]
+        futures = [pool.submit(evaluate_case, study, prepared, annotations, output, d, c, r) for d, c, r in jobs]
         for future in as_completed(futures):
             receipts.append(future.result())
             print(f'completed {len(receipts)}/{len(jobs)} detector-condition panels', flush=True)
@@ -73,7 +82,8 @@ def run(study, prepared, annotations, output, workers):
         'images': len(manifest['image_ids']), 'rows': manifest['rows'], 'configurations': manifest['configurations'],
         'groups': len(manifest['groups']), 'workers': workers, 'elapsed_seconds': time.time()-started,
         'official_evaluations': sum(r['evaluations'] for r in receipts),
-        'reused_official_anchor_evaluations': 2*len(jobs)*len(manifest['groups']),
+        'reused_official_anchor_evaluations': 2*len(env['detectors'])*len(manifest['cases'])*len(manifest['groups']),
+        'configuration_batch_size': config_batch_size,
         'model_or_adaptation_inference': False,
         'annotation_sha256': env['annotation_sha256'],
         'T009_metrics_sha256': hashlib.sha256((study/'metrics.json').read_bytes()).hexdigest(),
@@ -90,8 +100,9 @@ def main():
     p.add_argument('--annotations', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
     p.add_argument('--workers', type=int, default=12)
+    p.add_argument('--config-batch-size', type=int)
     a = p.parse_args()
-    run(a.study, a.prepared, a.annotations, a.output, a.workers)
+    run(a.study, a.prepared, a.annotations, a.output, a.workers, a.config_batch_size)
 
 
 if __name__ == '__main__':

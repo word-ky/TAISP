@@ -200,3 +200,7 @@ Syncedad06718/R01326ff476;T010closed. LatestpointerlocatesR013appendinmainqueue(
 ## 2026-09-12T19:37:10+08:00 — T011 selector preparation green
 
 5matched-control/preparation/statistic tests passed8.05s. Two-imageexistingT010fixture:14rows203configs200controls14partialstrata exactcounts,exit0. Partialstrataoneimageeachmakeidenticalrandommasks;smokehasnoscientificinterpretation. Fullcandidatevector isreadverbatim,notreranked. Code/seedrule readyforfull35-stratumpreparationbeforeAP.
+
+## 2026-09-12T19:39:20+08:00 — T011 all 200 matched selectors frozen before AP
+
+Preparationb49405d generated203x7000decisionmatrix with200unique randommasks;all200x35candidate stratumcounts matchexactly. Candidatehash7a02e6d66336ef39fbd4b55c3a5aba564aacee56bd2d7405b62ce9d811a511f6 unchanged. SeedsSHA3706edc0a3408cf87368eddf507324d7b5658fa46f7f495a2a052bcaeb0d0a01;matrixNPZSHA8e9458588ca3a614a32b86fd5c39a58a8618c53ccd7fe17ac190b9940f42deb9. NoAP/predictions/labelsread.6control/preparation/batch/statistic tests passed11.17s. T010evaluator gains optional25-configschedulingonly,defaultbehaviorpreserved;nextbatchedofficialsmoke.

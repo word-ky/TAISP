@@ -1551,3 +1551,7 @@ Recommended next decision: review whether to freeze exactly one scalar rule for 
 ## T011 — IN_PROGRESS: matched-random protocol predeclared
 
 R013 accepted; T010 closed. [T011 plan](../research_log/T011_plan.md) freezes the exact support_confidence_low_50 vector/cutoff, 200 seeds2026091600..2026091799, SHA256 identity ranks within all35condition×block strata, exact candidate count matching, both-target percentile/median criteria and corrected tails before any new AP. The 200 masks will be committed before evaluation. Reuse frozen T009 predictions and official T010 COCOeval; fresh baseline14tests passed2.31s. No model/ISP/adaptation or new-cohort execution, candidate switch, threshold refinement or meta-training.
+
+### T011 full random controls frozen before AP
+
+All 200 seeds and **200 unique** random masks are committed with the three anchors. Every draw exactly matches all **35 condition×block candidate counts**. The candidate vector remains byte-identical to T010; no threshold or rank recalibration. [Preparation manifest](../research_log/T011/preparation/manifest.json), [matching counts](../research_log/T011/preparation/matching.json). Preparation code b49405d; matrix SHA2568e9458588ca3a614a32b86fd5c39a58a8618c53ccd7fe17ac190b9940f42deb9. Six selector/preparation/batch/statistic tests passed11.17s. Next: batched official offline smoke and full200-control evaluation. No scientific outcome has been evaluated for these controls yet.
