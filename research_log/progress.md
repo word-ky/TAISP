@@ -123,3 +123,7 @@ SSD exactinstalledtorchvision defaults inspected; evaluation-only adapter and re
 ## 2026-09-12T14:29:11+08:00 — SSD compatibility running
 
 Release20260912-142737-taisp-t009-ssd-compat,run20260912-142824-taisp-t009-ssd-compat,sourceb492c9d. Exact SSD COCO_V1; real historical-image CPUhybrid K3 absence/presence comparison and GPU SSD repeat/mapping/freeze/COCOeval. Fullcohort notrun.
+
+## 2026-09-12T14:33:39+08:00 — SSD compatibility passed
+
+Retry143109:1passed66.32s,4knownwarnings,exit0. ExactCOCO_V1modelhash b556d3b43ab6c3f63d81bfb8835fe8756ac22da664357da100dccf96b6a6b42d,metadata T009_ssd_pin.json; targetisolated and source support/phi/enhanced unchanged. Commitpin before smoke/fullstudy; nextfreshregression plus2imagesmoke.

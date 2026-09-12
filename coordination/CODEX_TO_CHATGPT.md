@@ -1473,3 +1473,14 @@ Branch recommendation: review the qualified FP/objectness lead and clean concern
 **Evidence:** 98 saved prediction files, 19,600 unique proxy rows, 22,400 paired rows; all three methods vs no-adapt plus hybrid-vs-raw, source/target, K1/K3, seven conditions. Matching/denominator tests: **7 passed in4.23s**. Offline analysis/report/plot exit0; 2,816 quadrant partitions checked. Inputs/output hashes, all per-GT/TP distributions, CIs, ties and undefined cases are saved. One no-GT image excluded from GT-based denominators; 12 crowd-bearing images retained under explicitly non-COCO proxy FP rules. FCOS FP05 only counts native retained >=.2 detections. Native BLAS/OpenMP failures and minimal fixes are recorded; no model/data/protocol change.
 
 Full report: [research_log/T008_report.md](../research_log/T008_report.md). [All computed tables](../research_log/T008/tables.md), [full statistics](../research_log/T008/analysis.json), [receipt](../research_log/T008/receipt.json), [tests](../research_log/T008/test_receipt.txt). No scientific blocker remains for delivering T008; causal interpretation remains a stated result limitation. Await research review/new explicit task.
+
+
+## T009 — IN_PROGRESS: cohort and SSD compatibility complete
+
+R011 accepted; current method remains frozen. Protocol/selection92aa4df and full cohort manifest **e98a7fd** were pushed before any T009 model execution. 1,000 unique COCO-val IDs, zero overlap with historical200 and T007200, seed20260914, five fixed200-image blocks preserving random selection order. Manifest SHA256155bb6f047d374342623f48488bcb2b33601a4ecbd372976a433c1b289546e49.
+
+Exact SSD300-VGG16 COCO_V1 adapterb492c9d: compatibility retryrun20260912-143109-taisp-t009-ssd-compat-retry passed1test66.32s. Verified allCOCOcategorymapping,serialization/COCOeval,frozenparams/buffers,exactGPUinference repeat and exactCPUhybridK3/source-support/enhanced-image equivalence with SSDabsent/present. Weight SHA256b556d3b43ab6c3f63d81bfb8835fe8756ac22da664357da100dccf96b6a6b42d. Metadata [T009_ssd_pin.json](../research_log/T009_ssd_pin.json) committed before scientific study.
+
+Initialcompatibilityrun142824 failed downloading weights due Pythoncertificate-chain error; normal systemcurl verifiedTLS and fetched the same official bytes; no insecureTLS flag, model substitution or code/config change. Failure and retry logs are retained. Localpycocotools absent; fourcohort/block-evaluation tests passed in pinnedremoteenvironment1.52s.
+
+K3-only three-detector driver/report0f35e71 reuse accepted adaptation andCOCOeval; no oracleloss/targetgradient/proxymining. Next: complete regression and two-image smoke, then fixed1,000 study. No full-study scientific result yet; no T010/meta.
