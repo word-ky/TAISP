@@ -1,0 +1,124 @@
+{
+  "source_revision": "901560f",
+  "input_revision": "be5c797",
+  "preparation_revision": "fd88938+score-preparation",
+  "images": 2,
+  "rows": 14,
+  "configurations": 44,
+  "groups": 3,
+  "workers": 4,
+  "elapsed_seconds": 16.578654527664185,
+  "official_evaluations": 2772,
+  "reused_official_anchor_evaluations": 126,
+  "model_or_adaptation_inference": false,
+  "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "T009_metrics_sha256": "d4366a398d51debb5ccffc4dcb168eeb4322b86e98428c2f9b796fcf105da243",
+  "preparation_manifest_sha256": "ffc994e03de9145770522c621538b65bc415b1ac13d92cb4f3891db800b279f1",
+  "panels": [
+    {
+      "panel": "source_clean_s0.json",
+      "sha256": "9d91abbc5acd249036a5c4f3c8ce89a022e4209f33b90c40dea39848382bb1bd",
+      "evaluations": 132
+    },
+    {
+      "panel": "source_color_cast_s1.json",
+      "sha256": "78d550aa38f8a0ef0381b4e4d0314a65983031a4fbcae9355f04bf15fbe7db92",
+      "evaluations": 132
+    },
+    {
+      "panel": "source_color_cast_s2.json",
+      "sha256": "e0c4f5edd48a6cf99c039c71e9e1dcff35ecbfc442bc0dfc57bd7613647d856d",
+      "evaluations": 132
+    },
+    {
+      "panel": "source_contrast_s1.json",
+      "sha256": "d23e2b1b24c4d9a723d1df46f2f107fc9d36a77702f0b0d0bf27e8d90e4b45c8",
+      "evaluations": 132
+    },
+    {
+      "panel": "source_contrast_s2.json",
+      "sha256": "b3cd720793bef0e7717c2a8e5075746daaa8cbd2641585158ea2380f396fecaf",
+      "evaluations": 132
+    },
+    {
+      "panel": "source_gamma_s1.json",
+      "sha256": "a8f60ba2e55eee463c1c13ebc77d267643ea3184e013bc847b4fa2605324cb6c",
+      "evaluations": 132
+    },
+    {
+      "panel": "source_gamma_s2.json",
+      "sha256": "1a3cd1649200cd062a9162edfc6e9ac273afd0557b75afda1c41a479ed3b8fb8",
+      "evaluations": 132
+    },
+    {
+      "panel": "ssd_clean_s0.json",
+      "sha256": "fb5ca581f124f110b579f5d6ccb2ae0f8d4e26848aab5e2b7c044b5233b3128d",
+      "evaluations": 132
+    },
+    {
+      "panel": "ssd_color_cast_s1.json",
+      "sha256": "4b63aa15edbc0b4f5bf3e11046a26c2fe93480c32ccd587ebee15eb529909085",
+      "evaluations": 132
+    },
+    {
+      "panel": "ssd_color_cast_s2.json",
+      "sha256": "bda13594f2f456a274ee114b858e8051cdf9d6fdd1f1b6464ccaac8596893029",
+      "evaluations": 132
+    },
+    {
+      "panel": "ssd_contrast_s1.json",
+      "sha256": "5c148b3a575faaaa87823caee04fb3554324b090d53e737dd355a691f91dd44f",
+      "evaluations": 132
+    },
+    {
+      "panel": "ssd_contrast_s2.json",
+      "sha256": "fce31e09c23b5c7fb2eb685930af18373cd507eca2a39c0b4f6e703333fbe91a",
+      "evaluations": 132
+    },
+    {
+      "panel": "ssd_gamma_s1.json",
+      "sha256": "6d0f5f3899dcd669b2ea08fc1d0704a1db4c11df62bd51c550b95cdb0244a551",
+      "evaluations": 132
+    },
+    {
+      "panel": "ssd_gamma_s2.json",
+      "sha256": "abdcd20ac6b1140724b8d29f70a210fa0913731c43fba66e046b3e7a105c0719",
+      "evaluations": 132
+    },
+    {
+      "panel": "target_clean_s0.json",
+      "sha256": "de2caf0cfc9bc5a3a468eac0035d09bd7f3a74b4cce414f83959f23db7370196",
+      "evaluations": 132
+    },
+    {
+      "panel": "target_color_cast_s1.json",
+      "sha256": "dcff70f6d05e5b43546dc42bf87513baab7d9497df8e6305e6bef1cdb904529c",
+      "evaluations": 132
+    },
+    {
+      "panel": "target_color_cast_s2.json",
+      "sha256": "4f7355a92939ca57549e03fc53bc3bf73841b41879e3e0b8dc02aae8f43a4f11",
+      "evaluations": 132
+    },
+    {
+      "panel": "target_contrast_s1.json",
+      "sha256": "e71f311071c1d915b08ab6ee59325e78266253a1b610eeafeb3f9f5bcb35c4f4",
+      "evaluations": 132
+    },
+    {
+      "panel": "target_contrast_s2.json",
+      "sha256": "1dc15f638cf627e379cedd5b699e82cbb98b2b5b9b16a1ab521b4a1b5038b262",
+      "evaluations": 132
+    },
+    {
+      "panel": "target_gamma_s1.json",
+      "sha256": "9d64b6f77f41ad828313b8307ce490fe19c71a835839ae9fb0756474c427c36a",
+      "evaluations": 132
+    },
+    {
+      "panel": "target_gamma_s2.json",
+      "sha256": "c383ea862eb2cdd1d080d8809e89ce37d51f6bc7fab07036765a83372ab26f13",
+      "evaluations": 132
+    }
+  ]
+}

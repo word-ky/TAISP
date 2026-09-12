@@ -133,3 +133,12 @@ def test_official_gated_AP_anchors_and_fixed_blocks():
     assert 0 < mixed['aggregate']['AP'] < 1
     assert mixed['block_1']['AP'] == pytest.approx(1) and mixed['block_2']['AP'] == 0
     assert all('area' not in p for p in raw+hybrid)
+
+
+def test_promising_rule_requires_both_targets_clean_and_replication():
+    from scripts.report_t010 import promising_signal
+    assert promising_signal(.5, [-.1, 0, .01], [.01, .02], [4, 4])
+    assert not promising_signal(.501, [0, 0, 0], [.1, .1], [5, 5])
+    assert not promising_signal(.25, [-.10001, 0, 0], [.1, .1], [5, 5])
+    assert not promising_signal(.25, [0, 0, 0], [.1, 0], [5, 5])
+    assert not promising_signal(.25, [0, 0, 0], [.1, .1], [4, 3])

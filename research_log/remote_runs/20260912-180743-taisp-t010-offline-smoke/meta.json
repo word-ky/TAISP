@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-180743-taisp-t010-offline-smoke",
+  "releaseId": "20260912-180720-ttie-t014-repair-check",
+  "sessionName": "autodl-20260912-180743-taisp-t010-offline-smoke",
+  "command": "export TAISP_SOURCE_REVISION=901560f OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=\"\"; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests/test_t010_gating.py tests/test_t009_replication.py tests/test_t008_analysis.py -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m scripts.analyze_t010 --study /home/liujianhua/wjq/TAISP/runs/20260912-143436-taisp-t009-study-smoke/artifacts/study --prepared research_log/T010/smoke_preparation --annotations /home/liujianhua/wjq/TAISP/shared/coco1000_t009/instances_val2017.json --output \"$AUTODL_ARTIFACTS_DIR/study\" --workers 4"
+}

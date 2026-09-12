@@ -167,3 +167,7 @@ Pureextract/rank/composition/timing/preparationtests7passed11.83s. Two-imagefroz
 ## 2026-09-12T18:06:42+08:00 — Full T010 pre-AP decisions frozen
 
 Preparationcode32a89e3,release20260912-180251-taisp-t010-scores. DeploymentSSH255atcurrent-symlinkstep; verifiedalreadyextractedfilehash andcompletedonlysymlink/state step. Fullprepare exit0:7000rows44configs,all7scores available,70zero-vectorcosines coded0 perplan. Noannotations/predictionsread. All42ranks selectexact1750/3500/5250rows. DownloadedpreparationarchiveSHA21e03e82e58fff2d11938d3e8d55e39c3ee20e6fce0184f1dad4be0151ab53fe verified; samples/cohort/artifacthashes match. CommittingallbeforegatedAP.
+
+## 2026-09-12T18:13:41+08:00 — T010 offline AP/report smoke green
+
+Run20260912-180743-taisp-t010-offline-smoke release180659 source901560f:13affectedofflineAP/gating/regressiontests passed2.35s;2images14rows44configs21panels2772officialAPresults(126reusedanchors),16.57865s,exit0at18:08:12. Anchorcompositions exacthashmatch;reportaudit924shareddecisions pass,2772AProws396macro rows,smokecriterionnull. Reportcriterionboundaryunit1passed15.98s. PlotinitialOMP15 fromunusedgatingimport;removedthatimportandreadscorelabelsfromsavedreport,standaloneplotexit0andvisuallychecked. Nopackageupgrade,nogatedAPoutcome-basedchange. Fullprepare901560f committedbeforeAP;fullgridready.

@@ -1520,3 +1520,7 @@ R012 accepted;T009closed. [T010 plan](../research_log/T010_plan.md) fixes seveni
 ### T010 full pre-AP decisions frozen
 
 Preparation32a89e3 completed7,000hybridrows/allsevenreconstructablescores,42gates+2anchors. All42ranks useexact1,750/3,500/5,250pooledrows withpredeclaredtiepolicy;70zero-vectorcosines coded0aspredeclared. Full [score/decision/distribution artifacts](../research_log/T010/preparation/manifest.json) andhashes arecommitted beforeanygatedAP. SourceJSONL/cohortSHA matchfrozenT009. Localcore/preparationtests7passed11.83s; nextstepCPUofficialcomposition/APsmoke andfullgrid. No targetorlabelquantityentereddecisions,noinference rerun.
+
+### T010 offline regression/smoke complete
+
+Source901560f,run20260912-180743-taisp-t010-offline-smoke:13affectedtests passed2.35s;twoimagefull44-configsmoke produced2,772officialAProws/21panelsin16.57865s,exit0. 0%/100% composedpredictionhashes matchexactanchors;924detector-conditiondecisions auditedagainstsamepreparationmatrix. Reportcriterionunit passed;all44configsretained,smokefeasibilitynotassessed. Full7,000-rowdecisionsprecommitted901560f andunchanged. ProceedingtothefullCPU-onlygridwith12workers;no modelrerun/newgate/tuning.
