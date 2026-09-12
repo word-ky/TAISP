@@ -1,0 +1,6 @@
+{
+  "runId": "20260912-090851-taisp-t006-target-tests",
+  "releaseId": "20260912-090847-taisp-t006-target",
+  "sessionName": "autodl-20260912-090851-taisp-t006-target-tests",
+  "command": "TAISP_REAL_MODELS=1 /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q tests/test_fcos_target.py tests/test_detector.py"
+}

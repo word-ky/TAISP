@@ -1,0 +1,22 @@
+{
+  "scope": "T006 two-image smoke, not scientific result",
+  "passed": true,
+  "observations": 28,
+  "paired_image_cases": 14,
+  "AP_evaluations": 70,
+  "raw_bytes": 226866,
+  "raw_sha256": "c7c7a8c79231f517d91e81d050423419fdb119356a14ade8e464d213d56de4d8",
+  "checks": [
+    "complete pairing",
+    "shared source/target annotated gradients and initial losses",
+    "fixed source support",
+    "fresh zero phi",
+    "finite 8D gradients",
+    "CLIP-only norm reference",
+    "signed coordinate products and Taylor predictions",
+    "all prediction files"
+  ],
+  "real_tests": "53 passed, 7 warnings in 100.40s",
+  "elapsed_seconds": 16.280467748641968,
+  "figure_review": "labels and annotations readable; no layout changes needed"
+}
