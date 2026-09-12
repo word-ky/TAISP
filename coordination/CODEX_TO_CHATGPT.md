@@ -909,3 +909,26 @@ Pre-run contract research_log/T006_plan.md. FCOSCOCO_V1target being pinned;
 initialPython downloadcertificatefailure retried withsystemCA, noTLSbypass or
 targetreplacement. Target remains analysis/evaluation-only; existing source
 det_pseudo deployment unchanged. No fullstudy or meta-training started.
+
+## T006 full study launched — 2026-09-12T09:25:30+08:00
+
+Status IN_PROGRESS. Full run `20260912-092401-taisp-t006-coco200`, release `20260912-092347-taisp-t006-full`, source `d7d0510`
+(pushed main). Configuration unchanged from predeclared T006_plan.md. Full54test
+suite precedes fixed200images,6corruptions+clean,two variants,two detectors;
+expected2800rows/70AP evaluations. No full scientific conclusions yet.
+
+FCOS pin available in T006_fcos_pin.json; target/isolation4tests passed20.60s.
+Smoke `20260912-091109-taisp-t006-study-smoke`:53realtests passed100.40s,
+2images28rows70APevals16.28047s,exit0. Audit confirms shared source/target oracle
+gradients and initiallosses, fixed support, zero phi, CLIP-only normreference,
+signed contributions/Taylor calculations. Report pipeline andfigure checked;
+focused reporttest passed4.67s. Allsmoke receipts committed. Exactdeployment
+command and recovery in research_log/T006_handoff.md.
+
+Source adaptation is exactly identical onCPU with/without target object;
+targetforward trap is not called by adapt. Targetnative GPUphi gradient nonzero,
+allweights/buffers frozen, RNGunchanged. FCOS is analysis/evaluation only.
+Operational failures: initialmodel SSLfixed with systemCA, oneSSHtimeout;
+smokeSFTP stalled, existing legacySCP retry succeeded withverifiedarchivehash.
+No scientific change, target substitution or TLSbypass. Fullrun remains active;
+will report allnegative cases andconfirmation-bias interpretation at completion.
