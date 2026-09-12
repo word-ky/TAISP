@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "images": 200,
+  "rows": 4200,
+  "paired_cases": 1400,
+  "groups": 21,
+  "AP_evaluations": 98,
+  "raw_bytes": 35250130,
+  "raw_sha256": "fd41b75af58e6b8eaffdc79405ee2cd604acf85505df9d402f4c9ea2c1d2f20a",
+  "checks": [
+    "committed disjoint manifest exactmatch andzerooverlap",
+    "shared support/source AND target oracle gradients andbeforeloss",
+    "freshzero phi",
+    "confidenceweights",
+    "signed oracle products",
+    "every-step normtransfer algebra andstep equation",
+    "fixedsupport every step",
+    "positive step timings",
+    "exactzerofallback retained",
+    "target FCOS metadata agrees with predeclared pin"
+  ],
+  "fallback_counts": {
+    "('det_pseudo', 'gamma', 1)": 1,
+    "('det_pseudo_clip_radius', 'gamma', 1)": 1,
+    "('det_pseudo', 'gamma', 2)": 1,
+    "('det_pseudo_clip_radius', 'gamma', 2)": 1,
+    "('det_pseudo', 'contrast', 1)": 2,
+    "('det_pseudo_clip_radius', 'contrast', 1)": 2,
+    "('det_pseudo', 'contrast', 2)": 2,
+    "('det_pseudo_clip_radius', 'contrast', 2)": 2,
+    "('det_pseudo', 'color_cast', 1)": 1,
+    "('det_pseudo_clip_radius', 'color_cast', 1)": 1,
+    "('det_pseudo', 'color_cast', 2)": 2,
+    "('det_pseudo_clip_radius', 'color_cast', 2)": 2,
+    "('det_pseudo', 'clean', 0)": 1,
+    "('det_pseudo_clip_radius', 'clean', 0)": 1
+  },
+  "zero_hybrid_gradient_steps": 40,
+  "max_same_forward_collinearity_error": 1.1102230246251565e-15,
+  "max_hybrid_minus_independent_raw_cosine_difference": 0.0013842942699118788,
+  "real_tests": "59passed127.00s",
+  "completion": {
+    "images": 200,
+    "samples": 4200,
+    "elapsed_seconds": 2527.919980764389
+  },
+  "figure_review": "Full-run figure inspected; all labels and signed condition differences readable."
+}
