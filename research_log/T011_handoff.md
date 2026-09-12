@@ -11,8 +11,11 @@ code b49405d; research_log/T011/preparation; matrix SHA
 8e9458588ca3a614a32b86fd5c39a58a8618c53ccd7fe17ac190b9940f42deb9.
 
 Smoke 20260912-194144-taisp-t011-offline-smoke completed exit 0 at 19:43:25+08.
-20 tests passed; 12,789 AP rows; report and plot checked. No full run active yet.
-Next commit/deploy report_t011.py and plot_t011.py, then full CPU run:
+20 tests passed; 12,789 AP rows; report and plot checked. Formal run now ACTIVE: **20260912-195353-taisp-t011-coco1000-offline**, release
+**20260912-195321-taisp-t011-full**, source/report **8b2143f**.
+Started 19:54:03+08; fresh 20 tests passed 2.90s. Exact command in
+research_log/T011/full_run_meta.json. Do not duplicate this run.
+The active full CPU command is:
 python -m scripts.analyze_t010 --study <T009 study> --prepared research_log/T011/preparation
 --annotations <COCO annotations> --output <run artifacts/study> --workers 24 --config-batch-size 25
 followed by python -m scripts.report_t011 with same study/prepared and T010 candidate-study.
@@ -35,3 +38,11 @@ percentile, linear quantiles, R012 control-pass frequency and descriptive costs.
 If any criterion fails, stop this scalar-gate route; no new cohort for candidate.
 Even if passing, await research review. No automatic T012, learned gate, feature
 combination, new objective, spatial ISP, predictor or meta-training.
+
+Next heartbeat: inspect active run train.log/tmux and completion/report_receipt.
+On success, fetch run archive with SHA verification, plot locally using
+python -m scripts.plot_t011 --study <local run artifacts/study>, inspect figure,
+check all 200 controls/statistics and write T011_report.md plus NEEDS_REVIEW.
+Commit/push all results and mirror durable logs to remote project root.
+Report automatically compares 378 candidate/endpoint evaluations with T010.
+Preserve all negatives and distinguish developmental evidence from validation.

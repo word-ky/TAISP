@@ -221,3 +221,16 @@ T010, plus 4,263 shared detector-condition decisions. Two-image strata force all
 Scientific criterion remains unassessed on smoke. Standalone plot generated and
 visually checked. Full masks were precommitted 8dd776d; no full T011 AP run yet.
 Next deploy report/evaluator and run the frozen 25,578-row CPU study with 24 workers.
+
+## 2026-09-12T19:55:18+08:00 — T011 full frozen CPU analysis launched
+
+Run **20260912-195353-taisp-t011-coco1000-offline**, release **20260912-195321-taisp-t011-full**,
+source/report **8b2143f**, started 2026-09-12T19:54:03+08:00.
+Fresh **20 affected offline/regression tests passed in 2.90s**. tmux active;
+24 CPU workers are evaluating 203 fixed configurations, batches of 25.
+Full decision matrix remote SHA matches pre-AP commit 8dd776d exactly.
+Expected 25,578 AP rows (25,200 random +126 candidate +252 reused anchors),
+3,654 macro rows, 189 panels. Report runs automatically after all panels complete.
+Exact command/release stored in research_log/T011/full_run_meta.json.
+No model/adaptation rerun or scientific parameter change. Final result pending.
+15-minute heartbeat taisp verified ACTIVE; resume this run without duplication.

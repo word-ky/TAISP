@@ -1565,3 +1565,15 @@ evaluations and 4,263 shared decisions; plotting and all-tie smoke statistics pa
 This two-image fixture provides no scientific result. All 200 full selectors were
 committed **8dd776d** before AP. Proceeding to frozen 1,000-image CPU evaluation
 with 24 workers and batches of 25; no model/adaptation rerun or candidate change.
+
+### T011 full matched-control study launched — IN_PROGRESS
+
+Run **20260912-195353-taisp-t011-coco1000-offline**, release `20260912-195321-taisp-t011-full`,
+source/report **8b2143f**, started **19:54:03+08**. Fresh **20 affected tests
+passed in 2.90s**; 24 CPU workers now evaluate the frozen 203 configurations.
+All 200 random masks were committed **8dd776d** before AP; deployed matrix SHA
+is identical. Expected **25,578 official AP rows**, including all 200 controls,
+fixed candidate and endpoints. Automatic report follows evaluation.
+[Exact command](../research_log/T011/full_run_meta.json),
+[recovery handoff](../research_log/T011_handoff.md). Final scientific result pending;
+no candidate/threshold/model/adaptation changes and no T012 or meta-training.
