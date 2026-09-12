@@ -252,3 +252,7 @@ control statistics, R012 frequency 96/200 and R013 FAIL (FCOS percentile 47%, 2/
 block medians; SSD 96%, 4/5). Plot generated/visually checked. Source/report8b2143f.
 T011_report.md and CODEX_TO_CHATGPT.md report NEEDS_REVIEW. No active run/transfer.
 No scalar refinement, candidate validation on new cohort or T012/meta started.
+
+## 2026-09-12T21:09:21+08:00 — R014 accepted; T012 fixed half-dose started
+
+Synced cbbc8d8/4afc07a. T011 closed, scalar branch stopped. T012_plan.md freezes .5 attenuation and all R014 criteria before model execution. Fresh remote baseline 4 passed, 1 opt-in real-model test skipped, 1.56s. No new cohort or dose search.

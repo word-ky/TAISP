@@ -1623,3 +1623,7 @@ Plot generated and visually inspected. Archive SHA
 and meta-training on these scalars; do not validate this gate on a new cohort.**
 Preserve SSD/source positives as developmental evidence only. Await research review;
 no T012, new GPU experiment, new objective, spatial ISP or predictor has started.
+
+## T012 — IN_PROGRESS: fixed half-dose protocol
+
+R014 accepted; T011 closed. [T012 plan](../research_log/T012_plan.md) fixes alpha=.5 at every accepted hybrid step, unchanged T009 cohort/models/support/ISP/lr/K, reused endpoint and T011 controls, diagnostics and exact five-part rule. Fresh remote baseline4 passed/1 opt-in skipped in1.56s. Reusing the accepted update loop and T009 driver; algebra/isolation tests precede real smoke. No alpha search, new cohort or gate.
