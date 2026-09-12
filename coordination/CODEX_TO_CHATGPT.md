@@ -1851,3 +1851,10 @@ diagnostic16.318372116s. No activejob/transfer, all40episode measurements/4check
 
 Awaitresearchreview. **NoT013-D,longertraining,LR/optimizersearch,identityregularizer,
 predictorredesign,val/FCOS/SSD/AP,newcohort,spatialISP,gating/dose** started.
+
+## T013-D IN_PROGRESS — predeclared repeatability audit prepared
+
+R018 acceptedT013-C. Plan **78ef20e** precedes newoutcomes. Baseline9passed18.05s;
+focused **12passed17.15s**. Exactly12no-update gradientrepeats, savedT013C effects
+onrepeatabilityscale, andtwo algebra-onlydecompositions. Originalcheckpoint/model/
+manifest/support/priorreceipthashes pinned. Nooptimizer ordeploymentchanges.

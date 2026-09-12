@@ -410,3 +410,10 @@ No-updateCUDArepeatmaxlossdifference.006211102,maxphi3difference.002021194;
 initialphi0exactreset, allfrozenstatesunchanged. Preserve numerical/causallimitations.
 FullreportT013C_report.md andalltables/rawJSON/checkpoints fetched; no rerun.
 No longertraining/regularizer/redesign/T013-D; NEEDS_REVIEW.
+
+## 2026-09-13T03:32:49.1738691+08:00 — T013-D prepared, zero optimizer steps
+
+R018/b9e59da accepts T013-C; pre-outcomeplan78ef20e. Baseline9passed18.05s,
+focused12passed17.15s. Analysis-only repeatability/common-modecode ready.
+All12identicalno-update repeats predeclared, alloutcomesretained; originalstate and
+model/data/support/priorreceipt hashes pinned. No training/probe reruns authorized.
