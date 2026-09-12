@@ -23,21 +23,23 @@ def adapt_half_dose(image, isp, detector_loss, clip_loss, *, steps=3, lr=.1, eps
     return _adapt_radius(image, isp, detector_loss, clip_loss, steps=steps, lr=lr, eps=eps, half_dose=True)
 
 
-def _adapt_radius(image, isp, detector_loss, clip_loss, *, steps, lr, eps, half_dose):
+def _adapt_radius(image, isp, detector_loss, clip_loss, *, steps, lr, eps, half_dose, phi0=None):
     """Fresh episode; frozen losses; fixed original support owned by detector_loss."""
     detector_loss.eval().requires_grad_(False)
     clip_loss.eval().requires_grad_(False)
-    initial = isp.phi.detach().clone()
+    initial = isp.phi.detach().clone() if phi0 is None else phi0.clone()
     phi = initial.clone().requires_grad_(True)
     history = []
     for step in range(steps+1):
         if image.is_cuda:
             torch.cuda.synchronize(image.device)
         started = time.perf_counter()
-        enhanced = isp(image, phi)
+        # Training-only FOMAML approximation: inner graphs end at a fresh probe.
+        probe = phi if phi0 is None else phi.detach().requires_grad_(True)
+        enhanced = isp(image, probe)
         pseudo, clip = detector_loss(image, enhanced), clip_loss(image, enhanced)
-        gd = torch.autograd.grad(pseudo, phi, retain_graph=True)[0].detach()
-        gc = torch.autograd.grad(clip, phi)[0].detach()
+        gd = torch.autograd.grad(pseudo, probe, retain_graph=True)[0].detach()
+        gc = torch.autograd.grad(clip, probe)[0].detach()
         update, scale = transfer_norm(gd, gc, eps)
         hybrid_norm = update.norm().item()
         if half_dose:
@@ -65,5 +67,10 @@ def _adapt_radius(image, isp, detector_loss, clip_loss, *, steps, lr, eps, half_
             history[-1].update(dose_coefficient=.5, pre_attenuation_hybrid_norm=hybrid_norm,
                                applied_half_dose_norm=update.norm().item())
         if step < steps:
-            phi = (phi-lr*update).detach().requires_grad_(True)
+            phi = phi-lr*update
+            if phi0 is None:
+                phi = phi.detach().requires_grad_(True)
+    if phi0 is not None:
+        # Only this small ISP graph is needed by an outer objective.
+        return AdaptResult(initial, phi, isp(image, phi), None, history)
     return AdaptResult(initial, phi.detach(), enhanced.detach(), None, history)

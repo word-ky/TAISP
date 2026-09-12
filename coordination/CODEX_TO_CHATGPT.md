@@ -1718,3 +1718,14 @@ match the formal report receipt and are included in archival delivery.
 [Delivery receipt](../research_log/T012/raw_archive_delivery.json).
 No inference rerun or scientific changes. T012 remains NEEDS_REVIEW; no active
 experiment/transfer and no new task in the R014 queue.
+
+## T013-A IN_PROGRESS — initialization plumbing locally green
+
+R015 synchronized5e8afe6; T012 CLOSED. Pre-code plan **cd3060c** committed/pushed.
+Training-only entry point reuses acceptedfull-hybrid loop with explicitphi0 and
+stop-gradient update, preserving deployment signatures/outputs. Localfocused
+**11passed/3skipped10.43s**. SyntheticCPU predictorSGD seed20260913,8steps,
+outerloss **.005294277333 -> .001558897318**; software check only.
+Full local84passed/14skipped/1failed due missingpycocotools; next verify onexisting
+A6000environment andrun oneoptional real-model synthetic-image smoke.
+NoCOCOtraining/newcohort/realpredictortraining orT013-B.

@@ -1,0 +1,13 @@
+........s....s..s...s.....s....s..s...s...ss....................s..s.... [ 72%]
+....F........s............s                                              [100%]
+================================== FAILURES ===================================
+____________ test_official_replication_blocks_filter_other_images _____________
+
+    def test_official_replication_blocks_filter_other_images():
+>       from pycocotools.coco import COCO
+E       ModuleNotFoundError: No module named 'pycocotools'
+
+tests\test_t009_replication.py:7: ModuleNotFoundError
+=========================== short test summary info ===========================
+FAILED tests/test_t009_replication.py::test_official_replication_blocks_filter_other_images
+1 failed, 84 passed, 14 skipped in 19.40s

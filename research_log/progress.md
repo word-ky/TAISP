@@ -323,3 +323,15 @@ values match report_receipt,314186349bytes total,max31194559. Samples60392049byt
 7000rows,SHAedd356414275c1ee828a9fe53bf4ef47f33ef57328ef5993ada44f0532407884
 verified. Originalfiles retained unmodified. Noactiveexperiment/transfer; science
 unchanged from591425b. GitHub taskqueue stillR014/T012,awaitresearchreview.
+
+## 2026-09-13T00:07:11.7672054+08:00 — T013-A first-order plumbing and local sanity
+
+R015 accepted T012 and issued T013-A (5e8afe6). Pre-code plan cd3060c pushed.
+New training-only entry point reuses private full-hybrid loop; deployment signature
+and forward unchanged. Six new synthetic contract cases pass: 11 passed/3 skipped
+with affected baseline tests in10.43s. Tiny predictor SGD seed20260913,8steps lr.2:
+outerloss .005294277333 -> .001558897318; all8 head gradients finite/nonzero.
+Full local suite84passed/14skipped/1failed19.40s: missingpycocotools in existing
+replication test. No scientific code repair needed. Use existing remote environment
+for complete non-real regression and one optional synthetic-image real-model smoke.
+No dataset/COCO training or real predictor optimizer. Receipts inresearch_log/T013A.
