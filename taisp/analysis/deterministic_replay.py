@@ -128,6 +128,8 @@ def run(paths, control_root, control_manifest, output):
     torch.backends.cudnn.benchmark = False
     device = 'cuda:0'
     source, clip = load_detector(device), load_clip_guidance(device, local_files_only=True)
+    # The shared inner loop does this before evaluation; initial isolation is earlier.
+    clip.eval()
     isp, original = DifferentiableISP().to(device), ParameterPredictor().to(device)
     saved_state = torch.load(paths['original'], map_location=device, weights_only=True)
     assert all(torch.equal(v, saved_state[k]) for k,v in original.state_dict().items())

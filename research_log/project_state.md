@@ -7,3 +7,5 @@ Three exact no-update repeats gate the three independent fixed SGD1e-3 probes.
 Launcher must export CUBLAS_WORKSPACE_CONFIG=:4096:8 before Python. No other workaround.
 All input/checkpoint/control hashes pinned; unsupported operator or exact mismatch stops.
 Next commit/deploy, full remote regression then one real diagnostic. Stop after T013-E.
+
+Active run20260913-045510-taisp-t013e-deterministic-replay, sourceb1278c4, release045442. See T013E_handoff.md.

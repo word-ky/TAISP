@@ -438,3 +438,17 @@ Baseline6passed10.06s; focused9passed7.14s. Reuse T013C evaluate/directions/one_
 source-meta data/loss/isolation and T013D raw inputs. New exact-output gate, priorrange
 comparison, descriptive Spearman and predeclared decision only. No deployment changes.
 Next fullremote regression, 3no-update repeats, conditional3independent one-step probes.
+
+## 2026-09-13T04:55:41.6601322+08:00 — T013-E launched
+Run20260913-045510-taisp-t013e-deterministic-replay, sourceb1278c4, release045442. Fullremote tests then exact gate; conditionalprobes only. No duplicate job.
+
+## 2026-09-13T04:57:15.4407989+08:00 — T013-E initial wrapper check repaired before outcomes
+
+Run045510 exit1 at04:55:28+08 after101passed10skipped5.91s. Assertion occurred in
+initial isolation before any sample/repeat/probe; full failed run retained. CLIP loss
+wrapper defaults training=True although its encoder/model are eval/frozen; existing
+trust_radius lines28-29 set wrappers eval before each normal computation. Local mock
+reproduces frozen check False before wrapper.eval(), True after, with unchangedstate.
+Smallest repair: call clip.eval() before the new initial check in analysis runner only.
+Focused9passed6.99s. No deterministic-operator failure, no output mismatch, no scientific
+outcome rerun or tolerance relaxation. Relaunch same predeclared protocol after deploy.

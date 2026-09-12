@@ -1900,3 +1900,11 @@ Analysis-only runner prepared: CUBLAS_WORKSPACE_CONFIG=:4096:8 before Python,
 deterministic algorithms enabled; exactly3no-update repeats must match bitwise
 before exactly3 independent fixed one-step SGD1e-3 probes. No tolerance relaxation,
 method change, data expansion or follow-on training. Fullremote regression next.
+
+### 2026-09-13T04:57:15.4407989+08:00 — T013-E setup-only failure repaired
+
+First run045510/sourceb1278c4:101passed10skipped5.91s, then initial frozen-mode assertion
+before any sample outputs. CLIP outer loss wrapper initially training=True; shared
+inner loop already sets it eval. Local reproduction retained in T013E/initial_wrapper_diagnostic.txt.
+Added only clip.eval() before initial isolation; focused9passed6.99s. Failedrun retained,
+no primary repeats/probes existed. Deterministic gate/settings/tolerances unchanged.
