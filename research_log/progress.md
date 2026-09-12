@@ -180,3 +180,15 @@ no modelinference. Full5,544AProwreportpending. T009archive9887completed,fullSHA
 84individualpredictionhashes verified. Sample125507835bytes compressedlosslesslyto
 31110348bytes,GzipSHA31d808e7094b539a9f9b02a8ac2b6b7761d8fc3db8387fdc2dfb71ca638633a2,
 roundtripSHA matches. Originalpreserved,exactrawpathGitignored;84predictions+Gzipreadyforarchivalcommit.
+
+## 2026-09-12T18:54:45+08:00 — T010 formal offline study complete and audited
+
+Run20260912-181436 completed18:36:59+08,exit0;source/report9efe032;1330.08296s.
+All44configs21panels6groups5544AProws792macro rows. 14tests2.45s beforefullrun.
+Archive485bd11b924ac81ec63a6c6f29baae16ac430c673fccc8c0052eb24f91d8227f verified.
+21panelhashes/252anchors match;924shareddecisionschecked;33264pairedmetricdeltas,
+allmacro/sign/rule outcomes independentlyrecomputed. Finalplotexit0/visuallychecked.
+9of42passdevelopmentalrule. Proposedsupport_confidence_low_50:clean49.7%,phi.017600,
+FCOS+.036793/SSD+.032926vsnoadapt,4/5and5/5blocks. Tinygain,FCOSvsfull-.033478,
+clean/corruptcoveragessimilar;noindependentneeddiscriminationclaim. Allnegativesretained.
+T009rawarchivalpushsession56743 completeda23b618. Noactivejobs/transfers,nonewT011/meta.

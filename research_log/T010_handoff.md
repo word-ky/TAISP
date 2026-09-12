@@ -1,64 +1,47 @@
-# T010 active full offline evaluation
+# T010 completed; awaiting research review
 
-2026-09-12 18:14+08: T010 IN_PROGRESS, R0126012f1d/latest1a4df0c. T009closed.
-Active formal run **20260912-181436-taisp-t010-coco1000-offline**,
-release20260912-181357-taisp-t010-full, source/report **9efe032**.
-Started18:14:44+08. Fresh14affectedoffline/regressiontests passed2.45s, then
-CPU-only12-worker officialAP evaluation. Do not duplicate or rerun models.
+Status NEEDS_REVIEW. Read T010_report.md andcoordination/CHATGPT_TO_CODEX_R012_T010.md.
+T001–T009closed. Noactiveexperiment/transfer. Do notstartT011/meta/newgatewithoutnewtask.
 
-## Frozen contract and inputs
+## Exact provenance and completion
 
-Readcoordination/CHATGPT_TO_CODEX_R012_T010.md andT010_plan.md(planfd88938).
-SevenidentityscalarsexactlyasR012,zero-vectorcosine0andemptysupportconfidence0.
-Full7000-rowpreparation generatedby32a89e3 andcommitted **901560f before gatedAP**.
-42gates (7scores*2orientations*3coverages) +no-adapt/fullhybridanchors.
-Pooledrankoverall7000observations,notbycondition/block;tiesimageIDthenimmutable
-hybridrowordinal. Exactly1750/3500/5250 selectedrows; alldecisionsandcutoffs saved.
-Do not change afteroutcomes. StageA didnotreadannotations/predictionfiles.
-All7scoresavailable;70zero-vectorcosinescoded0. PreparationinputSHA matchesT009.
+Planfd88938;scorepreparation32a89e3;allfullpre-APdecisionscommitted901560f.
+Formalcode/report9efe032;release20260912-181357-taisp-t010-full.
+Run20260912-181436-taisp-t010-coco1000-offline,started18:14:44+08,
+finished18:36:59+08,exit0;12CPUworkers,1330.08296s,evaluationonly.
+14affectedoffline/regressiontests passed2.45s beforefullrun.
+1000images7000hybridrows,42gates+2anchors,21panels6groups5544AProws792macrorows.
+5292newgatedevaluations+252exactreusedanchors.No model/ISP/adaptation rerun.
+Allsevenpreupdatescoresavailable;70zero-vectorcosinescoded0aspredeclared.
+Pooled7000ranks,notpercondition/block;tiesimageIDthenimmutablehybridrowordinal.
+All42configurationsandnegativeoutcomesretained;nooutcome-driven gridchanges.
 
-Local preparation research_log/T010/preparation; remote root sameprojectrelativepath.
-Frozeninputstudy remote runs/20260912-144439-taisp-t009-coco1000/artifacts/study.
-Annotations shared/coco1000_t009/instances_val2017.json,officialhash e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f.
-LocalT009rawarchivefullydownloadedandhashed;samplesoriginalpreserved,Gziptracked.
+## Scientific result
 
-## Validation and actual command
+NineconfigurationspassR012developmentalrule. Mainreportlistsallnineandfull44rowtable.
+Recommendedsinglecandidateforresearch-leadreview:support_confidence_low_50,
+cohortcutoff.8499477751114789,oneboundarytie;cleanselected49.7%,corrupted50.05%.
+Cleanactualnonzero49.0%,effectivephi3.017600(-51.985%vsfullhybrid).
+FCOSmacro+.036793APvsnoadapt,-.033478vsfull;SSD+.032926,+.000766vsfull.
+PositiveblocksFCOS4/5,SSD5/5. CleanAPsource-.014279,FCOS+.074100,SSD+.015711.
+FCOSgamma-s2/SSDcolorcast-s2remainnegative;SSDgamma-s1negative too.
+Clean/corruptedcoveragessimilar:doesnotestablishselectiveneedrecognition.
+No matched-coveragerandomcontrolwasauthorized;do notclaimcausalneeddiscrimination.
+Thisisdevelopmentcohortselection,notindependentvalidationorpracticalstrongAPgain.
+No T011 selectedruleimplementationornewdataexecutionstarted.
 
-Core/preparation7tests localpassed11.83s. OfflineAPsmoke run20260912-180743,
-source901560f:13tests2.35s,2images14rows44configs21panels2772officialresults,
-16.57865s,exit0at18:08:12. Exact0/100anchorhashes;report924decisionsaudited.
-Reportcriterionboundaryunit1pass15.98s. StandaloneplotOMP15 fixedbyremoving
-unusedgatingimport(readlabelsfromsavedreport),noenvironmentchange;plotexit0/visualchecked.
-Full14tests2.45scoverlatestreportcriterion too. No model/ISP/adaptation rerun.
+## Evidence and recovery
 
-ActualrunexportsTAISP_SOURCE_REVISION=9efe032,OPENBLAS_NUM_THREADS=1,
-OMP_NUM_THREADS=1,MKL_NUM_THREADS=1,CUDA_VISIBLE_DEVICES=empty.
-Thenpytesttests/test_t010_gating.py tests/test_t009_replication.py tests/test_t008_analysis.py -q,
-then .venv/bin/python -m scripts.analyze_t010 --study <T009study> --prepared
-/home/liujianhua/wjq/TAISP/research_log/T010/preparation --annotations <above>
---output "$AUTODL_ARTIFACTS_DIR/study" --workers12,
-then -m scripts.report_t010 --study "$AUTODL_ARTIFACTS_DIR/study" --prepared <above>.
-
-## Completion work
-
-Monitorviaworkflow; finaldriverexpects21panels44configs6groups =5544AProws,
-including5292newgatedevaluationsand252exactreusedT009anchorvalues.
-EachpanelstoresselectedIDs,decisionhashes,composedpredictionhashes,allCOCOstats.
-Rawanchors+precommittedmatrixreconstructallcompositions; noGBduplicatedJSONneeded.
-Do not interpretpartialpanels ormodifygrid. Fetchfinalruncompressedarchive,
-verifySHA,extractunderresearch_log/remote_runs/<run>. Reportscriptalreadyrunsremote.
-Generatelocalplotwithscripts.plot_t010;remotematplotlibabsent. InspectPNG.
-Auditall44configurations/5544AProws,allshareddecisions,andindependentlyreconstruct
-macro/sign/cleancriterionarithmetic. Retainallnegativeconditions/blocks/configs.
-Reportallpassingconfigurations,nounreportedoutcomeselection;developmentcohortonly.
-Cleanselectedcoverage<=.5,all3cleanAPdeltas>=-.1,bothindependenttargetmacro>0,
-each>=4/5positiveblocks. SourcecannotreplaceFCOS/SSD. Effectivephi,safety/coverage
-andcoarsereceipt-derivedlatenciesalreadyinpreparation/safety.json.
-WriteT010_report.md,appendCODEX_TO_CHATGPT.md,statusNEEDS_REVIEW,commitpush,
-mirrorfinalprojectlocaldocs/resultsunderremoteprojectrootresearch_log.
-No T011,learnedgate,featurecombination,loss,predictor,spatialISP ormetaautomatically.
-
-WorkflowcwdD:/work/claude-autodl/autodl-workflow-clean;projectconfig.autodl/config.json.
-Projectread/edit/gitfromprojectcwd. Neverprintconfigsecrets. Remote root/home/liujianhua/wjq/TAISP.
-InitialscoredeploySSH255afterextract;verifiedfiles/completedonlycurrentlinkstep.
-Otherknownfailure:firstbaselinewrongremoteprojectcwdexit4;correctreleasepassed.
+Localfullrun research_log/remote_runs/20260912-181436-taisp-t010-coco1000-offline.
+Remote /home/liujianhua/wjq/TAISP/runs/20260912-181436-taisp-t010-coco1000-offline.
+Pre-APresearch_log/T010/preparation locally/remotely containsallscores,matrix,cutoffs,
+distributions,safety/timingandhashes. RawT009predictionsandsamplesarenowGitarchiveda23b618.
+FinalrunarchiveSHA485bd11b924ac81ec63a6c6f29baae16ac430c673fccc8c0052eb24f91d8227f.
+Archive/21panels/252anchorschecked;924shareddecisioncompositionsaudited;
+33264pairedmetricdeltas/allmacroblocksigns/all44rulesreconstructed.
+AllAPCSVvaluesmatchofficialpanels;allinputpredictionhashesmatchT009audit.
+StandalonefinalPNG/PDFgeneratedlocally,PNGvisuallychecked. Noextraevaluatorrun.
+RawcomposedJSONreconstructiblefromfrozenpredictions+decisions;eachcompositionhashsaved.
+FinalreportT010_report.md andCODEX_TO_CHATGPT entrycontainlimits,failures,timing,commands.
+RemoteMatplotlibabsent;localplotstandaloneavoidsunusedtorchimport/OMPconflict.
+WorkflowD:/work/claude-autodl/autodl-workflow-clean,project.autodl/config.json;neverprintsecrets.

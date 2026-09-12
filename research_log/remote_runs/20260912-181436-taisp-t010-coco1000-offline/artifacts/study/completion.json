@@ -1,0 +1,124 @@
+{
+  "source_revision": "9efe032",
+  "input_revision": "69bfb66",
+  "preparation_revision": "32a89e3",
+  "images": 1000,
+  "rows": 7000,
+  "configurations": 44,
+  "groups": 6,
+  "workers": 12,
+  "elapsed_seconds": 1330.08296251297,
+  "official_evaluations": 5544,
+  "reused_official_anchor_evaluations": 252,
+  "model_or_adaptation_inference": false,
+  "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "T009_metrics_sha256": "8c2942790ce012cfa350124d2acbe7ac299c11b4c76ae14247ad458416d0c377",
+  "preparation_manifest_sha256": "539cc154b9ded4495875a7a6c343c413cd72322a0aeeed044dfdbac4b83cee1a",
+  "panels": [
+    {
+      "panel": "source_clean_s0.json",
+      "sha256": "fd4c71b074ae20fe45db14a865bfedd65c99fdc199fe7c2b12d9e44ea78fa32b",
+      "evaluations": 264
+    },
+    {
+      "panel": "source_color_cast_s1.json",
+      "sha256": "e9f457ff9e9d0fb5a0bbb5a2aa2775e73556fd999a087dfaf24b916c3a80b103",
+      "evaluations": 264
+    },
+    {
+      "panel": "source_color_cast_s2.json",
+      "sha256": "02d83f7f20fdca65e50cfc9abe90f28172947c684a6ddd206f1fb51654e2e90b",
+      "evaluations": 264
+    },
+    {
+      "panel": "source_contrast_s1.json",
+      "sha256": "5cfeb86e2491140875d85fe71e13c0fd3b7eaec7312730aa7b5a8d3fae9fef7a",
+      "evaluations": 264
+    },
+    {
+      "panel": "source_contrast_s2.json",
+      "sha256": "f7c04148be56f44fe2e9b7d519001ed886f6f24f21b2500af2d3747ba0e93c8b",
+      "evaluations": 264
+    },
+    {
+      "panel": "source_gamma_s1.json",
+      "sha256": "a082b58f2e9bd246ae0b22d81bb2a4ab77a9a9c757b69323f3a814b4e5594683",
+      "evaluations": 264
+    },
+    {
+      "panel": "source_gamma_s2.json",
+      "sha256": "e74f2ead4bd0bcc597cee646d1ae6671df4f8cf8c3f59d77ad01f1d8ff8af10a",
+      "evaluations": 264
+    },
+    {
+      "panel": "ssd_clean_s0.json",
+      "sha256": "bacde5ee09610efc4cb81213466ed15fb186ee35575392f6b8ead8cff731b6e1",
+      "evaluations": 264
+    },
+    {
+      "panel": "ssd_color_cast_s1.json",
+      "sha256": "1089bd32c73842744a46975793813073de595d379d073b5e2252156ff86655c7",
+      "evaluations": 264
+    },
+    {
+      "panel": "ssd_color_cast_s2.json",
+      "sha256": "662c78d27394c4eb9c92e848b630bf0d27c9ea4b509a39ddc73859390773ec15",
+      "evaluations": 264
+    },
+    {
+      "panel": "ssd_contrast_s1.json",
+      "sha256": "ea543c575ac0754fc469c1b1c72107043714a120452fb6c8c6b13785f05d3f04",
+      "evaluations": 264
+    },
+    {
+      "panel": "ssd_contrast_s2.json",
+      "sha256": "34a19a2cf68d17b4352f2653a304ba90bcf53b1dac288a8f96f44d14c8a4fb8e",
+      "evaluations": 264
+    },
+    {
+      "panel": "ssd_gamma_s1.json",
+      "sha256": "d07cd891be357a7720d2fbad69e8267b7df2a781ff7eb23932e2fc2439fc597f",
+      "evaluations": 264
+    },
+    {
+      "panel": "ssd_gamma_s2.json",
+      "sha256": "e66bebb66064756c3ae6cba13771fd0464263b5a2f9ebbc2f460e841d5972658",
+      "evaluations": 264
+    },
+    {
+      "panel": "target_clean_s0.json",
+      "sha256": "1f3a45e6fc71764fbb2c1a07532d458081ff90734c49ee2ed2a5a85f026e85bc",
+      "evaluations": 264
+    },
+    {
+      "panel": "target_color_cast_s1.json",
+      "sha256": "0d2490ba734d713919c3422ac00ef2ebe8942eb530bddb9b810b1e89d83f6703",
+      "evaluations": 264
+    },
+    {
+      "panel": "target_color_cast_s2.json",
+      "sha256": "ec7f18c4fc9c42978238ad4a9321461adcb0e20d84b718ccd55c9ebcb36bae91",
+      "evaluations": 264
+    },
+    {
+      "panel": "target_contrast_s1.json",
+      "sha256": "4b01ba579009410c95a976957e25423da78e226723d90bb74011154a75884b30",
+      "evaluations": 264
+    },
+    {
+      "panel": "target_contrast_s2.json",
+      "sha256": "8e7f53f0508b18eaf5de4aae42a2bd52f0cf739b057acae9eaf3000a3cf6a534",
+      "evaluations": 264
+    },
+    {
+      "panel": "target_gamma_s1.json",
+      "sha256": "dec3fab7744ae46855ebff03834d9e9a18e6de29de945f1a87eccbeb19e8ad8f",
+      "evaluations": 264
+    },
+    {
+      "panel": "target_gamma_s2.json",
+      "sha256": "28150be113e297390a6583d7414dc2f538a021059a317395e7ad78c9f4084194",
+      "evaluations": 264
+    }
+  ]
+}

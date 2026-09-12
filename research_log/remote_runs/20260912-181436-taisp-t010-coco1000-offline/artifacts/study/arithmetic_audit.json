@@ -1,0 +1,23 @@
+{
+  "AP_rows": 5544,
+  "unique_rows": 5544,
+  "paired_metric_deltas_reconstructed": 33264,
+  "all_macro_block_signs_and_44_rules_recomputed": true,
+  "promising_configurations": [
+    "clip_norm_low_50",
+    "det_norm_low_25",
+    "log_norm_ratio_high_50",
+    "log_norm_ratio_low_25",
+    "gradient_cosine_high_50",
+    "pseudo_loss_high_25",
+    "pseudo_loss_low_25",
+    "support_confidence_high_25",
+    "support_confidence_low_50"
+  ],
+  "archive_sha256": "485bd11b924ac81ec63a6c6f29baae16ac430c673fccc8c0052eb24f91d8227f",
+  "no_model_or_evaluator_rerun": true,
+  "downloaded_panel_hashes_verified": 21,
+  "anchor_evaluations_exactly_match_T009": 252,
+  "input_prediction_hashes_match_T009": true,
+  "all_AP_csv_values_match_official_panels": true
+}
