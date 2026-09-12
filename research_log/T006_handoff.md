@@ -47,3 +47,5 @@ only matching scpPID, existing workflow retried legacySCP successfully; full
 archive295285bytes SHA745b8c8e0ac1aa105dea5b5edaf0577c58d6a98c33e127eb5538abcebce04e85.
 No data/model change. Existing NVMLwarning remains; CUDA experiments work.
 Heartbeat every15minutes includes LATEST continuation reading; no duplicate.
+
+[2026-09-12T09:26:39+08:00] Fullrun20260912-092401-taisp-t006-coco200 passed54real tests102.35s (7knownwarnings); first2/200images completed15.1s, no blocking error. Experiment remains active; next heartbeat monitors existingrun and collects only after completion. Rootproject logs mirrored remote.

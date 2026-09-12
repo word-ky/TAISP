@@ -932,3 +932,5 @@ Operational failures: initialmodel SSLfixed with systemCA, oneSSHtimeout;
 smokeSFTP stalled, existing legacySCP retry succeeded withverifiedarchivehash.
 No scientific change, target substitution or TLSbypass. Fullrun remains active;
 will report allnegative cases andconfirmation-bias interpretation at completion.
+
+[2026-09-12T09:26:39+08:00] Fullrun20260912-092401-taisp-t006-coco200 passed54real tests102.35s (7knownwarnings); first2/200images completed15.1s, no blocking error. Experiment remains active; next heartbeat monitors existingrun and collects only after completion. Rootproject logs mirrored remote.
