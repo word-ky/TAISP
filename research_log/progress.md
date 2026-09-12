@@ -430,3 +430,11 @@ exception exceeds range2.5989x, no causal optimizer ranking. Optional CuBLAS fai
 retained, stopped as planned. No model/setting/tolerance changes. All artifacts fetched.
 Offline table-header TypeError repaired (integer labels to strings); renderer succeeded,
 no model rerun. Full report/tables/artifact manifest ready; stop for research review.
+
+## 2026-09-13T04:54:23.3490338+08:00 — R019 synchronized; T013-E prepared
+
+Research accepts T013-D via74cbdce. Pre-outcome plan604528c pushed before code/results.
+Baseline6passed10.06s; focused9passed7.14s. Reuse T013C evaluate/directions/one_step,
+source-meta data/loss/isolation and T013D raw inputs. New exact-output gate, priorrange
+comparison, descriptive Spearman and predeclared decision only. No deployment changes.
+Next fullremote regression, 3no-update repeats, conditional3independent one-step probes.

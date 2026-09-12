@@ -1891,3 +1891,12 @@ R018 scope completed under plan78ef20e/source81097bf. Full report:
 
 Await research review. No T013-E, longertraining, regularizer, biasremoval, featurecentering,
 predictorredesign, target/AP or newdata started. The15minuteheartbeat remains active.
+
+## 2026-09-13T04:54:23.3490338+08:00 — T013-E IN_PROGRESS under R019
+
+T013-D accepted/closed. Plan604528c pins same microset/support/original/model hashes
+and all prior T013D control receipts. Baseline6passed10.06s; focused9passed7.14s.
+Analysis-only runner prepared: CUBLAS_WORKSPACE_CONFIG=:4096:8 before Python,
+deterministic algorithms enabled; exactly3no-update repeats must match bitwise
+before exactly3 independent fixed one-step SGD1e-3 probes. No tolerance relaxation,
+method change, data expansion or follow-on training. Fullremote regression next.
