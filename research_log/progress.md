@@ -293,3 +293,10 @@ GitHub push3c82267 initially timedout (443), normalretry succeeded. Full deploym
 extracted then SSHtimedout atcurrentlink (255); four kernel/report/config/reference
 hashes matchlocal, completed onlylink+last-release state. No method/configchanges.
 Expected21newpredictionfiles126newAP+252reusedendpoints=378AProws. Final resultpending.
+
+## 2026-09-12T21:44:23+08:00 — T012 formal regression green; full study progressing
+
+Run20260912-212537: **93real-model/regression tests passed in222.69s**.
+All model/ID/config/reference checks passed and formal inference is active;
+latest observed290/1000images,830.6s inference elapsed. No failure or new task.
+GitHub remainsR014/T012, frozenalpha=.5 unchanged. Final AP/report pending.

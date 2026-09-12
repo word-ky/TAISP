@@ -1651,3 +1651,10 @@ Fresh latest93-test real-model/regression gate is running, then the authorized
 No alpha/model/support/ISP/cohort change. T009 endpoints and T011 controls frozen.
 [Exact command](../research_log/T012_full_run_meta.json), [handoff](../research_log/T012_handoff.md).
 Final scientific result pending. No T013, alpha sweep, new cohort or meta-training.
+
+### T012 formal regression green; study remains IN_PROGRESS
+
+Run20260912-212537/source3c82267: **93real-model/regression tests passed in222.69s**.
+The fixed1000-image study is now executing; latest observed290/1000images.
+All reference/model/config checks passed. Final AP/report pending; no interim
+scientific interpretation or parameter change.

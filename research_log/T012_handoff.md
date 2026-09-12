@@ -5,8 +5,8 @@ Read T012_plan.md, T012_references.json, coordination/CHATGPT_TO_CODEX_R014_T012
 Pre-model plan d753456; kernel/runner aeef36b; report+prompt comparison fix dddc238.
 **FORMAL RUN ACTIVE: 20260912-212537-taisp-t012-coco1000-half-dose**.
 Release20260912-212421-taisp-t012-full, source3c82267 (code/report dddc238),
-started21:25:48+08. Full93real-model/regression tests running, then1000image driver
-and automaticreport. Exactcommand T012_full_run_meta.json. DO NOT DUPLICATE.
+started21:25:48+08. Full93real-model/regression tests PASSED222.69s;1000image driver
+active (290images observed21:43+08), automaticreport follows. Exactcommand T012_full_run_meta.json. DO NOT DUPLICATE.
 Repairedsmoke20260912-212148 completed21:22:15+08 exit0;9focusedtests2.30s;
 14episodes189AProws7.205856s; report/plot/14support/126endpointchecks passed.
 
@@ -54,4 +54,4 @@ Operationalhistory: initialdeploySSHmkdir timedout255; retry succeeded. Firstsmo
 90tests passed thenpincomparetuple/listfailure (fixed beforeadaptation). Fullversion
 push timedout443 thenretry succeeded; fullrelease extracted butcurrentlink timedout,
 verified fourfilehashes thencompletedlink/state only. All failures retained inprogress.
-Latestfulltests outcome stillpending; do not claim93passeduntilrunlogconfirms.
+Latestfulltests confirmed93passed222.69s at21:43 heartbeat; fullscience pending.
