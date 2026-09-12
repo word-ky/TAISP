@@ -367,3 +367,20 @@ skipping998 inaccessible/root symlinks; no dataset modification or download.
 Part B source-only outer path ready;23passed/2skipped17.88s, including target
 variation proving labels change outer objective without changing inner trajectory.
 Next remote complete non-real regression and exactly3 predictor SGD updates.
+
+## 2026-09-13T01:46:44.5537489+08:00 — T013-B bounded source smoke launched
+
+Run20260913-014612-taisp-t013b-source-three-steps,release014535,source1685fb6.
+Command complete non-real suite then fixed8episodes/3SGDsteps; exactcommand in
+runmeta and T013B_handoff.md. No duplicate, no further optimizer steps permitted.
+
+## 2026-09-13T01:51:35.3833075+08:00 — T013-B complete, receipts fetched, ready for review
+
+Part A12episode exact/FD reference valid and FO gatePASS; allforwardtrajectoriesexact.
+PartB run014612 completed01:46:40+08exit0;93passed10skipped5.94s beforethreesteps.
+All3predictorupdates finite, finaldelta.000527524506; models/buffers remainunchanged.
+Meanouterloss .474083306,.472119273,.475948031,.473895423 nonmonotonic.
+Cleanloss decreased .004128285 whilecorruptloss increased .003752520; retained.
+Cleanphi3mean rises .071202720 to.090419135; no identity/performanceclaim.
+Rawsteps/supports/receipt/checkpoint/logs fetched, source inputhashes verified.
+Report T013B_report.md; NEEDS_REVIEW; no furthertraining oractiveprocess.

@@ -1775,3 +1775,39 @@ and file/annotation hashes before optimizer. Existing image directory contains
 unreadable/root symlinks; selected only readable images as planned, no newdata.
 Focused affected tests **23passed/2skipped17.88s**. Launch next: eight clean/corrupt
 episodes,3SGDsteps1e-3 onexistingpredictor, all models frozen, noAP/targets.
+
+## T013-B final report — NEEDS_REVIEW
+
+**Both bounded parts completed.** Pre-outcome plan **b73bcd2**, analysis **42072e7**,
+preoptimizer train microset **fc88531**, source smoke **1685fb6**.
+
+Part A:12fixedfloat64 ISP episodes, EXACT reference validated by central FD1e-5
+(mincos **.9999999999999998**,maxgradienterror5.7693e-12). FO/EXACT median cosine
+**.9980674725590613**,12/12positive,allfinite; allforwardstate/image differenceszero.
+Predeclared gatePASS. This is mock-objective fidelity, not exact realmodelmeta-gradient.
+
+PartB: **20260913-014612-taisp-t013b-source-three-steps**, release014535, completed
+**01:46:40+08exit0**. Fullregression **93passed,10skipped,5.94s**. Fourprecommitted
+train2017images/eightfixedclean-corrupt episodes, exactly3SGDsteps1e-3, predictoronly.
+Meanouterloss **.474083306 -> .472119273 -> .475948031 -> .473895423**, nonmonotonic.
+Cleanloss **.355870174 -> .351741889**;corruptloss **.592296437 -> .596048958** worsens.
+Finalpredictorchange **.000527524506**. Headgradients nonzeroallsteps; trunkzeroat
+zeroheadinitialization thennonzero. Allfinite; detector/CLIP parameters andbuffers
+unchanged, gradientsNone, nofullsaturation/emptysupport. PeakCUDA **3712453632bytes**,
+smoke **15.003842537s**. Cleanphi3mean .071202720 -> .090419135 remainslargerthan
+corrupt(.019964728 -> .019958154). No identity/detection/generalizationimprovementclaim.
+
+Initial available-data scan hit inaccessible/root symlinks; selected onlyexisting
+readable trainimages withvalidannotations, preserving plannedseed. No downloads,
+permissionchanges,valsubstitution,modelrunfailure,retry,lrchange orfourthupdate.
+Deployment/ISP/predictorarchitecture/acceptedlosses/T013AstrictCUDAassertion unchanged.
+
+[Full report](../research_log/T013B_report.md),
+[12episode table](../research_log/T013B/part_a/audit.csv),
+[precommitted train microset](../research_log/T013B_train_microset.json),
+[full source receipt](../research_log/remote_runs/20260913-014612-taisp-t013b-source-three-steps/artifacts/smoke/receipt.json),
+[run log and exact command](../research_log/remote_runs/20260913-014612-taisp-t013b-source-three-steps/train.log).
+
+All32episode measurements, fourstep summaries, supports/checkpoint/metadata retained.
+Noactivejob/transfer. Readyforresearchreview; **noT013-C/longertraining/scheduleselection/
+architecturechange/val-FCOS-SSD/AP/newtargetcohort/spatialISP/gating-dosework** started.

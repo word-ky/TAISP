@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-014612-taisp-t013b-source-three-steps",
+  "releaseId": "20260913-014535-taisp-t013b-source-smoke",
+  "sessionName": "autodl-20260913-014612-taisp-t013b-source-three-steps",
+  "command": "export TAISP_SOURCE_REVISION=1685fb6 TAISP_REAL_MODELS=0 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.source_meta_smoke --manifest research_log/T013B_train_microset.json --audit research_log/T013B/part_a/audit.json --output \"$AUTODL_ARTIFACTS_DIR/smoke\""
+}
