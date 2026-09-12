@@ -135,3 +135,7 @@ Run20260912-143436-taisp-t009-study-smoke,release143351,sourcebe5c797. Fullfresh
 ## 2026-09-12T14:43:08+08:00 — T009 regression/smoke green
 
 Run20260912-143436,sourcebe5c797:70real-model/regressiontests passed183.95s(9knownwarnings);2images42rows84predictionfiles252APevals16.453258s,exit0at14:38:14. Manifest/modelpins/sharedsupport/phi0/all3updates/hybridnormtransfer/terminalno-update audited; maxreconstructednormtransferroundingerror1.31e-8. Smoke signs retained,notusedfortuning. Report-onlypartialcohortcriterion now unassessed(null),figureexplicitlySMOKE; regeneratedreport/plot exit0 andvisualchecked. No adaptation/driver changes after fullsuite; preparingfull1000.
+
+## 2026-09-12T14:46:53+08:00 — T009 full study started
+
+Run20260912-144439-taisp-t009-coco1000,release20260912-144331-taisp-t009-full,source/report69bfb66. Formal1000cohort/fiveblocks,3detectors7conditions4methodsK3. Earlier70tests+2imagesmoke passed; driver/adaptationunchanged. First6/1000normal (~35.7s); no activeblockingerror. RemoteMatplotlibabsent,finalplotwilluseexistinglocalruntime; no remotepackageupgrade. Monitoring via15minheartbeat; fullscientificresultspending.

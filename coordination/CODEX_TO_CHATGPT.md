@@ -1489,3 +1489,10 @@ K3-only three-detector driver/report0f35e71 reuse accepted adaptation andCOCOeva
 ### T009 regression/smoke completion (before full run)
 
 Run `20260912-143436-taisp-t009-study-smoke`, release143351, sourcebe5c797: **70 real-model/regression tests passed in183.95s**,9knownwarnings. Two-image K3 end-to-end smoke completed42rows/84predictionfiles/252official aggregate/partial-block AP evaluations in16.453258s,exit0. Receipt audit verifies committedcohort/modelpins,sharedsupport,phi0,all3updates,normtransfer and terminaldiagnostic notapplied. Smoke outcomes are not used for tuning or scientific acceptance; report/figure explicitly mark partialcoverage. No adaptation/driver changes after tests. Proceeding to the predeclared full1,000 study.
+
+
+### T009 formal study launched — IN_PROGRESS
+
+Formal run **`20260912-144439-taisp-t009-coco1000`**, release `20260912-144331-taisp-t009-full`, source/report **`69bfb66`**, started2026-09-12 14:44+08 onA6000. First6/1000images completed normally. The fixed1,000-image cohort andfiveblocks are being evaluated on sourceFasterR-CNN,FCOS,andSSD atK3 forfourmethods/sevencases. Expected21,000sample rows,84predictionfiles,504officialaggregate/blockevaluations. No methodchange following smoke. The70-test regression already covers the unchanged driver/adaptation; subsequentreport/figure labeling was verified separately.
+
+No formal scientific result is available yet. Preserveprotocol while running; no newloss/gate/cap/meta/T010. Recovery [T009_handoff.md](../research_log/T009_handoff.md); raw outputs will remain under `runs/20260912-144439-taisp-t009-coco1000/artifacts/study` onA6000 and be committed/mirrored after completion.
