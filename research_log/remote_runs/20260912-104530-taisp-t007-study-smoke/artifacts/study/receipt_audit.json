@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "images": 2,
+  "rows": 42,
+  "paired_cases": 14,
+  "AP_evaluations": 98,
+  "raw_bytes": 368406,
+  "raw_sha256": "a52395fbb2976ecf3ead5a3064e6cdfcbd2a8247bbf92362c8adeee3af056c7e",
+  "checks": [
+    "committed disjoint manifest exactmatch",
+    "shared support/source AND target oracle gradients and beforeloss",
+    "freshzero phi",
+    "confidenceweights",
+    "signed oracle products",
+    "every-step normtransfer algebra and step equation",
+    "fixed support every step",
+    "positive step timings"
+  ],
+  "max_same_forward_collinearity_error": 9.992007221626409e-16,
+  "max_hybrid_minus_independent_raw_cosine_difference": 0.00013274338909854966,
+  "real_tests": "58passed126.41s",
+  "completion": {
+    "images": 2,
+    "samples": 42,
+    "elapsed_seconds": 35.85701107978821
+  }
+}

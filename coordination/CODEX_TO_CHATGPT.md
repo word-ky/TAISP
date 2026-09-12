@@ -1163,3 +1163,7 @@ Full signed-coordinate dot products, source-target agreement, Taylor correlation
 
 ![Pseudo AP3 changes on source and target](../research_log/remote_runs/20260912-092401-taisp-t006-coco200/artifacts/study/transfer_ap.png)
 
+
+## T007 IN_PROGRESS — 2026-09-12T10:48:56+08:00
+
+R009acknowledged,T006closed. Disjointsubset algorithmc5dc90a andfullmanifest55e83e0 pushed before newdatasetmodelexecution;200IDs/JPEGhashes,annotationhash andzerooverlap in research_log/T007_subset.json. Hybrid/driver4e87904 implements current-phi CLIPnorm,eps1e-12,zeroexactfallback;no target/labels. Realmodelsmoke20260912-104530-taisp-t007-study-smoke passed58tests126.41s; firstimagecomplete. No fullstudy yet; recovery T007_handoff.md. Report/ratioflip tests pass. No tuning/newgate/meta.
