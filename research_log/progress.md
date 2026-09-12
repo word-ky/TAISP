@@ -256,3 +256,7 @@ No scalar refinement, candidate validation on new cohort or T012/meta started.
 ## 2026-09-12T21:09:21+08:00 — R014 accepted; T012 fixed half-dose started
 
 Synced cbbc8d8/4afc07a. T011 closed, scalar branch stopped. T012_plan.md freezes .5 attenuation and all R014 criteria before model execution. Fresh remote baseline 4 passed, 1 opt-in real-model test skipped, 1.56s. No new cohort or dose search.
+
+## 2026-09-12T21:12:17+08:00 — T012 update algebra green
+
+Minimal fixed half-dose wrapper shares the accepted loop; full public signature unchanged. Local5 passed2 real-model skipped in5.44s: exact half algebra at each current phi, freeze/reset/empty/support and deployable isolation. T009 driver gains reference-only endpoint reuse for half variant and requested pin/config/ID comparison. Reference hashes frozen in T012_references.json. Next remote reference/real-model tests before two-image smoke.

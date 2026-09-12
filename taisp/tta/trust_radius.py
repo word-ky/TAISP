@@ -14,6 +14,16 @@ def transfer_norm(detector_gradient, clip_gradient, eps=1e-12):
 
 @torch.enable_grad()
 def adapt_clip_radius(image, isp, detector_loss, clip_loss, *, steps=3, lr=.1, eps=1e-12):
+    return _adapt_radius(image, isp, detector_loss, clip_loss, steps=steps, lr=lr, eps=eps, half_dose=False)
+
+
+@torch.enable_grad()
+def adapt_half_dose(image, isp, detector_loss, clip_loss, *, steps=3, lr=.1, eps=1e-12):
+    """T012: the fixed 0.5-dose variant, with no target or annotation inputs."""
+    return _adapt_radius(image, isp, detector_loss, clip_loss, steps=steps, lr=lr, eps=eps, half_dose=True)
+
+
+def _adapt_radius(image, isp, detector_loss, clip_loss, *, steps, lr, eps, half_dose):
     """Fresh episode; frozen losses; fixed original support owned by detector_loss."""
     detector_loss.eval().requires_grad_(False)
     clip_loss.eval().requires_grad_(False)
@@ -29,6 +39,9 @@ def adapt_clip_radius(image, isp, detector_loss, clip_loss, *, steps=3, lr=.1, e
         gd = torch.autograd.grad(pseudo, phi, retain_graph=True)[0].detach()
         gc = torch.autograd.grad(clip, phi)[0].detach()
         update, scale = transfer_norm(gd, gc, eps)
+        hybrid_norm = update.norm().item()
+        if half_dose:
+            update = .5*update
         nd, nc = gd.norm().item(), gc.norm().item()
         if image.is_cuda:
             torch.cuda.synchronize(image.device)
@@ -48,6 +61,9 @@ def adapt_clip_radius(image, isp, detector_loss, clip_loss, *, steps=3, lr=.1, e
             'step_seconds': time.perf_counter()-started,
             'update_applied': step < steps,
         })
+        if half_dose:
+            history[-1].update(dose_coefficient=.5, pre_attenuation_hybrid_norm=hybrid_norm,
+                               applied_half_dose_norm=update.norm().item())
         if step < steps:
             phi = (phi-lr*update).detach().requires_grad_(True)
     return AdaptResult(initial, phi.detach(), enhanced.detach(), None, history)

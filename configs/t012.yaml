@@ -1,0 +1,10 @@
+seed: 20260912
+count: 1000
+device: cuda:0
+threads: 1
+semantic_lr: 0.1
+semantic_steps: 3
+support_threshold: 0.5
+support_topk: 20
+radius_eps: 1.0e-12
+variants: [det_pseudo_half_dose]
