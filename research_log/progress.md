@@ -384,3 +384,12 @@ Cleanloss decreased .004128285 whilecorruptloss increased .003752520; retained.
 Cleanphi3mean rises .071202720 to.090419135; no identity/performanceclaim.
 Rawsteps/supports/receipt/checkpoint/logs fetched, source inputhashes verified.
 Report T013B_report.md; NEEDS_REVIEW; no furthertraining oractiveprocess.
+
+## 2026-09-13T03:02:19.0363509+08:00 — T013-C diagnostic prepared
+
+R017 mainqueue accepts T013-B. Plan cdd5c58 committedbeforeoutcomes.
+Baseline7passed15.42s;focused14passed/1skipped16.99s. Newanalysis gradient_conflict.py
+reuses source_outer_episode, savedsupport and frozenmanifest. Threeindependent
+originalcopies use joint/clean/corrupt meanheadgradient oneSGDstep1e-3 each.
+Trunk expectedzero atinitialhead; one originalno-update repeatforCUDA drift.
+No deployment,ISP,models,losses,predictorarchitecture orT013Aassertion changes.

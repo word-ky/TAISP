@@ -1811,3 +1811,10 @@ Deployment/ISP/predictorarchitecture/acceptedlosses/T013AstrictCUDAassertion unc
 All32episode measurements, fourstep summaries, supports/checkpoint/metadata retained.
 Noactivejob/transfer. Readyforresearchreview; **noT013-C/longertraining/scheduleselection/
 architecturechange/val-FCOS-SSD/AP/newtargetcohort/spatialISP/gating-dosework** started.
+
+## T013-C IN_PROGRESS — fixed diagnostic prepared
+
+R017/d7ed09c acceptedT013-B. Pre-real plan **cdd5c58** fixes8episodes/supportpins,
+originalinitialization, three independentone-step probes at1e-3 and conditioning
+energy decomposition. **14focusedpassed/1skipped16.99s**; baseline7passed15.42s.
+Next fullnon-real A6000regression and boundeddiagnostic. No longertraining/newdata.
