@@ -1,0 +1,12 @@
+Part A command source42072e7: 12/12 positive FO/exact cosines; median.9980674725590613;
+min exact/FD cosine.9999999999999998; all gradients finite, continuation PASS.
+Data inspection found train2017 with14,874 jpg entries (998 inaccessible /root
+symlinks,13,876 readable). Initial preparation raised PermissionError at
+000000376608.jpg -> /root/hpbd/data/coco_train_plus/000000376608.jpg.
+Minimal repair checks os.access before is_file to implement the predeclared
+available-image criterion. No permissions, images or annotations modified.
+13,798 available valid-annotation images; fixed seed selects65088,426525,541157,129068.
+Preparation only; no models or optimizer invoked. Annotation/source file hashes
+in T013B_train_microset.json, committed before Part B optimization.
+Initial inventory shell also returned exit2 from absent optional root paths;
+its positive data-path findings were subsequently confirmed explicitly.
