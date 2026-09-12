@@ -111,3 +111,25 @@ def test_preparation_keeps_one_global_mask_and_block_membership(tmp_path):
     assert safety['aggregate']['clean_s0']['effective_phi3']['mean'] == pytest.approx(.025)
     meta = json.loads((output/'manifest.json').read_text())
     assert meta['configurations'] == 44 and meta['labels_or_prediction_files_read'] is False
+
+
+def test_official_gated_AP_anchors_and_fixed_blocks():
+    pytest.importorskip('pycocotools')
+    from pycocotools.coco import COCO
+    from taisp.analysis.replication import replication_ap
+    coco = COCO()
+    coco.dataset = {'info': {}, 'images': [{'id': i, 'width': 100, 'height': 100} for i in (1, 2)],
+        'categories': [{'id': 1, 'name': 'object'}], 'annotations': [
+            {'id': i, 'image_id': i, 'category_id': 1, 'bbox': [0, 0, 10, 10], 'area': 100, 'iscrowd': 0} for i in (1, 2)]}
+    coco.createIndex()
+    raw = [{'image_id': i, 'category_id': 1, 'bbox': [50, 50, 10, 10], 'score': .9} for i in (1, 2)]
+    hybrid = [{**r, 'bbox': [0, 0, 10, 10]} for r in raw]
+    blocks = {'block_1': [1], 'block_2': [2]}
+    empty = replication_ap(coco, [1, 2], compose_predictions(raw, hybrid, set(), [1, 2]), blocks)
+    full = replication_ap(coco, [1, 2], compose_predictions(raw, hybrid, {1, 2}, [1, 2]), blocks)
+    mixed = replication_ap(coco, [1, 2], compose_predictions(raw, hybrid, {1}, [1, 2]), blocks)
+    assert empty['aggregate']['AP'] == 0
+    assert full['aggregate']['AP'] == pytest.approx(1)
+    assert 0 < mixed['aggregate']['AP'] < 1
+    assert mixed['block_1']['AP'] == pytest.approx(1) and mixed['block_2']['AP'] == 0
+    assert all('area' not in p for p in raw+hybrid)

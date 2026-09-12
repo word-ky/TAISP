@@ -1516,3 +1516,7 @@ Recommended disposition: completed frozenexternalvalidation,very small positive 
 ## T010 — IN_PROGRESS: offline protocol predeclared
 
 R012 accepted;T009closed. [T010 plan](../research_log/T010_plan.md) fixes sevenidentityscalars,zero-norm/empty-support conventions, pooled7,000-row ranks, deterministicties, full42configurationgrid and2anchors, fivefixedblocks, unchangedCOCOeval andreceipt-derivedtiming formula beforegatedAP. Availablehybriddiagnostics include bothgradientvectors andpseudo loss; fullavailabilityaudit follows. No model/adaptation rerun or deploymentchange. BaselineAP/blocktests2passed1.29s; firstremoteattemptwrongcwdexit4 correctedwithoutcodechanges. Proceedingwithscore/rank/composition testsandpre-AP artifacts. No T011/meta.
+
+### T010 full pre-AP decisions frozen
+
+Preparation32a89e3 completed7,000hybridrows/allsevenreconstructablescores,42gates+2anchors. All42ranks useexact1,750/3,500/5,250pooledrows withpredeclaredtiepolicy;70zero-vectorcosines coded0aspredeclared. Full [score/decision/distribution artifacts](../research_log/T010/preparation/manifest.json) andhashes arecommitted beforeanygatedAP. SourceJSONL/cohortSHA matchfrozenT009. Localcore/preparationtests7passed11.83s; nextstepCPUofficialcomposition/APsmoke andfullgrid. No targetorlabelquantityentereddecisions,noinference rerun.

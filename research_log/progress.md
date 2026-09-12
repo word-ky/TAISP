@@ -163,3 +163,7 @@ Synced1a4df0c/R0126012f1d. T009closed; T010offline7scalarneed-to-adaptgrid autho
 ## 2026-09-12T18:02:37+08:00 — T010 scalar preparation green
 
 Pureextract/rank/composition/timing/preparationtests7passed11.83s. Two-imagefrozenreceiptpreparationsmoke14rows44configs exit0 without labels/predictions. Scoresandrulesplanfd88938 alreadycommitted beforeAP. Deployingscorepreparationforfull7000rawrows;all42gatesretained.
+
+## 2026-09-12T18:06:42+08:00 — Full T010 pre-AP decisions frozen
+
+Preparationcode32a89e3,release20260912-180251-taisp-t010-scores. DeploymentSSH255atcurrent-symlinkstep; verifiedalreadyextractedfilehash andcompletedonlysymlink/state step. Fullprepare exit0:7000rows44configs,all7scores available,70zero-vectorcosines coded0 perplan. Noannotations/predictionsread. All42ranks selectexact1750/3500/5250rows. DownloadedpreparationarchiveSHA21e03e82e58fff2d11938d3e8d55e39c3ee20e6fce0184f1dad4be0151ab53fe verified; samples/cohort/artifacthashes match. CommittingallbeforegatedAP.
