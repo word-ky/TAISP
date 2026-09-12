@@ -103,3 +103,7 @@
 Plan a85e3b3; code cff2193/38627d4. Reconstructed all98 retained predictionfiles,19600proxyrows and22400pairedrows. Corrected observed undefined-GT category denominators; final7focusedtests passed4.23s. Offline computation/report/plot exit0; no model inference. Audit2816quadrantpartitions and uniquejoins passed; figure inspected. BLASabort and plottingOpenMPcollision fixed without changing statistical settings or enabling unsafe runtime override.
 
 Full report T008_report.md and raw/CSV/figures in T008/. T008NEEDS_REVIEW: FP component ofhybrid-vs-raw gain, sourceconfidence/FPinflation,cleanperturbation; targetAPnegativeconditionsmixed/unclear. No nextmethod/newexperiment. Preparing GitHubpush andA6000mirror.
+
+## 2026-09-12T13:23:30+08:00 — T008 delivered
+
+Report/data commit702e5da pushed toGitHubmain. A6000archiveSHA256 9a5d95f35f9926bceffd227bd498d69f35395766f629d7637e0d92b8500f962b matched; remoteanalysis/proxies/pairedhashes and19600/22400rows verified. Durabledata under/home/liujianhua/wjq/TAISP/research_log/T008. Existingtaispheartbeat confirmedACTIVE every15min; no duplicateautomation. No activeexperiment; awaitR011/researchreview.

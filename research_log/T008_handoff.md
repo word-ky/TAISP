@@ -14,5 +14,5 @@ clean recall changes; known target AP-negative conditions remain mixed/unclear.
 Do not force one causal branch or create a threshold from ratio strata.
 No deployment/model/data changes or new GPU experiment. No T009/meta/gate/cap/
 localization loss before research review and a new explicit task. Heartbeat15min.
-Final artifacts will be pushed to GitHub and mirrored under A6000 project root
+Final artifacts pushed in report commit702e5da and verified under A6000 project root
 /home/liujianhua/wjq/TAISP/research_log/; progress.md records delivery outcome.
