@@ -155,3 +155,7 @@ Remote audit scripts/audit_t009_raw.py exit0:1000images21000unique rows7000share
 ## 2026-09-12T16:47:00+08:00 — T009 formal completion and audited report
 
 Formalrun20260912-144439 exit0at16:41:56;1000images21000rows84predictions504APevals;driver7011.39484s. Rawintegritycheckedremotely;finalderivedarchivehashverifiedlocally. Independentlyreconstructed4536metricdeltas/allmacrocounts. PlotPNG/PDFgeneratedlocallyandvisuallychecked. ExternalAPcriterionpasseswithtinygains FCOS+.070272 SSD+.032161vsnoadapt,each4/5positiveblocks;vsraweach3/5positiveblocks. Cleanphi54.263%lowerbut99.3%stillupdates. ReportNEEDS_REVIEW;noT010/meta. Raw371MBarchivedownloadsession9887ongoing;remoteallrawsavedandhashed;derivedscienceoutputsreadyforGitHubnow.
+
+## 2026-09-12T17:57:25+08:00 — R012 accepted; T010 started
+
+Synced1a4df0c/R0126012f1d. T009closed; T010offline7scalarneed-to-adaptgrid authorized. FrozenT009receipts only. Predeclared T010_plan.md beforegatedAP. Baseline localmacro1passed8.54s;remoteAP/block2passed1.29s after correcting initialwrongcwd(filemissingexit4). No model/deploymentchanges. T009rawdownload9887stillactive.
