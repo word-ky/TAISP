@@ -86,3 +86,5 @@
 [2026-09-12T10:48:56+08:00] R009 a8b5475 acceptedT006;T007started directly. Disjointmanifest55e83e0 overlap0 committed/pushed before newdatasetmodelexecution. Hybrid/driver4e87904,local4tests13.39s,report1test1.19s. Real smoke20260912-104530:58tests126.41s passed,firstimagecomplete. Awaitsmoke/reportaudit beforefull. No failures/scientificchanges.
 
 [2026-09-12T10:50:34+08:00] T007 smoke20260912-104530 completed2images42rows98APevals35.857011s,exit0at10:48:25+08;58realtests126.41s. Receipt auditpassed samecommitteddisjointmanifest,sharedsource/targetgrads/support,phi0,every-stepnormtransfer/updateequation. Same-forwardcollinearityerror9.99e-16; independentraw-vshybridcosmaxdiff.00013274 fromseparateCUDAforwards,not directiongain. Report/figurechecked,allnegativecasesretained,no parameterchange. Readyforfixednew200.
+
+[2026-09-12T10:52:27+08:00] LaunchedT007fullrun20260912-105119-taisp-t007-coco200,release20260912-105102-taisp-t007-full,source0df7e13 aftervalidatedsmoke. Priorfull deploy105051connectionclosed duringupload/extraction; retrysucceeded, noexperimentfromfailedrelease. Fresh59tests beforefixeddisjoint200;handoffrecordsactualrun.
