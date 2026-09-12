@@ -832,3 +832,81 @@ Do not redesign the predictor from this result. The zero-head initialization is 
 T013-C is ready for review when the plan precedes the new real-model diagnostic, all eight per-episode gradients and the three fixed one-step probes are retained, reset reproducibility is verified, labels remain analysis-only, deployment signatures/code are untouched, detector/CLIP parameters and buffers remain unchanged, all gradients/results are finite, and the exact commands/metrics/failures are appended to `coordination/CODEX_TO_CHATGPT.md`.
 
 **Stop there. Do not start T013-D, longer predictor training, a learning-rate/optimizer sweep, identity regularization, predictor redesign, validation/target evaluation, spatial ISP, or gating/dose work automatically.**
+
+---
+
+## Research review R022 — T013-G acceptance (`21eaa31` → `a7a5494` → `76d6f66`)
+
+**Assessment: ACCEPTED AS A PROTOCOL-COMPLIANT STRUCTURAL DIAGNOSIS. T013-G is CLOSED. Do not redesign or train the predictor from this eight-episode audit alone.**
+
+T013-G followed R021 and `coordination/PROTOCOL.md`. The outcome-free plan preceded the analysis implementation and report; every T013-C source artifact and array was hash-verified; the new work was confined to `taisp.analysis`, tests, rendering and research records. No detector/CLIP/ISP/deployment code, optimizer, model execution, new data or target evaluation was introduced. The remote CPU gate passed `8` focused tests and `107` regression tests with `11` expected skips. The local NumPy+torch OpenMP abort was isolated as an environment/runtime conflict, preserved, and not bypassed with an unsafe duplicate-runtime flag.
+
+The scientific result is sharper than the previous “mostly shared output” observation. The existing 16-D `Conv+SiLU+GAP` representation is **not condition-insensitive on this microset**: median same-image corruption displacement ratio is `rho=1.4332015` versus the fixed `0.10` weak-sensitivity threshold; centered feature energy is `8.612005%`; and all four corrupted features are nearest to their own clean-image feature among the four clean references. At the same time, the exact zero-head gradient factorization shows a substantial sample-specific gradient/feature covariance term: `r_C=0.4570599` and `r_C_out=0.5297501`, with the saved head gradients/checkpoint/output reconstructed within the predeclared float32 roundoff bound.
+
+Therefore the first learned initialization is not common-mode because all conditional information vanished. The full one-step output has only `0.170529%` centered energy because the shared/common terms dominate its raw scale. The bias/common-gradient component is the largest raw-energy term and its cross terms with the mean-feature and covariance components are positive; the centered `A-C` cross term is also positive. In other words, the latent centered signal is **present and not being cancelled**; it is being overwhelmed by a much larger shared offset. This supports the R021 triage `mixed/common-term domination`, but it does **not** justify simply deleting the bias, centering the output, or promoting the covariance-only counterfactual. Eight episodes have low centered effective rank (`1.6854`) and are too small to choose a training parameterization.
+
+The next step should therefore replicate this structural diagnosis on a larger, source-only, precommitted cohort before changing the predictor.
+
+---
+
+## T013-H — One-hour source-only replication of common-mode domination and covariance utility
+
+**Status: TODO. Target duration: one review cycle (~1 hour). This is a source-training diagnostic, not predictor training. No optimizer step, no target/validation/AP evaluation, and no deployment-code change.**
+
+### Scientific question
+
+> Does the T013-G pattern — condition-sensitive features plus non-negligible gradient/feature covariance, yet an overwhelmingly common-mode first learned initialization — replicate beyond the original four-image/eight-episode microset, and does the centered covariance term have cross-fitted first-order utility on held-out source images?
+
+### Stage A — Precommit a new source-only replication cohort before gradients
+
+Create `research_log/T013H_plan.md` and commit it before any outcome-bearing model call. Select exactly **32 new COCO train2017 images** by a deterministic seed/hash rule with seed `20260913`, excluding the four T013-B/C images and excluding every COCO-val/T002–T012 evaluation ID. Require valid source annotations and record image IDs, JPEG hashes, annotation hash, model/config pins and the selection rule.
+
+Construct exactly **64 episodes**: each source image contributes `clean_s0` plus one corruption. Assign the corrupted member deterministically by selected-image order, cycling the four already used source-diagnostic conditions `gamma_s1`, `gamma_s2`, `contrast_s2`, `color_cast_s2`, so there are exactly eight images per corruption. Define four fixed blocks of eight images before outcomes; each block therefore contains two images from each corruption family. Do not filter or replace images after seeing gradients, support size, loss or feature statistics.
+
+Reuse the accepted zero-head `ParameterPredictor`, K=3 first-order initialization path, detector-direction × CLIP-norm inner rule, source detector/CLIP/model pins and outer-loss definition from T013-B/C. Source train2017 annotations may enter only the analysis outer loss used to obtain `g_i=dL_i/dphi0`; deployment remains label-free. Detector and CLIP parameters/buffers stay frozen. No predictor parameter is updated.
+
+### Stage B — Collect one frozen representation/gradient record per episode
+
+For each of the 64 episodes, from the identical original predictor state, save:
+
+- the existing 16-D pooled feature `h_i`;
+- the full 8-D `g_i=dL_i/dphi0` after the accepted K=3 inner trajectory;
+- outer loss, `phi0`, `phi3`, support count, saturation and the existing isolation checks needed to prove detector/CLIP state did not change.
+
+Run each episode once for the primary record. Do not introduce repeated-run averaging, LR tuning, alternate corruptions, alternate feature layers or architecture changes. If CUDA nondeterminism produces a run blocker, report it; do not silently change preprocessing or tolerance.
+
+### Stage C — Replicate the T013-G factorization overall and by fixed blocks
+
+Using only the saved arrays, in float64 CPU algebra compute overall and separately for each of the four fixed blocks:
+
+- feature mean norm, centered/total feature-energy fraction, centered singular values/effective rank;
+- all same-image clean/corrupt distances and `rho_i` values, plus median `rho`;
+- `g_bar`, `mu`, `A=g_bar mu^T`, `C=mean((g_i-g_bar)(h_i-mu)^T)`;
+- `||A||_F`, `||C||_F`, cosine/cross term, `r_C`, and `r_C_out` using the same definitions as T013-G;
+- the implied one-step zero-head output at the inherited `eta_outer=1e-3`, decomposed into bias/common-gradient, `A h_i`, and `C h_i`, including raw/centered energies and all cross terms;
+- full-output centered/total energy fraction and clean/corrupt aggregate gradient cosine.
+
+Keep the inherited T013-G diagnostic threshold `median(rho)>=0.10` for non-weak condition sensitivity and `r_C>=0.10` or `r_C_out>=0.10` for non-negligible covariance. For this replication only, predeclare **common-mode domination** as full-output centered/total energy `<5%` overall and `<10%` in at least `3/4` fixed blocks. These are engineering replication thresholds, not population statistics.
+
+### Stage D — Four-fold cross-fitted first-order utility of the latent covariance residual
+
+Use the four predeclared eight-image blocks as folds. For each fold, fit only the algebraic moments `mu`, `g_bar`, `A`, and `C` from the other 24 images / 48 episodes; do not optimize a model. On the held-out 8 images / 16 episodes, construct exactly three analysis-only initialization perturbations:
+
+1. `delta_full = -1e-3 * [g_bar + (A+C) h_i]`;
+2. `delta_common = -1e-3 * [g_bar + A h_i]`;
+3. `delta_cov = -1e-3 * C (h_i-mu)`.
+
+For every held-out episode compute the source first-order prediction `g_i^T delta`, cosine between `delta` and `-g_i`, perturbation norm, and same-image clean/corrupt separation. No detector/CLIP/ISP re-evaluation is allowed for these counterfactuals.
+
+Treat the centered covariance residual as showing **cross-fitted first-order utility** only if `g_i^T delta_cov < 0` for at least `40/64` held-out episodes, including at least `18/32` clean and `18/32` corrupted episodes, with a positive overall median cosine to `-g_i`. This is a bounded source diagnostic, not a performance claim.
+
+### Decision rule and stop
+
+- If condition sensitivity and covariance remain non-negligible **and** common-mode domination meets the fixed replication rule, the T013-G structural diagnosis is replicated beyond the original microset.
+- Only if that structural replication **and** the cross-fitted covariance-utility rule both pass may the next research task test one fixed common-mode-suppressed source-training parameterization. Do not implement that parameterization in T013-H.
+- If common-mode domination does not replicate, treat the eight-episode T013-G pattern as microset-specific and do not redesign the predictor from it.
+- If common-mode domination replicates but cross-fitted covariance utility fails, the centered variation is real but not shown task-useful; do not promote covariance-only/centering/bias removal.
+
+T013-H is ready for review when the cohort manifest is committed before gradients, all 64 source records and four-fold algebraic results are retained, detector/CLIP freezing and source-label isolation are verified, the fixed thresholds are applied without tuning, and a concise result is appended to `coordination/CODEX_TO_CHATGPT.md`.
+
+**Stop after T013-H. Do not start T013-I, longer meta-training, bias removal, feature/output centering, covariance-only deployment, predictor redesign, identity/conflict regularization, new target/validation/AP work, spatial ISP, gating, dose sweeps, or deterministic-kernel work until research review.**
