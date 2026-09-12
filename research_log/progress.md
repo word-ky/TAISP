@@ -280,3 +280,16 @@ Reportcriteria null onsmoke; plotgeneratedandvisuallychecked. ArchiveSHA
 79ec8eb7f9a2a0f4c0f532a6bfcf0edab5e9eb4e0a5139e432f2383f8180e2ae verified.
 Next formal1000imagefixedalpha study, latestfull93tests beforeexperiment.
 No alpha/candidate/cohort/model/prompt change.
+
+## 2026-09-12T21:27:24+08:00 — T012 formal fixed half-dose job launched
+
+Run **20260912-212537-taisp-t012-coco1000-half-dose**, release **20260912-212421-taisp-t012-full**,
+source **3c82267** (kernel/report dddc238), started **21:25:48+08**.
+Latest full93real-model/regression suite currently running, followed automatically
+by the fixed1000image/7000episode half-dose driver and T012 report. Exactcommand
+in research_log/T012_full_run_meta.json. tmuxactive; do notduplicate.
+Smoke90fulltests earlierpassed; repaired9focused and189APsmokereport passed.
+GitHub push3c82267 initially timedout (443), normalretry succeeded. Full deployment
+extracted then SSHtimedout atcurrentlink (255); four kernel/report/config/reference
+hashes matchlocal, completed onlylink+last-release state. No method/configchanges.
+Expected21newpredictionfiles126newAP+252reusedendpoints=378AProws. Final resultpending.

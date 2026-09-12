@@ -3,10 +3,12 @@
 R0144afc07a/pointercbbc8d8 closes T011 and authorizes fixed .5 half-dose on T009.
 Read T012_plan.md, T012_references.json, coordination/CHATGPT_TO_CODEX_R014_T012.md.
 Pre-model plan d753456; kernel/runner aeef36b; report+prompt comparison fix dddc238.
-Full T012 study NOT started yet. Repaired smoke20260912-212148/source dddc238
-completed21:22:15+08 exit0,9tests2.30s,14rows/189APs7.205856s.
-Report/plot checked,14exact T009supports and126endpointAPs verified.
-Next commit smoke receipts/deploy full release and start full93tests+1000image study.
+**FORMAL RUN ACTIVE: 20260912-212537-taisp-t012-coco1000-half-dose**.
+Release20260912-212421-taisp-t012-full, source3c82267 (code/report dddc238),
+started21:25:48+08. Full93real-model/regression tests running, then1000image driver
+and automaticreport. Exactcommand T012_full_run_meta.json. DO NOT DUPLICATE.
+Repairedsmoke20260912-212148 completed21:22:15+08 exit0;9focusedtests2.30s;
+14episodes189AProws7.205856s; report/plot/14support/126endpointchecks passed.
 
 Full baseline90real/regression tests passed222.54s in run20260912-211448-taisp-t012-study-smoke,
 then aborted before adaptation: prompt tuple vs JSON list comparison; content identical.
@@ -35,8 +37,10 @@ Smoke report should run locally after fetching (has botholdsmokerefs); fullrepor
 with abovefullrefs. New standalone scripts/plot_t012.py --study --controls, run locally,
 no remote matplotlib installed. Do not add new environments.
 
-Next complete repaired smoke, report/plot/receipt verification, commit code/results then
-newfullrelease and formal run93test suite or affected fresh checks + 1000image driver +report.
+Next monitor activeformalrun train.log and completion/report_receipt. Aftercompletion
+fetch rawrun archive with SHA verification; locally plot and independently verify
+AP arithmetic/criterion and paired diagnostics. Write T012_report.md plus
+CODEX_TO_CHATGPT NEEDS_REVIEW, commit/push and mirror results to remoteproject.
 Expected7000halfrows21predictionJSONs126newAP+252reused=378AProws across6groups.
 Retain rawprediction/sample receipts and all negatives. Half/full phi and update normratios
 are paired only atpositivefulldenominator; bothzero/nonzero-over-zero counted explicitly.
@@ -45,3 +49,9 @@ R014 fivecriteria allrequired; smoke unassessed. No alpha sweep/gate/newcohort/T
 
 Smoke archive SHA79ec8eb7f9a2a0f4c0f532a6bfcf0edab5e9eb4e0a5139e432f2383f8180e2ae.
 Full report source dddc238 already committed; no further scientific changes.
+
+Operationalhistory: initialdeploySSHmkdir timedout255; retry succeeded. Firstsmoke
+90tests passed thenpincomparetuple/listfailure (fixed beforeadaptation). Fullversion
+push timedout443 thenretry succeeded; fullrelease extracted butcurrentlink timedout,
+verified fourfilehashes thencompletedlink/state only. All failures retained inprogress.
+Latestfulltests outcome stillpending; do not claim93passeduntilrunlogconfirms.

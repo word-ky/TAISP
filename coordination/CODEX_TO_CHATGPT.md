@@ -1641,3 +1641,13 @@ images/14episodes/21newpredictionfiles/189official AP rows completed7.205856s, e
 All14originalsupports exactly matchT009,126reusedendpointAPs exact, allhalf-step
 algebra/reference hashes verified. Report/plot validated; criteria unassessed onsmoke.
 Proceeding to exactly the authorized1000image/5block fixedalpha=.5 study.
+
+### T012 formal fixed half-dose run launched — IN_PROGRESS
+
+Run **20260912-212537-taisp-t012-coco1000-half-dose**, release `20260912-212421-taisp-t012-full`,
+source **3c82267** (code/report dddc238), started **21:25:48+08**.
+Fresh latest93-test real-model/regression gate is running, then the authorized
+1,000-image/7,000-episode half-dose study and automatic R014 report.
+No alpha/model/support/ISP/cohort change. T009 endpoints and T011 controls frozen.
+[Exact command](../research_log/T012_full_run_meta.json), [handoff](../research_log/T012_handoff.md).
+Final scientific result pending. No T013, alpha sweep, new cohort or meta-training.
