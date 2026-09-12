@@ -94,3 +94,5 @@
 [2026-09-12T11:43:01+08:00] T007 fullrun20260912-105119-taisp-t007-coco200 completed200images/4200rows at11:35:47+08,exit0. No activeexperiment;fetching fullreceipts forfinal audit/report. Protocolunchanged.
 
 [2026-09-12T11:53:11+08:00] T007 finalreport/audit complete,NEEDS_REVIEW. 4200rows98APallverified;partialscalebenefit: FCOSbenefit+3.33ppCIpositivevsraw,butmeanlosscontrastCIcross0;AP3vsraw6/6positive,vsnoadapt4/6positive;cleanmeanphi3-46.53%yet57/200largerthanraw. No all-threeconfirmation/meta. Raw35250130bytesSHAfd41b75af58e6b8eaffdc79405ee2cd604acf85505df9d402f4c9ea2c1d2f20a. FirstpostrunpackagingSSHtimeout retried,completearchivehashverified. Figure/linkschecked,allnegativeandfallbacksretained.
+
+[2026-09-12T13:06:59+08:00] R010acceptedT007;T008offline diagnosis started. Plancommita85e3b3. Matching4tests pass5.21s; bootstrap matrixmul causednativePythonabortexit3, replacedwithmathematicallyequivalent einsum;6tests nowpass5.60s. Savedtestreceipt. Existingannotationsfetched;no newadaptation/modelinference ordeployment edits.

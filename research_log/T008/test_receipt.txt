@@ -1,0 +1,4 @@
+Initial focused test command: pytest tests/test_detection_proxies.py tests/test_t008_analysis.py
+Four matching tests passed, then Fatal Python error: Aborted (exit3) in scripts/analyze_t008.py line33, ClusterStats.estimate, matrix multiplication self.weights@sums. No full analysis had run.
+Replaced weighted matrix multiplication with equivalent numpy.einsum(optimize=False), leaving samples, weights, estimands and all statistical settings unchanged.
+Focused rerun: 6 passed in5.60s.
