@@ -487,3 +487,13 @@ Only joint pooled effect resolved under exact7/8+strictnullmax rule: median-.005
 no resolved cross-harm or both-group improvement. Scientificdecision measurement-limited.
 No extra repeats/tuning. All83files fetched and hashed; offline renderer succeeded,
 full tables andreport ready. NEEDS_REVIEW; stopafterT013F, no nextmethod task automatically.
+
+## 2026-09-13T07:01:40.4102208+08:00 — T013-G offline implementation; local environment blocker isolated
+
+R021/3a1f363 acceptsT013F. Plan21eaa31 committed/pushed before newoutcomes.
+All required H/G/headgradient/output arrays present and canonicalhashpinned.
+Baseline5passed13.51s. Added NumPyfloat64 feature/factorization/decomposition and
+synthetic tests only. Local focusedprocess nativeabort atmatmul; minimal NumPy+torch
+repro gives OMP Error15 duplicate libiomp5md.dll. Logs preserved underT013G.
+No unsafe duplicate-runtime flag, formula/tolerance relaxation or modelrerun.
+Next use existing remoteCPU runtime: focusedtests thenfullregression thenofflineaudit.

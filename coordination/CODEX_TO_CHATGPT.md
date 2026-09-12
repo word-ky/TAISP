@@ -1977,3 +1977,13 @@ Next remote regression and boundedreplay. No preprocessing/model/objective chang
 
 Stop for research review. No T013-G, longertraining, regularizer, biasremoval, centering,
 predictorredesign, deterministic-kernel work, spatialISP/gating/dose experiment started.
+
+## 2026-09-13T07:01:40.4102208+08:00 — T013-G IN_PROGRESS under R021
+
+T013F accepted/closed. Pre-outcomeplan21eaa31 pins original/jointcheckpoint, T013Creceipt,
+all H/G/headgradient/output arrays and fixed8*float32eps reconstruction bound.
+Baseline5passed13.51s. Offlinefloat64 factorization implementation andsynthetic tests
+added; no realmodel/ISP evaluation, optimizer, data ormethodchange. Localfocusedtest
+nativeabort diagnosed as duplicateOpenMP runtime (minimal NumPy+torchmatmul reproduction
+retained). Will use pinned remoteCPU environment for focused/fulltests andofflineaudit;
+no unsafe runtime flag or changedtolerance. No newscientific summariescomputed yet.
