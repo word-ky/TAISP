@@ -349,3 +349,10 @@ Report T013A_report.md preserves this limitation and all operational failures:
 relative venv127, SSH255, uncaptured manual resume, local missing pycocotools.
 All available logs/JSON/source receipts fetched under research_log. No active
 job/transfer or COCO/real predictor training. T013-A NEEDS_REVIEW, await next task.
+
+## 2026-09-13T01:37:14.0450633+08:00 — T013-B started from R016
+
+R016/83f734e accepts T013-A with its optional CUDA limitation intact. Plan b73bcd2
+predeclares12 CPU float64 fixtures, FD1e-5, K3/lr.1 and original continuation gate.
+Baseline8passed/1skipped19.17s. Exact unroll added only inanalysis; focused tests
+inprogress. No deployment/predictor/ISP/model change, no real optimizer started.

@@ -1,13 +1,9 @@
 # Current project state
 
-2026-09-13T00:14:32.7268912+08:00 — T013-A NEEDS_REVIEW; T012 CLOSED by R015.
-Implementation bfd2484; pre-code plan cd3060c. Required synthetic plumbing passes.
-Focused: 11 passed, 3 skipped. Full A6000 regression: 89 passed, 10 skipped, 5.09s.
-Synthetic optimizer: seed 20260913, 8 steps, loss .005294277333 -> .001558897318.
-Optional strict CUDA bitwise smoke FAILED (phi max difference 2.11827e-5).
-Same-fixture diagnostic: original repeat difference 8.58842e-6; connected difference
-9.04803e-6, image 5.06639e-6; outer phi0/head gradients finite/nonzero. Model state
-unchanged. No tolerance or algorithm change; report retains failure and limitation.
-Read research_log/T013A_report.md and T013A_handoff.md. No active experiment/transfer.
-Await research review. Do not start T013-B, COCO training, real predictor/meta-training,
-new cohort, spatial ISP, gate/dose/cap search automatically. Heartbeat 15 minutes.
+2026-09-13T01:37:14.0450633+08:00 — T013-B IN_PROGRESS under R016/83f734e; T013-A CLOSED.
+Plan b73bcd2 committed/pushed before code/outcomes. Part A adds analysis-only exact
+mock unroll and 12 fixed FO/EXACT/FD fixtures; no deployment or ISP modifications.
+Baseline 8 passed/1 skipped in19.17s. Focused tests currently executing locally.
+Only after Part A gate passes check existing train2017; if absent stop, no download
+or val substitution. Conditional Part B max4images/8episodes/3SGDsteps lr1e-3.
+Read T013B_plan.md and coordination/CHATGPT_TO_CODEX_R016_T013B.md. No active GPU job.
