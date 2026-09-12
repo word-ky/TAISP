@@ -466,3 +466,11 @@ with full traceback, no workaround/alternatekernel/warn_only/tolerance change.
 Initial isolation passed; postfailure check not recorded. Bothrun receipts fetched,
 artifact SHAmanifest/disposition/report retained. No finite-step scientific conclusion;
 NEEDS_REVIEW with StageA blocked. No T013-F or method changes automatically.
+
+## 2026-09-13T05:56:13.8490767+08:00 — R020 synchronized; T013-F ready
+
+R020/7efdb89 accepts T013-E blocked outcome. Pre-outcomeplan0ef7ef7 pushed.
+Reuse exact original/joint/clean/corrupted T013C checkpoint bytes; allhashes pinned.
+No gradient recomputation/optimizer. New scheduler/effectsummary only; existing models,
+ISP, losses, episode lifecycle unchanged. Baseline6passed8.31s; focused10passed7.06s.
+Next fullremote tests and8 matchedcycles. Keep all512raw episode rows before summary.

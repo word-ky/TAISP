@@ -1940,3 +1940,12 @@ no primary repeats/probes existed. Deterministic gate/settings/tolerances unchan
 The R019 finite-step discriminator remains unanswered. T013D localconflict/commonmode
 findings remain latest scientific evidence. Stop for research decision; no T013-F,
 longertraining, regularizer, biasremoval, centering/redesign, target/AP/newdata started.
+
+## 2026-09-13T05:56:13.8490767+08:00 — T013-F IN_PROGRESS under R020
+
+T013-E accepted/closed. Pre-outcomeplan0ef7ef7; exact T013C original and three saved
+one-step checkpoints hash-verifiable, so no new gradient construction or optimizer.
+Analysis-only runner ready:8 matched cycles with fixedblockrotation, baseline-first
+odd/probe-first even, rawrows saved before null-corrected summary. Use exact7/8 and
+strictabsmedian>maxabsnull rule. Baseline6passed8.31s; focused10passed7.06s.
+Next remote regression and boundedreplay. No preprocessing/model/objective change.
