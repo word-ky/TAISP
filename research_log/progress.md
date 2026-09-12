@@ -171,3 +171,12 @@ Preparationcode32a89e3,release20260912-180251-taisp-t010-scores. DeploymentSSH25
 ## 2026-09-12T18:13:41+08:00 — T010 offline AP/report smoke green
 
 Run20260912-180743-taisp-t010-offline-smoke release180659 source901560f:13affectedofflineAP/gating/regressiontests passed2.35s;2images14rows44configs21panels2772officialAPresults(126reusedanchors),16.57865s,exit0at18:08:12. Anchorcompositions exacthashmatch;reportaudit924shareddecisions pass,2772AProws396macro rows,smokecriterionnull. Reportcriterionboundaryunit1passed15.98s. PlotinitialOMP15 fromunusedgatingimport;removedthatimportandreadscorelabelsfromsavedreport,standaloneplotexit0andvisuallychecked. Nopackageupgrade,nogatedAPoutcome-basedchange. Fullprepare901560f committedbeforeAP;fullgridready.
+
+## 2026-09-12T18:17:49+08:00 — T010 full run started; T009 raw archival complete
+
+T010run20260912-181436,release181357,source/report9efe032,started18:14:44+08.
+Fresh14offline/regressiontests passed2.45s;12CPUworkers evaluatefrozen44configs,
+no modelinference. Full5,544AProwreportpending. T009archive9887completed,fullSHAand
+84individualpredictionhashes verified. Sample125507835bytes compressedlosslesslyto
+31110348bytes,GzipSHA31d808e7094b539a9f9b02a8ac2b6b7761d8fc3db8387fdc2dfb71ca638633a2,
+roundtripSHA matches. Originalpreserved,exactrawpathGitignored;84predictions+Gzipreadyforarchivalcommit.

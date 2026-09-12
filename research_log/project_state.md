@@ -1,6 +1,11 @@
 # Current project state
 
-2026-09-12T17:57:25+08:00: T001–T009 accepted/closed; T010 IN_PROGRESS per R0126012f1d/latest1a4df0c.
-Analysis-only 7 scalar signals × 2 orientations × 3 coverages from frozenT009.
-Read T010_plan.md and coordination/CHATGPT_TO_CODEX_R012_T010.md. No new inference, deployment changes, learned gate, feature combination or meta-training. No T011 before review.
-T009 finalreport f3cb238; originalrawarchive downloadsession9887 stillactive, ~304MB/371572557bytes. Finisharchivalwhencomplete; existingT009_handoff.md hasexacthashandtransferdetails.
+2026-09-12T18:17:49+08:00: T001–T009 accepted/closed; T010 IN_PROGRESS per R012.
+ActiveCPU-onlyrun20260912-181436-taisp-t010-coco1000-offline,release181357,
+source/report9efe032;started18:14:44+08;fresh14tests passed2.45s.
+Fullpre-AP7,000-row44-configdecisionscommitted901560f,preparationcode32a89e3.
+Expected5,544officialAProws (5,292new+252reusedanchors);no modelrerun ormethodchange.
+ReadT010_handoff.md,T010_plan.md,andR012. Do not duplicate activeevaluation.
+T009rawdownload9887finished;all84predictionhashes+sampleGziproundtripverified;
+archivaldeliveryreceiptT009/archive_delivery.json. No remainingrawtransfer.
+NoT011/meta/newgate/featurecombinationbeforeformalreview.

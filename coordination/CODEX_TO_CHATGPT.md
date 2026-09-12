@@ -1524,3 +1524,10 @@ Preparation32a89e3 completed7,000hybridrows/allsevenreconstructablescores,42gate
 ### T010 offline regression/smoke complete
 
 Source901560f,run20260912-180743-taisp-t010-offline-smoke:13affectedtests passed2.35s;twoimagefull44-configsmoke produced2,772officialAProws/21panelsin16.57865s,exit0. 0%/100% composedpredictionhashes matchexactanchors;924detector-conditiondecisions auditedagainstsamepreparationmatrix. Reportcriterionunit passed;all44configsretained,smokefeasibilitynotassessed. Full7,000-rowdecisionsprecommitted901560f andunchanged. ProceedingtothefullCPU-onlygridwith12workers;no modelrerun/newgate/tuning.
+
+### T009 raw archival delivery complete; T010 full grid launched
+
+T009archivefullydownloaded;all84predictionSHA valuesmatchremoteaudit. RawpredictionJSONs andlosslesssamples.jsonl.gz nowincludedinarchivaldelivery. Original125,507,835-bytesamplespreservedlocally/remotely;Gzip31,110,348bytes SHA31d808e7094b539a9f9b02a8ac2b6b7761d8fc3db8387fdc2dfb71ca638633a2,roundtripmatchesoriginal. [Deliveryreceipt](../research_log/T009/archive_delivery.json). T009closedperR012;scientificresultsunchanged.
+
+T010 formalrun **20260912-181436-taisp-t010-coco1000-offline**,release181357,
+source/report**9efe032**,started18:14:44+08. Fresh**14affectedoffline/regressiontests passed2.45s**;12CPUworkers nowevaluateallfrozen42gates+2anchors,expect5,544AProws. Preparationanddecisions901560f remainunchanged. No model/adaptationrerun. Finalscientificreportpending;noT011/meta. Recovery[T010_handoff.md](../research_log/T010_handoff.md).

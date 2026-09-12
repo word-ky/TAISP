@@ -1,6 +1,6 @@
 # T009 frozen-method external validation
 
-Status: **NEEDS_REVIEW**. Formal run completed successfully at **2026-09-12 16:41:56+08:00**. All 1,000 images, 21,000 adaptive-method observations, 84 prediction files and 504 official aggregate/block AP evaluations are complete. The predeclared external AP criterion passes, with **very small effects**. This establishes only the specified sign-based replication result, not a practically strong or complete restoration method.
+Status: **CLOSED** after R012 acceptance (research commit `6012f1d`). Formal run completed successfully at **2026-09-12 16:41:56+08:00**. All 1,000 images, 21,000 adaptive-method observations, 84 prediction files and 504 official aggregate/block AP evaluations are complete. The predeclared external AP criterion passes, with **very small effects**. This establishes only the specified sign-based replication result, not a practically strong or complete restoration method.
 
 ## Scientific result
 
@@ -82,7 +82,7 @@ All 21,000 unique image/condition/adaptive-method rows and 84 prediction files a
 
 Uncompressed samples: 125,507,835 bytes; SHA256 `cdbe9cf51feb17dc5ec2e60f0ea396227f4b4af301b2f6dc135f7382f0e8910c`.
 
-Remote authoritative raw location: `/home/liujianhua/wjq/TAISP/runs/20260912-144439-taisp-t009-coco1000/artifacts/study/`. Immutable raw archive: `/home/liujianhua/wjq/TAISP/shared/t009_raw_receipts.tar.gz`, 371,572,557 bytes, SHA256 `346679ead129558154ddf40bfec25c5b6e370927076875cd718b44b84376b76d`. Archive contains environment, cohort, samples and predictions; derived AP files are collected separately after completion. The complete raw data and prediction hashes are available on A6000. The local archive download is still in progress; this report does not claim that the 371 MB raw archive is already on GitHub. Final derived tables/logs/environment, audits and plots are delivered now; lossless raw archival delivery follows without rerunning models.
+Remote authoritative raw location: `/home/liujianhua/wjq/TAISP/runs/20260912-144439-taisp-t009-coco1000/artifacts/study/`. Immutable raw archive: `/home/liujianhua/wjq/TAISP/shared/t009_raw_receipts.tar.gz`, 371,572,557 bytes, SHA256 `346679ead129558154ddf40bfec25c5b6e370927076875cd718b44b84376b76d`. Archive contains environment, cohort, samples and predictions; derived AP files are collected separately after completion. The complete archive has now been downloaded and verified locally. All 84 prediction JSONs (1,257,303,354 bytes total) and lossless samples.jsonl.gz (31,110,348 bytes) are included in the archival delivery commit. The original 125,507,835-byte samples.jsonl is preserved locally and on A6000; it is excluded from Git because it exceeds the single-file size limit. All prediction hashes and the gzip decompression hash match the original remote audit. [Archival receipt](T009/archive_delivery.json). No scientific values or model executions changed.
 
 ## Interpretation boundaries
 
