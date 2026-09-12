@@ -417,3 +417,16 @@ R018/b9e59da accepts T013-C; pre-outcomeplan78ef20e. Baseline9passed18.05s,
 focused12passed17.15s. Analysis-only repeatability/common-modecode ready.
 All12identicalno-update repeats predeclared, alloutcomesretained; originalstate and
 model/data/support/priorreceipt hashes pinned. No training/probe reruns authorized.
+
+## 2026-09-13T03:37:46.0096273+08:00 — T013-D launched
+Run 20260913-033722-taisp-t013d-repeatability-common-mode; source 81097bf; release 20260913-033259-taisp-t013d-repeatability. Full regression then exactly 12 no-update repeats. No duplicate launch.
+
+## 2026-09-13T03:43:30.9991492+08:00 — T013-D completed, NEEDS_REVIEW
+
+Run 033722/source81097bf exit0 at03:38:31+08. 98passed10skipped6.17s.
+12x8 no-update repeats retained; phi/head opposing in12/12, medians-.734025/-.712936.
+Wh93.894980%common energy. Most saved effects within repeat variation; joint-corrupt
+exception exceeds range2.5989x, no causal optimizer ranking. Optional CuBLAS failure
+retained, stopped as planned. No model/setting/tolerance changes. All artifacts fetched.
+Offline table-header TypeError repaired (integer labels to strings); renderer succeeded,
+no model rerun. Full report/tables/artifact manifest ready; stop for research review.

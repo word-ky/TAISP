@@ -1858,3 +1858,36 @@ R018 acceptedT013-C. Plan **78ef20e** precedes newoutcomes. Baseline9passed18.05
 focused **12passed17.15s**. Exactly12no-update gradientrepeats, savedT013C effects
 onrepeatabilityscale, andtwo algebra-onlydecompositions. Originalcheckpoint/model/
 manifest/support/priorreceipthashes pinned. Nooptimizer ordeploymentchanges.
+
+## 2026-09-13T03:43:30.9991492+08:00 — T013-D NEEDS_REVIEW: 12-repeat audit complete
+
+R018 scope completed under plan78ef20e/source81097bf. Full report:
+[research_log/T013D_report.md](../research_log/T013D_report.md),
+[complete tables](../research_log/T013D/tables.md),
+[artifact SHA256 manifest](../research_log/T013D/artifact_manifest.json).
+
+- Run20260913-033722-taisp-t013d-repeatability-common-mode, release20260913-033259-taisp-t013d-repeatability.
+  Started03:37:26+08, finished03:38:31+08, exit0; elapsed54.85233s, peakCUDA3714830848bytes.
+- Local baseline9passed18.05s; focused12passed17.15s; remote98passed10skipped6.17s,
+  then real primary96episode evaluations. Exactly12repeats, zerooptimizersteps.
+- Same manifest/support/prior/checkpoint hashes, original state exactly reproduced;
+  source/CLIP frozen states and gradients unchanged, all primary finite.
+- Aggregate cosine negative12/12 in phi/head. Median-.734025333/-.712936294;
+  min/max[-.858740,-.501629]/[-.840695,-.477615]. Robust sign on fixedmicroset,
+  variable magnitude; image541157clean individual cosine reaches.455802.
+- Max no-update per-episode loss deviation.0383286476, phi3coordinate.00664875843.
+  Most T013C effects within no-update range. Joint-probe corrupt loss effect is
+  2.59890x range/8.20314xstd with0/12 equal-or-larger controls; retain this exception.
+  Descriptive only, not pvalues/CIs or evidence of repeatable optimizer superiority.
+- Saved-data literal W/b/Wh/output reconstruction maxerror0. Wh alone centered
+  energy6.105020%, common93.894980%; fulloutput centered.170529%. Bias removal
+  does not increase centeredenergy/pairwise separation. Centered rank7 but leading
+  two singular values dominate. No counterfactual model execution or redesign.
+- Optional deterministic branch raised at CLIP visual projection F.linear/CuBLAS
+  requiring CUBLAS_WORKSPACE_CONFIG; exact traceback saved and branch stopped.
+  No environment workaround, rerun, or tolerance modification.
+- Added analysis/repeatability module, focusedtests, offline table renderer; exact
+  command in retained runmeta. All12raw gradients/states/losses and comparisons saved.
+
+Await research review. No T013-E, longertraining, regularizer, biasremoval, featurecentering,
+predictorredesign, target/AP or newdata started. The15minuteheartbeat remains active.
