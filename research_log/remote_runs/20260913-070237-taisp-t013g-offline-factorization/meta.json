@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-070237-taisp-t013g-offline-factorization",
+  "releaseId": "20260913-070203-taisp-t013g-offline-factorization",
+  "sessionName": "autodl-20260913-070237-taisp-t013g-offline-factorization",
+  "command": "export CUDA_VISIBLE_DEVICES=\"\" TAISP_SOURCE_REVISION=a7a5494 TAISP_REAL_MODELS=0 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests/test_predictor_factorization.py tests/test_repeatability.py tests/test_gradient_conflict.py -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.predictor_factorization --prior-root /home/liujianhua/wjq/TAISP/runs/20260913-030301-taisp-t013c-conflict-conditioning/artifacts/audit --output \"$AUTODL_ARTIFACTS_DIR/audit\""
+}

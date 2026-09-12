@@ -1987,3 +1987,34 @@ added; no realmodel/ISP evaluation, optimizer, data ormethodchange. Localfocused
 nativeabort diagnosed as duplicateOpenMP runtime (minimal NumPy+torchmatmul reproduction
 retained). Will use pinned remoteCPU environment for focused/fulltests andofflineaudit;
 no unsafe runtime flag or changedtolerance. No newscientific summariescomputed yet.
+
+## 2026-09-13T07:08:24.9918219+08:00 — T013-G NEEDS_REVIEW: mixed/common-term domination
+
+[Full report](../research_log/T013G_report.md), [complete matrices/tables](../research_log/T013G/tables.md),
+[artifact hashes](../research_log/T013G/artifact_manifest.json).
+
+- Plan21eaa31/sourcea7a5494; allsaved T013C arrays/filehashes verified, original/joint
+  trunk identical. Offlinefloat64CPU only, zero auditmodelcalls/optimizer/newdata.
+- Run20260913-070237-taisp-t013g-offline-factorization, release070203;07:02:42–07:02:52+08
+  exit0. RemoteCPUfocused8passed2.29s; regression107passed11skipped5.18s.
+  Localbaseline5passed13.51s; localnewfocusedabort was duplicateOpenMP runtime,
+  confirmed minimalNumPy+torchrepro, retained; no unsafeflag or formula/tolerancechange.
+- Feature normmu.3977067973, totalenergy1.3846080924, centered.1192425194 (8.612005%),
+  participationrank1.685413594. Fourrho=[1.665578097,.615811614,1.746249831,1.200824906],
+  median1.433201502; allcorrupt features nearest ownclean amongfour (diagnostic only).
+- normA.05781624365,normC.04867108510,cos(A,C).2572822233;
+  rC=.4570598744,rCout=.5297500659. R021 fixedtriage=mixed_common_term_domination.
+- All7savedidentity/checkpoint/output comparisons pass fixed8eps32 bound.
+  Per-episodeWmaxerror7.956641568e-9,bias0; algebraicfloat64A+Cerror6.9389e-18;
+  savedexecutedphi0reconstructionmaxerror1.628323801e-11 (maxboundratio.0817011).
+- Outputenergies bias1.690688908e-7,A4.358394862e-9,C4.184892837e-10; full2.408641323e-7.
+  CenteredA1.286345467e-10,C1.632458587e-10; positivecenteredA-Ccross1.188630969e-10;
+  fullcentered4.107435022e-10 (.170529127%). Centeredvariation is notcancelled;
+  dominantsharedbias and positivecommoncross terms overwhelm its relativeenergy.
+- Exactlytwo algebraiccounterfactuals retained (common-only,covariance-only), fullpairwise
+  matrices andallcross terms/errors saved. No loss/AP/model evaluation or redesign claim.
+
+Both conditionvariation andcovariance are non-negligible on thismicroset. Do not classify
+as representation-insensitive or negligiblecovariance collapse. Stop forresearchreview;
+no T013H,training,regularizer,biasremoval,centering,predictorredesign,newbackbone/data/AP,
+spatialISP/gating/dose/deterministickernel work started.

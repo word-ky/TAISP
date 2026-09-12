@@ -497,3 +497,16 @@ synthetic tests only. Local focusedprocess nativeabort atmatmul; minimal NumPy+t
 repro gives OMP Error15 duplicate libiomp5md.dll. Logs preserved underT013G.
 No unsafe duplicate-runtime flag, formula/tolerance relaxation or modelrerun.
 Next use existing remoteCPU runtime: focusedtests thenfullregression thenofflineaudit.
+
+## 2026-09-13T07:03:22.9023358+08:00 — T013-G CPU run launched
+Run20260913-070237-taisp-t013g-offline-factorization, sourcea7a5494/release070203. Focusedtests thenfullregression thenofflineaudit only.
+
+## 2026-09-13T07:08:24.9918219+08:00 — T013-G offline audit finished, NEEDS_REVIEW
+
+Run070237/sourcea7a5494 exit0 at07:02:52+08. CPUfocused8passed2.29s, regression107passed
+11skipped5.18s. All7reconstructionchecks pass predeclared8eps32 bound; no tolerancechange.
+medianrho1.433201502,rC.4570598744,rCout.5297500659 => mixed/commonterm domination.
+Featurecenteredenergy8.612005%, participationrank1.68541. Biasrawenergy1.690688908e-7;
+fullcenteredfraction.170529127%. CenteredA-Ccrosspositive1.188630969e-10: no cancellation.
+Savedarraysonly, zero auditmodelcalls/optimizer. All5files fetched/hashed; matrices,
+crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop forreview.

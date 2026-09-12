@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "triage": "mixed_common_term_domination",
+  "median_rho": 1.433201501947024,
+  "r_C": 0.4570598743551648,
+  "r_C_out": 0.5297500659163417,
+  "all_reconstructions_passed": true,
+  "file_sha256": {
+    "receipt.json": "7c35fb9e5f7b1c923c06f625ddf806d443e763b56aa52d8027594f0b95cce943",
+    "original_predictor.pt": "a0eb1023150395de2a882d564dc28887a9f80065590ad77e92267896b313e120",
+    "joint_one_step_predictor.pt": "fec4271dcfda344023521c17070d117d08082664fdb6ddd6934adb47e727c634"
+  },
+  "array_sha256": {
+    "features": "4ffe547ee5d3373a6c5258a1fa89582dea6d04389eb8b82aef5a37f53af066bf",
+    "phi0_gradients": "ba330697a73af6b2e1017944f0446de85039f4406850b3b5dd28f842f42df90d",
+    "head_weight_gradients": "ebf8700a86f71e250258d138c19616621797639c3e2b8fc6b99d5be81c82a901",
+    "head_bias_gradients": "ba330697a73af6b2e1017944f0446de85039f4406850b3b5dd28f842f42df90d",
+    "saved_conditioning_outputs": "e9d159188699e2a25c52fda856b178fd9af3a2de0457ef05b2c9b9122e4586c9",
+    "saved_episode_phi0": "174b8e0d3bc034bdd18500a41e1508ee9e0455458ec997744aa277e96444fa9c"
+  },
+  "original_joint_trunk_identical": true,
+  "source_revision": "a7a5494",
+  "python": "3.12.12",
+  "numpy": "1.26.4",
+  "algebra_dtype": "float64",
+  "algebra_device": "CPU",
+  "model_executions": 0,
+  "optimizer_steps": 0,
+  "elapsed_seconds": 0.008695730997715145
+}
