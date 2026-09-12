@@ -1,6 +1,7 @@
 # Current project state
 
-2026-09-12T14:14:29+08:00: T001–T008 accepted/closed. T009 IN_PROGRESS per R011184a3a0/pointer5885716.
-Cohort preparation before model execution:1000new images,five200blocks,seed20260914.
-Plan research_log/T009_plan.md. No T009 model inference or GPU experiment yet.
-Current method frozen; dataset/SSD/evaluation plumbing only. No T010/meta.
+2026-09-12T14:29:11+08:00: T001–T008 accepted/closed. T009 IN_PROGRESS per R011.
+Cohort e98a7fd:1000new images,zero0/0overlap,five200blocks,seed20260914.
+Active compatibility run20260912-142824-taisp-t009-ssd-compat on A6000; full study notstarted.
+Plan T009_plan.md; recovery T009_handoff.md. ExactSSDadapter b492c9d.
+No new method/loss/gate/cap/meta; frozen T007 adaptation functions.

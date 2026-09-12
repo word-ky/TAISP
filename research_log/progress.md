@@ -119,3 +119,7 @@ SSD exactinstalledtorchvision defaults inspected; evaluation-only adapter and re
 ## 2026-09-12T14:28:10+08:00 — T009 cohort pinned
 
 1000images downloaded exit0; manifest e98a7fd pushed before any T009model execution. SHA155bb6f047d374342623f48488bcb2b33601a4ecbd372976a433c1b289546e49; zerooverlap with historical200/T007200,exact5random-order200blocks. Preparing SSDrealcompatibility. An initial local record/commit command ran from workflow cwd and failed missingproject paths without creating a commit; corrected to projectcwd. Deployment used explicit correct project source.
+
+## 2026-09-12T14:29:11+08:00 — SSD compatibility running
+
+Release20260912-142737-taisp-t009-ssd-compat,run20260912-142824-taisp-t009-ssd-compat,sourceb492c9d. Exact SSD COCO_V1; real historical-image CPUhybrid K3 absence/presence comparison and GPU SSD repeat/mapping/freeze/COCOeval. Fullcohort notrun.

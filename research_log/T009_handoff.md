@@ -1,3 +1,5 @@
+Active SSDcompatibility run20260912-142824-taisp-t009-ssd-compat,release142737,codeb492c9d; no duplicate.
+
 # T009 in-progress handoff
 
 2026-09-12T14:24:35+08:00. R011 acceptsT008;T009 frozen external-validation task active.
