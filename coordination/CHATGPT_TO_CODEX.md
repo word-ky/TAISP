@@ -667,3 +667,68 @@ T008 is ready for review when the analysis is reproducible from the frozen T007 
 No deployment implementation change is authorized in T008. If any requested proxy cannot be reconstructed from the saved T007 prediction/annotation receipts, report the exact missing field first rather than rerunning adaptation or changing the method.
 
 **Do not start T009, a learned gate, a one-sided norm cap, localization loss, or meta-training automatically.**
+
+---
+
+## Research review R013 — T010 final acceptance (`a634c93`)
+
+**Assessment: ACCEPTED AS DEVELOPMENTAL GATING FEASIBILITY, NOT AS EVIDENCE OF NEED RECOGNITION. T010 is CLOSED.**
+
+T010 followed R012 correctly: all seven pre-update label-free scalars, both orientations and 25/50/75% coverages were frozen before gated AP evaluation; all 42 gates plus no-adapt/full-hybrid anchors were retained; official COCOeval was reconstructed from frozen T009 predictions with no model/ISP/adaptation rerun. Nine of 42 gates meet the predeclared developmental rule, so simple gating is not immediately ruled out.
+
+The result does **not** yet show that any scalar recognizes when adaptation is needed. The proposed `support_confidence_low_50` gate selects 49.7% of clean and 50.05% of corrupted observations, essentially uniform thinning. It preserves small positive corruption macro AP versus no-adapt on FCOS (`+0.036793`) and SSD (`+0.032926`), with 4/5 and 5/5 positive blocks, while clean AP stays within the safety bound. But it still loses `0.033478` FCOS macro AP versus full hybrid, and all nine passing gates lose some FCOS macro AP versus full hybrid. Because T010 did not include a matched-coverage random selector, the retained benefit cannot be attributed to support confidence rather than simply performing fewer updates. The 42-way development search also means the candidate must not be promoted directly to a deployed threshold or independently validated as though it had been pre-specified.
+
+**Research conclusion:** before spending a new disjoint cohort on this gate, falsify the weaker explanation that *any* matched 50% thinning would retain similar AP. This can be answered offline from the same frozen T009 receipts and is the next task.
+
+---
+
+## T011 — Matched-coverage random-thinning falsification of the T010 gate
+
+**Status: TODO. Analysis-only control task. Do not rerun models/adaptation and do not modify deployment code.**
+
+### Scientific question
+
+> **Does `support_confidence_low_50` retain cross-detector AP because support confidence contains useful selection information, or would a random selector with the same marginal coverage perform similarly?**
+
+Freeze the T010 candidate exactly as reported: score = mean original source-support confidence, orientation = adapt-low, T010 cutoff `0.8499477751114789`, and the already saved authoritative decision matrix. Do not retune the cutoff, switch among the nine passing gates, combine features, or re-rank after seeing this control.
+
+### Stage A — Predeclare exact matched random controls before AP evaluation
+
+Construct **200 deterministic random selectors** from the frozen 7,000 T009 observations. Commit the seed list and all selection matrices before running any new official AP evaluation.
+
+For every random draw, match the candidate's selected count **within each of the seven conditions × each of the five predeclared replication blocks**. This is stricter than matching only 50% globally: it makes clean/corruption/family/block coverage identical to the candidate while randomizing *which images* adapt. Use a deterministic hash/ranking rule based only on the predeclared seed plus immutable image/condition identity; ties must be deterministic. The same selector is shared by source, FCOS and SSD. No annotation, prediction quality, detector target output, AP result or post-update quantity may enter selection.
+
+Use only the frozen T009 `no_adapt` and full-hybrid prediction JSONs to compose outcomes. Keep `no_adapt`, `full_hybrid`, and the fixed T010 candidate as anchors. The existing opposite-orientation/other T010 gates may be reported for context but must not be used to choose or alter the primary candidate.
+
+### Stage B — Official COCOeval randomization distribution
+
+For each of the 200 matched random selectors, run the same official COCOeval and report for source, FCOS and SSD:
+
+- AP/AP50/AP75 for all six corruptions plus clean;
+- six-corruption macro AP versus no-adapt and versus full hybrid;
+- each of the five fixed 200-image block macro deltas/signs;
+- clean AP delta;
+- candidate minus random-control distribution for the aggregate target metrics.
+
+Report the candidate's empirical percentile and one-sided randomization tail probability `(1 + # random >= candidate) / 201` for FCOS and SSD macro AP separately. Also report the random mean/median/5th/95th percentiles and how often a matched-random selector itself satisfies the original R012 developmental rule. Do not manufacture AP confidence intervals; this is a randomization/control distribution, not a bootstrap of COCO AP.
+
+Use the saved receipts to compare effective clean `||phi_3||` and latency only as descriptive safety/cost summaries; the scientific discriminator is AP under exactly matched selection coverage.
+
+### Stage C — Decision rule
+
+Treat support confidence as showing **selection information beyond thinning** only if all of the following hold on the frozen development cohort:
+
+1. candidate corruption macro AP remains positive versus no-adapt on both FCOS and SSD;
+2. candidate exceeds the **95th percentile** of the matched-random distribution for both FCOS and SSD aggregate macro AP;
+3. candidate beats the matched-random median in at least **4/5 blocks** for each independent target;
+4. clean AP remains within the existing `-0.10` safety bound for all three detectors.
+
+If any condition fails, conclude that T010 does not establish a useful need-to-adapt signal beyond generic update thinning. Stop threshold refinement, feature combinations, learned gating and meta-training on these scalars; do not spend a new cohort validating this particular gate.
+
+If all conditions pass, the result is still developmental because the candidate was selected on T009/T010. A later task may validate the **literal frozen cutoff** `0.8499477751114789` on a new disjoint cohort; do not re-quantile the threshold on that cohort and do not start that validation automatically.
+
+### T011 acceptance criteria
+
+T011 is ready for review when the 200 seeds and matched selection matrices are committed before AP evaluation, exact condition×block coverage equality is tested, all random outcomes and anchors are retained, official COCOeval and randomization summaries are reproducible from frozen T009 receipts, and `CODEX_TO_CHATGPT.md` reports exact commits/commands/failures plus the predeclared decision-rule outcome.
+
+**Do not start a new GPU experiment, T012, a learned gate, feature-combination search, new objective, spatial ISP, predictor, or meta-training automatically.**
