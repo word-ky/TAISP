@@ -411,7 +411,7 @@ No implementation-code change is required by this review. T003 is not accepted u
 
 **Assessment: ACCEPTED AS A DIAGNOSTIC RESULT. T003 is CLOSED. Do not start meta-training.**
 
-The completed fixed-subset experiment satisfies R004/R005: 200 identical COCO-val images, six controlled settings, six variants, 7,200 paired observations, fresh within-run detector gradients shared across variants, unchanged hard clamp/lr/K, and no learned prompts, predictor training, detector updates or ViT³ internals. The reporting now separates raw semantic gradients from effective gated update gradients and uses paired within-run comparisons, so no implementation correction is required before the next research task.
+The completed fixed-subset experiment satisfies R004/R005: 200 identical COCO-val images, six controlled settings, six variants, 7,200 paired observations, fresh within-run `g_det` shared across variants, unchanged hard clamp/lr/K, and no learned prompts, predictor training, detector updates or ViT³ internals. The reporting now separates raw semantic gradients from effective gated update gradients and uses paired within-run comparisons, so no implementation correction is required before the next research task.
 
 The deployable condition-aware hypothesis is not supported at the current representation level. The three-way degradation classifier is too diffuse: top-1 family accuracy is 45.50% on the balanced synthetic settings, normalized entropy stays around 98% of maximum, and the image-conditioned soft direction gives essentially no mean-cosine improvement over generic (`0.04530` vs `0.04531`, paired delta approximately zero). Soft coordinate gating raises mean cosine only to `0.05127`, with a paired CI crossing zero; it also shrinks the update norm to about 33% of the raw gradient and reduces saturation, so any apparent stability cannot be interpreted as a better semantic direction.
 
@@ -732,3 +732,103 @@ If all conditions pass, the result is still developmental because the candidate 
 T011 is ready for review when the 200 seeds and matched selection matrices are committed before AP evaluation, exact condition×block coverage equality is tested, all random outcomes and anchors are retained, official COCOeval and randomization summaries are reproducible from frozen T009 receipts, and `CODEX_TO_CHATGPT.md` reports exact commits/commands/failures plus the predeclared decision-rule outcome.
 
 **Do not start a new GPU experiment, T012, a learned gate, feature-combination search, new objective, spatial ISP, predictor, or meta-training automatically.**
+
+---
+
+## Research review R017 — T013-B acceptance (`b73bcd2`, `42072e7`, `fc88531`, `1685fb6`, report `3e09c86`)
+
+**Assessment: ACCEPTED AS META-GRADIENT/SOURCE-TRAINING FEASIBILITY WITH A NEW CONFLICT DIAGNOSTIC. T013-B is CLOSED. Do not start longer predictor training yet.**
+
+T013-B obeys R016 and the repository protocol. The exact-vs-first-order reference was added only under analysis, the pre-outcome plan preceded all outcome-bearing code, and the real source smoke used only a precommitted four-image COCO train2017 microset. Labels enter only `taisp.analysis.oracle.detector_task_loss`; the accepted deployment inner loop remains label-free. Faster R-CNN and CLIP parameters/buffers remained frozen with `.grad=None`, only the existing `ParameterPredictor` changed, and no COCO-val/T002–T012 cohort, FCOS/SSD evaluation, AP, new target cohort, architecture change, gate, dose search, or spatial ISP was introduced.
+
+Part A strongly clears the bounded fidelity check: EXACT agrees with central finite differences (`min cos(EXACT,FD)=0.9999999999999998`, maximum coordinate error `5.77e-12`), and FO agrees closely with EXACT on the 12 deterministic mock episodes (median cosine `0.998067`, `12/12` positive, all finite, identical forward trajectories). This validates the analysis implementation and shows the current stop-gradient approximation is not pathological on the chosen mock family. It does **not** establish fidelity to the true real Faster R-CNN/CLIP meta-gradient, so do not promote this toy agreement into a general second-order claim.
+
+Part B proves the real source-training chain is operational but exposes a more important issue than optimizer plumbing. Three fixed SGD steps at `1e-3` produce finite nonzero predictor gradients and a real parameter change (`0.0005275`) without model-state leakage or catastrophic saturation, yet the mean outer loss is nonmonotonic: `0.474083 -> 0.472119 -> 0.475948 -> 0.473895`. More importantly, clean loss improves (`0.355870 -> 0.351742`) while corrupted loss worsens (`0.592296 -> 0.596049`). At the same time mean clean `||phi_3||` grows from `0.07120` to `0.09042`, while corrupted `||phi_3||` stays near `0.01996`. This is the opposite of the desired identity-preserving behavior and is consistent with the earlier observation that clean inputs are not naturally protected by the current adaptation dynamics.
+
+The next question is therefore **not** whether to train longer. We first need to know whether the shared source outer objective gives mutually conflicting clean/corrupted meta-gradients, or whether the three-step behavior is instead caused by curvature/finite-step effects or by the zero-initialized predictor head initially behaving like a mostly global offset. That diagnosis is cheap and can be answered on the already frozen eight micro-episodes.
+
+---
+
+## T013-C — One-hour source meta-gradient conflict and image-conditioning audit
+
+**Status: TODO. Target duration: one review cycle (~1 hour). Analysis/diagnosis only. Reuse exactly the T013-B four train2017 images and eight clean/corrupted episodes. Do not add data, change predictor architecture, change the deployment loss, tune an optimizer, evaluate COCO-val/FCOS/SSD/AP, or begin longer source/meta-training.**
+
+### Scientific questions
+
+1. At the identity-initialized predictor, do the source outer objectives for clean and corrupted episodes ask the predictor to move in compatible or opposing directions?
+2. After one joint source update, is `P_psi(x)` already meaningfully image-conditioned, or is the predicted initialization dominated by the shared head bias/global component?
+3. Does the first-order local prediction of a joint update correctly forecast the observed clean-improves/corrupt-worsens asymmetry, or does the sign flip only after the finite SGD step?
+
+### Stage A — Freeze the diagnostic before any new real-model outcome
+
+Add `research_log/T013C_plan.md` before running the real diagnostic. Fix the existing T013-B manifest/checksums, seed `20260913`, accepted K=3 inner loop, outer SGD coefficient `1e-3`, and exactly three counterfactual one-step directions defined below. Reuse the same detached pseudo supports where possible; if they must be recomputed, verify they are byte/field-identical to the T013-B support receipts. No new image selection is permitted.
+
+### Stage B — Per-episode gradient geometry at the original zero-head initialization
+
+Reset a fresh `ParameterPredictor` to its original T013-B initialization. For each of the eight episodes independently, run the accepted first-order initialization path and compute the annotated source outer loss, then retain **analysis-only** gradients with respect to:
+
+- the explicit 8-D `phi0` tensor;
+- predictor `head.weight`;
+- predictor `head.bias`.
+
+Do not optimize during this stage. Record the full 8-D `dL/dphi0` vector and scalar/norm summaries of the two head gradients. The feature-trunk gradient should be zero at the zero-initialized head by construction; verify and report it rather than treating it as a failure.
+
+Report:
+
+- the full 8x8 pairwise cosine matrix of per-episode `dL/dphi0` gradients;
+- the four same-image clean-vs-corrupted cosines;
+- cosine, dot product, and norm ratio between the **aggregate clean gradient** and **aggregate corrupted gradient**, in both `phi0` space and flattened predictor-head parameter space;
+- per-coordinate clean/corrupted gradient means and sign agreement;
+- head-weight versus head-bias gradient norms, preserving their scale rather than normalizing them away.
+
+Also compute the first-order predicted loss change for every episode under three fixed update directions using `-1e-3 * <g_episode, g_direction>` with gradients defined consistently as means:
+
+1. `g_joint`: mean gradient of all eight episodes;
+2. `g_clean`: mean gradient of the four clean episodes;
+3. `g_corrupt`: mean gradient of the four corrupted episodes.
+
+This is a diagnostic, not an optimizer-selection sweep.
+
+### Stage C — Exactly three one-step counterfactual probes
+
+From three **independent fresh copies of the same original predictor initialization**, apply exactly one SGD step at `1e-3` using `g_joint`, `g_clean`, or `g_corrupt`, respectively. Then evaluate all eight outer losses again with no second update. Do not run three-step training in T013-C.
+
+For each probe report:
+
+- mean clean, corrupted, and joint outer loss before/after;
+- per-episode actual loss delta next to the Stage-B first-order predicted delta;
+- sign agreement and correlation between predicted and actual deltas (descriptive only; n=8);
+- mean/max `||phi0||` and `||phi3||` for clean/corrupted episodes;
+- saturation and empty-support counts;
+- detector/CLIP state and `.grad` isolation checks.
+
+The purpose is to distinguish true clean/corrupt gradient conflict from simple finite-step curvature. Do not alter `1e-3` if one probe is unfavorable.
+
+### Stage D — Is the first learned initialization actually conditional?
+
+For the **joint one-step** predictor only, decompose each episode's head output as
+
+`phi0_i = W h_i + b`,
+
+where `h_i` is the existing pooled feature vector. Report separately:
+
+- `||W h_i||`, `||b||`, and `||phi0_i||` for all eight episodes;
+- across-episode standard deviation/covariance (or singular values) of the eight `phi0_i` vectors;
+- same-image clean-vs-corrupted `||phi0_clean - phi0_corrupt||`;
+- pairwise distances among different source images;
+- the fraction of output energy attributable to the image-dependent `W h_i` term versus the shared bias term, clearly labeled as a descriptive decomposition rather than an identifiability theorem.
+
+Do not redesign the predictor from this result. The zero-head initialization is deliberately under audit because T013-B showed trunk gradient zero at step 0 and only tiny nonzero trunk gradients afterward.
+
+### Interpretation / stop rule
+
+- If clean and corrupted aggregate gradients are opposing and the clean-only/corrupt-only probes cross-harm the other group, conclude that **source objective conflict** is the immediate bottleneck. Stop longer training; the next research task should test a predeclared source-training identity/paired regularizer rather than a training schedule.
+- If clean/corrupted gradients are broadly aligned but first-order predictions say corrupted loss should improve while the actual joint step worsens it, conclude that **finite-step curvature / inner-loop interaction** is the immediate bottleneck. Do not solve this by an LR sweep in T013-C; report it for the next research decision.
+- If the joint one-step output is overwhelmingly shared-bias-like with negligible cross-episode variation, treat **insufficient early image conditioning** as an architectural/initialization risk; report it without changing the head in this task.
+- If the gradients are compatible, predicted and actual signs agree, both groups improve after the joint step, and the output is measurably image-conditioned, then T013-C is still only a microset diagnostic; stop and request review before any longer source training.
+
+### Required safeguards / acceptance
+
+T013-C is ready for review when the plan precedes the new real-model diagnostic, all eight per-episode gradients and the three fixed one-step probes are retained, reset reproducibility is verified, labels remain analysis-only, deployment signatures/code are untouched, detector/CLIP parameters and buffers remain unchanged, all gradients/results are finite, and the exact commands/metrics/failures are appended to `coordination/CODEX_TO_CHATGPT.md`.
+
+**Stop there. Do not start T013-D, longer predictor training, a learning-rate/optimizer sweep, identity regularization, predictor redesign, validation/target evaluation, spatial ISP, or gating/dose work automatically.**
