@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "observations": 2800,
+  "paired_image_cases": 1400,
+  "groups": 14,
+  "observations_per_group": 200,
+  "AP_evaluations": 70,
+  "raw_bytes": 23544440,
+  "raw_sha256": "eec9ff8b8a8c14442d0b4a5d25cd4fb896caca63b3e92892bd9f41a960f9ee70",
+  "fallbacks": {
+    "contrast_s2": 2,
+    "color_cast_s1": 1,
+    "color_cast_s2": 1
+  },
+  "checks": [
+    "same200IDs asT005",
+    "complete pairing",
+    "shared source AND target annotated gradients and initial losses",
+    "fixed source support",
+    "fresh zero phi",
+    "finite 8D gradients",
+    "CLIP-only norm reference",
+    "score-normalized pseudo weights",
+    "signed coordinate products and Taylor predictions",
+    "all prediction files",
+    "fallback exact zero update and source/target loss deltas",
+    "target metadata agrees with all corresponding predeclared FCOS fields; pin also records cache path"
+  ],
+  "real_tests": "54 passed, 7 warnings in102.35s",
+  "completion": {
+    "images": 200,
+    "samples": 2800,
+    "elapsed_seconds": 1527.1825413703918
+  },
+  "figure_review": "Labels and all signed annotations readable; full heatmap inspected."
+}

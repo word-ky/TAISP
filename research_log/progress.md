@@ -78,3 +78,7 @@
 [2026-09-12T09:25:30+08:00] T006 full run launched 20260912-092401-taisp-t006-coco200,release20260912-092347-taisp-t006-full,sourced7d0510 pushedmain. Fresh54tests precede fixed200study. Heartbeat preserved15min and updated to read LATEST continuation. Active recovery saved; awaiting fulltest/firstimage verification.
 
 [2026-09-12T09:26:39+08:00] Fullrun20260912-092401-taisp-t006-coco200 passed54real tests102.35s (7knownwarnings); first2/200images completed15.1s, no blocking error. Experiment remains active; next heartbeat monitors existingrun and collects only after completion. Rootproject logs mirrored remote.
+
+[2026-09-12T09:58:40+08:00] T006 full run20260912-092401-taisp-t006-coco200 completed200images/2800rows at09:51:22+08,exit0. No active experiment. Fetching complete receipts for paired transfer/clean/severity analysis. First packaging SSHconnection closed(exit255), retry succeeded; no model/data rerun. Archive31081757bytes SHA1c121d5904a0df5dd5b1a72d3e658752dbbfa9343a8d69be83c3c95d75071553.
+
+[2026-09-12T10:06:42+08:00] T006 finalreport complete,NEEDS_REVIEW. All2800rows/70AP auditpassed;FCOS pairedcos+0.093CIpositive,rawbenefit+5.42ppCIpositive,matched+7.25ppCIpositive. FCOSAP3vsCLIP5/6positive butvsbefore3/6positive;rawmeanloss notimproved,matchedrelativeimproved. No severity-only orrobustrestoration claim. Reportassembly optionalcachepathcomparison narrowedtocorresponding pinnedfields(allmatch);GBKread fixedexplicitUTF8. Allnegative/fallbacks retained,figureinspected,no activeexperiment/meta.
