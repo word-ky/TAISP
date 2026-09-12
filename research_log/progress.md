@@ -111,3 +111,11 @@ Report/data commit702e5da pushed toGitHubmain. A6000archiveSHA256 9a5d95f35f9926
 ## 2026-09-12T14:14:29+08:00 — R011/T009 started
 
 Fetched184a3a0/5885716. T008accepted/closed. Baseline3tests pass10.74s,1real skip; cohort extension2tests pass0.57s. Preparing1000 disjoint IDs/JPEGhashes and5random-order blocks before any T009model execution. PlanT009_plan.md; no adaptation changes.
+
+## 2026-09-12T14:24:35+08:00 — T009 evaluation plumbing
+
+SSD exactinstalledtorchvision defaults inspected; evaluation-only adapter and realcompatibilitytest prepared,notexecuted beforecohortcommit. FixedblockCOCOeval/macrotest localfailed due missingpycocotools; server4tests passed1.52s in plumbingrelease20260912-141922. K3driver andreport reuseacceptedadapt/evaluator functions; staticcompilepass. Download750/1000 ongoing,no model execution.
+
+## 2026-09-12T14:28:10+08:00 — T009 cohort pinned
+
+1000images downloaded exit0; manifest e98a7fd pushed before any T009model execution. SHA155bb6f047d374342623f48488bcb2b33601a4ecbd372976a433c1b289546e49; zerooverlap with historical200/T007200,exact5random-order200blocks. Preparing SSDrealcompatibility. An initial local record/commit command ran from workflow cwd and failed missingproject paths without creating a commit; corrected to projectcwd. Deployment used explicit correct project source.
