@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-030301-taisp-t013c-conflict-conditioning",
+  "releaseId": "20260913-030230-taisp-t013c-conflict",
+  "sessionName": "autodl-20260913-030301-taisp-t013c-conflict-conditioning",
+  "command": "export TAISP_SOURCE_REVISION=68a6b07 TAISP_REAL_MODELS=0 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.gradient_conflict --manifest research_log/T013B_train_microset.json --supports /home/liujianhua/wjq/TAISP/runs/20260913-014612-taisp-t013b-source-three-steps/artifacts/smoke/supports.json --output \"$AUTODL_ARTIFACTS_DIR/audit\""
+}

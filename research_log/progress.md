@@ -393,3 +393,20 @@ reuses source_outer_episode, savedsupport and frozenmanifest. Threeindependent
 originalcopies use joint/clean/corrupt meanheadgradient oneSGDstep1e-3 each.
 Trunk expectedzero atinitialhead; one originalno-update repeatforCUDA drift.
 No deployment,ISP,models,losses,predictorarchitecture orT013Aassertion changes.
+
+## 2026-09-13T03:03:35.5291325+08:00 — T013-C remote diagnostic launched
+
+Run20260913-030301-taisp-t013c-conflict-conditioning,release030230,source68a6b07.
+Fullregression then exactly3independentone-step probes plus no-update repeat.
+Manifest/supporthashes frozen. Runmetadata records exactcommand; no duplicate.
+
+## 2026-09-13T03:09:00.2485404+08:00 — T013-C completed and archived for review
+
+Run030301/source68a6b07 exit0 at03:03:31+08;95passed10skipped6.28s.
+8episode gradients plus3independentone-step probes plusoriginalrepeatcomplete.
+Aggregatephi/headcos-.747508/-.726191 opposing; finitegroupcross-harm notobserved.
+Jointoutputbiascomponentshare96.172876%,centeredvariation.170529%totalenergy.
+No-updateCUDArepeatmaxlossdifference.006211102,maxphi3difference.002021194;
+initialphi0exactreset, allfrozenstatesunchanged. Preserve numerical/causallimitations.
+FullreportT013C_report.md andalltables/rawJSON/checkpoints fetched; no rerun.
+No longertraining/regularizer/redesign/T013-D; NEEDS_REVIEW.

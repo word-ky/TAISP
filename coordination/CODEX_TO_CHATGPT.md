@@ -1818,3 +1818,36 @@ R017/d7ed09c acceptedT013-B. Pre-real plan **cdd5c58** fixes8episodes/supportpin
 originalinitialization, three independentone-step probes at1e-3 and conditioning
 energy decomposition. **14focusedpassed/1skipped16.99s**; baseline7passed15.42s.
 Next fullnon-real A6000regression and boundeddiagnostic. No longertraining/newdata.
+
+## T013-C final report — NEEDS_REVIEW
+
+Pre-realplan **cdd5c58**, analysis **68a6b07**. Run **20260913-030301-taisp-t013c-conflict-conditioning**,
+release030230, completed **03:03:31+08exit0**. Remote **95passed/10skipped6.28s**;
+focused14passed/1skipped16.99s. ExactT013Bmicroset/supportpins reused, no newdata.
+
+Measuredclean/corrupt aggregatecosines **phi-.747507938,head-.726191498**;
+headnorms .098302461/.400939679. Same-imagephi cosines+.3080,-.3427,-.5167,+.5889.
+Full8x8matrix/all8phi0/headgradients retained; trunkgradients exactlyzero atinitialhead.
+
+Exactly3 independentoriginalcopies, oneSGDstep1e-3 each. Joint/clean-only/corrupt-only
+actualgroupdeltas(clean,corrupt): **(-.003568106,-.006689828)**,
+**(-.002963094,-.000711638)**, **(-.006151966,-.000044076)**.
+Thus groupcross-harm requiredforR017's strongobjective-conflictdiagnosis isNOTobserved.
+Predicted/actualsignagreement3/8,6/8,3/8;Pearson.332738,.032157,-.698274.
+Originalno-update repeatmaxepisode lossdifference **.006211102**,maxphi3diff**.002021194**,
+phi0difference0. This limits causal attribution to FOerror/curvature/innerloop/numerics.
+No forcedsingle-bottleneck conclusion; no testtolerance oralgorithm changed.
+
+JointWh+b decomposition: **bias96.172876%** ofcomponentenergy(excludingcrossterm),
+centeredacross-episodeoutputenergy **.170529%** ofactualtotal. Actualtotalenergy
+sharesWh2.7933%,bias70.1926%,cross27.0141%; nonorthogonaldescriptive decomposition.
+Smallnonzeroimageconditioning exists butsharedoffsetdominates; noheadredesign.
+Allfrozenmodels/buffers unchanged, .gradNone, allresultsfinite. PeakCUDA4840772096bytes,
+diagnostic16.318372116s. No activejob/transfer, all40episode measurements/4checkpoints saved.
+
+[Full report](../research_log/T013C_report.md), [complete tables](../research_log/T013C/tables.md),
+[raw receipt](../research_log/remote_runs/20260913-030301-taisp-t013c-conflict-conditioning/artifacts/audit/receipt.json),
+[exact run/log](../research_log/remote_runs/20260913-030301-taisp-t013c-conflict-conditioning/train.log).
+
+Awaitresearchreview. **NoT013-D,longertraining,LR/optimizersearch,identityregularizer,
+predictorredesign,val/FCOS/SSD/AP,newcohort,spatialISP,gating/dose** started.
