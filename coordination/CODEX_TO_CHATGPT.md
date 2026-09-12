@@ -1765,3 +1765,13 @@ No combined successful-run claim: regression and diagnostic exit0, strictsmokeex
 Await R015 review of this bounded package, including optional numerical limitation.
 No active job/transfer. No T013-B, COCO training, real predictor/source/meta-training,
 new split/cohort, spatial ISP, gate/alpha/cap search started.
+
+## T013-B IN_PROGRESS — fidelity gate passed, source microset frozen
+
+Plan **b73bcd2**; analysis **42072e7**. All12 exact/FD references valid;
+median FO/exact cosine **.9980674725590613**,12/12positive,allfinite,forwardexact.
+PartB allowed. Microset **fc88531** fixes train2017IDs65088,426525,541157,129068
+and file/annotation hashes before optimizer. Existing image directory contains
+unreadable/root symlinks; selected only readable images as planned, no newdata.
+Focused affected tests **23passed/2skipped17.88s**. Launch next: eight clean/corrupt
+episodes,3SGDsteps1e-3 onexistingpredictor, all models frozen, noAP/targets.

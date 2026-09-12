@@ -356,3 +356,14 @@ R016/83f734e accepts T013-A with its optional CUDA limitation intact. Plan b73bc
 predeclares12 CPU float64 fixtures, FD1e-5, K3/lr.1 and original continuation gate.
 Baseline8passed/1skipped19.17s. Exact unroll added only inanalysis; focused tests
 inprogress. No deployment/predictor/ISP/model change, no real optimizer started.
+
+## 2026-09-13T01:45:29.1157459+08:00 — T013-B Part A passes; train microset committed
+
+Part A source42072e7, median FO/exact cosine .9980674725590613;12/12positive;
+min exact/FD .9999999999999998; allfinite; state/image forwarddifferencesexactzero.
+Train microset fc88531 committed before optimizer:65088,426525,541157,129068.
+All official coco_url values train2017. 13,798 readable eligible images after
+skipping998 inaccessible/root symlinks; no dataset modification or download.
+Part B source-only outer path ready;23passed/2skipped17.88s, including target
+variation proving labels change outer objective without changing inner trajectory.
+Next remote complete non-real regression and exactly3 predictor SGD updates.
