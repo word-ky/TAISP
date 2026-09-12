@@ -1,11 +1,11 @@
 # Current project state
 
-2026-09-12T19:55:18+08:00: T001–T010 accepted/closed; **T011 IN_PROGRESS** per R013.
-Active run **20260912-195353-taisp-t011-coco1000-offline**, source/report **8b2143f**,
-release **20260912-195321-taisp-t011-full**, started 19:54:03+08.
-20 affected tests passed 2.90s; 24 CPU workers, 203 frozen configs, 200 controls.
-Read research_log/T011_handoff.md and T011_plan.md. All selectors precommitted
-8dd776d; final 25,578-row official AP/randomization report pending.
-No model/ISP/adaptation rerun, threshold change, candidate switch or new cohort.
-15-minute heartbeat active. Do not duplicate the running study.
-No T012, learned gate, feature combination or meta-training before research review.
+2026-09-12T20:50:54+08:00: **T011 NEEDS_REVIEW**, completed 20:39:00+08, exit 0.
+R013 joint selection-information criterion **FAILS**: FCOS percentile 47%,
+2/5 blocks above matched-random median; SSD percentile 96%, 4/5 blocks.
+96/200 matched controls pass the earlier R012 rule. Read T011_report.md.
+Run 20260912-195353-taisp-t011-coco1000-offline, source/report 8b2143f; no active experiment.
+All raw/derived results and final audit retained in research_log/remote_runs.
+Stop this scalar refinement/learned-gate/meta route per R013; no new cohort for
+this candidate. Await research review/explicit next task; do not start T012.
+15-minute heartbeat remains active; stay quiet if queue unchanged.

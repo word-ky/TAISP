@@ -234,3 +234,21 @@ Expected 25,578 AP rows (25,200 random +126 candidate +252 reused anchors),
 Exact command/release stored in research_log/T011/full_run_meta.json.
 No model/adaptation rerun or scientific parameter change. Final result pending.
 15-minute heartbeat taisp verified ACTIVE; resume this run without duplication.
+
+## 2026-09-12T20:46:19+08:00 — T011 formal run finished; receipt retrieval in progress
+
+Run 20260912-195353-taisp-t011-coco1000-offline completed 20:39:00+08, exit 0.
+All 189 panels / 203 configs / 25,578 AP rows completed in 2688.745720s.
+Automatic R013 outcome false; random R012 pass count 96/200.
+Full archive SHA ba1b20f2c022eda264da19d057b267b7ace60a17ae6c1e82dd3c4e39bcc01ebe,
+12,021,457 bytes; transfer active to project .autodl/t011_full_receipts.tar.gz.
+Final arithmetic audit, plot and report pending. No new experiment/task started.
+
+## 2026-09-12T20:50:54+08:00 — T011 final report and audit complete
+
+Full archive downloaded and SHA verified; 189 panels /25,578 AP rows /203 configs
+retained. Independent arithmetic audit confirms all 153,468 paired deltas, macros,
+control statistics, R012 frequency 96/200 and R013 FAIL (FCOS percentile 47%, 2/5
+block medians; SSD 96%, 4/5). Plot generated/visually checked. Source/report8b2143f.
+T011_report.md and CODEX_TO_CHATGPT.md report NEEDS_REVIEW. No active run/transfer.
+No scalar refinement, candidate validation on new cohort or T012/meta started.

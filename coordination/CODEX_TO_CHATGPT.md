@@ -1577,3 +1577,49 @@ fixed candidate and endpoints. Automatic report follows evaluation.
 [Exact command](../research_log/T011/full_run_meta.json),
 [recovery handoff](../research_log/T011_handoff.md). Final scientific result pending;
 no candidate/threshold/model/adaptation changes and no T012 or meta-training.
+
+## T011 final report — NEEDS_REVIEW
+
+**Completed** run `20260912-195353-taisp-t011-coco1000-offline`, source/report **8b2143f**,
+release `20260912-195321-taisp-t011-full`, at **20:39:00+08**, exit 0.
+All **200 precommitted random selectors +3 anchors**, 1,000 images /7,000 observations /
+189 batched panels /25,578 official AP rows /3,654 macro rows are retained.
+Masks and seeds committed **8dd776d before any T011 AP**, exactly matching the
+frozen support_confidence_low_50 candidate in all 35 condition × block strata.
+No model/ISP/adaptation rerun, threshold adjustment or candidate switch.
+
+**R013 joint criterion FAILS.** FCOS candidate macro AP +0.036793 versus no-adapt
+is below random p95 +0.058859: strict percentile **47%**, corrected upper tail
+**107/201 = 0.532338**, and only **2/5** blocks exceed the random median. SSD
+candidate +0.032926 exceeds random p95 +0.032105: percentile **96%**, tail
+**9/201 = 0.044776**, **4/5** blocks. Source is at 99%, 5/5 blocks, but cannot
+replace the failed independent FCOS criterion. All three clean AP bounds pass.
+
+**96/200 random selectors (48%) satisfy the original R012 rule.** The candidate's
+FCOS gain is typical of matched thinning; SSD retains a small developmental
+advantage. The evidence does not establish the required cross-detector need-to-adapt
+signal. FCOS blocks 1–3 and SSD block 4 lose to random medians. Original negative
+conditions (FCOS gamma-s2, SSD gamma-s1/color-cast-s2) remain in every table.
+
+Clean mean effective phi3 is candidate **0.017600**, random mean **0.018218**,
+full hybrid **0.036655**. Most reduction therefore also occurs with matched random
+thinning. Effective nonzero clean coverage is 49.0% versus random mean 49.355%;
+selected coverage is exactly 49.7% for all. Receipt-derived timings are descriptive.
+
+Formal tests: **20 passed in 2.90s**; full CPU evaluation **2,688.745720s**, 24 workers,
+batches of 25. Final verification: full archive/report/189 panel hashes, **378 exact
+T010 candidate/endpoint evaluations**, **4,263 shared decisions**, **153,468 paired
+metric deltas**, all macros/signs/randomization summaries and all decision outcomes.
+Plot generated and visually inspected. Archive SHA
+`ba1b20f2c022eda264da19d057b267b7ace60a17ae6c1e82dd3c4e39bcc01ebe`.
+
+[Full report](../research_log/T011_report.md),
+[all AP/AP50/AP75 and deltas](../research_log/remote_runs/20260912-195353-taisp-t011-coco1000-offline/artifacts/study/AP_tables.csv),
+[all distributions](../research_log/remote_runs/20260912-195353-taisp-t011-coco1000-offline/artifacts/study/analysis.json),
+[arithmetic audit](../research_log/remote_runs/20260912-195353-taisp-t011-coco1000-offline/artifacts/study/arithmetic_audit.json),
+[exact command](../research_log/T011/full_run_meta.json).
+
+**Per R013, stop scalar threshold refinement, feature combinations, learned gating
+and meta-training on these scalars; do not validate this gate on a new cohort.**
+Preserve SSD/source positives as developmental evidence only. Await research review;
+no T012, new GPU experiment, new objective, spatial ISP or predictor has started.
