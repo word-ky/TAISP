@@ -1,0 +1,965 @@
+{
+  "source_revision": "8dd776d",
+  "input_revision": "be5c797",
+  "preparation_revision": "d0179ad+random-preparation",
+  "images": 2,
+  "rows": 14,
+  "configurations": 203,
+  "groups": 3,
+  "workers": 4,
+  "elapsed_seconds": 85.97217631340027,
+  "official_evaluations": 12789,
+  "reused_official_anchor_evaluations": 126,
+  "configuration_batch_size": 25,
+  "model_or_adaptation_inference": false,
+  "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "T009_metrics_sha256": "d4366a398d51debb5ccffc4dcb168eeb4322b86e98428c2f9b796fcf105da243",
+  "preparation_manifest_sha256": "59868cefbd243351c3cee105889589fef609aa3e978ba499473b08f51aec8c00",
+  "panels": [
+    {
+      "panel": "source_clean_s0_configs_000_025.json",
+      "sha256": "86bca7c6287b1c6fc1d536cfb4cf4aba8151c049d9e59b4d110b931828621e97",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_clean_s0_configs_025_050.json",
+      "sha256": "784a9c61ae13548277c5342015f38a0055f25c559747686b5346eaedbcf3726e",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_clean_s0_configs_050_075.json",
+      "sha256": "5be0e6b66a0b2f7dcac6d46a4fe35a715191e77a7cfd7e8b53c4a79fd64c9d32",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_clean_s0_configs_075_100.json",
+      "sha256": "888509342583f032ad8252cc0b1d82e9c86c20eab25a31881979fd218b3d36e6",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_clean_s0_configs_100_125.json",
+      "sha256": "67ef2295f3f2bc42329b9038216e01484c1d67277d557f85347ea4d5cebeb933",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_clean_s0_configs_125_150.json",
+      "sha256": "feb9cb45fdba3a58c0f121803270ed7005c7838b51b9d88667a47ca9d2aa26a3",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_clean_s0_configs_150_175.json",
+      "sha256": "4476ed37b96a9c6ca8538d6a41eca3cea83165d8075a0c4ffdf1fa6ed0ca0d75",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_clean_s0_configs_175_200.json",
+      "sha256": "cde6549af7da1f3f7a365208a9c9270b1e8ce280919a18be449388b3a5060539",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_clean_s0_configs_200_203.json",
+      "sha256": "11e8b9ff7a7279aa67c13b216c3571bbfe7c8e5c83591d48d86fc66bd0b968cd",
+      "evaluations": 9
+    },
+    {
+      "panel": "source_color_cast_s1_configs_000_025.json",
+      "sha256": "c0f24a4ff81ab8a018c8d133d99d5bd03f4fd7d9d117436128f2f51dca409754",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s1_configs_025_050.json",
+      "sha256": "fcee2074f351a53f4eb8e5f7eabf73bbba2a50723801a8d066be4720d12da8ec",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s1_configs_050_075.json",
+      "sha256": "abe03484e9a92b542fc6c1231d7c54acd3d3fa759edf134b53d5eaf72a744408",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s1_configs_075_100.json",
+      "sha256": "a14367988b2d6dbfc9eb224cc3321bd650f42c7b80d092dc78b7ad8268410e41",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s1_configs_100_125.json",
+      "sha256": "8901bc496a84cb15fe97fc4a9a53f08a6588f237d15b6e157a80db76c9ec8a99",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s1_configs_125_150.json",
+      "sha256": "eec6c763c3b6dced35c20fd4d41a0b157c5c17bd0f3bc8b285c2ff86452129c3",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s1_configs_150_175.json",
+      "sha256": "07bbc007965789aaeb11abf04f7aae412995f5826bc76ea333e8d5f0f9e3bedc",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s1_configs_175_200.json",
+      "sha256": "b4383c5cb59d1231fa7ad1f9be5a68a216f172bbb2ee5bee4ce00a8d8667380a",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s1_configs_200_203.json",
+      "sha256": "b21eaabdfbcb7c8bf8f1eec7af19bf701d4e987c8c6185f07697127273a0b86f",
+      "evaluations": 9
+    },
+    {
+      "panel": "source_color_cast_s2_configs_000_025.json",
+      "sha256": "fab9e789c221503ed23dbb4dbbeed0f7f41c8790460b43687751293a4b398fed",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s2_configs_025_050.json",
+      "sha256": "e337e7ce676a19a9f5134e7836baa50f8e665f46b8178bd9b61115214bd74cc8",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s2_configs_050_075.json",
+      "sha256": "0c33fc7cba5e9dbd9423d3fa5ca08dd08c1ca6f2aa20d4f71ec4a1fdfbc00e1e",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s2_configs_075_100.json",
+      "sha256": "93395dad4c2cdb3ca938e0e15d5baa22aad5695636fc4352a5aea29393c5faa5",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s2_configs_100_125.json",
+      "sha256": "7fa794aff2f98975b0a6d6d01666125e259584ecc834eb0f49ae5b0fd925ef05",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s2_configs_125_150.json",
+      "sha256": "082f86fef8a07c955b323dd89d16f6a54fc45514145b0b88a0a0cf103d8b3d7c",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s2_configs_150_175.json",
+      "sha256": "526b0c028e1cee967ddd54de1baf099323ae07a12684a5804c516974fea2dde0",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s2_configs_175_200.json",
+      "sha256": "8ad3d31ddfaa6412b6db436646e3dbcab178a48bdffbed431b98af3fdfe8ce24",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_color_cast_s2_configs_200_203.json",
+      "sha256": "56857fe73b00110218c6007fbf2f7df04506a8ae3551dbcdbe6abc3c7c35b0fa",
+      "evaluations": 9
+    },
+    {
+      "panel": "source_contrast_s1_configs_000_025.json",
+      "sha256": "ce7e5fdf377bd8a789b1e7ea75b853c6762adf7960beaf33ad9403fc48bf46a0",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s1_configs_025_050.json",
+      "sha256": "280bc115d230fa3728911960e8c5b9f1ed4f614b91845a005c6ef0518648fd75",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s1_configs_050_075.json",
+      "sha256": "a32e491883b7453721406bce0b8ae2cff915242662b51f9fc14c923a2c634f17",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s1_configs_075_100.json",
+      "sha256": "b01c2a56580fac7cc814345fbcd929eed197cb18476f4dcec6a8458528dc7c20",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s1_configs_100_125.json",
+      "sha256": "f2951090b9dc4924c09a40576cebd4f3cc411a74c8c836eb503c0f0dcadf4b90",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s1_configs_125_150.json",
+      "sha256": "093be3132789ce0efa6b1a8b6790abcb8c911f5e58d4fa698774618e67202d35",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s1_configs_150_175.json",
+      "sha256": "51c29517a2754fc85c1f4938c8c3e7469fa458507267d428b0646b21f964be3b",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s1_configs_175_200.json",
+      "sha256": "5e53586f32ba7e5ecd5f1b1708759ed69544ec1ed1d74ddff6d62e1d7c2925e4",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s1_configs_200_203.json",
+      "sha256": "ae06d9360a84cdb53619ab806dedd5a49cd918d3878479127dc833b73a85219d",
+      "evaluations": 9
+    },
+    {
+      "panel": "source_contrast_s2_configs_000_025.json",
+      "sha256": "ca3751b970213f36ba6cbc6e12cc5bf1e62f274345fca1ef9b290d30b696880b",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s2_configs_025_050.json",
+      "sha256": "d24041b714bc0da1debecc414d3cd112bec9c54941937f4e74a61ed804f90e2e",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s2_configs_050_075.json",
+      "sha256": "4175b22a0866bdbedaa3d7352609cf3b6d74797a7734fa4eda9655a90f079502",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s2_configs_075_100.json",
+      "sha256": "dd8bf27a77b774fbbfa32376674e348fd59c483ee913659cae0aab63adf5b3d6",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s2_configs_100_125.json",
+      "sha256": "f1303eb60823220adb20fe6d304442f656e69a5ec793524e9850ec0eeee8a4c0",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s2_configs_125_150.json",
+      "sha256": "c51969b6042e4e5c5cc0d2188876b328dbfff6f81dd25fefd8edadb9cdd656ee",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s2_configs_150_175.json",
+      "sha256": "06759e66c9b6a1ef414153675e66e6a91be5da77b9fdda01191b4bd4e773b3f8",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s2_configs_175_200.json",
+      "sha256": "212be37de550ff8620f71a4ce45f737aaa56c15d5ed0e6d67f77965696ceca36",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_contrast_s2_configs_200_203.json",
+      "sha256": "92c7751ea6db5469a8e4c2b9bc1bd4a4489a613f9599dffbdfb32662679aa259",
+      "evaluations": 9
+    },
+    {
+      "panel": "source_gamma_s1_configs_000_025.json",
+      "sha256": "ac17944a384d538db7f9ea5c0d43a0dff6ed63b5385d1080074b5950ea51e14d",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s1_configs_025_050.json",
+      "sha256": "5fbf7203ca4cc37e278e2378e519a462d766dc53922ade5d4b8511997428dede",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s1_configs_050_075.json",
+      "sha256": "626d5c9142f07334ef14b5e864a2674c565a12cd2f37899e14297c65f46ea3a0",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s1_configs_075_100.json",
+      "sha256": "0255af45cacab54d4f54651b4512100a71332030b04924642271d1f78f8eded2",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s1_configs_100_125.json",
+      "sha256": "b366f1b8d5d2459e535c12ff928ceb3f053b48aa12d532c6241c26d7176295e5",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s1_configs_125_150.json",
+      "sha256": "d8e7ba98340a17a61467beda8d67cbf104119ea44b8f40d4d6fa804c22072036",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s1_configs_150_175.json",
+      "sha256": "32dbddd200b1c858017b46f619788f380dc9b23ab8bd815b9d7fb226df1ee398",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s1_configs_175_200.json",
+      "sha256": "62bb2e0361c2ebd194edc07ec7dc137c3b30f2d1ede5c7bad88473a7815a99ed",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s1_configs_200_203.json",
+      "sha256": "c616ede673ef891e7ac1f78b3b6a68453fa7c5bde7eb521dc68d5c12cf8101e7",
+      "evaluations": 9
+    },
+    {
+      "panel": "source_gamma_s2_configs_000_025.json",
+      "sha256": "d1b6a37bf515cc57477edbb6d1e09d2455c7238fb0ead7423e7b68e63460e5f6",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s2_configs_025_050.json",
+      "sha256": "db34a3347f156228798150e499d07ea04892c9ca84a3660407fa89e9d5c758d4",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s2_configs_050_075.json",
+      "sha256": "e00ae09ae67fe16c3ed6adcfc79aa2ecf76ac232e98a08da7d4014b022d8b0f7",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s2_configs_075_100.json",
+      "sha256": "b8e545fd8fc9b083e89b5b1020b4ba22ccbd3ae52734603dbd0c91d90c9a4c21",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s2_configs_100_125.json",
+      "sha256": "b1801acf19f7abee866ce0e143ca0f5ed6d3941d26e56a3b64c982d0f4cabbf6",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s2_configs_125_150.json",
+      "sha256": "84a1fc5a6fb29e7ac20e97f9d71ed858c2eafe3a088df793bbbf3e337d5dad49",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s2_configs_150_175.json",
+      "sha256": "b924790ddcb058acefa2183deb475adf010a68f018f77dba6572779f6f13d1c0",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s2_configs_175_200.json",
+      "sha256": "6d31717a370337a51a6bc0abaec0d0d7f475d361655deaf9e65962706a2916d9",
+      "evaluations": 75
+    },
+    {
+      "panel": "source_gamma_s2_configs_200_203.json",
+      "sha256": "82dcdd5ed71c68b0364ef5fd745851578f99d1bb82c4752261d2841fd4da9b58",
+      "evaluations": 9
+    },
+    {
+      "panel": "ssd_clean_s0_configs_000_025.json",
+      "sha256": "825afbcabace575e815664be4ad5aca7e74cfe83e4d0346cca54b1e492718037",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_clean_s0_configs_025_050.json",
+      "sha256": "67da843a13fa1d6fde72401f95b7930a434b490fa49076d063070168f73685d5",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_clean_s0_configs_050_075.json",
+      "sha256": "b018ac2463dbbdbf66eeedff4ba58d80ecff101b1d6474859b1682a494a1e374",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_clean_s0_configs_075_100.json",
+      "sha256": "eba9d565415cc35a969be1de5e6c8b1a5bee3c0a43f77092616f99b08d23daab",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_clean_s0_configs_100_125.json",
+      "sha256": "058676258c648d92bc3467b818e80379c85f4f4a4b01915c8eeb25e98130031c",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_clean_s0_configs_125_150.json",
+      "sha256": "f2e08a5411c9ebf22f0f708d803c6fdc9eb7316a0372904bc2a5a79837171ec3",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_clean_s0_configs_150_175.json",
+      "sha256": "adaf84a22eb456b6f504c79f1c514c38af8942f66cb381be04aedaef1d542f02",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_clean_s0_configs_175_200.json",
+      "sha256": "d127658639430c2975a18fe59780cb4f0fa07054d17c1f59a9d13d36610c3355",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_clean_s0_configs_200_203.json",
+      "sha256": "17ec3e402047ea2e8389a84192ecbee517df712feb98936450dbc2ffca74e056",
+      "evaluations": 9
+    },
+    {
+      "panel": "ssd_color_cast_s1_configs_000_025.json",
+      "sha256": "d4fcb84a6acee478d9e8f9879ca7c66621893d1517a9bc88cc9ef75044f178b5",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s1_configs_025_050.json",
+      "sha256": "18914d3ae479e5812f73ff580e2806233b27bb4d4d743b6e14962563aff851de",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s1_configs_050_075.json",
+      "sha256": "d9ba42a2289a50b84f82267e525a35923aa8ad00eec8855b911cf1260809b79f",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s1_configs_075_100.json",
+      "sha256": "9fd5d045abcfb098f70ef750161c21be9a4aeba66f88f1b50b783b7a2339a1b6",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s1_configs_100_125.json",
+      "sha256": "2a744acf5be995459cbfe3f2d3d5d557a25af9236dcf4c5f88dd4b5e91849fb2",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s1_configs_125_150.json",
+      "sha256": "1eeae5aaeb7cf71bb18062c7750884d5e32988312e63143ca7e77528df060934",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s1_configs_150_175.json",
+      "sha256": "126aa9c7e0a79a4538ad58a99931b1c99e285aab57b3c7c1c5c4b079ff9c3b21",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s1_configs_175_200.json",
+      "sha256": "03f18b8bcf0f8df61ee7df41a304fc33f1d02e7c4fbb3452c228c5619eee34e7",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s1_configs_200_203.json",
+      "sha256": "7d9f056b13866670ef97f361e48d33fc845208b5435cdf705b3ffe1a0a39a008",
+      "evaluations": 9
+    },
+    {
+      "panel": "ssd_color_cast_s2_configs_000_025.json",
+      "sha256": "6a4c1f92724b30cbdc598d4759856308dce033aa877975badfbfa35dbb8897af",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s2_configs_025_050.json",
+      "sha256": "ae243ec8d6f26b3a537047e0960c8391a7d91ceeab37707af6b717716cd2c583",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s2_configs_050_075.json",
+      "sha256": "9e79f804334a6c24055d2dc63f7673f39a3e7318b52da9c02be87d544fa9bb88",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s2_configs_075_100.json",
+      "sha256": "67813456b7454724e9f394aa17d3b4c0e7cbded794ac5c10bf7f354d8e6ed824",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s2_configs_100_125.json",
+      "sha256": "4a4eade01dd4529a2cf1f246b7309d583037b6c43e46a845ded0ab115e4b9a57",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s2_configs_125_150.json",
+      "sha256": "99633fbce7b9da1e673d45f1a25811b7322fb4f6de49baae46396be0e7a9e87a",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s2_configs_150_175.json",
+      "sha256": "3649d273c96276057a36ac17aac38ed725410ad417660abc91f4d8be815574f7",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s2_configs_175_200.json",
+      "sha256": "a75c51c21993596d3081fff16e3a86965936463978d8e29024838cf9b202be6b",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_color_cast_s2_configs_200_203.json",
+      "sha256": "31a2e7e73873c4aac51a7dd338102cd2c4a239bcaf2f28afcc4df2c94bca4741",
+      "evaluations": 9
+    },
+    {
+      "panel": "ssd_contrast_s1_configs_000_025.json",
+      "sha256": "872a2968840082678a1148c063d3ba41c8d4657d462d64cfb1f0989939444c64",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s1_configs_025_050.json",
+      "sha256": "ed476402f6dedfa1f3a3a6f39e9166dd823eef6e850e563c103e437e6e38c13e",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s1_configs_050_075.json",
+      "sha256": "3b0fd4a4ef403dfb7b5cad1deae343c126084f42f74333fa84f8bd9f0a455399",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s1_configs_075_100.json",
+      "sha256": "10ed622d6907ee1ea2df8541eac302af3ee607ee2f5095cc8f8d352b9167d44b",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s1_configs_100_125.json",
+      "sha256": "9c72b9d248e8f4786083a51233e95c8e5c6a774d8ff759e5c8a4348b7f27acda",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s1_configs_125_150.json",
+      "sha256": "e3479b427e6b9bc47cf22d79b50f15f029dc30099c1221f6b9d3b585428a2167",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s1_configs_150_175.json",
+      "sha256": "81477123a9c767b087b3a67d129e771546e0ef1edd284785b4f72cc3c502bbfb",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s1_configs_175_200.json",
+      "sha256": "700ee07b453b234242dd92ba7b2d07771e9ff1fe6512621b309c0c98b19978a8",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s1_configs_200_203.json",
+      "sha256": "50ab1836009b2312dd76bcdcd1edd7a6daeb92348c7a45771f08c81ab580b2e7",
+      "evaluations": 9
+    },
+    {
+      "panel": "ssd_contrast_s2_configs_000_025.json",
+      "sha256": "6eecd02676fcd499fda4da22665f9e0b6e8c9cae5f86df8e423b20c701e5bfa9",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s2_configs_025_050.json",
+      "sha256": "e204e2af846d3dbd77a16d4b876b4e245416819f49fcc366469d49fa517525bc",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s2_configs_050_075.json",
+      "sha256": "64480fbaf37efd2d1d0a7411453784e571503c618a50c26968d2b5479c23b04c",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s2_configs_075_100.json",
+      "sha256": "623b4261123f5fbc2ac31961ab5bb6d2337c1f88984c4db311bd55d92731fd4a",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s2_configs_100_125.json",
+      "sha256": "81296c0e8e82c19b002d1ebff9d45cbb43fd73e013a31c4c4cde54cbf3af145c",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s2_configs_125_150.json",
+      "sha256": "ea5215f02aa7f1a8d325c38fd98a9f37c683ba2df6a9781fe329f783f7346943",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s2_configs_150_175.json",
+      "sha256": "cc7a0aefc3c9121b641e875db55df64fa47462c24f0308136c35f76304eb3e21",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s2_configs_175_200.json",
+      "sha256": "6f26ff4ce390181b775780cb52f5f1b8a6e59b825167f908aeeea34047c3e953",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_contrast_s2_configs_200_203.json",
+      "sha256": "7278854cf44f8f655aab29d49ed24c04a57d7c004f67a19b57c6139b50482fef",
+      "evaluations": 9
+    },
+    {
+      "panel": "ssd_gamma_s1_configs_000_025.json",
+      "sha256": "05b65f56d72c1759e4991ce0ee7c7bddc12424838c63a75244c0efad079abb87",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s1_configs_025_050.json",
+      "sha256": "e23c04852fd2b7839f121cd0e84261f1afcd802c80ead9f2bf238e80a5564807",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s1_configs_050_075.json",
+      "sha256": "c2d4279d0a90c4fdfc6f58f5bdab0effcd6dc35a4489b90fff73fe52f71f09fa",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s1_configs_075_100.json",
+      "sha256": "0e48b1898d47dd124103371f7026c885ff5141b2ba2dec85f9a4c2993342df19",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s1_configs_100_125.json",
+      "sha256": "bbd527efbaaaf3039424389a6944d84028cd41eb853ea4035344b9f13946a653",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s1_configs_125_150.json",
+      "sha256": "5c01652f258d59e08bb57dfb5bc27ca3c75f895510e31608c278ecc1d1296475",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s1_configs_150_175.json",
+      "sha256": "f5adeb0692133a1b377b1736a2d6dff5707978bf6ef80aa141b7e80bcb8f00dd",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s1_configs_175_200.json",
+      "sha256": "521c2849932389c9e9a399b1c1a4e1dc68a24b878ada632a7aa40a668c3b1dad",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s1_configs_200_203.json",
+      "sha256": "535a1797835a9048c1d1ba2e21b644dd2f9b5d9a4550b79ef039d1887c9ba353",
+      "evaluations": 9
+    },
+    {
+      "panel": "ssd_gamma_s2_configs_000_025.json",
+      "sha256": "9103decde883a701c110dcb6407e91f328b68a95fdf3923773d9a76faf866267",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s2_configs_025_050.json",
+      "sha256": "fd21de55c9ec3b861ef2a7c047b3322ff2323dceb1dad7709a1d12b823594822",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s2_configs_050_075.json",
+      "sha256": "e13aff6b6a34b3672955dbde6b6ebc629396da3dc459bbbbea1ca560145c8cbc",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s2_configs_075_100.json",
+      "sha256": "5eb7a36e0b9c7b7d17ef2f874f6760f6023f3f3a9b54693b603e66f057a59312",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s2_configs_100_125.json",
+      "sha256": "2ace37ef750e78b4c4aaf807965ead4604d00907f8fb86f9c6fca5de86ff436c",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s2_configs_125_150.json",
+      "sha256": "524d3f982ae90846baf3b7a1b6048a126a6c0985a6b308bd23edbdc30e97ada7",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s2_configs_150_175.json",
+      "sha256": "0c2ee8a24d928f1c6f401ddb075c2075b0ce01d8d755d9f4ce44ebaada38cd66",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s2_configs_175_200.json",
+      "sha256": "5b4917ed455ff7d50f82e497cc0eb104e4b0abc93a4b99f37ed5ff152c2303cf",
+      "evaluations": 75
+    },
+    {
+      "panel": "ssd_gamma_s2_configs_200_203.json",
+      "sha256": "4d5825fcfbd28fa799b44f4b2dd247d2c727c1a48663c90b3612aecd3466d964",
+      "evaluations": 9
+    },
+    {
+      "panel": "target_clean_s0_configs_000_025.json",
+      "sha256": "0f90dcedaac33e0e580b07138046ffee49793eb3022f5e171275d474b0c6ea6f",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_clean_s0_configs_025_050.json",
+      "sha256": "49eb7401bbf3ba0e45f38ef9a648f36007ed08e907dfc831d4671d6072735f62",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_clean_s0_configs_050_075.json",
+      "sha256": "cff12c66e1d0ae59280037d84006e8bf23199e8920d70513b896d4033b649aca",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_clean_s0_configs_075_100.json",
+      "sha256": "1d7a84c8d0673fe9892456871c8594e292a3477c84650fb84cac3c9a1095e200",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_clean_s0_configs_100_125.json",
+      "sha256": "582a3ecbbfee07c9769252432851eda32782fd7f57c0bc5588a04bb5822afa5c",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_clean_s0_configs_125_150.json",
+      "sha256": "45cf5436664d5f9bbe3a102d1e4df238d6096ae3fc516b961d3dccf658ef5a1d",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_clean_s0_configs_150_175.json",
+      "sha256": "a60f706c3d14c5fe4842866619a966ed9b9f4e4be3f1e868dc595b1677d2efbd",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_clean_s0_configs_175_200.json",
+      "sha256": "7bb08b0f02ddf23efe16ad638f1cb05a3ed2bdd1b5494a7b5d873d69c1f27b23",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_clean_s0_configs_200_203.json",
+      "sha256": "64c1ca8263535323f3dbb7c9b963ab899a17a5761e28ef536796915889e602d9",
+      "evaluations": 9
+    },
+    {
+      "panel": "target_color_cast_s1_configs_000_025.json",
+      "sha256": "2398c7ec6301185512468eb8a75ea84ee12e9658dfc63d95a745835af3fbdaca",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s1_configs_025_050.json",
+      "sha256": "16c60fb7de0db84c521403627477952fd9b57e48883d9ea53cea00d43df169a2",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s1_configs_050_075.json",
+      "sha256": "76e3ad1127f9a37b880c44482aab9bb3995cd8b7c63d31ef8eac999cade0a745",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s1_configs_075_100.json",
+      "sha256": "e66559a502200515a1455b5c8b26ac7c4024842df200fbfcbfe65dadaa6f8d52",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s1_configs_100_125.json",
+      "sha256": "31c7f224dba155be27d3d25d6a90d2be7675c8878d21ff19f6edb1fd569ff693",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s1_configs_125_150.json",
+      "sha256": "9de1edfebc1285d66e75be3a8cfa0d203bb389b60a514fe4b2af5c032ea703d2",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s1_configs_150_175.json",
+      "sha256": "21a08978ca5861e27498a8c2317f90645be09c1b32cf08b4a9dcf0c33bc9193f",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s1_configs_175_200.json",
+      "sha256": "9cecde08cce34c39d346ecee31e5732423ee1d9a1d5f66f75c4bb45f14bef7bb",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s1_configs_200_203.json",
+      "sha256": "6ed51747e57e69ca55e5a81631db7c854da9ae7e9fbc018de3eb9c3a4f69173f",
+      "evaluations": 9
+    },
+    {
+      "panel": "target_color_cast_s2_configs_000_025.json",
+      "sha256": "a483b132dd756e690ea89cfd5f9c22081cf08bfdec8748ff48c07d973ea007c8",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s2_configs_025_050.json",
+      "sha256": "8a7a685e4e9120c608cf39e9b022a1d5df50b9ed6c80ec84dae1c79a44156ca6",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s2_configs_050_075.json",
+      "sha256": "652affa5c9f2554e2f7cf0b715da86fc5afedb713291bba7da1eb496e803aad8",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s2_configs_075_100.json",
+      "sha256": "935e33bbc9739574e147019321a8e7dbe1c98ce480ae2170f6a686d1bfdc9189",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s2_configs_100_125.json",
+      "sha256": "c0f406eed2103dc4f55a27017ab4b32409bd5154717ffd9739c3eedf5d9ed5b2",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s2_configs_125_150.json",
+      "sha256": "d0150cff67a2adcdd4cb246de7608eff80188de3e0126f4b27ed318208210a22",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s2_configs_150_175.json",
+      "sha256": "32e56007a4d6735a865e378854e1ed2e690d10a56de996cd7c07ae735db99db7",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s2_configs_175_200.json",
+      "sha256": "c934c28cb0801ff5032d7207c9a86fc8e0cbf595f1831c292403b724b7e83545",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_color_cast_s2_configs_200_203.json",
+      "sha256": "0fd00d4a094a96c92ea008002246adf4541da1a59fa07ae59f2c2ed076de910c",
+      "evaluations": 9
+    },
+    {
+      "panel": "target_contrast_s1_configs_000_025.json",
+      "sha256": "a5dba4f4c4d36c22b08e9d55762d6d38ca96d04b9ac3b3917a29fd58d40f2ab0",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s1_configs_025_050.json",
+      "sha256": "21f57077b5f0c3f543e5e34ec19aedc25cd38143539e379012705d4a2268f90b",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s1_configs_050_075.json",
+      "sha256": "4842d05a305da469097ffa14cbdfbc81965a97f6ac8ef908284dbde83dcb7f36",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s1_configs_075_100.json",
+      "sha256": "b0bb7a5e354bd8db8cb171063b751f63f74a8d2b446cefac7a8f18c0a9216752",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s1_configs_100_125.json",
+      "sha256": "771a6949ec4b0ded2e57bb1aa44459d43c69118b12d3854fa8975ab66de7cef6",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s1_configs_125_150.json",
+      "sha256": "d79c4ee20aeb239368a0206252f3f29be87ad37fe87a398d4d97b8b940fbf574",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s1_configs_150_175.json",
+      "sha256": "ecac1676f4086fcda52ff4130d2bdbe34ca6aad08e187cc6b817f0165fd7d41d",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s1_configs_175_200.json",
+      "sha256": "c552ee92048cd4058f93abfbbc3fa5f4f683208d1db982481291db1037471b81",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s1_configs_200_203.json",
+      "sha256": "45e22cce7e75825bdcf4cff19603a0c3287b32876d8ffdced5c8f65edb28ef1e",
+      "evaluations": 9
+    },
+    {
+      "panel": "target_contrast_s2_configs_000_025.json",
+      "sha256": "e782dc82337247da901e6bb7a280c2ae6f7833238f92c94b4f51be8dc6ffcab7",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s2_configs_025_050.json",
+      "sha256": "6d2a470d6a50946b9ed6e9612d0d2c87fe8bc529b593298c399520f963d5838d",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s2_configs_050_075.json",
+      "sha256": "dd0b349bbb3b2316806b0909cd490e114e70f9bedb73cc8d860f6e4cfefb5225",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s2_configs_075_100.json",
+      "sha256": "f099188d8f5798768788ce2cea1c6446d974fcac71d69cb657e6db6b262a380d",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s2_configs_100_125.json",
+      "sha256": "2d079f17139a3a0622ab53f71b2bedcc3222f5a5368b55a7b09f09d4c7d5710d",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s2_configs_125_150.json",
+      "sha256": "580327940282c8bed278cb2d77904ec13e21ef21e5ceceaee98898c3a36bdb40",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s2_configs_150_175.json",
+      "sha256": "5994ae61b5b905ed283b7d472292d9d0228c440ea4bcdbc5686e0abe24473171",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s2_configs_175_200.json",
+      "sha256": "bc8c5e6d4cd5f1dbdb214c34437c8d8fcae148a5922c7f7ebe29a6843cb93cd4",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_contrast_s2_configs_200_203.json",
+      "sha256": "e8d454a2e9d416d1505cee7d754288604363c9b821476d9e07c090e4d5494fcd",
+      "evaluations": 9
+    },
+    {
+      "panel": "target_gamma_s1_configs_000_025.json",
+      "sha256": "ad164511e8bc02f50d74c2044c9ee1bb4589a4ac77315322437982df67a67fb8",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s1_configs_025_050.json",
+      "sha256": "e0863a28599c505097b8e6e3ecef8c4f962146be709dfbc09f790f584c6ff0b8",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s1_configs_050_075.json",
+      "sha256": "09b16be641874232363f155d0febcc68af84dbdb69f77e990cea30bb6f574ab0",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s1_configs_075_100.json",
+      "sha256": "0bc6d4abfd9d30c9594418c5e87dcbf1f2072fc40c2b0421455e6255e8057dd2",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s1_configs_100_125.json",
+      "sha256": "cb36a9b9311c6cbb922838a6923715da22552addc73a5a0a1a16859b705d3e73",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s1_configs_125_150.json",
+      "sha256": "6b424f0cc6637747992b18ae60e81a3c323a5cf891998b64d7ae04b613564cf5",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s1_configs_150_175.json",
+      "sha256": "3b51dc87fd29b8e01a1083fd9f2c1b8da08b1e33fa7b85a5aaf6149a9062c098",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s1_configs_175_200.json",
+      "sha256": "1796165a6fbc22173a975f38c88b70a1594ae7427df6d2c67aaf8b00502210cc",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s1_configs_200_203.json",
+      "sha256": "689e0ff15671514df15622ed713de9b3fa879c438765c7a0ef1209235fe41ea2",
+      "evaluations": 9
+    },
+    {
+      "panel": "target_gamma_s2_configs_000_025.json",
+      "sha256": "aec5ad721f6f9291ae180247f6b2c37bd3e383b1637b43e94d2a11d5af5d4bba",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s2_configs_025_050.json",
+      "sha256": "aa1a228bd4fce0d71fe89338353efec52bb037570447ec710c0965e8869e0822",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s2_configs_050_075.json",
+      "sha256": "88c604fe8cfec1f1035de6f4dcf5604a1aae51937a896b2fd9b6ad08cef93a06",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s2_configs_075_100.json",
+      "sha256": "60dea65ed0b1de6b508670b4af53f1f097103b89421fc1a0445d9547f7fcc08c",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s2_configs_100_125.json",
+      "sha256": "74c6ee968ed6dbcefa57c4d2cf32ae90cd3364bcb91ab59026d53f1a3fbd78fd",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s2_configs_125_150.json",
+      "sha256": "3998901699877d0e620080a5d3fb4f751757c663361eaa0944bd2c2538440269",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s2_configs_150_175.json",
+      "sha256": "a17355fbc996de50b8c0c0020dd94114843f2df209b7f2aea27f5725fe087f3a",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s2_configs_175_200.json",
+      "sha256": "c8989bf1cca22963007dff0d36256bd0b1fb07b9d5273572fb483abf294910c8",
+      "evaluations": 75
+    },
+    {
+      "panel": "target_gamma_s2_configs_200_203.json",
+      "sha256": "1bece6a91427c03c981ca4568db0652f0e19c40ebb5f58b9ce67d48dd9a3dedf",
+      "evaluations": 9
+    }
+  ]
+}

@@ -1555,3 +1555,13 @@ R013 accepted; T010 closed. [T011 plan](../research_log/T011_plan.md) freezes th
 ### T011 full random controls frozen before AP
 
 All 200 seeds and **200 unique** random masks are committed with the three anchors. Every draw exactly matches all **35 condition×block candidate counts**. The candidate vector remains byte-identical to T010; no threshold or rank recalibration. [Preparation manifest](../research_log/T011/preparation/manifest.json), [matching counts](../research_log/T011/preparation/matching.json). Preparation code b49405d; matrix SHA2568e9458588ca3a614a32b86fd5c39a58a8618c53ccd7fe17ac190b9940f42deb9. Six selector/preparation/batch/statistic tests passed11.17s. Next: batched official offline smoke and full200-control evaluation. No scientific outcome has been evaluated for these controls yet.
+
+### T011 official smoke and report complete
+
+Run `20260912-194144-taisp-t011-offline-smoke`, source **8dd776d**, exit 0:
+**20 affected tests passed in 3.14s**; 203 configurations / 189 panels / 12,789
+official AP rows in 85.972176s. Report verifies 189 exact T010 candidate/endpoint
+evaluations and 4,263 shared decisions; plotting and all-tie smoke statistics pass.
+This two-image fixture provides no scientific result. All 200 full selectors were
+committed **8dd776d** before AP. Proceeding to frozen 1,000-image CPU evaluation
+with 24 workers and batches of 25; no model/adaptation rerun or candidate change.

@@ -204,3 +204,20 @@ Syncedad06718/R01326ff476;T010closed. LatestpointerlocatesR013appendinmainqueue(
 ## 2026-09-12T19:39:20+08:00 — T011 all 200 matched selectors frozen before AP
 
 Preparationb49405d generated203x7000decisionmatrix with200unique randommasks;all200x35candidate stratumcounts matchexactly. Candidatehash7a02e6d66336ef39fbd4b55c3a5aba564aacee56bd2d7405b62ce9d811a511f6 unchanged. SeedsSHA3706edc0a3408cf87368eddf507324d7b5658fa46f7f495a2a052bcaeb0d0a01;matrixNPZSHA8e9458588ca3a614a32b86fd5c39a58a8618c53ccd7fe17ac190b9940f42deb9. NoAP/predictions/labelsread.6control/preparation/batch/statistic tests passed11.17s. T010evaluator gains optional25-configschedulingonly,defaultbehaviorpreserved;nextbatchedofficialsmoke.
+
+## 2026-09-12T19:43:38+08:00 — T011 full-control smoke running
+
+Run20260912-194144/source8dd776d/release193946 started19:41:54+08;20affectedoffline/regressiontests passed3.14s. FourCPUworkers evaluate203configs in25-configbatches,189panels,2-imagefixtureonly. Fullpre-AP200masks alreadycommitted8dd776d. NoformalT011fullrunyet.
+
+## 2026-09-12T19:53:07+08:00 — T011 offline smoke and report complete
+
+Run 20260912-194144-taisp-t011-offline-smoke finished 19:43:25+08, exit 0.
+20 affected tests passed in 3.14s. All 203 configurations / 189 batched panels /
+12,789 AP rows / 1,827 macro rows completed in 85.972176s with four CPU workers.
+Archive SHA afb4b41579e84bec02d93f43469392a68a5f2ce8f4745cadfd1cc1fe618e90ab verified.
+Report checks all 189 candidate/endpoint group metrics and composition hashes against
+T010, plus 4,263 shared detector-condition decisions. Two-image strata force all
+200 masks equal to the candidate; exact ties, percentile 0 and tail 1 confirmed.
+Scientific criterion remains unassessed on smoke. Standalone plot generated and
+visually checked. Full masks were precommitted 8dd776d; no full T011 AP run yet.
+Next deploy report/evaluator and run the frozen 25,578-row CPU study with 24 workers.
