@@ -24,7 +24,8 @@ mask,clip,regularizer,predictor orlearnedgate. Hybridnorm relation includes eps,
 so not claim strict equality for gradients comparable to eps.
 
 Record step0/1/2 gradient vectors/norms/ratio/scale,phi,saturation,support,time;
-step3 final phi/saturation/loss/time (no update gradient is applied at terminal).
+step3 final phi/saturation/loss/time and both gradients for diagnostics only
+(no update gradient is applied at terminal).
 Fresh shared annotated source/target gradients atphi0 and sameenhancedimages
 evaluated bybothdetectors. Expect4200adaptationrows,1400imagecases,98APevals.
 No_adapt AP shared perimagecase/detector, no fake repeatedbaseline adaptation.
