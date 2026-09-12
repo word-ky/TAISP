@@ -1658,3 +1658,52 @@ Run20260912-212537/source3c82267: **93real-model/regression tests passed in222.6
 The fixed1000-image study is now executing; latest observed290/1000images.
 All reference/model/config checks passed. Final AP/report pending; no interim
 scientific interpretation or parameter change.
+
+## T012 final scientific report — NEEDS_REVIEW
+
+**Completed** run `20260912-212537-taisp-t012-coco1000-half-dose`, source **3c82267** (code/report dddc238),
+release `20260912-212421-taisp-t012-full`, at **22:22:35+08**, exit 0.
+Fresh **93real-model/regression tests passed222.69s**; 1,000images/7,000episodes/
+21newpredictionfiles/126newofficialAP +252exactT009endpoints = **378AP rows**.
+Driver inference/evaluation elapsed **3,162.497668s**. Fixedalpha=.5 throughout.
+
+**R014 joint criterion FAILS.** Half-minus-no-adapt macro AP: **FCOS +0.061752,
+SSD +0.016939**; half-minus-full **−0.008520/−0.015221**. Positive blocks are
+**5/5 FCOS,3/5 SSD**. FCOS exceeds T011 random aggregate median(+0.037841),
+but SSD is below its median(+0.019289). Blocks above random medians are only
+**3/5 FCOS,2/5 SSD**. FCOS percentile97.5%/tail.029851 is a retained positive
+developmental signal; SSD percentile43%/tail.572139 prevents a joint claim.
+
+Clean mean phi3 half **0.019448760** / full **0.036655454** = **0.530583**
+(46.9417% lower), meeting the .65 bound. Yet **993/1000 clean images stillupdate**.
+Clean AP source−0.056870/FCOS+0.022727/SSD−0.022981 satisfies the−.10 tolerance.
+Thus criteria1,4,5 pass; criteria2,3 fail. Continuous half dose is not halfcompute
+(~.331s measured source/support+adapt versus historicalfull~.314s); timing isdescriptive.
+
+Every negative retained: SSDblocks1/3 andsourceblocks1/4 vsno-adapt; FCOSblocks1/4
+andSSDblocks1/3/5 belowrandommedians; sourcecontrast-s1/s2,FCOSgamma-s2 and
+SSDcolor-cast-s2 negative vsno-adapt. All full-reference losses andAP50/AP75 saved.
+
+Full report verifies **7000exactoriginalT009supportsets**, allhalf-updatealgebra/
+identity/empty-support checks, model/config/ID/referenceSHA pins,252reusedendpoints
+and21rawprediction hashes. Independentlocalarithmetic checks **2268pairedmetric
+deltas**, all378AProws/macros/signs/controlcomparisons and7000paireddose rows.
+Plot generated andvisuallychecked. Initialprompttuple/JSONlist comparison failure
+andtransientSSH/GitHub failures are recorded; onlyminimaloperationalrepairs,
+no science/model/prompt/cohortchanges.
+
+[Full report](../research_log/T012_report.md),
+[all AP and contrasts](../research_log/remote_runs/20260912-212537-taisp-t012-coco1000-half-dose/artifacts/study/AP_tables.csv),
+[all safety/dose/random distributions](../research_log/remote_runs/20260912-212537-taisp-t012-coco1000-half-dose/artifacts/study/analysis.json),
+[arithmetic audit](../research_log/remote_runs/20260912-212537-taisp-t012-coco1000-half-dose/artifacts/study/arithmetic_audit.json),
+[exact command](../research_log/T012_full_run_meta.json).
+
+Raw7000samples/21predictions are preserved on A6000 and hashed. Immutable rawarchive
+102,728,966bytes SHA `6ce8db0e5957ee805ce9bd0057a122a410c1f6805ddefe8adfc8fde3e97e20c2`
+is **still downloading**; localverification/GitHubrawarchival follow separately.
+Derivedreportarchive SHA046e543450523a7faa78d19f0ee38ee87d413c353cbcebd66299809e3e3a7522
+is downloaded andverified. [Delivery status](../research_log/T012/raw_archive_delivery.json).
+
+**Per R014 stop scalar gating and alpha/dose sweeps; do not try .25/.75, add a cap,
+or meta-learn this rule.** The tested global dose does notmeetthejointtradeoff.
+Awaitresearchreview; noT013/newcohort/spatialISP/predictor/meta hasstarted.

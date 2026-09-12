@@ -300,3 +300,18 @@ Run20260912-212537: **93real-model/regression tests passed in222.69s**.
 All model/ID/config/reference checks passed and formal inference is active;
 latest observed290/1000images,830.6s inference elapsed. No failure or new task.
 GitHub remainsR014/T012, frozenalpha=.5 unchanged. Final AP/report pending.
+
+## 2026-09-12T22:20:59+08:00 — T012 all1000 inference complete; AP and archival active
+
+All7000half-dose episodes/21predictionfiles written before AP. Final SSD evaluations underway. Immutable102728966byte rawarchive SHA6ce8db0e5957ee805ce9bd0057a122a410c1f6805ddefe8adfc8fde3e97e20c2 prepared; download session75110 active. See T012/raw_archive_delivery.json. No new adaptation execution or parameter changes.
+
+## 2026-09-12T22:28:30+08:00 — T012 final science audited; raw archival continues
+
+Runfinished22:22:35+08,exit0;378AProws/7000episodes/21rawpredictions.
+Reportarchive SHA046e543450523a7faa78d19f0ee38ee87d413c353cbcebd66299809e3e3a7522
+verified locally. Fullreport confirms7000exact supports/algebra/252anchors.
+Independentaudit2268metricdeltas/allmacros/controlcriteria andpaireddose pass;
+plotvisuallychecked. R014FAIL:SSD3positiveblocks;FCOS/SSD3/2abovecontrolmedians;
+SSDaggregatelowerthancontrolmedian. Cleanratio.530583,allcleanAPbounds pass.
+T012_report.md/mailbox NEEDS_REVIEW. Rawdownload75110stillactive,102728966expectedbytes;
+noactiveexperiment. No alpha/dose/gate/newcohort/T013/meta expansion.

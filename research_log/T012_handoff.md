@@ -1,57 +1,34 @@
-# T012 active implementation handoff
+# T012 scientific completion and pending raw archival
 
-R0144afc07a/pointercbbc8d8 closes T011 and authorizes fixed .5 half-dose on T009.
-Read T012_plan.md, T012_references.json, coordination/CHATGPT_TO_CODEX_R014_T012.md.
-Pre-model plan d753456; kernel/runner aeef36b; report+prompt comparison fix dddc238.
-**FORMAL RUN ACTIVE: 20260912-212537-taisp-t012-coco1000-half-dose**.
-Release20260912-212421-taisp-t012-full, source3c82267 (code/report dddc238),
-started21:25:48+08. Full93real-model/regression tests PASSED222.69s;1000image driver
-active (290images observed21:43+08), automaticreport follows. Exactcommand T012_full_run_meta.json. DO NOT DUPLICATE.
-Repairedsmoke20260912-212148 completed21:22:15+08 exit0;9focusedtests2.30s;
-14episodes189AProws7.205856s; report/plot/14support/126endpointchecks passed.
+2026-09-12T22:28:30+08:00: NEEDS_REVIEW; finalscience research_log/T012_report.md.
+Run20260912-212537-taisp-t012-coco1000-half-dose,release20260912-212421-taisp-t012-full,source3c82267,
+code/reportdddc238. Started21:25:48+08;93tests222.69s;driver3162.497668s;
+finished22:22:35+08exit0.7000episodes21predictions378AProws.
+All7000supports/algebra/reset/fallback verifiedremote;252endpointAPs exact.
+Localaudit378AProws2268deltas/allcriteria/7000paireddoserows;figureinspected.
 
-Full baseline90real/regression tests passed222.54s in run20260912-211448-taisp-t012-study-smoke,
-then aborted before adaptation: prompt tuple vs JSON list comparison; content identical.
-Minimal list conversion fixed, test covers real types. Failed run/archive retained.
-Focused10real half/full/reference tests passed63.51s; local5half+full passed5.44s;
-report/ratio/optional reference contrasts4passed10.51s. No scientific parameter change.
+R014FAIL:FCOS+.061752,SSD+.016939vsnoadapt;-.008520/-.015221vsfull.
+Positiveblocks5/3;abovecontrolmedians3/2;SSDaggregatebelowmedian.
+Cleanphi .019448760/.036655454=.530583;993cleanupdates.Allcleanbounds pass.
+Stopdose/scalargating/caps/meta/newcohortforcandidate;awaitresearchreview/noT013.
 
-Core new adapt_half_dose shares private loop with unchanged adapt_clip_radius signature.
-Half diagnostics add dose_coefficient, pre_attenuation_hybrid_norm, applied_half_dose_norm.
-Full baseline path unchanged. run_t009 --config configs/t012.yaml --reference-study <T009>
-only writes half predictions and reuses exact no-adapt/full metrics, verifies pins/IDs/config.
-Fixed seed20260912,K3,lr.1,alpha.5,eps1e-12,source original threshold.5/top20, allpins.
+**PENDING: rawarchive download execsession75110**. Remote shared/t012_raw_receipts.tar.gz
+102728966bytes SHA6ce8db0e5957ee805ce9bd0057a122a410c1f6805ddefe8adfc8fde3e97e20c2.
+Local .autodl/t012_raw_receipts.tar.gz. Checksessioncompletion/size/SHA beforeextract.
+Containsimmutable samples.jsonl,21predictionJSONs,environment/subset; prefixalready
+research_log/remote_runs. Extractfromprojectroot afterSHAcheck. Thenverifyeach
+predictionSHAandrawsamplesSHA against report_receipt.json, recorddeliverycomplete,
+commit/pushallrawfiles(checkfile sizes; sampleslikelybelow100MB, neverloseoriginal).
+Update T012_report.md/archivepending paragraph andmailbox witharchivalcompletion.
+Do notrerunmodels. Derivedreportarchive046e543450523a7faa78d19f0ee38ee87d413c353cbcebd66299809e3e3a7522
+alreadydownloaded/extracted;allscientificresults arelocal/remote.
+Raw samplesSHAedd356414275c1ee828a9fe53bf4ef47f33ef57328ef5993ada44f0532407884.
+Latestreportreceipt includes21predictionhashes. T012/raw_archive_delivery.json tracksstatus.
 
-Remote /home/liujianhua/wjq/TAISP/.venv/bin/python; existingGPUworks despite NVMLwarning.
-Workflow D:/work/claude-autodl/autodl-workflow-clean with project .autodl/config.json.
-Data shared/coco1000_t009. T009full reference runs/20260912-144439-taisp-t009-coco1000/artifacts/study;
-T009smoke reference runs/20260912-143436-taisp-t009-study-smoke/artifacts/study.
-T011full controls runs/20260912-195353-taisp-t011-coco1000-offline/artifacts/study.
-T011smoke local research_log/remote_runs/20260912-194144-taisp-t011-offline-smoke/artifacts/study;
-its report was generated LOCALLY, so do not assume remote analysis.json exists.
-
-New scripts/report_t012.py --study <half> --reference <T009matching> --controls <T011matching>.
-Checks refs/sample hashes, exact originalsupport, all halfalgebra/phi/reset, reusedendpoints;
-produces AP_tables.csv,macro_tables.csv,paired_dose.csv,analysis.json,results.md,report_receipt.
-Smoke report should run locally after fetching (has botholdsmokerefs); fullreport canrunremote
-with abovefullrefs. New standalone scripts/plot_t012.py --study --controls, run locally,
-no remote matplotlib installed. Do not add new environments.
-
-Next monitor activeformalrun train.log and completion/report_receipt. Aftercompletion
-fetch rawrun archive with SHA verification; locally plot and independently verify
-AP arithmetic/criterion and paired diagnostics. Write T012_report.md plus
-CODEX_TO_CHATGPT NEEDS_REVIEW, commit/push and mirror results to remoteproject.
-Expected7000halfrows21predictionJSONs126newAP+252reused=378AProws across6groups.
-Retain rawprediction/sample receipts and all negatives. Half/full phi and update normratios
-are paired only atpositivefulldenominator; bothzero/nonzero-over-zero counted explicitly.
-Allsteps0..3 diagnostics; ratiosofappliedsteps0..2. Halftrajectory neednotstay .5.
-R014 fivecriteria allrequired; smoke unassessed. No alpha sweep/gate/newcohort/T013/meta.
-
-Smoke archive SHA79ec8eb7f9a2a0f4c0f532a6bfcf0edab5e9eb4e0a5139e432f2383f8180e2ae.
-Full report source dddc238 already committed; no further scientific changes.
-
-Operationalhistory: initialdeploySSHmkdir timedout255; retry succeeded. Firstsmoke
-90tests passed thenpincomparetuple/listfailure (fixed beforeadaptation). Fullversion
-push timedout443 thenretry succeeded; fullrelease extracted butcurrentlink timedout,
-verified fourfilehashes thencompletedlink/state only. All failures retained inprogress.
-Latestfulltests confirmed93passed222.69s at21:43 heartbeat; fullscience pending.
+Remote /home/liujianhua/wjq/TAISP; workflowD:/work/claude-autodl/autodl-workflow-clean
+withproject.autodl/config.json. Rawrun /runs/20260912-212537-taisp-t012-coco1000-half-dose/artifacts/study.
+Standaloneplot scripts/plot_t012.py --study <T012study> --controls <T011study>,
+localmatplotlibonly. Audit python research_log/T012/audit_report.py.
+T009reference run20260912-144439-taisp-t009-coco1000;T011controls20260912-195353-taisp-t011-coco1000-offline.
+Historicalfailuresretainedinprogress/report. NoactiveGPUexperiment.
+Readcoordination/LATEST.md onnextheartbeat;newinstructions mayappearwhilearchivecontinues.
