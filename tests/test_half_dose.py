@@ -70,9 +70,11 @@ def test_reference_inputs_match_accepted_t009():
     reference = {k: k for k in ('clip_model', 'clip_revision', 'clip_sha256', 'detector_sha256',
         'positive_prompts', 'negative_prompts', 'target', 'ssd', 'annotation_sha256', 'subset_sha256', 'cases')}
     reference.update(config=cfg.copy(), evaluated_image_ids=[1, 2])
+    reference.update(positive_prompts=['positive'], negative_prompts=['negative'])
     cfg['variants'] = ['det_pseudo_half_dose']
-    verify_half_reference(cfg, reference, reference, [1, 2])
-    changed = dict(reference, clip_sha256='different')
+    current = dict(reference, positive_prompts=('positive',), negative_prompts=('negative',))
+    verify_half_reference(cfg, current, reference, [1, 2])
+    changed = dict(current, clip_sha256='different')
     with pytest.raises(AssertionError, match='clip_sha256'):
         verify_half_reference(cfg, changed, reference, [1, 2])
 

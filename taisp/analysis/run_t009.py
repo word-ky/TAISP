@@ -35,7 +35,8 @@ def verify_half_reference(config, meta, reference, ids):
     for key in ('clip_model', 'clip_revision', 'clip_sha256', 'detector_sha256',
                 'positive_prompts', 'negative_prompts', 'target', 'ssd',
                 'annotation_sha256', 'subset_sha256', 'cases'):
-        assert meta[key] == reference[key], key
+        value = list(meta[key]) if key in ('positive_prompts', 'negative_prompts') else meta[key]
+        assert value == reference[key], key
 
 
 def run(config, data_root, output, limit=None, reference_study=None):

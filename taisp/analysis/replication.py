@@ -13,14 +13,14 @@ def replication_ap(coco, ids, predictions, blocks):
     return out
 
 
-def ap_contrasts(metrics, cases, detectors, variants):
+def ap_contrasts(metrics, cases, detectors, variants, references=('no_adapt', 'global_generic', 'det_pseudo')):
     """AP values stay in [0,1]; report deltas/macro in AP points."""
     out = {}
     for detector in detectors:
         out[detector] = {}
         for variant in variants:
             by_reference = {}
-            for reference in ('no_adapt', 'global_generic', 'det_pseudo'):
+            for reference in references:
                 deltas = {case: {metric: 100*(metrics[f'{detector}_{case}_{variant}'][metric]-
                                     metrics[f'{detector}_{case}_{reference}'][metric])
                                  for metric in ('AP', 'AP50', 'AP75')}

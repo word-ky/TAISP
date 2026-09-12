@@ -260,3 +260,11 @@ Synced cbbc8d8/4afc07a. T011 closed, scalar branch stopped. T012_plan.md freezes
 ## 2026-09-12T21:12:17+08:00 — T012 update algebra green
 
 Minimal fixed half-dose wrapper shares the accepted loop; full public signature unchanged. Local5 passed2 real-model skipped in5.44s: exact half algebra at each current phi, freeze/reset/empty/support and deployable isolation. T009 driver gains reference-only endpoint reuse for half variant and requested pin/config/ID comparison. Reference hashes frozen in T012_references.json. Next remote reference/real-model tests before two-image smoke.
+
+## 2026-09-12T21:14:14+08:00 — T012 remote integration checks
+
+Initial deployment20260912-211222 timed out at first SSH mkdir (255), before upload or run. Normal retry deployed release20260912-211252-taisp-t012-tests successfully; sourceaeef36b. Real-model opt-in half/full/reference/replication tests now running from exact release; no scientific or environment changes.
+
+## 2026-09-12T21:20:37+08:00 — T012 real regression passed; smoke pin comparison repaired
+
+Remote sourceaeef36b focused10real/reference tests passed63.51s. Full90real-model/regression tests passed222.54s in run20260912-211448. Then smoke aborted before any adaptation with AssertionError positive_prompts: current constants are tuples, saved JSON arrays are lists, text identical. Minimal repair converts only the two prompt tuples to lists for comparison; focused fixture now covers this observed serialization difference. No prompt/model/scientific changes. Failed run exit1 at21:18:48 retained; archiveSHA121840736022f314dd0467d3d7225d1d1c278e4e874df26c72f7e372bc9b0c16 verified. Report criterion/ratio/reference helper4 tests passed10.51s. Next repaired smoke and report validation.
