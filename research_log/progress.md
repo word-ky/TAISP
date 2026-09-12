@@ -159,3 +159,7 @@ Formalrun20260912-144439 exit0at16:41:56;1000images21000rows84predictions504APev
 ## 2026-09-12T17:57:25+08:00 — R012 accepted; T010 started
 
 Synced1a4df0c/R0126012f1d. T009closed; T010offline7scalarneed-to-adaptgrid authorized. FrozenT009receipts only. Predeclared T010_plan.md beforegatedAP. Baseline localmacro1passed8.54s;remoteAP/block2passed1.29s after correcting initialwrongcwd(filemissingexit4). No model/deploymentchanges. T009rawdownload9887stillactive.
+
+## 2026-09-12T18:02:37+08:00 — T010 scalar preparation green
+
+Pureextract/rank/composition/timing/preparationtests7passed11.83s. Two-imagefrozenreceiptpreparationsmoke14rows44configs exit0 without labels/predictions. Scoresandrulesplanfd88938 alreadycommitted beforeAP. Deployingscorepreparationforfull7000rawrows;all42gatesretained.

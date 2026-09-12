@@ -1,0 +1,58 @@
+{
+  "source_revision": "fd88938+score-preparation",
+  "input_study_revision": "be5c797",
+  "image_ids": [
+    776,
+    1353
+  ],
+  "cases": [
+    "gamma_s1",
+    "gamma_s2",
+    "contrast_s1",
+    "contrast_s2",
+    "color_cast_s1",
+    "color_cast_s2",
+    "clean_s0"
+  ],
+  "groups": {
+    "aggregate": [
+      776,
+      1353
+    ],
+    "block_1": [
+      1353
+    ],
+    "block_2": [
+      776
+    ]
+  },
+  "full_cohort": false,
+  "rows": 14,
+  "scores": [
+    "clip_norm",
+    "det_norm",
+    "log_norm_ratio",
+    "gradient_cosine",
+    "pseudo_loss",
+    "support_count",
+    "support_confidence"
+  ],
+  "unavailable_scores": [],
+  "zero_vector_cosines_coded_zero": 0,
+  "configurations": 44,
+  "pooled_rank_reference": "all saved hybrid image-condition rows",
+  "ties": "ascending image ID then original hybrid row ordinal",
+  "inputs_sha256": {
+    "samples.jsonl": "94a703a6ac8e9d027708b0ab4b5b9a2efb5db11431e84a0dac15dc30f4268851",
+    "subset.json": "155bb6f047d374342623f48488bcb2b33601a4ecbd372976a433c1b289546e49",
+    "environment.json": "bc707105471c3503d6984d14a0e62bd6677b30f48d439706f928e3ef93c1130f"
+  },
+  "outputs_sha256": {
+    "scores.jsonl": "611bf69183c058817a9e89a2a1f9c0cb41f0ed0d814a24e6182d8e8b7e1b6a5b",
+    "decisions.npz": "59ccfc75ced6e12e983de029285f4934ff581ef1498911c7217b96e677caeb39",
+    "grid.json": "d1adae386e491800cdaf704c4abac8c6b6849fb8065a6e31542411d6bf4e82e4",
+    "score_distributions.json": "938e57b355399cfd1d1b5f66ecb8e33c26d32168002c1817dcc3cd9fa394f190",
+    "safety.json": "8d4df0b876f598b059ce082db1f6df57cbacb8a74a3841ae9118f78580ccd1e6"
+  },
+  "labels_or_prediction_files_read": false
+}
