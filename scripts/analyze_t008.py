@@ -64,8 +64,10 @@ def summarize(rows):
             'undefined_observations': int((~valid).sum())}
     for name in FAILURES:
         flags = np.array([r['failure'][name] for r in rows])
-        out['failures'][name] = {'loss_good_proxy_bad': stats.estimate(flags & good),
-                                 'given_loss_good': stats.estimate(flags, good)}
+        valid = np.array([r['delta']['best_iou_mean'] is not None for r in rows]) if name in ('geometry', 'class_score') else np.ones(len(rows), dtype=bool)
+        out['failures'][name] = {'loss_good_proxy_bad': stats.estimate(flags & good, valid),
+                                 'given_loss_good': stats.estimate(flags, good & valid),
+                                 'undefined_observations': int((~valid).sum())}
     return out
 
 
@@ -170,7 +172,8 @@ def main():
                 stats = ClusterStats(rr)
                 joint[f'{contrast}/K{k}'][g] = {'observations': len(rr),
                     **{f: stats.estimate([r[f] for r in rr]) for f in ('source_only_fail', 'target_only_fail', 'both_any_fail')},
-                    'same_category': {f: stats.estimate([r['both_fail'][f] for r in rr]) for f in FAILURES}}
+                    'same_category': {f: stats.estimate([r['both_fail'][f] for r in rr],
+                        [r['delta']['best_iou_mean'] is not None for r in rr] if f in ('geometry', 'class_score') else None) for f in FAILURES}}
     (out/'analysis.json').write_text(json.dumps({'contrasts': summary, 'cross_detector': joint}, indent=2, allow_nan=False)+'\n', encoding='utf-8')
     (out/'receipt.json').write_text(json.dumps({'source_revision': env['source_revision'], 't007_raw_sha256': hashlib.sha256((study/'samples.jsonl').read_bytes()).hexdigest(),
         'full_annotation_sha256': env['annotation_sha256'], 'prediction_hashes': input_hashes,
