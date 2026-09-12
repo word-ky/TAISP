@@ -66,3 +66,7 @@
 [2026-09-12T07:44:02+08:00] T005 final paired/clean/support analysis complete,NEEDS_REVIEW. Mean cosine0.04532/0.11757/0.12431/0.12271; allnative paired cosine CIs positive. Raw benefit46.83/50.25/50.00/50.17%, differencesCIcross0; norm-matched improvements3.17-3.75pp positive exploratoryCIs. APmixed; cleanAPpositive but largerphi; stable/JS incremental benefit unsupported. Full rawauditpassed5600rows63metrics,fallbackzero. Raw50817303bytesSHA87554e26f6452d2063e92a50fb27d4cb9dcd5931dfd62942f48b6fac47e7bd87. Report/figure complete, no active run or meta-training.
 
 [2026-09-12T07:45:09+08:00] Final report remote mirror tar initially refused writing through research_log/remote_runs symlink (invalid cross-device link). Re-extracted generated artifacts to actual runs target via archive path transform; succeeded. Raw SHA matches local. No experiment/data change.
+
+[2026-09-12T09:06:34+08:00] Synced R00806c1541 andLATEST864b0ee: T005accepted/closed,T006started directly. Predeclared FCOS independenttarget, sameISP/sourcepseudo/CLIPbaseline, severity/clean controls. Baseline51test running; initialFCOSdownload failed PythonSSLCA, retrywithsystem CA bundle withoutdisablingverification. No modelreplacement or fullstudy.
+
+[2026-09-12T09:08:37+08:00] T006 FCOS weights obtained usingSSL_CERT_FILE systemCA; oneSSHtimeout retried. Exacthash/defaults inT006_fcos_pin.json; installedFCOSforwardinspected. Baseline51passed84.76s. Addedanalysis-onlyloader/oracle andstrict source-with/withouttarget CPUisolation test; GPUfreeze/gradient checks pending.

@@ -901,3 +901,11 @@ CLIP revision `3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268`, SHA256 `a63082132ba4f9
 - [Raw5,600 observations](../research_log/remote_runs/20260912-064836-taisp-t005-coco200/artifacts/study/samples.jsonl), [all AP metrics](../research_log/remote_runs/20260912-064836-taisp-t005-coco200/artifacts/study/metrics.json), [receipt audit](../research_log/remote_runs/20260912-064836-taisp-t005-coco200/artifacts/study/receipt_audit.json), [environment/prompts](../research_log/remote_runs/20260912-064836-taisp-t005-coco200/artifacts/study/environment.json), [completion](../research_log/remote_runs/20260912-064836-taisp-t005-coco200/artifacts/study/completion.json). All63 prediction files, raw logs, configs and run metadata retained.
 - Raw JSONL fits the GitHub single-file limit and remains uncompressed. Remote original artifacts: `/home/liujianhua/wjq/TAISP/runs/20260912-064836-taisp-t005-coco200/artifacts/study`. Reports and recovery mirrored under remote project research_log.
 - T005 NEEDS_REVIEW; await research acceptance/next explicit task. Heartbeat may execute new tasks directly, but must not rerun completed T005 or infer authorization for meta-learning from this modest signal.
+
+## T006 IN_PROGRESS — R008 acknowledged
+
+T005accepted/closed. Following coordination/LATEST.md continuation.
+Pre-run contract research_log/T006_plan.md. FCOSCOCO_V1target being pinned;
+initialPython downloadcertificatefailure retried withsystemCA, noTLSbypass or
+targetreplacement. Target remains analysis/evaluation-only; existing source
+det_pseudo deployment unchanged. No fullstudy or meta-training started.
