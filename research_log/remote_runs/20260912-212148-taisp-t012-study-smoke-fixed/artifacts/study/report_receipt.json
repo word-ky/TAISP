@@ -1,0 +1,50 @@
+{
+  "images": 2,
+  "samples": 14,
+  "AP_rows": 189,
+  "reused_endpoint_evaluations": 126,
+  "original_supports_exactly_equal_T009": 14,
+  "all_half_algebra_and_identity_checks_passed": true,
+  "references_verified": {
+    "environment.json": "bc707105471c3503d6984d14a0e62bd6677b30f48d439706f928e3ef93c1130f",
+    "metrics.json": "d4366a398d51debb5ccffc4dcb168eeb4322b86e98428c2f9b796fcf105da243",
+    "subset.json": "155bb6f047d374342623f48488bcb2b33601a4ecbd372976a433c1b289546e49",
+    "samples.jsonl": "94a703a6ac8e9d027708b0ab4b5b9a2efb5db11431e84a0dac15dc30f4268851"
+  },
+  "T011_verified": {
+    "analysis.json": "815b93c0a1d61be0d243db29c699324151a6ed5fb1b3ffd83317ce0241ff9049",
+    "completion.json": "3437cd1923601ee970db249e35ca9d59d4963691709e3b6a80b9ad9c0f477081"
+  },
+  "prediction_hashes": {
+    "source_clean_s0_det_pseudo_half_dose.json": "d184549f5c0fa6a7012c03efbc845b85834a2d86c92cec1d8ae75f25c49f18df",
+    "source_color_cast_s1_det_pseudo_half_dose.json": "250e5c37f83825f98db34cdcb50f3d6aabb76cbc64962cb03907e6e80776d96f",
+    "source_color_cast_s2_det_pseudo_half_dose.json": "fe9c63a01cef96d6c14e6a8839fbbc96e5233c138b7d7345116f882fe9b60f05",
+    "source_contrast_s1_det_pseudo_half_dose.json": "94277cb3bcc233185ec3d8accf8a24e56d9d348583c44ade8ab11c7df4bfe247",
+    "source_contrast_s2_det_pseudo_half_dose.json": "8e39c082a1b13d1d7cfd2d30d3f9579e01b4b520e5f8258a11dffe8413fa1307",
+    "source_gamma_s1_det_pseudo_half_dose.json": "fdc68a8547a681d85fdf109ec78ad6302bfa8c6d000b79943f5b9f6328847d27",
+    "source_gamma_s2_det_pseudo_half_dose.json": "82e922d0db8e59dc596ed0f9bd0c4a6870cc15a18e2da4d51acd0303859fe689",
+    "ssd_clean_s0_det_pseudo_half_dose.json": "f0ebdbe4621bf45275cfaed76d3067925a776eb1ef5b8dcb31dcbd19d54d11bb",
+    "ssd_color_cast_s1_det_pseudo_half_dose.json": "053a73acf4456fc239e91bae275db69485f9414356299ae2030626068e50b488",
+    "ssd_color_cast_s2_det_pseudo_half_dose.json": "eff4b93579fe84a27d95de1fca1a3fe4306613fbeaf6fc1f810339ac6c6c7cdc",
+    "ssd_contrast_s1_det_pseudo_half_dose.json": "22a3ce9cdf8963a4b10aa786c4409b4f1bb92c7e717ed07862b608f393c35033",
+    "ssd_contrast_s2_det_pseudo_half_dose.json": "1d7b6f064704cf4d94af3c5a1111183a6f3f6b732f11e8a8d7861afc6ef6295b",
+    "ssd_gamma_s1_det_pseudo_half_dose.json": "ef1b3a26e84239be358382767de0c70c4ddc430dd68434b65fc0d822804787ea",
+    "ssd_gamma_s2_det_pseudo_half_dose.json": "df36dd86a5a9983b2bb3234c473d80c9bd4cca0870c1cd190997b1c200a1ff75",
+    "target_clean_s0_det_pseudo_half_dose.json": "8abf6a7155cbf94b01ef1e1e990302c4eae85dab7ec6e5ec5b961bdfac627b70",
+    "target_color_cast_s1_det_pseudo_half_dose.json": "362e3fe50c9acc209ff29f72e896dea0638bdb85d117ef2781f37c6d6ed5d85a",
+    "target_color_cast_s2_det_pseudo_half_dose.json": "5e2d276905156838265b79cb5d7fad034ee85d96f38afdb2c1fff8409c57bcb4",
+    "target_contrast_s1_det_pseudo_half_dose.json": "363a03adfdf4f4d66a0a1347e347396ae15d379213277c39bee34d042f0fdf68",
+    "target_contrast_s2_det_pseudo_half_dose.json": "1a052434a3fd41be4f88c4fc89c8bc7b723febcb025b327783f40fb5dbaa046c",
+    "target_gamma_s1_det_pseudo_half_dose.json": "5e6d3e78752bd4013e269e8c5107ea4234c9af37e22a27843eeb84448e743f88",
+    "target_gamma_s2_det_pseudo_half_dose.json": "9cdc1da833ecbc33b5a3889386bcb4fc7ccb8a13e6d36add8bf5765e2b885c50"
+  },
+  "hashes": {
+    "samples.jsonl": "686ed17ac6915a22ad1e118b55c0835b1d04ca80f600337f7ecc009392ec0c10",
+    "metrics.json": "68ef85293bca5840cbf35986405f059aa754dcc83ef6695a651ac9f754f1a865",
+    "analysis.json": "fc39c9c0f958e2b00a08e44d0832a84239c6916a113fad4fa6de68588aabd31c",
+    "AP_tables.csv": "73976400c51df14ec645ca289fcaf73493652c6ea97422c667975d12b180bc6d",
+    "macro_tables.csv": "71c4418c2ec2e805c4116d55b220831bdcb3a9af75263c6e26b5f35007146897",
+    "paired_dose.csv": "878d3e971c15fb10029bd1cfabfdaf3261892d5b68db7255f2690986d8319754",
+    "results.md": "79112abe588ede390aa342387705add7825369c6e37db24735483d8da20a3b8c"
+  }
+}

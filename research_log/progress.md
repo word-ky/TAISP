@@ -268,3 +268,15 @@ Initial deployment20260912-211222 timed out at first SSH mkdir (255), before upl
 ## 2026-09-12T21:20:37+08:00 — T012 real regression passed; smoke pin comparison repaired
 
 Remote sourceaeef36b focused10real/reference tests passed63.51s. Full90real-model/regression tests passed222.54s in run20260912-211448. Then smoke aborted before any adaptation with AssertionError positive_prompts: current constants are tuples, saved JSON arrays are lists, text identical. Minimal repair converts only the two prompt tuples to lists for comparison; focused fixture now covers this observed serialization difference. No prompt/model/scientific changes. Failed run exit1 at21:18:48 retained; archiveSHA121840736022f314dd0467d3d7225d1d1c278e4e874df26c72f7e372bc9b0c16 verified. Report criterion/ratio/reference helper4 tests passed10.51s. Next repaired smoke and report validation.
+
+## 2026-09-12T21:24:10+08:00 — T012 repaired smoke/report green
+
+Run20260912-212148-taisp-t012-study-smoke-fixed, sourcedddc238, release212045,
+finished21:22:15+08 exit0. Focused9passed1real-opt-in-skipped in2.30s (earlier90
+fullreal/regression passed222.54s). Twoimages14episodes,21predictionfiles,189AP
+rows including126 exactreusedendpoints; runtime7.205856s. All14originalsupports
+exactlymatchT009; allstepalgebra/reset/fallbackchecks andreferenceSHA checks pass.
+Reportcriteria null onsmoke; plotgeneratedandvisuallychecked. ArchiveSHA
+79ec8eb7f9a2a0f4c0f532a6bfcf0edab5e9eb4e0a5139e432f2383f8180e2ae verified.
+Next formal1000imagefixedalpha study, latestfull93tests beforeexperiment.
+No alpha/candidate/cohort/model/prompt change.

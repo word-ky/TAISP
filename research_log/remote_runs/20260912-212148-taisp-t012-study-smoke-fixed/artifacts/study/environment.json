@@ -1,0 +1,231 @@
+{
+  "config": {
+    "seed": 20260912,
+    "count": 1000,
+    "device": "cuda:0",
+    "threads": 1,
+    "semantic_lr": 0.1,
+    "semantic_steps": 3,
+    "support_threshold": 0.5,
+    "support_topk": 20,
+    "radius_eps": 1e-12,
+    "variants": [
+      "det_pseudo_half_dose"
+    ]
+  },
+  "source_revision": "dddc238",
+  "python": "3.12.12",
+  "packages": {
+    "torch": "2.4.0",
+    "torchvision": "0.19.0+cu121",
+    "transformers": "4.44.2",
+    "pycocotools": "2.0.10",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0"
+  },
+  "cuda": "12.1",
+  "gpu": "NVIDIA RTX A6000",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "clip_sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+  "detector_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "positive_prompts": [
+    "a clear natural photograph",
+    "a well-lit photograph with natural colors",
+    "a sharp and clear photograph with good visibility"
+  ],
+  "negative_prompts": [
+    "a dark underexposed photograph",
+    "a poorly lit photograph with low visibility",
+    "a low contrast washed-out photograph",
+    "a hazy photograph with faded details",
+    "a photograph with an unnatural color cast",
+    "a photograph with distorted and unbalanced colors"
+  ],
+  "interpretation": "T009 development cohort reused; T011 controls frozen; no independent validation",
+  "evaluated_image_ids": [
+    776,
+    1353
+  ],
+  "smoke_limit": 2,
+  "cases": [
+    "gamma_s1",
+    "gamma_s2",
+    "contrast_s1",
+    "contrast_s2",
+    "color_cast_s1",
+    "color_cast_s2",
+    "clean_s0"
+  ],
+  "detectors": [
+    "source",
+    "target",
+    "ssd"
+  ],
+  "target": {
+    "torchvision": "0.19.0+cu121",
+    "weight_enum": "FCOS_ResNet50_FPN_Weights.COCO_V1",
+    "url": "https://download.pytorch.org/models/fcos_resnet50_fpn_coco-99b0c9b7.pth",
+    "sha256": "99b0c9b7cfb1527d782db86b91d207f00547c792fb4103fc612b651d0a07b9e7",
+    "score_thresh": 0.2,
+    "nms_thresh": 0.6,
+    "detections_per_img": 100,
+    "topk_candidates": 1000,
+    "center_sampling_radius": 1.5,
+    "transform": {
+      "min_size": [
+        800
+      ],
+      "max_size": 1333,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "size_divisible": 32
+    }
+  },
+  "ssd": {
+    "torchvision": "0.19.0+cu121",
+    "weight_enum": "SSD300_VGG16_Weights.COCO_V1",
+    "url": "https://download.pytorch.org/models/ssd300_vgg16_coco-b556d3b4.pth",
+    "sha256": "b556d3b43ab6c3f63d81bfb8835fe8756ac22da664357da100dccf96b6a6b42d",
+    "categories": [
+      "__background__",
+      "person",
+      "bicycle",
+      "car",
+      "motorcycle",
+      "airplane",
+      "bus",
+      "train",
+      "truck",
+      "boat",
+      "traffic light",
+      "fire hydrant",
+      "N/A",
+      "stop sign",
+      "parking meter",
+      "bench",
+      "bird",
+      "cat",
+      "dog",
+      "horse",
+      "sheep",
+      "cow",
+      "elephant",
+      "bear",
+      "zebra",
+      "giraffe",
+      "N/A",
+      "backpack",
+      "umbrella",
+      "N/A",
+      "N/A",
+      "handbag",
+      "tie",
+      "suitcase",
+      "frisbee",
+      "skis",
+      "snowboard",
+      "sports ball",
+      "kite",
+      "baseball bat",
+      "baseball glove",
+      "skateboard",
+      "surfboard",
+      "tennis racket",
+      "bottle",
+      "N/A",
+      "wine glass",
+      "cup",
+      "fork",
+      "knife",
+      "spoon",
+      "bowl",
+      "banana",
+      "apple",
+      "sandwich",
+      "orange",
+      "broccoli",
+      "carrot",
+      "hot dog",
+      "pizza",
+      "donut",
+      "cake",
+      "chair",
+      "couch",
+      "potted plant",
+      "bed",
+      "N/A",
+      "dining table",
+      "N/A",
+      "N/A",
+      "toilet",
+      "N/A",
+      "tv",
+      "laptop",
+      "mouse",
+      "remote",
+      "keyboard",
+      "cell phone",
+      "microwave",
+      "oven",
+      "toaster",
+      "sink",
+      "refrigerator",
+      "N/A",
+      "book",
+      "clock",
+      "vase",
+      "scissors",
+      "teddy bear",
+      "hair drier",
+      "toothbrush"
+    ],
+    "class_mapping": "COCO category id equals prediction label; 91 slots including background/N/A",
+    "score_thresh": 0.01,
+    "nms_thresh": 0.45,
+    "detections_per_img": 200,
+    "topk_candidates": 400,
+    "transform": {
+      "min_size": [
+        300
+      ],
+      "max_size": 300,
+      "fixed_size": [
+        300,
+        300
+      ],
+      "size_divisible": 1,
+      "image_mean": [
+        0.48235,
+        0.45882,
+        0.40784
+      ],
+      "image_std": [
+        0.00392156862745098,
+        0.00392156862745098,
+        0.00392156862745098
+      ]
+    }
+  },
+  "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "subset_sha256": "155bb6f047d374342623f48488bcb2b33601a4ecbd372976a433c1b289546e49",
+  "support": "unchanged source original detached score>=0.5 top20",
+  "endpoint": "K3; no K selection, target gradients or oracle-loss study",
+  "adaptation": "T012 fixed .5 attenuation of accepted current-phi hybrid; all other settings unchanged",
+  "timing": "synchronized adaptation; native includes source original support setup; target evaluation excluded; all4models resident",
+  "reference_study": "/home/liujianhua/wjq/TAISP/runs/20260912-143436-taisp-t009-study-smoke/artifacts/study",
+  "reference_hashes": {
+    "environment.json": "bc707105471c3503d6984d14a0e62bd6677b30f48d439706f928e3ef93c1130f",
+    "metrics.json": "d4366a398d51debb5ccffc4dcb168eeb4322b86e98428c2f9b796fcf105da243",
+    "subset.json": "155bb6f047d374342623f48488bcb2b33601a4ecbd372976a433c1b289546e49",
+    "samples.jsonl": "94a703a6ac8e9d027708b0ab4b5b9a2efb5db11431e84a0dac15dc30f4268851"
+  }
+}

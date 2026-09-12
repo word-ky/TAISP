@@ -1627,3 +1627,17 @@ no T012, new GPU experiment, new objective, spatial ISP or predictor has started
 ## T012 — IN_PROGRESS: fixed half-dose protocol
 
 R014 accepted; T011 closed. [T012 plan](../research_log/T012_plan.md) fixes alpha=.5 at every accepted hybrid step, unchanged T009 cohort/models/support/ISP/lr/K, reused endpoint and T011 controls, diagnostics and exact five-part rule. Fresh remote baseline4 passed/1 opt-in skipped in1.56s. Reusing the accepted update loop and T009 driver; algebra/isolation tests precede real smoke. No alpha search, new cohort or gate.
+
+### T012 real-model regression and repaired smoke complete
+
+Core/reference10real tests passed63.51s; full **90real-model/regression tests
+passed222.54s**. First smoke then stopped before adaptation on tuple/list prompt
+comparison (identical text); minimal serialization comparison fix and test added.
+Failure run20260912-211448 retained, no scientific changes.
+
+Repaired run **20260912-212148-taisp-t012-study-smoke-fixed**, source **dddc238**:
+9focused tests passed2.30s (one previously passed real test opt-in skipped), two
+images/14episodes/21newpredictionfiles/189official AP rows completed7.205856s, exit0.
+All14originalsupports exactly matchT009,126reusedendpointAPs exact, allhalf-step
+algebra/reference hashes verified. Report/plot validated; criteria unassessed onsmoke.
+Proceeding to exactly the authorized1000image/5block fixedalpha=.5 study.
