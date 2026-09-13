@@ -1,0 +1,9 @@
+{
+  "sha256_LF": {
+    "taisp/analysis/roi_geometry.py": "947f791750508d14562f9eb4b4f301eee08e84645289fabd6f1445249d1dc526",
+    "tests/test_roi_geometry.py": "09dd2e9f1a9b945533c8dcc74a9aa1773a4dc0d04ed5dab19b15f9a761b3dc37"
+  },
+  "tests": "24passed3warnings6.04s including real FasterRCNN CUDA synthetic-image smoke; no new COCO smoke IDs",
+  "command": "TAISP_T025_REAL_SMOKE=1 python -m pytest tests/test_roi_geometry.py tests/test_roi_equivariance.py tests/test_common_jacobian.py tests/test_spatial_dose.py -q",
+  "release": "20260914-051951-taisp-t025a-candidate"
+}

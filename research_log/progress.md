@@ -780,3 +780,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 04:28+08 T024-A finished: both32episode CUDA stagesexit0;21focused/full204pass10skip. Feature/logit fixedgatesFAIL, corruptionDelta8/16 and7/16;nointegrity/nearzero blocker. Report+raw+tables complete. StopNEEDS_REVIEW perR039; noAP/runtime.
 
 2026-09-14 05:18+08 R040 read, T025-A fresh24selected seed20260925 excluding6452.18baseline tests pass3.91s. Candidate exposurepair1.2/reciprocal SmoothL1beta1 classconditioned rawbboxdelta frozen; GT-free candidates before reference.
+
+2026-09-14 05:21+08 T025-A candidate implementation passes24focused/regional tests incl realGPU predictorlayout/freeze smoke6.04s. Protected/inherited code unchanged. Ready48GT-free candidates after commit.
