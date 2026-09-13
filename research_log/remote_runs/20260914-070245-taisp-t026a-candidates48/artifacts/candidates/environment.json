@@ -1,0 +1,21 @@
+{
+  "source_revision": "051d7ee",
+  "python": "3.12.12",
+  "torch": "2.4.0+cu121",
+  "gpu": "NVIDIA RTX A6000",
+  "cuda": "12.1",
+  "seed": 20260913,
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "weight_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "device": "cuda:0",
+  "optimizer_steps": 0,
+  "AP_calls": 0,
+  "candidate": "class_conditional_clean_roi_memory",
+  "memory_commit": "2befc7f",
+  "memory_lock_sha256": "a10d055c84e1779771ebf67c761d9e9b43bf4c22f6c26af91a3b3256317e6a7b",
+  "memory_sha256": "e51e7179f7a08e0652439b0708a1e0e275828097024558e9ed3b9b7370c9f12f",
+  "image_manifest_sha256": "32590f42e1d62b841b9e719dce89286d7ed046e66dfb333f93166e4bc472d36b",
+  "source_assumption": "offline source-GT-derived frozen memory; audit path label-free"
+}
