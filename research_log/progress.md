@@ -553,3 +553,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T14:29:07.7066497+08:00 T017-A code5e0724b pushed afteroneunchangednetworkretry; run20260913-142838 launchedonce onA6000GPU,release142715. Fullregression thenfixed32componentaudit. No outcomes interpreted yet.
 
 2026-09-13T14:33:19.5123074+08:00 T017-A GPUrun142838exit1 after144passed10skipped6.66s. Firstrecordindex0image182164clean failedindependentcomponentclosure(globalmax6.986881543e-5) ANDsavedA1relativeL2(sum9.819567371e-4,total2.633194794e-4 >1e-5). Scalarforwardlossesexactlymatchold; source/ISPisolationandallpartitionspass.1record0pass31notrun; noattributionortriage.6rawfiles24467bytesfetched/hashed,reportcompleted; BLOCKEDforresearchreview, noadjustment/rerun.
+
+2026-09-13T15:25:40.9512825+08:00 R029/53f8662 synchronized; performancefirstT018-A authorized. Baseline6passed2skipped1.40s. Prepared100newsourceimages from13762eligible,0overlap36prior-source/5000val; JPEGhashmanifestSHAa01dfb1d40a6daceddccc1b7aa7f3f2e74871fd4a511d8d6c9acf8e50c2c111f. Candidateplan/currentT009settingsandcohortready forpre-outcomecommit. No model/performancecalls yet.
