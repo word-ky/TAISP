@@ -1,0 +1,68 @@
+[autodl] run_id=20260914-020134-taisp-t022a2-repeatability
+[autodl] started_at=2026-09-14T02:01:39+08:00
+...............                                                          [100%]
+15 passed in 5.17s
+.............s.......s.........s....s..s..................s............. [ 36%]
+......s................................................................. [ 72%]
+..s.................s..................................s                 [100%]
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_demo.py::test_cuda_demo_matches_cpu
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+    warnings.warn("Can't initialize NVML")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+190 passed, 10 skipped, 4 warnings in 10.32s
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+{"enabled": true, "warn_only": false, "evaluations": 0, "status": "raised", "error_type": "RuntimeError", "error": "Deterministic behavior was enabled with either `torch.use_deterministic_algorithms(True)` or `at::Context::setDeterministicAlgorithms(true)`, but this operation is not deterministic because it uses CuBLAS and you have CUDA >= 10.2. To enable deterministic behavior in this case, you must set an environment variable before running your PyTorch application: CUBLAS_WORKSPACE_CONFIG=:4096:8 or CUBLAS_WORKSPACE_CONFIG=:16:8. For more information, go to https://docs.nvidia.com/cuda/cublas/index.html#results-reproducibility", "traceback": "Traceback (most recent call last):\n  File \"/home/liujianhua/wjq/TAISP/releases/20260914-020108-taisp-t022a2-audit/taisp/analysis/spatial_repeatability.py\", line 115, in audit\n    c=cotangents(image,isp(image,image.new_zeros(8)).detach(),loss,clip)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/liujianhua/wjq/TAISP/releases/20260914-020108-taisp-t022a2-audit/taisp/analysis/spatial_repeatability.py\", line 66, in cotangents\n    lp,lc=pseudo(image,probe),clip(image,probe)\n                              ^^^^^^^^^^^^^^^^^\n  File \"/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/liujianhua/wjq/TAISP/releases/20260914-020108-taisp-t022a2-audit/taisp/losses/semantic.py\", line 33, in forward\n    reference = self.encoder(original)\n                ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/liujianhua/wjq/TAISP/releases/20260914-020108-taisp-t022a2-audit/taisp/losses/clip_semantic.py\", line 65, in forward\n    return F.normalize(self.model.get_image_features(pixel_values=self.preprocess(image)), dim=-1)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/models/clip/modeling_clip.py\", line 1245, in get_image_features\n    image_features = self.visual_projection(pooled_output)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/nn/modules/linear.py\", line 117, in forward\n    return F.linear(input, self.weight, self.bias)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Deterministic behavior was enabled with either `torch.use_deterministic_algorithms(True)` or `at::Context::setDeterministicAlgorithms(true)`, but this operation is not deterministic because it uses CuBLAS and you have CUDA >= 10.2. To enable deterministic behavior in this case, you must set an environment variable before running your PyTorch application: CUBLAS_WORKSPACE_CONFIG=:4096:8 or CUBLAS_WORKSPACE_CONFIG=:16:8. For more information, go to https://docs.nvidia.com/cuda/cublas/index.html#results-reproducibility\n", "isolation": {"source_hash_unchanged": true, "clip_hash_unchanged": true, "all_eval": true, "all_frozen_grad_none": true, "isp_identity_grad_none": true}}
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+fixed cotangents state 0 complete
+fixed cotangents state 1 complete
+fixed cotangents state 2 complete
+fixed cotangents state 3 complete
+Fixed-input JVP and dose exact; starting25runtime repeats
+runtime current repeat0 complete
+runtime current repeat1 complete
+runtime current repeat2 complete
+runtime current repeat3 complete
+runtime current repeat4 complete
+runtime real repeat0 complete
+runtime real repeat1 complete
+runtime real repeat2 complete
+runtime real repeat3 complete
+runtime real repeat4 complete
+runtime empty repeat0 complete
+runtime empty repeat1 complete
+runtime empty repeat2 complete
+runtime empty repeat3 complete
+runtime empty repeat4 complete
+runtime full repeat0 complete
+runtime full repeat1 complete
+runtime full repeat2 complete
+runtime full repeat3 complete
+runtime full repeat4 complete
+runtime empty_support repeat0 complete
+runtime empty_support repeat1 complete
+runtime empty_support repeat2 complete
+runtime empty_support repeat3 complete
+runtime empty_support repeat4 complete
+[autodl] finished_at=2026-09-14T02:03:38+08:00
+[autodl] exit_code=0

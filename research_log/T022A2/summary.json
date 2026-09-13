@@ -1,0 +1,1144 @@
+{
+  "completion": {
+    "status": "empty_support_control_blocker",
+    "evaluations": 0
+  },
+  "fixed_cotangents": {
+    "0": {
+      "pseudo_loss": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "clip_loss": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00011299550533294678,
+        "max_relative_l2": 0.00036637539427896023,
+        "minimum_cosine": 0.9999999329012477
+      },
+      "cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.310129538859476e-08,
+        "minimum_cosine": 0.9999999999999996
+      }
+    },
+    "1": {
+      "pseudo_loss": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "clip_loss": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 4.470348358154297e-08,
+        "max_relative_l2": 8.77412289255014e-08,
+        "minimum_cosine": 0.9999999999999962
+      },
+      "cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.4306669580930543e-08,
+        "minimum_cosine": 0.9999999999999996
+      }
+    },
+    "2": {
+      "pseudo_loss": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "clip_loss": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 4.470348358154297e-08,
+        "max_relative_l2": 9.033908537988832e-08,
+        "minimum_cosine": 0.9999999999999959
+      },
+      "cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.0860707516531858e-08,
+        "minimum_cosine": 0.9999999999999997
+      }
+    },
+    "3": {
+      "pseudo_loss": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "clip_loss": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 1.9548460841178894e-05,
+        "max_relative_l2": 2.529928698622498e-05,
+        "minimum_cosine": 0.9999999996836368
+      },
+      "cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.391854435178659e-08,
+        "minimum_cosine": 0.9999999999999994
+      }
+    }
+  },
+  "regional_jvp": {
+    "0/real": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      }
+    },
+    "0/empty": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999999
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      }
+    },
+    "0/full": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999999
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      }
+    },
+    "1/real": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999999
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999996
+      }
+    },
+    "1/empty": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999998
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999997
+      }
+    },
+    "1/full": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0000000000000002
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      }
+    },
+    "2/real": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0000000000000002
+      }
+    },
+    "2/empty": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999999
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0000000000000002
+      }
+    },
+    "2/full": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999997
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0000000000000002
+      }
+    },
+    "3/real": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999999
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999999
+      }
+    },
+    "3/empty": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 0.9999999999999999
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      }
+    },
+    "3/full": {
+      "pseudo": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "clip": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      }
+    }
+  },
+  "dose": {
+    "delta": {
+      "pair_count": 190,
+      "exact_pairs": 190,
+      "max_absolute": 0.0,
+      "max_relative_l2": 0.0,
+      "minimum_cosine": 0.9999999999999999
+    },
+    "c": {
+      "pair_count": 190,
+      "exact_pairs": 190,
+      "max_absolute": 0.0,
+      "max_relative_l2": 0.0,
+      "minimum_cosine": 1.0
+    },
+    "multipliers": {
+      "pair_count": 190,
+      "exact_pairs": 190,
+      "max_absolute": 0.0,
+      "max_relative_l2": 0.0,
+      "minimum_cosine": 0.9999999999999998
+    },
+    "u": {
+      "pair_count": 190,
+      "exact_pairs": 190,
+      "max_absolute": 0.0,
+      "max_relative_l2": 0.0,
+      "minimum_cosine": 1.0000000000000002
+    },
+    "v": {
+      "pair_count": 190,
+      "exact_pairs": 190,
+      "max_absolute": 0.0,
+      "max_relative_l2": 0.0,
+      "minimum_cosine": 1.0000000000000002
+    }
+  },
+  "runtime": {
+    "current": {
+      "final_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00024040043354034424,
+        "max_relative_l2": 0.012355453399219184,
+        "minimum_cosine": 0.9999237175660517
+      },
+      "final_image": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0001627802848815918,
+        "max_relative_l2": 0.0001657855687052763,
+        "minimum_cosine": 0.9999999863562867
+      },
+      "s0_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00011301040649414062,
+        "max_relative_l2": 0.00036637437926931304,
+        "minimum_cosine": 0.9999999329008147
+      },
+      "s0_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.4636840295916978e-08,
+        "minimum_cosine": 0.9999999999999996
+      },
+      "s0_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00011055171489715576,
+        "max_relative_l2": 0.0004042810600348063,
+        "minimum_cosine": 0.9999999394258813
+      },
+      "s0_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 2.2351741790771484e-08,
+        "max_relative_l2": 2.9902381324398107e-07,
+        "minimum_cosine": 0.9999999999999677
+      },
+      "s0_state": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s1_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.016529038548469543,
+        "max_relative_l2": 0.026342968805161814,
+        "minimum_cosine": 0.9996559414981505
+      },
+      "s1_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 6.514985579997301e-05,
+        "max_relative_l2": 0.004062776711942969,
+        "minimum_cosine": 0.9999917828010014
+      },
+      "s1_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00613616406917572,
+        "max_relative_l2": 0.021483754801476938,
+        "minimum_cosine": 0.9998253616758911
+      },
+      "s1_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 2.9861927032470703e-05,
+        "max_relative_l2": 0.00041713535948243114,
+        "minimum_cosine": 0.9999999264518709
+      },
+      "s1_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 1.8635764718055725e-06,
+        "max_relative_l2": 0.00034804441532504534,
+        "minimum_cosine": 0.999999939432587
+      },
+      "s2_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.02637714147567749,
+        "max_relative_l2": 0.049706873834579716,
+        "minimum_cosine": 0.9987677627867348
+      },
+      "s2_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00036788685247302055,
+        "max_relative_l2": 0.027855643467762748,
+        "minimum_cosine": 0.9996187038801548
+      },
+      "s2_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.005644798278808594,
+        "max_relative_l2": 0.02812031026042682,
+        "minimum_cosine": 0.9998378347638593
+      },
+      "s2_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00019000470638275146,
+        "max_relative_l2": 0.0030959375504633867,
+        "minimum_cosine": 0.9999966309879581
+      },
+      "s2_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00013343896716833115,
+        "max_relative_l2": 0.009753237001083142,
+        "minimum_cosine": 0.9999528008594749
+      },
+      "s3_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.022419698536396027,
+        "max_relative_l2": 0.06052008112269938,
+        "minimum_cosine": 0.9981756033484287
+      },
+      "s3_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0007259941194206476,
+        "max_relative_l2": 0.042128196014402694,
+        "minimum_cosine": 0.9991290374806427
+      },
+      "s3_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.009624883532524109,
+        "max_relative_l2": 0.028555792241135577,
+        "minimum_cosine": 0.9997782832879297
+      },
+      "s3_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00033621490001678467,
+        "max_relative_l2": 0.004235419608951146,
+        "minimum_cosine": 0.999995856290677
+      },
+      "s3_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00024040043354034424,
+        "max_relative_l2": 0.012355453399219184,
+        "minimum_cosine": 0.9999237175660517
+      }
+    },
+    "real": {
+      "final_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00013431767001748085,
+        "max_relative_l2": 0.0047374688685756835,
+        "minimum_cosine": 0.9999888709325488
+      },
+      "final_image": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.351968765258789e-05,
+        "max_relative_l2": 8.134356112317766e-05,
+        "minimum_cosine": 0.999999997728005
+      },
+      "s0_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00011296570301055908,
+        "max_relative_l2": 0.00036637723253694487,
+        "minimum_cosine": 0.9999999329005296
+      },
+      "s0_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.212379556229049e-08,
+        "minimum_cosine": 0.9999999999999996
+      },
+      "s0_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00011050701141357422,
+        "max_relative_l2": 0.000404149076672185,
+        "minimum_cosine": 0.9999999393909893
+      },
+      "s0_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 1,
+        "max_absolute": 7.450580596923828e-09,
+        "max_relative_l2": 1.0441140176239366e-07,
+        "minimum_cosine": 0.9999999999999962
+      },
+      "s0_state": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s1_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0072387829422950745,
+        "max_relative_l2": 0.019494857468033255,
+        "minimum_cosine": 0.9998108521778776
+      },
+      "s1_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0001262756995856762,
+        "max_relative_l2": 0.005178191121613543,
+        "minimum_cosine": 0.9999866076079683
+      },
+      "s1_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.005137622356414795,
+        "max_relative_l2": 0.021586893568012022,
+        "minimum_cosine": 0.9998097348442214
+      },
+      "s1_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 4.4345855712890625e-05,
+        "max_relative_l2": 0.0005788923352268008,
+        "minimum_cosine": 0.9999998821218807
+      },
+      "s1_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 2.7944333851337433e-06,
+        "max_relative_l2": 0.00034816345169862584,
+        "minimum_cosine": 0.9999999393911131
+      },
+      "s2_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.02404630556702614,
+        "max_relative_l2": 0.05822749037290575,
+        "minimum_cosine": 0.9983062242076974
+      },
+      "s2_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00048462930135428905,
+        "max_relative_l2": 0.036400474349476956,
+        "minimum_cosine": 0.9993373336708598
+      },
+      "s2_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.007257282733917236,
+        "max_relative_l2": 0.026412809056537118,
+        "minimum_cosine": 0.9998266531376635
+      },
+      "s2_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0002512829378247261,
+        "max_relative_l2": 0.003766306729609186,
+        "minimum_cosine": 0.9999930129391774
+      },
+      "s2_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00018934160470962524,
+        "max_relative_l2": 0.010007281760417786,
+        "minimum_cosine": 0.9999506189440698
+      },
+      "s3_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.020003993064165115,
+        "max_relative_l2": 0.05464976913230925,
+        "minimum_cosine": 0.9985250373467468
+      },
+      "s3_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0002557364059612155,
+        "max_relative_l2": 0.025265996615209244,
+        "minimum_cosine": 0.9996831522064037
+      },
+      "s3_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.007075846195220947,
+        "max_relative_l2": 0.02958770871274211,
+        "minimum_cosine": 0.9997564185571066
+      },
+      "s3_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00025397539138793945,
+        "max_relative_l2": 0.0030713235583999738,
+        "minimum_cosine": 0.9999976201903487
+      },
+      "s3_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00013431767001748085,
+        "max_relative_l2": 0.0047374688685756835,
+        "minimum_cosine": 0.9999888709325488
+      }
+    },
+    "empty": {
+      "final_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00023931264877319336,
+        "max_relative_l2": 0.009461529301259961,
+        "minimum_cosine": 0.9999556148204658
+      },
+      "final_image": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00013709068298339844,
+        "max_relative_l2": 0.00022258328453081793,
+        "minimum_cosine": 0.9999999800688723
+      },
+      "s0_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00011299550533294678,
+        "max_relative_l2": 0.0003663757292606887,
+        "minimum_cosine": 0.9999999329011304
+      },
+      "s0_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.4727824917384405e-08,
+        "minimum_cosine": 0.9999999999999996
+      },
+      "s0_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00011040270328521729,
+        "max_relative_l2": 0.0004038910543090315,
+        "minimum_cosine": 0.9999999394765827
+      },
+      "s0_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 1,
+        "max_absolute": 3.725290298461914e-09,
+        "max_relative_l2": 5.4176413449098626e-08,
+        "minimum_cosine": 0.9999999999999983
+      },
+      "s0_state": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s1_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.010397806763648987,
+        "max_relative_l2": 0.02534900073090729,
+        "minimum_cosine": 0.999684877222492
+      },
+      "s1_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00012536486610770226,
+        "max_relative_l2": 0.005149667329863602,
+        "minimum_cosine": 0.9999867532047215
+      },
+      "s1_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.009625330567359924,
+        "max_relative_l2": 0.03617347945608878,
+        "minimum_cosine": 0.999525874367967
+      },
+      "s1_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 1,
+        "max_absolute": 4.2907893657684326e-05,
+        "max_relative_l2": 0.0005435608008735543,
+        "minimum_cosine": 0.9999999376270775
+      },
+      "s1_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 2.791639417409897e-06,
+        "max_relative_l2": 0.00034788344732847705,
+        "minimum_cosine": 0.999999939488553
+      },
+      "s2_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.022387150675058365,
+        "max_relative_l2": 0.06344864438727273,
+        "minimum_cosine": 0.9980141204541406
+      },
+      "s2_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0006810689810663462,
+        "max_relative_l2": 0.04043403578886696,
+        "minimum_cosine": 0.9991826339248571
+      },
+      "s2_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.010042771697044373,
+        "max_relative_l2": 0.03065621741664823,
+        "minimum_cosine": 0.9996934642112002
+      },
+      "s2_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0002099471166729927,
+        "max_relative_l2": 0.003325671924754729,
+        "minimum_cosine": 0.9999944744856453
+      },
+      "s2_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0002956697717308998,
+        "max_relative_l2": 0.016117320206075696,
+        "minimum_cosine": 0.9998705545614782
+      },
+      "s3_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.021775640547275543,
+        "max_relative_l2": 0.05959239608449744,
+        "minimum_cosine": 0.9982234095789545
+      },
+      "s3_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0004183852579444647,
+        "max_relative_l2": 0.039109213755509846,
+        "minimum_cosine": 0.999235259366771
+      },
+      "s3_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00939536839723587,
+        "max_relative_l2": 0.02820760772960169,
+        "minimum_cosine": 0.9996025956711665
+      },
+      "s3_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00041116029024124146,
+        "max_relative_l2": 0.004876884321647466,
+        "minimum_cosine": 0.9999970627193882
+      },
+      "s3_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00023931264877319336,
+        "max_relative_l2": 0.009461529301259961,
+        "minimum_cosine": 0.9999556148204658
+      }
+    },
+    "full": {
+      "final_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.978841990232468e-05,
+        "max_relative_l2": 0.0035886523324663625,
+        "minimum_cosine": 0.9999946685090518
+      },
+      "final_image": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 7.683038711547852e-05,
+        "max_relative_l2": 6.680222093251424e-05,
+        "minimum_cosine": 0.9999999985212861
+      },
+      "s0_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00011298060417175293,
+        "max_relative_l2": 0.00036637471114096186,
+        "minimum_cosine": 0.9999999329009669
+      },
+      "s0_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.101942363305632e-08,
+        "minimum_cosine": 0.9999999999999996
+      },
+      "s0_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00011032819747924805,
+        "max_relative_l2": 0.0004037087409364321,
+        "minimum_cosine": 0.99999993953409
+      },
+      "s0_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 1,
+        "max_absolute": 3.725290298461914e-09,
+        "max_relative_l2": 6.227763189736408e-08,
+        "minimum_cosine": 0.9999999999999986
+      },
+      "s0_state": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s1_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.010389253497123718,
+        "max_relative_l2": 0.025270099683981487,
+        "minimum_cosine": 0.9996848771334523
+      },
+      "s1_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0001253499649465084,
+        "max_relative_l2": 0.005151513632591039,
+        "minimum_cosine": 0.9999867436776507
+      },
+      "s1_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.009589716792106628,
+        "max_relative_l2": 0.03617079996174242,
+        "minimum_cosine": 0.9995293049919964
+      },
+      "s1_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 4.270672798156738e-05,
+        "max_relative_l2": 0.0005477361092024685,
+        "minimum_cosine": 0.999999933757089
+      },
+      "s1_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 2.7902424335479736e-06,
+        "max_relative_l2": 0.00034773671214395965,
+        "minimum_cosine": 0.9999999395395877
+      },
+      "s2_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.023841172456741333,
+        "max_relative_l2": 0.06232507665002995,
+        "minimum_cosine": 0.9980588217112631
+      },
+      "s2_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0006838913541287184,
+        "max_relative_l2": 0.04036067139632975,
+        "minimum_cosine": 0.9991856252545814
+      },
+      "s2_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0126333087682724,
+        "max_relative_l2": 0.040174531367624826,
+        "minimum_cosine": 0.9995139343575626
+      },
+      "s2_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00022242683917284012,
+        "max_relative_l2": 0.0034301133597759085,
+        "minimum_cosine": 0.9999941223562853
+      },
+      "s2_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0002929419279098511,
+        "max_relative_l2": 0.01605915129512,
+        "minimum_cosine": 0.9998714920540958
+      },
+      "s3_cp": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.026305463165044785,
+        "max_relative_l2": 0.05279516461757476,
+        "minimum_cosine": 0.9986053714712068
+      },
+      "s3_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.0003068743972107768,
+        "max_relative_l2": 0.027836586069956936,
+        "minimum_cosine": 0.9996129422189816
+      },
+      "s3_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00836855173110962,
+        "max_relative_l2": 0.02481644631914338,
+        "minimum_cosine": 0.9997713550028945
+      },
+      "s3_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 0.00021473318338394165,
+        "max_relative_l2": 0.0029213456795810604,
+        "minimum_cosine": 0.9999988182258657
+      },
+      "s3_state": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.978841990232468e-05,
+        "max_relative_l2": 0.0035886523324663625,
+        "minimum_cosine": 0.9999946685090518
+      }
+    },
+    "empty_support": {
+      "final_state": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "final_image": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0000000000000002
+      },
+      "s0_cp": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s0_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.2356084846454906e-08,
+        "minimum_cosine": 0.9999999999999996
+      },
+      "s0_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s0_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 7.450580596923828e-09,
+        "max_relative_l2": 8.984141829906297e-08,
+        "minimum_cosine": 0.9999999999999979
+      },
+      "s0_state": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s1_cp": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s1_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.464909413373317e-08,
+        "minimum_cosine": 0.9999999999999996
+      },
+      "s1_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s1_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 3.725290298461914e-09,
+        "max_relative_l2": 4.802225772456904e-08,
+        "minimum_cosine": 0.999999999999999
+      },
+      "s1_state": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s2_cp": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s2_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 1.1641532182693481e-09,
+        "max_relative_l2": 2.293849340473354e-08,
+        "minimum_cosine": 0.9999999999999997
+      },
+      "s2_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s2_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 7.450580596923828e-09,
+        "max_relative_l2": 1.0441140228362465e-07,
+        "minimum_cosine": 0.9999999999999962
+      },
+      "s2_state": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s3_cp": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s3_cc": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 9.313225746154785e-10,
+        "max_relative_l2": 2.1420586779939802e-08,
+        "minimum_cosine": 0.9999999999999996
+      },
+      "s3_pseudo_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      },
+      "s3_clip_gradient": {
+        "pair_count": 10,
+        "exact_pairs": 0,
+        "max_absolute": 7.450580596923828e-09,
+        "max_relative_l2": 1.0289444913986732e-07,
+        "minimum_cosine": 0.9999999999999967
+      },
+      "s3_state": {
+        "pair_count": 10,
+        "exact_pairs": 10,
+        "max_absolute": 0.0,
+        "max_relative_l2": 0.0,
+        "minimum_cosine": 1.0
+      }
+    }
+  },
+  "empty_support_state_and_image_exact": true,
+  "empty_support_pseudo_cotangents_exact": true,
+  "raw_completion_note": "Raw terminal control check includes CLIP cotangent variability; evaluate state/image reset separately, without changing raw records or tolerances."
+}
