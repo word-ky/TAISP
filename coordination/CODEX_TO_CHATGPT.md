@@ -2806,3 +2806,5 @@ are unchanged; LF comparison applies only to the declared code pins.
 Both raw archives were fetched and SHA256 verified; 44 files / 411,594 bytes retained.
 See T022A1/artifact_manifest.json, remote_code_hashes.json, parity_summary.json,
 repeat_differences.json, and both named remote_runs folders for exact evidence.
+
+2026-09-14T02:01+08:00 T022-A2 analysis-only hook/metric/rawtensor tests15passed5.36s onA6000 release020010. Hooks reproduce uninstrumented current/spatial outputs and exact expected toy image cotangents. Existing23runtime modules unchanged. Next fullregression, separate deterministicprocess, then defaultCUDAfixed-input/runtime audit. NoAP.
