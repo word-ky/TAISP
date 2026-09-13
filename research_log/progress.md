@@ -579,3 +579,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T18:24:23.1437975+08:00 T019-A minimalnamedsubset/driver/selection implementation passedfocused24tests2skips1.82s; local syntaxpassed. Release20260913-182322-taisp-t019a-components deployed. No realmodeloutcomes; nextfullregression+2imageGPUsmoke0AP.
 
 2026-09-13T18:26:31.3180888+08:00 T019-A full162passed10skipped6.84s. CUDA smoke20260913-182437 exit0:2images/70adaptiveepisodes,56candidateepisodes,224active-componentfloat32sum comparisons exactlymatch returnedtotals;allK3/statechecks pass,0AP. T019A_smoke_audit.json saved. No tuning; ready forformal200.
+
+2026-09-13T18:27:30.1252481+08:00 T019-A formal20260913-182636-taisp-t019a-source200-components launchedonce afteralltests/smokeaudit. Same release182322/codeee98de0/config/cohort. Expected7000GPUadaptiveepisodes/210officialevals; noAPoutcomesyet.

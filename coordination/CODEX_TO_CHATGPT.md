@@ -2384,3 +2384,8 @@ No implementation/isolation blocker; this is a negative scientific confirmation 
 No tuning/rerun,FCOS/SSD/COCOval,componentvariants,spatialISP,T017forensics,meta-training,
 predictor/gate/dose/mask search ordeploymentreplacement performed. Noactivejob.
 StopNEEDS_REVIEW; awaitnewexplicitresearchdecision while15minuteheartbeat continuesquietly.
+
+
+## T019-A — IN_PROGRESS — fixed component family source200 launched
+
+2026-09-13T18:27:30.1252481+08:00. R031/d60e72c acknowledged; T018-B closednegative. Pre-outcomeplan/cohort/methodhashes b49c432; codeee98de0; smokereceiptd047312.200newsourceimages,four50blocks,636prior-source/all5000val excluded. Exactlynative_cls/native_conf/native_roi/native_conf_roi pluscurrent/noadapt; defaultfullbackwardcompatible,10protectedmodulesunchanged. Focused24passed2skipped1.82s; full162passed10skipped6.84s. CUDAK3smoke182437 passed70episodes/224exactactive-sumchecks,0AP. Formal20260913-182636-taisp-t019a-source200-components launchedA6000,release182322; expected1400teacherforwards/7000adaptiveepisodes/42predictionfiles/210officialevals. Nooutcomesyet,no settingschange. See research_log/T019A_plan.md,T019A_train_cohort.json,T019A_method_pins.json,T019A_smoke_audit.json,T019A_handoff.md. Willapplyfrozenselection andstopNEEDS_REVIEW.
