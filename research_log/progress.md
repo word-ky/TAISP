@@ -539,3 +539,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T12:35:45.8294123+08:00 T015-A complete exit0:135passed10skipped6.49s. Audit.023246104s CPU,0model/optimizer calls,32originalrecords; allD reconstructions passmax2.22044604925e-16. TaskcapacityYES, pseudo differentialutilityNO18/32overall9/16corrupt; closefixedpseudo-spatialbranch byR026. All7rawfiles154584bytes fetched/hashed; fullreport/tablesready. StopNEEDS_REVIEW; GPUpriority preference retained.
 
 2026-09-13T13:56:11.7788928+08:00 R027/1107946 fetched/fast-forwarded: T015-Aaccepted; T016-A diagonalcalibrationaudit authorized. Verifiedfrozenpair/foldprovenance, pinned4inputs and256deterministicpairpermutations beforefits; baseline13passed1.50s onunchangedT015release. Pre-outcome planwritten.
+
+2026-09-13T14:00:48.3737316+08:00 T016-A analysis-only diagonalfit/heldoutnormmatch/permutationaudit implemented; reusepair_rows andsavedarraysummary helpers. Syntaxpass; focused12passed1.52s onA6000environment. Release20260913-135925 deployed; no actualcalibrationoutcomes yet.
