@@ -595,3 +595,11 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T20:34:18.392571+08:00 T020-A formal203203 started once, A6000 release202732/code0546b05 after all tests/smoke. Rendererf03d904 prepared; initial local AST read hit GBKdecode error, explicitUTF8 fixed, no experiment impact. Durable recovery saved.
 
 2026-09-13T21:24:23.775106+08:00 T020-A complete exit0:200images/1400pairs/fourcrossfits/2800adaptiveepisodes/105APevals. FrozenR032fail:macro-current+.007885103017AP,1/4blocks,3/6conditions; meanheldoutalignment .154443289188 -> .134915686288. Clean/raw/isolation pass. All5600norms/2800episodechecks/1400supports/16remotehashpins pass.76rawfiles57905525bytes fetched/hashverified; reportcomplete. Close fixedglobal linear transport, NEEDS_REVIEW, noactivejob.
+
+2026-09-13T22:15:42.322885+08:00. R033/a5bae26 synchronized. Baseline12passed2skipped1.77s.
+200newimages/four50blocks; excludes1036prior source/debug IDs/all5000val.
+Eligible pool12762; cohortSHA0fdb6a815d380104542c324ba2146944b47232dae22a416fa12d5f72a5d29725.
+Fixed score.5/IoU.6/geometric-confidence greedy/ties-by-original-index/top20aftermatching.
+Keep original box/class/score, existing loss/CLIP/ISP/K3/LR.1 unchanged. Empty=>identity.
+No model outcomes or active job. Next commit plan, implement/test, fullregression,
+2image CUDA smoke0AP, then formal200 on A6000. No thresholds or method expansion.

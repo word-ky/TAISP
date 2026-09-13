@@ -1,0 +1,23 @@
+{
+  "parent_revision": "a5bae26",
+  "protected_modules": {
+    "taisp/losses/detector_native.py": "21471524358faee9f0d5c47a7d6e45911ff22bb9f31316e57d42f4e8ca72c6b2",
+    "taisp/models/detector.py": "df9cae806e102c8c6231131b9e620e6ae5375a908dbff686447364eb932bce7c",
+    "taisp/models/detector_signal.py": "4c5f142e32c055a2e8efc579ccb9c64112faac54e049cc43e161a258a991686d",
+    "taisp/losses/clip_semantic.py": "2dea813207b745cb43f0ecf59cf666c02e1e193ee2f65804ed996a230a97cbb2",
+    "taisp/analysis/oracle.py": "793a9a34e7dbd53cedc699520fbf3e94890e95adfdcbe6ce2c14cad4cb908e35",
+    "taisp/analysis/corruptions.py": "1daf28d3a7f321fecb89f671cc6dab2c206d135cd9763246b7bd7e142b294992",
+    "taisp/isp/__init__.py": "ac39f4892353ce22cf3d2e03d08597cbe65ca62cb6c22dcfda22e78e7bd7b818",
+    "taisp/isp/module.py": "80852cd0a284945740c62b30b54e4723e32dc1d99a555a47d90d4ca9e2532832",
+    "taisp/isp/ops.py": "e0cb6776dfb1f8ab935b49eceb30be1ac7f60b958a22ad0b535aad22016a6e7b",
+    "taisp/analysis/native_pseudo_target.py": "4ac9f9933af100d8104a838bfe1314babd74a30009ead8ab47a67c6b5820598a",
+    "taisp/analysis/native_component_study.py": "6df36e834df335eaa257121607d0bff271fc52d9a6a4f2ac87d04d84ba4027aa",
+    "taisp/tta/trust_radius.py": "b815a37f24fea3c40634eaac393c13a1c255af4a88291b4a0808c5caf30f829c",
+    "taisp/tta/gradient_transport.py": "989591a61b11a696fb5f0c26ea1855e0497a3ea7af964cb7943e7260cf52d97d",
+    "taisp/analysis/gradient_transport.py": "0987bf00efdffa0166fa11c8b96d6673545596a38ef9cf98b26a40ba105bb7c1"
+  },
+  "authorized_extension_baselines": {
+    "taisp/analysis/run_t018a.py": "ad2012cbc7c8c87d0b663fa98c4c67067bad351e00584ce8cd873059b726bd04"
+  },
+  "cohort_sha256": "0fdb6a815d380104542c324ba2146944b47232dae22a416fa12d5f72a5d29725"
+}
