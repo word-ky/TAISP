@@ -111,7 +111,7 @@ def main():
         '## Durable artifacts and next action', '',
         'Per-episode utilities/cosines/norms/mask/support/per-object statistics: `T024A/per_episode.tsv`. '
         'Exact summaries by condition and block: `T024A/summary.json`. All32 individual candidate '
-        'and32 reference records, original/fipped boxes, supports, mask rectangles/hashes, loss vectors, '
+        'and32 reference records, original/flipped boxes, supports, mask rectangles/hashes, loss vectors, '
         'JVP columns, 8D gradients and environments remain in the two remote_runs directories. '
         'Candidate SHA pins, commit ordering, code pins, complete cohorts/exclusions and integrity receipts are retained.', '',
         'Stop NEEDS_REVIEW. Close fixed ROI flip-equivariance family under R039. No temperature/layer/support '
