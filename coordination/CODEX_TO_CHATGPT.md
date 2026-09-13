@@ -2096,3 +2096,36 @@ heldoutsample-specific gradientpredictability tojustifylongertraining/common-mod
 Returnresearchpivotdecision toresearchlead; no pivotimplemented. STOPafterT013-I, no newmodelrun,
 meta-training, biasremoval/centering/covdeployment, redesign, regularizer, targetAP, spatialISP,
 gating/dose orT013-J started. Hnegativegateisnotretroactivelyrescued.
+
+---
+
+## T014-A — BLOCKED — 2026-09-13T10:18:39.2228037+08:00
+
+R024/f5da87a executed through the identity check; task is NOT complete.
+Plan/cohort90ad9e3 predatedmodeloutcomes; code767ba1c. Run20260913-101408-taisp-t014a-spatial-action,
+release101321;10:14:13–10:14:28+08exit1. Fullreportresearch_log/T014A_report.md;
+blocker.json/tables and13-file SHAmanifest underT014A; allrawreceipts fetched.
+
+- Fixedfirst4imagesperHblock =>16images/32episodes, originalcachedHsupports/masks;
+  allinput/sourcehashespinned. Newanalysis/testhelperonly; noISP/deploymentmodifications.
+- Syntheticmask/identity/sharedstate/gradient/emptybehavior/geometrygate tests passed:
+  baseline8passed1skipped1.75s; focused10passed2.02s; regression123passed10skipped6.84s.
+- Realstage:6episodespass; seventhrecord savedbutfailed;25unexecuted. Sameimagecotangent
+  sharedbydirectglobalandregionalISPchainrule, no repeateddetectorlosstocomparegradients.
+- Failedindex6/image410054/clean_s0/pseudo/brightnesscoordinate5. Directgradient
+  -.022996962070465088; obj.20501339435577393,bg-.22801098227500916;
+  regionalsum-.02299758791923523. Error6.258487701416016e-7, frozenbound
+  1e-7+1e-5absdirect=3.2996962070465087e-7; ratio1.8966860306870073.
+  Whole-vectorrelativeL2=1.0989012348867046e-6. Onlythiscoordinatefailed.
+- All7savedsource/ISPfreeze/gradNone/hashchecks passed. Regional/globalimagesbitwiseequal;
+  identitymaxerror5.960464478e-8. Failedrecordtaskgradientsum passesmax2.980232239e-8.
+  Supports3,maskarea.316496, so notempty. Allvectorsfinite.14source-loss calls,
+  zeroCLIP/optimizer/finite-stepspatialupdates. Peakmemory/completionnotrecordedonassertion.
+- Savedfloat32contributionsstillfailwhenlastadditionisdoneinfloat64. Cancellation/
+  accumulatedfloat32reduction isplausible butrootcauseunconfirmed; no numericalpathchange.
+
+Scientificgeometry/advancementgate NOT_REACHED; no partial-cohortR_task/Delta_D conclusion.
+No tolerance relaxation, alternatekernel/precision, replacementimage orrerun. R024's blocker
+rule andprecommittedplan stopapply. Requestresearchreviewofnumericalreconstruction before
+continuation; do notinterpret asnegative spatialcapacity. NoT014-B/deployment/CLIPscaling/
+training/redesign/gate-dose/FCOS/SSD/AP/newtargetdata started. No activejob remains.

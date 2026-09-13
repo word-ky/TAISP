@@ -1,0 +1,171 @@
+{
+  "episode_index": 3,
+  "parent_episode_index": 3,
+  "image_id": 522454,
+  "case": "gamma_s2",
+  "block": 0,
+  "support_count": 3,
+  "mask_shape": [
+    1,
+    1,
+    640,
+    480
+  ],
+  "mask_rectangles": [
+    [
+      298,
+      510,
+      336,
+      556
+    ],
+    [
+      338,
+      509,
+      369,
+      555
+    ],
+    [
+      368,
+      526,
+      380,
+      555
+    ]
+  ],
+  "mask_area_fraction": 0.011370442708333334,
+  "mask_uint8_sha256": "3fe962a2e1d2e7f63fb8aa7c2874b0931aadca22e500b91557931ea9d74a0e18",
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "isolation": {
+    "source_unchanged_frozen_eval_grad_none": true,
+    "source_hash_unchanged": true,
+    "isp_unchanged_grad_none": true
+  },
+  "task": {
+    "loss": 0.21661512553691864,
+    "components": {
+      "loss_classifier": 0.07753409445285797,
+      "loss_box_reg": 0.13338710367679596,
+      "loss_objectness": 0.0016692213248461485,
+      "loss_rpn_box_reg": 0.004024692345410585
+    },
+    "global": [
+      0.03807747736573219,
+      -0.017762750387191772,
+      0.0684327483177185,
+      -0.007379376795142889,
+      0.0192980095744133,
+      0.017307020723819733,
+      -0.019359208643436432,
+      -0.015048235654830933
+    ],
+    "object": [
+      0.017245104536414146,
+      0.03304222226142883,
+      0.06878717243671417,
+      -0.024352727457880974,
+      0.024368109181523323,
+      0.038309741765260696,
+      -0.007157578598707914,
+      -0.02631528489291668
+    ],
+    "background": [
+      0.020832397043704987,
+      -0.05080496519804001,
+      -0.00035443701199255884,
+      0.016973348334431648,
+      -0.005070103332400322,
+      -0.021002724766731262,
+      -0.012201627716422081,
+      0.011267045512795448
+    ],
+    "image_cotangent_norm": 0.42728811502456665,
+    "saturation_at_identity": 5.425347353593679e-06,
+    "checks": {
+      "identity_image": {
+        "passed": true,
+        "max_absolute_error": 5.960464477539063e-08,
+        "relative_l2_error": 8.977293796711108e-08,
+        "max_error_over_bound": 0.08796622561398096,
+        "atol": 2e-07,
+        "rtol": 1e-06
+      },
+      "regional_global_output": {
+        "passed": true,
+        "max_absolute_error": 0.0,
+        "relative_l2_error": 0.0,
+        "max_error_over_bound": 0.0,
+        "atol": 2e-07,
+        "rtol": 1e-06
+      },
+      "regional_gradient_sum": {
+        "passed": true,
+        "max_absolute_error": 2.60770320892334e-08,
+        "relative_l2_error": 3.6005557391548876e-07,
+        "max_error_over_bound": 0.05423960140600081,
+        "atol": 1e-07,
+        "rtol": 1e-05
+      }
+    }
+  },
+  "pseudo": {
+    "loss": 0.005236632190644741,
+    "components": {},
+    "global": [
+      0.0014822696102783084,
+      -0.0011147892801091075,
+      0.002736995229497552,
+      0.0020792095456272364,
+      0.0015322865219786763,
+      0.0015646949177607894,
+      -0.0006216883193701506,
+      -0.0013450204860419035
+    ],
+    "object": [
+      -0.001474425196647644,
+      0.0012584123760461807,
+      0.0006117713637650013,
+      0.0028515320736914873,
+      -0.0015602069906890392,
+      0.004531450569629669,
+      0.00043832568917423487,
+      -0.002530135679990053
+    ],
+    "background": [
+      0.0029566949233412743,
+      -0.0023732036352157593,
+      0.002125224331393838,
+      -0.0007723236340098083,
+      0.0030924954917281866,
+      -0.0029667564667761326,
+      -0.001060014241375029,
+      0.0011851158924400806
+    ],
+    "image_cotangent_norm": 0.03092467598617077,
+    "saturation_at_identity": 5.425347353593679e-06,
+    "checks": {
+      "identity_image": {
+        "passed": true,
+        "max_absolute_error": 5.960464477539063e-08,
+        "relative_l2_error": 8.977293796711108e-08,
+        "max_error_over_bound": 0.08796622561398096,
+        "atol": 2e-07,
+        "rtol": 1e-06
+      },
+      "regional_global_output": {
+        "passed": true,
+        "max_absolute_error": 0.0,
+        "relative_l2_error": 0.0,
+        "max_error_over_bound": 0.0,
+        "atol": 2e-07,
+        "rtol": 1e-06
+      },
+      "regional_gradient_sum": {
+        "passed": true,
+        "max_absolute_error": 1.979060471057892e-09,
+        "relative_l2_error": 6.911039222380771e-07,
+        "max_error_over_bound": 0.01780564994245635,
+        "atol": 1e-07,
+        "rtol": 1e-05
+      }
+    }
+  }
+}

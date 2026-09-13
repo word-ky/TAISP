@@ -1,0 +1,112 @@
+{
+  "status": "BLOCKED",
+  "run": "20260913-101408-taisp-t014a-spatial-action",
+  "source_revision": "767ba1c",
+  "requested_episodes": 32,
+  "saved_records": 7,
+  "fully_passed_records": 6,
+  "failed_record": {
+    "episode_index": 6,
+    "image_id": 410054,
+    "case": "clean_s0",
+    "failed_check": {
+      "passed": false,
+      "max_absolute_error": 6.258487701416016e-07,
+      "relative_l2_error": 1.0989012348867046e-06,
+      "max_error_over_bound": 1.8966860306870073,
+      "atol": 1e-07,
+      "rtol": 1e-05
+    },
+    "pseudo_coordinates": [
+      {
+        "coordinate": 0,
+        "direct": 0.03504931554198265,
+        "object": -0.17996655404567719,
+        "background": 0.2150159478187561,
+        "regional_sum_float64_from_saved": 0.03504939377307892,
+        "absolute_error_float64": 7.82310962677002e-08,
+        "bound": 4.5049315541982655e-07,
+        "ratio": 0.17365657019759725
+      },
+      {
+        "coordinate": 1,
+        "direct": 0.3397405445575714,
+        "object": 0.3647203743457794,
+        "background": -0.024979811161756516,
+        "regional_sum_float64_from_saved": 0.3397405631840229,
+        "absolute_error_float64": 1.862645149230957e-08,
+        "bound": 3.4974054455757142e-06,
+        "ratio": 0.005325791299339456
+      },
+      {
+        "coordinate": 2,
+        "direct": -0.45975035429000854,
+        "object": -0.3255522549152374,
+        "background": -0.13419800996780396,
+        "regional_sum_float64_from_saved": -0.4597502648830414,
+        "absolute_error_float64": 8.940696716308594e-08,
+        "bound": 4.697503542900086e-06,
+        "ratio": 0.01903286848994881
+      },
+      {
+        "coordinate": 3,
+        "direct": 0.08455977588891983,
+        "object": 0.12690876424312592,
+        "background": -0.042348992079496384,
+        "regional_sum_float64_from_saved": 0.08455977216362953,
+        "absolute_error_float64": 3.725290298461914e-09,
+        "bound": 9.455977588891984e-07,
+        "ratio": 0.0039396141366050234
+      },
+      {
+        "coordinate": 4,
+        "direct": -0.0035689575597643852,
+        "object": -0.11813237518072128,
+        "background": 0.11456345021724701,
+        "regional_sum_float64_from_saved": -0.0035689249634742737,
+        "absolute_error_float64": 3.259629011154175e-08,
+        "bound": 1.3568957559764386e-07,
+        "ratio": 0.24022692950413913
+      },
+      {
+        "coordinate": 5,
+        "direct": -0.022996962070465088,
+        "object": 0.20501339435577393,
+        "background": -0.22801098227500916,
+        "regional_sum_float64_from_saved": -0.02299758791923523,
+        "absolute_error_float64": 6.258487701416016e-07,
+        "bound": 3.2996962070465087e-07,
+        "ratio": 1.8966860306870073
+      },
+      {
+        "coordinate": 6,
+        "direct": -0.017546527087688446,
+        "object": 0.07867535948753357,
+        "background": -0.09622187912464142,
+        "regional_sum_float64_from_saved": -0.01754651963710785,
+        "absolute_error_float64": 7.450580596923828e-09,
+        "bound": 2.7546527087688446e-07,
+        "ratio": 0.027047259254157546
+      },
+      {
+        "coordinate": 7,
+        "direct": -0.04170982167124748,
+        "object": -0.03169507533311844,
+        "background": -0.010014750063419342,
+        "regional_sum_float64_from_saved": -0.04170982539653778,
+        "absolute_error_float64": 3.725290298461914e-09,
+        "bound": 5.170982167124749e-07,
+        "ratio": 0.007204221902264476
+      }
+    ]
+  },
+  "unexecuted_episodes": 25,
+  "source_loss_calls_in_saved_records": 14,
+  "all_saved_isolation_passed": true,
+  "scientific_geometry_computed": false,
+  "advancement_gate": "NOT_REACHED",
+  "optimizer_steps": 0,
+  "clip_calls": 0,
+  "reruns": 0,
+  "tolerance_changed": false
+}

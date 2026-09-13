@@ -1,0 +1,24 @@
+{
+  "source_revision": "767ba1c",
+  "python": "3.12.12",
+  "torch": "2.4.0+cu121",
+  "numpy": "1.26.4",
+  "cuda": "12.1",
+  "gpu": "NVIDIA RTX A6000",
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "source_weight_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "parent_sha256": {
+    "supports.json": "bf8f688741fcb4956c7ed40f52cc5f0a63d3030cad3ada968f1457a38c2cf747",
+    "environment.json": "d0635da6c52a1f41a86181ace053c6c6fe1f38f342530b6fd9d806e8ee98cc42",
+    "cohort.json": "99f15bc4329b8431a6718bc1c2ae1ef3fa6221db0869a7cc593ef95bdca2d357"
+  },
+  "seed": 20260913,
+  "eps": 1e-12,
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "cublas_workspace_config": null,
+  "gradient_method": "One source loss/image cotangent per objective; direct global gradient and independent regional ISP VJP at identical output.",
+  "clip_calls": 0,
+  "optimizer_steps": 0,
+  "initial_isolation_passed": true
+}
