@@ -770,3 +770,5 @@ vectors, strata, zero/undefined reporting in research_log/T023A/ and T023A_repor
 R038 also closed T022 iterativetwo-state spatialdose; no withheld200AP or rescue.
 Noactivejob. StopNEEDS_REVIEW; waitnewexplicitresearchdecision before designing
 newregional self-supervised objective or any other experiment.
+
+2026-09-14 +08 T024-A: R039 read;13baseline tests pass3.04s;16fresh selected seed20260924 excluding6436IDs. GPU preference recorded. Candidate/oracle ordering frozen.
