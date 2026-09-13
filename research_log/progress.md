@@ -796,3 +796,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 07:03+08 T026memory1280healthpass/maxnormerror9.547524437714117e-08;locked/pushed2befc7f. Candidateincrement24tests pass3.83s. Predicted-class-only stabletop4,detachedanchor; no auditGT. Candidate GPU48 next.
 
 2026-09-14 07:08+08 T026all48candidate9.698264s complete,anchor tensors/receipts locked/pushedb4c1c04 before reference.26focused/full220pass11skip. Futureexclusion manifest includesall1187memoryimages+24audit,priorunion2687. Reference deployscp timeout recovered via existingworkflow legacySCP retry, release070621 complete; source/candidatecodeunchanged.
+
+2026-09-14 07:12+08 T026-A complete:healthy80x16memory,48candidate+48reference CUDAexit0. FrozenFAIL S26/48,18/24;Delta24/48,12/24;positivemedians but2/4blocks.48integritypass/nozero.26focused/full220pass11skip. Exactsource-memoryfamily closed;report/raw/fullstratastats complete. Futureexclude2687sourceIDs plusval;stopNEEDS_REVIEW.

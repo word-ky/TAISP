@@ -3219,3 +3219,49 @@ without new explicit research task. No parameter rescue performed.
 ## 2026-09-14 T026-A IN_PROGRESS; R041 numeric correction
 R041/T026-A accepted for execution without changing its scope. Its T025review numbers differ from authoritative a268f90 raw/report: S_geom28/48overall,15/24corrupt; Delta23/48,14/24; medianDelta-.019543044761259266overall,+.009389868326732737corrupt;2/4blocks. Both original and R041 concludeFAIL; original data unchanged/no rerun. New memory task independent.
 24fresh auditimages selected; balanced16/class memory feasible among readable cleantrain instances, full exclusions frozen in T026A_plan.json. Source-label-derived offline memory explicitly authorized; candidate audit path stays label-free.
+
+
+## 2026-09-14 T026-A — NEEDS_REVIEW; clean-source ROI memory FAIL
+R041 executed. Plana8610b6; source memorymanifest/codecfcb895; complete
+healthy1280memory locked/pushed2befc7f BEFORE candidatecode051d7ee/outcomes;
+all48candidate records+actualanchors locked/pushedb4c1c04 BEFORE referencefb8de70.
+24fresh auditimages/48episodes,4blocks6images,24clean+8eachgamma2/contrast2/cast2.
+Offline memory explicitly source-GT-derived (not source-free/training-free in
+R041strongestsense);80classes x16 normalized1024Dfeatures from1187cleanimages,
+zeroaudit/prior/valoverlap; no source fitting or model update. Candidate uses
+only frozen detector predictedclass/top4cosine retrieval/detachedmean anchor.
+
+|Frozenmetric|Observed|Required|
+|---|---:|---:|
+|S_mem>0overall|26/48|30/48|
+|S_mem>0corrupt|18/24|15/24|
+|Delta_global>0overall|24/48|30/48|
+|Delta_global>0corrupt|12/24|15/24|
+|MedianDeltaoverall|0.0014527534056069202|>0|
+|MedianDeltacorrupt|0.0014651648237539966|>0|
+|Positiveblockmedians|2/4|3/4|
+|Memoryhealth/integrity|PASS|PASS|
+|Conjunction|FAIL|allconditions|
+
+Noempty/zero/nearzero candidategradients;minimum norm.004442874961598745.
+All48referencechecks pass; maxreverse/JVPrelL2=3.216667555966973e-06,
+partitionerror1.7763568394002505e-15.23protected+2inheritedunchanged;
+26focusedpass3.89s/full220pass11skip10.50s. All modelwork A6000CUDA12.1.
+335distinctmemory entries/45predictedclasses usedoverall,273/40corrupt;
+retrievalcos mean.81916668744101overall/.8159190622589937corrupt. These do not
+replace fulltaskgate. Allcounts/fractions/means/medians/quantiles byoverall,
+clean,corrupt,family,block and anchor diversity are in T026A/summary.json;
+per-episode losses/gradientnorms/cosines/retrieval/masks in per_episode.tsv.
+Report `research_log/T026A_report.md`; full rawmemory/candidate/reference under
+runs20260914-065856-taisp-t026a-memory1280,
+20260914-070245-taisp-t026a-candidates48,
+20260914-070746-taisp-t026a-reference48 (30.942630/9.698264/21.361191s,all exit0).
+MemorySHAe51e7179f7a08e0652439b0708a1e0e275828097024558e9ed3b9b7370c9f12f;
+source manifestccff02e5c5786def9b6fcdfe4d4e98cfa3f23716c1521039852d486919f50766;
+cohortSHA in precommittedplan/candidate lock. Allpin manifests retained.
+Close exact clean-source nearest-memory objective perR041; noAP/Ksteps/T026B,
+source-fitting/runtimechange/parameter or objectiveblend rescue. StopNEEDS_REVIEW.
+Futurefreshcohort MUST additionallyexclude ALL1187memoryimages: use
+`research_log/T026A_source_exclusion_manifest.json` (2687prior+memory+auditIDs),
+not only T026A_train_cohort. T025numeric correction recordedabove/report;
+R041research files and authoritative a268f90 results leftunchanged.
