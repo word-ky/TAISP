@@ -1,59 +1,35 @@
-# T021-A IN_PROGRESS - formal source200 flip-consensus run on A6000
+# T021-A NEEDS_REVIEW - fixed horizontal-flip support filter closed
 
-2026-09-13T22:25:13.164576+08:00. R033/a5bae26; pre-outcome plan0207885; code daa79e5;
-smoke/report-preparation d276fc0. Release20260913-222014-taisp-t021a-consensus.
-Active run: 20260913-222407-taisp-t021a-source200-consensus (launched once).
-Smoke: 20260913-222054-taisp-t021a-runtime-smoke, exit0.
-Baseline12passed2skipped1.77s; increment1 11passed2skipped2.42s;
-focused13passed2skipped2.50s; full175passed10skipped7.52s.
-Smoke28CUDAK3episodes/14consensus episodes/28teachers/0AP; all168retained supports
-preserve original boxes/classes/scores, baseline supports unchanged, all isolation passed.
-No empty smoke supports; unit tests verify empty-consensus identity/no fallback.
+2026-09-13T23:00:03.394627+08:00. R033/a5bae26 completed; plan0207885, code daa79e5, smoke d276fc0.
+Formal20260913-222407-taisp-t021a-source200-consensus,release20260913-222014-taisp-t021a-consensus.
+Smoke20260913-222054-taisp-t021a-runtime-smoke. Formal22:24:12-22:43:09+08 exit0,
+1128.431519s collection/evaluation. No active job.
+200newtrain2017/four50blocks,1036prior-source/debug/all5000valexcluded; cohortSHA
+0fdb6a815d380104542c324ba2146944b47232dae22a416fa12d5f72a5d29725.
+2800teacherforwards/2800adaptiveepisodes/21predictionfiles/105officialCOCOevals.
+Model/gradient/adaptation/IoU onA6000CUDA; smallsorting/report/APaggregationCPU.
 
-200newtrain2017 images/four50blocks; excludes1036prior-source/debug/all5000val.
-CohortSHA0fdb6a815d380104542c324ba2146944b47232dae22a416fa12d5f72a5d29725.
-Original+horizontal flip teachers, score>=.50 each, sameclass IoU>=.60,
-geometric-confidence greedy/index ties/top20 aftermatching; original confidences for
-unchanged current-Ours loss weights. Frozen detector/CLIP/global8D ISP/K3/LR.1 unchanged.
-Formal expects2800teachers/2800adaptiveepisodes/21predictions/105officialCOCOevals.
-All model/gradient/adaptation and IoU work CUDA; tiny sorting/reports/AP aggregation CPU.
-No formal scientific results yet. Do not launch duplicate or alter constants.
-After completion fetch both raw runs, audit/report/push/mirror; stop NEEDS_REVIEW.
-Heartbeat every15minutes; only execute explicit new research tasks after this one.
+Macro AP raw50.3312941972,current50.1513089671,consensus50.1209418221.
+Candidate-current -0.030367145082AP; candidate-raw -0.210352375112AP.
+Only1/4positiveblocks;4/6positiveconditions. Materiality/block/above-rawcriteriafail.
+Clean-current +0.263891538209AP,clean-raw -0.149335803521AP; cleancriterionpasses.
+AP50 +0.044617062912/AP75 +0.022649037945 versuscurrent arediagnostic only.
+No eligible development candidate; close fixed horizontal-flip support filter underR033.
+Current Ours remains authoritative despite below-raw AP on this cohort; no tuning.
 
-## Recovery and final reporting
+Meanretention84.71746%defined,9672retainedsupports across1400episodes. Zero candidate7
+versuscurrent5,allcorrupted;clean0empty and100%updateboth. No cleanselectivity signal.
+Meanoriginaleligible8.750714,currenttop20 7.977143,retained6.908571. Original confidence
+weights/boxes/classes preserved. Extra flip/matchingmean.029433s; teacherinclusive
+current~.332s,candidate~.360-.361s. Full diagnostics/blocks/conditions retained.
+Full175passed10skipped7.52s; focused13passed2skipped2.50s. Smoke28CUDAK3episodes,
+168retainedsupports/0APpassed. Formal2800isolation/1400consensuschecks/9672original
+supports/baselinepreservation/17actualreleasehashpins pass. All modelhashes unchanged.
+66rawfiles59,995,881bytes fetched/SHAverified; archiveSHA
+577dea0d1a264bb9e7bbc1bc16e41d7fa57866e523dd463af575b2c4eca38547.
+ReportT021A_report.md; T021A/complete_tables.md,receipt_audit.json,remote_code_hashes.json,
+artifact_manifest.json; raw runs retained. StopNEEDS_REVIEW for new explicit task.
+No score/IoU/topk/augmentation/fallback sweep,newcohort,FCOS/SSD/val,spatial/meta/predictor/
+gate/dose/native/Q/T017forensics experiments. Continue15minuteheartbeat quietly unchanged.
 
-Use workflow D:/work/claude-autodl/autodl-workflow-clean, AUTODL_CONFIG_PATH=
-D:/work/fightccfa-agin/CVPR2027/TTT-ISP/.autodl/config.json.
-Check autodl-logs.ps1 -RunId 20260913-222407-taisp-t021a-source200-consensus -Lines30.
-Exact command in remote meta.json/run.sh: export TAISP_SOURCE_REVISION=daa79e5;
-/home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.run_t018a
---config configs/t021a.yaml --manifest research_log/T021A_train_cohort.json
---output "$AUTODL_ARTIFACTS_DIR/study". No interpreter inside release; use absolute path.
-
-After exit0 archive both smoke/formal raw directories under remote shared/t021a_raw.tar.gz;
-sha256sum and Copy-FromAutodl to local .autodl; wait for download completion before reads.
-Verify SHA then extract tarfile filter=data into research_log/remote_runs. Keep rawbytes.
-PYTHONUTF8=1; D:/anaconda3/python.exe scripts/report_t021a.py --project . --run
-20260913-222407-taisp-t021a-source200-consensus --smoke 20260913-222054-taisp-t021a-runtime-smoke.
-Stdlib renderer prepared before outcomes and its audit_supports passed real smoke.
-It audits frozen/originalscore support receipts, ranking/eligibility/ties/one-to-one,
-original top20 baseline, K3/identity/isolations, codepins and prints fullAP/support tables.
-No local torch imports (known duplicateOMP). Correct only actual report bugs, no new
-scientific runs. Verify actual remote release code files against14protected+3authorized
-pins and save research_log/T021A/remote_code_hashes.json before claiming release match.
-Report candidate-current/raw AP, all blocks/conditions, cleanAP,AP50/AP75, all support
-retention/zero incidence andphi/update/extra flip/matching overhead. Pre-top20original
-count is retention denominator; geometric mean only affects matching, notlossweights.
-
-FixedR033 gate: macro-current>=+.10AP,3of4positiveblocks,4of6positiveconditions,
-above raw,clean>=current-.10AP,no support/isolation/repro blocker. Retention/AP50/AP75
-are diagnostics only. Fail closes fixedhorizontal-flipfilter; pass developmental only.
-No score/IoU/topk/augmentation/fallback changes,newcohort,FCOS/SSD/val,spatial/metawork.
-
-Append CODEX final report; update state/handoff/progress. Commit/push docs/code and allraw.
-Raw gitadd core.autocrlf=false,safecrlf=false; docstrue/safecrlffalse; userCodex,
-emailcodex@users.noreply.github.com. Mirror complete report/taskfolder/cohort/pins/code/
-state/mailbox/queue/LATEST to remote root via sharedarchive; SHAverify. Make new
-research_log/remote_runs/<run> symlinks to ../../runs/<run>, without deleting old paths.
-Final revision/mirror/report hashes into .autodl/last-heartbeat.json and history.
+Recovery: completed raw runs remain in research_log/remote_runs and remote runs/. Report renderer scripts/report_t021a.py is stdlib-only; use PYTHONUTF8=1 on Windows. Do not rerun the experiment. Final push/mirror/report hashes are recorded in .autodl/last-heartbeat.json.

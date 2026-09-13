@@ -1,0 +1,36 @@
+{
+  "adaptive_episodes": 2800,
+  "consensus_episodes": 1400,
+  "retained_supports_verified": 9672,
+  "all_support_matching_receipt_checks": true,
+  "all_original_scores_boxes_classes_preserved": true,
+  "all_baseline_supports_unchanged": true,
+  "all_episode_isolation": true,
+  "empty_candidate_episodes": 7,
+  "empty_current_episodes": 5,
+  "code_hash_checks": {
+    "taisp/losses/detector_native.py": true,
+    "taisp/models/detector.py": true,
+    "taisp/models/detector_signal.py": true,
+    "taisp/losses/clip_semantic.py": true,
+    "taisp/analysis/oracle.py": true,
+    "taisp/analysis/corruptions.py": true,
+    "taisp/isp/__init__.py": true,
+    "taisp/isp/module.py": true,
+    "taisp/isp/ops.py": true,
+    "taisp/analysis/native_pseudo_target.py": true,
+    "taisp/analysis/native_component_study.py": true,
+    "taisp/tta/trust_radius.py": true,
+    "taisp/tta/gradient_transport.py": true,
+    "taisp/analysis/gradient_transport.py": true,
+    "taisp/models/flip_consensus.py": true,
+    "taisp/analysis/flip_consensus_study.py": true,
+    "taisp/analysis/run_t018a.py": true
+  },
+  "frozen_model_hashes": {
+    "source_hash_unchanged": true,
+    "clip_hash_unchanged": true,
+    "source_frozen_eval_grad_none": true,
+    "clip_frozen_eval_grad_none": true
+  }
+}

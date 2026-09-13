@@ -1,0 +1,772 @@
+{
+  "overall": {
+    "episodes": 1400,
+    "zero_consensus_count": 7,
+    "zero_consensus_fraction": 0.005,
+    "undefined_retention_count": 5,
+    "mean_retention_fraction_defined": 0.8471746121175758,
+    "median_retention_fraction_defined": 0.875,
+    "original_eligible_count": {
+      "mean": 8.750714285714286,
+      "median": 6.0,
+      "min": 0,
+      "max": 41
+    },
+    "current_top20_count": {
+      "mean": 7.977142857142857,
+      "median": 6.0,
+      "min": 0,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 8.772857142857143,
+      "median": 6.0,
+      "min": 0,
+      "max": 40
+    },
+    "matched_count": {
+      "mean": 7.238571428571428,
+      "median": 5.0,
+      "min": 0,
+      "max": 34
+    },
+    "retained_count": {
+      "mean": 6.908571428571428,
+      "median": 5.0,
+      "min": 0,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029433342160524,
+      "median": 0.0294052789977286
+    },
+    "adapt_seconds": {
+      "mean": 0.30161909939118364,
+      "median": 0.30836322851246223
+    },
+    "deploy_seconds": {
+      "mean": 0.36072518491215305,
+      "median": 0.3671360329899471
+    },
+    "phi3_norm": {
+      "mean": 0.0314482980880088,
+      "median": 0.025477755814790726
+    },
+    "update_fraction": 0.995
+  },
+  "clean": {
+    "episodes": 200,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8487829698727057,
+    "median_retention_fraction_defined": 0.8722826086956521,
+    "original_eligible_count": {
+      "mean": 9.42,
+      "median": 6.0,
+      "min": 1,
+      "max": 39
+    },
+    "current_top20_count": {
+      "mean": 8.525,
+      "median": 6.0,
+      "min": 1,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 9.365,
+      "median": 6.0,
+      "min": 1,
+      "max": 37
+    },
+    "matched_count": {
+      "mean": 7.8,
+      "median": 5.5,
+      "min": 1,
+      "max": 32
+    },
+    "retained_count": {
+      "mean": 7.395,
+      "median": 5.5,
+      "min": 1,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.0293978395476006,
+      "median": 0.029366721981205046
+    },
+    "adapt_seconds": {
+      "mean": 0.30236564478924266,
+      "median": 0.30831182247493416
+    },
+    "deploy_seconds": {
+      "mean": 0.3604180557615473,
+      "median": 0.3666616684931796
+    },
+    "phi3_norm": {
+      "mean": 0.03847101762192324,
+      "median": 0.030840914696455002
+    },
+    "update_fraction": 1
+  },
+  "corrupted": {
+    "episodes": 1200,
+    "zero_consensus_count": 7,
+    "zero_consensus_fraction": 0.005833333333333334,
+    "undefined_retention_count": 5,
+    "mean_retention_fraction_defined": 0.8469054309033281,
+    "median_retention_fraction_defined": 0.875,
+    "original_eligible_count": {
+      "mean": 8.639166666666666,
+      "median": 6.0,
+      "min": 0,
+      "max": 41
+    },
+    "current_top20_count": {
+      "mean": 7.885833333333333,
+      "median": 6.0,
+      "min": 0,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 8.674166666666666,
+      "median": 6.0,
+      "min": 0,
+      "max": 40
+    },
+    "matched_count": {
+      "mean": 7.145,
+      "median": 5.0,
+      "min": 0,
+      "max": 34
+    },
+    "retained_count": {
+      "mean": 6.8275,
+      "median": 5.0,
+      "min": 0,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029439259262677903,
+      "median": 0.02941043849568814
+    },
+    "adapt_seconds": {
+      "mean": 0.3014946751581738,
+      "median": 0.3083746715274174
+    },
+    "deploy_seconds": {
+      "mean": 0.3607763731039207,
+      "median": 0.3671744839812163
+    },
+    "phi3_norm": {
+      "mean": 0.030277844832356397,
+      "median": 0.024825898930430412
+    },
+    "update_fraction": 0.9941666666666666
+  },
+  "block0": {
+    "episodes": 350,
+    "zero_consensus_count": 2,
+    "zero_consensus_fraction": 0.005714285714285714,
+    "undefined_retention_count": 1,
+    "mean_retention_fraction_defined": 0.8349705663907212,
+    "median_retention_fraction_defined": 0.8571428571428571,
+    "original_eligible_count": {
+      "mean": 9.617142857142857,
+      "median": 8.0,
+      "min": 0,
+      "max": 40
+    },
+    "current_top20_count": {
+      "mean": 8.814285714285715,
+      "median": 8.0,
+      "min": 0,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 9.508571428571429,
+      "median": 7.0,
+      "min": 0,
+      "max": 39
+    },
+    "matched_count": {
+      "mean": 7.862857142857143,
+      "median": 6.0,
+      "min": 0,
+      "max": 34
+    },
+    "retained_count": {
+      "mean": 7.52,
+      "median": 6.0,
+      "min": 0,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029566973274174544,
+      "median": 0.02932103251805529
+    },
+    "adapt_seconds": {
+      "mean": 0.3056824155098626,
+      "median": 0.30854235048172995
+    },
+    "deploy_seconds": {
+      "mean": 0.3664184201590251,
+      "median": 0.36767310451250523
+    },
+    "phi3_norm": {
+      "mean": 0.030134325713983605,
+      "median": 0.023604629561305046
+    },
+    "update_fraction": 0.9942857142857143
+  },
+  "block1": {
+    "episodes": 350,
+    "zero_consensus_count": 2,
+    "zero_consensus_fraction": 0.005714285714285714,
+    "undefined_retention_count": 2,
+    "mean_retention_fraction_defined": 0.8467800311969946,
+    "median_retention_fraction_defined": 0.8888888888888888,
+    "original_eligible_count": {
+      "mean": 7.648571428571429,
+      "median": 4.5,
+      "min": 0,
+      "max": 41
+    },
+    "current_top20_count": {
+      "mean": 6.708571428571428,
+      "median": 4.5,
+      "min": 0,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 7.708571428571428,
+      "median": 4.0,
+      "min": 0,
+      "max": 40
+    },
+    "matched_count": {
+      "mean": 6.437142857142857,
+      "median": 4.0,
+      "min": 0,
+      "max": 32
+    },
+    "retained_count": {
+      "mean": 5.902857142857143,
+      "median": 4.0,
+      "min": 0,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029763524777455523,
+      "median": 0.030531770520610735
+    },
+    "adapt_seconds": {
+      "mean": 0.3093246185179201,
+      "median": 0.31159090250730515
+    },
+    "deploy_seconds": {
+      "mean": 0.36895179610383433,
+      "median": 0.37126365999574773
+    },
+    "phi3_norm": {
+      "mean": 0.034420179301606756,
+      "median": 0.026220559142529964
+    },
+    "update_fraction": 0.9942857142857143
+  },
+  "block2": {
+    "episodes": 350,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.858444472304634,
+    "median_retention_fraction_defined": 0.8888888888888888,
+    "original_eligible_count": {
+      "mean": 8.111428571428572,
+      "median": 6.0,
+      "min": 1,
+      "max": 32
+    },
+    "current_top20_count": {
+      "mean": 7.6,
+      "median": 6.0,
+      "min": 1,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 8.351428571428572,
+      "median": 6.0,
+      "min": 1,
+      "max": 31
+    },
+    "matched_count": {
+      "mean": 6.688571428571429,
+      "median": 5.0,
+      "min": 1,
+      "max": 26
+    },
+    "retained_count": {
+      "mean": 6.548571428571429,
+      "median": 5.0,
+      "min": 1,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.02936903444534567,
+      "median": 0.029466233012499288
+    },
+    "adapt_seconds": {
+      "mean": 0.3070960684559707,
+      "median": 0.3093460534873884
+    },
+    "deploy_seconds": {
+      "mean": 0.3655599292524026,
+      "median": 0.3682213005668018
+    },
+    "phi3_norm": {
+      "mean": 0.03147860667003052,
+      "median": 0.026552587747573853
+    },
+    "update_fraction": 1
+  },
+  "block3": {
+    "episodes": 350,
+    "zero_consensus_count": 3,
+    "zero_consensus_fraction": 0.008571428571428572,
+    "undefined_retention_count": 2,
+    "mean_retention_fraction_defined": 0.8484736783634499,
+    "median_retention_fraction_defined": 0.875,
+    "original_eligible_count": {
+      "mean": 9.625714285714286,
+      "median": 6.0,
+      "min": 0,
+      "max": 32
+    },
+    "current_top20_count": {
+      "mean": 8.785714285714286,
+      "median": 6.0,
+      "min": 0,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 9.522857142857143,
+      "median": 6.0,
+      "min": 0,
+      "max": 32
+    },
+    "matched_count": {
+      "mean": 7.965714285714285,
+      "median": 5.0,
+      "min": 0,
+      "max": 27
+    },
+    "retained_count": {
+      "mean": 7.662857142857143,
+      "median": 5.0,
+      "min": 0,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029033836145120274,
+      "median": 0.029195741488365456
+    },
+    "adapt_seconds": {
+      "mean": 0.2843732950809811,
+      "median": 0.29940515200723894
+    },
+    "deploy_seconds": {
+      "mean": 0.3419705941333502,
+      "median": 0.35723556301672943
+    },
+    "phi3_norm": {
+      "mean": 0.029760080666414328,
+      "median": 0.026838870719075203
+    },
+    "update_fraction": 0.9914285714285714
+  },
+  "clean_s0": {
+    "episodes": 200,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8487829698727057,
+    "median_retention_fraction_defined": 0.8722826086956521,
+    "original_eligible_count": {
+      "mean": 9.42,
+      "median": 6.0,
+      "min": 1,
+      "max": 39
+    },
+    "current_top20_count": {
+      "mean": 8.525,
+      "median": 6.0,
+      "min": 1,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 9.365,
+      "median": 6.0,
+      "min": 1,
+      "max": 37
+    },
+    "matched_count": {
+      "mean": 7.8,
+      "median": 5.5,
+      "min": 1,
+      "max": 32
+    },
+    "retained_count": {
+      "mean": 7.395,
+      "median": 5.5,
+      "min": 1,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.0293978395476006,
+      "median": 0.029366721981205046
+    },
+    "adapt_seconds": {
+      "mean": 0.30236564478924266,
+      "median": 0.30831182247493416
+    },
+    "deploy_seconds": {
+      "mean": 0.3604180557615473,
+      "median": 0.3666616684931796
+    },
+    "phi3_norm": {
+      "mean": 0.03847101762192324,
+      "median": 0.030840914696455002
+    },
+    "update_fraction": 1
+  },
+  "color_cast_s1": {
+    "episodes": 200,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8472231944863753,
+    "median_retention_fraction_defined": 0.875,
+    "original_eligible_count": {
+      "mean": 9.205,
+      "median": 7.0,
+      "min": 1,
+      "max": 41
+    },
+    "current_top20_count": {
+      "mean": 8.265,
+      "median": 7.0,
+      "min": 1,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 9.215,
+      "median": 6.0,
+      "min": 1,
+      "max": 40
+    },
+    "matched_count": {
+      "mean": 7.56,
+      "median": 5.0,
+      "min": 1,
+      "max": 32
+    },
+    "retained_count": {
+      "mean": 7.17,
+      "median": 5.0,
+      "min": 1,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029433726264978758,
+      "median": 0.029463087004842237
+    },
+    "adapt_seconds": {
+      "mean": 0.30164876050926975,
+      "median": 0.30929585700505413
+    },
+    "deploy_seconds": {
+      "mean": 0.35975786755123407,
+      "median": 0.36794047203147784
+    },
+    "phi3_norm": {
+      "mean": 0.023347446892876177,
+      "median": 0.021379993297159672
+    },
+    "update_fraction": 1
+  },
+  "color_cast_s2": {
+    "episodes": 200,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8455030412205348,
+    "median_retention_fraction_defined": 0.8681159420289855,
+    "original_eligible_count": {
+      "mean": 9.025,
+      "median": 6.0,
+      "min": 1,
+      "max": 38
+    },
+    "current_top20_count": {
+      "mean": 8.11,
+      "median": 6.0,
+      "min": 1,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 8.96,
+      "median": 6.0,
+      "min": 1,
+      "max": 40
+    },
+    "matched_count": {
+      "mean": 7.39,
+      "median": 5.0,
+      "min": 1,
+      "max": 31
+    },
+    "retained_count": {
+      "mean": 7.03,
+      "median": 5.0,
+      "min": 1,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029412154404853938,
+      "median": 0.029409367474727333
+    },
+    "adapt_seconds": {
+      "mean": 0.30173825642967134,
+      "median": 0.3096325710066594
+    },
+    "deploy_seconds": {
+      "mean": 0.35979824599053245,
+      "median": 0.36765399802243337
+    },
+    "phi3_norm": {
+      "mean": 0.020467922233510762,
+      "median": 0.01880531944334507
+    },
+    "update_fraction": 1
+  },
+  "contrast_s1": {
+    "episodes": 200,
+    "zero_consensus_count": 1,
+    "zero_consensus_fraction": 0.005,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8358531743541932,
+    "median_retention_fraction_defined": 0.8461538461538461,
+    "original_eligible_count": {
+      "mean": 8.86,
+      "median": 6.0,
+      "min": 1,
+      "max": 39
+    },
+    "current_top20_count": {
+      "mean": 8.06,
+      "median": 6.0,
+      "min": 1,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 8.7,
+      "median": 6.0,
+      "min": 0,
+      "max": 40
+    },
+    "matched_count": {
+      "mean": 7.24,
+      "median": 4.5,
+      "min": 0,
+      "max": 32
+    },
+    "retained_count": {
+      "mean": 6.955,
+      "median": 4.5,
+      "min": 0,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029412484665517696,
+      "median": 0.029385571513557807
+    },
+    "adapt_seconds": {
+      "mean": 0.30146452920424055,
+      "median": 0.3077841615304351
+    },
+    "deploy_seconds": {
+      "mean": 0.35951894570112924,
+      "median": 0.36601748352404684
+    },
+    "phi3_norm": {
+      "mean": 0.03292809180449694,
+      "median": 0.02884000912308693
+    },
+    "update_fraction": 0.995
+  },
+  "contrast_s2": {
+    "episodes": 200,
+    "zero_consensus_count": 5,
+    "zero_consensus_fraction": 0.025,
+    "undefined_retention_count": 5,
+    "mean_retention_fraction_defined": 0.8679343551376575,
+    "median_retention_fraction_defined": 1.0,
+    "original_eligible_count": {
+      "mean": 6.88,
+      "median": 4.0,
+      "min": 0,
+      "max": 40
+    },
+    "current_top20_count": {
+      "mean": 6.46,
+      "median": 4.0,
+      "min": 0,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 7.195,
+      "median": 4.0,
+      "min": 0,
+      "max": 38
+    },
+    "matched_count": {
+      "mean": 5.86,
+      "median": 3.5,
+      "min": 0,
+      "max": 34
+    },
+    "retained_count": {
+      "mean": 5.67,
+      "median": 3.5,
+      "min": 0,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.02939330644119764,
+      "median": 0.02939223902649246
+    },
+    "adapt_seconds": {
+      "mean": 0.3004459000189672,
+      "median": 0.30789933749474585
+    },
+    "deploy_seconds": {
+      "mean": 0.3585167285412899,
+      "median": 0.3668176500068512
+    },
+    "phi3_norm": {
+      "mean": 0.03279526343336329,
+      "median": 0.029574846848845482
+    },
+    "update_fraction": 0.975
+  },
+  "gamma_s1": {
+    "episodes": 200,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8394122492280998,
+    "median_retention_fraction_defined": 0.8571428571428571,
+    "original_eligible_count": {
+      "mean": 9.155,
+      "median": 6.0,
+      "min": 1,
+      "max": 38
+    },
+    "current_top20_count": {
+      "mean": 8.335,
+      "median": 6.0,
+      "min": 1,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 9.225,
+      "median": 6.0,
+      "min": 1,
+      "max": 36
+    },
+    "matched_count": {
+      "mean": 7.575,
+      "median": 5.0,
+      "min": 1,
+      "max": 31
+    },
+    "retained_count": {
+      "mean": 7.18,
+      "median": 5.0,
+      "min": 1,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.02955652103497414,
+      "median": 0.029424210515571758
+    },
+    "adapt_seconds": {
+      "mean": 0.30159173412335805,
+      "median": 0.30725916448864155
+    },
+    "deploy_seconds": {
+      "mean": 0.3668945715081645,
+      "median": 0.3692177264892962
+    },
+    "phi3_norm": {
+      "mean": 0.03581103931646794,
+      "median": 0.027635815553367138
+    },
+    "update_fraction": 1
+  },
+  "gamma_s2": {
+    "episodes": 200,
+    "zero_consensus_count": 1,
+    "zero_consensus_fraction": 0.005,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8460322940989667,
+    "median_retention_fraction_defined": 0.875,
+    "original_eligible_count": {
+      "mean": 8.71,
+      "median": 6.0,
+      "min": 1,
+      "max": 34
+    },
+    "current_top20_count": {
+      "mean": 8.085,
+      "median": 6.0,
+      "min": 1,
+      "max": 20
+    },
+    "flip_eligible_count": {
+      "mean": 8.75,
+      "median": 6.0,
+      "min": 1,
+      "max": 33
+    },
+    "matched_count": {
+      "mean": 7.245,
+      "median": 5.0,
+      "min": 0,
+      "max": 29
+    },
+    "retained_count": {
+      "mean": 6.96,
+      "median": 5.0,
+      "min": 0,
+      "max": 20
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029427362764545252,
+      "median": 0.02943240452441387
+    },
+    "adapt_seconds": {
+      "mean": 0.3020788706635358,
+      "median": 0.3081984230084345
+    },
+    "deploy_seconds": {
+      "mean": 0.36017187933117384,
+      "median": 0.3664190049748868
+    },
+    "phi3_norm": {
+      "mean": 0.036317305313423275,
+      "median": 0.02923689316958189
+    },
+    "update_fraction": 0.995
+  }
+}

@@ -2553,3 +2553,68 @@ All model/gradient/adaptation and IoU work CUDA; tiny sorting/reports/AP aggrega
 No formal scientific results yet. Do not launch duplicate or alter constants.
 After completion fetch both raw runs, audit/report/push/mirror; stop NEEDS_REVIEW.
 Heartbeat every15minutes; only execute explicit new research tasks after this one.
+
+
+## T021-A - NEEDS_REVIEW - close fixed horizontal-flip support filter
+
+2026-09-13T23:00:03.394627+08:00. R033/a5bae26 completed. Pre-outcome plan0207885, code daa79e5,
+smoke/report-preparation d276fc0. Full report `research_log/T021A_report.md`;
+all AP/AP50/AP75, blocks, conditions, support counts/retention and step diagnostics
+in `research_log/T021A/complete_tables.md`. Raw predictions and match receipts retained.
+
+Minimal implementation: new modular flip_consensus and support summary/fixed decision,
+shared runner support-selection branch, tests/config/cohort/report. All14protected
+modules unchanged;3authorized implementation hashes andactualrelease files match pins.
+Original and horizontal-flip teachers use score>=.50; sameclass IoU>=.60, descending
+geometric-confidence greedy one-to-one, original/flipindex ties,top20aftermatching.
+Only original boxes/classes/scores enter unchanged current-Ours loss weights. No averaging,
+soft weighting, fallback/rematching or flip ensemble. Current supports unchanged.
+Frozen CLIP/detector, global8D identityISP,K3/LR.1/magnitude transfer/corruptions remain fixed.
+
+Formal `20260913-222407-taisp-t021a-source200-consensus`, release222014:
+22:24:12-22:43:09+08,exit0,1128.431519s.200newtrain2017,four50blocks,1036prior-source/debug
+andall5000valexcluded. CohortSHA0fdb6a815d380104542c324ba2146944b47232dae22a416fa12d5f72a5d29725.
+2800teachers/2800adaptiveepisodes/21predictionfiles/105officialCOCOevaluations.
+A6000CUDAmodels/gradients/IoU/adaptation; CPUtinysorting andofficialAPaggregation.
+No source-label objective or fitting. All prediction collection precedes official GT evaluation.
+
+| Metric | No adapt | Current Ours | Flip consensus |
+| --- | --- | --- | --- |
+| Corruption macro AP | 50.3312941972 | 50.1513089671 | 50.1209418221 |
+| Corruption macro AP50 | 73.9438716363 | 74.0862968867 | 74.1309139496 |
+| Corruption macro AP75 | 55.6994932917 | 55.4900359009 | 55.5126849389 |
+| Clean AP | 55.1889751730 | 54.7757478313 | 55.0396393695 |
+
+Candidate-current **-0.030367145082 AP**, candidate-raw **-0.210352375112 AP**.
+Block deltas: +0.097524581255, -0.018072714267, -0.084793979923, -0.242832940914.
+Condition deltas (gamma1/2,contrast1/2,cast1/2): +0.040137805804, +0.203722780267, -0.201856391259, +0.027953852010, -0.275413661059, +0.023252743747.
+**1/4** positive blocks; **4/6** positive conditions. Frozen+.10materiality,3/4block
+replication andabove-raw macro criteria fail. Condition replication,clean andisolation pass.
+Clean-current **+0.263891538209 AP**, butclean-raw **-0.149335803521 AP**.
+Positive AP50/AP75 deltas versuscurrent (+.044617062912/+.022649037945) remain diagnostics.
+**Close the fixed horizontal-flip support-filter branch. No candidate promoted.**
+Current Ours itself is below raw on this cohort; all outcomes are retained without rescue.
+
+Support diagnostics: original eligible pre-top20mean8.750714, currenttop20mean7.977143,
+matchedmean7.238571, retainedtop20mean6.908571. Mean per-episode retention84.71746%
+(5undefined original-zero denominators),median87.5%. Cleanmean84.87830%,corrupt84.69054%.
+Zero consensus7/1400(.5%) versuscurrent5/1400; all7corrupted,0clean. Exactidentity verified.
+Cleanupdates100%both; corrupted99.4167%candidate vs99.5833%current. Cleanmeanphi
+.0384209952current/.0384710176candidate; corrupt.0296465212/.0302778448. No cleanselectivity.
+Additionalflip/matchingmean.0294333422s; current teacher-inclusive~.332s,candidate~.360-.361s.
+Adaptation timing includes terminaldiagnostics,fourloss/grad evaluations andthreeupdates;
+excludesfinalinference/statechecks/AP; candidateincludes bothteachers andmatching setup.
+
+Baseline12passed2skipped1.77s; increment1 11passed2skipped2.42s;
+focused13passed2skipped2.50s; full175passed10skipped7.52s.
+Smoke20260913-222054:28CUDAK3episodes/168retainedsupports/28teachers/0AP,exit0.
+Formal2800episodeisolationchecks,1400consensusreceipts,9672retained original supports,
+baselineoriginaltop20 reproduction andall17actualrelease codehashes pass. Detector/CLIP
+state hashes unchanged; weights frozen/eval/gradNone,onlyepisodicphi updates. No native
+loss components ortransportedgradients. No implementation/support/isolation blocker.
+
+66rawfiles59,995,881bytes fetched/hashverified; archiveSHA
+577dea0d1a264bb9e7bbc1bc16e41d7fa57866e523dd463af575b2c4eca38547.
+No score/IoU/topk/augmentation/fallback retuning,newcohort,FCOS/SSD/val,spatial/meta/
+predictor/gate/dose,native/QorT017forensics work. Noactivejob; stopNEEDS_REVIEW for a new
+explicit research decision. Retention andclean/AP50/AP75 signals do not override the gate.

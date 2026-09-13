@@ -1,0 +1,607 @@
+{
+  "overall": {
+    "episodes": 14,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8682088744588745,
+    "median_retention_fraction_defined": 0.8666666666666667,
+    "original_eligible_count": {
+      "mean": 13.857142857142858,
+      "median": 14.0,
+      "min": 11,
+      "max": 16
+    },
+    "current_top20_count": {
+      "mean": 13.857142857142858,
+      "median": 14.0,
+      "min": 11,
+      "max": 16
+    },
+    "flip_eligible_count": {
+      "mean": 15.142857142857142,
+      "median": 14.0,
+      "min": 12,
+      "max": 19
+    },
+    "matched_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 10,
+      "max": 14
+    },
+    "retained_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 10,
+      "max": 14
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.030191749217920005,
+      "median": 0.028998645022511482
+    },
+    "adapt_seconds": {
+      "mean": 0.2830808324257045,
+      "median": 0.28454613947542384
+    },
+    "deploy_seconds": {
+      "mean": 0.3638848610737893,
+      "median": 0.34759907505940646
+    },
+    "phi3_norm": {
+      "mean": 0.03085967286356858,
+      "median": 0.023660430684685707
+    },
+    "update_fraction": 1
+  },
+  "clean": {
+    "episodes": 2,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8261904761904761,
+    "median_retention_fraction_defined": 0.8261904761904761,
+    "original_eligible_count": {
+      "mean": 14.5,
+      "median": 14.5,
+      "min": 14,
+      "max": 15
+    },
+    "current_top20_count": {
+      "mean": 14.5,
+      "median": 14.5,
+      "min": 14,
+      "max": 15
+    },
+    "flip_eligible_count": {
+      "mean": 16,
+      "median": 16.0,
+      "min": 13,
+      "max": 19
+    },
+    "matched_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 11,
+      "max": 13
+    },
+    "retained_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 11,
+      "max": 13
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029551909014116973,
+      "median": 0.029551909014116973
+    },
+    "adapt_seconds": {
+      "mean": 0.29039015603484586,
+      "median": 0.29039015603484586
+    },
+    "deploy_seconds": {
+      "mean": 0.3486198480532039,
+      "median": 0.3486198480532039
+    },
+    "phi3_norm": {
+      "mean": 0.038451637141406536,
+      "median": 0.038451637141406536
+    },
+    "update_fraction": 1
+  },
+  "corrupted": {
+    "episodes": 12,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8752119408369409,
+    "median_retention_fraction_defined": 0.8878787878787879,
+    "original_eligible_count": {
+      "mean": 13.75,
+      "median": 14.0,
+      "min": 11,
+      "max": 16
+    },
+    "current_top20_count": {
+      "mean": 13.75,
+      "median": 14.0,
+      "min": 11,
+      "max": 16
+    },
+    "flip_eligible_count": {
+      "mean": 15,
+      "median": 14.0,
+      "min": 12,
+      "max": 19
+    },
+    "matched_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 10,
+      "max": 14
+    },
+    "retained_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 10,
+      "max": 14
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.030298389251887176,
+      "median": 0.028943739511305466
+    },
+    "adapt_seconds": {
+      "mean": 0.28186261182418093,
+      "median": 0.2826801934861578
+    },
+    "deploy_seconds": {
+      "mean": 0.36642902991055354,
+      "median": 0.3473969085025601
+    },
+    "phi3_norm": {
+      "mean": 0.02959434548392892,
+      "median": 0.022859432734549046
+    },
+    "update_fraction": 1
+  },
+  "block0": {
+    "episodes": 14,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8682088744588745,
+    "median_retention_fraction_defined": 0.8666666666666667,
+    "original_eligible_count": {
+      "mean": 13.857142857142858,
+      "median": 14.0,
+      "min": 11,
+      "max": 16
+    },
+    "current_top20_count": {
+      "mean": 13.857142857142858,
+      "median": 14.0,
+      "min": 11,
+      "max": 16
+    },
+    "flip_eligible_count": {
+      "mean": 15.142857142857142,
+      "median": 14.0,
+      "min": 12,
+      "max": 19
+    },
+    "matched_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 10,
+      "max": 14
+    },
+    "retained_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 10,
+      "max": 14
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.030191749217920005,
+      "median": 0.028998645022511482
+    },
+    "adapt_seconds": {
+      "mean": 0.2830808324257045,
+      "median": 0.28454613947542384
+    },
+    "deploy_seconds": {
+      "mean": 0.3638848610737893,
+      "median": 0.34759907505940646
+    },
+    "phi3_norm": {
+      "mean": 0.03085967286356858,
+      "median": 0.023660430684685707
+    },
+    "update_fraction": 1
+  },
+  "clean_s0": {
+    "episodes": 2,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8261904761904761,
+    "median_retention_fraction_defined": 0.8261904761904761,
+    "original_eligible_count": {
+      "mean": 14.5,
+      "median": 14.5,
+      "min": 14,
+      "max": 15
+    },
+    "current_top20_count": {
+      "mean": 14.5,
+      "median": 14.5,
+      "min": 14,
+      "max": 15
+    },
+    "flip_eligible_count": {
+      "mean": 16,
+      "median": 16.0,
+      "min": 13,
+      "max": 19
+    },
+    "matched_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 11,
+      "max": 13
+    },
+    "retained_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 11,
+      "max": 13
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.029551909014116973,
+      "median": 0.029551909014116973
+    },
+    "adapt_seconds": {
+      "mean": 0.29039015603484586,
+      "median": 0.29039015603484586
+    },
+    "deploy_seconds": {
+      "mean": 0.3486198480532039,
+      "median": 0.3486198480532039
+    },
+    "phi3_norm": {
+      "mean": 0.038451637141406536,
+      "median": 0.038451637141406536
+    },
+    "update_fraction": 1
+  },
+  "color_cast_s1": {
+    "episodes": 2,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8642857142857143,
+    "median_retention_fraction_defined": 0.8642857142857143,
+    "original_eligible_count": {
+      "mean": 14.5,
+      "median": 14.5,
+      "min": 14,
+      "max": 15
+    },
+    "current_top20_count": {
+      "mean": 14.5,
+      "median": 14.5,
+      "min": 14,
+      "max": 15
+    },
+    "flip_eligible_count": {
+      "mean": 14.5,
+      "median": 14.5,
+      "min": 12,
+      "max": 17
+    },
+    "matched_count": {
+      "mean": 12.5,
+      "median": 12.5,
+      "min": 12,
+      "max": 13
+    },
+    "retained_count": {
+      "mean": 12.5,
+      "median": 12.5,
+      "min": 12,
+      "max": 13
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.0298496464965865,
+      "median": 0.0298496464965865
+    },
+    "adapt_seconds": {
+      "mean": 0.28633483801968396,
+      "median": 0.28633483801968396
+    },
+    "deploy_seconds": {
+      "mean": 0.3446024550066795,
+      "median": 0.3446024550066795
+    },
+    "phi3_norm": {
+      "mean": 0.018317763693630695,
+      "median": 0.018317763693630695
+    },
+    "update_fraction": 1
+  },
+  "color_cast_s2": {
+    "episodes": 2,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.9,
+    "median_retention_fraction_defined": 0.9,
+    "original_eligible_count": {
+      "mean": 15,
+      "median": 15.0,
+      "min": 15,
+      "max": 15
+    },
+    "current_top20_count": {
+      "mean": 15,
+      "median": 15.0,
+      "min": 15,
+      "max": 15
+    },
+    "flip_eligible_count": {
+      "mean": 14.5,
+      "median": 14.5,
+      "min": 14,
+      "max": 15
+    },
+    "matched_count": {
+      "mean": 13.5,
+      "median": 13.5,
+      "min": 13,
+      "max": 14
+    },
+    "retained_count": {
+      "mean": 13.5,
+      "median": 13.5,
+      "min": 13,
+      "max": 14
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.02928412749315612,
+      "median": 0.02928412749315612
+    },
+    "adapt_seconds": {
+      "mean": 0.28888477649888955,
+      "median": 0.28888477649888955
+    },
+    "deploy_seconds": {
+      "mean": 0.3465047749923542,
+      "median": 0.3465047749923542
+    },
+    "phi3_norm": {
+      "mean": 0.013683074153959751,
+      "median": 0.013683074153959751
+    },
+    "update_fraction": 1
+  },
+  "contrast_s1": {
+    "episodes": 2,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8348214285714286,
+    "median_retention_fraction_defined": 0.8348214285714286,
+    "original_eligible_count": {
+      "mean": 15,
+      "median": 15.0,
+      "min": 14,
+      "max": 16
+    },
+    "current_top20_count": {
+      "mean": 15,
+      "median": 15.0,
+      "min": 14,
+      "max": 16
+    },
+    "flip_eligible_count": {
+      "mean": 16.5,
+      "median": 16.5,
+      "min": 14,
+      "max": 19
+    },
+    "matched_count": {
+      "mean": 12.5,
+      "median": 12.5,
+      "min": 12,
+      "max": 13
+    },
+    "retained_count": {
+      "mean": 12.5,
+      "median": 12.5,
+      "min": 12,
+      "max": 13
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.028479023021645844,
+      "median": 0.028479023021645844
+    },
+    "adapt_seconds": {
+      "mean": 0.29098913245252334,
+      "median": 0.29098913245252334
+    },
+    "deploy_seconds": {
+      "mean": 0.34733768197475,
+      "median": 0.34733768197475
+    },
+    "phi3_norm": {
+      "mean": 0.01812126487493515,
+      "median": 0.01812126487493515
+    },
+    "update_fraction": 1
+  },
+  "contrast_s2": {
+    "episodes": 2,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.875,
+    "median_retention_fraction_defined": 0.875,
+    "original_eligible_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 12,
+      "max": 12
+    },
+    "current_top20_count": {
+      "mean": 12,
+      "median": 12.0,
+      "min": 12,
+      "max": 12
+    },
+    "flip_eligible_count": {
+      "mean": 13.5,
+      "median": 13.5,
+      "min": 13,
+      "max": 14
+    },
+    "matched_count": {
+      "mean": 10.5,
+      "median": 10.5,
+      "min": 10,
+      "max": 11
+    },
+    "retained_count": {
+      "mean": 10.5,
+      "median": 10.5,
+      "min": 10,
+      "max": 11
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.028831077506765723,
+      "median": 0.028831077506765723
+    },
+    "adapt_seconds": {
+      "mean": 0.2880865749903023,
+      "median": 0.2880865749903023
+    },
+    "deploy_seconds": {
+      "mean": 0.34513490949757397,
+      "median": 0.34513490949757397
+    },
+    "phi3_norm": {
+      "mean": 0.03387944586575031,
+      "median": 0.03387944586575031
+    },
+    "update_fraction": 1
+  },
+  "gamma_s1": {
+    "episodes": 2,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.8583333333333334,
+    "median_retention_fraction_defined": 0.8583333333333334,
+    "original_eligible_count": {
+      "mean": 13.5,
+      "median": 13.5,
+      "min": 12,
+      "max": 15
+    },
+    "current_top20_count": {
+      "mean": 13.5,
+      "median": 13.5,
+      "min": 12,
+      "max": 15
+    },
+    "flip_eligible_count": {
+      "mean": 16,
+      "median": 16.0,
+      "min": 14,
+      "max": 18
+    },
+    "matched_count": {
+      "mean": 11.5,
+      "median": 11.5,
+      "min": 11,
+      "max": 12
+    },
+    "retained_count": {
+      "mean": 11.5,
+      "median": 11.5,
+      "min": 11,
+      "max": 12
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.03638683049939573,
+      "median": 0.03638683049939573
+    },
+    "adapt_seconds": {
+      "mean": 0.2544621345004998,
+      "median": 0.2544621345004998
+    },
+    "deploy_seconds": {
+      "mean": 0.4746973440051079,
+      "median": 0.4746973440051079
+    },
+    "phi3_norm": {
+      "mean": 0.04992188233882189,
+      "median": 0.04992188233882189
+    },
+    "update_fraction": 1
+  },
+  "gamma_s2": {
+    "episodes": 2,
+    "zero_consensus_count": 0,
+    "zero_consensus_fraction": 0,
+    "undefined_retention_count": 0,
+    "mean_retention_fraction_defined": 0.9188311688311688,
+    "median_retention_fraction_defined": 0.9188311688311688,
+    "original_eligible_count": {
+      "mean": 12.5,
+      "median": 12.5,
+      "min": 11,
+      "max": 14
+    },
+    "current_top20_count": {
+      "mean": 12.5,
+      "median": 12.5,
+      "min": 11,
+      "max": 14
+    },
+    "flip_eligible_count": {
+      "mean": 15,
+      "median": 15.0,
+      "min": 12,
+      "max": 18
+    },
+    "matched_count": {
+      "mean": 11.5,
+      "median": 11.5,
+      "min": 10,
+      "max": 13
+    },
+    "retained_count": {
+      "mean": 11.5,
+      "median": 11.5,
+      "min": 10,
+      "max": 13
+    },
+    "consensus_setup_seconds": {
+      "mean": 0.028959630493773147,
+      "median": 0.028959630493773147
+    },
+    "adapt_seconds": {
+      "mean": 0.2824182144831866,
+      "median": 0.2824182144831866
+    },
+    "deploy_seconds": {
+      "mean": 0.34029701398685575,
+      "median": 0.34029701398685575
+    },
+    "phi3_norm": {
+      "mean": 0.043642641976475716,
+      "median": 0.043642641976475716
+    },
+    "update_fraction": 1
+  }
+}

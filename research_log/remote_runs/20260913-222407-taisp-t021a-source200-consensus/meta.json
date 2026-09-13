@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-222407-taisp-t021a-source200-consensus",
+  "releaseId": "20260913-222014-taisp-t021a-consensus",
+  "sessionName": "autodl-20260913-222407-taisp-t021a-source200-consensus",
+  "command": "export TAISP_SOURCE_REVISION=daa79e5; /home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.run_t018a --config configs/t021a.yaml --manifest research_log/T021A_train_cohort.json --output \"$AUTODL_ARTIFACTS_DIR/study\""
+}
