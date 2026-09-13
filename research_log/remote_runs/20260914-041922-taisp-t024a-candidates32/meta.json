@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-041922-taisp-t024a-candidates32",
+  "releaseId": "20260914-041825-taisp-t024a-candidate",
+  "sessionName": "autodl-20260914-041922-taisp-t024a-candidates32",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-041825-taisp-t024a-candidate && export TAISP_SOURCE_REVISION=bf78bc5 && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.roi_equivariance --manifest research_log/T024A/candidate_images.json --output \"$AUTODL_ARTIFACTS_DIR/candidates\""
+}
