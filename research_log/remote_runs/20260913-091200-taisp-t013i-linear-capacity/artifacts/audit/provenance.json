@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "artifacts/collection/records.json": "ac3d462521ad84e71af298eb57ae91b732f97e74fcf5336de91ab0967c41c2ab",
+    "artifacts/collection/cohort.json": "99f15bc4329b8431a6718bc1c2ae1ef3fa6221db0869a7cc593ef95bdca2d357",
+    "artifacts/algebra/audit.json": "ef31b0394eca3e1d4ee773380b65f2a1a11f37620b67d05c3bb77b2da6ba0a72"
+  },
+  "artifact_manifest_sha256": "eff5e64a41931348dd8143fe3e0c1a4be7cdcfa7411e4b9d3254ba2a8af2dd96",
+  "source_revision": "c6d2c6e",
+  "python": "3.12.12",
+  "numpy": "1.26.4",
+  "dtype": "float64",
+  "device": "CPU",
+  "model_calls": 0,
+  "optimizer_steps": 0,
+  "new_records": 0,
+  "seed": 20260913,
+  "permutations": 128,
+  "quantile_method": "linear",
+  "tol": "eps64 * max(X.shape) * s_max"
+}

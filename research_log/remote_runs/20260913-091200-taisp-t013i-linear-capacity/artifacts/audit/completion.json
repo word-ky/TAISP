@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "gate": {
+    "flags": {
+      "pooled_R2_at_least_point10": false,
+      "at_least_three_positive_R2_folds": false,
+      "median_residual_cosine_at_least_point20": false,
+      "positive_dot_at_least44": false,
+      "clean_positive_dot_at_least20": false,
+      "corrupted_positive_dot_at_least20": false,
+      "R2_above_null95": true,
+      "cosine_above_null95": false
+    },
+    "positive_R2_folds": 0,
+    "passed": false,
+    "decision": "current_linear_initialization_branch_not_supported_request_research_pivot",
+    "T013H_utility_remains_failed": true,
+    "stop_for_research_review": true
+  },
+  "permutations": 128,
+  "heldout_records": 64,
+  "svd_fits": 516,
+  "model_calls": 0,
+  "optimizer_steps": 0,
+  "elapsed_seconds": 0.5177526710031088,
+  "source_revision": "c6d2c6e"
+}

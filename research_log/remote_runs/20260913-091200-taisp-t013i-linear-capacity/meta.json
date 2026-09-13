@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-091200-taisp-t013i-linear-capacity",
+  "releaseId": "20260913-091116-taisp-t013i-linear-capacity",
+  "sessionName": "autodl-20260913-091200-taisp-t013i-linear-capacity",
+  "command": "export CUDA_VISIBLE_DEVICES=\"\" TAISP_SOURCE_REVISION=c6d2c6e TAISP_REAL_MODELS=0 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.linear_capacity --prior-root /home/liujianhua/wjq/TAISP/runs/20260913-081117-taisp-t013h-source-replication --artifact-manifest research_log/T013H/artifact_manifest.json --output \"$AUTODL_ARTIFACTS_DIR/audit\""
+}

@@ -1,0 +1,692 @@
+{
+  "run": "20260913-091200-taisp-t013i-linear-capacity",
+  "files": [
+    {
+      "path": "artifacts/audit/completion.json",
+      "bytes": 822,
+      "sha256": "9b61d2284b63aee0696c7597726a003b131b2fdd5a8bb0f46dae6a71f0c2c749"
+    },
+    {
+      "path": "artifacts/audit/covariance_reference_check.json",
+      "bytes": 355,
+      "sha256": "6ac5a36892377a360d39e9bff9330ccc00ae9dd0bd4336bb4d9e34d6ae7cb940"
+    },
+    {
+      "path": "artifacts/audit/observed.json",
+      "bytes": 445558,
+      "sha256": "eac766a92277bfdc5761610822b9a8945ca16718f1dd62e764aba59fd4d9a2be"
+    },
+    {
+      "path": "artifacts/audit/permutation_000.json",
+      "bytes": 60769,
+      "sha256": "2c84eea6c4ed0f8e4f5ae1d343909c281c4651f3b2ec7874409e8635e65406a8"
+    },
+    {
+      "path": "artifacts/audit/permutation_001.json",
+      "bytes": 60624,
+      "sha256": "afb4336fbb7f97c038fde8584d879fccfb7cc691f91eddf3f91ffa6479390d1a"
+    },
+    {
+      "path": "artifacts/audit/permutation_002.json",
+      "bytes": 60654,
+      "sha256": "29814d494275edb01eb15aba90f3e102eac6054fb84b9278c477ad0509017726"
+    },
+    {
+      "path": "artifacts/audit/permutation_003.json",
+      "bytes": 60620,
+      "sha256": "7a618f79af1079cb6ae919f372586a24f0c247a8c572c9dc1d9b3db5ad2afcd7"
+    },
+    {
+      "path": "artifacts/audit/permutation_004.json",
+      "bytes": 60608,
+      "sha256": "d86b65727e640ffbc59b292b4ca25c45fab49f72f6cc12adfd4b55540e8c3da0"
+    },
+    {
+      "path": "artifacts/audit/permutation_005.json",
+      "bytes": 60708,
+      "sha256": "871e0bac7de3ce2039de08600a0ff3a5072e0c2a2ce1cc3234a24f106e464fdb"
+    },
+    {
+      "path": "artifacts/audit/permutation_006.json",
+      "bytes": 60666,
+      "sha256": "67813d8d802abeab9efe246437a5ae96499f64d6c0af349fab91c71b6b9fe3f7"
+    },
+    {
+      "path": "artifacts/audit/permutation_007.json",
+      "bytes": 60706,
+      "sha256": "83f95f03c92281a6009ff5cdedf5b2e9c333db88fc9b317ecb4913f3e1643726"
+    },
+    {
+      "path": "artifacts/audit/permutation_008.json",
+      "bytes": 60539,
+      "sha256": "36b0bf0d2d4d1e7555225bd845a981bfda20812026c66745cbbafcd5c1a68f56"
+    },
+    {
+      "path": "artifacts/audit/permutation_009.json",
+      "bytes": 60667,
+      "sha256": "76e270ee7c4412aec7b1dc269f60c2457a05a3bd825b532277f884a49e9e53bd"
+    },
+    {
+      "path": "artifacts/audit/permutation_010.json",
+      "bytes": 60607,
+      "sha256": "7aee1b29d7fa7ab2b9504c861fa9bc2446a15f485222e388f927a7267288cd6f"
+    },
+    {
+      "path": "artifacts/audit/permutation_011.json",
+      "bytes": 60568,
+      "sha256": "bc2b24e7b398eec181569d7bc4eb8575069e384cd7e2463bd8ce6a59d52adf49"
+    },
+    {
+      "path": "artifacts/audit/permutation_012.json",
+      "bytes": 60691,
+      "sha256": "e34fd6e4f7a0b0ec8959115f35fc8cbb00a9450d8780ab5e6f8d4309409c71ae"
+    },
+    {
+      "path": "artifacts/audit/permutation_013.json",
+      "bytes": 60669,
+      "sha256": "d9742e9f2f015d4ae1985140dec7a7d8b506d0d1a05f0c88ccb5de13a5310405"
+    },
+    {
+      "path": "artifacts/audit/permutation_014.json",
+      "bytes": 60586,
+      "sha256": "1599e9e7fffae35f384993b717aaddc671963421217c0421e7d309e74d896aca"
+    },
+    {
+      "path": "artifacts/audit/permutation_015.json",
+      "bytes": 60690,
+      "sha256": "62845b2a5bc5aaeba58cd7b7f99a352866d574b57746f9f83c8cc773b6d6349a"
+    },
+    {
+      "path": "artifacts/audit/permutation_016.json",
+      "bytes": 60716,
+      "sha256": "9481cb030f3f1b725744168d30b3f87ff6d0e992569962847adce2a4c9ef74c2"
+    },
+    {
+      "path": "artifacts/audit/permutation_017.json",
+      "bytes": 60600,
+      "sha256": "544456f2b564efa1076304605dd5c6b2ff66c8a2ae3414ede53ea4525f8dbeea"
+    },
+    {
+      "path": "artifacts/audit/permutation_018.json",
+      "bytes": 60740,
+      "sha256": "f61356676d46a24cf4d0d79658c2b5c6c4f3e9deb3dec98be9b820ebf7ce75d3"
+    },
+    {
+      "path": "artifacts/audit/permutation_019.json",
+      "bytes": 60699,
+      "sha256": "fa71d67856ebb30b8809ca243fe4f333806d309eb39d7a1c9759ec83254c93fb"
+    },
+    {
+      "path": "artifacts/audit/permutation_020.json",
+      "bytes": 60604,
+      "sha256": "f3ff042673a2b570a5afa0c26edb9f4362211ab73312d8537733b949b5e8b9a5"
+    },
+    {
+      "path": "artifacts/audit/permutation_021.json",
+      "bytes": 60722,
+      "sha256": "d1e979780eb95ad3e08c496c7fca60161e138988cca97e5c070166d303b9fa2e"
+    },
+    {
+      "path": "artifacts/audit/permutation_022.json",
+      "bytes": 60669,
+      "sha256": "2def52a2b511fc387cce4da1a00038bd0ad3fe113c4d871c99c5598b63da08e3"
+    },
+    {
+      "path": "artifacts/audit/permutation_023.json",
+      "bytes": 60631,
+      "sha256": "a4b04adec6dc96cf99669980d1df657672e892120b70c9e0d311de771859c607"
+    },
+    {
+      "path": "artifacts/audit/permutation_024.json",
+      "bytes": 60622,
+      "sha256": "072ff56680aab5943369858e2f04e97c3d436ceb34f2ef3bffd1263b0dc5f009"
+    },
+    {
+      "path": "artifacts/audit/permutation_025.json",
+      "bytes": 60693,
+      "sha256": "974e682bb4443e9370bc94b0030a808806ebbfbe5081ef5ac57875dbd0073b64"
+    },
+    {
+      "path": "artifacts/audit/permutation_026.json",
+      "bytes": 60721,
+      "sha256": "0ed0e1c48b1c1c34a643b03091c72805d72dada62b659b2a11d1f3472a052fa8"
+    },
+    {
+      "path": "artifacts/audit/permutation_027.json",
+      "bytes": 60704,
+      "sha256": "d771aca6b1f9b183a7691e48f46c126c5899ff8d629affc38482734bc76404ee"
+    },
+    {
+      "path": "artifacts/audit/permutation_028.json",
+      "bytes": 60592,
+      "sha256": "54d07dafdea39397940dd48b93d6d6d0404943e1fcda60a423db508391ab3994"
+    },
+    {
+      "path": "artifacts/audit/permutation_029.json",
+      "bytes": 60668,
+      "sha256": "65893467bd6713e255586c623110614518bf78c01ec6d0dd71c4580cba32dc88"
+    },
+    {
+      "path": "artifacts/audit/permutation_030.json",
+      "bytes": 60654,
+      "sha256": "90b8cd3af6e4db46a1953b40705a63b155bc8c88ee8ada8df7a4e3a7bb957043"
+    },
+    {
+      "path": "artifacts/audit/permutation_031.json",
+      "bytes": 60656,
+      "sha256": "43ac21f614c9ed495841b8e1fbb5d1327ada7ea3c3ca7214ac1e79e42f8fb752"
+    },
+    {
+      "path": "artifacts/audit/permutation_032.json",
+      "bytes": 60714,
+      "sha256": "551025f9ea530c6d5182db564c64c9365ae9001af47e75bee3328ba77e29e1de"
+    },
+    {
+      "path": "artifacts/audit/permutation_033.json",
+      "bytes": 60600,
+      "sha256": "94ab14d1db96e9812a02db7bffc376ffe3eaaca49b218c7435bd34ca9e8e7bdd"
+    },
+    {
+      "path": "artifacts/audit/permutation_034.json",
+      "bytes": 60643,
+      "sha256": "a2eeef03c692f79a368632464c72f0d82f941de205345c72d746b28199eed45f"
+    },
+    {
+      "path": "artifacts/audit/permutation_035.json",
+      "bytes": 60595,
+      "sha256": "6f123f770303492df0aa0f432587aea99790b658264dd59b9c749d0eec5f2031"
+    },
+    {
+      "path": "artifacts/audit/permutation_036.json",
+      "bytes": 60607,
+      "sha256": "d291d92ee25af4ceb747247b4e6e37009e9b1f725939f6c48629f535b0ac3aed"
+    },
+    {
+      "path": "artifacts/audit/permutation_037.json",
+      "bytes": 60680,
+      "sha256": "9a3547fb7b12972c6f8e4876624f8f4c4692b8c5857bd7615d1f227c08e88d59"
+    },
+    {
+      "path": "artifacts/audit/permutation_038.json",
+      "bytes": 60643,
+      "sha256": "4ba8f40f3dc533815897e2228d12c719582fd60ccbc0f4776f06d91a5443e6d5"
+    },
+    {
+      "path": "artifacts/audit/permutation_039.json",
+      "bytes": 60759,
+      "sha256": "5914cedba440da80deecb777c913d1732d73fe499d43049f20eff7f50817a306"
+    },
+    {
+      "path": "artifacts/audit/permutation_040.json",
+      "bytes": 60579,
+      "sha256": "6e57b853ce766269fb3d6b7edbef99bd824260a776fb96982c3c526f0eae9744"
+    },
+    {
+      "path": "artifacts/audit/permutation_041.json",
+      "bytes": 60644,
+      "sha256": "8d98436566a0c3e3790831cdeeddc883b65d0e5457d98dee6d9ea79273356005"
+    },
+    {
+      "path": "artifacts/audit/permutation_042.json",
+      "bytes": 60706,
+      "sha256": "c50f688a3aafceca66bb494961affcaa920c2a9c9a4a5a39a245c587ceb7bb23"
+    },
+    {
+      "path": "artifacts/audit/permutation_043.json",
+      "bytes": 60686,
+      "sha256": "cdf589237b46883e5933d4879f4c176977e64041156b0a2a5b093862c454a9a9"
+    },
+    {
+      "path": "artifacts/audit/permutation_044.json",
+      "bytes": 60564,
+      "sha256": "900266eda85b1f3b50ffd4a44af1e31ab49201e0124353124ee189c841628c11"
+    },
+    {
+      "path": "artifacts/audit/permutation_045.json",
+      "bytes": 60607,
+      "sha256": "0a9d70e9dead1db8a5b0311d6607bebfdfe9e12a192385e12abeacced3f780d2"
+    },
+    {
+      "path": "artifacts/audit/permutation_046.json",
+      "bytes": 60679,
+      "sha256": "63dde4abd5e21736cc0d62205fd06985f2f1b648a33a2eb4ab813d8b1411df49"
+    },
+    {
+      "path": "artifacts/audit/permutation_047.json",
+      "bytes": 60692,
+      "sha256": "c6b0ca337e9f0e636c4b66eea9f9e6282f56d5733864abbf3eed01056dd858d6"
+    },
+    {
+      "path": "artifacts/audit/permutation_048.json",
+      "bytes": 60605,
+      "sha256": "538cf35d579047b6e66913435d6e1c6a07267b5841ea8deed4ea0b3807057072"
+    },
+    {
+      "path": "artifacts/audit/permutation_049.json",
+      "bytes": 60709,
+      "sha256": "0c1463460f1b65bf35d9d8f41d0d648ec90bc15fd60f50530c0bddaf4a293729"
+    },
+    {
+      "path": "artifacts/audit/permutation_050.json",
+      "bytes": 60678,
+      "sha256": "57a3d5596e875a97b7984d23561ccba519c195c0194326061b8de9a8da20b499"
+    },
+    {
+      "path": "artifacts/audit/permutation_051.json",
+      "bytes": 60699,
+      "sha256": "36d95af201a2ca0ebd96dd3bee3f31a700a59a5c9bc68cb0eff73bb630c7ca99"
+    },
+    {
+      "path": "artifacts/audit/permutation_052.json",
+      "bytes": 60718,
+      "sha256": "1358a7b0d1bdfcb33f8fea3b99c5c1f7d9e733af1262cc32d5142a4d7a8bdb5a"
+    },
+    {
+      "path": "artifacts/audit/permutation_053.json",
+      "bytes": 60580,
+      "sha256": "ca86ac81c6620d85c9090e78cb4296f9ab6712766f921eab4cf520677c05160f"
+    },
+    {
+      "path": "artifacts/audit/permutation_054.json",
+      "bytes": 60643,
+      "sha256": "1089e169090ef878c07223e549d6d0e19146504762c4de2466e6f442fa066d5b"
+    },
+    {
+      "path": "artifacts/audit/permutation_055.json",
+      "bytes": 60668,
+      "sha256": "16c4e91b253a7cee595c0f98452af250ab635984e65003135242f398d781625e"
+    },
+    {
+      "path": "artifacts/audit/permutation_056.json",
+      "bytes": 60652,
+      "sha256": "7874c228df22d417dc20404fd8d749d33bcd385132fa5e32f2661e757912e93a"
+    },
+    {
+      "path": "artifacts/audit/permutation_057.json",
+      "bytes": 60693,
+      "sha256": "6364746ce5441589bbff67cd96a94c36f47ff978c2f2e8c5486ca1be897f02e5"
+    },
+    {
+      "path": "artifacts/audit/permutation_058.json",
+      "bytes": 60647,
+      "sha256": "53409e51f84f55b4cbcb01e3b3b25e1b6086979e0422962c79b281eabafcedb5"
+    },
+    {
+      "path": "artifacts/audit/permutation_059.json",
+      "bytes": 60757,
+      "sha256": "2e5a819be1c30881ec2ddfa461fd0ba0eaafa1d3800e8ead13d8650d7e7b6bd3"
+    },
+    {
+      "path": "artifacts/audit/permutation_060.json",
+      "bytes": 60680,
+      "sha256": "f7bb5c036ae9c1a924e5d5772ec51de03ee1b6545b32104a936382fa97488b0d"
+    },
+    {
+      "path": "artifacts/audit/permutation_061.json",
+      "bytes": 60630,
+      "sha256": "297711101d6e7b0c084a0f38e891a4c6b146edd6f0a925a4b35167a5852c6c1b"
+    },
+    {
+      "path": "artifacts/audit/permutation_062.json",
+      "bytes": 60608,
+      "sha256": "b33d64914c1d70f35b27685ff8720ac74496d01d615807c11ef99b4ff6b7ea5c"
+    },
+    {
+      "path": "artifacts/audit/permutation_063.json",
+      "bytes": 60665,
+      "sha256": "51b20cda8a8d7bb837dba05383bccfd2cfaba75a290983d7c457abbf10988688"
+    },
+    {
+      "path": "artifacts/audit/permutation_064.json",
+      "bytes": 60610,
+      "sha256": "eabb46dd7fe85ca8793e8f51d2b35a47b4d90c3c0b1d5616991a2735cf8b6cc3"
+    },
+    {
+      "path": "artifacts/audit/permutation_065.json",
+      "bytes": 60680,
+      "sha256": "c5ad4fcadf9970918b6aaf68a35fa4986c1234a0a00223fa011943cd83550296"
+    },
+    {
+      "path": "artifacts/audit/permutation_066.json",
+      "bytes": 60637,
+      "sha256": "afd64c1de191fa2d3bf4e3db45a8b39ece29221c13464ac8a1d7a9f6a9a51db3"
+    },
+    {
+      "path": "artifacts/audit/permutation_067.json",
+      "bytes": 60706,
+      "sha256": "3bd75ae0c7696a5aaa9384523eae9503cb9c56b7b94835c9390a44908fdef3ba"
+    },
+    {
+      "path": "artifacts/audit/permutation_068.json",
+      "bytes": 60669,
+      "sha256": "83677bb0750c896515a11f83b8ed3a0cdb050d921867a3f016afad6dfaaab698"
+    },
+    {
+      "path": "artifacts/audit/permutation_069.json",
+      "bytes": 60694,
+      "sha256": "fd88acdf72e72be8d609ef8f26ce148a9e5fc2c4c6babe0a6df43368d01ccbac"
+    },
+    {
+      "path": "artifacts/audit/permutation_070.json",
+      "bytes": 60644,
+      "sha256": "7ebe73c37089ae06995612c8fffbc651d34f707fb0297cdc0e279a27c82fbdba"
+    },
+    {
+      "path": "artifacts/audit/permutation_071.json",
+      "bytes": 60602,
+      "sha256": "1b05b8ea482dc0a20d71cd49a247bc3ddb530d4a9e25c70791a1526a367c60ce"
+    },
+    {
+      "path": "artifacts/audit/permutation_072.json",
+      "bytes": 60658,
+      "sha256": "5cb2714abadbba674fe09edef80319a6425df2ce46b151cf599a78710083eb8b"
+    },
+    {
+      "path": "artifacts/audit/permutation_073.json",
+      "bytes": 60569,
+      "sha256": "799e6a738693cd12ba23858c98964df68937fcefe8b28f4f564120ae88732c88"
+    },
+    {
+      "path": "artifacts/audit/permutation_074.json",
+      "bytes": 60723,
+      "sha256": "0f405962115a1131011e92c49551dd992338247992c1c023ad69a7daaa6850ef"
+    },
+    {
+      "path": "artifacts/audit/permutation_075.json",
+      "bytes": 60627,
+      "sha256": "8290d653f9cb017b647f92cd7fece8b2d8a90f91d93a5c5ba32dd6c18e6a8295"
+    },
+    {
+      "path": "artifacts/audit/permutation_076.json",
+      "bytes": 60678,
+      "sha256": "43a2effdc06b5f3751a6ea95a7a59d68fb3a3fac76e0cc82bbf53b89546e9995"
+    },
+    {
+      "path": "artifacts/audit/permutation_077.json",
+      "bytes": 60662,
+      "sha256": "68dae24005af169895e28009ba93b82d01aba0c156a940eb109d7c02cc47eb38"
+    },
+    {
+      "path": "artifacts/audit/permutation_078.json",
+      "bytes": 60597,
+      "sha256": "e9589499379ceeabeaa6da5360b25c1501a9a186a59e1d224cb7cf888086a23d"
+    },
+    {
+      "path": "artifacts/audit/permutation_079.json",
+      "bytes": 60678,
+      "sha256": "f9dbb340621f32175d4ccc3f24036c0fea0b9ff614214a7c8549fea1d1066c9f"
+    },
+    {
+      "path": "artifacts/audit/permutation_080.json",
+      "bytes": 60695,
+      "sha256": "6e55e467ee5fdfcb169a9e9c076538b079b0ab8a2485e6c8e0f69e0319e7e22e"
+    },
+    {
+      "path": "artifacts/audit/permutation_081.json",
+      "bytes": 60694,
+      "sha256": "c6ee58c71acca747eec95b667c188d18486a198e0dafa25dc131135ac6192fcf"
+    },
+    {
+      "path": "artifacts/audit/permutation_082.json",
+      "bytes": 60588,
+      "sha256": "8eecd3e85e0f1dd1c14970512d77c08f313e80a4ef2097d2f25dd6e3ccecc8b6"
+    },
+    {
+      "path": "artifacts/audit/permutation_083.json",
+      "bytes": 60611,
+      "sha256": "72ff038930fb89557341af3b3a49121b8cc8edd6d0bcb182822ab24758e27cd8"
+    },
+    {
+      "path": "artifacts/audit/permutation_084.json",
+      "bytes": 60691,
+      "sha256": "3b0916942c79e80f901a54e5ae5fb271701d7ed833d5e2d1862bb27832a78ab3"
+    },
+    {
+      "path": "artifacts/audit/permutation_085.json",
+      "bytes": 60642,
+      "sha256": "398178de307b7b4e88ef4a16333a3f2f55369403e24fc35da09b2aa65b199f7a"
+    },
+    {
+      "path": "artifacts/audit/permutation_086.json",
+      "bytes": 60617,
+      "sha256": "a99733850ac111b5df6ce72d0f48cad83d83d14fe3b5c43a2e96424209fb636f"
+    },
+    {
+      "path": "artifacts/audit/permutation_087.json",
+      "bytes": 60632,
+      "sha256": "f39ab0ab285b7092e4956d37f9c6070f9f232d293a14d8000e3b14c8269e93b7"
+    },
+    {
+      "path": "artifacts/audit/permutation_088.json",
+      "bytes": 60686,
+      "sha256": "22454ae325e85e2bc335332f65d879bb11aca3347c4b4dc0a7eb0d9002781eca"
+    },
+    {
+      "path": "artifacts/audit/permutation_089.json",
+      "bytes": 60719,
+      "sha256": "0517156eadc609ed4e552cbba2185dfe956b3663d508c655bfcae19866e3543b"
+    },
+    {
+      "path": "artifacts/audit/permutation_090.json",
+      "bytes": 60619,
+      "sha256": "3d49b5f22e0848ec7aa2847240e02bc4d85dfd1a8e1c75b2ad14b8fefee4004c"
+    },
+    {
+      "path": "artifacts/audit/permutation_091.json",
+      "bytes": 60707,
+      "sha256": "eb88b79863244ce0c54bc645b55374d43ba73578be71947d8e2fb0c8f16e8b65"
+    },
+    {
+      "path": "artifacts/audit/permutation_092.json",
+      "bytes": 60643,
+      "sha256": "df0cd7a032dd4bcd33c6c43071e44e3af39826d46ed03526f18af2910323ee8b"
+    },
+    {
+      "path": "artifacts/audit/permutation_093.json",
+      "bytes": 60674,
+      "sha256": "e08785c2a44408283c3f5f366fedd1f84df2ac3ea2203342bfdf0f0461b91bcf"
+    },
+    {
+      "path": "artifacts/audit/permutation_094.json",
+      "bytes": 60605,
+      "sha256": "bc48cc95fa2e3c33403a1061d3c35cfb618b8291067bacc9917aff472ba3eb90"
+    },
+    {
+      "path": "artifacts/audit/permutation_095.json",
+      "bytes": 60626,
+      "sha256": "dca18e155ab861e40ae01eb21f93b383a30d39a793a50721cb5e538574b6415c"
+    },
+    {
+      "path": "artifacts/audit/permutation_096.json",
+      "bytes": 60627,
+      "sha256": "5a75cb53387ac3766f7390366d6069950f0a0397368b72e12efd2c3b8404ebb0"
+    },
+    {
+      "path": "artifacts/audit/permutation_097.json",
+      "bytes": 60680,
+      "sha256": "4d130639c36a80cbab4373df1cc2204840d802cd889c0a80a3f094ff12086175"
+    },
+    {
+      "path": "artifacts/audit/permutation_098.json",
+      "bytes": 60643,
+      "sha256": "d8bad0cd2694f62e971e8f233fe9f79407bc9293adb10c6099bb055b01393001"
+    },
+    {
+      "path": "artifacts/audit/permutation_099.json",
+      "bytes": 60695,
+      "sha256": "62c65f7704c39d69b706eae4c8e7d0e71af6e45a7dd7652caf8d9f3249f871d9"
+    },
+    {
+      "path": "artifacts/audit/permutation_100.json",
+      "bytes": 60624,
+      "sha256": "92d63b3eac89b77bc9f68a9544a9a58107c27a0656e40b407c03d5d1ebe79132"
+    },
+    {
+      "path": "artifacts/audit/permutation_101.json",
+      "bytes": 60600,
+      "sha256": "5e6f9003b105d91d0ba0f3a065d6601ee45c454b4e05c0481884c52eff08281c"
+    },
+    {
+      "path": "artifacts/audit/permutation_102.json",
+      "bytes": 60639,
+      "sha256": "e7c04fa5f6513b4bb74c438efc35c2bce0f86ca7bb33cd4b18f33fbaea90cc79"
+    },
+    {
+      "path": "artifacts/audit/permutation_103.json",
+      "bytes": 60689,
+      "sha256": "5537e9831d6d1996bfee8a15715cabd932ef7e1a62b24f8d362af6d0f0d1a601"
+    },
+    {
+      "path": "artifacts/audit/permutation_104.json",
+      "bytes": 60685,
+      "sha256": "d78e618a35915a21d0daf6bd1ddb0fdc726d7b5cdaf064735d39fbd8daedd72c"
+    },
+    {
+      "path": "artifacts/audit/permutation_105.json",
+      "bytes": 60674,
+      "sha256": "54210d566e40a1f0b9fa7d51b02436cd907032aeaea2b203f2600e453759d3b1"
+    },
+    {
+      "path": "artifacts/audit/permutation_106.json",
+      "bytes": 60647,
+      "sha256": "855755073ea412e7e5f7dd939ec49ae6bcf3ce560f4669f9930d30a792bdd66a"
+    },
+    {
+      "path": "artifacts/audit/permutation_107.json",
+      "bytes": 60731,
+      "sha256": "b2cf33656daf7ee0438ef8c3418e7e58f1becf15c7b32ce3701186723b4227f6"
+    },
+    {
+      "path": "artifacts/audit/permutation_108.json",
+      "bytes": 60710,
+      "sha256": "e2ed20a185bf4027735cad064156d9737ee69b1d9121e2eb9d2f2d7ec29ef20b"
+    },
+    {
+      "path": "artifacts/audit/permutation_109.json",
+      "bytes": 60700,
+      "sha256": "0f4f56088118c4aa824ad7a94b30d210c7e665ed6276afdc71d37ecc02ea7444"
+    },
+    {
+      "path": "artifacts/audit/permutation_110.json",
+      "bytes": 60611,
+      "sha256": "4e86f6f7a4316ba6259abd1c7c9af613d4f9cd34f69c317e776b69b88411230e"
+    },
+    {
+      "path": "artifacts/audit/permutation_111.json",
+      "bytes": 60701,
+      "sha256": "140c316e4527a9e657045eb8065c64ef1985b09756d69a5ea8de69776f560e1f"
+    },
+    {
+      "path": "artifacts/audit/permutation_112.json",
+      "bytes": 60630,
+      "sha256": "eb9b4fd361462a865b50d3e2dfe40f4a04d01a5340a0539b4b68f391bbb084b5"
+    },
+    {
+      "path": "artifacts/audit/permutation_113.json",
+      "bytes": 60635,
+      "sha256": "5d059ea0aefc82cfa2e827cd15e61fa675514a7d12b4717670f6181eb464db5b"
+    },
+    {
+      "path": "artifacts/audit/permutation_114.json",
+      "bytes": 60715,
+      "sha256": "6819c8043393cc3d9d54e25a1191230cc0ddb96552ce43a6ecebbcae9931fb67"
+    },
+    {
+      "path": "artifacts/audit/permutation_115.json",
+      "bytes": 60634,
+      "sha256": "f544a0a1c704fe1f93ad76446998963ac6c02b0a13504f4f9759691fd1a9ae9f"
+    },
+    {
+      "path": "artifacts/audit/permutation_116.json",
+      "bytes": 60667,
+      "sha256": "32f1c875428dd8284fe9662497ad481788ae07a1dc7e544116a94a5c18dc8624"
+    },
+    {
+      "path": "artifacts/audit/permutation_117.json",
+      "bytes": 60661,
+      "sha256": "28febe0ab009c401d10920995b2dd2dfc2641fc9b247bedd15ef91d860b0ddd5"
+    },
+    {
+      "path": "artifacts/audit/permutation_118.json",
+      "bytes": 60629,
+      "sha256": "23558c24322ce03e52b5f031dba09954b863240ec0431da75d43b2e0e6df8b3f"
+    },
+    {
+      "path": "artifacts/audit/permutation_119.json",
+      "bytes": 60601,
+      "sha256": "fd15034914d0485327a07593d5fc84b0a7da73fd142c9437c2bb889c61164c12"
+    },
+    {
+      "path": "artifacts/audit/permutation_120.json",
+      "bytes": 60692,
+      "sha256": "de4b91c2ef0a28394d48d9934008719eee1bd041b40e859bbdab06f496ed4ad5"
+    },
+    {
+      "path": "artifacts/audit/permutation_121.json",
+      "bytes": 60684,
+      "sha256": "3e306c7a0ed675f94a5cb4bc81a92bd93c8e077401715e3862fca3bf75067741"
+    },
+    {
+      "path": "artifacts/audit/permutation_122.json",
+      "bytes": 60664,
+      "sha256": "65c93434a44fbad9a726ddf0e7fa4469f95cb33eb073156995519ebd18bf2ad1"
+    },
+    {
+      "path": "artifacts/audit/permutation_123.json",
+      "bytes": 60613,
+      "sha256": "e5030afd9d96467aacccc596be68f47ce79b8546e4edff029ca949721c20a09e"
+    },
+    {
+      "path": "artifacts/audit/permutation_124.json",
+      "bytes": 60633,
+      "sha256": "f44a4b0c1e74d4a228585068cfb8ebed27aeafae21f1669e929d9a8b4192f965"
+    },
+    {
+      "path": "artifacts/audit/permutation_125.json",
+      "bytes": 60729,
+      "sha256": "f70728e28fc3319398a045a917547ed60dac3063a65a84d55f8ed2e9072951e1"
+    },
+    {
+      "path": "artifacts/audit/permutation_126.json",
+      "bytes": 60644,
+      "sha256": "16ba3d6deb292b0ddb112c9db49a9c786955d3c92fa6f2c2a6a9c20efedb3f7f"
+    },
+    {
+      "path": "artifacts/audit/permutation_127.json",
+      "bytes": 60677,
+      "sha256": "833fd3450b13d7bf3910f75902f1658d64836d93af6cfa6159cf1e3bd3898ab4"
+    },
+    {
+      "path": "artifacts/audit/permutation_schedule.json",
+      "bytes": 124931,
+      "sha256": "4ba434a6516c719fa4177dd808978658f9263de85f5668697d428de5304a459e"
+    },
+    {
+      "path": "artifacts/audit/provenance.json",
+      "bytes": 742,
+      "sha256": "f30d1d651b4f66156fb57162c5b005ef8005d68fa17c77a53680387cb56644dc"
+    },
+    {
+      "path": "artifacts/audit/summary.json",
+      "bytes": 91377,
+      "sha256": "acfac29ad557f47985a4e74cdb0f662c1710ea4e182487b467c3a52c1b2591da"
+    },
+    {
+      "path": "meta.json",
+      "bytes": 696,
+      "sha256": "9dce1880dcd462959b070a8e7bb03b4bcc427d43059e908e3ddb48cd23410fa6"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 1049,
+      "sha256": "b3d09ecaacd6cf96ae3f57ae9569f3a6f5ab6e6f3bfccdb3dca43bc782a73738"
+    },
+    {
+      "path": "train.log",
+      "bytes": 2514,
+      "sha256": "c7ff55dee99e191f7ef43873d519c9795f213df7cc5d8e9d904947644fb3610e"
+    }
+  ],
+  "file_count": 137,
+  "total_bytes": 8432184
+}

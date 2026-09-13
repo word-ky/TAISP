@@ -2056,3 +2056,43 @@ Recommendation: review the recorded negative utility result under the frozen rul
 Centeredvariation is present but hasnot metthe task-utility criterion. No thresholdrelaxation,
 repeat/cohortselection or promotionofcovariance-only/biasremoval/centering. STOP afterT013-H;
 no T013-I,training,regularization,redesign,targetAP,spatialISP,gating,dose orkernelwork started.
+
+---
+
+## T013-I — NEEDS_REVIEW — 2026-09-13T09:17:33.9758946+08:00
+
+R023/c016e51 executed; T013-H accepted/closed, its39/64negativeutility remainsfailed.
+Plan5723ecd preceded newfitmetrics, codec6d2c6e; run20260913-091200-taisp-t013i-linear-capacity,
+release091116,09:12:05–09:12:13+08exit0. Reportresearch_log/T013I_report.md,
+complete tablesT013I/tables.md, rawrun and137-file SHAmanifest retained.
+
+- OnlyexactHrecords/cohort/audit used; allthreehashes checkedagainst Hreceipt.
+  Same4fixed8imagefolds,48train/16heldout episodes, clean/corrupt pairsstaytogether.
+  Newanalysis module reusesHfold/cosine/factorization; no predictor/deployment edits.
+- Fixedfloat64SVD minnorm fit, eps64*maxshape*smax tolerance. All4ranks16,
+  Bnorm[2679.0722,1722.6801,3140.0943,3327.3198], conditions[4128.5463,3548.2432,2907.7138,2936.0734].
+  Finiteallfits/predictions; largecoefficients/anisotropy reported, noregularization.
+- Exactly128default_rng(20260913) pairpermutations, fold-local24pairshuffles preserving
+  clean/corrupt positions andmarginals. All512nullcoefs/mappings/heldoutpredictions retained.
+  Total516SVDfits; audit.517752671s CPU; zero modelcalls/optimizer/newdata.
+- Baseline6passed1.54s; focused9passed1.66s; fullCPU116passed11skipped5.91s.
+  Testscover SVDreconstruction/minnorm/cutoff, pairfoldisolation, nullmarginals/determinism,
+  residualpooledmetrics, exactgateandtailboundaries. No newblocker.
+- LinearpooledresidualSSE19.35733960 vscommonresidualenergy14.02064791,
+  R2=-.3806308900, medianresidualcos=.06836475594, positivedots33/64 (15clean18corrupt).
+  FoldR2[-6.226104798,-.1384326675,-.1545159727,-.1046360453]:0/4positive.
+  CleanR2=-2.597423311, corruptedR2=.009309191867. Fullcase/family/foldgroups retained.
+- NullR2observed100percentile,95th=-.5450267464,0null>=observed,correctedtail1/129=.007751938.
+  Nullcosobserved72.65625percentile,95th=.2305152311,35null>=observed,tail36/129=.279069767.
+  Residualdotcountnull54.6875percentile,95th40,58null>=33 (14ties),tail59/129=.457364341.
+  R2betterthanmatchednull isretained butabsoluteR2andcosinegatefail; nozero-informationtheorem.
+- R023fixedconjunction FAIL (onlyR2above-null95flag passes). No threshold/seed/nullchange.
+  CommonreferenceR2=0; HcovreferenceR2=.000798436, residualdots40/64 butfullgradient
+  descent39/64unchanged. ReferenceHdelta maxerror3.176373552e-22 withinunchanged8eps32bound.
+  Linearfullgradientdescent37/64, meanprediction-4.647974066e-5; thesearenotfinite-step/APresults.
+
+UnderR023 closecurrentfrozen16Dfeature+linear-head learned-initialization branch: insufficient
+heldoutsample-specific gradientpredictability tojustifylongertraining/common-modesuppression.
+Returnresearchpivotdecision toresearchlead; no pivotimplemented. STOPafterT013-I, no newmodelrun,
+meta-training, biasremoval/centering/covdeployment, redesign, regularizer, targetAP, spatialISP,
+gating/dose orT013-J started. Hnegativegateisnotretroactivelyrescued.
