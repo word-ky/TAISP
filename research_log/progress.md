@@ -611,3 +611,12 @@ No model outcomes or active job. Next commit plan, implement/test, fullregressio
 2026-09-13T22:25:13.164576+08:00 T021-A formal222407 started once on A6000, same release222014/code daa79e5 after175passed10skipped and real-support smoke d276fc0. Expected2800teachers/2800K3episodes/105APevaluations; no outcomes. Durable recovery/report instructions saved.
 
 2026-09-13T23:00:03.394627+08:00 T021-A completedexit0:200images/2800teachers/2800adaptiveepisodes/105APevals,1128.431519s. R033FAIL macro-current-.030367145082AP/macro-raw-.210352375112AP,1/4blocks,4/6conditions;clean+.263891538209vs current but-.149335803521vsraw. All2800isolation/1400consensus/9672retained supports/17remotehashpins pass.66rawfiles59995881bytes fetched/hashverified; reportcomplete,closefixedflipfilter,NEEDS_REVIEW,noactivejob.
+
+2026-09-13T23:36:26.050998+08:00. R034/6001e14 synchronized. Baseline13passed1skipped2.38s.
+200newtrain2017/four50blocks,1236prior-source/debug plus5000val excluded (6236IDs).
+CohortSHA589878ad7af1d86bf73514d63dd58a4e40d58797d119ea4981be9e4292772690;eligible12562,firstIDs160585/114830.
+Direction locked to go+gb; rho.5 regional coefficients bounded. Reuse validated A1
+JVP/float64 chain-rule reduction to avoid previously observed reverse partition error.
+Exact mask/ISP/loss/CLIP/globalbaseline preserved. Plan freezes parity tolerances before
+new model calls. No activejob or scientific outcomes. Next implement/test isolated
+candidate, fullregression and GPU parity/runtime smoke; stop on numericalfailure.
