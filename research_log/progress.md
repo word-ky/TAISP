@@ -527,3 +527,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T11:34:38.4379469+08:00 A1focused11passed2.17s; run20260913-113401-taisp-t014a1-common-jacobian launchedonce on0ad53b6/release113310. Fullregression thenfixeddebug0/5/6 andconditionalfresh32. No oldreceipt/tolerance/sciencegate change.
 
 2026-09-13T11:47:49.6295582+08:00 T014-A1 completed exit0: 128passed10skipped6.48s; 3fixeddebug plus32freshfull pass numerical/isolation checks. R024 conjunctionFAIL19/32 overall,9/16corrupted positiveDeltaD; no thresholds changed. OldA receipts unchanged. Fetched45files1092765bytes, rendered fulltables andSHAmanifest; report ready, NEEDS_REVIEW. No further experiment launched.
+
+2026-09-13T12:25:17.6716539+08:00 User requested GPU priority. Future model/gradient/experiment workloads should prefer A6000 GPU where supported; retain CPU for lightweight file/report work and small offline algebra. Existing frozen device/precision protocols remain unchanged.

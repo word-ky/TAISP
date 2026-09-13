@@ -12,3 +12,5 @@ Read research_log/T014A1_report.md, T014A1/tables.md, numerical_summary.json and
 OriginalA BLOCKED report stays immutable; new common-Jacobian estimator validated underR025.
 STOP forresearchreview. NoT014-B/spatialdeployment/CLIPscaling/training/redesign/newcohort/masksearch.
 Continue15minuteheartbeat; execute onlynew explicitresearchqueue tasks. Unchangedstate staysquiet.
+
+User preference (2026-09-13T12:25:17.6716539+08:00): Prefer A6000 GPU for model execution, gradient computation and experiments when supported by the task. CPU remains appropriate for file/report work and small offline algebra. Preserve explicitly frozen experiment device/precision settings.
