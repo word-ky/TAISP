@@ -101,7 +101,7 @@ def confirmation(metrics, isolation_passed):
             'AP75_nonnegative_diagnostic':groups['aggregate']['additional_macro_deltas']['AP75']>=0}
 
 
-def run(config, manifest_path, output, smoke=False):
+def run(config, manifest_path, output, smoke=False, transport_fits=None):
     manifest=json.loads(manifest_path.read_text())
     images=manifest['images'][:2] if smoke else manifest['images']
     study=config.get('study','T018-A')
@@ -128,6 +128,10 @@ def run(config, manifest_path, output, smoke=False):
                     if study=='T018-B' else 'T018-A developmental train2017 source-only fixed candidate; no confirmatory or cross-detector claim')
     if study=='T019-A':
         interpretation='T019-A predeclared native component development study; no confirmation or cross-detector claim'
+    if study=='T020-A':
+        interpretation='T020-A image-level cross-fitted source-trained orthogonal transport; developmental only'
+        assert transport_fits is not None
+        write_json(output/'transport_fits.json',transport_fits)
     meta.update(interpretation=interpretation,
                 smoke=smoke,cases=CASE_NAMES,methods=methods,source_state_sha256=source_hash,clip_state_sha256=clip_hash,
                 cohort_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
@@ -142,6 +146,17 @@ def run(config, manifest_path, output, smoke=False):
     with (output/'samples.jsonl').open('w',encoding='utf-8') as handle:
         for i,info in enumerate(images):
             clean=load_image(info,config['device'])
+            q=fold=None
+            if transport_fits is not None:
+                matches=[(k,f) for k,f in transport_fits.items() if info['image_id'] in f['heldout_image_ids']]
+                assert len(matches)==1
+                fold,fit=matches[0]
+                assert info['image_id'] not in fit['train_image_ids']
+                if not smoke:
+                    assert int(fold)==info['block']
+                    assert set(fit['heldout_image_ids'])==set(manifest['replication_blocks'][f'block{fold}'])
+                    assert set(fit['train_image_ids'])==set(manifest['image_ids'])-set(fit['heldout_image_ids'])
+                q=torch.tensor(fit['Q'],device=config['device'],dtype=clean.dtype)
             for family,severity in CASES_ALL:
                 case=f'{family}_s{severity}'
                 image=clean if family=='clean' else corrupt(clean,family,severity)
@@ -156,12 +171,16 @@ def run(config, manifest_path, output, smoke=False):
                 frozen_support={k:v.clone() for k,v in selected.items()}
                 counts={}
                 for method in methods[1:]:
-                    loss=DetectorNativeLoss(source,{'base':selected},'det_pseudo') if method=='current_ours' else NativePseudoTargetLoss(
+                    loss=DetectorNativeLoss(source,{'base':selected},'det_pseudo') if method in ('current_ours','grad_transport_ours') else NativePseudoTargetLoss(
                         source,selected,seed=config['seed'],component_set='full' if method=='nativePT_ours' else method)
                     torch.cuda.synchronize()
                     torch.cuda.reset_peak_memory_stats()
                     begin=time.perf_counter()
-                    result=adapt_clip_radius(image,isp,loss,clip,steps=config['semantic_steps'],lr=config['semantic_lr'],eps=config['radius_eps'])
+                    if method=='grad_transport_ours':
+                        from taisp.tta.gradient_transport import adapt_gradient_transport
+                        result=adapt_gradient_transport(image,isp,loss,clip,q,steps=config['semantic_steps'],lr=config['semantic_lr'],eps=config['radius_eps'])
+                    else:
+                        result=adapt_clip_radius(image,isp,loss,clip,steps=config['semantic_steps'],lr=config['semantic_lr'],eps=config['radius_eps'])
                     torch.cuda.synchronize()
                     elapsed=time.perf_counter()-begin
                     peak=torch.cuda.max_memory_allocated()
@@ -188,6 +207,10 @@ def run(config, manifest_path, output, smoke=False):
                     if isinstance(loss,NativePseudoTargetLoss):
                         row['active_component_keys']=list(loss.active_keys)
                         row['paired_prediction_count_delta']=counts[method]-counts['current_ours']
+                    if method=='grad_transport_ours':
+                        row['transport_fold']=fold
+                        row['isolation']['heldout_image_excluded_from_fit']=info['image_id'] not in fit['train_image_ids']
+                        row['isolation']['all_step_norms_preserved']=all(d['norm_preservation_passed'] for d in result.diagnostics)
                     handle.write(json.dumps(row,allow_nan=False)+'\n');handle.flush();rows.append(row)
             print(f'completed {i+1}/{len(images)} image_id={info["image_id"]} elapsed={time.perf_counter()-started:.1f}s',flush=True)
     pd=output/'predictions';pd.mkdir()
@@ -213,7 +236,10 @@ def run(config, manifest_path, output, smoke=False):
             for group,values in replication_ap(coco,ids,records,manifest['replication_blocks']).items():
                 metrics.setdefault(group,{})[name]=values
         write_json(output/'metrics.json',metrics)
-        if study=='T019-A':
+        if study=='T020-A':
+            from .gradient_transport import transport_advancement
+            summary=transport_advancement(metrics,all(final_isolation.values()) and all(all(r['isolation'].values()) for r in rows))
+        elif study=='T019-A':
             from .native_component_study import component_selection
             summary=component_selection(metrics,all(final_isolation.values()))
         else:
@@ -232,5 +258,7 @@ if __name__=='__main__':
     p.add_argument('--manifest',type=Path,default=Path('research_log/T018A_train_cohort.json'))
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--smoke',action='store_true')
+    p.add_argument('--transport-fits',type=Path)
     args=p.parse_args()
-    run(yaml.safe_load(args.config.read_text()),args.manifest,args.output,args.smoke)
+    run(yaml.safe_load(args.config.read_text()),args.manifest,args.output,args.smoke,
+        json.loads(args.transport_fits.read_text()) if args.transport_fits else None)

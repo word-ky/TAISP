@@ -23,7 +23,7 @@ def adapt_half_dose(image, isp, detector_loss, clip_loss, *, steps=3, lr=.1, eps
     return _adapt_radius(image, isp, detector_loss, clip_loss, steps=steps, lr=lr, eps=eps, half_dose=True)
 
 
-def _adapt_radius(image, isp, detector_loss, clip_loss, *, steps, lr, eps, half_dose, phi0=None):
+def _adapt_radius(image, isp, detector_loss, clip_loss, *, steps, lr, eps, half_dose, phi0=None, gradient_transport=None):
     """Fresh episode; frozen losses; fixed original support owned by detector_loss."""
     detector_loss.eval().requires_grad_(False)
     clip_loss.eval().requires_grad_(False)
@@ -40,7 +40,10 @@ def _adapt_radius(image, isp, detector_loss, clip_loss, *, steps, lr, eps, half_
         pseudo, clip = detector_loss(image, enhanced), clip_loss(image, enhanced)
         gd = torch.autograd.grad(pseudo, probe, retain_graph=True)[0].detach()
         gc = torch.autograd.grad(clip, probe)[0].detach()
-        update, scale = transfer_norm(gd, gc, eps)
+        direction = gd if gradient_transport is None else gd @ gradient_transport
+        if gradient_transport is not None:
+            torch.testing.assert_close(direction.norm(), gd.norm(), rtol=1e-5, atol=1e-8)
+        update, scale = transfer_norm(direction, gc, eps)
         hybrid_norm = update.norm().item()
         if half_dose:
             update = .5*update
@@ -66,6 +69,10 @@ def _adapt_radius(image, isp, detector_loss, clip_loss, *, steps, lr, eps, half_
         if half_dose:
             history[-1].update(dose_coefficient=.5, pre_attenuation_hybrid_norm=hybrid_norm,
                                applied_half_dose_norm=update.norm().item())
+        if gradient_transport is not None:
+            history[-1].update(transported_gradient=direction.tolist(),
+                               transported_gradient_norm=direction.norm().item(),
+                               norm_preservation_passed=True)
         if step < steps:
             phi = phi-lr*update
             if phi0 is None:
