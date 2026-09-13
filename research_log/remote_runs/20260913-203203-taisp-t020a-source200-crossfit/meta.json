@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-203203-taisp-t020a-source200-crossfit",
+  "releaseId": "20260913-203154-ttfl-t007r",
+  "sessionName": "autodl-20260913-203203-taisp-t020a-source200-crossfit",
+  "command": "export TAISP_SOURCE_REVISION=0546b05; /home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.collect_t020a --output \"$AUTODL_ARTIFACTS_DIR/source_fit\" && /home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.run_t018a --config configs/t020a.yaml --manifest research_log/T020A_train_cohort.json --transport-fits \"$AUTODL_ARTIFACTS_DIR/source_fit/fits.json\" --output \"$AUTODL_ARTIFACTS_DIR/study\""
+}

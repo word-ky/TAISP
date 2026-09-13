@@ -1,0 +1,166 @@
+{
+  "current_ours/clean": {
+    "n": 200,
+    "update_fraction": 0.99,
+    "empty_support_fraction": 0.01,
+    "phi3_norm": {
+      "mean": 0.03550162429222837,
+      "median": 0.027665751054883003,
+      "min": 0.0,
+      "max": 0.2284110188484192
+    },
+    "adapt_seconds": {
+      "mean": 0.30196305578720056,
+      "median": 0.3050635535037145,
+      "min": 0.17638533597346395,
+      "max": 0.3206683429889381
+    },
+    "deploy_seconds": {
+      "mean": 0.33042509041231827,
+      "median": 0.3337050390255172,
+      "min": 0.20616325899027288,
+      "max": 0.35268013895256445
+    },
+    "support_count": {
+      "mean": 8.255,
+      "median": 6.5,
+      "min": 0,
+      "max": 20
+    },
+    "prediction_count": {
+      "mean": 35.82,
+      "median": 28.0,
+      "min": 1,
+      "max": 100
+    },
+    "peak_allocated_bytes": {
+      "mean": 2905954577.92,
+      "median": 2858387968.0,
+      "min": 1057564672,
+      "max": 3287119872
+    }
+  },
+  "current_ours/corrupted": {
+    "n": 1200,
+    "update_fraction": 0.9916666666666667,
+    "empty_support_fraction": 0.008333333333333333,
+    "phi3_norm": {
+      "mean": 0.02927509982623936,
+      "median": 0.024552089162170887,
+      "min": 0.0,
+      "max": 0.11812484264373779
+    },
+    "adapt_seconds": {
+      "mean": 0.3025203964825778,
+      "median": 0.30513824051013216,
+      "min": 0.1738115350017324,
+      "max": 0.3689962059725076
+    },
+    "deploy_seconds": {
+      "mean": 0.332118153834114,
+      "median": 0.333659589960007,
+      "min": 0.2026017410098575,
+      "max": 0.6820651149610057
+    },
+    "support_count": {
+      "mean": 7.7058333333333335,
+      "median": 6.0,
+      "min": 0,
+      "max": 20
+    },
+    "prediction_count": {
+      "mean": 33.54416666666667,
+      "median": 25.0,
+      "min": 1,
+      "max": 100
+    },
+    "peak_allocated_bytes": {
+      "mean": 2913033843.6266665,
+      "median": 2862043136.0,
+      "min": 1041002496,
+      "max": 3289715200
+    }
+  },
+  "grad_transport_ours/clean": {
+    "n": 200,
+    "update_fraction": 0.99,
+    "empty_support_fraction": 0.01,
+    "phi3_norm": {
+      "mean": 0.03574047076515854,
+      "median": 0.028056508861482143,
+      "min": 0.0,
+      "max": 0.14189858734607697
+    },
+    "adapt_seconds": {
+      "mean": 0.30541908607876395,
+      "median": 0.30916060498566367,
+      "min": 0.18358547397656366,
+      "max": 0.32258357299724594
+    },
+    "deploy_seconds": {
+      "mean": 0.3338811207038816,
+      "median": 0.3379177844908554,
+      "min": 0.2134837819612585,
+      "max": 0.3545953689608723
+    },
+    "support_count": {
+      "mean": 8.255,
+      "median": 6.5,
+      "min": 0,
+      "max": 20
+    },
+    "prediction_count": {
+      "mean": 35.67,
+      "median": 28.0,
+      "min": 1,
+      "max": 100
+    },
+    "peak_allocated_bytes": {
+      "mean": 2905729576.96,
+      "median": 2858388992.0,
+      "min": 1057565184,
+      "max": 3287120384
+    }
+  },
+  "grad_transport_ours/corrupted": {
+    "n": 1200,
+    "update_fraction": 0.9916666666666667,
+    "empty_support_fraction": 0.008333333333333333,
+    "phi3_norm": {
+      "mean": 0.029266314364504067,
+      "median": 0.02464955858886242,
+      "min": 0.0,
+      "max": 0.13168689608573914
+    },
+    "adapt_seconds": {
+      "mean": 0.3053644575632158,
+      "median": 0.30884578701807186,
+      "min": 0.17951313499361277,
+      "max": 0.32483638694975525
+    },
+    "deploy_seconds": {
+      "mean": 0.33496221491475203,
+      "median": 0.3375728650134988,
+      "min": 0.20919540501199663,
+      "max": 0.568431715015322
+    },
+    "support_count": {
+      "mean": 7.7058333333333335,
+      "median": 6.0,
+      "min": 0,
+      "max": 20
+    },
+    "prediction_count": {
+      "mean": 33.528333333333336,
+      "median": 24.5,
+      "min": 1,
+      "max": 100
+    },
+    "peak_allocated_bytes": {
+      "mean": 2913071371.0933332,
+      "median": 2862227200.0,
+      "min": 1041003008,
+      "max": 3289415680
+    }
+  }
+}

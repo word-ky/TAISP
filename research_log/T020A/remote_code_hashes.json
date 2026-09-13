@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-09-13T21:20:32.759449+08:00",
+  "release": "20260913-202732-taisp-t020a-crossfit",
+  "verification": "Remote Python SHA256 of actual release files compared to pre-outcome pins via Invoke-AutodlSsh; all16 matched; exit0",
+  "files": {
+    "taisp/losses/detector_native.py": {
+      "sha256": "21471524358faee9f0d5c47a7d6e45911ff22bb9f31316e57d42f4e8ca72c6b2",
+      "matches": true
+    },
+    "taisp/models/detector.py": {
+      "sha256": "df9cae806e102c8c6231131b9e620e6ae5375a908dbff686447364eb932bce7c",
+      "matches": true
+    },
+    "taisp/models/detector_signal.py": {
+      "sha256": "4c5f142e32c055a2e8efc579ccb9c64112faac54e049cc43e161a258a991686d",
+      "matches": true
+    },
+    "taisp/losses/clip_semantic.py": {
+      "sha256": "2dea813207b745cb43f0ecf59cf666c02e1e193ee2f65804ed996a230a97cbb2",
+      "matches": true
+    },
+    "taisp/analysis/oracle.py": {
+      "sha256": "793a9a34e7dbd53cedc699520fbf3e94890e95adfdcbe6ce2c14cad4cb908e35",
+      "matches": true
+    },
+    "taisp/analysis/corruptions.py": {
+      "sha256": "1daf28d3a7f321fecb89f671cc6dab2c206d135cd9763246b7bd7e142b294992",
+      "matches": true
+    },
+    "taisp/isp/__init__.py": {
+      "sha256": "ac39f4892353ce22cf3d2e03d08597cbe65ca62cb6c22dcfda22e78e7bd7b818",
+      "matches": true
+    },
+    "taisp/isp/module.py": {
+      "sha256": "80852cd0a284945740c62b30b54e4723e32dc1d99a555a47d90d4ca9e2532832",
+      "matches": true
+    },
+    "taisp/isp/ops.py": {
+      "sha256": "e0cb6776dfb1f8ab935b49eceb30be1ac7f60b958a22ad0b535aad22016a6e7b",
+      "matches": true
+    },
+    "taisp/analysis/native_pseudo_target.py": {
+      "sha256": "4ac9f9933af100d8104a838bfe1314babd74a30009ead8ab47a67c6b5820598a",
+      "matches": true
+    },
+    "taisp/analysis/native_component_study.py": {
+      "sha256": "6df36e834df335eaa257121607d0bff271fc52d9a6a4f2ac87d04d84ba4027aa",
+      "matches": true
+    },
+    "taisp/tta/trust_radius.py": {
+      "sha256": "b815a37f24fea3c40634eaac393c13a1c255af4a88291b4a0808c5caf30f829c",
+      "matches": true
+    },
+    "taisp/tta/gradient_transport.py": {
+      "sha256": "989591a61b11a696fb5f0c26ea1855e0497a3ea7af964cb7943e7260cf52d97d",
+      "matches": true
+    },
+    "taisp/analysis/gradient_transport.py": {
+      "sha256": "0987bf00efdffa0166fa11c8b96d6673545596a38ef9cf98b26a40ba105bb7c1",
+      "matches": true
+    },
+    "taisp/analysis/collect_t020a.py": {
+      "sha256": "65c00831802cf3433491c8f4c032871a5602f736e1dd977a8332b7b3ae28f2c2",
+      "matches": true
+    },
+    "taisp/analysis/run_t018a.py": {
+      "sha256": "ad2012cbc7c8c87d0b663fa98c4c67067bad351e00584ce8cd873059b726bd04",
+      "matches": true
+    }
+  }
+}

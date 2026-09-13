@@ -2463,3 +2463,69 @@ Source/CLIP frozen, original pseudo objective/global8D identity/K3/LR.1 unchange
 Only row gradient gd@Q before unchanged CLIP norm transfer is new.
 Do not launch duplicate. Monitor,fetch,audit,report,push,mirror,stopNEEDS_REVIEW.
 Heartbeat15minutes; model/gradients/fitting/runtime CUDA preferred.
+
+
+## T020-A - NEEDS_REVIEW - close fixed global linear gradient transport
+
+2026-09-13T21:24:23.775106+08:00. R032/2654048 completed. Pre-outcome plan/cohort766ae89; code0546b05;
+smoke31e0267. Full report `research_log/T020A_report.md`; full AP/AP50/AP75, block,
+condition, Q/singular-value/alignment/latency tables in `research_log/T020A/complete_tables.md`.
+Raw source pairs, fold train/held-out indices, all matrices and runtime diagnostics retained.
+
+Implementation reused the exact current-Ours DetectorNativeLoss and oracle source task
+loss. Added closed-form Procrustes fitting, separate source-labelled collector, and a
+minimal optional gradient-transport hook in the existing runtime. Public/default
+current Ours is unchanged; identity Q reproduces it. No native component objectives,
+optimizer, ridge, coordinate selection, nonlinear network, per-condition matrix or sweep.
+Four image-level folds prevent all clean/corrupt versions of an image from entering
+its own Q fit. Runtime process receives Q/provenance only, no source task gradients/labels.
+Unit coefficients/CLIP norm formula, frozen weights/prompts/teacher,8D ISP,K3/LR.1 fixed.
+
+Formal `20260913-203203-taisp-t020a-source200-crossfit`, release20260913-202732:
+20:32:11-20:54:03+08, exit0.200newimages,4x50folds,836prior-source/all5000valexcluded;
+cohortSHAc364fb4d0bf2880318dbbcd22a47605cedccb31f6ee783ffdc56f6650d1f9ade.
+1400rawpairs,4Q(each150images/1050pairs),2800adaptiveepisodes,21predictions,105APevals.
+A6000 CUDA float32 models, float64 SVD; sourcecollection196.470625s,fit.040319s,
+runtime+officialCPUevaluation1092.429241s. All predictions precede official evaluation.
+
+| Metric | No adapt | Current Ours | Gradient transport |
+| --- | --- | --- | --- |
+| Corruption macro AP | 45.7285369463 | 45.8688848296 | 45.8767699326 |
+| Corruption macro AP50 | 69.8316068008 | 69.7430719026 | 69.7606508853 |
+| Corruption macro AP75 | 50.3559776748 | 50.6864507427 | 50.6720436992 |
+| Clean AP | 50.6902614177 | 50.9484676994 | 50.9211650139 |
+
+Candidate-current **+0.007885103017 AP**, candidate-raw **+0.148232986343 AP**.
+Four block AP deltas: -0.051310938611,-0.066787777570,+0.168861644260,-0.085149912464.
+Six condition deltas (gamma1/2,contrast1/2,cast1/2):
+-0.089472434117,+0.190256596777,+0.123772829643,-0.047370025568,+0.066421282531,-0.196297631166.
+Only **1/4** positive blocks and **3/6** positive conditions. Frozen+.15materiality,
+3/4block and4/6condition requirements fail. Above-raw,clean>=-.10 andisolation pass.
+Clean-current -0.027302685585,clean-raw +0.230903596205 AP.
+**No development candidate; close the fixed global linear gradient-transport branch.**
+
+Held-out identity cosine overall mean **0.154443289188 -> 0.134915686288**, median
+0.252397539306 -> 0.223561864138. Only591/1388defined episodes improve(42.57925%).
+Corrupted mean0.172892568090 -> 0.153082776914,504/1190 improve(42.35294%).
+Mean alignment falls in all four folds and all six corruption conditions. This is
+mandatory diagnostic evidence, not an added post-hoc gate.12zero-pseudo pairs (2clean)
+were retained in the EPS-normalized fit;0zero-task. Undefined cosines explicitly null.
+Clean meanphi current.0355016243,candidate.0357404708; updatefraction99%both.
+Corrupted meanphi .0292750998/.0292663144; updatefraction99.1667%both.
+No demonstrated clean selectivity. Mean adapt time current~.302s,candidate~.305s;
+teacher-inclusive~.330-.335s, excludes source fitting/final prediction/state/AP.
+
+Baseline10passed2skipped1.79s; increment1 12passed1skipped1.69s; focused16passed2skipped1.70s;
+full168passed10skipped7.49s. Smoke20260913-202806:14pairs/2leave-one-image-outmaps/
+28CUDAK3episodes/56normchecks/0AP,exit0. Formal2800isolationchecks,1400pairedsupports,
+5600normchecks andall16actualreleasehashes pass; maxnormrelativeerror1.57913324819e-7.
+All model hashes/frozen/eval/gradNone andepisodicphi isolation pass.24emptyepisodes
+exactidentity. Separate collection/runtime float32 pseudo gradients are not bit-identical:
+maxrelativeL2.002257067475,median9.94599722e-7,mincos.999999125542. Same objective/supports
+verified; disclosed in diagnostic receipt without cause attribution or numerical reruns.
+
+76rawfiles57,905,525bytes fetched/hashverified; archiveSHA
+460f0c3692de64383b950f0780f098c9eddbade4717de571ae7ddec1aac9e7cd.
+No implementation/leakage/norm blocker. No capacity/ridge/coordinate tuning,newcohort,
+FCOS/SSD/val,spatial/predictor/meta/gate/dose or T017forensics run. Current Ours remains
+authoritative. No active job; stop NEEDS_REVIEW for a new explicit research decision.

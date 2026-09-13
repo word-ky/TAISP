@@ -26,7 +26,7 @@ def render(project, run, smoke):
     paired={(r['image_id'],r['case']):r for r in pairs}
     current={(r['image_id'],r['case']):r for r in rows if r['method']=='current_ours'}
     candidates=[r for r in rows if r['method']=='grad_transport_ours']
-    norm_errors=[]; source_runtime_deltas=[]
+    norm_errors=[]; source_runtime_deltas=[]; source_runtime_relative=[]; source_runtime_cosines=[]
     for r in candidates:
         f=fits[r['transport_fold']]; key=(r['image_id'],r['case'])
         assert len(f['train_image_ids'])==150 and len(f['heldout_image_ids'])==50 and len(f['train_indices'])==1050
@@ -40,7 +40,12 @@ def render(project, run, smoke):
             pn=math.sqrt(sum(v*v for v in d['detector_gradient'])); qn=math.sqrt(sum(v*v for v in d['transported_gradient']))
             assert math.isclose(pn,qn,rel_tol=1e-5,abs_tol=1e-8)
             norm_errors.append(abs(qn-pn)/(pn+1e-12))
-        source_runtime_deltas.append(math.sqrt(sum((a-b)**2 for a,b in zip(paired[key]['pseudo_gradient'],current[key]['diagnostics'][0]['detector_gradient']))))
+        source_g=paired[key]['pseudo_gradient']; runtime_g=current[key]['diagnostics'][0]['detector_gradient']
+        error=math.sqrt(sum((a-b)**2 for a,b in zip(source_g,runtime_g)))
+        source_norm=math.sqrt(sum(a*a for a in source_g));runtime_norm=math.sqrt(sum(a*a for a in runtime_g))
+        source_runtime_deltas.append(error);source_runtime_relative.append(error/(source_norm+1e-12))
+        if source_norm*runtime_norm:
+            source_runtime_cosines.append(sum(a*b for a,b in zip(source_g,runtime_g))/(source_norm*runtime_norm))
     pins=read(project/'research_log/T020A_method_pins.json'); checks={}
     for key in ('protected_modules','authorized_modified_or_new_modules_sha256_LF'):
         for path,expected in pins[key].items():
@@ -50,6 +55,9 @@ def render(project, run, smoke):
     audit={'all_episode_isolation':True,'image_fold_isolation':True,'paired_supports':len(candidates),
         'norm_checks':len(norm_errors),'max_relative_norm_error':max(norm_errors),
         'source_vs_runtime_identity_pseudo_max_absolute_l2_diagnostic':max(source_runtime_deltas),
+        'source_vs_runtime_max_relative_l2':max(source_runtime_relative),
+        'source_vs_runtime_median_relative_l2':st.median(source_runtime_relative),
+        'source_vs_runtime_min_defined_cosine':min(source_runtime_cosines),
         'code_hash_checks':checks,'zero_pseudo_pairs':collection['zero_pseudo'],'zero_task_pairs':collection['zero_task'],
         'empty_adaptive_episodes':sum(r['support_count']==0 for r in rows),
         'frozen_model_hashes':read(root/'isolation.json'),'collection_isolation':collection['isolation']}
@@ -87,6 +95,7 @@ def render(project, run, smoke):
     manifest=dict(run=run,smoke_run=smoke,file_count=len(files),total_bytes=sum(f['bytes'] for f in files),files=files)
     (out/'artifact_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     a=summary['groups']['aggregate'];gate=summary['gate'];smokeroot=project/'research_log/remote_runs'/smoke/'artifacts'
+    test_result=lambda name:next(line for line in reversed((smokeroot/name).read_text().splitlines()) if ' passed' in line)
     report=f'''# T020-A — {gate['decision']}; NEEDS_REVIEW
 
 R032/2654048. Plan/cohort precommit766ae89; experiment code0546b05.
@@ -116,8 +125,8 @@ Frozen decision passed: **{gate['passed']}**. Alignment is diagnostic and does n
     report+=f'''## Validation, timing and artifacts
 
 Baseline10passed2skipped1.79s; increment1 12passed1skipped1.69s.
-Focused: {(smokeroot/'focused_tests.txt').read_text().strip()}
-Full regression: {(smokeroot/'full_tests.txt').read_text().strip()}
+Focused: {test_result('focused_tests.txt')}
+Full regression: {test_result('full_tests.txt')}
 Two-image smoke:14sourcepairs,twoleave-one-image-outmaps,28adaptiveK3episodes,0AP.
 Formal:1400sourcepairs,2800adaptiveepisodes,21predictionfiles,105officialevaluations.
 GPU collection {collection['collection_seconds']:.6f}s; CUDA float64 fit {collection['fit_seconds']:.6f}s;
@@ -128,6 +137,12 @@ Zero pseudo/task pairs: {collection['zero_pseudo']}/{collection['zero_task']}; r
 because EPS normalization is defined. Zero-vector alignment is null and reported explicitly.
 Empty adaptive episodes {audit['empty_adaptive_episodes']}; exact identity updates verified.
 Source-vs-runtime identity pseudo maximum absolute L2 diagnostic {max(source_runtime_deltas):.12g}.
+Separate float32 collection/runtime gradients are not bit-identical: maximum relative L2
+{max(source_runtime_relative):.12g}, median {st.median(source_runtime_relative):.12g},
+minimum defined cosine {min(source_runtime_cosines):.12g}. Same objective/code/supports
+are verified; the numerical differences are disclosed without claiming their cause,
+rerunning models, changing tolerances, or resuming the closed T017 forensics task.
+All16actual remote release code hashes match pins; see T020A/remote_code_hashes.json.
 Adaptation latency includes terminal gradient diagnostics (four evaluations,threeupdates),
 excludes source fitting, final prediction, state verification and AP. Teacher-inclusive adds
 shared teacher setup. Peak memory includes frozen-state verification copies.

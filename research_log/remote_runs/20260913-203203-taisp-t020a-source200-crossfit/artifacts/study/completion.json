@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "smoke": false,
+  "images": 200,
+  "adaptive_samples": 2800,
+  "teacher_forwards": 1400,
+  "evaluations": 105,
+  "elapsed_seconds": 1092.429240749043,
+  "all_isolation_passed": true,
+  "gate": {
+    "flags": {
+      "at_least3_positive_block_macros": false,
+      "at_least4_positive_corruption_conditions": false,
+      "corruption_macro_above_no_adapt": true,
+      "clean_delta_at_least_minus_point10": true,
+      "corruption_macro_delta_at_least_point15": false,
+      "no_leakage_isolation_norm_or_reproducibility_blocker": true
+    },
+    "positive_blocks": 1,
+    "passed": false,
+    "decision": "close_fixed_global_linear_gradient_transport",
+    "stop_for_research_review": true
+  }
+}

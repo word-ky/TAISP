@@ -1,0 +1,27 @@
+{
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "config": {
+    "study": "T020-A",
+    "seed": 20260912,
+    "count": 200,
+    "device": "cuda:0",
+    "threads": 1,
+    "semantic_lr": 0.1,
+    "semantic_steps": 3,
+    "support_threshold": 0.5,
+    "support_topk": 20,
+    "radius_eps": 1e-12,
+    "variants": [
+      "current_ours",
+      "grad_transport_ours"
+    ]
+  },
+  "smoke": false,
+  "device": "NVIDIA RTX A6000",
+  "torch": "2.4.0+cu121",
+  "cuda": "12.1",
+  "cohort_sha256": "c364fb4d0bf2880318dbbcd22a47605cedccb31f6ee783ffdc56f6650d1f9ade",
+  "annotation_sha256": "610fce4944abdeb15354cc765333805529359d12d88f2f711393ca586901d01d",
+  "CLIP": "not loaded or called in source pair collection",
+  "boundary": "source-labelled analysis process; runtime receives only fold matrices/provenance, never task gradients/labels"
+}
