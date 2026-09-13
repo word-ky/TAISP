@@ -792,3 +792,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 06:57+08 T026memoryselection:1280instances/1187distinctcleantrainimages,16per80classes,zeroaudit/prior/valoverlap;source manifestccff02e5c5786def9b6fcdfe4d4e98cfa3f23716c1521039852d486919f50766.13memory/inheritedtests pass2.89s. Commitmanifest/code before GPUmemory build.
 
 2026-09-14 07:01+08 T026memoryGPUcomplete1280entries/1187images;healthy80x16,zerooverlap. Firstlauncher065756SSHtimeout leftmetaonly/no run.sh/tmux, confirmedbefore065856retry. Bothreceiptsretained. Commitmemorybeforecandidateoutcomes.
+
+2026-09-14 07:03+08 T026memory1280healthpass/maxnormerror9.547524437714117e-08;locked/pushed2befc7f. Candidateincrement24tests pass3.83s. Predicted-class-only stabletop4,detachedanchor; no auditGT. Candidate GPU48 next.
