@@ -3214,3 +3214,8 @@ commonJVPcolumnnorms/identitychecks/8Dgradients/referencecomponents retained.
 No AP/Ksteps/runtime/training/protected edits. Close exact exposure-pair
 ROI box-geometry objective underR040; stop NEEDS_REVIEW. NoT025B or new family
 without new explicit research task. No parameter rescue performed.
+
+
+## 2026-09-14 T026-A IN_PROGRESS; R041 numeric correction
+R041/T026-A accepted for execution without changing its scope. Its T025review numbers differ from authoritative a268f90 raw/report: S_geom28/48overall,15/24corrupt; Delta23/48,14/24; medianDelta-.019543044761259266overall,+.009389868326732737corrupt;2/4blocks. Both original and R041 concludeFAIL; original data unchanged/no rerun. New memory task independent.
+24fresh auditimages selected; balanced16/class memory feasible among readable cleantrain instances, full exclusions frozen in T026A_plan.json. Source-label-derived offline memory explicitly authorized; candidate audit path stays label-free.

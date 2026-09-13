@@ -786,3 +786,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 05:25+08 T025-A candidates48complete10.715752s onA6000;locked/pushedef14e99 before referenceimplementation. Reference increment30focused incl realGPU pass6.13s/full212pass11skip10.56s. Source full-task and optional ROI/localization diagnostics next; no candidate change.
 
 2026-09-14 05:29+08 T025-A complete:48candidate+48reference CUDAexit0;30focused/full212pass11skip. FixedgateFAIL overallDelta23/48/corrupt14/24,overallmediannegative,2/4blocks.48integritypass/nozero. Report/raw/tables complete; close exactgeometryfamily perR040 and stopNEEDS_REVIEW.
+
+2026-09-14 06:53+08 R041/T026-A read; T025numericmisquote noted, authoritativea268f90 preserved. Baseline18pass3.90s.24fresh selectedseed20260926. Memoryavailability80classes>=16 (minimumtoaster23,hairdryer26); skip unreadable JPEGs using inherited os.access. SSHone timeout recoveredstatus; noactivejob. Freeze memoryhashselection before building.
