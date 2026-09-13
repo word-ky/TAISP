@@ -529,3 +529,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T11:47:49.6295582+08:00 T014-A1 completed exit0: 128passed10skipped6.48s; 3fixeddebug plus32freshfull pass numerical/isolation checks. R024 conjunctionFAIL19/32 overall,9/16corrupted positiveDeltaD; no thresholds changed. OldA receipts unchanged. Fetched45files1092765bytes, rendered fulltables andSHAmanifest; report ready, NEEDS_REVIEW. No further experiment launched.
 
 2026-09-13T12:25:17.6716539+08:00 User requested GPU priority. Future model/gradient/experiment workloads should prefer A6000 GPU where supported; retain CPU for lightweight file/report work and small offline algebra. Existing frozen device/precision protocols remain unchanged.
+
+2026-09-13T12:27:33.4292103+08:00 R026/f27a996 synchronized during GPU preference update. T014-A/A1 accepted/closed; T015-A saved-array task authorized. Verified33 pinned inputs/order/reference provenance with no new summary outcomes; unchanged A1 baseline11passed2.28s. Pre-outcome plan written; existing GPU preference retained.
