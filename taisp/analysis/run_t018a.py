@@ -79,10 +79,33 @@ def diagnostic_summary(rows):
     return result
 
 
+def confirmation(metrics, isolation_passed):
+    """R030 source500 criteria; AP50/AP75 remain diagnostics, never gates."""
+    groups=advancement(metrics)['groups']
+    a=groups['aggregate']
+    positive_blocks=sum(groups[f'block{i}']['candidate_minus_current']>0 for i in range(5))
+    flags={'macro_AP_delta_at_least_point10':a['candidate_minus_current']>=.10,
+           'at_least4_positive_block_macros':positive_blocks>=4,
+           'at_least4_positive_corruption_conditions':a['positive_conditions']>=4,
+           'corruption_macro_above_no_adapt':a['candidate_minus_no_adapt']>0,
+           'clean_delta_at_least_minus_point10':a['clean_delta']>=-.10,
+           'no_isolation_or_reproducibility_blocker':isolation_passed}
+    for group,values in metrics.items():
+        macro={k:{m:100*statistics.mean(values[f'{c}_{m}'][k] for c in CASE_NAMES[:-1]) for m in METHODS}
+               for k in ('AP50','AP75')}
+        groups[group]['additional_macro_metrics']=macro
+        groups[group]['additional_macro_deltas']={k:v['nativePT_ours']-v['current_ours'] for k,v in macro.items()}
+    return {'groups':groups,'gate':{'flags':flags,'positive_blocks':positive_blocks,'passed':all(flags.values()),
+            'decision':'source_confirmed_pending_cross_detector_review' if all(flags.values()) else 'not_source_confirmed',
+            'stop_for_research_review':True},
+            'AP75_nonnegative_diagnostic':groups['aggregate']['additional_macro_deltas']['AP75']>=0}
+
+
 def run(config, manifest_path, output, smoke=False):
     manifest=json.loads(manifest_path.read_text())
     images=manifest['images'][:2] if smoke else manifest['images']
-    assert len(manifest['images'])==100 and manifest['overlap_prior_source']==manifest['overlap_val']==0
+    study=config.get('study','T018-A')
+    assert len(manifest['images'])==config['count'] and manifest['overlap_prior_source']==manifest['overlap_val']==0
     output.mkdir(parents=True,exist_ok=True)
     torch.manual_seed(config['seed'])
     torch.set_num_threads(config['threads'])
@@ -100,7 +123,9 @@ def run(config, manifest_path, output, smoke=False):
         assert value==old[key],key
     for key in ('seed','device','threads','semantic_lr','semantic_steps','support_threshold','support_topk','radius_eps'):
         assert config[key]==old['config'][key],key
-    meta.update(interpretation='T018-A developmental train2017 source-only fixed candidate; no confirmatory or cross-detector claim',
+    interpretation=('T018-B independent train2017 source confirmation of unchanged T018-A candidate; no cross-detector claim'
+                    if study=='T018-B' else 'T018-A developmental train2017 source-only fixed candidate; no confirmatory or cross-detector claim')
+    meta.update(interpretation=interpretation,
                 smoke=smoke,cases=CASE_NAMES,methods=METHODS,source_state_sha256=source_hash,clip_state_sha256=clip_hash,
                 cohort_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
                 evaluated_image_ids=[r['image_id'] for r in images],teacher='one original condition prediction,detachedscore>=.5top20',
@@ -171,6 +196,7 @@ def run(config, manifest_path, output, smoke=False):
     assert all(final_isolation.values())
     write_json(output/'diagnostics.json',diagnostic_summary(rows))
     metrics={}
+    summary=None
     if not smoke:
         from pycocotools.coco import COCO
         annotation=Path(manifest['annotation_file'])
@@ -182,12 +208,13 @@ def run(config, manifest_path, output, smoke=False):
             for group,values in replication_ap(coco,ids,records,manifest['replication_blocks']).items():
                 metrics.setdefault(group,{})[name]=values
         write_json(output/'metrics.json',metrics)
-        write_json(output/'summary.json',advancement(metrics))
+        summary=confirmation(metrics,all(final_isolation.values())) if study=='T018-B' else advancement(metrics)
+        write_json(output/'summary.json',summary)
     write_json(output/'completion.json',{'status':'completed','smoke':smoke,'images':len(images),'adaptive_samples':len(rows),
                'teacher_forwards':len(images)*7,'evaluations':sum(len(v) for v in metrics.values()),
                'elapsed_seconds':time.perf_counter()-started,'all_isolation_passed':True,
-               'gate':advancement(metrics)['gate'] if metrics else None})
-    print('Finished T018-A '+('runtime smoke (no AP)' if smoke else json.dumps(advancement(metrics)['gate'])),flush=True)
+               'gate':summary['gate'] if summary else None})
+    print('Finished '+study+' '+('runtime smoke (no AP)' if smoke else json.dumps(summary['gate'])),flush=True)
 
 
 if __name__=='__main__':
