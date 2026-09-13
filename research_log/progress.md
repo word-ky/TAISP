@@ -571,3 +571,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T16:19:05.2298210+08:00 T018-B code d8ff14f pushed. Full150passed10skipped7.06s; runtime smoke161225 exit0,28CUDAK3episodes/allisolationpass/0AP. Launched formal20260913-161818-taisp-t018b-source500 once onA6000 using same release161116/settings/cohort. Expected~50minutes; no outcomes yet.
 
 2026-09-13T16:21:47.9838355+08:00 T018-B formal first29/500images completed,noerror. Report renderer scripts/report_t018b.py prepared/syntaxpassed; not run without completion. Durable fetch/report/resume instructions saved.
+
+2026-09-13T17:12:49.443006+08:00 T018-B completeexit0:500images/7000adaptiveepisodes/126officialevals,2891.522734s. FixedR030confirmationFAIL:macro-.338228449022APvs current,-.134301697631vsraw;0/5blocks,0/6conditions;clean+.291859559754currentbut-.253654358664raw;AP50-.354632226472/AP75-.427867441159. All7000isolation/3500pairedsupports/finitegradients/11modulepins pass.62rawfiles139,528,015bytes fetched/hashverified; reportcomplete,closeexactformulation pendingreview. Noactivejob,no tuning.

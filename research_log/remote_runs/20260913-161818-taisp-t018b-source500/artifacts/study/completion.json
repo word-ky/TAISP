@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "smoke": false,
+  "images": 500,
+  "adaptive_samples": 7000,
+  "teacher_forwards": 3500,
+  "evaluations": 126,
+  "elapsed_seconds": 2891.5227336430107,
+  "all_isolation_passed": true,
+  "gate": {
+    "flags": {
+      "macro_AP_delta_at_least_point10": false,
+      "at_least4_positive_block_macros": false,
+      "at_least4_positive_corruption_conditions": false,
+      "corruption_macro_above_no_adapt": false,
+      "clean_delta_at_least_minus_point10": true,
+      "no_isolation_or_reproducibility_blocker": true
+    },
+    "positive_blocks": 0,
+    "passed": false,
+    "decision": "not_source_confirmed",
+    "stop_for_research_review": true
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "groups": {
+    "aggregate": {
+      "macro_AP": {
+        "no_adapt": 44.47979944359714,
+        "current_ours": 44.68372619498852,
+        "nativePT_ours": 44.34549774596645
+      },
+      "candidate_minus_current": -0.3382284490220755,
+      "candidate_minus_no_adapt": -0.1343016976306899,
+      "condition_deltas": {
+        "gamma_s1": -0.09300452375363144,
+        "gamma_s2": -0.3364127932429295,
+        "contrast_s1": -1.1592428101620866,
+        "contrast_s2": -0.15363994205034315,
+        "color_cast_s1": -0.19682588289763325,
+        "color_cast_s2": -0.09024474202579125
+      },
+      "positive_conditions": 0,
+      "clean_AP": {
+        "no_adapt": 50.15885247680673,
+        "current_ours": 49.61333855838822,
+        "nativePT_ours": 49.90519811814227
+      },
+      "clean_delta": 0.2918595597540541,
+      "additional_macro_metrics": {
+        "AP50": {
+          "no_adapt": 68.13477133033128,
+          "current_ours": 68.3394602772589,
+          "nativePT_ours": 67.98482805078712
+        },
+        "AP75": {
+          "no_adapt": 48.68277739726799,
+          "current_ours": 48.857229260469644,
+          "nativePT_ours": 48.4293618193103
+        }
+      },
+      "additional_macro_deltas": {
+        "AP50": -0.3546322264717787,
+        "AP75": -0.42786744115934283
+      }
+    },
+    "block0": {
+      "macro_AP": {
+        "no_adapt": 49.320293353783015,
+        "current_ours": 49.51618251810014,
+        "nativePT_ours": 48.8957150186622
+      },
+      "candidate_minus_current": -0.620467499437936,
+      "candidate_minus_no_adapt": -0.4245783351208132,
+      "condition_deltas": {
+        "gamma_s1": -1.1895890751165594,
+        "gamma_s2": -0.35969371637489256,
+        "contrast_s1": -0.77817951906336,
+        "contrast_s2": -0.8043956411501796,
+        "color_cast_s1": -0.5285220211098784,
+        "color_cast_s2": -0.062425023812745506
+      },
+      "positive_conditions": 0,
+      "clean_AP": {
+        "no_adapt": 55.606043938836066,
+        "current_ours": 54.909027325360995,
+        "nativePT_ours": 55.281199644741804
+      },
+      "clean_delta": 0.37217231938081463,
+      "additional_macro_metrics": {
+        "AP50": {
+          "no_adapt": 71.92342000510239,
+          "current_ours": 71.7866422134658,
+          "nativePT_ours": 71.31767535300368
+        },
+        "AP75": {
+          "no_adapt": 54.34564993649743,
+          "current_ours": 54.58905580508583,
+          "nativePT_ours": 53.79045812438444
+        }
+      },
+      "additional_macro_deltas": {
+        "AP50": -0.46896686046211755,
+        "AP75": -0.7985976807013841
+      }
+    },
+    "block1": {
+      "macro_AP": {
+        "no_adapt": 50.62521561041936,
+        "current_ours": 50.7981405469219,
+        "nativePT_ours": 50.56001397252966
+      },
+      "candidate_minus_current": -0.23812657439223983,
+      "candidate_minus_no_adapt": -0.06520163788970024,
+      "condition_deltas": {
+        "gamma_s1": -0.9515325141445041,
+        "gamma_s2": -0.6417491284494703,
+        "contrast_s1": 0.11034393923656793,
+        "contrast_s2": -0.2358232676644645,
+        "color_cast_s1": 0.26666706670638307,
+        "color_cast_s2": 0.023334457962098654
+      },
+      "positive_conditions": 3,
+      "clean_AP": {
+        "no_adapt": 56.31476628755049,
+        "current_ours": 55.97855682206539,
+        "nativePT_ours": 56.05480807086233
+      },
+      "clean_delta": 0.07625124879693246,
+      "additional_macro_metrics": {
+        "AP50": {
+          "no_adapt": 75.17300504594175,
+          "current_ours": 75.29556444019619,
+          "nativePT_ours": 75.15117205837879
+        },
+        "AP75": {
+          "no_adapt": 55.30576740202425,
+          "current_ours": 55.42298976334453,
+          "nativePT_ours": 54.97457611512429
+        }
+      },
+      "additional_macro_deltas": {
+        "AP50": -0.1443923818173971,
+        "AP75": -0.44841364822023877
+      }
+    },
+    "block2": {
+      "macro_AP": {
+        "no_adapt": 46.464812510183464,
+        "current_ours": 46.69426736792046,
+        "nativePT_ours": 46.65902839362274
+      },
+      "candidate_minus_current": -0.035238974297719494,
+      "candidate_minus_no_adapt": 0.1942158834392771,
+      "condition_deltas": {
+        "gamma_s1": 0.18779162868058363,
+        "gamma_s2": 0.11739722365937677,
+        "contrast_s1": -0.2744491670050253,
+        "contrast_s2": -0.22907955306913363,
+        "color_cast_s1": 0.13982289248902213,
+        "color_cast_s2": -0.15291687054113656
+      },
+      "positive_conditions": 3,
+      "clean_AP": {
+        "no_adapt": 51.60314380736777,
+        "current_ours": 51.67849020118447,
+        "nativePT_ours": 51.53334328202982
+      },
+      "clean_delta": -0.1451469191546484,
+      "additional_macro_metrics": {
+        "AP50": {
+          "no_adapt": 68.69488478586013,
+          "current_ours": 69.04655088624465,
+          "nativePT_ours": 69.00986286695291
+        },
+        "AP75": {
+          "no_adapt": 51.365630566426425,
+          "current_ours": 51.28551192428623,
+          "nativePT_ours": 51.20094865710445
+        }
+      },
+      "additional_macro_deltas": {
+        "AP50": -0.03668801929173071,
+        "AP75": -0.0845632671817853
+      }
+    },
+    "block3": {
+      "macro_AP": {
+        "no_adapt": 48.423773598582876,
+        "current_ours": 48.43248356050501,
+        "nativePT_ours": 48.25381429357832
+      },
+      "candidate_minus_current": -0.17866926692668983,
+      "candidate_minus_no_adapt": -0.16995930500455358,
+      "condition_deltas": {
+        "gamma_s1": -0.04398234995837136,
+        "gamma_s2": 0.4581320365583341,
+        "contrast_s1": -0.8682834288655794,
+        "contrast_s2": -0.050919670447791,
+        "color_cast_s1": -0.4971307928130164,
+        "color_cast_s2": -0.06983139603372046
+      },
+      "positive_conditions": 1,
+      "clean_AP": {
+        "no_adapt": 53.408023914513294,
+        "current_ours": 53.34793339341657,
+        "nativePT_ours": 53.81740539718136
+      },
+      "clean_delta": 0.4694720037647926,
+      "additional_macro_metrics": {
+        "AP50": {
+          "no_adapt": 70.14970937141058,
+          "current_ours": 70.18806989051001,
+          "nativePT_ours": 69.91257161247798
+        },
+        "AP75": {
+          "no_adapt": 53.83393634468126,
+          "current_ours": 53.59753401456199,
+          "nativePT_ours": 53.62448239563468
+        }
+      },
+      "additional_macro_deltas": {
+        "AP50": -0.27549827803203186,
+        "AP75": 0.026948381072692484
+      }
+    },
+    "block4": {
+      "macro_AP": {
+        "no_adapt": 47.94490134168555,
+        "current_ours": 47.947296158437794,
+        "nativePT_ours": 47.83378523729932
+      },
+      "candidate_minus_current": -0.11351092113847727,
+      "candidate_minus_no_adapt": -0.11111610438623387,
+      "condition_deltas": {
+        "gamma_s1": 0.5255216929656914,
+        "gamma_s2": -0.5316846873549774,
+        "contrast_s1": -0.311905901686077,
+        "contrast_s2": 0.06876624499411177,
+        "color_cast_s1": -0.29713481463170544,
+        "color_cast_s2": -0.13462806111791958
+      },
+      "positive_conditions": 2,
+      "clean_AP": {
+        "no_adapt": 53.65480597585957,
+        "current_ours": 52.86781178865338,
+        "nativePT_ours": 53.19708250414257
+      },
+      "clean_delta": 0.32927071548919384,
+      "additional_macro_metrics": {
+        "AP50": {
+          "no_adapt": 71.82554287268572,
+          "current_ours": 71.90307929503,
+          "nativePT_ours": 72.03079988907898
+        },
+        "AP75": {
+          "no_adapt": 52.94710975252704,
+          "current_ours": 52.39793339106231,
+          "nativePT_ours": 52.36249474567393
+        }
+      },
+      "additional_macro_deltas": {
+        "AP50": 0.12772059404898073,
+        "AP75": -0.03543864538838193
+      }
+    }
+  },
+  "gate": {
+    "flags": {
+      "macro_AP_delta_at_least_point10": false,
+      "at_least4_positive_block_macros": false,
+      "at_least4_positive_corruption_conditions": false,
+      "corruption_macro_above_no_adapt": false,
+      "clean_delta_at_least_minus_point10": true,
+      "no_isolation_or_reproducibility_blocker": true
+    },
+    "positive_blocks": 0,
+    "passed": false,
+    "decision": "not_source_confirmed",
+    "stop_for_research_review": true
+  },
+  "AP75_nonnegative_diagnostic": false
+}

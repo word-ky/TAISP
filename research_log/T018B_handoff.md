@@ -1,24 +1,18 @@
-# T018-B IN_PROGRESS — formal source500 GPU confirmation
+# T018-B NEEDS_REVIEW — fixed native pseudo-target formulation NOT CONFIRMED
 
-2026-09-13T16:19:05.2298210+08:00 — R030/7902e3a; plan/cohort958d898; code d8ff14f.
-Active run:20260913-161818-taisp-t018b-source500 onA6000cuda:0.
-Release:20260913-161116-taisp-t018b-source500. Expected~50minutes; do not duplicate or restart.
-Smoke:20260913-161225-taisp-t018b-runtime-smoke exit0,150passed10skipped7.06s,
-2images/28adaptiveepisodes/K3CUDA/allisolationpassed/0AP. Focused12passed2skipped1.77s.
-Fixed500newsourceimages,5blocks100;136prior-source/all5000val excluded. CohortSHA e7a771126ae2fee9844dde456648b50f4c01ebcdc404318c21f9a33260da7b17.
-Unchanged accepted native/current model paths andhyperparameters. Protected11modulepins inT018B_method_pins.json.
-Formalexpected3500teacherforwards/7000adaptiveepisodes/21predictionfiles/126officialevals.
-Next: monitor this run at heartbeat; when completed fetch BOTH smoke andformal raw directories,
-verify archival hashes, create T018B report with allAP/AP50/AP75 and5block/7conditionresults,
-apply exactR030criteria fromsummary.json, retainnegatives,appendCODEXmailbox,commit/push/mirrorA6000.
-AP50/AP75 are diagnostics,notgates. NoFCOS/SSD/COCOval/deploymentreplacement/tuning/T017forensics.
-Reports canreuse scripts/report_t018a.py table formatting but need B-specific counts/verdict/provenance.
-StopNEEDS_REVIEW aftercompletion. UserGPUpriority and15minuteheartbeat active; quietunchanged.
-
-2026-09-13T16:21:47.9838355+08:00 — First29/500images completed without error. Report renderer ready: scripts/report_t018b.py (syntaxpassed).
-After completion/exit0, tar andfetch BOTH runs161225smoke and161818formal under research_log/remote_runs;
-verify archiveSHA before extraction. Render with:
-D:\anaconda3\python.exe scripts/report_t018b.py --project . --run 20260913-161818-taisp-t018b-source500 --smoke 20260913-161225-taisp-t018b-runtime-smoke
-Inspect allsummary flags/tables/AP50/AP75, execution logs, protectedmethodpins and rawcounts before report.
-Then update CODEX mailbox/state/handoff/progress and hashmanifest,commit/push,mirrorA6000; stopNEEDS_REVIEW.
-No rawperformance/AP has been interpreted yet. Active run still161818; do not launchanother job.
+2026-09-13T17:12:49.443006+08:00 — R030/7902e3a completed. Plan/cohort958d898; code d8ff14f.
+Run20260913-161818-taisp-t018b-source500,release20260913-161116-taisp-t018b-source500.
+2026-09-13 16:18:24–17:06:43+08exit0; elapsed2891.522734s collection/evaluation.
+500images/3500teacherforwards/7000adaptiveepisodes/126officialAPevaluations onA6000cuda:0.
+Baseline10passed2skipped1.74s; focused12passed2skipped1.77s; full150passed10skipped7.06s.
+Two-imageCUDAK3smoke161225 passed28episodes,0AP. No method/hyperparameter changes.
+Macro AP:no_adapt44.4797994436,current44.6837261950,native44.3454977460.
+Native-current -.338228449022AP; native-noadapt -.134301697631AP.
+0/5positiveblocks,0/6positivecorruptionconditions; clean-current+.291859559754,clean-raw-.253654358664.
+Macro AP50delta-.354632226472; AP75delta-.427867441159 (diagnostics only).
+R030FAIL4performanceflags; clean threshold andisolationflags pass. This exactformulation isnotconfirmed.
+Closefixedcandidate pendingresearchreview; do nottuneorlaunchFCOS/SSD/COCOval/deploymentreplacement.
+All7000isolationchecks/3500pairedsupports/finitegradients/11methodpins pass;30emptyadaptiveepisodes.
+62rawfiles139,528,015bytes fetchedandhashed; seeT018B_report.md,T018B/complete_tables.md,
+artifact_manifest.json andreceipt_audit.json. No activejob. T017 numericalblocker staysunchanged.
+Continue15minuteheartbeat,executeonlynewexplicitresearchqueue,quietunchanged,GPUprioritypreserved.

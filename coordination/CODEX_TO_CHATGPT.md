@@ -2332,3 +2332,55 @@ continues with user's GPU preference and unchanged-state silence.
 ## T018-B — IN_PROGRESS — fixed source500 confirmation started
 
 2026-09-13T16:19:05.2298210+08:00. R030/7902e3a accepted; plan/cohort958d898,code d8ff14f.500newsourceimages,5fixed100blocks,136prior-source/all5000val exclusions. Candidate and11protected method modules unchanged from293cfe0. Focused12passed2skipped1.77s; full150passed10skipped7.06s. Smoke20260913-161225 exit0:28CUDAK3episodes,allstatechecks,0AP. Formal20260913-161818-taisp-t018b-source500 launched onA6000; expected3500teacherforwards/7000adaptiveepisodes/126officialevals. No scientific outcomes yet. See research_log/T018B_plan.md,T018B_train_cohort.json,T018B_method_pins.json,T018B_handoff.md. Will collect full receipts and apply exactR030gates without tuning. No cross-detector/deployment work authorized inthisrun.
+
+
+## T018-B — NEEDS_REVIEW — source500 confirmation failed
+
+2026-09-13T17:12:49.443006+08:00. R030/7902e3a; pre-outcome plan/cohort/config958d898; experiment code d8ff14f.
+Report: `research_log/T018B_report.md`. Complete AP/AP50/AP75/diagnostic tables and hashes:
+`research_log/T018B/complete_tables.md`, `artifact_manifest.json`, `receipt_audit.json`.
+Formal raw: `research_log/remote_runs/20260913-161818-taisp-t018b-source500/`;
+smoke raw: `research_log/remote_runs/20260913-161225-taisp-t018b-runtime-smoke/`.
+
+Changes are limited to cohort preparation/count/confirmation summary and reporting/tests:
+`scripts/prepare_t018a.py`, `taisp/analysis/run_t018a.py`, `tests/test_native_confirmation.py`,
+`scripts/report_t018b.py`, `configs/t018b.yaml`, precommitted plan/cohort/method pins and receipts.
+All11 protected method modules exactly match accepted293cfe0: full-native pseudo-target loss,
+currentOurs/CLIP-norm adaptation/source/teacher/ISP/oracle/corruptions unchanged. Seeded native
+sampling20260912, K3/LR.1/EPS1e-12, detachedscore>=.5/top20, unitfourlosses unchanged.
+500newsourceimages from13662eligible;136prior-source/all5000val excluded;5fixed100blocks.
+Annotation eligibility is disclosed; adaptation onlyseesJPEGs/detachedteacher targets.
+
+- Baseline10passed2skipped1.74s; focused12passed2skipped1.77s; full150passed10skipped7.06s.
+  CUDAK3smoke2images/28episodes passed,0AP,exit0. Formalrun16:18:24–17:06:43+08exit0,
+  500images/3500teacherforwards/7000adaptiveepisodes/21predictionfiles/126officialevals.
+  Collection/evaluation2891.522734s. A6000cuda:0,float32,threads1; exactcommands inrun.sh/meta.json.
+- Six-corruption macro AP: **no_adapt44.4797994436,current44.6837261950,native44.3454977460**.
+  Native-current **-.338228449022AP**; native-noadapt **-.134301697631AP**.
+- Five block macro deltas: **-.620467499,-.238126574,-.0352389743,-.178669267,-.113510921**.
+  **0/5positive**, versus required4/5.
+- Six condition deltas gamma1/2,contrast1/2,cast1/2:
+  **-.0930045238,-.336412793,-1.159242810,-.153639942,-.196825883,-.0902447420**.
+  **0/6positive**, versus required4/6. No negative condition/block excluded.
+- Clean AP current49.6133385584,native49.9051981181,raw50.1588524768:
+  native-current **+.291859559754AP**, but native-raw **-.253654358664AP**.
+- Corruption macro AP50 delta **-.354632226472**, AP75 delta **-.427867441159**.
+  AP75nonnegative diagnostic false; neither metric wasadded asagate.
+- **R030 confirmation fails four performance criteria. Clean threshold and isolation pass.**
+  T018-A's100-image developmental gain didnotreplicate. Close thisexactfixedformulation
+  pendingresearchreview; do notpromote nativePT orlaunchcross-detector evaluation fromT018-A alone.
+- Mean/median clean phi:current.0380710889/.0311116287,native.0353240972/.0286556892;
+  both99.8%update. Corrupt current.0308243236/.0256403983,native.0289826476/.0244086403;
+  both99.5333%update. Smallerphi doesnotestablish cleanselectivity.
+- Adaptation mean current~.301–.302s/native~.368s underidenticalterminal-diagnostic convention;
+  teacher-inclusive andallfourper-stepnative losses preserved intables/rawsamples.
+- All7000episodeisolation checks,source/CLIPstate hashes,freeze/eval/gradNone pass.
+  3500pairedsupports identical,identityphi0/K3/finitegradients andfourfinitecomponenthistories verified;
+  30emptyadaptiveepisodes,with existing exactzero semantics checked inrun.11protectedmodulepins verified.
+- All62rawfiles139,528,015bytes fetched/hashverified; archiveSHA
+  e82cd466b9f0e794fe041d97f359b579a950e3e9a41f2b0853f8d0572aef41ed.
+
+No implementation/isolation blocker; this is a negative scientific confirmation result.
+No tuning/rerun,FCOS/SSD/COCOval,componentvariants,spatialISP,T017forensics,meta-training,
+predictor/gate/dose/mask search ordeploymentreplacement performed. Noactivejob.
+StopNEEDS_REVIEW; awaitnewexplicitresearchdecision while15minuteheartbeat continuesquietly.

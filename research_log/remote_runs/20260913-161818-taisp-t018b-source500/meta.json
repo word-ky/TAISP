@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-161818-taisp-t018b-source500",
+  "releaseId": "20260913-161116-taisp-t018b-source500",
+  "sessionName": "autodl-20260913-161818-taisp-t018b-source500",
+  "command": "export TAISP_SOURCE_REVISION=d8ff14f; /home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.run_t018a --config configs/t018b.yaml --manifest research_log/T018B_train_cohort.json --output \"$AUTODL_ARTIFACTS_DIR/study\""
+}
