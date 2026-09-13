@@ -2952,3 +2952,5 @@ training or next task was started. No active job remains. Preserve all original
 T022-A/A1 failures. Await the next explicit research decision.
 
 Raw archive SHA256bde562ff84723d1949f46994e550650afad6e1ef9d177791e94feb5684a06e8d verified before extraction. 129 files / 583,264,937 bytes; largest file 21,072,870 bytes. Raw tensors are losslessly gzip-wrapped torch files, split by repeat; artifact_manifest.json lists every SHA256. summary.json and complete_tables.md retain all fields/groups without outcome selection.
+
+2026-09-14T02:41+08:00 New confirmation analysis17focusedtests pass5.21s; prior23modules unchanged. Preparation will make exactly8teacher calls and zero adaptations/AP, then supports/hashes committed before80repeats. No outcome yet.
