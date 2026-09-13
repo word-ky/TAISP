@@ -605,3 +605,5 @@ No model outcomes or active job. Next commit plan, implement/test, fullregressio
 2image CUDA smoke0AP, then formal200 on A6000. No thresholds or method expansion.
 
 2026-09-13T22:19:55.619123+08:00 T021-A increment1 passed11tests2skips2.42s on release221708. Inversion/scoreIoUboundary/greedyconfidence/tie/top20/originalweights/emptyidentity verified. Added shared driver support-only branch and fixed assessment/diagnostics; syntaxpassed. Next focused/full/CUDA smoke0AP.
+
+2026-09-13T22:24:03.006130+08:00 T021-A focused13passed2skipped2.50s; full175passed10skipped7.52s. CUDA smoke222054exit0:28K3episodes/14consensus episodes/28teachers/0AP. Offline real-support audit passed all originalbox/class/score retention, greedy/tie/one-to-one receipts, unchanged baseline supports and isolation. Ready formal200 using same release222014/code daa79e5.
