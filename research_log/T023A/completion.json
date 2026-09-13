@@ -1,0 +1,29 @@
+{
+  "status": "NEEDS_REVIEW",
+  "episodes": 32,
+  "elapsed_seconds": 0.30642980011180043,
+  "gate": {
+    "flags": {
+      "record_hash_and_closure": true,
+      "S_obj_overall_ge20": false,
+      "S_obj_corrupted_ge10": true,
+      "DeltaS_overall_ge20": false,
+      "DeltaS_corrupted_ge10": false,
+      "median_DeltaS_overall_positive": true,
+      "median_DeltaS_corrupted_positive": false,
+      "at_least3positive_block_medians": false
+    },
+    "passed": false,
+    "block_medians": [
+      -0.009311543143670779,
+      -0.0014895791902435783,
+      0.027607223102328684,
+      0.019864270447509092
+    ],
+    "decision": "close_object_only_action",
+    "status": "NEEDS_REVIEW"
+  },
+  "max_closure_error": 1.3322676295501878e-15,
+  "new_model_calls": 0,
+  "evaluations": 0
+}

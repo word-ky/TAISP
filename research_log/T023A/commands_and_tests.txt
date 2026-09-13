@@ -1,0 +1,6 @@
+Python D:/anaconda3/python.exe (local CPU); PYTHONUTF8=1.
+Focused: python -m unittest discover -s tests -p test_object_action.py -v
+Result:4tests passed in0.001s. Tests make no model calls or torch/numpy imports.
+Audit: python scripts/audit_t023a.py --output research_log/T023A
+Result:exit0,32episodes,33inputhashes pass,23protectedmoduleLFhashes pass,
+64task/pseudo closures pass within originalA1bound. Runtime/source files unchanged.

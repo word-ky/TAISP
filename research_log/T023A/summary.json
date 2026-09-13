@@ -1,0 +1,1411 @@
+{
+  "scopes": {
+    "overall": {
+      "n": 32,
+      "metrics": {
+        "S_obj": {
+          "defined": 32,
+          "undefined": 0,
+          "positive": 17,
+          "zero": 0,
+          "mean": -0.019255019209484678,
+          "median": 0.009989122378225204,
+          "min": -0.849247986323924,
+          "max": 1.0793644315417557
+        },
+        "S_global": {
+          "defined": 32,
+          "undefined": 0,
+          "positive": 16,
+          "zero": 0,
+          "mean": 0.018735975185190056,
+          "median": 0.001206716279762131,
+          "min": -0.29273718067205867,
+          "max": 0.818932818042672
+        },
+        "DeltaS": {
+          "defined": 32,
+          "undefined": 0,
+          "positive": 16,
+          "zero": 0,
+          "mean": -0.03799099439467474,
+          "median": 0.008094718581960925,
+          "min": -1.654860447456945,
+          "max": 0.7741331398365474
+        },
+        "cos_obj": {
+          "defined": 32,
+          "undefined": 0,
+          "positive": 17,
+          "zero": 0,
+          "mean": 0.01227324784995321,
+          "median": 0.0837735400089604,
+          "min": -0.9976943161585596,
+          "max": 0.9877367225821019
+        },
+        "cos_global": {
+          "defined": 32,
+          "undefined": 0,
+          "positive": 16,
+          "zero": 0,
+          "mean": 0.08052598282254353,
+          "median": 0.03239349713038185,
+          "min": -0.9700134350256698,
+          "max": 0.9800012386372061
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "clean": {
+      "n": 16,
+      "metrics": {
+        "S_obj": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": -0.04975944421612193,
+          "median": -0.01962802204096962,
+          "min": -0.849247986323924,
+          "max": 0.36700573640377837
+        },
+        "S_global": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": -0.02784418046728017,
+          "median": -0.029992230853041126,
+          "min": -0.27981850676049563,
+          "max": 0.20665241258786565
+        },
+        "DeltaS": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 9,
+          "zero": 0,
+          "mean": -0.02191526374884176,
+          "median": 0.020060983446116794,
+          "min": -0.5694294795634283,
+          "max": 0.16035332381591272
+        },
+        "cos_obj": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": -0.04690280970156435,
+          "median": -0.1313377308257492,
+          "min": -0.9976943161585596,
+          "max": 0.8573021232931022
+        },
+        "cos_global": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": -0.030871088990851735,
+          "median": -0.2886293783982037,
+          "min": -0.9700134350256698,
+          "max": 0.846755684556287
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "corrupted": {
+      "n": 16,
+      "metrics": {
+        "S_obj": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 10,
+          "zero": 0,
+          "mean": 0.011249405797152575,
+          "median": 0.023145106697330713,
+          "min": -0.835927629414273,
+          "max": 1.0793644315417557
+        },
+        "S_global": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 9,
+          "zero": 0,
+          "mean": 0.06531613083766029,
+          "median": 0.01906098437541172,
+          "min": -0.29273718067205867,
+          "max": 0.818932818042672
+        },
+        "DeltaS": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": -0.05406672504050771,
+          "median": -0.007283721473185255,
+          "min": -1.654860447456945,
+          "max": 0.7741331398365474
+        },
+        "cos_obj": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 10,
+          "zero": 0,
+          "mean": 0.07144930540147076,
+          "median": 0.24663194999318738,
+          "min": -0.9408603596722009,
+          "max": 0.9877367225821019
+        },
+        "cos_global": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 9,
+          "zero": 0,
+          "mean": 0.19192305463593878,
+          "median": 0.32004768959244834,
+          "min": -0.9250075175244252,
+          "max": 0.9800012386372061
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "block0": {
+      "n": 8,
+      "metrics": {
+        "S_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 5,
+          "zero": 0,
+          "mean": 0.06610358039676845,
+          "median": 0.03463237551568737,
+          "min": -0.06932617169738621,
+          "max": 0.38359448182904715
+        },
+        "S_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 5,
+          "zero": 0,
+          "mean": 0.0751290109890141,
+          "median": 0.05935475540474651,
+          "min": -0.08673592561122857,
+          "max": 0.39518990717143815
+        },
+        "DeltaS": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.009025430592245663,
+          "median": -0.009311543143670779,
+          "min": -0.04241709883316772,
+          "max": 0.03115901408745579
+        },
+        "cos_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 5,
+          "zero": 0,
+          "mean": 0.12420156089332823,
+          "median": 0.338331621129226,
+          "min": -0.9408603596722009,
+          "max": 0.8586162761159054
+        },
+        "cos_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 5,
+          "zero": 0,
+          "mean": 0.28387360247206583,
+          "median": 0.6661369956416178,
+          "min": -0.7724972698852521,
+          "max": 0.9800012386372061
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "block1": {
+      "n": 8,
+      "metrics": {
+        "S_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": -0.15529521380620215,
+          "median": -0.07601719660566848,
+          "min": -0.835927629414273,
+          "max": 0.048743918754523746
+        },
+        "S_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 4,
+          "zero": 0,
+          "mean": 0.04052215004941002,
+          "median": -0.02739200960774575,
+          "min": -0.22275918865789013,
+          "max": 0.818932818042672
+        },
+        "DeltaS": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": -0.19581736385561216,
+          "median": -0.0014895791902435783,
+          "min": -1.654860447456945,
+          "max": 0.04114763009046774
+        },
+        "cos_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": -0.11927174088488998,
+          "median": -0.3085118147394942,
+          "min": -0.952013804878701,
+          "max": 0.6438152838637458
+        },
+        "cos_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 4,
+          "zero": 0,
+          "mean": 0.03349459416733482,
+          "median": 0.03934597091422001,
+          "min": -0.9502100676629478,
+          "max": 0.9301895488817007
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "block2": {
+      "n": 8,
+      "metrics": {
+        "S_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.19097321469089837,
+          "median": -0.15032403248432596,
+          "min": -0.849247986323924,
+          "max": 0.09573600592126004
+        },
+        "S_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 1,
+          "zero": 0,
+          "mean": -0.1346883719852998,
+          "median": -0.11406252028479494,
+          "min": -0.29273718067205867,
+          "max": 0.06738201263511287
+        },
+        "DeltaS": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 6,
+          "zero": 0,
+          "mean": -0.056284842705598574,
+          "median": 0.027607223102328684,
+          "min": -0.5694294795634283,
+          "max": 0.12252046268806302
+        },
+        "cos_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.3235409746858582,
+          "median": -0.49257906225372444,
+          "min": -0.9976943161585596,
+          "max": 0.6432023829320652
+        },
+        "cos_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 1,
+          "zero": 0,
+          "mean": -0.38629251801392583,
+          "median": -0.3957801358944607,
+          "min": -0.9700134350256698,
+          "max": 0.6090848292100217
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "block3": {
+      "n": 8,
+      "metrics": {
+        "S_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": 0.20314477126239333,
+          "median": 0.07650765502718447,
+          "min": -0.11226905602278799,
+          "max": 1.0793644315417557
+        },
+        "S_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 6,
+          "zero": 0,
+          "mean": 0.09398111168763588,
+          "median": 0.10867285934338637,
+          "min": -0.1349812690011792,
+          "max": 0.3052312917052082
+        },
+        "DeltaS": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 5,
+          "zero": 0,
+          "mean": 0.10916365957475745,
+          "median": 0.019864270447509092,
+          "min": -0.1572614366517877,
+          "max": 0.7741331398365474
+        },
+        "cos_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": 0.3677041460772328,
+          "median": 0.4148500007618053,
+          "min": -0.7153037525670406,
+          "max": 0.9877367225821019
+        },
+        "cos_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 6,
+          "zero": 0,
+          "mean": 0.3910282526646993,
+          "median": 0.6867786940630505,
+          "min": -0.7671141489288359,
+          "max": 0.8547907726005459
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "case/clean_s0": {
+      "n": 16,
+      "metrics": {
+        "S_obj": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": -0.04975944421612193,
+          "median": -0.01962802204096962,
+          "min": -0.849247986323924,
+          "max": 0.36700573640377837
+        },
+        "S_global": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": -0.02784418046728017,
+          "median": -0.029992230853041126,
+          "min": -0.27981850676049563,
+          "max": 0.20665241258786565
+        },
+        "DeltaS": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 9,
+          "zero": 0,
+          "mean": -0.02191526374884176,
+          "median": 0.020060983446116794,
+          "min": -0.5694294795634283,
+          "max": 0.16035332381591272
+        },
+        "cos_obj": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": -0.04690280970156435,
+          "median": -0.1313377308257492,
+          "min": -0.9976943161585596,
+          "max": 0.8573021232931022
+        },
+        "cos_global": {
+          "defined": 16,
+          "undefined": 0,
+          "positive": 7,
+          "zero": 0,
+          "mean": -0.030871088990851735,
+          "median": -0.2886293783982037,
+          "min": -0.9700134350256698,
+          "max": 0.846755684556287
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "case/color_cast_s2": {
+      "n": 4,
+      "metrics": {
+        "S_obj": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.042906381725145507,
+          "median": -0.0145282466577763,
+          "min": -0.16995540950955804,
+          "max": 0.02738637592452862
+        },
+        "S_global": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.0710201907164308,
+          "median": -0.009678405705511959,
+          "min": -0.29247587219762106,
+          "max": 0.02775192074292178
+        },
+        "DeltaS": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.028113808991285294,
+          "median": 0.0019250655645513927,
+          "min": -0.013915357852024628,
+          "max": 0.12252046268806302
+        },
+        "cos_obj": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.21252876494543496,
+          "median": -0.2750558058375635,
+          "min": -0.9408603596722009,
+          "max": 0.6408569115655881
+        },
+        "cos_global": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.1454161534304017,
+          "median": -0.29342332253944114,
+          "min": -0.9250075175244252,
+          "max": 0.9301895488817007
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "case/contrast_s2": {
+      "n": 4,
+      "metrics": {
+        "S_obj": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.14507575153222607,
+          "median": -0.06398492927183921,
+          "min": -0.835927629414273,
+          "max": 0.38359448182904715
+        },
+        "S_global": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": 0.3283217627815131,
+          "median": 0.2772749449003518,
+          "min": -0.06019565671732334,
+          "max": 0.818932818042672
+        },
+        "DeltaS": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": -0.47339751431373917,
+          "median": -0.11356709222781028,
+          "min": -1.654860447456945,
+          "max": -0.011595425342390997
+        },
+        "cos_obj": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.04627678800628682,
+          "median": -0.0337260327289845,
+          "min": -0.6060570586327891,
+          "max": 0.8586162761159054
+        },
+        "cos_global": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": 0.5508461652443909,
+          "median": 0.8188920954020218,
+          "min": -0.3392329848621839,
+          "max": 0.9048334550357038
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "case/gamma_s1": {
+      "n": 4,
+      "metrics": {
+        "S_obj": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": 0.249714020476074,
+          "median": 0.05197451389738015,
+          "min": -0.18445737743221996,
+          "max": 1.0793644315417557
+        },
+        "S_global": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.05020965663395449,
+          "median": 0.059183261744249954,
+          "min": -0.22275918865789013,
+          "max": 0.3052312917052082
+        },
+        "DeltaS": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": 0.1995043638421195,
+          "median": 0.03258113207209018,
+          "min": -0.0412779486122498,
+          "max": 0.7741331398365474
+        },
+        "cos_obj": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": 0.2944147889883201,
+          "median": 0.3755269444324605,
+          "min": -0.5611314554937427,
+          "max": 0.9877367225821019
+        },
+        "cos_global": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.21457976038136417,
+          "median": 0.2897491180544345,
+          "min": -0.7011804332206184,
+          "max": 0.9800012386372061
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "case/gamma_s2": {
+      "n": 4,
+      "metrics": {
+        "S_obj": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": -0.016734264030092122,
+          "median": 0.038892254389825645,
+          "min": -0.2499844162964701,
+          "max": 0.10526285139645034
+        },
+        "S_global": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.046246705348395645,
+          "median": 0.018146335210090417,
+          "min": -0.29273718067205867,
+          "max": 0.07145768885829527
+        },
+        "DeltaS": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.029512441318303523,
+          "median": 0.019890373385804523,
+          "min": -0.04241709883316772,
+          "max": 0.12068611733477276
+        },
+        "cos_obj": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": 0.15763440955671118,
+          "median": 0.34829503065589584,
+          "min": -0.5634322490607143,
+          "max": 0.49737982597576735
+        },
+        "cos_global": {
+          "defined": 4,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.14768244634840183,
+          "median": 0.2208832205608121,
+          "min": -0.6615814502007501,
+          "max": 0.8105447944727332
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "mask_bin/zero": {
+      "n": 0,
+      "metrics": {
+        "S_obj": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "S_global": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "DeltaS": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cos_obj": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cos_global": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "mask_bin/(0,.01]": {
+      "n": 0,
+      "metrics": {
+        "S_obj": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "S_global": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "DeltaS": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cos_obj": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cos_global": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "mask_bin/(.01,.05]": {
+      "n": 3,
+      "metrics": {
+        "S_obj": {
+          "defined": 3,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.34635961662316567,
+          "median": 0.02904059002512755,
+          "min": -0.06932617169738621,
+          "max": 1.0793644315417557
+        },
+        "S_global": {
+          "defined": 3,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.09665101831742497,
+          "median": 0.07145768885829527,
+          "min": -0.08673592561122857,
+          "max": 0.3052312917052082
+        },
+        "DeltaS": {
+          "defined": 3,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.2497085983057407,
+          "median": 0.017409753913842363,
+          "min": -0.04241709883316772,
+          "max": 0.7741331398365474
+        },
+        "cos_obj": {
+          "defined": 3,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.2948974391703269,
+          "median": 0.2977033604965512,
+          "min": -0.40074776556767244,
+          "max": 0.9877367225821019
+        },
+        "cos_global": {
+          "defined": 3,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.23117432376378602,
+          "median": 0.655475446703877,
+          "min": -0.7724972698852521,
+          "max": 0.8105447944727332
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "mask_bin/(.05,.2]": {
+      "n": 5,
+      "metrics": {
+        "S_obj": {
+          "defined": 5,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.02709139854039172,
+          "median": -0.02074740999119353,
+          "min": -0.835927629414273,
+          "max": 0.38359448182904715
+        },
+        "S_global": {
+          "defined": 5,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": 0.26680732946909536,
+          "median": 0.20665241258786565,
+          "min": -0.07052980161978532,
+          "max": 0.818932818042672
+        },
+        "DeltaS": {
+          "defined": 5,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.2938987280094871,
+          "median": -0.004538721154479751,
+          "min": -1.654860447456945,
+          "max": 0.16035332381591272
+        },
+        "cos_obj": {
+          "defined": 5,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": 0.1006442250487499,
+          "median": -0.1647512665234156,
+          "min": -0.6060570586327891,
+          "max": 0.8586162761159054
+        },
+        "cos_global": {
+          "defined": 5,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": 0.34656683638471397,
+          "median": 0.7768264484885605,
+          "min": -0.42984547119443856,
+          "max": 0.9048334550357038
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "mask_bin/(.2,1]": {
+      "n": 24,
+      "metrics": {
+        "S_obj": {
+          "defined": 24,
+          "undefined": 0,
+          "positive": 13,
+          "zero": 0,
+          "mean": -0.06332426966129368,
+          "median": 0.009989122378225204,
+          "min": -0.849247986323924,
+          "max": 0.12464001894862811
+        },
+        "S_global": {
+          "defined": 24,
+          "undefined": 0,
+          "positive": 11,
+          "zero": 0,
+          "mean": -0.04268493734881958,
+          "median": -0.011689940693349913,
+          "min": -0.29273718067205867,
+          "max": 0.1626539574528405
+        },
+        "DeltaS": {
+          "defined": 24,
+          "undefined": 0,
+          "positive": 12,
+          "zero": 0,
+          "mean": -0.020639332312474095,
+          "median": 0.008094718581960925,
+          "min": -0.5694294795634283,
+          "max": 0.12252046268806302
+        },
+        "cos_obj": {
+          "defined": 24,
+          "undefined": 0,
+          "positive": 13,
+          "zero": 0,
+          "mean": -0.041465396314842806,
+          "median": 0.0837735400089604,
+          "min": -0.9976943161585596,
+          "max": 0.7774413098791694
+        },
+        "cos_global": {
+          "defined": 24,
+          "undefined": 0,
+          "positive": 11,
+          "zero": 0,
+          "mean": 0.0062697623794360354,
+          "median": -0.07137409124813121,
+          "min": -0.9700134350256698,
+          "max": 0.9800012386372061
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "support_bin/zero": {
+      "n": 0,
+      "metrics": {
+        "S_obj": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "S_global": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "DeltaS": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cos_obj": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cos_global": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "support_bin/1-5": {
+      "n": 17,
+      "metrics": {
+        "S_obj": {
+          "defined": 17,
+          "undefined": 0,
+          "positive": 10,
+          "zero": 0,
+          "mean": -0.025019227868796803,
+          "median": 0.014918891651588712,
+          "min": -0.835927629414273,
+          "max": 0.38359448182904715
+        },
+        "S_global": {
+          "defined": 17,
+          "undefined": 0,
+          "positive": 10,
+          "zero": 0,
+          "mean": 0.06575602020741249,
+          "median": 0.02775192074292178,
+          "min": -0.29247587219762106,
+          "max": 0.818932818042672
+        },
+        "DeltaS": {
+          "defined": 17,
+          "undefined": 0,
+          "positive": 6,
+          "zero": 0,
+          "mean": -0.09077524807620929,
+          "median": -0.0029720176039795126,
+          "min": -1.654860447456945,
+          "max": 0.12252046268806302
+        },
+        "cos_obj": {
+          "defined": 17,
+          "undefined": 0,
+          "positive": 10,
+          "zero": 0,
+          "mean": 0.06915003160471143,
+          "median": 0.2977033604965512,
+          "min": -0.952013804878701,
+          "max": 0.8586162761159054
+        },
+        "cos_global": {
+          "defined": 17,
+          "undefined": 0,
+          "positive": 10,
+          "zero": 0,
+          "mean": 0.20602214033786587,
+          "median": 0.5217291968105023,
+          "min": -0.9502100676629478,
+          "max": 0.9800012386372061
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "support_bin/6-10": {
+      "n": 8,
+      "metrics": {
+        "S_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 4,
+          "zero": 0,
+          "mean": 0.005603805550729453,
+          "median": -0.00099789780239448,
+          "min": -0.849247986323924,
+          "max": 1.0793644315417557
+        },
+        "S_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 4,
+          "zero": 0,
+          "mean": -0.001572271962362614,
+          "median": -0.02491280435471084,
+          "min": -0.27981850676049563,
+          "max": 0.3052312917052082
+        },
+        "DeltaS": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 4,
+          "zero": 0,
+          "mean": 0.007176077513092068,
+          "median": 0.007989650609189502,
+          "min": -0.5694294795634283,
+          "max": 0.7741331398365474
+        },
+        "cos_obj": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 4,
+          "zero": 0,
+          "mean": 0.0019421464055137429,
+          "median": 0.015404636483203962,
+          "min": -0.9976943161585596,
+          "max": 0.9877367225821019
+        },
+        "cos_global": {
+          "defined": 8,
+          "undefined": 0,
+          "positive": 4,
+          "zero": 0,
+          "mean": -0.004875410971778453,
+          "median": -0.1038375093500829,
+          "min": -0.9700134350256698,
+          "max": 0.8547907726005459
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "support_bin/11-20": {
+      "n": 7,
+      "metrics": {
+        "S_obj": {
+          "defined": 7,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": -0.03366631219139995,
+          "median": -0.13069265545909386,
+          "min": -0.2499844162964701,
+          "max": 0.36700573640377837
+        },
+        "S_global": {
+          "defined": 7,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.0722461374144328,
+          "median": -0.16792938385226655,
+          "min": -0.29273718067205867,
+          "max": 0.20665241258786565
+        },
+        "DeltaS": {
+          "defined": 7,
+          "undefined": 0,
+          "positive": 6,
+          "zero": 0,
+          "mean": 0.03857982522303285,
+          "median": 0.03830181122567017,
+          "min": -0.1572614366517877,
+          "max": 0.16035332381591272
+        },
+        "cos_obj": {
+          "defined": 7,
+          "undefined": 0,
+          "positive": 3,
+          "zero": 0,
+          "mean": -0.1140491110465288,
+          "median": -0.4522723629555727,
+          "min": -0.5634322490607143,
+          "max": 0.8573021232931022
+        },
+        "cos_global": {
+          "defined": 7,
+          "undefined": 0,
+          "positive": 2,
+          "zero": 0,
+          "mean": -0.12664880680687135,
+          "median": -0.45232728692673757,
+          "min": -0.7011804332206184,
+          "max": 0.7768264484885605
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    },
+    "support_bin/>20": {
+      "n": 0,
+      "metrics": {
+        "S_obj": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "S_global": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "DeltaS": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cos_obj": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cos_global": {
+          "defined": 0,
+          "undefined": 0,
+          "positive": 0,
+          "zero": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        }
+      },
+      "zero_norms": {
+        "p_o": 0,
+        "p_b": 0,
+        "p_s": 0,
+        "t_o": 0,
+        "t_b": 0,
+        "t_s": 0
+      }
+    }
+  },
+  "gate": {
+    "flags": {
+      "record_hash_and_closure": true,
+      "S_obj_overall_ge20": false,
+      "S_obj_corrupted_ge10": true,
+      "DeltaS_overall_ge20": false,
+      "DeltaS_corrupted_ge10": false,
+      "median_DeltaS_overall_positive": true,
+      "median_DeltaS_corrupted_positive": false,
+      "at_least3positive_block_medians": false
+    },
+    "passed": false,
+    "block_medians": [
+      -0.009311543143670779,
+      -0.0014895791902435783,
+      0.027607223102328684,
+      0.019864270447509092
+    ],
+    "decision": "close_object_only_action",
+    "status": "NEEDS_REVIEW"
+  }
+}
