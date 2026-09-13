@@ -802,3 +802,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 07:32+08 R042/T027-A read. Baseline13tests pass3.33s;new24cohortseed20260927 excludesall2687prior including1187memory images plusval5000. Predeclarecommutationstates/tolerance,E1systematiczero,E2medianties/averageranks beforeoutcomes. CohortcopySSHtimeout recoveredexistingSCPfallback. Noactivejob yet.
 
 2026-09-14 07:35+08 T027preflight8synthetic/state cases passed CUDA atoriginalatol2e-7/rtol1e-6;no ISPedit/modeloutcomes.17focused/regional tests pass3.85s. Candidatecode/preflightreceipts commit before two-view modelstage.
+
+2026-09-14 07:41+08 T027all48candidatescomplete14.410640s; both-viewgradients/overallagreementmedian.6972085021016277 locked/pushed0b1435b beforeGT.20focused/full227pass11skip. Reference onlyoriginaltaskgradient; exactE1/E2 and prelockedmedian split, no thresholdtuning.
