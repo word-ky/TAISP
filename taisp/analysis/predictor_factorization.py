@@ -40,9 +40,9 @@ def feature_statistics(h):
     norms = np.linalg.norm(h,axis=1)
     cosine = (h@h.T)/(norms[:,None]*norms[None,:])
     pairs = []
-    for i in range(4):
+    for i in range(len(h)//2):
         clean,corrupt = 2*i,2*i+1
-        ordinary = [d[clean,2*j] for j in range(4) if i != j]
+        ordinary = [d[clean,2*j] for j in range(len(h)//2) if i != j]
         nearest = int(np.argmin(d[corrupt,::2]))
         pairs.append({'clean_index':clean,'corrupt_index':corrupt,'condition_distance':float(d[clean,corrupt]),
                       'other_clean_distances':ordinary,'median_other_clean_distance':float(np.median(ordinary)),
@@ -69,7 +69,7 @@ def output_statistics(x):
     d = distances(x)
     return {'outputs':x.tolist(),'mean':x.mean(0).tolist(),'total_energy':float(np.sum(x*x)),
             'centered_energy':float(np.sum(centered*centered)),
-            'same_image_distances':[float(d[i,i+1]) for i in range(0,8,2)],'pairwise_distances':d.tolist()}
+            'same_image_distances':[float(d[i,i+1]) for i in range(0,len(x),2)],'pairwise_distances':d.tolist()}
 
 
 def roundoff_check(calculated,saved):

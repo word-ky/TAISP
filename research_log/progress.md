@@ -511,3 +511,4 @@ fullcenteredfraction.170529127%. CenteredA-Ccrosspositive1.188630969e-10: no can
 Savedarraysonly, zero auditmodelcalls/optimizer. All5files fetched/hashed; matrices,
 crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop forreview.
 2026-09-13T08:07:49.2556007+08:00 T013-H Stage A: deterministic hash cohort selected 32 of 13794 eligible source images (13798 readable valid before exclusion); full 5000 val IDs plus 1400 ledger eval IDs and prior4 excluded. No model calls. Manifest and pre-outcome plan committed before gradients.
+2026-09-13T08:10:13.4820868+08:00 T013-H baseline: unchanged T013G remote release, CPU tests/test_predictor_factorization.py and test_matched_replay.py: 7 passed in 1.47s. Manifest SHA256 99f15bc4329b8431a6718bc1c2ae1ef3fa6221db0869a7cc593ef95bdca2d357 committed as f67e8d8 and pushed before any model calls. Implemented variable-N array statistics, fixed image folds and single-forward feature-hook collector.
