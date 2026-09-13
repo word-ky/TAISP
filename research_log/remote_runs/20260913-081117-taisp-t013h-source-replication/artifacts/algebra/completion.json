@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "decision": {
+    "condition_sensitivity": true,
+    "non_negligible_covariance": true,
+    "blocks_below_10_percent": 4,
+    "common_mode_replication": true,
+    "structural_replication": true,
+    "crossfit_utility": false,
+    "both_pass": false,
+    "stop_for_research_review": true
+  },
+  "utility": {
+    "negative_count": 39,
+    "clean_negative_count": 19,
+    "corrupted_negative_count": 20,
+    "median_cosine": 0.13440343542037397,
+    "passed": false
+  }
+}

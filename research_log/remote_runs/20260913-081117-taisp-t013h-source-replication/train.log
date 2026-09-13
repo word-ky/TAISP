@@ -1,0 +1,91 @@
+[autodl] run_id=20260913-081117-taisp-t013h-source-replication
+[autodl] started_at=2026-09-13T08:11:21+08:00
+.............s..s.........s....s..s......s......s....................... [ 59%]
+..............s..s..............................s                        [100%]
+=============================== warnings summary ===============================
+tests/test_demo.py::test_cuda_demo_matches_cpu
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+    warnings.warn("Can't initialize NVML")
+
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+111 passed, 10 skipped, 4 warnings in 6.16s
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+{"episode": 1, "of": 64, "image_id": 182164, "case": "clean_s0", "support_count": 5, "isolation_passed": true}
+{"episode": 2, "of": 64, "image_id": 182164, "case": "gamma_s1", "support_count": 5, "isolation_passed": true}
+{"episode": 3, "of": 64, "image_id": 522454, "case": "clean_s0", "support_count": 3, "isolation_passed": true}
+{"episode": 4, "of": 64, "image_id": 522454, "case": "gamma_s2", "support_count": 3, "isolation_passed": true}
+{"episode": 5, "of": 64, "image_id": 425480, "case": "clean_s0", "support_count": 3, "isolation_passed": true}
+{"episode": 6, "of": 64, "image_id": 425480, "case": "contrast_s2", "support_count": 1, "isolation_passed": true}
+{"episode": 7, "of": 64, "image_id": 410054, "case": "clean_s0", "support_count": 3, "isolation_passed": true}
+{"episode": 8, "of": 64, "image_id": 410054, "case": "color_cast_s2", "support_count": 3, "isolation_passed": true}
+{"episode": 9, "of": 64, "image_id": 256231, "case": "clean_s0", "support_count": 3, "isolation_passed": true}
+{"episode": 10, "of": 64, "image_id": 256231, "case": "gamma_s1", "support_count": 3, "isolation_passed": true}
+{"episode": 11, "of": 64, "image_id": 370279, "case": "clean_s0", "support_count": 9, "isolation_passed": true}
+{"episode": 12, "of": 64, "image_id": 370279, "case": "gamma_s2", "support_count": 7, "isolation_passed": true}
+{"episode": 13, "of": 64, "image_id": 399865, "case": "clean_s0", "support_count": 5, "isolation_passed": true}
+{"episode": 14, "of": 64, "image_id": 399865, "case": "contrast_s2", "support_count": 1, "isolation_passed": true}
+{"episode": 15, "of": 64, "image_id": 54355, "case": "clean_s0", "support_count": 12, "isolation_passed": true}
+{"episode": 16, "of": 64, "image_id": 54355, "case": "color_cast_s2", "support_count": 11, "isolation_passed": true}
+{"episode": 17, "of": 64, "image_id": 496294, "case": "clean_s0", "support_count": 11, "isolation_passed": true}
+{"episode": 18, "of": 64, "image_id": 496294, "case": "gamma_s1", "support_count": 12, "isolation_passed": true}
+{"episode": 19, "of": 64, "image_id": 364188, "case": "clean_s0", "support_count": 5, "isolation_passed": true}
+{"episode": 20, "of": 64, "image_id": 364188, "case": "gamma_s2", "support_count": 4, "isolation_passed": true}
+{"episode": 21, "of": 64, "image_id": 83968, "case": "clean_s0", "support_count": 6, "isolation_passed": true}
+{"episode": 22, "of": 64, "image_id": 83968, "case": "contrast_s2", "support_count": 3, "isolation_passed": true}
+{"episode": 23, "of": 64, "image_id": 92109, "case": "clean_s0", "support_count": 1, "isolation_passed": true}
+{"episode": 24, "of": 64, "image_id": 92109, "case": "color_cast_s2", "support_count": 1, "isolation_passed": true}
+{"episode": 25, "of": 64, "image_id": 308546, "case": "clean_s0", "support_count": 2, "isolation_passed": true}
+{"episode": 26, "of": 64, "image_id": 308546, "case": "gamma_s1", "support_count": 2, "isolation_passed": true}
+{"episode": 27, "of": 64, "image_id": 18507, "case": "clean_s0", "support_count": 14, "isolation_passed": true}
+{"episode": 28, "of": 64, "image_id": 18507, "case": "gamma_s2", "support_count": 14, "isolation_passed": true}
+{"episode": 29, "of": 64, "image_id": 273068, "case": "clean_s0", "support_count": 3, "isolation_passed": true}
+{"episode": 30, "of": 64, "image_id": 273068, "case": "contrast_s2", "support_count": 2, "isolation_passed": true}
+{"episode": 31, "of": 64, "image_id": 156876, "case": "clean_s0", "support_count": 1, "isolation_passed": true}
+{"episode": 32, "of": 64, "image_id": 156876, "case": "color_cast_s2", "support_count": 1, "isolation_passed": true}
+{"episode": 33, "of": 64, "image_id": 469614, "case": "clean_s0", "support_count": 3, "isolation_passed": true}
+{"episode": 34, "of": 64, "image_id": 469614, "case": "gamma_s1", "support_count": 3, "isolation_passed": true}
+{"episode": 35, "of": 64, "image_id": 298468, "case": "clean_s0", "support_count": 19, "isolation_passed": true}
+{"episode": 36, "of": 64, "image_id": 298468, "case": "gamma_s2", "support_count": 18, "isolation_passed": true}
+{"episode": 37, "of": 64, "image_id": 365614, "case": "clean_s0", "support_count": 10, "isolation_passed": true}
+{"episode": 38, "of": 64, "image_id": 365614, "case": "contrast_s2", "support_count": 9, "isolation_passed": true}
+{"episode": 39, "of": 64, "image_id": 117105, "case": "clean_s0", "support_count": 2, "isolation_passed": true}
+{"episode": 40, "of": 64, "image_id": 117105, "case": "color_cast_s2", "support_count": 1, "isolation_passed": true}
+{"episode": 41, "of": 64, "image_id": 563301, "case": "clean_s0", "support_count": 3, "isolation_passed": true}
+{"episode": 42, "of": 64, "image_id": 563301, "case": "gamma_s1", "support_count": 2, "isolation_passed": true}
+{"episode": 43, "of": 64, "image_id": 348315, "case": "clean_s0", "support_count": 5, "isolation_passed": true}
+{"episode": 44, "of": 64, "image_id": 348315, "case": "gamma_s2", "support_count": 5, "isolation_passed": true}
+{"episode": 45, "of": 64, "image_id": 80341, "case": "clean_s0", "support_count": 6, "isolation_passed": true}
+{"episode": 46, "of": 64, "image_id": 80341, "case": "contrast_s2", "support_count": 8, "isolation_passed": true}
+{"episode": 47, "of": 64, "image_id": 54892, "case": "clean_s0", "support_count": 3, "isolation_passed": true}
+{"episode": 48, "of": 64, "image_id": 54892, "case": "color_cast_s2", "support_count": 4, "isolation_passed": true}
+{"episode": 49, "of": 64, "image_id": 449936, "case": "clean_s0", "support_count": 13, "isolation_passed": true}
+{"episode": 50, "of": 64, "image_id": 449936, "case": "gamma_s1", "support_count": 9, "isolation_passed": true}
+{"episode": 51, "of": 64, "image_id": 534000, "case": "clean_s0", "support_count": 20, "isolation_passed": true}
+{"episode": 52, "of": 64, "image_id": 534000, "case": "gamma_s2", "support_count": 20, "isolation_passed": true}
+{"episode": 53, "of": 64, "image_id": 121632, "case": "clean_s0", "support_count": 7, "isolation_passed": true}
+{"episode": 54, "of": 64, "image_id": 121632, "case": "contrast_s2", "support_count": 6, "isolation_passed": true}
+{"episode": 55, "of": 64, "image_id": 83257, "case": "clean_s0", "support_count": 8, "isolation_passed": true}
+{"episode": 56, "of": 64, "image_id": 83257, "case": "color_cast_s2", "support_count": 7, "isolation_passed": true}
+{"episode": 57, "of": 64, "image_id": 80016, "case": "clean_s0", "support_count": 6, "isolation_passed": true}
+{"episode": 58, "of": 64, "image_id": 80016, "case": "gamma_s1", "support_count": 7, "isolation_passed": true}
+{"episode": 59, "of": 64, "image_id": 371603, "case": "clean_s0", "support_count": 9, "isolation_passed": true}
+{"episode": 60, "of": 64, "image_id": 371603, "case": "gamma_s2", "support_count": 9, "isolation_passed": true}
+{"episode": 61, "of": 64, "image_id": 245582, "case": "clean_s0", "support_count": 9, "isolation_passed": true}
+{"episode": 62, "of": 64, "image_id": 245582, "case": "contrast_s2", "support_count": 5, "isolation_passed": true}
+{"episode": 63, "of": 64, "image_id": 212346, "case": "clean_s0", "support_count": 2, "isolation_passed": true}
+{"episode": 64, "of": 64, "image_id": 212346, "case": "color_cast_s2", "support_count": 2, "isolation_passed": true}
+{"decision": {"condition_sensitivity": true, "non_negligible_covariance": true, "blocks_below_10_percent": 4, "common_mode_replication": true, "structural_replication": true, "crossfit_utility": false, "both_pass": false, "stop_for_research_review": true}, "utility": {"negative_count": 39, "clean_negative_count": 19, "corrupted_negative_count": 20, "median_cosine": 0.13440343542037397, "passed": false}}
+[autodl] finished_at=2026-09-13T08:12:06+08:00
+[autodl] exit_code=0

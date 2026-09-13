@@ -2018,3 +2018,41 @@ Both conditionvariation andcovariance are non-negligible on thismicroset. Do not
 as representation-insensitive or negligiblecovariance collapse. Stop forresearchreview;
 no T013H,training,regularizer,biasremoval,centering,predictorredesign,newbackbone/data/AP,
 spatialISP/gating/dose/deterministickernel work started.
+
+---
+
+## T013-H — NEEDS_REVIEW — 2026-09-13T08:16:55.6400851+08:00
+
+R022/4802c88 executed; T013-G closed. Plan/cohort f67e8d8 preceded all new model calls;
+code553e02c; run20260913-081117-taisp-t013h-source-replication, release081014.
+Full report: research_log/T013H_report.md. Tables: research_log/T013H/tables.md.
+Raw run and76-file SHAmanifest retained under research_log/remote_runs andT013H.
+
+- Precommitted32newtrainimages selected by seed20260913 hash; original4 andall5000val
+  IDs excluded, including1400known T002–T012 IDs from20receipts. Fourfixed8imageblocks,
+  clean+onecorrupt, balanced8percorruption. ManifestSHA99f15bc4329b8431a6718bc1c2ae1ef3fa6221db0869a7cc593ef95bdca2d357.
+- Exactly64primaryrecords fromoriginalzerohead, K3/lr.1, unchanged source/CLIP pins.
+  Existing16Dfeatures captured in sameforward; full8Dphi0gradients/headgradients saved.
+  No optimizer/predictor/deployment change; sourceannotations analysisouteronly.
+- Baseline7passed1.47s; focused6passed1.60s; regression111passed10skipped6.16s.
+  Tenexplicitpretrainedtestskips; following primarycollection usesrealmodels. No newblocker.
+  Run08:11:21–08:12:06+08exit0, collection34.17053717s, peakCUDA4024015360bytes.
+- All64frozen/gradNone/predictor/ISPisolation checks pass; empty0/64, maxsat.2382955104.
+  Threefixed8eps32gradient reconstructions pass; maximumerror/bound.02075525.
+- Overallmedianrho1.068435713,rC.2707775423,rCout.3246896334. Featurecentered8.62149813percent,
+  effective rank2.005216624. Fullcenteredoutput.0287439153percent; blocks
+  [.0518793024,.0381815423,.0291102942,.0330229464]percent. Fixedstructurecriterion PASS.
+- Nuance: centeredA-Ccross is NEGATIVE -1.987731969e-10, cosA,C=-.6138247850.
+  This largercohort haspartialcenteredcancellation aswellas commonoffsetdomination;
+  do notgeneralize T013G positivecross/no-cancellation finding.
+- Four-foldalgebra fitsmoments onlyother24images; allvectors/indices/deltas retained.
+  Covarianceutility39/64negative,19/32clean,20/32corrupt, mediancos.1344034354.
+  Foldcounts7,8,13,11. Overallcountmisses40: utility FAIL, jointadvancement FAIL.
+  Full/common both29/64negative (12clean/17corrupt). Covmeanfirstorderchange
+  -8.722545644e-8 overall, +1.975883560e-9clean, -1.764267964e-7corrupt.
+  No finite-step/AP improvement was measured by thesecounterfactuals.
+
+Recommendation: review the recorded negative utility result under the frozen rule.
+Centeredvariation is present but hasnot metthe task-utility criterion. No thresholdrelaxation,
+repeat/cohortselection or promotionofcovariance-only/biasremoval/centering. STOP afterT013-H;
+no T013-I,training,regularization,redesign,targetAP,spatialISP,gating,dose orkernelwork started.

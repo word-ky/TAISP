@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "source_revision": "553e02c",
+  "episode_count": 64,
+  "optimizer_steps": 0,
+  "primary_passes_per_episode": 1,
+  "all_isolation_passed": true,
+  "clean": {
+    "phi0_norm_mean": 0.0,
+    "phi0_norm_max": 0.0,
+    "phi3_norm_mean": 0.03956614327034913,
+    "phi3_norm_max": 0.09450341761112213,
+    "saturation_rate_mean": 0.028605964925233707,
+    "saturation_rate_max": 0.11687476933002472,
+    "empty_support_count": 0
+  },
+  "corrupted": {
+    "phi0_norm_mean": 0.0,
+    "phi0_norm_max": 0.0,
+    "phi3_norm_mean": 0.027182057907339185,
+    "phi3_norm_max": 0.0637354627251625,
+    "saturation_rate_mean": 0.04367606468440499,
+    "saturation_rate_max": 0.2382955104112625,
+    "empty_support_count": 0
+  },
+  "peak_cuda_allocated_bytes": 4024015360,
+  "elapsed_seconds": 34.17053716699593
+}

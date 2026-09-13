@@ -1,0 +1,49 @@
+{
+  "config": {
+    "seed": 20260913,
+    "inner_steps": 3,
+    "inner_lr": 0.1,
+    "norm_epsilon": 1e-12,
+    "outer_coefficient_algebra_only": 0.001,
+    "optimizer_steps": 0,
+    "records": 64
+  },
+  "source_revision": "553e02c",
+  "python": "3.12.12",
+  "packages": {
+    "torch": "2.4.0",
+    "torchvision": "0.19.0+cu121",
+    "transformers": "4.44.2",
+    "pycocotools": "2.0.10",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0"
+  },
+  "cuda": "12.1",
+  "gpu": "NVIDIA RTX A6000",
+  "clip_model": "openai/clip-vit-base-patch32",
+  "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "clip_sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+  "detector_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "positive_prompts": [
+    "a clear natural photograph",
+    "a well-lit photograph with natural colors",
+    "a sharp and clear photograph with good visibility"
+  ],
+  "negative_prompts": [
+    "a dark underexposed photograph",
+    "a poorly lit photograph with low visibility",
+    "a low contrast washed-out photograph",
+    "a hazy photograph with faded details",
+    "a photograph with an unnatural color cast",
+    "a photograph with distorted and unbalanced colors"
+  ],
+  "interpretation": "T013-H source-only primary records; no training or target/AP.",
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "clip_state_sha256": "6b38ac3696ff07a4e0cdbe436db05551707486e413df526256526b5777fe147c",
+  "predictor_state_sha256": "b0ccafa4f25c6399b511124b88b28707f686525d86ff431028ec0502a41efcaf",
+  "initial_isolation_passed": true,
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "cublas_workspace_config": null,
+  "manifest_sha256": "99f15bc4329b8431a6718bc1c2ae1ef3fa6221db0869a7cc593ef95bdca2d357"
+}

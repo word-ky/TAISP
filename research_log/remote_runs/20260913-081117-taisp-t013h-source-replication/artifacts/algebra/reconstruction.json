@@ -1,0 +1,29 @@
+{
+  "per_episode_weight_outer_product": {
+    "passed": true,
+    "max_absolute_error": 7.028177151369164e-09,
+    "frobenius_error": 3.5217456056077204e-08,
+    "reference_scale": 0.2121870070695877,
+    "max_elementwise_bound": 4.047145978347544e-07,
+    "max_error_over_bound": 0.020109392109480238,
+    "tolerance": "8 * eps_float32 * (max_abs_saved + abs_saved_element); fixed before outcomes"
+  },
+  "per_episode_bias_identity": {
+    "passed": true,
+    "max_absolute_error": 0.0,
+    "frobenius_error": 0.0,
+    "reference_scale": 1.3928769826889038,
+    "max_elementwise_bound": 2.656702008607681e-06,
+    "max_error_over_bound": 0.0,
+    "tolerance": "8 * eps_float32 * (max_abs_saved + abs_saved_element); fixed before outcomes"
+  },
+  "mean_weight_gradient": {
+    "passed": true,
+    "max_absolute_error": 2.0234583626710378e-10,
+    "frobenius_error": 5.386240455992049e-10,
+    "reference_scale": 0.006166495459009269,
+    "max_elementwise_bound": 1.1761656682985819e-08,
+    "max_error_over_bound": 0.020755250015686542,
+    "tolerance": "8 * eps_float32 * (max_abs_saved + abs_saved_element); fixed before outcomes"
+  }
+}
