@@ -132,12 +132,18 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
         interpretation='T020-A image-level cross-fitted source-trained orthogonal transport; developmental only'
         assert transport_fits is not None
         write_json(output/'transport_fits.json',transport_fits)
+    if study=='T021-A':
+        assert config['consensus_iou']==.60 and transport_fits is None
+        interpretation='T021-A fixed flip-consensus support filter; no training or cross-detector claim'
     meta.update(interpretation=interpretation,
                 smoke=smoke,cases=CASE_NAMES,methods=methods,source_state_sha256=source_hash,clip_state_sha256=clip_hash,
                 cohort_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
                 evaluated_image_ids=[r['image_id'] for r in images],teacher='one original condition prediction,detachedscore>=.5top20',
                 ground_truth_boundary='COCO annotations loaded only after all adaptation/predictions, for official AP',
                 timing='synchronized steps0..3 diagnostics with K3updates; deploy adds sharedteacher setup; evaluation excluded')
+    if study=='T021-A':
+        meta.update(teacher='original plus deterministic horizontal flip; same-class IoU>=.60, score>=.50 each view; geometric-confidence greedy then top20; original scores/boxes/classes retained',
+                    timing='steps0..3 diagnostics/K3updates; current deploy adds original teacher; candidate deploy adds original teacher plus flip forward/matching; final prediction/state/AP excluded')
     write_json(output/'environment.json',meta)
     write_json(output/'cohort.json',manifest)
     predictions={f'{c}_{m}':[] for c in CASE_NAMES for m in methods}
@@ -169,9 +175,23 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
                 setup=time.perf_counter()-begin
                 predictions[f'{case}_no_adapt'].extend(prediction_records(info['image_id'],original))
                 frozen_support={k:v.clone() for k,v in selected.items()}
+                consensus_support=consensus_receipt=None
+                consensus_seconds=0.
+                if study=='T021-A':
+                    from taisp.models.flip_consensus import flip_consensus
+                    begin=time.perf_counter()
+                    with torch.no_grad():
+                        flipped=source(image.flip(-1))[0]
+                        consensus_support,consensus_receipt=flip_consensus(original,flipped,image.shape[-1])
+                    torch.cuda.synchronize()
+                    consensus_seconds=time.perf_counter()-begin
+                    consensus_receipt['current_top20_count']=len(selected['boxes'])
+                    consensus_receipt['retained_to_current_top20_ratio']=len(consensus_support['boxes'])/len(selected['boxes']) if len(selected['boxes']) else None
                 counts={}
                 for method in methods[1:]:
-                    loss=DetectorNativeLoss(source,{'base':selected},'det_pseudo') if method in ('current_ours','grad_transport_ours') else NativePseudoTargetLoss(
+                    episode_support=consensus_support if method=='flip_consensus_ours' else selected
+                    frozen_episode_support={k:v.clone() for k,v in episode_support.items()} if method=='flip_consensus_ours' else frozen_support
+                    loss=DetectorNativeLoss(source,{'base':episode_support},'det_pseudo') if method in ('current_ours','grad_transport_ours','flip_consensus_ours') else NativePseudoTargetLoss(
                         source,selected,seed=config['seed'],component_set='full' if method=='nativePT_ours' else method)
                     torch.cuda.synchronize()
                     torch.cuda.reset_peak_memory_stats()
@@ -186,11 +206,11 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
                     peak=torch.cuda.max_memory_allocated()
                     isolation={'source_unchanged_frozen_eval_grad_none':frozen_unchanged((source,),source_states),
                                'isp_identity_grad_none':bool(torch.count_nonzero(isp.phi)==0 and isp.phi.grad is None),
-                               'teacher_support_unchanged':all(torch.equal(v,frozen_support[k]) for k,v in selected.items()),
+                               'teacher_support_unchanged':all(torch.equal(v,frozen_episode_support[k]) for k,v in episode_support.items()),
                                'finite_phi_and_gradients':bool(torch.isfinite(result.phi).all()) and
                                    all(torch.isfinite(torch.tensor(d['detector_gradient'])).all().item() for d in result.diagnostics)}
                     assert all(isolation.values()),isolation
-                    if not len(selected['boxes']):
+                    if not len(episode_support['boxes']):
                         assert torch.equal(result.phi,torch.zeros_like(result.phi))
                         assert torch.equal(result.enhanced,isp(image,torch.zeros_like(result.phi)))
                     with torch.no_grad():
@@ -199,7 +219,7 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
                     counts[method]=len(prediction['boxes'])
                     row={'image_id':info['image_id'],'block':info['block'],'case':case,'method':method,
                          'diagnostics':result.diagnostics,'native_components':loss.loss_history if isinstance(loss,NativePseudoTargetLoss) else None,
-                         'support':{k:v.detach().cpu().tolist() for k,v in selected.items()},'support_count':len(selected['boxes']),
+                         'support':{k:v.detach().cpu().tolist() for k,v in episode_support.items()},'support_count':len(episode_support['boxes']),
                          'phi3_norm':result.phi.norm().item(),'updated':bool(torch.count_nonzero(result.phi)),
                          'adapt_seconds':elapsed,'teacher_seconds':setup,'deploy_seconds':elapsed+setup,
                          'peak_allocated_bytes':peak,'prediction_count':counts[method],
@@ -211,6 +231,11 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
                         row['transport_fold']=fold
                         row['isolation']['heldout_image_excluded_from_fit']=info['image_id'] not in fit['train_image_ids']
                         row['isolation']['all_step_norms_preserved']=all(d['norm_preservation_passed'] for d in result.diagnostics)
+                    if method=='flip_consensus_ours':
+                        row['consensus']=consensus_receipt
+                        row['consensus_setup_seconds']=consensus_seconds
+                        row['deploy_seconds']+=consensus_seconds
+                        row['isolation']['all_steps_use_frozen_support']=all(d['support_count']==len(episode_support['boxes']) for d in result.diagnostics)
                     handle.write(json.dumps(row,allow_nan=False)+'\n');handle.flush();rows.append(row)
             print(f'completed {i+1}/{len(images)} image_id={info["image_id"]} elapsed={time.perf_counter()-started:.1f}s',flush=True)
     pd=output/'predictions';pd.mkdir()
@@ -223,6 +248,9 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
     write_json(output/'isolation.json',final_isolation)
     assert all(final_isolation.values())
     write_json(output/'diagnostics.json',diagnostic_summary(rows,methods))
+    if study=='T021-A':
+        from .flip_consensus_study import support_summary
+        write_json(output/'support_diagnostics.json',support_summary(rows))
     metrics={}
     summary=None
     if not smoke:
@@ -236,7 +264,10 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
             for group,values in replication_ap(coco,ids,records,manifest['replication_blocks']).items():
                 metrics.setdefault(group,{})[name]=values
         write_json(output/'metrics.json',metrics)
-        if study=='T020-A':
+        if study=='T021-A':
+            from .flip_consensus_study import consensus_advancement
+            summary=consensus_advancement(metrics,all(final_isolation.values()) and all(all(r['isolation'].values()) for r in rows))
+        elif study=='T020-A':
             from .gradient_transport import transport_advancement
             summary=transport_advancement(metrics,all(final_isolation.values()) and all(all(r['isolation'].values()) for r in rows))
         elif study=='T019-A':
@@ -246,7 +277,7 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
             summary=confirmation(metrics,all(final_isolation.values())) if study=='T018-B' else advancement(metrics)
         write_json(output/'summary.json',summary)
     write_json(output/'completion.json',{'status':'completed','smoke':smoke,'images':len(images),'adaptive_samples':len(rows),
-               'teacher_forwards':len(images)*7,'evaluations':sum(len(v) for v in metrics.values()),
+               'teacher_forwards':len(images)*7*(2 if study=='T021-A' else 1),'evaluations':sum(len(v) for v in metrics.values()),
                'elapsed_seconds':time.perf_counter()-started,'all_isolation_passed':True,
                'gate':summary['gate'] if summary else None})
     print('Finished '+study+' '+('runtime smoke (no AP)' if smoke else json.dumps(summary['gate'])),flush=True)

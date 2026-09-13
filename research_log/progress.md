@@ -603,3 +603,5 @@ Fixed score.5/IoU.6/geometric-confidence greedy/ties-by-original-index/top20afte
 Keep original box/class/score, existing loss/CLIP/ISP/K3/LR.1 unchanged. Empty=>identity.
 No model outcomes or active job. Next commit plan, implement/test, fullregression,
 2image CUDA smoke0AP, then formal200 on A6000. No thresholds or method expansion.
+
+2026-09-13T22:19:55.619123+08:00 T021-A increment1 passed11tests2skips2.42s on release221708. Inversion/scoreIoUboundary/greedyconfidence/tie/top20/originalweights/emptyidentity verified. Added shared driver support-only branch and fixed assessment/diagnostics; syntaxpassed. Next focused/full/CUDA smoke0AP.
