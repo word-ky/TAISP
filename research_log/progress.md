@@ -577,3 +577,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T18:22:46.334177+08:00 R031/d60e72c synced: T018-B acceptednegative; T019-A fixed4componentfamily authorized. Baseline12passed2skipped1.57s. New200cohort4x50,636prior-source/5000val excluded;SHA534b17343ccba995beb9d112d552eefd7f1b2116479c2132dd99265b1d6735b4. Plan/config/methodhashes ready forpre-outcomecommit; no real-model outcomes.
 
 2026-09-13T18:24:23.1437975+08:00 T019-A minimalnamedsubset/driver/selection implementation passedfocused24tests2skips1.82s; local syntaxpassed. Release20260913-182322-taisp-t019a-components deployed. No realmodeloutcomes; nextfullregression+2imageGPUsmoke0AP.
+
+2026-09-13T18:26:31.3180888+08:00 T019-A full162passed10skipped6.84s. CUDA smoke20260913-182437 exit0:2images/70adaptiveepisodes,56candidateepisodes,224active-componentfloat32sum comparisons exactlymatch returnedtotals;allK3/statechecks pass,0AP. T019A_smoke_audit.json saved. No tuning; ready forformal200.

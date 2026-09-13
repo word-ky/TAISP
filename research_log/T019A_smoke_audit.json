@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-09-13T18:26:07.908028+08:00",
+  "smoke_run": "20260913-182437-taisp-t019a-runtime-smoke",
+  "adaptive_episodes": 70,
+  "candidate_episodes": 56,
+  "exact_float32_active_sum_comparisons": 224,
+  "all_passed": true,
+  "AP_evaluations": 0,
+  "samples_sha256": "39c3544e6fd1bbadc79c2c807f7c99d56fe90916d64f189b1ac98f1713f3b16d",
+  "active_components": {
+    "native_cls": [
+      "loss_classifier"
+    ],
+    "native_conf": [
+      "loss_classifier",
+      "loss_objectness"
+    ],
+    "native_roi": [
+      "loss_classifier",
+      "loss_box_reg"
+    ],
+    "native_conf_roi": [
+      "loss_classifier",
+      "loss_objectness",
+      "loss_box_reg"
+    ]
+  }
+}
