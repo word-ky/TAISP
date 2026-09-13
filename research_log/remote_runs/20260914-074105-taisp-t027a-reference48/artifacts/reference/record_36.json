@@ -1,0 +1,93 @@
+{
+  "episode_index": 36,
+  "image_id": 193042,
+  "case": "clean_s0",
+  "block": 3,
+  "task_loss": 0.2105945497751236,
+  "task_components": {
+    "loss_classifier": 0.09001864492893219,
+    "loss_box_reg": 0.09951304644346237,
+    "loss_objectness": 0.016349848359823227,
+    "loss_rpn_box_reg": 0.004713020287454128
+  },
+  "task_gradient": [
+    -0.05502982823607154,
+    -0.032784901591940536,
+    -0.006699613636228251,
+    0.03133338659532151,
+    -0.06510066189992393,
+    0.041080401819474296,
+    0.016846161259658172,
+    -0.02097019475982293
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      180.78048780012207,
+      219.84992792757217,
+      151.77066017367517,
+      93.57589063925002,
+      179.90367258880113,
+      226.36254107073458,
+      84.07849933466137,
+      34.92466413261026
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        6.502982823607154e-12,
+        4.278490159194054e-12,
+        1.669961363622825e-12,
+        4.133338659532151e-12,
+        7.510066189992394e-12,
+        5.1080401819474296e-12,
+        2.684616125965817e-12,
+        3.0970194759822933e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999196,
+      "relative_l2_error": 4.029138556854656e-07,
+      "max_absolute_error": 3.5781138343904395e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.011538164486841966,
+  "S_cons": -0.055071640457288115,
+  "S_flip": -0.061220659059513856,
+  "Delta_cons": -0.04353347597044615,
+  "agreement": -0.12725913002224792,
+  "both_nonzero": true,
+  "abstain": false,
+  "group": "low",
+  "integrity_passed": true
+}

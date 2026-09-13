@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-074105-taisp-t027a-reference48",
+  "releaseId": "20260914-073937-taisp-t027a-reference",
+  "sessionName": "autodl-20260914-074105-taisp-t027a-reference48",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-073937-taisp-t027a-reference && export TAISP_SOURCE_REVISION=ed444b6 && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.flip_gradient_reference --cohort research_log/T027A_train_cohort.json --candidate-root /home/liujianhua/wjq/TAISP/runs/20260914-073543-taisp-t027a-candidates48/artifacts/candidates --candidate-lock research_log/T027A_candidate_lock.json --output \"$AUTODL_ARTIFACTS_DIR/reference\""
+}

@@ -804,3 +804,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 07:35+08 T027preflight8synthetic/state cases passed CUDA atoriginalatol2e-7/rtol1e-6;no ISPedit/modeloutcomes.17focused/regional tests pass3.85s. Candidatecode/preflightreceipts commit before two-view modelstage.
 
 2026-09-14 07:41+08 T027all48candidatescomplete14.410640s; both-viewgradients/overallagreementmedian.6972085021016277 locked/pushed0b1435b beforeGT.20focused/full227pass11skip. Reference onlyoriginaltaskgradient; exactE1/E2 and prelockedmedian split, no thresholdtuning.
+
+2026-09-14 T027-A completed on A6000: E1/E2 FAIL; 48 integrity checks pass, no zero/abstention. Reference exit0 18.390367s, raw SHA verified. Full distributions/report generated from immutable receipts; exact family closed, stopNEEDS_REVIEW. Protected/prior code unchanged.

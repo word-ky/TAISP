@@ -3265,3 +3265,16 @@ Futurefreshcohort MUST additionallyexclude ALL1187memoryimages: use
 `research_log/T026A_source_exclusion_manifest.json` (2687prior+memory+auditIDs),
 not only T026A_train_cohort. T025numeric correction recordedabove/report;
 R041research files and authoritative a268f90 results leftunchanged.
+
+## T027-A / R042 — NEEDS_REVIEW; E1 FAIL, E2 FAIL
+
+# T027-A complete — NEEDS_REVIEW
+R042 executed on A6000 CUDA; E1 FAIL and E2 FAIL. Close exact flip-gradient consensus/reliability family; no AP/runtime or tuning.
+S_cons positive31/48 overall18/24 corrupt; Delta positive24/48 and10/24; medians+.00026414250351889084 and-.0017481201179853005. E2 Spearman.1054059921841077 and-.12347826086956522; high-low positive fraction+.08333333333333326 and-.08571428571428574.
+All48 integrity pass, no zero/abstain.20 focused tests; full227pass11skip. All model-bearing runs CUDA A6000, both exit0.
+Candidate lock0b1435b BEFORE original-task reference ed444b6. See T027A_report.md, T027A/summary.json, integrity.json and per_episode.tsv.
+Raw runs20260914-073543-taisp-t027a-candidates48 and20260914-074105-taisp-t027a-reference48.
+Next: wait for explicit research continuation; retain15-minute heartbeat, GPU preference. No active job.
+Future exclusion: T027A_train_cohort.json additional_source includes2687prior+24new=2711 source IDs plus5000val.
+
+Full report: `research_log/T027A_report.md`. Candidate median .6972085021016277 pinned before GT; actual high/low sizes24/24 overall and14/10 corrupt. No threshold tuning. Positive block medians3/4 do not rescue E1. Both E1/E2 fail, close exact family perR042.

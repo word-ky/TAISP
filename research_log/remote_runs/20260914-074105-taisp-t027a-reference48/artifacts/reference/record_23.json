@@ -1,0 +1,93 @@
+{
+  "episode_index": 23,
+  "image_id": 520433,
+  "case": "color_cast_s2",
+  "block": 1,
+  "task_loss": 0.09636351466178894,
+  "task_components": {
+    "loss_classifier": 0.03040723130106926,
+    "loss_box_reg": 0.03842153400182724,
+    "loss_objectness": 0.00173939298838377,
+    "loss_rpn_box_reg": 0.025795364752411842
+  },
+  "task_gradient": [
+    0.013366759813795575,
+    0.014040380760456089,
+    -0.03348197453667201,
+    0.005169811449183381,
+    -0.01165071410535684,
+    -0.0018906999679750187,
+    -0.003349188285904259,
+    -0.00030092549111568464
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      117.99457695390868,
+      232.2333379427808,
+      212.21726259776935,
+      121.9113980033284,
+      228.94506286364066,
+      207.84609690826528,
+      55.660671370543014,
+      26.201525112405466
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        2.3366759813795576e-12,
+        2.404038076045609e-12,
+        4.348197453667201e-12,
+        1.516981144918338e-12,
+        2.165071410535684e-12,
+        1.189069996797502e-12,
+        1.3349188285904258e-12,
+        1.0300925491115684e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999998681,
+      "relative_l2_error": 5.790359864062504e-07,
+      "max_absolute_error": 1.8968945147274097e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.0009170061749519553,
+  "S_cons": 0.007158932014959896,
+  "S_flip": 0.014878151657184266,
+  "Delta_cons": 0.008075938189911851,
+  "agreement": 0.9015845204036592,
+  "both_nonzero": true,
+  "abstain": false,
+  "group": "high",
+  "integrity_passed": true
+}
