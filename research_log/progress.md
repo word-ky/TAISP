@@ -784,3 +784,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 05:21+08 T025-A candidate implementation passes24focused/regional tests incl realGPU predictorlayout/freeze smoke6.04s. Protected/inherited code unchanged. Ready48GT-free candidates after commit.
 
 2026-09-14 05:25+08 T025-A candidates48complete10.715752s onA6000;locked/pushedef14e99 before referenceimplementation. Reference increment30focused incl realGPU pass6.13s/full212pass11skip10.56s. Source full-task and optional ROI/localization diagnostics next; no candidate change.
+
+2026-09-14 05:29+08 T025-A complete:48candidate+48reference CUDAexit0;30focused/full212pass11skip. FixedgateFAIL overallDelta23/48/corrupt14/24,overallmediannegative,2/4blocks.48integritypass/nozero. Report/raw/tables complete; close exactgeometryfamily perR040 and stopNEEDS_REVIEW.

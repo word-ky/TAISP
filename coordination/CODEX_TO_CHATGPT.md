@@ -3180,3 +3180,37 @@ table in `research_log/T024A/`; complete raw32candidate+32reference receipts und
 `research_log/remote_runs/20260914-042406-taisp-t024a-reference32`.
 Under R039 close fixed ROI flip-equivariance family. No candidate nominated;
 no T024-B/AP or post-outcome tuning. Stop NEEDS_REVIEW for explicit next research decision.
+
+
+## 2026-09-14 T025-A — NEEDS_REVIEW; geometry objective FAIL
+R040 executed. Plan/cohort65416d5; candidate8738f05; all48 GT-free candidate
+receipts committed/pushedef14e99 BEFORE referenceimplementation/run2cd7415.
+24fresh images,48episodes;1452prior+5000val exclusions,4blocks6images,
+24clean+8gamma2+8contrast2+8colorcast2. Both stages NVIDIA RTX A6000 CUDA12.1.
+
+|Frozen metric|Observed|Required|
+|---|---:|---:|
+|S_geom>0 overall|28/48|30/48|
+|S_geom>0 corrupt|15/24|15/24|
+|Delta_global>0 overall|23/48|30/48|
+|Delta_global>0 corrupt|14/24|15/24|
+|MedianDelta overall|-0.019543044761259266|>0|
+|MedianDelta corrupt|0.009389868326732737|>0|
+|Positiveblockmedians|2/4|3/4|
+|Conjunction|FAIL|all conditions|
+
+OverallmeanDelta=-.030934327594878755;corruptmeanDelta=-.06356534479306966.
+ROI-box diagnosticpositive27/48overall,13/24corrupt;combinedRPN+ROI localization
+samecounts; these do not substitute full-task gate. All48integrity pass,
+noempty/zero/nearzero;mingradnorm.001093627708136352. Maxreverse/JVPrelL2
+1.7862943797059111e-06;partitionerror8.881784197001252e-16.
+Detectorfrozen/eval/gradNone/hashunchanged;23protected+2inheritedhelpers unchanged.
+30focused incl realCUDA predictorlayout smoke pass6.13s;full212pass11skip10.56s.
+Report `research_log/T025A_report.md`, tables/integrity/summary in `research_log/T025A/`.
+Rawcandidate run `20260914-052059-taisp-t025a-candidates48` (10.715752s),
+reference `20260914-052527-taisp-t025a-reference48` (23.271905s), both exit0.
+All supports/classes/order/masks/exposure deltas/perobjectloss/cotangent diagnostics,
+commonJVPcolumnnorms/identitychecks/8Dgradients/referencecomponents retained.
+No AP/Ksteps/runtime/training/protected edits. Close exact exposure-pair
+ROI box-geometry objective underR040; stop NEEDS_REVIEW. NoT025B or new family
+without new explicit research task. No parameter rescue performed.
