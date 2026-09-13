@@ -1,0 +1,168 @@
+{
+  "release": "20260914-024158-taisp-t022a3-confirmation",
+  "all_passed": true,
+  "files": {
+    "taisp/losses/detector_native.py": {
+      "expected_LF": "21471524358faee9f0d5c47a7d6e45911ff22bb9f31316e57d42f4e8ca72c6b2",
+      "actual_raw": "21471524358faee9f0d5c47a7d6e45911ff22bb9f31316e57d42f4e8ca72c6b2",
+      "actual_LF": "21471524358faee9f0d5c47a7d6e45911ff22bb9f31316e57d42f4e8ca72c6b2",
+      "passed": true
+    },
+    "taisp/models/detector.py": {
+      "expected_LF": "df9cae806e102c8c6231131b9e620e6ae5375a908dbff686447364eb932bce7c",
+      "actual_raw": "df9cae806e102c8c6231131b9e620e6ae5375a908dbff686447364eb932bce7c",
+      "actual_LF": "df9cae806e102c8c6231131b9e620e6ae5375a908dbff686447364eb932bce7c",
+      "passed": true
+    },
+    "taisp/models/detector_signal.py": {
+      "expected_LF": "4c5f142e32c055a2e8efc579ccb9c64112faac54e049cc43e161a258a991686d",
+      "actual_raw": "4c5f142e32c055a2e8efc579ccb9c64112faac54e049cc43e161a258a991686d",
+      "actual_LF": "4c5f142e32c055a2e8efc579ccb9c64112faac54e049cc43e161a258a991686d",
+      "passed": true
+    },
+    "taisp/losses/clip_semantic.py": {
+      "expected_LF": "2dea813207b745cb43f0ecf59cf666c02e1e193ee2f65804ed996a230a97cbb2",
+      "actual_raw": "2dea813207b745cb43f0ecf59cf666c02e1e193ee2f65804ed996a230a97cbb2",
+      "actual_LF": "2dea813207b745cb43f0ecf59cf666c02e1e193ee2f65804ed996a230a97cbb2",
+      "passed": true
+    },
+    "taisp/analysis/oracle.py": {
+      "expected_LF": "793a9a34e7dbd53cedc699520fbf3e94890e95adfdcbe6ce2c14cad4cb908e35",
+      "actual_raw": "793a9a34e7dbd53cedc699520fbf3e94890e95adfdcbe6ce2c14cad4cb908e35",
+      "actual_LF": "793a9a34e7dbd53cedc699520fbf3e94890e95adfdcbe6ce2c14cad4cb908e35",
+      "passed": true
+    },
+    "taisp/analysis/corruptions.py": {
+      "expected_LF": "1daf28d3a7f321fecb89f671cc6dab2c206d135cd9763246b7bd7e142b294992",
+      "actual_raw": "1daf28d3a7f321fecb89f671cc6dab2c206d135cd9763246b7bd7e142b294992",
+      "actual_LF": "1daf28d3a7f321fecb89f671cc6dab2c206d135cd9763246b7bd7e142b294992",
+      "passed": true
+    },
+    "taisp/isp/__init__.py": {
+      "expected_LF": "ac39f4892353ce22cf3d2e03d08597cbe65ca62cb6c22dcfda22e78e7bd7b818",
+      "actual_raw": "ac39f4892353ce22cf3d2e03d08597cbe65ca62cb6c22dcfda22e78e7bd7b818",
+      "actual_LF": "ac39f4892353ce22cf3d2e03d08597cbe65ca62cb6c22dcfda22e78e7bd7b818",
+      "passed": true
+    },
+    "taisp/isp/module.py": {
+      "expected_LF": "80852cd0a284945740c62b30b54e4723e32dc1d99a555a47d90d4ca9e2532832",
+      "actual_raw": "80852cd0a284945740c62b30b54e4723e32dc1d99a555a47d90d4ca9e2532832",
+      "actual_LF": "80852cd0a284945740c62b30b54e4723e32dc1d99a555a47d90d4ca9e2532832",
+      "passed": true
+    },
+    "taisp/isp/ops.py": {
+      "expected_LF": "e0cb6776dfb1f8ab935b49eceb30be1ac7f60b958a22ad0b535aad22016a6e7b",
+      "actual_raw": "e0cb6776dfb1f8ab935b49eceb30be1ac7f60b958a22ad0b535aad22016a6e7b",
+      "actual_LF": "e0cb6776dfb1f8ab935b49eceb30be1ac7f60b958a22ad0b535aad22016a6e7b",
+      "passed": true
+    },
+    "taisp/analysis/native_pseudo_target.py": {
+      "expected_LF": "4ac9f9933af100d8104a838bfe1314babd74a30009ead8ab47a67c6b5820598a",
+      "actual_raw": "4ac9f9933af100d8104a838bfe1314babd74a30009ead8ab47a67c6b5820598a",
+      "actual_LF": "4ac9f9933af100d8104a838bfe1314babd74a30009ead8ab47a67c6b5820598a",
+      "passed": true
+    },
+    "taisp/analysis/native_component_study.py": {
+      "expected_LF": "6df36e834df335eaa257121607d0bff271fc52d9a6a4f2ac87d04d84ba4027aa",
+      "actual_raw": "6df36e834df335eaa257121607d0bff271fc52d9a6a4f2ac87d04d84ba4027aa",
+      "actual_LF": "6df36e834df335eaa257121607d0bff271fc52d9a6a4f2ac87d04d84ba4027aa",
+      "passed": true
+    },
+    "taisp/tta/trust_radius.py": {
+      "expected_LF": "b815a37f24fea3c40634eaac393c13a1c255af4a88291b4a0808c5caf30f829c",
+      "actual_raw": "b815a37f24fea3c40634eaac393c13a1c255af4a88291b4a0808c5caf30f829c",
+      "actual_LF": "b815a37f24fea3c40634eaac393c13a1c255af4a88291b4a0808c5caf30f829c",
+      "passed": true
+    },
+    "taisp/tta/gradient_transport.py": {
+      "expected_LF": "989591a61b11a696fb5f0c26ea1855e0497a3ea7af964cb7943e7260cf52d97d",
+      "actual_raw": "989591a61b11a696fb5f0c26ea1855e0497a3ea7af964cb7943e7260cf52d97d",
+      "actual_LF": "989591a61b11a696fb5f0c26ea1855e0497a3ea7af964cb7943e7260cf52d97d",
+      "passed": true
+    },
+    "taisp/analysis/gradient_transport.py": {
+      "expected_LF": "0987bf00efdffa0166fa11c8b96d6673545596a38ef9cf98b26a40ba105bb7c1",
+      "actual_raw": "0987bf00efdffa0166fa11c8b96d6673545596a38ef9cf98b26a40ba105bb7c1",
+      "actual_LF": "0987bf00efdffa0166fa11c8b96d6673545596a38ef9cf98b26a40ba105bb7c1",
+      "passed": true
+    },
+    "taisp/models/flip_consensus.py": {
+      "expected_LF": "4c9a46ec435808b152c0afcb025bfc4de8019b38c572757d5479431d9ff4178f",
+      "actual_raw": "4c9a46ec435808b152c0afcb025bfc4de8019b38c572757d5479431d9ff4178f",
+      "actual_LF": "4c9a46ec435808b152c0afcb025bfc4de8019b38c572757d5479431d9ff4178f",
+      "passed": true
+    },
+    "taisp/analysis/flip_consensus_study.py": {
+      "expected_LF": "d10516bfd3d0f862ce0906a6c9c9c36a03b113baa122147c6b64ae76e99b4d1c",
+      "actual_raw": "d10516bfd3d0f862ce0906a6c9c9c36a03b113baa122147c6b64ae76e99b4d1c",
+      "actual_LF": "d10516bfd3d0f862ce0906a6c9c9c36a03b113baa122147c6b64ae76e99b4d1c",
+      "passed": true
+    },
+    "taisp/analysis/spatial_action.py": {
+      "expected_LF": "88ece48b584a575b003fdb57761be687484a1988ba9b17b6dce9e1333aecc1a8",
+      "actual_raw": "88ece48b584a575b003fdb57761be687484a1988ba9b17b6dce9e1333aecc1a8",
+      "actual_LF": "88ece48b584a575b003fdb57761be687484a1988ba9b17b6dce9e1333aecc1a8",
+      "passed": true
+    },
+    "taisp/analysis/common_jacobian.py": {
+      "expected_LF": "ee2ac497c69ac8164ddc90d2d5793b59fc16b9736652e5b863b455bdbff2ec6f",
+      "actual_raw": "ee2ac497c69ac8164ddc90d2d5793b59fc16b9736652e5b863b455bdbff2ec6f",
+      "actual_LF": "ee2ac497c69ac8164ddc90d2d5793b59fc16b9736652e5b863b455bdbff2ec6f",
+      "passed": true
+    },
+    "taisp/isp/spatial.py": {
+      "expected_LF": "3d714227f0689e9675b79212edf1a55b6878966431a663b1ca398ccdfaae5654",
+      "actual_raw": "3d714227f0689e9675b79212edf1a55b6878966431a663b1ca398ccdfaae5654",
+      "actual_LF": "3d714227f0689e9675b79212edf1a55b6878966431a663b1ca398ccdfaae5654",
+      "passed": true
+    },
+    "taisp/tta/spatial_dose.py": {
+      "expected_LF": "957e7e877dadf5077180a751a979d37a55cafc3f998c1f92df7b153fb553a637",
+      "actual_raw": "957e7e877dadf5077180a751a979d37a55cafc3f998c1f92df7b153fb553a637",
+      "actual_LF": "957e7e877dadf5077180a751a979d37a55cafc3f998c1f92df7b153fb553a637",
+      "passed": true
+    },
+    "taisp/analysis/spatial_dose_parity.py": {
+      "expected_LF": "e945381651ee66f48e3d575eacee9e9c1703c1f558fbf5b41357189cfda8faff",
+      "actual_raw": "2482e14f0342dbad276d1c5b07ad108874187babc4b8149fb68eeabe3d476bde",
+      "actual_LF": "e945381651ee66f48e3d575eacee9e9c1703c1f558fbf5b41357189cfda8faff",
+      "passed": true
+    },
+    "taisp/analysis/run_t018a.py": {
+      "expected_LF": "8b5f69bd607f75e3181b47d5d5917558118c730826fdbe6b9a470f8887cb644d",
+      "actual_raw": "9326c9b3810c318ca5fbd2af4b22100cc7972210cbbb91a92df2c33b69213153",
+      "actual_LF": "8b5f69bd607f75e3181b47d5d5917558118c730826fdbe6b9a470f8887cb644d",
+      "passed": true
+    },
+    "taisp/analysis/spatial_dose_study.py": {
+      "expected_LF": "a6d2cc5e51b7774a45bb36c2167e96c24c0fad1e1abc70c9a678483bab82bf4a",
+      "actual_raw": "85a99a92f6d9c30f6ce842f444845e6f22cd5cb2ac9cf7ef778b558d25e28168",
+      "actual_LF": "a6d2cc5e51b7774a45bb36c2167e96c24c0fad1e1abc70c9a678483bab82bf4a",
+      "passed": true
+    },
+    "taisp/analysis/spatial_repeatability.py": {
+      "expected_LF": "0a79cb8a2c3e63a8826d0dbf62f954c5ce39994e4a9e89ce8ebfd89d2fc9465d",
+      "actual_raw": "2d2ac2f375fdfaff517ef275069a852693f444beba45250ec29cf45e755a4222",
+      "actual_LF": "0a79cb8a2c3e63a8826d0dbf62f954c5ce39994e4a9e89ce8ebfd89d2fc9465d",
+      "passed": true
+    },
+    "tests/test_spatial_repeatability.py": {
+      "expected_LF": "f08879825615ea0ac5d4b2b610c290739d60a0c5cb352fc9f67f88198bdfaea0",
+      "actual_raw": "75c08dc45e530ff4a9b19485bc5a79cf625a915e05d6e7f5a42e5b97a1e6e0f9",
+      "actual_LF": "f08879825615ea0ac5d4b2b610c290739d60a0c5cb352fc9f67f88198bdfaea0",
+      "passed": true
+    },
+    "taisp/analysis/spatial_confirmation.py": {
+      "expected_LF": "38a7995385117f4a3aef34b57dfccb54e3a73bef4b9575cf069115f15a2dfe7f",
+      "actual_raw": "8e00fca534843607802dea7455491c03d60985e7e41b87dd6a75df182759d4e0",
+      "actual_LF": "38a7995385117f4a3aef34b57dfccb54e3a73bef4b9575cf069115f15a2dfe7f",
+      "passed": true
+    },
+    "tests/test_spatial_confirmation.py": {
+      "expected_LF": "bd61cdba5080a47167a228b0d617b5adf494d9f550fcf13144f1c6a50ceda0b2",
+      "actual_raw": "e414d1294afcde7c3f0bd78378742c23d2dac3876412d23a86ea61933ed91d04",
+      "actual_LF": "bd61cdba5080a47167a228b0d617b5adf494d9f550fcf13144f1c6a50ceda0b2",
+      "passed": true
+    }
+  }
+}

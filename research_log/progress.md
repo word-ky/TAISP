@@ -731,3 +731,17 @@ Noactivejob. Fullregression and focused confirmation tests required.
 2026-09-14T02:41+08:00 New confirmation analysis17focusedtests pass5.21s; prior23modules unchanged. Preparation will make exactly8teacher calls and zero adaptations/AP, then supports/hashes committed before80repeats. No outcome yet.
 
 2026-09-14T02:44+08:00 Prepare run20260914-024325 completed exit0, exactly8teacher calls/zero adaptations/AP. Full192passed10skip10.09s. Earlier024219 launcher SSHtimeout before creating remote run directory, confirmed no targetdir/session; safe retry024325. Supports/mask hashes now in immutable raw prepare receipt; commit BEFORE80repeats. Same release024158/code9b27c49.
+
+2026-09-14T02:45+08:00 Supports committed5c35f4c before repeated gradients. Confirmation run20260914-024501-taisp-t022a3-confirmation80 started once with explicitrelease024158/code9b27c49, supportfileSHA0d7115a0acfae5cd81eaf6cc55be39fadf36bf2203fdcbcb88237349efc9eeea. NoAP. Next inspectcompletion, failure=>reportBLOCKED, pass=>original200formal unchanged.
+
+# T022-A3 BLOCKED — prospective R037 output confirmation failed
+
+2026-09-14 +08. R037/3a3c598; plan70df971; code9b27c49; supports5c35f4c.
+Prepare024325:8teacher calls,192passed10skipped;80repeat run024501 completed
+02:47:28 exit0 with gateBLOCKED. 80/80finite/reset/isolation/hashchecks pass,
+but5/8tuples pass2x (need7), spatialmedian.000792959 > bound.000390756,
+and332316/contrast_s2 exceeds5x. Allthree dispersioncriteriafail; noAP.
+127rawfiles191292120bytes fetched/hashverified. SeeT022A3_report.md and
+T022A3/complete_tables.md. No activejob; no formal200, tuning, newrepeats or
+method change. Stop perR037, await explicit research decision. Previous
+R036diagnosis and historical rawreceipts preserved; no AP efficacy conclusion.
