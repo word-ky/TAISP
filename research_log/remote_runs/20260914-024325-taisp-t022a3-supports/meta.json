@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-024325-taisp-t022a3-supports",
+  "releaseId": "20260914-024158-taisp-t022a3-confirmation",
+  "sessionName": "autodl-20260914-024325-taisp-t022a3-supports",
+  "command": "export TAISP_SOURCE_REVISION=9b27c49; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q tests/test_spatial_confirmation.py tests/test_spatial_repeatability.py tests/test_spatial_dose_study.py tests/test_spatial_dose.py 2>&1 | tee \"$AUTODL_ARTIFACTS_DIR/focused_tests.txt\" && /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q 2>&1 | tee \"$AUTODL_ARTIFACTS_DIR/full_tests.txt\" && /home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.spatial_confirmation --prepare --output \"$AUTODL_ARTIFACTS_DIR/prepare\""
+}

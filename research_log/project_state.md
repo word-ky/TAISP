@@ -11,3 +11,5 @@ without smokeedge invocation. Allhistoricalreceipts remainunchanged.
 Noactivejob. Fullregression and focused confirmation tests required.
 
 2026-09-14T02:41+08:00 New confirmation analysis17focusedtests pass5.21s; prior23modules unchanged. Preparation will make exactly8teacher calls and zero adaptations/AP, then supports/hashes committed before80repeats. No outcome yet.
+
+2026-09-14T02:44+08:00 Prepare run20260914-024325 completed exit0, exactly8teacher calls/zero adaptations/AP. Full192passed10skip10.09s. Earlier024219 launcher SSHtimeout before creating remote run directory, confirmed no targetdir/session; safe retry024325. Supports/mask hashes now in immutable raw prepare receipt; commit BEFORE80repeats. Same release024158/code9b27c49.
