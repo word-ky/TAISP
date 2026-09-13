@@ -84,3 +84,30 @@ def test_equal_state_c0_global_k3_and_reset_frozen_state_no_labels(empty):
     assert a.phi0.shape==(2,8) and torch.count_nonzero(a.phi0)==0
     if empty:assert torch.count_nonzero(a.phi)==0
     assert set(inspect.signature(adapt_spatial_dose).parameters)=={'image','isp','detector_loss','clip_loss','mask','steps','lr','eps'}
+
+
+def test_parity_entry_initializes_clip_and_reports_separate_isolation(monkeypatch,tmp_path):
+    from taisp.analysis import spatial_dose_parity as parity
+    wrapper=nn.Sequential(nn.Linear(2,2),nn.Dropout())
+    initial=parity.state_hash(wrapper)
+    monkeypatch.setattr(parity,'load_detector',lambda device: nn.Identity())
+    monkeypatch.setattr(parity,'load_clip_guidance',lambda *a,**kw: wrapper)
+    class InitializationObserved(Exception):
+        pass
+    def after_clip():
+        assert parity.clip_isolation(wrapper,initial)==dict(
+            clip_parameters_frozen_grad_none=True,clip_all_modules_eval=True,
+            clip_state_hash_unchanged=True)
+        raise InitializationObserved
+    monkeypatch.setattr(parity,'DifferentiableISP',after_clip)
+    manifest=tmp_path/'manifest.json';manifest.write_text('{}')
+    with pytest.raises(InitializationObserved):
+        parity.collect(dict(seed=1,threads=1,device='cpu'),manifest,tmp_path/'out')
+    wrapper.train()
+    assert not parity.clip_isolation(wrapper,initial)['clip_all_modules_eval']
+    wrapper.eval()
+    next(wrapper.parameters()).grad=torch.ones_like(next(wrapper.parameters()))
+    assert not parity.clip_isolation(wrapper,initial)['clip_parameters_frozen_grad_none']
+    next(wrapper.parameters()).grad=None
+    with torch.no_grad():next(wrapper.parameters()).add_(1)
+    assert not parity.clip_isolation(wrapper,initial)['clip_state_hash_unchanged']

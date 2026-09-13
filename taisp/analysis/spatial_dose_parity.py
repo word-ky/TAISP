@@ -31,11 +31,17 @@ def vector_parity(value,reference):
                 max_absolute=(a-b).abs().max().item(),value=a.tolist(),reference=b.tolist())
 
 
+def clip_isolation(clip,initial_hash):
+    return dict(clip_parameters_frozen_grad_none=all(not p.requires_grad and p.grad is None for p in clip.parameters()),
+                clip_all_modules_eval=all(not m.training for m in clip.modules()),
+                clip_state_hash_unchanged=state_hash(clip)==initial_hash)
+
+
 def collect(config,manifest_path,output):
     output.mkdir(parents=True,exist_ok=True)
     torch.manual_seed(config['seed']);torch.set_num_threads(config['threads']);torch.backends.cudnn.benchmark=False
     manifest=json.loads(manifest_path.read_text());source=load_detector(config['device'])
-    clip=load_clip_guidance(config['device'],local_files_only=True);isp=DifferentiableISP().to(config['device'])
+    clip=load_clip_guidance(config['device'],local_files_only=True).eval().requires_grad_(False);isp=DifferentiableISP().to(config['device'])
     sh,ch=state_hash(source),state_hash(clip);states=[{k:v.clone() for k,v in source.state_dict().items()}]
     assert sh=='73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf'
     meta=environment_metadata(config)
@@ -75,6 +81,7 @@ def collect(config,manifest_path,output):
                 isolation=dict(source_unchanged_frozen_eval_grad_none=frozen_unchanged((source,),states),
                     clip_frozen_eval_grad_none=all(not p.requires_grad and p.grad is None for p in clip.parameters()) and all(not m.training for m in clip.modules()),
                     isp_identity_grad_none=bool(torch.count_nonzero(isp.phi)==0 and isp.phi.grad is None))
+                isolation.update(clip_isolation(clip,ch))
                 passed=all(x['passed'] for x in checks.values()) and all(x['passed'] for x in partitions.values()) and image_pass and clip_norm_error<=1e-5 and all(isolation.values())
                 row=dict(image_id=info['image_id'],case=f'{family}_s{severity}',equal_state=initial,support_count=len(chosen['boxes']),
                     mask_rectangles=rects,mask_area=mask.double().mean().item(),checks=checks,partitions=partitions,
@@ -86,6 +93,8 @@ def collect(config,manifest_path,output):
             if failed:break
         if failed:break
     hashes=dict(source_hash_unchanged=state_hash(source)==sh,clip_hash_unchanged=state_hash(clip)==ch)
+    final_clip_isolation=clip_isolation(clip,ch)
+    hashes.update(final_clip_isolation)
     completion=dict(status='blocked' if failed or not all(hashes.values()) else 'completed',records=len(records),
                     expected_records=28,all_passed=not failed and all(hashes.values()),hashes=hashes,evaluations=0)
     write_json(output/'completion.json',completion)
