@@ -772,3 +772,5 @@ Noactivejob. StopNEEDS_REVIEW; waitnewexplicitresearchdecision before designing
 newregional self-supervised objective or any other experiment.
 
 2026-09-14 +08 T024-A: R039 read;13baseline tests pass3.04s;16fresh selected seed20260924 excluding6436IDs. GPU preference recorded. Candidate/oracle ordering frozen.
+
+2026-09-14 04:19+08 T024-A candidate increment:18focused/commonJVP/regionaltests passed3.77s. New pure JVP helper equals acceptedA1 exactly on tested inputs. GT-free separate interpreter; no protected edits. Ready candidate CUDA run after codecommit.
