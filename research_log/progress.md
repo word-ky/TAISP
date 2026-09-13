@@ -510,3 +510,4 @@ Featurecenteredenergy8.612005%, participationrank1.68541. Biasrawenergy1.6906889
 fullcenteredfraction.170529127%. CenteredA-Ccrosspositive1.188630969e-10: no cancellation.
 Savedarraysonly, zero auditmodelcalls/optimizer. All5files fetched/hashed; matrices,
 crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop forreview.
+2026-09-13T08:07:49.2556007+08:00 T013-H Stage A: deterministic hash cohort selected 32 of 13794 eligible source images (13798 readable valid before exclusion); full 5000 val IDs plus 1400 ledger eval IDs and prior4 excluded. No model calls. Manifest and pre-outcome plan committed before gradients.
