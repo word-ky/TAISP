@@ -1,0 +1,412 @@
+{
+  "current_ours/clean": {
+    "n": 2,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.04023359250277281,
+      "median": 0.04023359250277281,
+      "min": 0.025226881727576256,
+      "max": 0.05524030327796936
+    },
+    "adapt_seconds": {
+      "mean": 0.2976597804808989,
+      "median": 0.2976597804808989,
+      "min": 0.29729298199526966,
+      "max": 0.2980265789665282
+    },
+    "deploy_seconds": {
+      "mean": 0.32643775799078867,
+      "median": 0.32643775799078867,
+      "min": 0.3261492839665152,
+      "max": 0.3267262320150621
+    },
+    "support_count": {
+      "mean": 8.5,
+      "median": 8.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 33,
+      "median": 33.0,
+      "min": 11,
+      "max": 55
+    },
+    "peak_allocated_bytes": {
+      "mean": 3044592384,
+      "median": 3044592384.0,
+      "min": 3012608512,
+      "max": 3076576256
+    }
+  },
+  "current_ours/corrupted": {
+    "n": 12,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.027788013452664018,
+      "median": 0.025333289057016373,
+      "min": 0.010479053482413292,
+      "max": 0.04471916705369949
+    },
+    "adapt_seconds": {
+      "mean": 0.2990928177459864,
+      "median": 0.2970171735214535,
+      "min": 0.22789448394905776,
+      "max": 0.39249034196836874
+    },
+    "deploy_seconds": {
+      "mean": 0.3570812978335501,
+      "median": 0.32585422103875317,
+      "min": 0.25864504993660375,
+      "max": 0.7377031659707427
+    },
+    "support_count": {
+      "mean": 7.166666666666667,
+      "median": 5.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 28.75,
+      "median": 20.0,
+      "min": 8,
+      "max": 61
+    },
+    "peak_allocated_bytes": {
+      "mean": 3046757546.6666665,
+      "median": 3045533184.0,
+      "min": 3014713856,
+      "max": 3080508928
+    }
+  },
+  "native_cls/clean": {
+    "n": 2,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.036492726765573025,
+      "median": 0.036492726765573025,
+      "min": 0.02083182893693447,
+      "max": 0.05215362459421158
+    },
+    "adapt_seconds": {
+      "mean": 0.3564170110039413,
+      "median": 0.3564170110039413,
+      "min": 0.35000063601182774,
+      "max": 0.36283338599605486
+    },
+    "deploy_seconds": {
+      "mean": 0.38519498851383105,
+      "median": 0.38519498851383105,
+      "min": 0.3787002890603617,
+      "max": 0.3916896879673004
+    },
+    "support_count": {
+      "mean": 8.5,
+      "median": 8.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 33.5,
+      "median": 33.5,
+      "min": 10,
+      "max": 57
+    },
+    "peak_allocated_bytes": {
+      "mean": 3060094720,
+      "median": 3060094720.0,
+      "min": 3017429504,
+      "max": 3102759936
+    }
+  },
+  "native_cls/corrupted": {
+    "n": 12,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.030243197766443092,
+      "median": 0.030909022316336632,
+      "min": 0.009858070872724056,
+      "max": 0.06119681894779205
+    },
+    "adapt_seconds": {
+      "mean": 0.3437811700811532,
+      "median": 0.3496864534972701,
+      "min": 0.2843707660213113,
+      "max": 0.3551775279920548
+    },
+    "deploy_seconds": {
+      "mean": 0.4017696501687169,
+      "median": 0.3805790605256334,
+      "min": 0.3151213320088573,
+      "max": 0.6838653250015341
+    },
+    "support_count": {
+      "mean": 7.166666666666667,
+      "median": 5.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 28.5,
+      "median": 19.5,
+      "min": 8,
+      "max": 61
+    },
+    "peak_allocated_bytes": {
+      "mean": 3055134165.3333335,
+      "median": 3051918336.0,
+      "min": 3018848768,
+      "max": 3105315328
+    }
+  },
+  "native_conf/clean": {
+    "n": 2,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.040335362777113914,
+      "median": 0.040335362777113914,
+      "min": 0.027196452021598816,
+      "max": 0.05347427353262901
+    },
+    "adapt_seconds": {
+      "mean": 0.36493927749688737,
+      "median": 0.36493927749688737,
+      "min": 0.3633076819824055,
+      "max": 0.36657087301136926
+    },
+    "deploy_seconds": {
+      "mean": 0.3937172550067771,
+      "median": 0.3937172550067771,
+      "min": 0.39216398395365104,
+      "max": 0.3952705260599032
+    },
+    "support_count": {
+      "mean": 8.5,
+      "median": 8.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 32.5,
+      "median": 32.5,
+      "min": 11,
+      "max": 54
+    },
+    "peak_allocated_bytes": {
+      "mean": 3222820608,
+      "median": 3222820608.0,
+      "min": 3177992704,
+      "max": 3267648512
+    }
+  },
+  "native_conf/corrupted": {
+    "n": 12,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.02850300360781451,
+      "median": 0.029205883853137493,
+      "min": 0.009687461890280247,
+      "max": 0.050078682601451874
+    },
+    "adapt_seconds": {
+      "mean": 0.353506365417464,
+      "median": 0.36047893250361085,
+      "min": 0.29744808899704367,
+      "max": 0.36496413400163874
+    },
+    "deploy_seconds": {
+      "mean": 0.41149484550502774,
+      "median": 0.3906013920204714,
+      "min": 0.32819865498458967,
+      "max": 0.6830591820180416
+    },
+    "support_count": {
+      "mean": 7.166666666666667,
+      "median": 5.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 28.5,
+      "median": 19.5,
+      "min": 8,
+      "max": 61
+    },
+    "peak_allocated_bytes": {
+      "mean": 3219461376,
+      "median": 3216156160.0,
+      "min": 3180679680,
+      "max": 3270614016
+    }
+  },
+  "native_roi/clean": {
+    "n": 2,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.03252526745200157,
+      "median": 0.03252526745200157,
+      "min": 0.015918251127004623,
+      "max": 0.04913228377699852
+    },
+    "adapt_seconds": {
+      "mean": 0.3560622334771324,
+      "median": 0.3560622334771324,
+      "min": 0.3555132609908469,
+      "max": 0.3566112059634179
+    },
+    "deploy_seconds": {
+      "mean": 0.38484021098702215,
+      "median": 0.38484021098702215,
+      "min": 0.38421291403938085,
+      "max": 0.38546750793466344
+    },
+    "support_count": {
+      "mean": 8.5,
+      "median": 8.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 34,
+      "median": 34.0,
+      "min": 10,
+      "max": 58
+    },
+    "peak_allocated_bytes": {
+      "mean": 3059204352,
+      "median": 3059204352.0,
+      "min": 3015754752,
+      "max": 3102653952
+    }
+  },
+  "native_roi/corrupted": {
+    "n": 12,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.02548830071464181,
+      "median": 0.021477805450558662,
+      "min": 0.009962312877178192,
+      "max": 0.049592845141887665
+    },
+    "adapt_seconds": {
+      "mean": 0.344014923243473,
+      "median": 0.3541044245066587,
+      "min": 0.2855131319956854,
+      "max": 0.35999373596860096
+    },
+    "deploy_seconds": {
+      "mean": 0.4020034033310367,
+      "median": 0.3844803544925526,
+      "min": 0.3162636979832314,
+      "max": 0.647997748979833
+    },
+    "support_count": {
+      "mean": 7.166666666666667,
+      "median": 5.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 28.333333333333332,
+      "median": 20.0,
+      "min": 8,
+      "max": 61
+    },
+    "peak_allocated_bytes": {
+      "mean": 3055285674.6666665,
+      "median": 3052240128.0,
+      "min": 3019459584,
+      "max": 3105670144
+    }
+  },
+  "native_conf_roi/clean": {
+    "n": 2,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.03547553811222315,
+      "median": 0.03547553811222315,
+      "min": 0.02112521044909954,
+      "max": 0.049825865775346756
+    },
+    "adapt_seconds": {
+      "mean": 0.3645438184903469,
+      "median": 0.3645438184903469,
+      "min": 0.3624073130195029,
+      "max": 0.3666803239611909
+    },
+    "deploy_seconds": {
+      "mean": 0.39332179600023665,
+      "median": 0.39332179600023665,
+      "min": 0.39110696606803685,
+      "max": 0.39553662593243644
+    },
+    "support_count": {
+      "mean": 8.5,
+      "median": 8.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 34,
+      "median": 34.0,
+      "min": 10,
+      "max": 58
+    },
+    "peak_allocated_bytes": {
+      "mean": 3223357440,
+      "median": 3223357440.0,
+      "min": 3177767424,
+      "max": 3268947456
+    }
+  },
+  "native_conf_roi/corrupted": {
+    "n": 12,
+    "update_fraction": 1,
+    "empty_support_fraction": 0,
+    "phi3_norm": {
+      "mean": 0.02516166113006572,
+      "median": 0.021660580299794674,
+      "min": 0.009923969395458698,
+      "max": 0.04962831735610962
+    },
+    "adapt_seconds": {
+      "mean": 0.35242025142360944,
+      "median": 0.3615157040185295,
+      "min": 0.2969793390366249,
+      "max": 0.36871433403575793
+    },
+    "deploy_seconds": {
+      "mean": 0.41040873151117313,
+      "median": 0.3929609435144812,
+      "min": 0.3277299050241709,
+      "max": 0.6428863090113737
+    },
+    "support_count": {
+      "mean": 7.166666666666667,
+      "median": 5.5,
+      "min": 4,
+      "max": 13
+    },
+    "prediction_count": {
+      "mean": 28.416666666666668,
+      "median": 20.0,
+      "min": 8,
+      "max": 61
+    },
+    "peak_allocated_bytes": {
+      "mean": 3219774720,
+      "median": 3216620032.0,
+      "min": 3180682240,
+      "max": 3274040832
+    }
+  }
+}

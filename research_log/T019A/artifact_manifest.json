@@ -1,0 +1,528 @@
+{
+  "run": "20260913-182636-taisp-t019a-source200-components",
+  "smoke_run": "20260913-182437-taisp-t019a-runtime-smoke",
+  "file_count": 104,
+  "total_bytes": 124041334,
+  "files": [
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/cohort.json",
+      "bytes": 98356,
+      "sha256": "534b17343ccba995beb9d112d552eefd7f1b2116479c2132dd99265b1d6735b4"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/completion.json",
+      "bytes": 430,
+      "sha256": "2dd936bf741fdb5f4d8b8c4115611370e9679fb79132a5b9dddcae3789a032fb"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/diagnostics.json",
+      "bytes": 9673,
+      "sha256": "eb542e6238b64d9ead46bcd0b983c0fa831ee78dabaafa36ff4c1fa9906b7157"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/environment.json",
+      "bytes": 4816,
+      "sha256": "0204a0b46c62e4d891eee86123da7ab23148854d21712a3226d5cc686a01b5b3"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/isolation.json",
+      "bytes": 145,
+      "sha256": "8789afc86782dbfffbcff64ed4c06f8561468bbcc388dd9f56bacf95d7a28e00"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/metrics.json",
+      "bytes": 98956,
+      "sha256": "cbc798f1d261efaab114ace55ac6eba0de3db45990313c221d2e17d36fa896b2"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/clean_s0_current_ours.json",
+      "bytes": 1583522,
+      "sha256": "df6ede88e2127416ca8e651c4c5fd8a0085f7045347aaf90727effb8aa726597"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/clean_s0_native_cls.json",
+      "bytes": 1574022,
+      "sha256": "69dec379673719db58c4294de8a82f8b39cc7c815cce5e6fa398c6e6ec45c810"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/clean_s0_native_conf.json",
+      "bytes": 1574327,
+      "sha256": "9f2aa836e38e71c7efb88872190c7030ac55508365279f4cab704049f8402387"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/clean_s0_native_conf_roi.json",
+      "bytes": 1575135,
+      "sha256": "3b5d71b8366e5d586a1c2de7e1714efaae05f92f407b510f5c21fa528a152d96"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/clean_s0_native_roi.json",
+      "bytes": 1579706,
+      "sha256": "0b4f3af38f43f762b0332e1ff8e7f6cdda0e800705ef182baf62ff0ef0e01348"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/clean_s0_no_adapt.json",
+      "bytes": 1579022,
+      "sha256": "3916614e7827c7ef0833f6b350387a26e212167e9a4495de38108517cadc202f"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s1_current_ours.json",
+      "bytes": 1559404,
+      "sha256": "c4b1101842eaf6719b4bdc88d1eac35ef1cfe0a88e2cfdede1e74f201b38f208"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s1_native_cls.json",
+      "bytes": 1556988,
+      "sha256": "1cafec4e9dcdb5347d10c2118d6e1f7597f94026bb89204855679309ae41da39"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s1_native_conf.json",
+      "bytes": 1554793,
+      "sha256": "9ab297fdf9e730c1f7bfc5160ab2aa711e8d5fede9af915736a712362a079528"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s1_native_conf_roi.json",
+      "bytes": 1555553,
+      "sha256": "9e9d59011ebbd88b322cf6aed6a7cdf40c8abfc6a8c9e797cfbfcddf60900d46"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s1_native_roi.json",
+      "bytes": 1555621,
+      "sha256": "4a4a0ac1e5c0b6d7056554e6f83db209c7b7e7b14da654d1df71b56a8a79b790"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s1_no_adapt.json",
+      "bytes": 1558019,
+      "sha256": "1ec93785dbf38095d358b94e5a82ddce84ddd81e8c1b935ae4604ff955c9d278"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s2_current_ours.json",
+      "bytes": 1537928,
+      "sha256": "d1abcde0c48aabbe739651f8a009f534ed8c1a2c227e5470d1a125c6e7af0f88"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s2_native_cls.json",
+      "bytes": 1539368,
+      "sha256": "8314345ecd82b7050c663f75205dc85303908c4b5b0b8634e229cdedafe257e8"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s2_native_conf.json",
+      "bytes": 1539238,
+      "sha256": "8e038444a60ae5e96c101cc57d106bd948d49baf2c38d8a1c2af86a5e5305cf3"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s2_native_conf_roi.json",
+      "bytes": 1542157,
+      "sha256": "93c6364ada680a2e507e09de668bae124e89e257c4578a8a90e11a77c78fa3db"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s2_native_roi.json",
+      "bytes": 1539141,
+      "sha256": "5b78ca10c22f7ef83686634cd6692928da813b84b66ba58211832d62d94d2d8d"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/color_cast_s2_no_adapt.json",
+      "bytes": 1539320,
+      "sha256": "9059d3c4a2dd18914c352e03054f0468592f91ddc1ceb2802bfefcffa75dd17e"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s1_current_ours.json",
+      "bytes": 1506920,
+      "sha256": "35c2f1374db8c15a4373126bfe788ccfd9dc7b9d0a88e3dc6b3cb21bb75e909f"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s1_native_cls.json",
+      "bytes": 1505987,
+      "sha256": "fb3d5d632f6b95fa572f32d8c679e2a98ce025fab67ef4b6bf85b23b62960eac"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s1_native_conf.json",
+      "bytes": 1501776,
+      "sha256": "6364585df6569ee8a89449e2d1eb00beaad20880dc3658f5cdfd63d4ccc6167e"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s1_native_conf_roi.json",
+      "bytes": 1505537,
+      "sha256": "37bd3d5e423c98fe65619554a1706bcdc3ca507a366b0f6f11e6ad043baf2f22"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s1_native_roi.json",
+      "bytes": 1506149,
+      "sha256": "bae9a4cc26f39ee7101c147b4fce5d86fb39de3aebfcb9648b4967abad59d5a6"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s1_no_adapt.json",
+      "bytes": 1498938,
+      "sha256": "498159150aa1b5c64ea21caaa6a640388f3485bd05a51864f7968ba1302d6e07"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s2_current_ours.json",
+      "bytes": 1306983,
+      "sha256": "9efb7d20d053934a394f9dd0a868a5fe58b21e9b2828e030899596158460e473"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s2_native_cls.json",
+      "bytes": 1295847,
+      "sha256": "1485a30aaeb97f3c13dfc00d4adb416d13f0058fccacbf5ac7e25923419e1ef0"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s2_native_conf.json",
+      "bytes": 1291588,
+      "sha256": "ac10787f317c8c34bcc890cd0787e9030b9dd4c3eb974a86099cf0f53d4c9933"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s2_native_conf_roi.json",
+      "bytes": 1290686,
+      "sha256": "cea757872f7b49a5cec33344a60c8c4237cb6e19a5a5d67b01cfa6ceb966e203"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s2_native_roi.json",
+      "bytes": 1292593,
+      "sha256": "a00bed5b5bc155f00e48b0e628b72d332bfbc4b55223d0e5dc8295279609393a"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/contrast_s2_no_adapt.json",
+      "bytes": 1298051,
+      "sha256": "aa5c5f12aad1b0d9bdbb5fc40ea2a51dda29bfef4d7d8ec65b34ec3a681ca18a"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s1_current_ours.json",
+      "bytes": 1562215,
+      "sha256": "230e4b8732b26b738e5f4e0d51eca362defca3451c64d51a5de5b98c00e9b200"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s1_native_cls.json",
+      "bytes": 1553726,
+      "sha256": "e254d19a4f3f65fc068314238a2fc313dc47dc84859443c77424794f3ff8e03f"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s1_native_conf.json",
+      "bytes": 1550359,
+      "sha256": "a4decf3c39f33cbeae5343fc19025bb8dd7cae7d354dff5064316d6d2e8e6ec3"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s1_native_conf_roi.json",
+      "bytes": 1557143,
+      "sha256": "7e86355ecc9925d15a07600397bf38292ff1c3be81f6a2b2aaa462b7172c8987"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s1_native_roi.json",
+      "bytes": 1557396,
+      "sha256": "62b7877cdf7aa07ca77c80e8cfd95f2c59250e955e9f1fb63d28b832688ace66"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s1_no_adapt.json",
+      "bytes": 1557096,
+      "sha256": "080cd07c3a28bc1f09d5bce6a35df63eade2c526c2328f0dd15d48d2e13703c3"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s2_current_ours.json",
+      "bytes": 1508086,
+      "sha256": "50dc02cab396203581b8c3850d711b7144ee87320526fc33806d1a9895ef7c36"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s2_native_cls.json",
+      "bytes": 1491946,
+      "sha256": "79832eb22f580cf115fcd5fcdbe81617ca16b6c6b98e028c60c8791d085c304e"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s2_native_conf.json",
+      "bytes": 1495491,
+      "sha256": "f47681aca0fee3e052bc037bc1c26ed41b7c00c360147101e3ef1ebb592feaa0"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s2_native_conf_roi.json",
+      "bytes": 1489353,
+      "sha256": "eb8c04b5852d6f0e528a3f3f6494196a6d351d83e32ccecaee70471d87ffc49b"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s2_native_roi.json",
+      "bytes": 1495357,
+      "sha256": "6fe7fb4e630439a7f272ec8cfdd15cce8e6c18d059d9ffdb7829114c69a8b289"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/predictions/gamma_s2_no_adapt.json",
+      "bytes": 1496086,
+      "sha256": "77d04dc8acd0bae197fa8f1c0d767d63d41815f7aaa99134192e6765b7eea321"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/samples.jsonl",
+      "bytes": 59169050,
+      "sha256": "2977aa6b729e0ac02aa86b2d83b33af65bdaf6ca5e755d719c5533d047cf2ff1"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/artifacts/study/summary.json",
+      "bytes": 32140,
+      "sha256": "4def9a4cffb98ae5155605f4bfc0c776bf432eb5314aaf0a5504ec01661baad3"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/meta.json",
+      "bytes": 449,
+      "sha256": "a4631f675e8354074a79fa4ccbe316148aa3ed9974c50fe72a50b2344062ca10"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/run.sh",
+      "bytes": 814,
+      "sha256": "b330d5d4fe3fce8b70f3e979f4c91da4a789d313b672cd6ee6f925eb47a289ca"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182636-taisp-t019a-source200-components/train.log",
+      "bytes": 259619,
+      "sha256": "bea3e6f10b9974a38e46516c74bd631892b16210e735192319ef26bfa926be6b"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/cohort.json",
+      "bytes": 98356,
+      "sha256": "534b17343ccba995beb9d112d552eefd7f1b2116479c2132dd99265b1d6735b4"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/completion.json",
+      "bytes": 221,
+      "sha256": "59a7fcb6da25a5fc83a855b7292f9d7a53993e373d0b03e517515e416b19a23a"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/diagnostics.json",
+      "bytes": 9677,
+      "sha256": "eb5970636de8bd7d841bf4538a4d8bbfe95f1764428dda33017900528b82e045"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/environment.json",
+      "bytes": 2475,
+      "sha256": "d2784053b4bf46e55c035864872218a9075acce98926b131ec69ea2379530dcd"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/isolation.json",
+      "bytes": 145,
+      "sha256": "8789afc86782dbfffbcff64ed4c06f8561468bbcc388dd9f56bacf95d7a28e00"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/clean_s0_current_ours.json",
+      "bytes": 13661,
+      "sha256": "a51140c0291134ba381ec644dab22a1ff9c4e5ef803ce0c944fd198913c3bdaa"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/clean_s0_native_cls.json",
+      "bytes": 13884,
+      "sha256": "77d239d16edaba69a7c8090267eb7a67f8680c87207f54fa8bccb57ebe832ea8"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/clean_s0_native_conf.json",
+      "bytes": 13471,
+      "sha256": "b0c19861f2ca3d32c33ee4a5d0902f352e86e255191ea98eaa2a6b7c751abcf8"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/clean_s0_native_conf_roi.json",
+      "bytes": 14118,
+      "sha256": "075e4db82a6e5c2f11c0f917452aea6bf02ff425fd0b473b0b5f1b8b7aecbfd9"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/clean_s0_native_roi.json",
+      "bytes": 14092,
+      "sha256": "53d37ee754c5286f810f2b8f037afd22b049d87fe382885784c97e88364330d7"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/clean_s0_no_adapt.json",
+      "bytes": 14506,
+      "sha256": "7d7e8d85ec3258672f1cc822fe776bc617008cf9d1841fc278a8c32a54ec3dcf"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s1_current_ours.json",
+      "bytes": 14948,
+      "sha256": "b735ac559329bb0fe9f9f0b16d32436bc3780326d0829f0b5eb8dcecc42aa83c"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s1_native_cls.json",
+      "bytes": 14690,
+      "sha256": "fd027d44e9252c607ae2786118022878a968c89de5319fd0af0841e680c22acb"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s1_native_conf.json",
+      "bytes": 14702,
+      "sha256": "3673c20df0a35f81a308e6f3e4d521a15276299d367601a75ff4cf117fe45a29"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s1_native_conf_roi.json",
+      "bytes": 14643,
+      "sha256": "fcb3f0d1d482a69312fdea78843f86a2b9ae48142dae490b30e91c11f21aa16b"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s1_native_roi.json",
+      "bytes": 14700,
+      "sha256": "456d256a321e3262ea5c3ee0524142f035ef12f135aced28bd0003eaad0962ac"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s1_no_adapt.json",
+      "bytes": 14261,
+      "sha256": "589da0480eb3bfe8bbefe3a642e5c65c30d29a8495cd5edc0a16f17b610d5682"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s2_current_ours.json",
+      "bytes": 12038,
+      "sha256": "b6c1b850365cccac0cda4d13e3d29fad3d6b827a976e2e8d159477fdb56bf3db"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s2_native_cls.json",
+      "bytes": 11825,
+      "sha256": "ac5218cba845267415ba0f9d504febcb1fba50cb2187b362d9abbb4cacbefad0"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s2_native_conf.json",
+      "bytes": 11821,
+      "sha256": "87b6f389b38c009fc76af53c2c71284922fe3567ebe989c980f02f4ed2a30fbc"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s2_native_conf_roi.json",
+      "bytes": 12029,
+      "sha256": "8880ec023435a5faacceed18bf6b32cb216a3fab20a667ca9fb39b800ad33394"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s2_native_roi.json",
+      "bytes": 12061,
+      "sha256": "d617ba66a4afcd01d63b31207b7a2afec6e7c5661f8fffb1d8ffa85de6ca4443"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/color_cast_s2_no_adapt.json",
+      "bytes": 11845,
+      "sha256": "932a59dac142b249d966e3b68ed48cd73dce71f66852e33347f2b8d3a183419d"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s1_current_ours.json",
+      "bytes": 12464,
+      "sha256": "4a6bc38e6756d6711ba82e9726e5c9d4392bfcd9d425d86d54ddf14aa3667f8a"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s1_native_cls.json",
+      "bytes": 13119,
+      "sha256": "a3551ec5133b65d8bd2be21b470601c81d293f7eafe48302c8c7ba02d7d9dad8"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s1_native_conf.json",
+      "bytes": 13116,
+      "sha256": "e63ddbdc624063b6af5152e3449a9bed144cdccc64c67eedb11c9a7a530cd165"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s1_native_conf_roi.json",
+      "bytes": 12637,
+      "sha256": "16890b8a4bab2a94ec48c715b49b425c57a8b9b8221702ab7d2b987f1c38dc0d"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s1_native_roi.json",
+      "bytes": 12481,
+      "sha256": "4125263e92d11ee64114714988838776effbd4ebf9a17a7a34f47cf2165a6b2f"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s1_no_adapt.json",
+      "bytes": 12677,
+      "sha256": "173f9b106c66caaaef3d336c0b21e4cdff9d24a43ca2467f0e7b34ba16913fb1"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s2_current_ours.json",
+      "bytes": 8113,
+      "sha256": "c5d558f25b82474a297e7acbd15b8ee6c1eafa322f21dc94f18c2a093a5508ff"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s2_native_cls.json",
+      "bytes": 7704,
+      "sha256": "45c1c7837e5c2a545d6597eb9fcd3dc7b51b60a11201ba031cd967e4769c564f"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s2_native_conf.json",
+      "bytes": 7683,
+      "sha256": "26b91d1974ecb7fef1e075d76c08e2a53e038c4173709d5f19685f679c9ff5ec"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s2_native_conf_roi.json",
+      "bytes": 7674,
+      "sha256": "779d4154b16853367a61d4beee194263477bf745cb8d61dc6dc2816d1b4f670b"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s2_native_roi.json",
+      "bytes": 7920,
+      "sha256": "68dcff4d024c40f4cd8609ca3853a5c4f08b6a632b3b8d179e1f3d964c7a706b"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/contrast_s2_no_adapt.json",
+      "bytes": 7915,
+      "sha256": "cb86cfaabe9ef2e9e0b92b900b20564d0a1d0ad82c80f71ae81ba5345c34adb4"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s1_current_ours.json",
+      "bytes": 12622,
+      "sha256": "2263bf7c8b8210c8c648965c5c70149415b02aee11e1c2d28a462be13858ee9f"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s1_native_cls.json",
+      "bytes": 12675,
+      "sha256": "5a58c888171df526a5c94c2a299f05a1afb84abf237cb044c909ecdbeed0caa0"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s1_native_conf.json",
+      "bytes": 12621,
+      "sha256": "ec18678aeaf1ed8d9c39af2b8dd6df82d112ee6ed6b5b7bedf7348d6714da94b"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s1_native_conf_roi.json",
+      "bytes": 12422,
+      "sha256": "cb580bf8474aa6de78ac12043451093c6cb173f175b9966f77da2e2696d3a749"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s1_native_roi.json",
+      "bytes": 12438,
+      "sha256": "a19abd683b87266dd2326351993c61e37ff00209a0cf2f559e37922f1fe354fa"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s1_no_adapt.json",
+      "bytes": 12444,
+      "sha256": "50f60fe7ff6ad84dc51b219511a5a51f2ced24b5afbc629017c5b21ead85f980"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s2_current_ours.json",
+      "bytes": 11445,
+      "sha256": "56991dd1aff359de309b5d69748b4162903da900a69c8c27985f250b10ababb4"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s2_native_cls.json",
+      "bytes": 11057,
+      "sha256": "cd26c2ef597f9e215df859327967730a418d521f405708b711cce3ab8088b798"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s2_native_conf.json",
+      "bytes": 11061,
+      "sha256": "2f948a70b72097824c33b2c66572a77e7010a8b8fbe73c9902dc7a2bc878f945"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s2_native_conf_roi.json",
+      "bytes": 11264,
+      "sha256": "e873d40835583042a41adf477c81000025015b5819f4c3bf360aac64916e8047"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s2_native_roi.json",
+      "bytes": 11045,
+      "sha256": "c92ba2ca94aa7cab97fe36833b47bbe467117dcebd92ac4f04ad53a8d2135104"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/predictions/gamma_s2_no_adapt.json",
+      "bytes": 10814,
+      "sha256": "3754819425e8b7ad2619b2bc24d6f874b0f2fc07d2fc3f648790908bbebd4488"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/artifacts/study/samples.jsonl",
+      "bytes": 584848,
+      "sha256": "39c3544e6fd1bbadc79c2c807f7c99d56fe90916d64f189b1ac98f1713f3b16d"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/meta.json",
+      "bytes": 531,
+      "sha256": "b7dc33f49689c0edee39b7da867c6b5d4874592caff8ecec103af6e204dc024e"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/run.sh",
+      "bytes": 889,
+      "sha256": "19b0924e384d04e7a12421543d138d7deef43b720da244d759bca846a4ca834e"
+    },
+    {
+      "path": "research_log/remote_runs/20260913-182437-taisp-t019a-runtime-smoke/train.log",
+      "bytes": 2465,
+      "sha256": "94945a439a71755d1982cf18547e8d1449037a4ccfaea65eea871a89318eaf10"
+    }
+  ]
+}

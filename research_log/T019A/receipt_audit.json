@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-09-13T19:23:47.823469+08:00",
+  "run": "20260913-182636-taisp-t019a-source200-components",
+  "paired_conditions": 1400,
+  "adaptive_episodes": 7000,
+  "candidate_episodes": 5600,
+  "exact_float32_active_sum_comparisons": 22400,
+  "paired_teacher_supports_identical": true,
+  "all_K3_and_identity_initializations": true,
+  "all_phi_detector_CLIP_gradients_finite": true,
+  "protected_module_pins_passed": 10,
+  "authorized_module_pins_passed": 3,
+  "empty_adaptive_episodes": 35,
+  "all_passed": true,
+  "raw_archive_sha256": "3a4efbe7b298acfec35efa846414b87872c3a28a7abf0b872ae03d6c9572de5d",
+  "start_log": "[autodl] started_at=2026-09-13T18:26:42+08:00",
+  "finish_log": "[autodl] finished_at=2026-09-13T19:14:58+08:00",
+  "exit_log": "[autodl] exit_code=0"
+}

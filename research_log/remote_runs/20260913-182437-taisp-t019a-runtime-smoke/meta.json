@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-182437-taisp-t019a-runtime-smoke",
+  "releaseId": "20260913-182322-taisp-t019a-components",
+  "sessionName": "autodl-20260913-182437-taisp-t019a-runtime-smoke",
+  "command": "export TAISP_SOURCE_REVISION=ee98de0; export TAISP_REAL_MODELS=0; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.run_t018a --config configs/t019a.yaml --manifest research_log/T019A_train_cohort.json --smoke --output \"$AUTODL_ARTIFACTS_DIR/study\""
+}

@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-182636-taisp-t019a-source200-components",
+  "releaseId": "20260913-182322-taisp-t019a-components",
+  "sessionName": "autodl-20260913-182636-taisp-t019a-source200-components",
+  "command": "export TAISP_SOURCE_REVISION=ee98de0; /home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.run_t018a --config configs/t019a.yaml --manifest research_log/T019A_train_cohort.json --output \"$AUTODL_ARTIFACTS_DIR/study\""
+}

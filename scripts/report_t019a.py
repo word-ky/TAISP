@@ -80,12 +80,14 @@ def render(project,run,smoke):
     (out/'artifact_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     gate=summary['gate'];selected=gate['selected']
     verdict=f'{selected} selected for later confirmation' if selected else 'No candidate eligible; close this fixed component family'
+    reference=summary['candidates'][CANDIDATES[0]]['groups']['aggregate']['macro_AP']
     report=f'''# T019-A — {verdict}; NEEDS_REVIEW
 
 Eligible candidates: {gate['eligible_candidates']}. Selected: **{selected}**.
 Near-best candidates within0.01AP: {gate['within_point01_of_best']}.
 Selection uses only frozen six-corruption macro AP, then macro AP75 within the0.01AP tie range,
 then number of positive blocks. Any selected method is a developmental candidate, not confirmed.
+Baseline corruption macro AP: no-adapt {reference['no_adapt']:.9f}, current Ours {reference['current_ours']:.9f}.
 
 ## Protocol and provenance
 
@@ -130,6 +132,10 @@ Detector and CLIP remain frozen; only functional episodic ISP state changes.
                   [[c]+[100*metrics['aggregate'][f'{c}_{m}']['AP'] for m in METHODS] for c in CASES])
     report+=table('All four block deltas', ['Candidate','Block','AP delta current','AP50 delta current','AP75 delta current'],blocks)
     report+=table('All frozen eligibility checks', ['Candidate','Criterion','Passed'],flags)
+    if not selected:
+        common_failures=[k for k in summary['candidates'][CANDIDATES[0]]['flags']
+                         if all(not v['flags'][k] for v in summary['candidates'].values())]
+        report+='Every candidate fails: '+', '.join(common_failures)+'. No tie-breaker is invoked because none is eligible. Close this fixed component-subset branch without weights/thresholds or another cohort search.\n\n'
     report+=diag_table
     report+='All condition/block AP/AP50/AP75 values and deltas against both baselines, active per-step losses and gradient norms are in [complete_tables.md](T019A/complete_tables.md); per-episode raw traces retain all supports/phi/gradients/counts/timings. No negative candidate, condition or block is omitted.\n\n'
     report+='This is a four-candidate source-development study in the availability-defined training population. No candidate is independently confirmed here, and no cross-detector/generalization claim follows. Component comparisons do not prove a causal account of teacher geometry noise. T018-B remains a negative full-native confirmation; T017 attribution remains blocked.\n\n'

@@ -2389,3 +2389,57 @@ StopNEEDS_REVIEW; awaitnewexplicitresearchdecision while15minuteheartbeat contin
 ## T019-A — IN_PROGRESS — fixed component family source200 launched
 
 2026-09-13T18:27:30.1252481+08:00. R031/d60e72c acknowledged; T018-B closednegative. Pre-outcomeplan/cohort/methodhashes b49c432; codeee98de0; smokereceiptd047312.200newsourceimages,four50blocks,636prior-source/all5000val excluded. Exactlynative_cls/native_conf/native_roi/native_conf_roi pluscurrent/noadapt; defaultfullbackwardcompatible,10protectedmodulesunchanged. Focused24passed2skipped1.82s; full162passed10skipped6.84s. CUDAK3smoke182437 passed70episodes/224exactactive-sumchecks,0AP. Formal20260913-182636-taisp-t019a-source200-components launchedA6000,release182322; expected1400teacherforwards/7000adaptiveepisodes/42predictionfiles/210officialevals. Nooutcomesyet,no settingschange. See research_log/T019A_plan.md,T019A_train_cohort.json,T019A_method_pins.json,T019A_smoke_audit.json,T019A_handoff.md. Willapplyfrozenselection andstopNEEDS_REVIEW.
+
+
+## T019-A — NEEDS_REVIEW — no eligible component subset; close fixed branch
+
+2026-09-13T19:25:28.334825+08:00. R031/d60e72c; pre-outcome plan/cohort/methodhashesb49c432; codeee98de0;
+smokeauditedd047312. Report:`research_log/T019A_report.md`; allAP/AP50/AP75,block/condition
+andper-step loss/gradient tables:`research_log/T019A/complete_tables.md`; rawhashmanifest and
+post-run audit in`research_log/T019A/`. Both rawrun182437smoke and182636formal are retained.
+
+Implementation changes only: named component sets inNativePseudoTargetLoss (defaultfull unchanged),
+configurable method list inexistingrun_t018a, fixed native_component_study selection, tests,
+cohortpreparer with inherited exclusions, report/config/plan/pins/cohort/state/receipts.
+No changes to10protected source/CLIP/ISP/currentadaptation/oracle/teacher/corruption modules.
+Allthreeauthorizednew/modified codehashes matchpre-outcomepins andcodeee98de0.
+Fourfixedcandidates only;no full-native fifthcandidate. Same score>=.5/top20 detachedteacher,
+unitactivecoefficients,global8Didentity,K3/LR.1/EPS1e-12/CLIPnorm andsamplingseed20260912.
+Cohort200newimages,four50blocks,636prior-source/all5000valexcluded; same disclosedeligibility,
+selectionseed20260920. AdaptationreceivesnoGT; predictionscompletedbeforeofficialCOCOevaluation.
+
+- Baseline12passed2skipped1.57s; focused24passed2skipped1.82s; full162passed10skipped6.84s.
+  CUDAK3smoke70episodes/56candidateepisodes/224exactactivesums passed,0AP.
+- Formal20260913-182636-taisp-t019a-source200-components:18:26:42–19:14:58+08exit0,
+  200images/1400teacherforwards/7000adaptiveepisodes/42predictionfiles/210officialevaluations,
+  2887.666868s collection/evaluation,A6000cuda:0,float32,threads1. Exactcommands/environment saved.
+- Baseline corruptionmacroAP:no_adapt46.2246507008,current46.2858158177.
+
+| Candidate | Macro AP | Delta current | Delta raw | Positive blocks | Positive conditions | Clean delta current | Clean delta raw | Macro AP50 delta | Macro AP75 delta |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| native_cls | 46.2654885542 | -0.0203272634861 | +0.0408378534333 | 1/4 | 1/6 | -0.0915215888452 | -0.421743861694 | -0.0447491063351 | +0.268549269215 |
+| native_conf | 46.2626269641 | -0.023188853569 | +0.0379762633504 | 1/4 | 3/6 | +0.153617006131 | -0.176605266718 | -0.0298936327506 | -0.0545570097784 |
+| native_roi | 46.233472669 | -0.0523431487036 | +0.00882196821575 | 1/4 | 2/6 | -0.0922907317453 | -0.422513004594 | +0.00147704460113 | +0.137910450101 |
+| native_conf_roi | 46.2670042348 | -0.0188115829224 | +0.042353533997 | 1/4 | 3/6 | +0.200339209998 | -0.129883062851 | -0.00605652169511 | +0.0022842752282 |
+
+Allfourfail corruptionAP+.10materiality,3/4blockreplication and4/6conditionreplication.
+Allfourpassabove-rawmacro,clean-current>=-.10 andisolation. **No candidate eligible; selectednull**.
+No tie-breaker invoked. AP75 improvements inthreecandidates are preserveddiagnostics,notgrounds
+forpost-outcomemetricselection. Close thisfixedcomponent-subset branch underR031; no tuning.
+Allfourcleancandidates remainbelowraw despite conf/conf_roi improvingrelativecurrent.
+
+- Allmethodsupdate99.5%ofclean/corruptedepisodes;35emptyadaptiveepisodes. Smallerphi norms
+  donotdemonstratecleanselectivity. Cleanmeanphi current.0377769114; cls.0365645393,
+  conf.0363951075,roi.0347095637,conf_roi.0354220146. Fullmean/median/support/latencyintables.
+- Meanadaptationcurrent~.297s,candidates~.351–.362s; teacher-inclusive conventionunchanged.
+  Allactiveper-step lossvalues/nativegradnorms/CLIPnorms/updates retained;RPNboxregabsentfromall4.
+- All7000episodeisolation andbefore-after source/CLIPstatehashes pass;1400pairedconditions
+  shareteacher supports acrossfiveadaptivemethods. AllK3/identityinitializations andfinitegradients pass.
+  **22400formalactivecomponentfloat32sums exactlymatch recordedtotals**;10protected+3authorizedpins pass.
+-104rawfiles124,041,334bytes fetched/hashverified. RawarchiveSHA
+  3a4efbe7b298acfec35efa846414b87872c3a28a7abf0b872ae03d6c9572de5d.
+
+Noimplementation/isolationblocker. Thisboundedfamilyisnoteligibleforconfirmation; no candidatepromoted.
+No newcohort,continuousweights/threshold/K/LR/promptsearch,FCOS/SSD/val,spatialISP,T017forensics,
+meta-training,predictor/gate/dose/maskchanges ordeploymentreplacement executed. T018-Bnegative and
+T017blocker preserved. Noactivejob; stopNEEDS_REVIEW andawaitnewexplicitresearchdecision.

@@ -583,3 +583,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T18:27:30.1252481+08:00 T019-A formal20260913-182636-taisp-t019a-source200-components launchedonce afteralltests/smokeaudit. Same release182322/codeee98de0/config/cohort. Expected7000GPUadaptiveepisodes/210officialevals; noAPoutcomesyet.
 
 2026-09-13T18:30:17.1461645+08:00 T019-A formal first12/200images completed,noerror. scripts/report_t019a.py prepared/syntaxpassed; fullfetch/audit/report instructions saved forheartbeat recovery. No scientificoutcomesyet.
+
+2026-09-13T19:25:28.334825+08:00 T019-A completeexit0:200images/7000adaptiveepisodes/210officialevals,2887.666868s. Noeligiblecandidate:all4macro-current negative(-.0203273,-.0231889,-.0523431,-.0188116AP),all1/4positiveblocks and1/3/2/3positiveconditions outof6. Allabove-raw/clean/isolationpass,but+.10andreplicationfail. Formal22400active-sums exact;allstate/pairedsupports/codepins pass.104rawfiles124,041,334bytes fetched/hashverified;reportcomplete,closefixedbranch,NEEDS_REVIEW,noactivejob.
