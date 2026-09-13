@@ -1,12 +1,16 @@
-# T018-B IN_PROGRESS — unchanged-candidate source500 confirmation
+# T018-B IN_PROGRESS — formal source500 GPU confirmation
 
-2026-09-13T16:12:10.7631363+08:00 — R030/7902e3a authorizes fixed500 confirmation; T018-A accepted.
-Plan/cohort/config precommit958d898. CohortSHA e7a771126ae2fee9844dde456648b50f4c01ebcdc404318c21f9a33260da7b17.
-500newsourceimages,5fixed100blocks,136prior-source/5000val excluded; same eligibility/unchanged candidate.
-Baseline10passed2skipped1.74s; focused12passed2skipped1.77s. Release20260913-161116-taisp-t018b-source500.
-Only cohort preparation/count/confirmation summary changed;11protected method modules match293cfe0.
-Next full regression plus two-image GPUK3 smoke0AP; then formal500 once, save all raw outputs beforeGT eval.
-Formal expected3500teacherforwards,7000adaptiveepisodes,21predictionfiles,126officialAPevals.
-Use configs/t018b.yaml and research_log/T018B_train_cohort.json with taisp.analysis.run_t018a.
-Six R030 source-confirmation criteria frozen; AP50/AP75 are diagnostics only. No FCOS/SSD/COCOval/tuning.
-No formal run launched yet. Keep T017blocker intact. GPUpriority and15minuteheartbeat remain active.
+2026-09-13T16:19:05.2298210+08:00 — R030/7902e3a; plan/cohort958d898; code d8ff14f.
+Active run:20260913-161818-taisp-t018b-source500 onA6000cuda:0.
+Release:20260913-161116-taisp-t018b-source500. Expected~50minutes; do not duplicate or restart.
+Smoke:20260913-161225-taisp-t018b-runtime-smoke exit0,150passed10skipped7.06s,
+2images/28adaptiveepisodes/K3CUDA/allisolationpassed/0AP. Focused12passed2skipped1.77s.
+Fixed500newsourceimages,5blocks100;136prior-source/all5000val excluded. CohortSHA e7a771126ae2fee9844dde456648b50f4c01ebcdc404318c21f9a33260da7b17.
+Unchanged accepted native/current model paths andhyperparameters. Protected11modulepins inT018B_method_pins.json.
+Formalexpected3500teacherforwards/7000adaptiveepisodes/21predictionfiles/126officialevals.
+Next: monitor this run at heartbeat; when completed fetch BOTH smoke andformal raw directories,
+verify archival hashes, create T018B report with allAP/AP50/AP75 and5block/7conditionresults,
+apply exactR030criteria fromsummary.json, retainnegatives,appendCODEXmailbox,commit/push/mirrorA6000.
+AP50/AP75 are diagnostics,notgates. NoFCOS/SSD/COCOval/deploymentreplacement/tuning/T017forensics.
+Reports canreuse scripts/report_t018a.py table formatting but need B-specific counts/verdict/provenance.
+StopNEEDS_REVIEW aftercompletion. UserGPUpriority and15minuteheartbeat active; quietunchanged.

@@ -567,3 +567,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T16:10:55.738133+08:00 R030/7902e3a synced; T018-A accepted. T018-B preparation: unchanged baseline10passed2skipped1.74s.500newsource images,5fixed100blocks,136prior-source and5000val exclusions; manifestSHAe7a771126ae2fee9844dde456648b50f4c01ebcdc404318c21f9a33260da7b17. Same candidate/settings; no new model outcomes.
 
 2026-09-13T16:12:10.7631363+08:00 T018-B runner cohortcount/tasksummary extension complete; source/current/native adaptation loop unchanged. Focused12passed2skipped1.77s,syntaxpassed. Deployed release20260913-161116-taisp-t018b-source500; no new model outcomes.
+
+2026-09-13T16:19:05.2298210+08:00 T018-B code d8ff14f pushed. Full150passed10skipped7.06s; runtime smoke161225 exit0,28CUDAK3episodes/allisolationpass/0AP. Launched formal20260913-161818-taisp-t018b-source500 once onA6000 using same release161116/settings/cohort. Expected~50minutes; no outcomes yet.

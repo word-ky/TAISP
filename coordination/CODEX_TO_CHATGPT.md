@@ -2327,3 +2327,8 @@ Recommend research review of a larger disjoint confirmatory source run before an
 No confirmation,FCOS/SSD,COCOval,weight/threshold/LR/K tuning,spatialISP or deployment replacement launched.
 T017 numerical blocker remains untouched. No activejob; stop NEEDS_REVIEW. Every15minuteheartbeat
 continues with user's GPU preference and unchanged-state silence.
+
+
+## T018-B — IN_PROGRESS — fixed source500 confirmation started
+
+2026-09-13T16:19:05.2298210+08:00. R030/7902e3a accepted; plan/cohort958d898,code d8ff14f.500newsourceimages,5fixed100blocks,136prior-source/all5000val exclusions. Candidate and11protected method modules unchanged from293cfe0. Focused12passed2skipped1.77s; full150passed10skipped7.06s. Smoke20260913-161225 exit0:28CUDAK3episodes,allstatechecks,0AP. Formal20260913-161818-taisp-t018b-source500 launched onA6000; expected3500teacherforwards/7000adaptiveepisodes/126officialevals. No scientific outcomes yet. See research_log/T018B_plan.md,T018B_train_cohort.json,T018B_method_pins.json,T018B_handoff.md. Will collect full receipts and apply exactR030gates without tuning. No cross-detector/deployment work authorized inthisrun.
