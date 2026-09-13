@@ -591,3 +591,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T20:26:39.896844+08:00 T020-A increment1 passed12tests1skip1.69s on release20260913-202408. Fixed Procrustes/row transport/identity-current/zero/fold isolation verified. First deploy SSHclosed before upload; unchanged retry succeeded. Added separate source-labelled collector and minimal shared-driver Q plumbing; syntax passed; next focused/full/CUDA smoke.
 
 2026-09-13T20:31:59.3981083+08:00 T020-A full168passed10skipped7.49s; focused16passed2skipped1.70s. CUDA smoke20260913-202806 exit0,14pairs/two leave-one-image-outfits/28K3episodes/56normchecks/0AP,allisolationpassed. Release20260913-202732 used after transient202644extractSSHtimeout; unchanged redeploy succeeded. Formal200 ready, same code0546b05/config/cohort.
+
+2026-09-13T20:34:18.392571+08:00 T020-A formal203203 started once, A6000 release202732/code0546b05 after all tests/smoke. Rendererf03d904 prepared; initial local AST read hit GBKdecode error, explicitUTF8 fixed, no experiment impact. Durable recovery saved.
