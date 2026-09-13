@@ -2129,3 +2129,40 @@ No tolerance relaxation, alternatekernel/precision, replacementimage orrerun. R0
 rule andprecommittedplan stopapply. Requestresearchreviewofnumericalreconstruction before
 continuation; do notinterpret asnegative spatialcapacity. NoT014-B/deployment/CLIPscaling/
 training/redesign/gate-dose/FCOS/SSD/AP/newtargetdata started. No activejob remains.
+
+---
+
+## T014-A1 — NEEDS_REVIEW — 2026-09-13T11:47:49.6295582+08:00
+
+R025/c584887 completed. Plan89cac87 predates outcomes; code0ad53b6.
+Run20260913-113401-taisp-t014a1-common-jacobian, release20260913-113310-taisp-t014a1-common-jacobian;
+11:34:06–11:34:35+08, exit0. Fullreport research_log/T014A1_report.md; six Stage-C numerical
+receipts, full64objective checks, all8Dvectors andgeometry inT014A1/tables.md. Exactcommands
+inreport andrawmeta.json/run.sh; environment/inputhashes inrawenvironment.json.
+
+- Analysis-only common globalISP8columnJVP, shared task/pseudo cotangents andfloat64
+  independentglobal/object/background reductions. Existinglosses/models/ISP andgeometry unchanged.
+- FrozenA16image/32episode manifest, Hsupports/cohort/environment andsourceweight/state hashes
+  checkedbefore/after. OldfailedA record andblocker.json unchanged; oldA remainsBLOCKED evidence.
+- Baseline10passed2.09s; focused11passed2.17s; fullregression128passed10skipped6.48s.
+  Python3.12.12 torch2.4.0+cu121 numpy1.26.4 A6000, normalfloat32CUDA+float64reductions.
+- StageC indices0,5,6 all6objectives PASS. Minparitycos.9999999999998749,
+  maxrelativeL2=5.06491227805e-7, maxclosure1.11022302463e-15.
+  Pseudoindex6 oldreversecheck stillFAIL diagnostically; originaloldA notrelabeledpass.
+- Then32freshrecords from0, noold/debugsplicing. All64objective numerical/isolationchecks PASS:
+  maxclosure1.33226762955e-15, maxclosure/bound.000124111170226,
+  minparitycos.9999999999979398,maxrelativeL2=2.04213488758e-6.
+  Oldreversechecks failpseudoindices6and13; unchangeddiagnostics retained.
+- SameR024gate FAIL: DeltaDpositive19/32overall(<20),9/16corrupt(<10).
+  Overall/corruptmedianR both1.86180558637; overallmedianDeltaD.0129286963886;
+  3/4positiveblockmedians. OtherflagsPASS, no thresholdrelaxation.
+- Taskregionalcosmedian-.489268480551, cancellationmedian.446780215489.
+  DeltaDmean-.0302653653821 despitepositivemedian; DeltaAmedian-.00940817066410.
+  All32supportsnonempty; masks3small27middle2large,0empty/full. Allscopes/cases preserved.
+- Exactly35episodes70source-losscalls280ISPJVPcolumns, zerooptimizer/CLIP/targetAP.
+  Audit19.707982376s; peakCUDA1877246976bytes. All45rawfiles1092765bytes fetchedwithSHAmanifest.
+
+Numerical correction validated; current fixedpartition/pseudodirection fails the scientific
+utility conjunction. No finite-step/AP claim or general spatial-impossibility conclusion.
+StopafterA1 forresearchreview; noT014-B, spatialdeployment, CLIPscaling, meta-training,
+predictorredesign, FCOS/SSD/AP, newcohort ormask/regionsearch started. No activejob remains.

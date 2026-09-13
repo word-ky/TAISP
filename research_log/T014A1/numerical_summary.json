@@ -1,0 +1,32 @@
+{
+  "debug": {
+    "objectives": 6,
+    "max_closure_absolute_error": 1.1102230246251565e-15,
+    "max_closure_error_over_bound": 1.879760110476892e-05,
+    "min_parity_cosine": 0.9999999999998749,
+    "max_parity_relative_l2": 5.064912278051333e-07,
+    "old_reverse_failures": [
+      [
+        6,
+        "pseudo"
+      ]
+    ]
+  },
+  "full": {
+    "objectives": 64,
+    "max_closure_absolute_error": 1.3322676295501878e-15,
+    "max_closure_error_over_bound": 0.00012411117022561596,
+    "min_parity_cosine": 0.9999999999979398,
+    "max_parity_relative_l2": 2.04213488758114e-06,
+    "old_reverse_failures": [
+      [
+        6,
+        "pseudo"
+      ],
+      [
+        13,
+        "pseudo"
+      ]
+    ]
+  }
+}

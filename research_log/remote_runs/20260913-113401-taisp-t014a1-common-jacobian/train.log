@@ -1,0 +1,58 @@
+[autodl] run_id=20260913-113401-taisp-t014a1-common-jacobian
+[autodl] started_at=2026-09-13T11:34:06+08:00
+.............s.......s.........s....s..s......s......s.................. [ 52%]
+...............................s..s..............................s       [100%]
+=============================== warnings summary ===============================
+tests/test_demo.py::test_cuda_demo_matches_cpu
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+    warnings.warn("Can't initialize NVML")
+
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+128 passed, 10 skipped, 4 warnings in 6.48s
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+{"stage": "debug", "episode_index": 0, "numerical_passed": true}
+{"stage": "debug", "episode_index": 5, "numerical_passed": true}
+{"stage": "debug", "episode_index": 6, "numerical_passed": true}
+{"stage": "full", "episode": 1, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 2, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 3, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 4, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 5, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 6, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 7, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 8, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 9, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 10, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 11, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 12, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 13, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 14, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 15, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 16, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 17, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 18, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 19, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 20, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 21, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 22, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 23, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 24, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 25, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 26, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 27, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 28, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 29, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 30, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 31, "of": 32, "numerical_passed": true}
+{"stage": "full", "episode": 32, "of": 32, "numerical_passed": true}
+{"gate": {"flags": {"overall_median_R_at_least1_20": true, "corrupted_median_R_at_least1_15": true, "overall_positive_Delta_D_at_least20": false, "corrupted_positive_Delta_D_at_least10": false, "overall_median_Delta_D_positive": true, "at_least3_positive_block_medians": true}, "positive_block_medians": 3, "passed": false, "decision": "do_not_implement_spatial_ISP_from_this_partition", "stop_for_research_review": true}, "overall": {"n": 32, "empty_support_count": 0, "mask_area_mean": 0.5205797132839685, "metrics": {"task_regional_cosine": {"mean": -0.4112226893768771, "median": -0.4892684805506392, "min": -0.9884448928292289, "max": 0.701124399342118, "positive_count": 6}, "pseudo_regional_cosine": {"mean": -0.382058023237299, "median": -0.5655956078337269, "min": -0.9956780483509676, "max": 0.8607632432861141, "positive_count": 8}, "task_cancellation": {"mean": 0.4069405573502316, "median": 0.44678021548876967, "min": 0.014337310749720888, "max": 0.8150700579938992, "positive_count": 32}, "R_task": {"mean": 2.217245219276655, "median": 1.8618055863715721, "min": 1.2080317560466423, "max": 5.412339587027722, "positive_count": 32}, "A_global": {"mean": 0.0805259828225435, "median": 0.03239349713038186, "min": -0.9700134350256701, "max": 0.9800012386372061, "positive_count": 16}, "A_spatial": {"mean": 0.024671258744182502, "median": 0.07000142966863292, "min": -0.9964902871705198, "max": 0.9775465816003907, "positive_count": 16}, "Delta_A": {"mean": -0.05585472407836098, "median": -0.00940817066409641, "min": -1.3678646043611957, "max": 0.5470802507011315, "positive_count": 14}, "D_global": {"mean": 0.013248335107522996, "median": 0.0008532772643869775, "min": -0.20699644555890367, "max": 0.5790729489748114, "positive_count": 16}, "D_spatial": {"mean": -0.017017030274538776, "median": 0.004121559760509612, "min": -1.0283087648203662, "max": 1.3588110394801105, "positive_count": 16}, "Delta_D": {"mean": -0.030265365382061753, "median": 0.012928696388586625, "min": -1.5069747187729652, "max": 1.1429799232848659, "positive_count": 19}}}}
+[autodl] finished_at=2026-09-13T11:34:35+08:00
+[autodl] exit_code=0

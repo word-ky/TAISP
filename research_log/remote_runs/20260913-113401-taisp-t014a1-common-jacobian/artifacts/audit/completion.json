@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "source_revision": "0ad53b6",
+  "stage_c_passed": true,
+  "full_records": 32,
+  "debug_records": 3,
+  "source_loss_calls": 70,
+  "ISP_JVP_columns": 280,
+  "old_receipts_unchanged": true,
+  "all_numerical_and_isolation_passed": true,
+  "gate": {
+    "flags": {
+      "overall_median_R_at_least1_20": true,
+      "corrupted_median_R_at_least1_15": true,
+      "overall_positive_Delta_D_at_least20": false,
+      "corrupted_positive_Delta_D_at_least10": false,
+      "overall_median_Delta_D_positive": true,
+      "at_least3_positive_block_medians": true
+    },
+    "positive_block_medians": 3,
+    "passed": false,
+    "decision": "do_not_implement_spatial_ISP_from_this_partition",
+    "stop_for_research_review": true
+  },
+  "elapsed_seconds": 19.70798237598501,
+  "peak_cuda_allocated_bytes": 1877246976,
+  "optimizer_steps": 0,
+  "clip_calls": 0
+}

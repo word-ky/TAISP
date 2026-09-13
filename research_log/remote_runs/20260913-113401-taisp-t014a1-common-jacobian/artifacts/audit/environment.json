@@ -1,0 +1,26 @@
+{
+  "source_revision": "0ad53b6",
+  "python": "3.12.12",
+  "torch": "2.4.0+cu121",
+  "numpy": "1.26.4",
+  "gpu": "NVIDIA RTX A6000",
+  "cuda": "12.1",
+  "seed": 20260913,
+  "source_weight_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "input_sha256": {
+    "research_log/T014A_source_manifest.json": "a4b250a877ae1171cd6f30899f531ba2645cb37ff90abf1a26b8de48d6aa558e",
+    "/home/liujianhua/wjq/TAISP/runs/20260913-101408-taisp-t014a-spatial-action/artifacts/audit/record_06.json": "ffb8e0561043d6e5d1e9bbdd466fe53bc9b8192912660076a837ccdade52fcae",
+    "research_log/T014A/blocker.json": "81c8a815f12c6d7026d2896db358888820896074a758fc0500d2a94d835c79c6",
+    "/home/liujianhua/wjq/TAISP/runs/20260913-081117-taisp-t013h-source-replication/artifacts/collection/supports.json": "bf8f688741fcb4956c7ed40f52cc5f0a63d3030cad3ada968f1457a38c2cf747",
+    "/home/liujianhua/wjq/TAISP/runs/20260913-081117-taisp-t013h-source-replication/artifacts/collection/environment.json": "d0635da6c52a1f41a86181ace053c6c6fe1f38f342530b6fd9d806e8ee98cc42",
+    "/home/liujianhua/wjq/TAISP/runs/20260913-081117-taisp-t013h-source-replication/artifacts/collection/cohort.json": "99f15bc4329b8431a6718bc1c2ae1ef3fa6221db0869a7cc593ef95bdca2d357"
+  },
+  "jacobian": "torch.func.jvp, float32 existing ISP",
+  "reduction": "float64 independent global/object/background",
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "cublas_workspace_config": null,
+  "clip_calls": 0,
+  "optimizer_steps": 0
+}
