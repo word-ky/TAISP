@@ -1,0 +1,57 @@
+[autodl] run_id=20260914-001023-taisp-t022a1-numerical-parity
+[autodl] started_at=2026-09-14T00:10:28+08:00
+.....................s                                                   [100%]
+21 passed, 1 skipped in 3.57s
+.............s.......s.........s....s..s..................s............. [ 37%]
+......s................................................................. [ 74%]
+..s..........s..................................s                        [100%]
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+<frozen importlib._bootstrap>:488
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_demo.py::test_cuda_demo_matches_cpu
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+    warnings.warn("Can't initialize NVML")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+183 passed, 10 skipped, 4 warnings in 8.25s
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/liujianhua/wjq/TAISP/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+parity 1/28 image=160585 case=gamma_s1 state=0.0 passed=True
+parity 2/28 image=160585 case=gamma_s1 state=0.01 passed=True
+parity 3/28 image=160585 case=gamma_s2 state=0.0 passed=True
+parity 4/28 image=160585 case=gamma_s2 state=0.01 passed=True
+parity 5/28 image=160585 case=contrast_s1 state=0.0 passed=True
+parity 6/28 image=160585 case=contrast_s1 state=0.01 passed=True
+parity 7/28 image=160585 case=contrast_s2 state=0.0 passed=True
+parity 8/28 image=160585 case=contrast_s2 state=0.01 passed=True
+parity 9/28 image=160585 case=color_cast_s1 state=0.0 passed=True
+parity 10/28 image=160585 case=color_cast_s1 state=0.01 passed=True
+parity 11/28 image=160585 case=color_cast_s2 state=0.0 passed=True
+parity 12/28 image=160585 case=color_cast_s2 state=0.01 passed=True
+parity 13/28 image=160585 case=clean_s0 state=0.0 passed=True
+parity 14/28 image=160585 case=clean_s0 state=0.01 passed=True
+parity 15/28 image=114830 case=gamma_s1 state=0.0 passed=True
+parity 16/28 image=114830 case=gamma_s1 state=0.01 passed=True
+parity 17/28 image=114830 case=gamma_s2 state=0.0 passed=True
+parity 18/28 image=114830 case=gamma_s2 state=0.01 passed=True
+parity 19/28 image=114830 case=contrast_s1 state=0.0 passed=True
+parity 20/28 image=114830 case=contrast_s1 state=0.01 passed=True
+parity 21/28 image=114830 case=contrast_s2 state=0.0 passed=True
+parity 22/28 image=114830 case=contrast_s2 state=0.01 passed=True
+parity 23/28 image=114830 case=color_cast_s1 state=0.0 passed=True
+parity 24/28 image=114830 case=color_cast_s1 state=0.01 passed=True
+parity 25/28 image=114830 case=color_cast_s2 state=0.0 passed=True
+parity 26/28 image=114830 case=color_cast_s2 state=0.01 passed=True
+parity 27/28 image=114830 case=clean_s0 state=0.0 passed=True
+parity 28/28 image=114830 case=clean_s0 state=0.01 passed=True
+[autodl] finished_at=2026-09-14T00:11:23+08:00
+[autodl] exit_code=0

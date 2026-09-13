@@ -2705,3 +2705,5 @@ was started. Resume only from a new explicit research decision in the queue.
 Raw archive SHA256 `e2313190af626aff4adf339c525ff7f0ec94b64339807c02daaa484b13ffcc36`; 9 files, 20,745 bytes.
 See `T022A/artifact_manifest.json`, `T022A/remote_code_hashes.json`, and
 `remote_runs/20260913-234326-taisp-t022a-numerical-parity/` for exact receipts.
+
+2026-09-14T00:12+08:00 T022-A1 parity001023 completed exit0 at00:11:23: all28originalrecords/allCLIPsubchecks/finalhashes pass; focused21passed1skip3.57s/full183passed10skip8.25s. RawSHA655ad1ec8e13e0b015cb81d430fa5c11e2b97f037ce30b6ea8c45cf1f4c10afc fetched/verified. Proceed original R034 driver and K3zeroAPsmoke, no formula/runtime changes.
