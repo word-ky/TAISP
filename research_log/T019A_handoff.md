@@ -15,3 +15,12 @@ Newsummaryschema: candidates[name].groups/flags/eligible/positive_blocks; gate.e
 Do notuseoldA/Breporter unmodified; T019needsfourcandidate summary. Retainallnegativeoutcomes.
 ThenappendCODEXmailbox,updatehandoff/state/progress,commit/push/mirrorA6000,stopNEEDS_REVIEW.
 NoFCOS/SSD/val,spatialISP,T017forensics,hyperparametersearch ordeploymentreplacement. GPUpriority/15minuteheartbeatactive.
+
+2026-09-13T18:30:17.1461645+08:00 — First12/200images completed without error; noAPoutcomes yet. Renderer scripts/report_t019a.py ready,syntaxpassed.
+Whenformalexit0complete, tar/fetch both20260913-182437-taisp-t019a-runtime-smoke and20260913-182636-taisp-t019a-source200-components.
+VerifyarchiveSHA,extract underresearch_log/remote_runs, then:
+D:\anaconda3\python.exe scripts/report_t019a.py --project . --run 20260913-182636-taisp-t019a-source200-components --smoke 20260913-182437-taisp-t019a-runtime-smoke
+Auditall1400pairedconditions/fiveadaptivemethods,K3/identityphi0/activecomponentfloat32sums/finitegradients,
+protected10modulepins and3precommittednew/modifiedLFsourcehashes againstcodeee98de0. RunsummaryselectionisfrozenR031.
+Inspectallcandidateflags,condition/blockAP/AP50/AP75 andtie-breakerreceipt. UpdateCODEX/state/handoff/progress,
+commit/pushfullreceipts/report,mirrorA6000 andstopNEEDS_REVIEW. Do notduplicateactive182636runoraddvariants.

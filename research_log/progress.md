@@ -581,3 +581,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T18:26:31.3180888+08:00 T019-A full162passed10skipped6.84s. CUDA smoke20260913-182437 exit0:2images/70adaptiveepisodes,56candidateepisodes,224active-componentfloat32sum comparisons exactlymatch returnedtotals;allK3/statechecks pass,0AP. T019A_smoke_audit.json saved. No tuning; ready forformal200.
 
 2026-09-13T18:27:30.1252481+08:00 T019-A formal20260913-182636-taisp-t019a-source200-components launchedonce afteralltests/smokeaudit. Same release182322/codeee98de0/config/cohort. Expected7000GPUadaptiveepisodes/210officialevals; noAPoutcomesyet.
+
+2026-09-13T18:30:17.1461645+08:00 T019-A formal first12/200images completed,noerror. scripts/report_t019a.py prepared/syntaxpassed; fullfetch/audit/report instructions saved forheartbeat recovery. No scientificoutcomesyet.
