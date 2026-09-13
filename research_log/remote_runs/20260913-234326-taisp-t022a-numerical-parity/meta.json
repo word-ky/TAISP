@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-234326-taisp-t022a-numerical-parity",
+  "releaseId": "20260913-234251-taisp-t022a-parity",
+  "sessionName": "autodl-20260913-234326-taisp-t022a-numerical-parity",
+  "command": "export TAISP_SOURCE_REVISION=e8272c5; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q tests/test_spatial_dose.py tests/test_common_jacobian.py tests/test_spatial_action.py tests/test_trust_radius.py 2>&1 | tee \"$AUTODL_ARTIFACTS_DIR/focused_tests.txt\" && /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q 2>&1 | tee \"$AUTODL_ARTIFACTS_DIR/full_tests.txt\" && /home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.spatial_dose_parity --output \"$AUTODL_ARTIFACTS_DIR/parity\""
+}

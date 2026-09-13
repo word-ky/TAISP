@@ -1,10 +1,12 @@
-# T022-A IN_PROGRESS - spatial dose pre-outcome preparation
+# T022-A BLOCKED — pre-AP CLIP wrapper initialization
 
-2026-09-13T23:36:26.050998+08:00. R034/6001e14 synchronized. Baseline13passed1skipped2.38s.
-200newtrain2017/four50blocks,1236prior-source/debug plus5000val excluded (6236IDs).
-CohortSHA589878ad7af1d86bf73514d63dd58a4e40d58797d119ea4981be9e4292772690;eligible12562,firstIDs160585/114830.
-Direction locked to go+gb; rho.5 regional coefficients bounded. Reuse validated A1
-JVP/float64 chain-rule reduction to avoid previously observed reverse partition error.
-Exact mask/ISP/loss/CLIP/globalbaseline preserved. Plan freezes parity tolerances before
-new model calls. No activejob or scientific outcomes. Next implement/test isolated
-candidate, fullregression and GPU parity/runtime smoke; stop on numericalfailure.
+2026-09-13. R034/6001e14; plan b677a0c; code e8272c5.
+Run 20260913-234326-taisp-t022a-numerical-parity ended exit 1; no active job.
+Full 182 passed / 10 skipped; focused 20 passed / 1 skipped.
+First of 28 real records passes all numerical checks but fails CLIP eval isolation.
+Source/CLIP state hashes unchanged. Standalone parity entry omitted wrapper eval;
+accepted and candidate adaptation runtimes already initialize it correctly.
+Stop per R034; do not run AP or silently patch/re-run. This is an implementation
+blocker, not a scientific FAIL. Minimal proposed repair and full receipts are in
+research_log/T022A_report.md. Remaining 27 checks, real K3 smoke, formal driver
+and 200-image study are pending. Await new explicit research queue decision.

@@ -1,0 +1,116 @@
+{
+  "release": "20260913-234251-taisp-t022a-parity",
+  "all_passed": true,
+  "files": {
+    "taisp/losses/detector_native.py": {
+      "expected": "21471524358faee9f0d5c47a7d6e45911ff22bb9f31316e57d42f4e8ca72c6b2",
+      "actual": "21471524358faee9f0d5c47a7d6e45911ff22bb9f31316e57d42f4e8ca72c6b2",
+      "passed": true
+    },
+    "taisp/models/detector.py": {
+      "expected": "df9cae806e102c8c6231131b9e620e6ae5375a908dbff686447364eb932bce7c",
+      "actual": "df9cae806e102c8c6231131b9e620e6ae5375a908dbff686447364eb932bce7c",
+      "passed": true
+    },
+    "taisp/models/detector_signal.py": {
+      "expected": "4c5f142e32c055a2e8efc579ccb9c64112faac54e049cc43e161a258a991686d",
+      "actual": "4c5f142e32c055a2e8efc579ccb9c64112faac54e049cc43e161a258a991686d",
+      "passed": true
+    },
+    "taisp/losses/clip_semantic.py": {
+      "expected": "2dea813207b745cb43f0ecf59cf666c02e1e193ee2f65804ed996a230a97cbb2",
+      "actual": "2dea813207b745cb43f0ecf59cf666c02e1e193ee2f65804ed996a230a97cbb2",
+      "passed": true
+    },
+    "taisp/analysis/oracle.py": {
+      "expected": "793a9a34e7dbd53cedc699520fbf3e94890e95adfdcbe6ce2c14cad4cb908e35",
+      "actual": "793a9a34e7dbd53cedc699520fbf3e94890e95adfdcbe6ce2c14cad4cb908e35",
+      "passed": true
+    },
+    "taisp/analysis/corruptions.py": {
+      "expected": "1daf28d3a7f321fecb89f671cc6dab2c206d135cd9763246b7bd7e142b294992",
+      "actual": "1daf28d3a7f321fecb89f671cc6dab2c206d135cd9763246b7bd7e142b294992",
+      "passed": true
+    },
+    "taisp/isp/__init__.py": {
+      "expected": "ac39f4892353ce22cf3d2e03d08597cbe65ca62cb6c22dcfda22e78e7bd7b818",
+      "actual": "ac39f4892353ce22cf3d2e03d08597cbe65ca62cb6c22dcfda22e78e7bd7b818",
+      "passed": true
+    },
+    "taisp/isp/module.py": {
+      "expected": "80852cd0a284945740c62b30b54e4723e32dc1d99a555a47d90d4ca9e2532832",
+      "actual": "80852cd0a284945740c62b30b54e4723e32dc1d99a555a47d90d4ca9e2532832",
+      "passed": true
+    },
+    "taisp/isp/ops.py": {
+      "expected": "e0cb6776dfb1f8ab935b49eceb30be1ac7f60b958a22ad0b535aad22016a6e7b",
+      "actual": "e0cb6776dfb1f8ab935b49eceb30be1ac7f60b958a22ad0b535aad22016a6e7b",
+      "passed": true
+    },
+    "taisp/analysis/native_pseudo_target.py": {
+      "expected": "4ac9f9933af100d8104a838bfe1314babd74a30009ead8ab47a67c6b5820598a",
+      "actual": "4ac9f9933af100d8104a838bfe1314babd74a30009ead8ab47a67c6b5820598a",
+      "passed": true
+    },
+    "taisp/analysis/native_component_study.py": {
+      "expected": "6df36e834df335eaa257121607d0bff271fc52d9a6a4f2ac87d04d84ba4027aa",
+      "actual": "6df36e834df335eaa257121607d0bff271fc52d9a6a4f2ac87d04d84ba4027aa",
+      "passed": true
+    },
+    "taisp/tta/trust_radius.py": {
+      "expected": "b815a37f24fea3c40634eaac393c13a1c255af4a88291b4a0808c5caf30f829c",
+      "actual": "b815a37f24fea3c40634eaac393c13a1c255af4a88291b4a0808c5caf30f829c",
+      "passed": true
+    },
+    "taisp/tta/gradient_transport.py": {
+      "expected": "989591a61b11a696fb5f0c26ea1855e0497a3ea7af964cb7943e7260cf52d97d",
+      "actual": "989591a61b11a696fb5f0c26ea1855e0497a3ea7af964cb7943e7260cf52d97d",
+      "passed": true
+    },
+    "taisp/analysis/gradient_transport.py": {
+      "expected": "0987bf00efdffa0166fa11c8b96d6673545596a38ef9cf98b26a40ba105bb7c1",
+      "actual": "0987bf00efdffa0166fa11c8b96d6673545596a38ef9cf98b26a40ba105bb7c1",
+      "passed": true
+    },
+    "taisp/models/flip_consensus.py": {
+      "expected": "4c9a46ec435808b152c0afcb025bfc4de8019b38c572757d5479431d9ff4178f",
+      "actual": "4c9a46ec435808b152c0afcb025bfc4de8019b38c572757d5479431d9ff4178f",
+      "passed": true
+    },
+    "taisp/analysis/flip_consensus_study.py": {
+      "expected": "d10516bfd3d0f862ce0906a6c9c9c36a03b113baa122147c6b64ae76e99b4d1c",
+      "actual": "d10516bfd3d0f862ce0906a6c9c9c36a03b113baa122147c6b64ae76e99b4d1c",
+      "passed": true
+    },
+    "taisp/analysis/spatial_action.py": {
+      "expected": "88ece48b584a575b003fdb57761be687484a1988ba9b17b6dce9e1333aecc1a8",
+      "actual": "88ece48b584a575b003fdb57761be687484a1988ba9b17b6dce9e1333aecc1a8",
+      "passed": true
+    },
+    "taisp/analysis/common_jacobian.py": {
+      "expected": "ee2ac497c69ac8164ddc90d2d5793b59fc16b9736652e5b863b455bdbff2ec6f",
+      "actual": "ee2ac497c69ac8164ddc90d2d5793b59fc16b9736652e5b863b455bdbff2ec6f",
+      "passed": true
+    },
+    "taisp/isp/spatial.py": {
+      "expected": "3d714227f0689e9675b79212edf1a55b6878966431a663b1ca398ccdfaae5654",
+      "actual": "3d714227f0689e9675b79212edf1a55b6878966431a663b1ca398ccdfaae5654",
+      "passed": true
+    },
+    "taisp/tta/spatial_dose.py": {
+      "expected": "957e7e877dadf5077180a751a979d37a55cafc3f998c1f92df7b153fb553a637",
+      "actual": "957e7e877dadf5077180a751a979d37a55cafc3f998c1f92df7b153fb553a637",
+      "passed": true
+    },
+    "taisp/analysis/spatial_dose_parity.py": {
+      "expected": "b4a30ee95ac6305f502b2abc862dfa66b3fa26aa9724091a9135ee1f305fcd13",
+      "actual": "b4a30ee95ac6305f502b2abc862dfa66b3fa26aa9724091a9135ee1f305fcd13",
+      "passed": true
+    },
+    "taisp/analysis/run_t018a.py": {
+      "expected": "68b5e4c7f14d66c787ab76598eedfcc1b2291271a5462d015bb05803a8c019aa",
+      "actual": "68b5e4c7f14d66c787ab76598eedfcc1b2291271a5462d015bb05803a8c019aa",
+      "passed": true
+    }
+  }
+}

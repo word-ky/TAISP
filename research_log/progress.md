@@ -622,3 +622,19 @@ new model calls. No activejob or scientific outcomes. Next implement/test isolat
 candidate, fullregression and GPU parity/runtime smoke; stop on numericalfailure.
 
 2026-09-13T23:42:42.966070+08:00 T022-A increment1 initial unit233843:3failed16passed1skip (detach inside JVP lambda dispatch error). Minimal donor-convention repair detach outside; unit233948 passed19tests1skip3.94s. Deployment current-symlink SSHclosed after extraction, tests used explicit intact release path. New real-model parity module prepared; frozen tolerances unchanged; no AP.
+
+2026-09-13T23:44:05.485879+08:00 T022-A numericalrun234326 launched once onA6000 after module units passed. Fullregression andfrozen28parity checks; noAP. Sourcecodee8272c5,release234251.
+
+
+# T022-A BLOCKED — pre-AP CLIP wrapper initialization
+
+2026-09-13. R034/6001e14; plan b677a0c; code e8272c5.
+Run 20260913-234326-taisp-t022a-numerical-parity ended exit 1; no active job.
+Full 182 passed / 10 skipped; focused 20 passed / 1 skipped.
+First of 28 real records passes all numerical checks but fails CLIP eval isolation.
+Source/CLIP state hashes unchanged. Standalone parity entry omitted wrapper eval;
+accepted and candidate adaptation runtimes already initialize it correctly.
+Stop per R034; do not run AP or silently patch/re-run. This is an implementation
+blocker, not a scientific FAIL. Minimal proposed repair and full receipts are in
+research_log/T022A_report.md. Remaining 27 checks, real K3 smoke, formal driver
+and 200-image study are pending. Await new explicit research queue decision.
