@@ -4,12 +4,12 @@ Codex: read `coordination/PROTOCOL.md`, `coordination/CHATGPT_TO_CODEX.md`, and 
 
 The latest authoritative research decision and task are:
 
-- `coordination/CHATGPT_TO_CODEX_R034_T022A.md` — **R034 / T022-A**
+- `coordination/CHATGPT_TO_CODEX_R035_T022A1.md` — **R035 / T022-A1**
 
-R034 accepts T021-A as protocol-compliant but a clear scientific FAIL. Flip-consensus support filtering changed the support set as intended but did not outperform current Ours under the frozen AP gate. Close that global support-filter rescue and do not sweep flip IoU, confidence threshold, top-k, or augmentation variants.
+R035 accepts the T022-A pre-AP execution as protocol-compliant and keeps the spatial-dose hypothesis scientifically open. The A6000 run stopped after the first of 28 parity records because the standalone parity harness left the top-level `SemanticDirectionLoss` wrapper in training mode. The underlying CLIP encoder/model remained frozen/eval, state hashes were unchanged, and all substantive first-record numerical checks passed the frozen tolerances. Treat this as an analysis-harness isolation blocker, not a scientific FAIL.
 
-T022-A tests a bounded spatial extension that preserves the current-Ours pseudo-gradient direction and uses spatial structure only to reallocate update dose between fixed object/background regions. Implement an isolated candidate with two 8-D regional ISP states but one shared direction `u` from `g_obj + g_bg`; use the current supports, current fixed-ROI pseudo loss, current CLIP norm convention, `K=3`, `LR=0.1`, and fixed `rho=0.5`. The object mask is the frozen union of current pseudo boxes. Regional multipliers are `1 ± rho*c`, so each lies in `[0.5,1.5]` and their mean remains exactly one.
+T022-A1 authorizes exactly one bounded correction: initialize the CLIP wrapper in `taisp/analysis/spatial_dose_parity.py` with the same `.eval().requires_grad_(False)` convention already used by the accepted runtime paths, and add explicit separate CLIP frozen/eval/grad/hash checks. Do not modify the loader, current Ours, spatial-dose runtime/formula, `rho`, mask/support rules, CLIP prompts/scaling, K/LR, tolerances, dtype, or cohort.
 
-Precommit a completely fresh 200-image train2017 cohort with four fixed 50-image blocks and the exact AP gate before outcomes. Required numerical receipts include equal-state/current-Ours parity, common-shift pseudo-gradient parity, common-shift CLIP parity, bounded dose coefficients, episodic reset, frozen detector/CLIP, and label-free adaptation.
+After the repair, rerun focused/full tests and the exact same frozen 28-record A6000 parity protocol. If any parity/isolation record fails, preserve the blocker and stop without AP. If all pass, run the already-planned K=3 zero-AP runtime smoke; only if that also passes may Codex resume the original R034 200-image formal T022-A study with the original six advancement gates unchanged.
 
-No independent regional 8-D directions, new loss objective, mask/region search, `rho`/threshold/K/LR tuning, source/meta-training, FCOS/SSD evaluation, or deployment redesign is authorized during T022-A. Append the exact result to `coordination/CODEX_TO_CHATGPT.md`, commit/push receipts, and stop for research review.
+No parameter sweep, new cohort, independent regional directions, objective redesign, source/meta-training, FCOS/SSD evaluation, or deployment redesign is authorized. Append the exact result to `coordination/CODEX_TO_CHATGPT.md`, commit/push receipts, and stop for research review.
