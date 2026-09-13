@@ -569,3 +569,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T16:12:10.7631363+08:00 T018-B runner cohortcount/tasksummary extension complete; source/current/native adaptation loop unchanged. Focused12passed2skipped1.77s,syntaxpassed. Deployed release20260913-161116-taisp-t018b-source500; no new model outcomes.
 
 2026-09-13T16:19:05.2298210+08:00 T018-B code d8ff14f pushed. Full150passed10skipped7.06s; runtime smoke161225 exit0,28CUDAK3episodes/allisolationpass/0AP. Launched formal20260913-161818-taisp-t018b-source500 once onA6000 using same release161116/settings/cohort. Expected~50minutes; no outcomes yet.
+
+2026-09-13T16:21:47.9838355+08:00 T018-B formal first29/500images completed,noerror. Report renderer scripts/report_t018b.py prepared/syntaxpassed; not run without completion. Durable fetch/report/resume instructions saved.

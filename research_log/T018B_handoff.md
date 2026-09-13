@@ -14,3 +14,11 @@ apply exactR030criteria fromsummary.json, retainnegatives,appendCODEXmailbox,com
 AP50/AP75 are diagnostics,notgates. NoFCOS/SSD/COCOval/deploymentreplacement/tuning/T017forensics.
 Reports canreuse scripts/report_t018a.py table formatting but need B-specific counts/verdict/provenance.
 StopNEEDS_REVIEW aftercompletion. UserGPUpriority and15minuteheartbeat active; quietunchanged.
+
+2026-09-13T16:21:47.9838355+08:00 — First29/500images completed without error. Report renderer ready: scripts/report_t018b.py (syntaxpassed).
+After completion/exit0, tar andfetch BOTH runs161225smoke and161818formal under research_log/remote_runs;
+verify archiveSHA before extraction. Render with:
+D:\anaconda3\python.exe scripts/report_t018b.py --project . --run 20260913-161818-taisp-t018b-source500 --smoke 20260913-161225-taisp-t018b-runtime-smoke
+Inspect allsummary flags/tables/AP50/AP75, execution logs, protectedmethodpins and rawcounts before report.
+Then update CODEX mailbox/state/handoff/progress and hashmanifest,commit/push,mirrorA6000; stopNEEDS_REVIEW.
+No rawperformance/AP has been interpreted yet. Active run still161818; do not launchanother job.
