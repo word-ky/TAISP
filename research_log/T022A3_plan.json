@@ -1,0 +1,54 @@
+{
+  "task": "T022-A3",
+  "research_revision": "3a3c598",
+  "image_ids": [
+    160585,
+    114830,
+    449844,
+    332316
+  ],
+  "conditions": [
+    "clean_s0",
+    "contrast_s2"
+  ],
+  "repeats": 5,
+  "methods": [
+    "current_ours",
+    "spatial_dose_ours"
+  ],
+  "relative_L2": "For pairs i<j: ||x_i-x_j||_2/max(||x_i||_2,1e-12); float64 comparison of final float32 images; maximum over all10pairs.",
+  "criterion": {
+    "valid_episodes": 80,
+    "tuple_ratio": 2.0,
+    "minimum_passing_tuples": 7,
+    "median_ratio": 1.25,
+    "maximum_tuple_ratio": 5.0,
+    "additive_floor": 1e-06
+  },
+  "protected_modules_LF": {
+    "taisp/losses/detector_native.py": "21471524358faee9f0d5c47a7d6e45911ff22bb9f31316e57d42f4e8ca72c6b2",
+    "taisp/models/detector.py": "df9cae806e102c8c6231131b9e620e6ae5375a908dbff686447364eb932bce7c",
+    "taisp/models/detector_signal.py": "4c5f142e32c055a2e8efc579ccb9c64112faac54e049cc43e161a258a991686d",
+    "taisp/losses/clip_semantic.py": "2dea813207b745cb43f0ecf59cf666c02e1e193ee2f65804ed996a230a97cbb2",
+    "taisp/analysis/oracle.py": "793a9a34e7dbd53cedc699520fbf3e94890e95adfdcbe6ce2c14cad4cb908e35",
+    "taisp/analysis/corruptions.py": "1daf28d3a7f321fecb89f671cc6dab2c206d135cd9763246b7bd7e142b294992",
+    "taisp/isp/__init__.py": "ac39f4892353ce22cf3d2e03d08597cbe65ca62cb6c22dcfda22e78e7bd7b818",
+    "taisp/isp/module.py": "80852cd0a284945740c62b30b54e4723e32dc1d99a555a47d90d4ca9e2532832",
+    "taisp/isp/ops.py": "e0cb6776dfb1f8ab935b49eceb30be1ac7f60b958a22ad0b535aad22016a6e7b",
+    "taisp/analysis/native_pseudo_target.py": "4ac9f9933af100d8104a838bfe1314babd74a30009ead8ab47a67c6b5820598a",
+    "taisp/analysis/native_component_study.py": "6df36e834df335eaa257121607d0bff271fc52d9a6a4f2ac87d04d84ba4027aa",
+    "taisp/tta/trust_radius.py": "b815a37f24fea3c40634eaac393c13a1c255af4a88291b4a0808c5caf30f829c",
+    "taisp/tta/gradient_transport.py": "989591a61b11a696fb5f0c26ea1855e0497a3ea7af964cb7943e7260cf52d97d",
+    "taisp/analysis/gradient_transport.py": "0987bf00efdffa0166fa11c8b96d6673545596a38ef9cf98b26a40ba105bb7c1",
+    "taisp/models/flip_consensus.py": "4c9a46ec435808b152c0afcb025bfc4de8019b38c572757d5479431d9ff4178f",
+    "taisp/analysis/flip_consensus_study.py": "d10516bfd3d0f862ce0906a6c9c9c36a03b113baa122147c6b64ae76e99b4d1c",
+    "taisp/analysis/spatial_action.py": "88ece48b584a575b003fdb57761be687484a1988ba9b17b6dce9e1333aecc1a8",
+    "taisp/analysis/common_jacobian.py": "ee2ac497c69ac8164ddc90d2d5793b59fc16b9736652e5b863b455bdbff2ec6f",
+    "taisp/isp/spatial.py": "3d714227f0689e9675b79212edf1a55b6878966431a663b1ca398ccdfaae5654",
+    "taisp/tta/spatial_dose.py": "957e7e877dadf5077180a751a979d37a55cafc3f998c1f92df7b153fb553a637",
+    "taisp/analysis/spatial_dose_parity.py": "e945381651ee66f48e3d575eacee9e9c1703c1f558fbf5b41357189cfda8faff",
+    "taisp/analysis/run_t018a.py": "8b5f69bd607f75e3181b47d5d5917558118c730826fdbe6b9a470f8887cb644d",
+    "taisp/analysis/spatial_dose_study.py": "a6d2cc5e51b7774a45bb36c2167e96c24c0fad1e1abc70c9a678483bab82bf4a"
+  },
+  "cohort_sha256": "589878ad7af1d86bf73514d63dd58a4e40d58797d119ea4981be9e4292772690"
+}
