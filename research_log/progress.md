@@ -782,3 +782,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 05:18+08 R040 read, T025-A fresh24selected seed20260925 excluding6452.18baseline tests pass3.91s. Candidate exposurepair1.2/reciprocal SmoothL1beta1 classconditioned rawbboxdelta frozen; GT-free candidates before reference.
 
 2026-09-14 05:21+08 T025-A candidate implementation passes24focused/regional tests incl realGPU predictorlayout/freeze smoke6.04s. Protected/inherited code unchanged. Ready48GT-free candidates after commit.
+
+2026-09-14 05:25+08 T025-A candidates48complete10.715752s onA6000;locked/pushedef14e99 before referenceimplementation. Reference increment30focused incl realGPU pass6.13s/full212pass11skip10.56s. Source full-task and optional ROI/localization diagnostics next; no candidate change.
