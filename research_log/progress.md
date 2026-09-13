@@ -531,3 +531,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T12:25:17.6716539+08:00 User requested GPU priority. Future model/gradient/experiment workloads should prefer A6000 GPU where supported; retain CPU for lightweight file/report work and small offline algebra. Existing frozen device/precision protocols remain unchanged.
 
 2026-09-13T12:27:33.4292103+08:00 R026/f27a996 synchronized during GPU preference update. T014-A/A1 accepted/closed; T015-A saved-array task authorized. Verified33 pinned inputs/order/reference provenance with no new summary outcomes; unchanged A1 baseline11passed2.28s. Pre-outcome plan written; existing GPU preference retained.
+
+2026-09-13T12:31:17.1777836+08:00 T015-A analysis-only decomposition/triage implemented; reuse A1 reference records and spatial EPS. Synthetic+affected focused13passed2.05s on unchanged-version A6000 environment; syntax passed. Release20260913-122950-taisp-t015a-differential-subspace deployed; no new scientific summaries computed.
