@@ -63,9 +63,9 @@ def advancement(metrics):
             'stop_for_research_review':True}}
 
 
-def diagnostic_summary(rows):
+def diagnostic_summary(rows, methods=METHODS):
     result={}
-    for method in METHODS[1:]:
+    for method in methods[1:]:
         for group in ('clean','corrupted'):
             chosen=[r for r in rows if r['method']==method and (r['case']=='clean_s0')==(group=='clean')]
             if not chosen:
@@ -105,6 +105,7 @@ def run(config, manifest_path, output, smoke=False):
     manifest=json.loads(manifest_path.read_text())
     images=manifest['images'][:2] if smoke else manifest['images']
     study=config.get('study','T018-A')
+    methods=('no_adapt',*config['variants'])
     assert len(manifest['images'])==config['count'] and manifest['overlap_prior_source']==manifest['overlap_val']==0
     output.mkdir(parents=True,exist_ok=True)
     torch.manual_seed(config['seed'])
@@ -125,15 +126,17 @@ def run(config, manifest_path, output, smoke=False):
         assert config[key]==old['config'][key],key
     interpretation=('T018-B independent train2017 source confirmation of unchanged T018-A candidate; no cross-detector claim'
                     if study=='T018-B' else 'T018-A developmental train2017 source-only fixed candidate; no confirmatory or cross-detector claim')
+    if study=='T019-A':
+        interpretation='T019-A predeclared native component development study; no confirmation or cross-detector claim'
     meta.update(interpretation=interpretation,
-                smoke=smoke,cases=CASE_NAMES,methods=METHODS,source_state_sha256=source_hash,clip_state_sha256=clip_hash,
+                smoke=smoke,cases=CASE_NAMES,methods=methods,source_state_sha256=source_hash,clip_state_sha256=clip_hash,
                 cohort_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
                 evaluated_image_ids=[r['image_id'] for r in images],teacher='one original condition prediction,detachedscore>=.5top20',
                 ground_truth_boundary='COCO annotations loaded only after all adaptation/predictions, for official AP',
                 timing='synchronized steps0..3 diagnostics with K3updates; deploy adds sharedteacher setup; evaluation excluded')
     write_json(output/'environment.json',meta)
     write_json(output/'cohort.json',manifest)
-    predictions={f'{c}_{m}':[] for c in CASE_NAMES for m in METHODS}
+    predictions={f'{c}_{m}':[] for c in CASE_NAMES for m in methods}
     rows=[]
     started=time.perf_counter()
     with (output/'samples.jsonl').open('w',encoding='utf-8') as handle:
@@ -152,8 +155,9 @@ def run(config, manifest_path, output, smoke=False):
                 predictions[f'{case}_no_adapt'].extend(prediction_records(info['image_id'],original))
                 frozen_support={k:v.clone() for k,v in selected.items()}
                 counts={}
-                for method in METHODS[1:]:
-                    loss=DetectorNativeLoss(source,{'base':selected},'det_pseudo') if method=='current_ours' else NativePseudoTargetLoss(source,selected,seed=config['seed'])
+                for method in methods[1:]:
+                    loss=DetectorNativeLoss(source,{'base':selected},'det_pseudo') if method=='current_ours' else NativePseudoTargetLoss(
+                        source,selected,seed=config['seed'],component_set='full' if method=='nativePT_ours' else method)
                     torch.cuda.synchronize()
                     torch.cuda.reset_peak_memory_stats()
                     begin=time.perf_counter()
@@ -175,13 +179,14 @@ def run(config, manifest_path, output, smoke=False):
                     predictions[f'{case}_{method}'].extend(prediction_records(info['image_id'],prediction))
                     counts[method]=len(prediction['boxes'])
                     row={'image_id':info['image_id'],'block':info['block'],'case':case,'method':method,
-                         'diagnostics':result.diagnostics,'native_components':loss.loss_history if method=='nativePT_ours' else None,
+                         'diagnostics':result.diagnostics,'native_components':loss.loss_history if isinstance(loss,NativePseudoTargetLoss) else None,
                          'support':{k:v.detach().cpu().tolist() for k,v in selected.items()},'support_count':len(selected['boxes']),
                          'phi3_norm':result.phi.norm().item(),'updated':bool(torch.count_nonzero(result.phi)),
                          'adapt_seconds':elapsed,'teacher_seconds':setup,'deploy_seconds':elapsed+setup,
                          'peak_allocated_bytes':peak,'prediction_count':counts[method],
                          'original_prediction_count':len(original['boxes']),'isolation':isolation}
-                    if method=='nativePT_ours':
+                    if isinstance(loss,NativePseudoTargetLoss):
+                        row['active_component_keys']=list(loss.active_keys)
                         row['paired_prediction_count_delta']=counts[method]-counts['current_ours']
                     handle.write(json.dumps(row,allow_nan=False)+'\n');handle.flush();rows.append(row)
             print(f'completed {i+1}/{len(images)} image_id={info["image_id"]} elapsed={time.perf_counter()-started:.1f}s',flush=True)
@@ -194,7 +199,7 @@ def run(config, manifest_path, output, smoke=False):
                                                   all(not m.training for m in clip.modules())}
     write_json(output/'isolation.json',final_isolation)
     assert all(final_isolation.values())
-    write_json(output/'diagnostics.json',diagnostic_summary(rows))
+    write_json(output/'diagnostics.json',diagnostic_summary(rows,methods))
     metrics={}
     summary=None
     if not smoke:
@@ -208,7 +213,11 @@ def run(config, manifest_path, output, smoke=False):
             for group,values in replication_ap(coco,ids,records,manifest['replication_blocks']).items():
                 metrics.setdefault(group,{})[name]=values
         write_json(output/'metrics.json',metrics)
-        summary=confirmation(metrics,all(final_isolation.values())) if study=='T018-B' else advancement(metrics)
+        if study=='T019-A':
+            from .native_component_study import component_selection
+            summary=component_selection(metrics,all(final_isolation.values()))
+        else:
+            summary=confirmation(metrics,all(final_isolation.values())) if study=='T018-B' else advancement(metrics)
         write_json(output/'summary.json',summary)
     write_json(output/'completion.json',{'status':'completed','smoke':smoke,'images':len(images),'adaptive_samples':len(rows),
                'teacher_forwards':len(images)*7,'evaluations':sum(len(v) for v in metrics.values()),
