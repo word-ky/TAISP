@@ -557,3 +557,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T15:25:40.9512825+08:00 R029/53f8662 synchronized; performancefirstT018-A authorized. Baseline6passed2skipped1.40s. Prepared100newsourceimages from13762eligible,0overlap36prior-source/5000val; JPEGhashmanifestSHAa01dfb1d40a6daceddccc1b7aa7f3f2e74871fd4a511d8d6c9acf8e50c2c111f. Candidateplan/currentT009settingsandcohortready forpre-outcomecommit. No model/performancecalls yet.
 
 2026-09-13T15:34:03.4781952+08:00 T018-A experimental native loss/driver added; current modules unchanged. Focused10passed2skipped1.70s onA6000 environment. Release20260913-153309-taisp-t018a-nativept. Next fullregression plus CUDAK3two-image smoke without AP.
+
+2026-09-13T15:36:32.3121768+08:00 T018-A code7c43f1f pushed. Smoke20260913-153419: full148passed10skipped6.94s; CUDA2images7conditions28adaptiveepisodes/14native,4finitecomponenthistories,K3,phi0zero,allstatechecks passed; 0AP,exit0. Formal20260913-153604-taisp-t018a-source100 started once with identical release153309/config/cohort onA6000cuda:0.
