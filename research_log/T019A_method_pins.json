@@ -1,0 +1,55 @@
+{
+  "parent_revision": "2a40263",
+  "protected_modules": {
+    "taisp/tta/trust_radius.py": {
+      "git_blob": "f53a6d539d385efac22cdadec90337467dc0bc31",
+      "content_sha256": "043c5045f57bfa2201604ea90a10af18b71bc64487760dbb7832327146450d8a"
+    },
+    "taisp/losses/detector_native.py": {
+      "git_blob": "39c193ece21c2820c2e11c3bf07009db468e6e0f",
+      "content_sha256": "21471524358faee9f0d5c47a7d6e45911ff22bb9f31316e57d42f4e8ca72c6b2"
+    },
+    "taisp/models/detector.py": {
+      "git_blob": "548e58f08dec2be060f121b1061abc92a2cc9580",
+      "content_sha256": "df9cae806e102c8c6231131b9e620e6ae5375a908dbff686447364eb932bce7c"
+    },
+    "taisp/models/detector_signal.py": {
+      "git_blob": "b0c9398bfdd0a5bf0622e9a26cb27f314542d08b",
+      "content_sha256": "4c5f142e32c055a2e8efc579ccb9c64112faac54e049cc43e161a258a991686d"
+    },
+    "taisp/losses/clip_semantic.py": {
+      "git_blob": "94e8625a937242c5364e13a790a253bf47948f3a",
+      "content_sha256": "2dea813207b745cb43f0ecf59cf666c02e1e193ee2f65804ed996a230a97cbb2"
+    },
+    "taisp/analysis/oracle.py": {
+      "git_blob": "bb516f18c6bf46353a5657bbadd962203e0c865b",
+      "content_sha256": "793a9a34e7dbd53cedc699520fbf3e94890e95adfdcbe6ce2c14cad4cb908e35"
+    },
+    "taisp/analysis/corruptions.py": {
+      "git_blob": "43a637d4821691e9020c57e85eac164db12e24bb",
+      "content_sha256": "1daf28d3a7f321fecb89f671cc6dab2c206d135cd9763246b7bd7e142b294992"
+    },
+    "taisp/isp/__init__.py": {
+      "git_blob": "51c5bcfa4680eae2988e71d93a1fcdec1d745401",
+      "content_sha256": "ac39f4892353ce22cf3d2e03d08597cbe65ca62cb6c22dcfda22e78e7bd7b818"
+    },
+    "taisp/isp/module.py": {
+      "git_blob": "adc70fbfc7e3135ffb0c52243023d112c3a5e157",
+      "content_sha256": "80852cd0a284945740c62b30b54e4723e32dc1d99a555a47d90d4ca9e2532832"
+    },
+    "taisp/isp/ops.py": {
+      "git_blob": "09ac5e94368e345b4b0b55099e7e8b1c45c04c2d",
+      "content_sha256": "e0cb6776dfb1f8ab935b49eceb30be1ac7f60b958a22ad0b535aad22016a6e7b"
+    }
+  },
+  "authorized_modified_or_new_modules_sha256_LF": {
+    "taisp/analysis/native_pseudo_target.py": "4ac9f9933af100d8104a838bfe1314babd74a30009ead8ab47a67c6b5820598a",
+    "taisp/analysis/run_t018a.py": "5e12f8c4d010c0a9f7086e14d73665b7d56e1a510e80dc65dbd2c6919db418ff",
+    "taisp/analysis/native_component_study.py": "6df36e834df335eaa257121607d0bff271fc52d9a6a4f2ac87d04d84ba4027aa"
+  },
+  "legacy_native_full": {
+    "git_blob": "0844c75c43229416f1889c8529250e3d83d9fdb5",
+    "content_sha256": "99568939304274ab0f4a0da371ef4311396a7dbe8cfea584c941c8c43f458689"
+  },
+  "cohort_sha256": "534b17343ccba995beb9d112d552eefd7f1b2116479c2132dd99265b1d6735b4"
+}

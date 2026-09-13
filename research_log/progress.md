@@ -573,3 +573,5 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T16:21:47.9838355+08:00 T018-B formal first29/500images completed,noerror. Report renderer scripts/report_t018b.py prepared/syntaxpassed; not run without completion. Durable fetch/report/resume instructions saved.
 
 2026-09-13T17:12:49.443006+08:00 T018-B completeexit0:500images/7000adaptiveepisodes/126officialevals,2891.522734s. FixedR030confirmationFAIL:macro-.338228449022APvs current,-.134301697631vsraw;0/5blocks,0/6conditions;clean+.291859559754currentbut-.253654358664raw;AP50-.354632226472/AP75-.427867441159. All7000isolation/3500pairedsupports/finitegradients/11modulepins pass.62rawfiles139,528,015bytes fetched/hashverified; reportcomplete,closeexactformulation pendingreview. Noactivejob,no tuning.
+
+2026-09-13T18:22:46.334177+08:00 R031/d60e72c synced: T018-B acceptednegative; T019-A fixed4componentfamily authorized. Baseline12passed2skipped1.57s. New200cohort4x50,636prior-source/5000val excluded;SHA534b17343ccba995beb9d112d552eefd7f1b2116479c2132dd99265b1d6735b4. Plan/config/methodhashes ready forpre-outcomecommit; no real-model outcomes.

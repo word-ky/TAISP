@@ -22,7 +22,9 @@ def prepare(project, output, *, count=100, block_size=25, seed=20260918, additio
     provenance=[hpath,apath,ledgerpath]
     if additional_source is not None:
         path=project/additional_source
-        prior.update(json.loads(path.read_text())['image_ids'])
+        additional=json.loads(path.read_text())
+        prior.update(additional['image_ids'])
+        prior.update(additional['prior_source_ids'])
         provenance.append(path)
     excluded=prior|val_ids|set(ledger['evaluation_ids'])
     data=json.loads(annotations.read_text())
