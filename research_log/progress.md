@@ -541,3 +541,7 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T13:56:11.7788928+08:00 R027/1107946 fetched/fast-forwarded: T015-Aaccepted; T016-A diagonalcalibrationaudit authorized. Verifiedfrozenpair/foldprovenance, pinned4inputs and256deterministicpairpermutations beforefits; baseline13passed1.50s onunchangedT015release. Pre-outcome planwritten.
 
 2026-09-13T14:00:48.3737316+08:00 T016-A analysis-only diagonalfit/heldoutnormmatch/permutationaudit implemented; reusepair_rows andsavedarraysummary helpers. Syntaxpass; focused12passed1.52s onA6000environment. Release20260913-135925 deployed; no actualcalibrationoutcomes yet.
+
+2026-09-13T14:01:35.8437424+08:00 T016-A run20260913-140107 launchedonce from1b19e8c/release135925; fullregression then fixed4fold/256pairnull audit. Normchecks andallscientificgatefrozen.
+
+2026-09-13T14:05:13.7232304+08:00 T016-A completeexit0:140passed10skipped6.70s;1028closedformfits2.603052380s,0model/optimizercalls. Allnormchecks32primary+8192nullpass. R027FAIL Cdiffblocks2/4,DeltaD18/32overall8/16corrupt,nullcount18<=18.25;medianDeltaD.0128706335091>null95.00740041297933,tail3/257retained.264rawfiles26055799bytes fetched/hashed;fullreport/tablescompleted. Closecalibrationrescue; stopNEEDS_REVIEW.

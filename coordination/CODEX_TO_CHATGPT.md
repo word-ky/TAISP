@@ -2202,3 +2202,43 @@ Closefixedpseudo-spatialbranch perR026: taskcapacityYES/guidanceutilityNO. No sp
 impossibilitytheorem, finite-step/APclaim orrescueofR024. StopafterT015-A forresearchreview.
 NoT014-B/T015-B/differential-onlydeployment/spatialprototype/masksearch/regionalCLIP/
 source-meta-training/redesign/newcohort/FCOS/SSD/AP/gate-dose tuning. No activejob remains.
+
+---
+
+## T016-A — NEEDS_REVIEW — 2026-09-13T14:05:13.7232304+08:00
+
+R027/1107946 completed. Plan/input/schedulef97a9dc predatesfits; code1b19e8c.
+Run20260913-140107-taisp-t016a-differential-calibration, release135925;
+14:01:12–14:01:24+08exit0. Fullreportresearch_log/T016A_report.md; allmetrics/coefficients/
+nulloutcomes/normchecks inT016A/tables.md; raw264fileSHAmanifest retained.
+
+- OnlyfrozenT015/A1arrays. T015recordsSHAae01cea586d0585b510293460ce174e2cf65350cc3d2ba3bd364c24b7de55b12.
+  Fourinputhashes verified. Original4folds:24train/8heldout episodes,12train/4heldoutpairs.
+  Source-target gradients fitonlyontrainingfolds; noheldouttargetenterscalibration.
+- Exactno-interceptdiagonalLS,EPS1e-12; calibrateddiffnormmatched,sharedpseudo unchanged.
+  No centering/ridge/clipping/featureselection/optimizer. All8coefficients/fold retained.
+- 256precommitteddefault_rng(20260913) matchedpairpermutations,clean/corruptmovejointly.
+  ScheduleSHAcc8deaad302ab0880350f95ff14af08b2871182d9c05b0a95d611a0f48597e15.
+  All1024nullmaps/trainingmappings/8192heldoutpredictions retained; total1028closedformfits.
+- Baseline13passed1.50s; focused12passed1.52s; full140passed10skipped6.70s.
+  Syntax/renderpass. NumPy1.26.4 Python3.12.12 float64CPUaudit2.603052380s; GPUavailablefor
+  applicableregression peruserpreference. Zero newmodel/ISP/CLIP/optimizer/APauditcalls.
+- All32primary+8192null diff/fullnormchecks passfixed1e-10+1e-8*originalnorm.
+  Primarymaxerrors1.709832276e-11/1.705346975e-11; null4.091083028e-10/4.080269456e-10.
+  Worstnullerror/bound.696821/.456178. EPSshrinkageexplicit; nosecondscaling. Zerocosinecases0.
+- Raw/calcosmedian.06949177/.13110147. Cdiff_calpositive20/32,10/16corrupt,
+  median.009115872989 butonly2/4positiveblockmedians => differentialutilityFAIL.
+- DeltaDpositive18/32,8/16corrupt;median.0128706335091,3/4positiveblockmedians;
+  corruptedmedian-.005814599393. MeanDeltaD.07618182817 withrange[-1.40652079,1.87079108].
+- NullmedianDeltaD95=.00740041297933,observedabove,2null>=observed,tail3/257=.01167315.
+  NullpositiveDeltaD95=18.25,observed18below,30null>=observed(17ties),tail31/257=.12062257.
+  Cdiffpositivecount20vsnull95 21,tail33/257; calcosmedian.13110147vs.20745810,tail44/257.
+  Linearquantilesandcorrectedtailsfixed. Positive median-nullsignal retainedbutnotconjunctionpass.
+- Coefsigns:coordinates1/2negativeallfolds,4/7positiveallfolds;0/3/6[-,+,-,-],5[+,+,+,-].
+  Fullmagnitudes/stabilitystored, nooutcome-basedcoordinatechange.
+
+R027conjunctionFAIL(fourflags); close diagonal/source-calibration rescue. No claimofzero
+learnableinformation; preservepriorcapacityresult.264rawfiles26055799bytes fetched/hashed,
+allcommands/environment/schedules/predictions retained. StopafterT016-A forresearchreview;
+no newcohort/regionalobjective/CLIP/spatialfinite-step/deployment/AP/masksearch/meta-training/
+predictorredesign/FCOS/SSD/gate-dose tuning. No activejob remains.

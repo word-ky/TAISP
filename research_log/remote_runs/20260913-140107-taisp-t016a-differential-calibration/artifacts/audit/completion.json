@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "gate": {
+    "flags": {
+      "C_diff_cal_overall_positive_ge20": true,
+      "C_diff_cal_corrupted_positive_ge10": true,
+      "C_diff_cal_overall_median_positive": true,
+      "C_diff_cal_at_least3_positive_block_medians": false,
+      "Delta_D_cal_overall_positive_ge20": false,
+      "Delta_D_cal_corrupted_positive_ge10": false,
+      "Delta_D_cal_overall_median_positive": true,
+      "Delta_D_cal_at_least3_positive_block_medians": true,
+      "median_Delta_D_cal_above_null95": true,
+      "positive_Delta_D_cal_above_null95": false
+    },
+    "positive_block_medians": {
+      "C_diff_cal": 2,
+      "Delta_D_cal": 3
+    },
+    "passed": false,
+    "decision": "close_diagonal_source_calibration_rescue",
+    "stop_for_research_review": true
+  },
+  "permutations": 256,
+  "closed_form_fits": 1028,
+  "heldout_primary_records": 32,
+  "model_calls": 0,
+  "optimizer_steps": 0,
+  "all_norm_checks_passed": true,
+  "elapsed_seconds": 2.6030523800000083
+}

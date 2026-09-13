@@ -1,0 +1,33 @@
+{
+  "inputs": {
+    "t015_records": {
+      "path": "20260913-123142-taisp-t015a-differential-subspace/artifacts/audit/records.json",
+      "sha256": "ae01cea586d0585b510293460ce174e2cf65350cc3d2ba3bd364c24b7de55b12"
+    },
+    "t015_environment": {
+      "path": "20260913-123142-taisp-t015a-differential-subspace/artifacts/audit/environment.json",
+      "sha256": "49123060184bb0b85111ca7a2af95c32a7a3c8fe43284f971550f5d9d09923d0"
+    },
+    "t015_summary": {
+      "path": "20260913-123142-taisp-t015a-differential-subspace/artifacts/audit/summary.json",
+      "sha256": "b81778f2d1f72213698578df222edbff789d291e4f49e46c88b2ad0cf73067ba"
+    },
+    "a1_records": {
+      "path": "20260913-113401-taisp-t014a1-common-jacobian/artifacts/audit/records.json",
+      "sha256": "a0a8c59dbb6b2fd83343f774755c6061a28542bce3c1d2f00b1458e8bb655a17"
+    }
+  },
+  "manifest_sha256": "79da780cbb20b13eb12e664aee7af868e7164ee614d3b438704b7a4f5277b041",
+  "schedule_sha256": "cc8deaad302ab0880350f95ff14af08b2871182d9c05b0a95d611a0f48597e15",
+  "source_revision": "1b19e8c",
+  "python": "3.12.12",
+  "numpy": "1.26.4",
+  "dtype": "float64",
+  "device": "cpu",
+  "EPS": 1e-12,
+  "norm_atol": 1e-10,
+  "norm_rtol": 1e-08,
+  "seed": 20260913,
+  "model_calls": 0,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-140107-taisp-t016a-differential-calibration",
+  "releaseId": "20260913-135925-taisp-t016a-differential-calibration",
+  "sessionName": "autodl-20260913-140107-taisp-t016a-differential-calibration",
+  "command": "unset CUBLAS_WORKSPACE_CONFIG; export TAISP_SOURCE_REVISION=1b19e8c TAISP_REAL_MODELS=0 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.differential_calibration --prior-root /home/liujianhua/wjq/TAISP/runs --manifest research_log/T016A_input_manifest.json --schedule research_log/T016A_permutation_schedule.json --output \"$AUTODL_ARTIFACTS_DIR/audit\""
+}
