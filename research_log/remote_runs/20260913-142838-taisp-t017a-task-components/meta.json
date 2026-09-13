@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-142838-taisp-t017a-task-components",
+  "releaseId": "20260913-142715-taisp-t017a-task-components",
+  "sessionName": "autodl-20260913-142838-taisp-t017a-task-components",
+  "command": "unset CUBLAS_WORKSPACE_CONFIG; export TAISP_SOURCE_REVISION=5e0724b TAISP_REAL_MODELS=0 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.task_components --prior-root /home/liujianhua/wjq/TAISP/runs --manifest research_log/T017A_input_manifest.json --output \"$AUTODL_ARTIFACTS_DIR/audit\""
+}

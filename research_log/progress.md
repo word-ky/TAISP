@@ -549,3 +549,7 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T14:24:04.6231254+08:00 R028/f8fd9eb synchronized; T016-Aacceptedandclosed. T017-A fixed32A6000componentaudit authorized. Pinned5inputreceipts/modelhashes; baseline12passed1.88s. Pre-outcomeplan usesoneoracleforward, commonJVP, independenttotalcotangentclosure andfixedparity. No componentoutcomes computed.
 
 2026-09-13T14:27:55.9467796+08:00 T017-A analysiscollector/attribution implemented reusingoneoracleforward/common8JVPcolumns; no existingmoduleedits. Syntaxpassed; focused9passed1.94s onA6000environment. Release20260913-142715 deployed. No realcomponentoutcomes yet; nextfullregressionthenfixed32GPUaudit.
+
+2026-09-13T14:29:07.7066497+08:00 T017-A code5e0724b pushed afteroneunchangednetworkretry; run20260913-142838 launchedonce onA6000GPU,release142715. Fullregression thenfixed32componentaudit. No outcomes interpreted yet.
+
+2026-09-13T14:33:19.5123074+08:00 T017-A GPUrun142838exit1 after144passed10skipped6.66s. Firstrecordindex0image182164clean failedindependentcomponentclosure(globalmax6.986881543e-5) ANDsavedA1relativeL2(sum9.819567371e-4,total2.633194794e-4 >1e-5). Scalarforwardlossesexactlymatchold; source/ISPisolationandallpartitionspass.1record0pass31notrun; noattributionortriage.6rawfiles24467bytesfetched/hashed,reportcompleted; BLOCKEDforresearchreview, noadjustment/rerun.

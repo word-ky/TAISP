@@ -2242,3 +2242,41 @@ learnableinformation; preservepriorcapacityresult.264rawfiles26055799bytes fetch
 allcommands/environment/schedules/predictions retained. StopafterT016-A forresearchreview;
 no newcohort/regionalobjective/CLIP/spatialfinite-step/deployment/AP/masksearch/meta-training/
 predictorredesign/FCOS/SSD/gate-dose tuning. No activejob remains.
+
+---
+
+## T017-A — BLOCKED — 2026-09-13T14:33:19.5123074+08:00
+
+R028/f8fd9eb executedthroughfirstnumericalrecord; tasknot scientificallycomplete.
+Plan/inputhashe506f79 beforeoutcomes; code5e0724b. Run20260913-142838-taisp-t017a-task-components,
+release142715;14:28:44–14:28:57+08exit1. Fullreportresearch_log/T017A_report.md;
+allraw8Dvectors/errors/parities inT017A/numerical_tables.md.6rawfiles24467bytesfetched/hashed.
+
+- ExactpinnedA1/T01532cohort/masks/supports/sourceweightsstate. Analysis-onlynewmodule;
+  unchangedoracle returnsfourrequested differentiablelosses fromoneseededforward.
+  Fourcomponentcotangentsplusindependentsummed-losscotangent shareone8columnISPJVP.
+  Float32CUDAbackwards,float64global/object/backgroundprojection; noexistingmoduleedits.
+- Baseline12passed1.88s; focused9passed1.94s; full144passed10skipped6.66s.
+  Syntheticclosure/groupA/negative-cancelling/zero/Cproductivity/triagetests pass.
+  A6000cuda:0,torch2.4.0+cu121,Python3.12.12,NumPy1.26.4,seed20260913,normalCUDAsettings.
+- Firstepisodeindex0/image182164/clean_s0 savedthenstopped.1recordcollected,0passed,31unexecuted.
+  Fourlossvaluesandtotal.2813695967197418 exactlymatchsavedA1;maskhash/rectanglesmatch,
+  supports5,area.30939700704225354. Allsourcefreeze/eval/hash/gradNone andISPidentitychecksPASS.
+- Fiveobjectives'ownregionalpartitionsPASS. DirectglobalvsindependenttotalJVPparityPASS:
+  cos.9999999999998989,relativeL2=4.897136043e-7; primalmaxerror5.960464478e-8.
+- Independentcomponent-sumclosureFAILallregions underprecommittedfloat64bound:
+  globalmax6.986881543e-5,object4.271232911e-5,background4.570763189e-5;
+  worsterror/bound9.61236759e6. Globalcoord2sum-.0934066919520435,total-.09333682313661347.
+- SavedA1relativeL2FAIL despiteallcos>=.999999: globalcomponentsum9.819567371e-4,
+  independenttotal2.633194794e-4; regionalconcat5.014846381e-4/2.455934294e-4 >1e-5.
+  Therefore failureisnotonlystrictfloat64closure; explicitR028cross-runparityalsoblocks.
+-1detectorforward,5imagecotangents,8ISPJVPcolumns;0pseudo/CLIP/optimizer/APcalls.
+  Collection1.311475714s,peakCUDA1859385344bytes. No tolerance/precisionchangeorsecondrun.
+
+ScientificattributionNOT_REACHED: noA_loc/A_conf/Ccomponentstatistics ordominancetriage
+computedfrompartialcohort. Identicalforwardlosses/statebutgradientdiscrepancies; separate
+float32backwards/CUDAvariationpossible,rootcauseunconfirmed. Requestresearchreviewof
+numericalcomponentandcross-runreconstruction beforecontinuation. Do notinterpret as
+negative localization/confidence result. Preserveoriginalblocker. No newcohort/objective/
+localizationloss/CLIP/spatialadaptation/AP/FCOS/SSD/masksearch/calibration/meta-training/
+predictorredesign ordeploymentchange. No activejob remains.
