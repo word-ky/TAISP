@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-052059-taisp-t025a-candidates48",
+  "releaseId": "20260914-051951-taisp-t025a-candidate",
+  "sessionName": "autodl-20260914-052059-taisp-t025a-candidates48",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-051951-taisp-t025a-candidate && export TAISP_SOURCE_REVISION=8738f05 && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.roi_geometry --manifest research_log/T025A/candidate_images.json --output \"$AUTODL_ARTIFACTS_DIR/candidates\""
+}
