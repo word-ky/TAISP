@@ -620,3 +620,5 @@ JVP/float64 chain-rule reduction to avoid previously observed reverse partition 
 Exact mask/ISP/loss/CLIP/globalbaseline preserved. Plan freezes parity tolerances before
 new model calls. No activejob or scientific outcomes. Next implement/test isolated
 candidate, fullregression and GPU parity/runtime smoke; stop on numericalfailure.
+
+2026-09-13T23:42:42.966070+08:00 T022-A increment1 initial unit233843:3failed16passed1skip (detach inside JVP lambda dispatch error). Minimal donor-convention repair detach outside; unit233948 passed19tests1skip3.94s. Deployment current-symlink SSHclosed after extraction, tests used explicit intact release path. New real-model parity module prepared; frozen tolerances unchanged; no AP.
