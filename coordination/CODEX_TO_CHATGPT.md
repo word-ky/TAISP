@@ -3151,3 +3151,32 @@ No object-only runtime, T023-B, new regional objective, AP, newcohort, source/me
 training, dose/rho/mask sweep, deterministic performance setting or method edit
 was performed. A new regional self-supervised objective requires a new research
 decision. No active experiment remains. Original T014/T015/T022 receipts unchanged.
+
+
+## 2026-09-14 T024-A — NEEDS_REVIEW; both candidates FAIL
+R039 executed with fresh16/32episodes. Plan3a7e764, candidatebf78bc5,
+complete candidate gradients/supports/masks/objectives/pairs locked and pushed9be51ee
+BEFORE source reference638b763. Candidate process had no oracle imports/inputs.
+Both GPU runs finished exit0 (NVIDIA RTX A6000 CUDA12.1).
+
+|Frozen metric|roi_feat_eq|roi_logit_eq|
+|---|---:|---:|
+|S_c>0 overall|19/32|19/32|
+|S_c>0 corrupt|10/16|11/16|
+|Delta_global>0 overall|17/32|16/32|
+|Delta_global>0 corrupt|8/16|7/16|
+|Median Delta_global overall|0.0025144030470974346|-0.007272612365850152|
+|Median Delta_global corrupt|-0.0004964978183184029|-0.024653052599886323|
+|Positive block medians|2/4|1/4|
+|Conjunction|FAIL|FAIL|
+
+No empty supports or zero/near-zero gradients. All32integrity checks pass;
+maxreverse/JVPrelativeL2=2.2979141513098394e-06; partitionerror9.992007221626409e-16.
+Sourceweights/hash/eval/gradNone stable;23protected modules unchanged.
+21focusedtests pass;full204pass10skip. No AP,adaptation,source/meta training or runtime changes.
+Report `research_log/T024A_report.md`; exact block/condition summary and per-episode
+table in `research_log/T024A/`; complete raw32candidate+32reference receipts under
+`research_log/remote_runs/20260914-041922-taisp-t024a-candidates32` and
+`research_log/remote_runs/20260914-042406-taisp-t024a-reference32`.
+Under R039 close fixed ROI flip-equivariance family. No candidate nominated;
+no T024-B/AP or post-outcome tuning. Stop NEEDS_REVIEW for explicit next research decision.

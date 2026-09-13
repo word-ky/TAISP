@@ -776,3 +776,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 04:19+08 T024-A candidate increment:18focused/commonJVP/regionaltests passed3.77s. New pure JVP helper equals acceptedA1 exactly on tested inputs. GT-free separate interpreter; no protected edits. Ready candidate CUDA run after codecommit.
 
 2026-09-14 04:23+08 T024-A: candidate32complete CUDA9.267749s, statehashunchanged/gradNone/nooracleimports. Allcandidate receipts committed/pushed9be51ee before any source reference. Referenceincrement21focusedpass3.76s/full204pass10skip10.04s. Runpostlockreference next.
+
+2026-09-14 04:28+08 T024-A finished: both32episode CUDA stagesexit0;21focused/full204pass10skip. Feature/logit fixedgatesFAIL, corruptionDelta8/16 and7/16;nointegrity/nearzero blocker. Report+raw+tables complete. StopNEEDS_REVIEW perR039; noAP/runtime.
