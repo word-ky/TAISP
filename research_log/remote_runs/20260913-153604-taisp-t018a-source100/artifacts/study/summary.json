@@ -1,0 +1,138 @@
+{
+  "groups": {
+    "aggregate": {
+      "macro_AP": {
+        "no_adapt": 53.91490254300879,
+        "current_ours": 53.891408026050804,
+        "nativePT_ours": 54.108149208699515
+      },
+      "candidate_minus_current": 0.21674118264871112,
+      "candidate_minus_no_adapt": 0.19324666569072235,
+      "condition_deltas": {
+        "gamma_s1": 0.4390486920161085,
+        "gamma_s2": 0.1770366143973745,
+        "contrast_s1": 0.4654041152681643,
+        "contrast_s2": -0.0776929988898778,
+        "color_cast_s1": -0.1033945133602443,
+        "color_cast_s2": 0.40004518646077347
+      },
+      "positive_conditions": 4,
+      "clean_AP": {
+        "no_adapt": 59.77982011090464,
+        "current_ours": 59.74456354719203,
+        "nativePT_ours": 60.36452805752827
+      },
+      "clean_delta": 0.619964510336235
+    },
+    "block0": {
+      "macro_AP": {
+        "no_adapt": 53.449953778035855,
+        "current_ours": 53.38782483852269,
+        "nativePT_ours": 53.82492665479936
+      },
+      "candidate_minus_current": 0.4371018162766731,
+      "candidate_minus_no_adapt": 0.37497287676350766,
+      "condition_deltas": {
+        "gamma_s1": 0.2674084047474379,
+        "gamma_s2": 0.18355855842774327,
+        "contrast_s1": 2.0772528611407326,
+        "contrast_s2": -0.41387947352050647,
+        "color_cast_s1": -0.05360028497161107,
+        "color_cast_s2": 0.5618708318362309
+      },
+      "positive_conditions": 4,
+      "clean_AP": {
+        "no_adapt": 58.89906152529332,
+        "current_ours": 58.60179357115063,
+        "nativePT_ours": 60.06688530997847
+      },
+      "clean_delta": 1.4650917388278395
+    },
+    "block1": {
+      "macro_AP": {
+        "no_adapt": 55.79340255017671,
+        "current_ours": 55.9124469503001,
+        "nativePT_ours": 55.99382107639372
+      },
+      "candidate_minus_current": 0.08137412609362116,
+      "candidate_minus_no_adapt": 0.20041852621701395,
+      "condition_deltas": {
+        "gamma_s1": 0.6186768374731533,
+        "gamma_s2": 0.8596790093886031,
+        "contrast_s1": -0.11528469568032884,
+        "contrast_s2": -0.900303935774277,
+        "color_cast_s1": -0.17337105580218504,
+        "color_cast_s2": 0.19884859695677992
+      },
+      "positive_conditions": 3,
+      "clean_AP": {
+        "no_adapt": 60.03503759213507,
+        "current_ours": 60.09093257184016,
+        "nativePT_ours": 60.80036731447242
+      },
+      "clean_delta": 0.7094347426322534
+    },
+    "block2": {
+      "macro_AP": {
+        "no_adapt": 54.88943518514612,
+        "current_ours": 54.83687148898806,
+        "nativePT_ours": 54.86331225147671
+      },
+      "candidate_minus_current": 0.02644076248864735,
+      "candidate_minus_no_adapt": -0.026122933669412873,
+      "condition_deltas": {
+        "gamma_s1": 0.44630076248262096,
+        "gamma_s2": -0.11015037922181836,
+        "contrast_s1": -0.18479652642527933,
+        "contrast_s2": 1.1125098698153257,
+        "color_cast_s1": -0.9673170852910196,
+        "color_cast_s2": -0.13790206642795289
+      },
+      "positive_conditions": 2,
+      "clean_AP": {
+        "no_adapt": 60.16762068138173,
+        "current_ours": 60.31773069685759,
+        "nativePT_ours": 59.5803479247479
+      },
+      "clean_delta": -0.7373827721096848
+    },
+    "block3": {
+      "macro_AP": {
+        "no_adapt": 57.119818647565715,
+        "current_ours": 57.04625375561678,
+        "nativePT_ours": 56.84032121646997
+      },
+      "candidate_minus_current": -0.20593253914681497,
+      "candidate_minus_no_adapt": -0.27949743109574854,
+      "condition_deltas": {
+        "gamma_s1": 0.2605492724379044,
+        "gamma_s2": -0.46837129084088547,
+        "contrast_s1": 0.22788294325769565,
+        "contrast_s2": -1.5600837249388877,
+        "color_cast_s1": 0.463176010991162,
+        "color_cast_s2": -0.15874844578785963
+      },
+      "positive_conditions": 3,
+      "clean_AP": {
+        "no_adapt": 62.244466335525786,
+        "current_ours": 62.1036744834668,
+        "nativePT_ours": 63.053806031189275
+      },
+      "clean_delta": 0.950131547722477
+    }
+  },
+  "gate": {
+    "flags": {
+      "corruption_macro_above_current": true,
+      "corruption_macro_delta_at_least_point10": true,
+      "at_least3_positive_block_macros": true,
+      "at_least4_positive_corruption_conditions": true,
+      "corruption_macro_above_no_adapt": true,
+      "clean_delta_at_least_minus_point10": true
+    },
+    "positive_blocks": 3,
+    "passed": true,
+    "decision": "promising_source_upgrade_pending_confirmatory_review",
+    "stop_for_research_review": true
+  }
+}

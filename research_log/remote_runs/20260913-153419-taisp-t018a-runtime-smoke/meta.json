@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-153419-taisp-t018a-runtime-smoke",
+  "releaseId": "20260913-153309-taisp-t018a-nativept",
+  "sessionName": "autodl-20260913-153419-taisp-t018a-runtime-smoke",
+  "command": "export TAISP_SOURCE_REVISION=7c43f1f; export TAISP_REAL_MODELS=0; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -u -m taisp.analysis.run_t018a --smoke --output \"$AUTODL_ARTIFACTS_DIR/study\""
+}

@@ -98,6 +98,9 @@ These are developmental source-only results, with no independent confirmation or
 - Exactly 100 new COCO train2017 images, four precommitted blocks of 25, and seven unchanged conditions.
   Cohort SHA256 a01dfb1d40a6daceddccc1b7aa7f3f2e74871fd4a511d8d6c9acf8e50c2c111f.
   Zero overlap with 36 prior source IDs or all 5000 validation IDs. Selection and JPEG hashes are preserved.
+  The hash-ordered selection pool contained 13,762 available eligible images after exclusions, rather than
+  the entire train2017 split. Cohort preparation used the existing non-crowd positive-box annotation eligibility;
+  this metadata filtering is disclosed separately from the label-free adaptation path.
 - Original-condition frozen teacher predictions are computed once, filtered with existing score>=0.5/top20 ordering.
   Native targets contain detached boxes and integer labels only. All four native losses have unit weight.
 - Existing global 8-D ISP and adapt_clip_radius are unchanged: identity initialization, K=3, LR=0.1,
@@ -116,13 +119,16 @@ These are developmental source-only results, with no independent confirmation or
   component histories per episode, identity initialization and all frozen-state checks passed. No AP was computed.
 - Formal: 100 images, 700 shared teacher forwards, 1400 adaptive episodes, 21 prediction files and
   105 official aggregate/block evaluations. Completion elapsed {completion['elapsed_seconds']:.6f} s; exit status is preserved in train.log.
+  Started 2026-09-13 15:36:09 +08:00; finished 15:46:22 +08:00, exit 0.
 - A6000 cuda:0, Python 3.12.12, torch 2.4.0+cu121, float32 model/ISP, one CPU thread.
   Existing NVML warning did not prevent CUDA execution. Package versions, weight/state hashes and exact commands
   are in environment.json, meta.json and run.sh. Model work used GPU; official COCO aggregation used CPU.
 - Source state, requires_grad flags, eval modes and gradient absence are checked after every adaptive episode.
   Source and CLIP state hashes match before/after the whole study; every isolation check passes.
   ISP-owned phi remains zero with no accumulated gradient. Only the functional episodic phi is updated.
-  Empty-support episodes retain exact zero phi and the existing identity-ISP output semantics.
+  Empty-support exact-zero phi and existing identity-ISP output semantics passed the unit test;
+  there were no empty-support episodes in this formal cohort. All 700 method pairs have identical teacher supports,
+  and all saved phi, detector-gradient and CLIP-gradient coordinates are finite.
 
 '''
     report+=table('Aggregate official AP', ['Condition','No adapt','Current','NativePT','Native-current'],
@@ -144,6 +150,7 @@ Peak allocated memory includes the frozen state copy used for verification.
 
 The 100-image source set is developmental, not a publication or generalization claim. Diagnostics do not establish
 a causal explanation of AP changes. No threshold, loss weight, step count, learning rate or cohort was tuned.
+Both methods update every clean image; the smaller nativePT phi norms do not establish clean-image selectivity.
 T017-A remains numerically blocked and unchanged; no component-attribution conclusion follows from T018-A.
 
 ## Artifacts and next action

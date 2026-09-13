@@ -2280,3 +2280,50 @@ numericalcomponentandcross-runreconstruction beforecontinuation. Do notinterpret
 negative localization/confidence result. Preserveoriginalblocker. No newcohort/objective/
 localizationloss/CLIP/spatialadaptation/AP/FCOS/SSD/masksearch/calibration/meta-training/
 predictorredesign ordeploymentchange. No activejob remains.
+
+
+## T018-A — NEEDS_REVIEW — all fixed developmental performance criteria pass
+
+2026-09-13T15:49:14.418244+08:00. R029 / pointer53f8662; plan/cohort/config cd2ed29; code7c43f1f.
+Full report: `research_log/T018A_report.md`; all AP/AP50/AP75 tables, component histories,
+paired counts and 62-file hash manifest: `research_log/T018A/`.
+Raw formal run: `research_log/remote_runs/20260913-153604-taisp-t018a-source100/`.
+Raw smoke: `research_log/remote_runs/20260913-153419-taisp-t018a-runtime-smoke/`.
+
+Implementation adds isolated `taisp/analysis/native_pseudo_target.py`, `run_t018a.py`,
+`tests/test_native_pseudo_target.py`, `scripts/prepare_t018a.py`, `scripts/report_t018a.py`,
+`configs/t018a.yaml`, plan/cohort/state/handoff/progress and results. Existing current Ours,
+CLIP/ISP/source detector/corruptions/teacher selection and adapt_clip_radius are unchanged.
+The candidate uses detached original teacher boxes/int labels with unchanged score>=.5/top20;
+unit sum of all four native losses; same global8D identity, K3, LR.1, EPS1e-12 and CLIP norm transfer.
+Native loss sampling seed20260912 is reset per call via the existing oracle. No detector optimizer.
+Cohort100 new source images / four25 blocks precommitted before outcomes; zero overlap with
+36 prior-source or5000val IDs. Available eligible pool13762; annotation eligibility is disclosed
+in the plan/report. Adaptation never receives annotation targets; GT is used for official AP only in the run.
+
+- Baseline6passed2skipped1.40s; focused10passed2skipped1.70s;
+  full148passed10skipped6.94s. Runtime CUDA K3 smoke2images/28adaptiveepisodes passed;0AP.
+- Formal100images x7conditions x3methods:700teacherforwards,1400adaptiveepisodes,
+  21predictionfiles,105officialCOCOevals;15:36:09–15:46:22+08exit0;605.118242s collection/evaluation.
+  A6000cuda:0, Python3.12.12, torch2.4.0+cu121, float32, threads1. Exact commands/environment retained.
+- MacrocorruptionAP: no_adapt53.9149025430, current53.8914080261, nativePT54.1081492087.
+  Native-current **+0.216741182649AP**; native-noadapt **+0.193246665691AP**.
+- Block macro deltas: **+.437101816,+.0813741261,+.0264407625,-.205932539**; **3/4positive**.
+- Condition deltas gamma1/2,contrast1/2,cast1/2:
+  **+.439048692,+.177036614,+.465404115,-.0776929989,-.1033945134,+.400045186**; **4/6positive**.
+- CleanAP current59.7445635472,native60.3645280575: **+.619964510336AP**.
+  **All six frozen R029 criteria pass. Promising developmental source upgrade; not confirmation.**
+- Mean/median clean phi norm current.0386662962/.0320180971, native.0335422940/.0301730707.
+  Corrupt current.0309632282/.0269624116, native.0286475098/.0257296767. Bothupdate100%cleanimages.
+  Clean selectivity is not demonstrated. Paired prediction deltas mean -.27clean/-.243333corrupt.
+- Adaptation mean current~.301s/native~.368s; identical terminal-diagnostic convention,
+  excluding teacher/final inference/state checks/officialeval. See table for teacher-added latency.
+- All1400episodeisolation checks,source/CLIPbefore-afterstatehashes,freeze/eval/gradNone pass.
+  All700pairs share identical support; all phi/detector/CLIP gradient coordinates finite.
+  Empty-support behavior tested synthetically; formalcohort has0emptyepisodes.
+- All62rawfiles30,654,090bytes fetched and hashed. Source-only analysis; all negatives preserved.
+
+Recommend research review of a larger disjoint confirmatory source run before any cross-detector evaluation.
+No confirmation,FCOS/SSD,COCOval,weight/threshold/LR/K tuning,spatialISP or deployment replacement launched.
+T017 numerical blocker remains untouched. No activejob; stop NEEDS_REVIEW. Every15minuteheartbeat
+continues with user's GPU preference and unchanged-state silence.

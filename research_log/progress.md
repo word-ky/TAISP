@@ -559,3 +559,7 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T15:34:03.4781952+08:00 T018-A experimental native loss/driver added; current modules unchanged. Focused10passed2skipped1.70s onA6000 environment. Release20260913-153309-taisp-t018a-nativept. Next fullregression plus CUDAK3two-image smoke without AP.
 
 2026-09-13T15:36:32.3121768+08:00 T018-A code7c43f1f pushed. Smoke20260913-153419: full148passed10skipped6.94s; CUDA2images7conditions28adaptiveepisodes/14native,4finitecomponenthistories,K3,phi0zero,allstatechecks passed; 0AP,exit0. Formal20260913-153604-taisp-t018a-source100 started once with identical release153309/config/cohort onA6000cuda:0.
+
+2026-09-13T15:42:53.3810104+08:00 Existing taisp heartbeat verified ACTIVE every15minutes; appended userGPU preference to saved prompt through automation_update, preserving schedule/task scope/quiet unchanged behavior. Model forwards/gradients/adaptation preferA6000CUDA; lightweight summaries/officialCOCO aggregationCPU.
+
+2026-09-13T15:49:14.418244+08:00 T018-A fullrunexit0:100images/1400adaptiveepisodes/105officialevals,605.118242s collection+eval. All6R029flagsPASS; macrodelta+.216741182649AP vs current,+.193246665691vsraw;3/4blocks,4/6conditions;clean+.619964510336. Allisolation,700pairedsupports,finitegradients pass.62rawfiles30,654,090bytes fetched; archiveSHAa3fda68005b1367153d5eadbc0dde2351f64af61c71d0bf9351b01869e765578. Reportcomplete; NEEDS_REVIEW, noactivejob.
