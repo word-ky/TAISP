@@ -788,3 +788,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 05:29+08 T025-A complete:48candidate+48reference CUDAexit0;30focused/full212pass11skip. FixedgateFAIL overallDelta23/48/corrupt14/24,overallmediannegative,2/4blocks.48integritypass/nozero. Report/raw/tables complete; close exactgeometryfamily perR040 and stopNEEDS_REVIEW.
 
 2026-09-14 06:53+08 R041/T026-A read; T025numericmisquote noted, authoritativea268f90 preserved. Baseline18pass3.90s.24fresh selectedseed20260926. Memoryavailability80classes>=16 (minimumtoaster23,hairdryer26); skip unreadable JPEGs using inherited os.access. SSHone timeout recoveredstatus; noactivejob. Freeze memoryhashselection before building.
+
+2026-09-14 06:57+08 T026memoryselection:1280instances/1187distinctcleantrainimages,16per80classes,zeroaudit/prior/valoverlap;source manifestccff02e5c5786def9b6fcdfe4d4e98cfa3f23716c1521039852d486919f50766.13memory/inheritedtests pass2.89s. Commitmanifest/code before GPUmemory build.
