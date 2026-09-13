@@ -794,3 +794,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 07:01+08 T026memoryGPUcomplete1280entries/1187images;healthy80x16,zerooverlap. Firstlauncher065756SSHtimeout leftmetaonly/no run.sh/tmux, confirmedbefore065856retry. Bothreceiptsretained. Commitmemorybeforecandidateoutcomes.
 
 2026-09-14 07:03+08 T026memory1280healthpass/maxnormerror9.547524437714117e-08;locked/pushed2befc7f. Candidateincrement24tests pass3.83s. Predicted-class-only stabletop4,detachedanchor; no auditGT. Candidate GPU48 next.
+
+2026-09-14 07:08+08 T026all48candidate9.698264s complete,anchor tensors/receipts locked/pushedb4c1c04 before reference.26focused/full220pass11skip. Futureexclusion manifest includesall1187memoryimages+24audit,priorunion2687. Reference deployscp timeout recovered via existingworkflow legacySCP retry, release070621 complete; source/candidatecodeunchanged.
