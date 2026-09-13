@@ -1,0 +1,22 @@
+[autodl] run_id=20260913-123142-taisp-t015a-differential-subspace
+[autodl] started_at=2026-09-13T12:31:49+08:00
+.............s.......s.........s....s..s.............s......s........... [ 49%]
+......................................s..s.............................. [ 99%]
+s                                                                        [100%]
+=============================== warnings summary ===============================
+tests/test_demo.py::test_cuda_demo_matches_cpu
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  /home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+    warnings.warn("Can't initialize NVML")
+
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.MessageMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+tests/test_gradient_conflict.py::test_independent_copies_literal_sgd_and_centered_energy
+  <frozen importlib._bootstrap>:488: DeprecationWarning: Type google._upb._message.ScalarMapContainer uses PyType_Spec with a metaclass that has custom tp_new. This is deprecated and will no longer be allowed in Python 3.14.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+135 passed, 10 skipped, 4 warnings in 6.49s
+{"triage": {"task_flags": {"overall_median_R_extra_ge_1_10": true, "corrupted_median_R_extra_ge_1_10": true, "at_least3_block_medians_gt_1_05": true}, "pseudo_flags": {"overall_positive_C_diff_ge20": false, "corrupted_positive_C_diff_ge10": false, "overall_median_C_diff_positive": true, "at_least3_positive_block_medians": true}, "task_relevant": true, "pseudo_differentially_useful": false, "task_blocks_above_1_05": 4, "positive_C_diff_blocks": 3, "decision": "close_fixed_pseudo_spatial_branch", "stop_for_research_review": true}, "overall": {"n": 32, "metrics": {"R_extra": {"valid_count": 32, "mean": 2.217245219269336, "median": 1.8618055863655198, "min": 1.2080317560298706, "max": 5.412339587017825, "positive_count": 32}, "f_diff_task": {"valid_count": 32, "mean": 0.6826065851719924, "median": 0.7114999121593318, "min": 0.3147590658872364, "max": 0.9658626405972701, "positive_count": 32}, "f_diff_pseudo": {"valid_count": 32, "mean": 0.6806458494004635, "median": 0.6790214385648432, "min": 0.35109360273050805, "max": 0.9962143358078989, "positive_count": 32}, "pseudo_diff_amplitude_fraction": {"valid_count": 32, "mean": 0.8166815469012151, "median": 0.8239821493010875, "min": 0.5925618975986954, "max": 0.9981053730980756, "positive_count": 32}, "C_shared": {"valid_count": 32, "mean": 6.544857517699551e-05, "median": 0.0012956724581224986, "min": -0.15859851923977616, "max": 0.19233676080136683, "positive_count": 16}, "C_diff": {"valid_count": 32, "mean": -0.017082478849715754, "median": 0.010439421511831184, "min": -1.0249533926301289, "max": 1.3431246260519774, "positive_count": 18}, "D_reconstructed": {"valid_count": 32, "mean": -0.017017030274538755, "median": 0.004121559760509618, "min": -1.0283087648203664, "max": 1.3588110394801105, "positive_count": 16}, "D_spatial_saved": {"valid_count": 32, "mean": -0.017017030274538776, "median": 0.004121559760509612, "min": -1.0283087648203662, "max": 1.3588110394801105, "positive_count": 16}, "D_reconstruction_error": {"valid_count": 32, "mean": 2.008484524529397e-17, "median": 6.938893903907228e-18, "min": 0.0, "max": 2.220446049250313e-16, "positive_count": 21}, "cos_shared": {"valid_count": 32, "mean": 0.08052598282254353, "median": 0.03239349713038187, "min": -0.97001343502567, "max": 0.980001238637206, "positive_count": 16}, "cos_diff": {"valid_count": 32, "mean": 0.012594253073565459, "median": 0.06949176993564375, "min": -0.9976996729657257, "max": 0.9972063276211999, "positive_count": 18}, "shared_dot": {"valid_count": 32, "mean": 0.004507357921464244, "median": -0.00023140639934550496, "min": -0.1054179363028416, "max": 0.32230681874288675, "positive_count": 16}, "diff_dot": {"valid_count": 32, "mean": 0.03448473818637704, "median": 0.002056415950157977, "min": -2.4804612914991147, "max": 5.076076958215886, "positive_count": 18}}, "zero_norm_counts": {"task_diff": 0, "pseudo_diff": 0, "either_diff": 0, "either_shared": 0}, "diff_dot_sign_counts": {"-1": 14, "0": 0, "1": 18}}}
+[autodl] finished_at=2026-09-13T12:31:58+08:00
+[autodl] exit_code=0

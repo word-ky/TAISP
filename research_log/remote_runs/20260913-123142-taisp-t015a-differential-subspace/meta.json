@@ -1,0 +1,6 @@
+{
+  "runId": "20260913-123142-taisp-t015a-differential-subspace",
+  "releaseId": "20260913-123133-ttfl-pfl-baseline",
+  "sessionName": "autodl-20260913-123142-taisp-t015a-differential-subspace",
+  "command": "unset CUBLAS_WORKSPACE_CONFIG; export TAISP_SOURCE_REVISION=4860be7 TAISP_REAL_MODELS=0 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1; /home/liujianhua/wjq/TAISP/.venv/bin/python -m pytest tests -q && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.differential_subspace --input-root /home/liujianhua/wjq/TAISP/runs/20260913-113401-taisp-t014a1-common-jacobian/artifacts/audit --manifest research_log/T015A_input_manifest.json --output \"$AUTODL_ARTIFACTS_DIR/audit\""
+}

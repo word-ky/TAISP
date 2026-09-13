@@ -2166,3 +2166,39 @@ Numerical correction validated; current fixedpartition/pseudodirection fails the
 utility conjunction. No finite-step/AP claim or general spatial-impossibility conclusion.
 StopafterA1 forresearchreview; noT014-B, spatialdeployment, CLIPscaling, meta-training,
 predictorredesign, FCOS/SSD/AP, newcohort ormask/regionsearch started. No activejob remains.
+
+---
+
+## T015-A — NEEDS_REVIEW — 2026-09-13T12:35:45.8294123+08:00
+
+R026/f27a996 completed; priorT014-A/A1closed. Plan/inputhashcommitbe87bcb, code4860be7.
+Run20260913-123142-taisp-t015a-differential-subspace, release122950;
+12:31:49–12:31:58+08exit0. Fullreport research_log/T015A_report.md; allscope/per-episode
+metrics, norms, s/dvectors, errors, zero/signcounts andflags inT015A/tables.md.
+
+- OnlyauthoritativefreshA1 reference obj/bg used. recordsSHA
+  a0a8c59dbb6b2fd83343f774755c6061a28542bce3c1d2f00b1458e8bb655a17;
+  all32individualfilehashes pinned/verified. Original32order,16clean/16corrupted,
+  4blocks andmask/support/case metadata retained; oldreverse/debug excluded.
+- Analysis-only float64 orthogonalshared/diff decomposition, originalEPS1e-12.
+  Maxvectorerror1.25668713465e-16, energyerror8.88178419700e-16,
+  orthogonality4.05491612510e-17; maxsavedD_spatialreconstruction2.22044604925e-16
+  onall32 (bound1e-12). No zero differential/shared norm cases.
+- Baseline11passed2.28s; focused13passed2.05s; fullregression135passed10skipped6.49s.
+  Syntheticshared/opposing/one-region/zerocases, nullcosinecounts, exacttriageboundaries.
+  Python3.12.12 numpy1.26.4 float64CPU audit. GPUavailableforapplicableregression;
+  userGPUpreference recorded. Exactcommands/environment inreport/rawmeta/run.sh.
+- R026taskrelevanceYES: overall/corruptmedianR_extra1.86180558637,4/4blockmedians>1.05.
+  R_extraalgebraicallymatchespriorR_task up toepsilonplacement; notindependentreplication.
+  Taskdifferentialenergyfractionmedian.711499912159, pseudomedian.679021438565.
+- R026pseudodifferentialutilityNO: C_diffpositive18/32(<20),9/16corrupt(<10).
+  OverallmedianC_diff.0104394215118 and3/4positiveblockmedians passbutconjunctionfails.
+  C_diffmean-.0170824788497; cos_diffmedian.0694917699356;18positive14negative0zero.
+  Pseudodifferentialamplitudefractionmedian.823982149301; capacityexistsbutguidanceinconsistent.
+- Audit.023246104s; zero newmodel/ISP/CLIP/optimizer/AP calls. All7rawfiles154584bytes
+  fetched andSHAmanifestwritten. No scientificthreshold, sample, mask or objective change.
+
+Closefixedpseudo-spatialbranch perR026: taskcapacityYES/guidanceutilityNO. No spatial
+impossibilitytheorem, finite-step/APclaim orrescueofR024. StopafterT015-A forresearchreview.
+NoT014-B/T015-B/differential-onlydeployment/spatialprototype/masksearch/regionalCLIP/
+source-meta-training/redesign/newcohort/FCOS/SSD/AP/gate-dose tuning. No activejob remains.

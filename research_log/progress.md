@@ -533,3 +533,7 @@ crossterms, errors, twoalgebraiccounterfactuals rendered toT013G/tables.md. Stop
 2026-09-13T12:27:33.4292103+08:00 R026/f27a996 synchronized during GPU preference update. T014-A/A1 accepted/closed; T015-A saved-array task authorized. Verified33 pinned inputs/order/reference provenance with no new summary outcomes; unchanged A1 baseline11passed2.28s. Pre-outcome plan written; existing GPU preference retained.
 
 2026-09-13T12:31:17.1777836+08:00 T015-A analysis-only decomposition/triage implemented; reuse A1 reference records and spatial EPS. Synthetic+affected focused13passed2.05s on unchanged-version A6000 environment; syntax passed. Release20260913-122950-taisp-t015a-differential-subspace deployed; no new scientific summaries computed.
+
+2026-09-13T12:32:20.2485818+08:00 T015-A formalrun20260913-123142 launchedonce, source4860be7/release122950; fullregression thenfrozenarrayaudit. GPUavailableforapplicableregression, tiny16DalgebraCPU; no modelaudit calls.
+
+2026-09-13T12:35:45.8294123+08:00 T015-A complete exit0:135passed10skipped6.49s. Audit.023246104s CPU,0model/optimizer calls,32originalrecords; allD reconstructions passmax2.22044604925e-16. TaskcapacityYES, pseudo differentialutilityNO18/32overall9/16corrupt; closefixedpseudo-spatialbranch byR026. All7rawfiles154584bytes fetched/hashed; fullreport/tablesready. StopNEEDS_REVIEW; GPUpriority preference retained.

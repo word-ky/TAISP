@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "episodes": 32,
+  "elapsed_seconds": 0.023246104014106095,
+  "triage": {
+    "task_flags": {
+      "overall_median_R_extra_ge_1_10": true,
+      "corrupted_median_R_extra_ge_1_10": true,
+      "at_least3_block_medians_gt_1_05": true
+    },
+    "pseudo_flags": {
+      "overall_positive_C_diff_ge20": false,
+      "corrupted_positive_C_diff_ge10": false,
+      "overall_median_C_diff_positive": true,
+      "at_least3_positive_block_medians": true
+    },
+    "task_relevant": true,
+    "pseudo_differentially_useful": false,
+    "task_blocks_above_1_05": 4,
+    "positive_C_diff_blocks": 3,
+    "decision": "close_fixed_pseudo_spatial_branch",
+    "stop_for_research_review": true
+  },
+  "max_D_reconstruction_error": 2.220446049250313e-16,
+  "new_model_calls": 0,
+  "optimizer_steps": 0
+}
