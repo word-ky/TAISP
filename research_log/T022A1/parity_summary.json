@@ -1,0 +1,26 @@
+{
+  "records": 28,
+  "all_numerical_and_isolation_passed": true,
+  "completion": {
+    "status": "completed",
+    "records": 28,
+    "expected_records": 28,
+    "all_passed": true,
+    "hashes": {
+      "source_hash_unchanged": true,
+      "clip_hash_unchanged": true,
+      "clip_parameters_frozen_grad_none": true,
+      "clip_all_modules_eval": true,
+      "clip_state_hash_unchanged": true
+    },
+    "evaluations": 0
+  },
+  "max_relative_l2": {
+    "pseudo": 4.772744148301399e-06,
+    "clip": 4.2817806631990866e-07,
+    "mean_update_c0_limit": 4.3659021589596015e-06
+  },
+  "minimum_cosine": 0.9999999999904642,
+  "maximum_image_error": 0.0,
+  "maximum_clip_norm_relative_error": 2.137959764238625e-07
+}

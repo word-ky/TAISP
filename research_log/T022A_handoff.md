@@ -1,12 +1,12 @@
-# T022-A BLOCKED — pre-AP CLIP wrapper initialization
+# T022-A1 BLOCKED — runtime edge repeatability
 
-2026-09-13. R034/6001e14; plan b677a0c; code e8272c5.
-Run 20260913-234326-taisp-t022a-numerical-parity ended exit 1; no active job.
-Full 182 passed / 10 skipped; focused 20 passed / 1 skipped.
-First of 28 real records passes all numerical checks but fails CLIP eval isolation.
-Source/CLIP state hashes unchanged. Standalone parity entry omitted wrapper eval;
-accepted and candidate adaptation runtimes already initialize it correctly.
-Stop per R034; do not run AP or silently patch/re-run. This is an implementation
-blocker, not a scientific FAIL. Minimal proposed repair and full receipts are in
-research_log/T022A_report.md. Remaining 27 checks, real K3 smoke, formal driver
-and 200-image study are pending. Await new explicit research queue decision.
+2026-09-14 +08, R035/0b46353. Code7001d0c; no active run.
+Parity repair8948d4c passed28real checks, separateCLIPisolation and hashes;
+parityrun20260914-001023,receipt c713150. Smoke20260914-001557 exit1 after
+186passed10skipped: repeated empty/full-mask K3 states not exactly equal.
+Empty-mask maxstate difference1.458087936e-4 /relativeL2.0045155768;
+fullmask2.7939677e-9. Empty support exactzero. All other edge/isolationchecks pass.
+Stop per R035, no second repair, noAP. Normal14candidateepisode smoke incomplete;
+only one current row persisted plus six complete edge trajectories. Not scientificFAIL.
+See research_log/T022A1_report.md and T022A1/repeat_differences.json. Original
+T022Acohort/formula/runtime/tolerances unchanged. Await explicit new research decision.

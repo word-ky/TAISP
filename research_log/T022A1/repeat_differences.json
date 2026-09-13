@@ -1,0 +1,303 @@
+{
+  "empty_mask": {
+    "checks": {
+      "reset_zero": true,
+      "three_updates": true,
+      "fixed_support_count": true,
+      "dose_bounds": true,
+      "mean_one": true,
+      "zero_common_no_update": true,
+      "processed_images_finite": true,
+      "final_image_matches_states": true,
+      "inactive_gradients_zero": true,
+      "repeat_deterministic": false
+    },
+    "steps": [
+      {
+        "step": 0,
+        "differences": {
+          "phi": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "detector_gradient": {
+            "max_absolute": 1.4901161193847656e-08,
+            "relative_l2": 8.691199283617268e-08
+          },
+          "common_clip_gradient": {
+            "max_absolute": 7.450580596923828e-09,
+            "relative_l2": 8.68755322891943e-08
+          },
+          "state_delta": {
+            "max_absolute": 1.862645149230957e-09,
+            "relative_l2": 1.8193839710956473e-07
+          }
+        }
+      },
+      {
+        "step": 1,
+        "differences": {
+          "phi": {
+            "max_absolute": 1.862645149230957e-09,
+            "relative_l2": 1.8193839710956473e-07
+          },
+          "detector_gradient": {
+            "max_absolute": 8.23289155960083e-05,
+            "relative_l2": 0.000377183322433473
+          },
+          "common_clip_gradient": {
+            "max_absolute": 1.862645149230957e-09,
+            "relative_l2": 1.9170417403125508e-08
+          },
+          "state_delta": {
+            "max_absolute": 3.7210993468761444e-06,
+            "relative_l2": 0.0003769823668121312
+          }
+        }
+      },
+      {
+        "step": 2,
+        "differences": {
+          "phi": {
+            "max_absolute": 3.7187710404396057e-06,
+            "relative_l2": 0.00019526991133612633
+          },
+          "detector_gradient": {
+            "max_absolute": 0.0038295388221740723,
+            "relative_l2": 0.015405530177496058
+          },
+          "common_clip_gradient": {
+            "max_absolute": 4.217587411403656e-05,
+            "relative_l2": 0.0006420261696198365
+          },
+          "state_delta": {
+            "max_absolute": 0.00014828029088675976,
+            "relative_l2": 0.012921090603695305
+          }
+        }
+      },
+      {
+        "step": 3,
+        "differences": {
+          "phi": {
+            "max_absolute": 0.00014580879360437393,
+            "relative_l2": 0.004515576814211109
+          },
+          "detector_gradient": {
+            "max_absolute": 0.006162457168102264,
+            "relative_l2": 0.01864022849429507
+          },
+          "common_clip_gradient": {
+            "max_absolute": 0.00022677332162857056,
+            "relative_l2": 0.00308185252380196
+          },
+          "state_delta": {
+            "max_absolute": 0.0001804016064852476,
+            "relative_l2": 0.018392163942456293
+          }
+        }
+      }
+    ]
+  },
+  "full_mask": {
+    "checks": {
+      "reset_zero": true,
+      "three_updates": true,
+      "fixed_support_count": true,
+      "dose_bounds": true,
+      "mean_one": true,
+      "zero_common_no_update": true,
+      "processed_images_finite": true,
+      "final_image_matches_states": true,
+      "inactive_gradients_zero": true,
+      "repeat_deterministic": false
+    },
+    "steps": [
+      {
+        "step": 0,
+        "differences": {
+          "phi": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "detector_gradient": {
+            "max_absolute": 2.9802322387695312e-08,
+            "relative_l2": 1.3025646164578195e-07
+          },
+          "common_clip_gradient": {
+            "max_absolute": 1.862645149230957e-09,
+            "relative_l2": 3.071513921237782e-08
+          },
+          "state_delta": {
+            "max_absolute": 9.313225746154785e-10,
+            "relative_l2": 1.2368432669974623e-07
+          }
+        }
+      },
+      {
+        "step": 1,
+        "differences": {
+          "phi": {
+            "max_absolute": 9.313225746154785e-10,
+            "relative_l2": 1.2368432669974623e-07
+          },
+          "detector_gradient": {
+            "max_absolute": 7.450580596923828e-08,
+            "relative_l2": 3.15161009632189e-07
+          },
+          "common_clip_gradient": {
+            "max_absolute": 1.862645149230957e-09,
+            "relative_l2": 2.347887029120273e-08
+          },
+          "state_delta": {
+            "max_absolute": 2.7939677238464355e-09,
+            "relative_l2": 3.037968840498388e-07
+          }
+        }
+      },
+      {
+        "step": 2,
+        "differences": {
+          "phi": {
+            "max_absolute": 2.7939677238464355e-09,
+            "relative_l2": 1.7349651130063365e-07
+          },
+          "detector_gradient": {
+            "max_absolute": 1.4901161193847656e-07,
+            "relative_l2": 5.736664800310772e-07
+          },
+          "common_clip_gradient": {
+            "max_absolute": 7.450580596923828e-09,
+            "relative_l2": 9.445251475285141e-08
+          },
+          "state_delta": {
+            "max_absolute": 3.958120942115784e-09,
+            "relative_l2": 3.8022688643282726e-07
+          }
+        }
+      },
+      {
+        "step": 3,
+        "differences": {
+          "phi": {
+            "max_absolute": 2.7939677238464355e-09,
+            "relative_l2": 7.933545179559295e-08
+          },
+          "detector_gradient": {
+            "max_absolute": 1.4901161193847656e-07,
+            "relative_l2": 4.779492514675545e-07
+          },
+          "common_clip_gradient": {
+            "max_absolute": 3.725290298461914e-09,
+            "relative_l2": 4.6549464675632433e-08
+          },
+          "state_delta": {
+            "max_absolute": 2.7939677238464355e-09,
+            "relative_l2": 2.3099510780604283e-07
+          }
+        }
+      }
+    ]
+  },
+  "empty_support": {
+    "checks": {
+      "reset_zero": true,
+      "three_updates": true,
+      "fixed_support_count": true,
+      "dose_bounds": true,
+      "mean_one": true,
+      "zero_common_no_update": true,
+      "processed_images_finite": true,
+      "final_image_matches_states": true,
+      "inactive_gradients_zero": true,
+      "repeat_deterministic": true,
+      "empty_support_identity": true
+    },
+    "steps": [
+      {
+        "step": 0,
+        "differences": {
+          "phi": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "detector_gradient": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "common_clip_gradient": {
+            "max_absolute": 7.450580596923828e-09,
+            "relative_l2": 8.442784176398518e-08
+          },
+          "state_delta": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          }
+        }
+      },
+      {
+        "step": 1,
+        "differences": {
+          "phi": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "detector_gradient": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "common_clip_gradient": {
+            "max_absolute": 7.450580596923828e-09,
+            "relative_l2": 9.65886808895736e-08
+          },
+          "state_delta": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          }
+        }
+      },
+      {
+        "step": 2,
+        "differences": {
+          "phi": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "detector_gradient": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "common_clip_gradient": {
+            "max_absolute": 1.862645149230957e-09,
+            "relative_l2": 3.071513921237782e-08
+          },
+          "state_delta": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          }
+        }
+      },
+      {
+        "step": 3,
+        "differences": {
+          "phi": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "detector_gradient": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          },
+          "common_clip_gradient": {
+            "max_absolute": 3.725290298461914e-09,
+            "relative_l2": 5.11918990965634e-08
+          },
+          "state_delta": {
+            "max_absolute": 0.0,
+            "relative_l2": 0.0
+          }
+        }
+      }
+    ]
+  }
+}
