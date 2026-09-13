@@ -50,7 +50,7 @@ def tensor_check(value, reference, *, atol, rtol):
             'max_error_over_bound':(difference/bound).max().item(), 'atol':atol,'rtol':rtol}
 
 
-def identity_gradients(image, isp, mask, loss_fn):
+def identity_gradients(image, isp, mask, loss_fn, *, return_cotangent=False):
     phi = image.new_zeros(8,requires_grad=True)
     global_image = isp(image,phi)
     loss,components = loss_fn(global_image)
@@ -59,13 +59,14 @@ def identity_gradients(image, isp, mask, loss_fn):
     regional_image = compose(image,isp,mask,obj,bg)
     go,gb = torch.autograd.grad(regional_image,(obj,bg),grad_outputs=cotangent.detach())
     assert all(torch.isfinite(v).all() for v in (loss,cotangent,direct,go,gb)), 'Non-finite identity gradient.'
-    return {'loss':loss.item(),'components':{k:v.item() for k,v in components.items()},
+    record = {'loss':loss.item(),'components':{k:v.item() for k,v in components.items()},
             'global':direct.detach().cpu().tolist(),'object':go.detach().cpu().tolist(),'background':gb.detach().cpu().tolist(),
             'image_cotangent_norm':cotangent.norm().item(),
             'saturation_at_identity':((global_image<=1e-4)|(global_image>=1-1e-4)).float().mean().item(),
             'checks':{'identity_image':tensor_check(global_image,image,atol=2e-7,rtol=1e-6),
                       'regional_global_output':tensor_check(regional_image,global_image,atol=2e-7,rtol=1e-6),
                       'regional_gradient_sum':tensor_check(go+gb,direct,atol=1e-7,rtol=1e-5)}}
+    return (record,cotangent.detach()) if return_cotangent else record
 
 
 def cosine(x,y):
