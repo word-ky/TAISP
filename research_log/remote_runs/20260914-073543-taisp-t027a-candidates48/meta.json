@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-073543-taisp-t027a-candidates48",
+  "releaseId": "20260914-073411-taisp-t027a-candidate",
+  "sessionName": "autodl-20260914-073543-taisp-t027a-candidates48",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-073411-taisp-t027a-candidate && export TAISP_SOURCE_REVISION=c713818 && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.flip_gradient_consensus candidate --manifest research_log/T027A/candidate_images.json --preflight-receipt /home/liujianhua/wjq/TAISP/shared/t027a_commutation.json --output \"$AUTODL_ARTIFACTS_DIR/candidates\""
+}
