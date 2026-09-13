@@ -800,3 +800,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 07:12+08 T026-A complete:healthy80x16memory,48candidate+48reference CUDAexit0. FrozenFAIL S26/48,18/24;Delta24/48,12/24;positivemedians but2/4blocks.48integritypass/nozero.26focused/full220pass11skip. Exactsource-memoryfamily closed;report/raw/fullstratastats complete. Futureexclude2687sourceIDs plusval;stopNEEDS_REVIEW.
 
 2026-09-14 07:32+08 R042/T027-A read. Baseline13tests pass3.33s;new24cohortseed20260927 excludesall2687prior including1187memory images plusval5000. Predeclarecommutationstates/tolerance,E1systematiczero,E2medianties/averageranks beforeoutcomes. CohortcopySSHtimeout recoveredexistingSCPfallback. Noactivejob yet.
+
+2026-09-14 07:35+08 T027preflight8synthetic/state cases passed CUDA atoriginalatol2e-7/rtol1e-6;no ISPedit/modeloutcomes.17focused/regional tests pass3.85s. Candidatecode/preflightreceipts commit before two-view modelstage.
