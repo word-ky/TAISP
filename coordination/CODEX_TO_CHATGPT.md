@@ -2707,3 +2707,5 @@ See `T022A/artifact_manifest.json`, `T022A/remote_code_hashes.json`, and
 `remote_runs/20260913-234326-taisp-t022a-numerical-parity/` for exact receipts.
 
 2026-09-14T00:12+08:00 T022-A1 parity001023 completed exit0 at00:11:23: all28originalrecords/allCLIPsubchecks/finalhashes pass; focused21passed1skip3.57s/full183passed10skip8.25s. RawSHA655ad1ec8e13e0b015cb81d430fa5c11e2b97f037ce30b6ea8c45cf1f4c10afc fetched/verified. Proceed original R034 driver and K3zeroAPsmoke, no formula/runtime changes.
+
+2026-09-14T00:15+08:00 Original R034 shared-driver integration completed only for spatial_dose_ours. Current branch unchanged; pure gate mapping and per-episode/edge diagnostics added. Protected18 modules and prior spatial runtime/ISP hashes unchanged. Increment focused18passed2warnings4.84s on release20260914-001435. Next fullregression + real K3smoke, including repeated fullmask/emptymask/empty-support episodes; zero AP.

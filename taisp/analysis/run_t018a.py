@@ -135,6 +135,9 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
     if study=='T021-A':
         assert config['consensus_iou']==.60 and transport_fits is None
         interpretation='T021-A fixed flip-consensus support filter; no training or cross-detector claim'
+    if study=='T022-A':
+        assert config['spatial_rho']==.5 and transport_fits is None
+        interpretation='T022-A fixed direction-locked two-region dose; no training or cross-detector claim'
     meta.update(interpretation=interpretation,
                 smoke=smoke,cases=CASE_NAMES,methods=methods,source_state_sha256=source_hash,clip_state_sha256=clip_hash,
                 cohort_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
@@ -187,16 +190,23 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
                     consensus_seconds=time.perf_counter()-begin
                     consensus_receipt['current_top20_count']=len(selected['boxes'])
                     consensus_receipt['retained_to_current_top20_ratio']=len(consensus_support['boxes'])/len(selected['boxes']) if len(selected['boxes']) else None
+                if study=='T022-A':
+                    from taisp.isp.spatial import support_mask
+                    mask,mask_rectangles=support_mask(image,selected['boxes'])
+                    frozen_mask=mask.clone()
                 counts={}
                 for method in methods[1:]:
                     episode_support=consensus_support if method=='flip_consensus_ours' else selected
                     frozen_episode_support={k:v.clone() for k,v in episode_support.items()} if method=='flip_consensus_ours' else frozen_support
-                    loss=DetectorNativeLoss(source,{'base':episode_support},'det_pseudo') if method in ('current_ours','grad_transport_ours','flip_consensus_ours') else NativePseudoTargetLoss(
+                    loss=DetectorNativeLoss(source,{'base':episode_support},'det_pseudo') if method in ('current_ours','grad_transport_ours','flip_consensus_ours','spatial_dose_ours') else NativePseudoTargetLoss(
                         source,selected,seed=config['seed'],component_set='full' if method=='nativePT_ours' else method)
                     torch.cuda.synchronize()
                     torch.cuda.reset_peak_memory_stats()
                     begin=time.perf_counter()
-                    if method=='grad_transport_ours':
+                    if method=='spatial_dose_ours':
+                        from taisp.tta.spatial_dose import adapt_spatial_dose
+                        result=adapt_spatial_dose(image,isp,loss,clip,mask,steps=config['semantic_steps'],lr=config['semantic_lr'],eps=config['radius_eps'])
+                    elif method=='grad_transport_ours':
                         from taisp.tta.gradient_transport import adapt_gradient_transport
                         result=adapt_gradient_transport(image,isp,loss,clip,q,steps=config['semantic_steps'],lr=config['semantic_lr'],eps=config['radius_eps'])
                     else:
@@ -212,7 +222,10 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
                     assert all(isolation.values()),isolation
                     if not len(episode_support['boxes']):
                         assert torch.equal(result.phi,torch.zeros_like(result.phi))
-                        assert torch.equal(result.enhanced,isp(image,torch.zeros_like(result.phi)))
+                        if method=='spatial_dose_ours':
+                            assert torch.equal(result.enhanced,isp(image,image.new_zeros(8)))
+                        else:
+                            assert torch.equal(result.enhanced,isp(image,torch.zeros_like(result.phi)))
                     with torch.no_grad():
                         prediction=source(result.enhanced)[0]
                     predictions[f'{case}_{method}'].extend(prediction_records(info['image_id'],prediction))
@@ -236,7 +249,17 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
                         row['consensus_setup_seconds']=consensus_seconds
                         row['deploy_seconds']+=consensus_seconds
                         row['isolation']['all_steps_use_frozen_support']=all(d['support_count']==len(episode_support['boxes']) for d in result.diagnostics)
+                    if method=='spatial_dose_ours':
+                        from .spatial_dose_study import episode_receipt,edge_smoke
+                        row['spatial']=episode_receipt(image,isp,mask,result)
+                        row['spatial']['mask_rectangles']=mask_rectangles
+                        row['isolation'].update(row['spatial']['checks'])
+                        row['isolation']['mask_unchanged']=torch.equal(mask,frozen_mask)
+                        row['isolation']['clip_frozen_eval_grad_none']=all(not p.requires_grad and p.grad is None for p in clip.parameters()) and all(not m.training for m in clip.modules())
+                        if smoke and i==0 and family==CASES_ALL[0][0] and severity==CASES_ALL[0][1]:
+                            edge_smoke(image,isp,source,loss,clip,selected,output/'spatial_edges.json',config)
                     handle.write(json.dumps(row,allow_nan=False)+'\n');handle.flush();rows.append(row)
+                    if method=='spatial_dose_ours':assert all(row['isolation'].values()),row['isolation']
             print(f'completed {i+1}/{len(images)} image_id={info["image_id"]} elapsed={time.perf_counter()-started:.1f}s',flush=True)
     pd=output/'predictions';pd.mkdir()
     for name,records in predictions.items():
@@ -251,6 +274,9 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
     if study=='T021-A':
         from .flip_consensus_study import support_summary
         write_json(output/'support_diagnostics.json',support_summary(rows))
+    if study=='T022-A':
+        from .spatial_dose_study import spatial_summary
+        write_json(output/'spatial_diagnostics.json',spatial_summary(rows))
     metrics={}
     summary=None
     if not smoke:
@@ -264,7 +290,10 @@ def run(config, manifest_path, output, smoke=False, transport_fits=None):
             for group,values in replication_ap(coco,ids,records,manifest['replication_blocks']).items():
                 metrics.setdefault(group,{})[name]=values
         write_json(output/'metrics.json',metrics)
-        if study=='T021-A':
+        if study=='T022-A':
+            from .spatial_dose_study import spatial_advancement
+            summary=spatial_advancement(metrics,all(final_isolation.values()) and all(all(r['isolation'].values()) for r in rows))
+        elif study=='T021-A':
             from .flip_consensus_study import consensus_advancement
             summary=consensus_advancement(metrics,all(final_isolation.values()) and all(all(r['isolation'].values()) for r in rows))
         elif study=='T020-A':
