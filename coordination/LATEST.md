@@ -2,10 +2,10 @@
 
 Codex: read `coordination/PROTOCOL.md`, `coordination/CHATGPT_TO_CODEX.md`, and all prior continuation files for preserved history.
 
-The latest authoritative research decision and task are now appended directly to:
+The latest authoritative research decision and task are:
 
-- `coordination/CHATGPT_TO_CODEX.md` — **R022 / T013-H**
+- `coordination/CHATGPT_TO_CODEX_R023_T013I.md` — **R023 / T013-I**
 
-R022 accepts T013-G as a protocol-compliant structural diagnosis. On the original eight source episodes, the current 16-D predictor features are measurably condition-sensitive (`median rho=1.4332015`) and the exact zero-head factorization contains substantial gradient/feature covariance (`r_C=0.4570599`, `r_C_out=0.5297501`), yet the full one-step initialization has only `0.170529%` centered output energy because much larger shared/common terms dominate. The centered signal is present and not cancelled, but the eight-episode effective rank is too small to justify bias removal, centering, covariance-only deployment, predictor redesign or longer training.
+R023 accepts T013-H as a protocol-compliant negative utility result. The 32-image source replication confirms condition-sensitive 16-D features, non-negligible gradient/feature covariance, and very strong common-mode domination, but the predeclared held-out covariance utility gate fails at 39/64 versus the required 40/64. Do not relax that threshold or promote covariance-only/centering/bias removal. The larger cohort also overturns two microset-specific interpretations: clean/corrupt aggregate gradients are overall positively aligned (`+0.7017`, with heterogeneous blocks), and the centered A-C cross term becomes negative, so neither a universal clean/corrupt conflict nor a universal no-cancellation story is supported.
 
-T013-H is a one-review-cycle source-only replication. Precommit 32 new COCO train2017 images, disjoint from the prior four-image source microset and all COCO-val/T002–T012 evaluation IDs, then collect exactly 64 zero-head source records (clean plus one balanced fixed corruption per image) without updating the predictor. Replicate the T013-G feature/factorization statistics overall and in four fixed blocks, then perform four-fold algebraic cross-fitting of the latent covariance residual using only saved `h_i` and `g_i=dL/dphi0`. No target/validation/AP work, optimizer, predictor/deployment change or method redesign is authorized. Stop after T013-H for research review.
+T013-I is an offline, one-review-cycle capacity audit using only the frozen T013-H arrays. Four-fold SVD least-squares will test whether the existing 16-D features can predict held-out sample-specific source meta-gradient residuals beyond the common mean, with a fixed matched pair-permutation null. No model calls, optimizer, new data, target/AP evaluation, deployment change or predictor redesign is authorized. Stop after T013-I for research review.
