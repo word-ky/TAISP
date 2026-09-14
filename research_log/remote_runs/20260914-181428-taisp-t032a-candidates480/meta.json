@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-181428-taisp-t032a-candidates480",
+  "releaseId": "20260914-181346-taisp-t032a-candidates",
+  "sessionName": "autodl-20260914-181428-taisp-t032a-candidates480",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-181346-taisp-t032a-candidates && export TAISP_SOURCE_REVISION=b0ce54b && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.orthogonal_candidates --manifest research_log/T032A/candidate_images.json --output \"$AUTODL_ARTIFACTS_DIR/candidate\""
+}

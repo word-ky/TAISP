@@ -1,0 +1,97 @@
+{
+  "episode_index": 247,
+  "image_id": 83477,
+  "case": "gamma_s2",
+  "block": -1,
+  "partition": "train",
+  "hard": {
+    "supports": {
+      "boxes": [],
+      "scores": [],
+      "labels": []
+    },
+    "support_count": 0,
+    "supports_sha256": "dfc53066ccbd7a69a34a3579df09f311a2414badad84aaeb26ee563a3fb895ed",
+    "loss": 0.0,
+    "gradient": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "jacobian": {
+      "primal_identity_checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "column_l2_norms": [
+        188.71894288223336,
+        59.3316348252078,
+        96.92676270862259,
+        212.2486701043307,
+        207.0011210665157,
+        240.0,
+        81.39112356993725,
+        18.476211962310735
+      ],
+      "jacobian_dtype": "torch.float32",
+      "reduction_dtype": "torch.float64",
+      "device": "cuda:0",
+      "columns": 8
+    },
+    "direct_reverse": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parity": {
+      "cosine": 1.0,
+      "relative_l2": 0.0,
+      "passed": true
+    },
+    "cotangent_l2": 0.0
+  },
+  "g_hard": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "norm_hard": 0.0,
+  "zero": true,
+  "finite": true,
+  "rng": {
+    "before": {
+      "cpu": "e9dbcd0bba2e7f5b4a7a4584f2f4c370ca51be341b49c17b68fb4366dd3c3e3d",
+      "cuda": "590629ac1407332eb2a6bc880f011aa14dc7ea47660dd3935eed0a77892188e0"
+    },
+    "after": {
+      "cpu": "e9dbcd0bba2e7f5b4a7a4584f2f4c370ca51be341b49c17b68fb4366dd3c3e3d",
+      "cuda": "590629ac1407332eb2a6bc880f011aa14dc7ea47660dd3935eed0a77892188e0"
+    },
+    "restored": true
+  },
+  "state_before": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "state_after": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "isolation": true,
+  "integrity_passed": true
+}
