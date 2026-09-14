@@ -930,3 +930,7 @@ Noactivejob. Stop NEEDS_REVIEW, await explicit research continuation. Future fre
 2026-09-14T18:12:30.496791+08:00 # T032-A / R050 IN_PROGRESS
 Fresh240images seed20261002,3251prior/reservedexcluded;train180/holdout60,480episodes. Cohort and split prepared without outcomes; candidate module unchanged. Baseline7pass7.28s. Next deployprecommittedcohort and run480GTfreecandidateonA6000. Router thencommittedbeforetrainlabels;mapsbeforeholdout. No activejobyet.
 Candidate manifest download failed because localnewdirectory absent; reproduced exact JSON locally from fetched cohort, no model rerun.
+
+2026-09-14T18:14:49.1985790+08:00 T032-A IN_PROGRESS: candidate480 run20260914-181428-taisp-t032a-candidates480, release20260914-181346-taisp-t032a-candidates, sourceb0ce54b. 61protectedhashespass. Unchanged candidate code, no annotations. Routercode drafted, pending focusedtests; no real router fitting before candidatecommit. No source gradients yet.
+
+2026-09-14T18:16:40.122375+08:00 Router focused4pass3.09s. Initial test incorrectly assumed package import excludes torch; existing taisp.__init__ imports ISP/torch. Corrected assertion to actual R050 detector/oracle/reference exclusion, unchanged package/model code; no real router fitted yet.

@@ -1,2 +1,1 @@
-# T032-A / R050 IN_PROGRESS
-Fresh240images seed20261002,3251prior/reservedexcluded;train180/holdout60,480episodes. Cohort and split prepared without outcomes; candidate module unchanged. Baseline7pass7.28s. Next deployprecommittedcohort and run480GTfreecandidateonA6000. Router thencommittedbeforetrainlabels;mapsbeforeholdout. No activejobyet.
+T032-A IN_PROGRESS: candidate480 run20260914-181428-taisp-t032a-candidates480, release20260914-181346-taisp-t032a-candidates, sourceb0ce54b. 61protectedhashespass. Unchanged candidate code, no annotations. Routercode drafted, pending focusedtests; no real router fitting before candidatecommit. No source gradients yet.
