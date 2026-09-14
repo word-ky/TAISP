@@ -1,0 +1,89 @@
+{
+  "images": [
+    {
+      "image_id": 304815,
+      "path": "/home/wenchang/asdasdsad/wjq/dapd_query_opt44/assets/rexeval/coco/train2017/000000304815.jpg",
+      "file_name": "000000304815.jpg",
+      "sha256": "8e1b6cd7a625fe574f04b613b0a12fca2bda34801efcd78ae13c5221562a8090",
+      "width": 640,
+      "height": 427,
+      "block": 0,
+      "selection_hash": "000033dd79ae87c1c5fb19c61c9bdae353aff863ae508c3e1f7dad82379c6779"
+    },
+    {
+      "image_id": 131976,
+      "path": "/home/wenchang/asdasdsad/wjq/dapd_query_opt44/assets/rexeval/coco/train2017/000000131976.jpg",
+      "file_name": "000000131976.jpg",
+      "sha256": "8d98c3fc42d0679a54e7e5ca66f38c9d8471edd9ac6a90938550820400d929a2",
+      "width": 640,
+      "height": 427,
+      "block": 0,
+      "selection_hash": "00086d04fa5e8dc78e6822b30b894d1747ef1e5e5434db3b525cc6560c61b5a0"
+    },
+    {
+      "image_id": 507312,
+      "path": "/home/wenchang/asdasdsad/wjq/dapd_query_opt44/assets/rexeval/coco/train2017/000000507312.jpg",
+      "file_name": "000000507312.jpg",
+      "sha256": "ab19071bb5cbf397bc786be322728c36c13339c0d2c9b7587d0f5fd9785c68b7",
+      "width": 480,
+      "height": 640,
+      "block": 0,
+      "selection_hash": "0021bf12e54350f2a05bfaa55f6d32524d2abbafcf799baae7b547d5ad99b6ab"
+    },
+    {
+      "image_id": 517967,
+      "path": "/home/wenchang/asdasdsad/wjq/dapd_query_opt44/assets/rexeval/coco/train2017/000000517967.jpg",
+      "file_name": "000000517967.jpg",
+      "sha256": "d682deeca15b952735d0c8548585f52131d1c284c2993f2e82a516266dfcd93d",
+      "width": 457,
+      "height": 640,
+      "block": 0,
+      "selection_hash": "00223f84735431f59c4e06528e3b2da31186ff29cd52121506109aef9bd09e2b"
+    }
+  ],
+  "corrupted_cases": [
+    "gamma_s2",
+    "contrast_s2",
+    "color_cast_s2",
+    "gamma_s2"
+  ],
+  "cohort_sha256": "3ac9eb54750f0a2b197fa37205d33f493e039b9932b785830288ba997dd32752",
+  "ordered_episodes": [
+    {
+      "image_id": 304815,
+      "case": "clean_s0"
+    },
+    {
+      "image_id": 304815,
+      "case": "gamma_s2"
+    },
+    {
+      "image_id": 131976,
+      "case": "clean_s0"
+    },
+    {
+      "image_id": 131976,
+      "case": "contrast_s2"
+    },
+    {
+      "image_id": 507312,
+      "case": "clean_s0"
+    },
+    {
+      "image_id": 507312,
+      "case": "color_cast_s2"
+    },
+    {
+      "image_id": 517967,
+      "case": "clean_s0"
+    },
+    {
+      "image_id": 517967,
+      "case": "gamma_s2"
+    }
+  ],
+  "native_seed": 20260930,
+  "support_rule": ".50 stabletop20 originalonceperepisode",
+  "repetitions": 5,
+  "source_revision_before_diagnostic": "27fed9c"
+}
