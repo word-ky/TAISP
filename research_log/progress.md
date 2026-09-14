@@ -965,3 +965,9 @@ Plan andfresh300cohort readybeforemodelcalls;seed20261004,3491prior excluded,tra
 2026-09-14T19:10:13.738299+08:00 T033baseline5pass3warnings5.12s existing orthogonal_candidates+source_roi_memory_audit tests onremote AFTER plan/cohortcommit4126a98. Candidate module reuseshardcandidate andfixedROI, newconfidencepool only; pendingfocusedtests.
 
 2026-09-14T19:11:14.4197677+08:00 T033candidate+existinghard focused5pass3warnings7.64s; reuse/pool/empty/classirrelevance/importboundary green. Commit code/pins beforecandidate600.
+
+2026-09-14T19:13:45.3787796+08:00 T033-A IN_PROGRESS candidate600 active20260914-191144-taisp-t033a-candidates600; release20260914-191003-taisp-t033a-candidates/sourceb5d4c6f. Cohort/plan4126a98 beforemodelcalls;baseline5pass5.12s,candidatefocused5pass7.64s;67remotehashesmatched. Candidate unchangedhard + own-supportROIpool only. No PCA/sourcegradients yet. Next pureNumPy PCA16/27Dstate/tangentSVD implementation andtests; all600candidatecommit beforeactualPCA, representationcommitbeforetrainlabels, modelcommitandpreoraclecorrecteddirectionscommitbeforeholdout.
+
+2026-09-14T19:15:18.933621+08:00 T033 PCA/tangentmathfocused3pass1.61s: PCA sign/rank/standardization, affine singleSVD/minimum norm, zero target andabstention. Realcandidate600active; no actualPCA/labels yet.
+
+2026-09-14T19:17:03.5729855+08:00 Math commit initially failed: D diskfull during Git auto-GC fromheartbeatfetch. GC exitedwithoutofspace. Two aborted tmp_pack files total~1.98GB remained read-only; normal Remove-Itemfailed, forcedremoval rejectedbyautomaticpolicy, no alternate deletion attempted. Disklaterreported304779264free. Existing code/pins intact. Continue smallcommits with one-off gc.auto=0/maintenance.auto=false; no configchange/no experimentrerun.
