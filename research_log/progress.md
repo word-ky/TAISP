@@ -879,3 +879,5 @@ Reportresearch_log/T030A2_report.md; summary,per_repetition.tsv,candidate_per_ep
 
 2026-09-14T15:56:03.363283+08:00 # T030-A3 / R048 IN_PROGRESS
 Candidate lock localpreflight verified123filehashes/120order/exactreviewedandcandidatecommit. DescriptorandfrozengatesprecommittedbeforeGT. Implement reference-onlydraftcorrection, lazyoracleimportsafterpreflight, focused/fulltests,oneA6000reference120run. No candidates recomputed orGTloaded yet.
+
+2026-09-14T16:00:06.374703+08:00 T030-A3 baseline11pass7.87s; referencefocused12pass3warnings7.77s. Remote preflight123hashes/120order/commit/state/integrity passedbeforeoracleimports/GT. Deployment155750SSHtimeoutbeforeupload; statusnoactivejobs then155837deployed. No modeloutcomes yet; fullregressionpending.
