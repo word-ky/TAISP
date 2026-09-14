@@ -911,3 +911,8 @@ Reference/Procrustes analysis module and tests drafted locally, pendingtest/depl
 
 2026-09-14T17:08:46.391586+08:00 # T031-A / R049 candidate lock complete; trainreference next
 Cohortb019a89; candidatecode620076f;all480resultlockd997b61. Candidate recordsSHA4a4736c99da7f7baf2c332d397133f449418e6fad27aa1c2b4d428a3fb7863d3,manifest8fb32640c416ca237762be805c26d0d66105aba6f0d11c0dfc2fc96cea4d891c;0zeros/allintegrity. Referencecode14b5c68,5focusedpass3.88s/full271pass11skip29.78s;61remotepinsmatch. No modeljobactiveyet. Launchtrain360onlyafterdescriptorupload;oneRthencommitbeforeholdout.
+
+2026-09-14T17:13:43.3151697+08:00 # T031-A / R049 IN_PROGRESS — train360 reference active
+Run 20260914-170909-taisp-t031a-train360-map; release 20260914-170250-taisp-t031a-reference; source 7569ed4. All480 candidate lock d997b6152d1aef4875498f55179664748c17b183; descriptor 7569ed4. Train360 CUDA reference and one CPU float64 8x8 SVD active. Holdout task gradients not started. Fetch/verify train results and commit R before holdout120. Full tests 271 passed, 11 skipped; 61 remote pins matched. Frozen R049 protocol; no tuning/AP/K-step.
+
+2026-09-14T17:14:47.8710884+08:00 T031-A train360 complete in221.0398s; all360 integrity pass,180trainIDs only,zero holdout gradients. OneSVD R determinant -0.9999999999999991; orthogonality maxabs5.551115123125783e-16; zero unit hard/task0/0. R SHA333e7dcdb0286cfd5957e68f0533c613ab71d1b68cadc614da58a641207f01ec; trainrecordsSHA942a3bc20b154583317beeff02a2f8aab86dea366400d48f7b5b9f1bd184ee0a. Raw archive28599283fabe725c7f841ee9dca3ed081d809aad5abb5d17710df49a60e8bc63 and allfiles verified. Commit R now before holdout120.

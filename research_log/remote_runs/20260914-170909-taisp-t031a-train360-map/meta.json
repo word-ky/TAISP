@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-170909-taisp-t031a-train360-map",
+  "releaseId": "20260914-170250-taisp-t031a-reference",
+  "sessionName": "autodl-20260914-170909-taisp-t031a-train360-map",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-170250-taisp-t031a-reference && export TAISP_SOURCE_REVISION=7569ed4 && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.orthogonal_reference --cohort research_log/T031A_train_cohort.json --candidate-root /home/liujianhua/wjq/TAISP/runs/20260914-165905-taisp-t031a-candidates480/artifacts/candidate --candidate-lock research_log/T031A_candidate_lock.json --phase train --output \"$AUTODL_ARTIFACTS_DIR/train\""
+}
