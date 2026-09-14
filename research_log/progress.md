@@ -828,3 +828,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14T11:48:12.486654 T029-A complete:all120candidate/referenceintegritypass;Ssoft63/120,31/60;Delta69/120,36/60,positivemedians but2/4blocks=>FAIL.12focused/full243pass11skip. RawSHAverified/reportcomplete;closeexactpower2family,stopNEEDS_REVIEW.
 
 2026-09-14T12:58:08.304508 R045/T030-A read;SSH intermittenttimeouts recovered withworkflowstatus/retry;no modeloutcomes started.60cohort2951prior excluded prepared;baseline10pass5.41s. Native samplingseed20260930/reference20260913 andsumtolerance predeclared.
+
+2026-09-14T13:00:19.221021 T030candidatefocused11pass5.81s; neutral native helper ASTbody identical existingoracle, numerical/RNG/eval/freezestate/component-JVP tests passed. Candidatecode ready for120GPUepisodes;samplingseed20260930.
