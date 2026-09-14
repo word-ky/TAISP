@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-192538-taisp-t033a-representation",
+  "releaseId": "20260914-192036-taisp-t033a-reference",
+  "sessionName": "autodl-20260914-192538-taisp-t033a-representation",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-192036-taisp-t033a-reference && export TAISP_SOURCE_REVISION=dff5355 && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.object_state_stages representation --candidate-root /home/liujianhua/wjq/TAISP/runs/20260914-191144-taisp-t033a-candidates600/artifacts/candidate --candidate-lock research_log/T033A_candidate_lock.json --output \"$AUTODL_ARTIFACTS_DIR/representation\""
+}
