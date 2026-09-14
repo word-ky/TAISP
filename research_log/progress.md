@@ -934,3 +934,5 @@ Candidate manifest download failed because localnewdirectory absent; reproduced 
 2026-09-14T18:14:49.1985790+08:00 T032-A IN_PROGRESS: candidate480 run20260914-181428-taisp-t032a-candidates480, release20260914-181346-taisp-t032a-candidates, sourceb0ce54b. 61protectedhashespass. Unchanged candidate code, no annotations. Routercode drafted, pending focusedtests; no real router fitting before candidatecommit. No source gradients yet.
 
 2026-09-14T18:16:40.122375+08:00 Router focused4pass3.09s. Initial test incorrectly assumed package import excludes torch; existing taisp.__init__ imports ISP/torch. Corrected assertion to actual R050 detector/oracle/reference exclusion, unchanged package/model code; no real router fitted yet.
+
+2026-09-14T18:19:43.350725+08:00 T032 router+reference focused7pass2warnings6.36s. Candidate at397/480 priorcheck. New reference reuses R049 verifier and exact source gradientloop; routes stored before lazyoracle imports; no real router/sourcegradient outcomes yet.

@@ -1,0 +1,39 @@
+    started=time.perf_counter();source,isp,env=setup()
+    assert env['source_state_sha256']==preflight['source_state_sha256']
+    env.update(phase=phase,candidate_lock_sha256=sha(lock_path),cohort_sha256=sha(cohort_path),map_lock=preflight['map_lock'])
+    annotation=manifest['partition_annotations'][phase];assert sha(annotation['path'])==annotation['sha256']
+    data=json.loads(Path(annotation['path']).read_text());ids={im['image_id'] for im in manifest['images']}
+    assert {im['id'] for im in data['images']}==ids==set(annotation['image_ids'])
+    assert all(a['image_id'] in ids for a in data['annotations'])
+    env['annotation_path']=annotation['path'];env['annotation_sha256']=annotation['sha256'];write(output/'environment.json',env)
+    anns={i:[] for i in ids}
+    for a in data['annotations']:
+        if not a.get('iscrowd',0) and a['bbox'][2]>0 and a['bbox'][3]>0 and a.get('area',1)>0:anns[a['image_id']].append(a)
+    del data
+    rows=[]
+    for index,(info,case,image) in enumerate(images(manifest)):
+        c=candidates[index];assert (c['image_id'],c['case'])==(info['image_id'],case)
+        aa=anns[info['image_id']];boxes=[[a['bbox'][0],a['bbox'][1],a['bbox'][0]+a['bbox'][2],a['bbox'][1]+a['bbox'][3]] for a in aa]
+        targets=[{'boxes':image.new_tensor(boxes).reshape(-1,4),'labels':torch.tensor([a['category_id'] for a in aa],device=image.device)}]
+        before=state_hash(source);rb=rng_state(image.device)
+        y=isp(image,image.new_zeros(8)).detach().requires_grad_(True)
+        loss,parts=detector_task_loss(source,y,targets,seed=20260913);ct=torch.autograd.grad(loss,y)[0].detach()
+        assert torch.isfinite(loss) and torch.isfinite(ct).all()
+        refs,jac=common_jvp(image,isp,image.new_ones(1,1,*image.shape[-2:]),{'task':ct})
+        r=refs['task'];t=r['global'];phi=image.new_zeros(8,requires_grad=True)
+        direct=torch.autograd.grad((isp(image,phi)*ct).sum(),phi)[0].cpu().tolist();checks=reference_checks(t,r['object'],r['background'],direct)
+        ra=rng_state(image.device);after=state_hash(source)
+        row={'episode_index':c['episode_index'],'image_id':info['image_id'],'case':case,'block':info['block'],'partition':phase,
+            'g_hard':c['g_hard'],'task_gradient':t,'task_loss':loss.item(),'task_components':{k:v.item() for k,v in parts.items()},
+            'jacobian':jac,'reference_checks':checks,'state_before':before,'state_after':after,'rng':{'before':rb,'after':ra,'restored':rb==ra},
+            'candidate_recomputed':False,'integrity_passed':before==after==env['source_state_sha256'] and rb==ra and isolated(source)
+                and isp.phi.grad is None and not bool(isp.phi.any()) and all(v['passed'] for v in checks.values()) and all(math.isfinite(v) for v in t)}
+        row['route']=routes[index]
+        if phase=='holdout':
+            ev=evaluate(t,c['g_hard'],maps['experts'][routes[index]]['R'])
+            assert ev['g_cal']==routed[index]['g_route']
+            row.update(ev);row.update(g_route=ev['g_cal'],S_route=ev['S_cal'])
+        write(output/f'record_{index:03d}.json',row);assert row['integrity_passed'],'Reference integrity blocker'
+        rows.append(row);print(json.dumps({'stage':phase,'episode':index}),flush=True)
+    assert len(rows)==(360 if phase=='train' else 120) and sha(candidate_root/'records.json')==preflight['candidate_records_sha256']
+    write(output/'records.json',rows)
