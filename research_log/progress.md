@@ -904,3 +904,7 @@ Cohortb019a89; candidatecode620076f; release20260914-165741-taisp-t031a-candidat
 Reference/Procrustes analysis module and tests drafted locally, pendingtest/deploy. Awaitcompletecandidate,fetchall480/commitlock beforetrain360. Trainannotationsonlyfrompartitionfile; oneCPUfloat64SVD;commitRbeforeholdout120. No candidate rerun or T030revival/AP.
 
 2026-09-14T17:03:57.109067+08:00 T031reference/Procrustesfocused5pass3.88s; oneSVD O8reflection/columnconvention/zeros/meanoutliergate tests pass. Referencecodecommittedbeforetrainorholdoutgradients. FullsuitewillrunaftercandidateGPUjobcompletes.
+
+2026-09-14T17:06:15.545699+08:00 T031all480candidate complete296.448390157s, sourcehashunchanged/noGT/imports/AP. ArchiveSHA6f4f44b12eec9f0de838290f23e021aba5f901b3b52aa347271be4a49386e433 currentlyfetching session2497. Full271pass11skip4warnings29.78s. No source train/holdoutgradients yet; nextcandidate commitlock.
+
+2026-09-14T17:07:50.365691+08:00 All480GTfreecandidates rawSHAverified,483filehashespass;lockingbeforeGT. SCPstalledat131072bytes; stoppedonlymatchingdownloadscpPID46952,existingworkflowlegacyretrycompleted. No modelrerun. recordsSHA4a4736c99da7f7baf2c332d397133f449418e6fad27aa1c2b4d428a3fb7863d3
