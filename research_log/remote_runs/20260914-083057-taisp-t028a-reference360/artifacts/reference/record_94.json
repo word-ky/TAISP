@@ -1,0 +1,88 @@
+{
+  "episode_index": 94,
+  "image_id": 229472,
+  "case": "clean_s0",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.5754396319389343,
+  "task_components": {
+    "loss_classifier": 0.15736234188079834,
+    "loss_box_reg": 0.3626127541065216,
+    "loss_objectness": 0.039097364991903305,
+    "loss_rpn_box_reg": 0.016367169097065926
+  },
+  "task_gradient": [
+    -0.06447951829256626,
+    -0.034908080924449775,
+    0.0035467355766700334,
+    0.02577865727260748,
+    0.1347637045251459,
+    -0.10123851419923224,
+    0.00960914728538434,
+    0.043987372979958264
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      166.6225217714342,
+      189.7206881066911,
+      172.7961997276071,
+      161.61234100979257,
+      226.67535740476566,
+      240.0,
+      76.81029459862803,
+      30.158066676054958
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        7.447951829256626e-12,
+        4.4908080924449774e-12,
+        1.3546735576670034e-12,
+        3.577865727260748e-12,
+        1.4476370452514592e-11,
+        1.1123851419923225e-11,
+        1.960914728538434e-12,
+        5.398737297995826e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999998898,
+      "relative_l2_error": 5.038776469055602e-07,
+      "max_absolute_error": 8.529247852440136e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": 0.043470012132425934,
+  "y": 1,
+  "integrity_passed": true
+}

@@ -1,0 +1,88 @@
+{
+  "episode_index": 279,
+  "image_id": 349237,
+  "case": "contrast_s2",
+  "block": 1,
+  "partition": "holdout",
+  "task_loss": 0.06127755343914032,
+  "task_components": {
+    "loss_classifier": 0.031642913818359375,
+    "loss_box_reg": 0.024209383875131607,
+    "loss_objectness": 0.0023653723765164614,
+    "loss_rpn_box_reg": 0.003059882903471589
+  },
+  "task_gradient": [
+    -0.012402480173351972,
+    0.07063878051622588,
+    -0.08483952126768621,
+    0.0012493513174953522,
+    -0.02226663431876027,
+    0.006719526716024923,
+    0.0031413889096309107,
+    -0.00716719184160154
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      225.25328380730642,
+      198.50222430158263,
+      199.23619660668083,
+      193.43304002395624,
+      58.54146470170015,
+      240.0,
+      116.34460187002486,
+      15.646291670713518
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        2.240248017335197e-12,
+        8.063878051622588e-12,
+        9.48395212676862e-12,
+        1.1249351317495352e-12,
+        3.226663431876027e-12,
+        1.6719526716024924e-12,
+        1.314138890963091e-12,
+        1.716719184160154e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999998714,
+      "relative_l2_error": 5.294756102935973e-07,
+      "max_absolute_error": 5.524283388375073e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": 0.11043581244834832,
+  "y": 1,
+  "integrity_passed": true
+}

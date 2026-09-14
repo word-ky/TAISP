@@ -1,0 +1,88 @@
+{
+  "episode_index": 18,
+  "image_id": 252018,
+  "case": "clean_s0",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.16795414686203003,
+  "task_components": {
+    "loss_classifier": 0.04320496320724487,
+    "loss_box_reg": 0.11780752241611481,
+    "loss_objectness": 0.0013711857609450817,
+    "loss_rpn_box_reg": 0.005570469424128532
+  },
+  "task_gradient": [
+    -0.005020265446603531,
+    -0.0013001964924463337,
+    0.027629373502336345,
+    -0.017222023254662884,
+    0.0383120320080422,
+    -0.021066865517094743,
+    0.0008379344168496922,
+    -0.00014044865183612636
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      200.26747595755694,
+      172.7194762478449,
+      160.42659510751255,
+      142.61002226901192,
+      189.05651168687245,
+      240.0,
+      87.14305718623649,
+      46.8706421431693
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        1.502026544660353e-12,
+        1.1300196492446333e-12,
+        3.762937350233634e-12,
+        2.7222023254662887e-12,
+        4.83120320080422e-12,
+        3.106686551709474e-12,
+        1.0837934416849692e-12,
+        1.0140448651836126e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999998149,
+      "relative_l2_error": 6.101371609688046e-07,
+      "max_absolute_error": 2.3649737227599e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": 0.00354053562224809,
+  "y": 1,
+  "integrity_passed": true
+}

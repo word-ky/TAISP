@@ -1,0 +1,88 @@
+{
+  "episode_index": 58,
+  "image_id": 554598,
+  "case": "clean_s0",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.9383224248886108,
+  "task_components": {
+    "loss_classifier": 0.340503454208374,
+    "loss_box_reg": 0.5025020241737366,
+    "loss_objectness": 0.03320885822176933,
+    "loss_rpn_box_reg": 0.06210808455944061
+  },
+  "task_gradient": [
+    0.08064561066578849,
+    0.09762506884655889,
+    -0.062116388265292574,
+    0.015045709538518474,
+    0.03019714501751336,
+    0.014684642469261072,
+    -0.028141918968622365,
+    -0.04355128876483588
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      147.41036577323143,
+      205.24444229481784,
+      179.36020086772967,
+      162.39810350609432,
+      231.11614202809085,
+      226.62744758744472,
+      65.73410619650707,
+      17.419964498710062
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        9.064561066578848e-12,
+        1.0762506884655888e-11,
+        7.211638826529258e-12,
+        2.504570953851847e-12,
+        4.019714501751336e-12,
+        2.4684642469261074e-12,
+        3.814191896862236e-12,
+        5.3551288764835886e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999313,
+      "relative_l2_error": 3.9097029769239774e-07,
+      "max_absolute_error": 3.9851043603933434e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.015410860392114718,
+  "y": -1,
+  "integrity_passed": true
+}

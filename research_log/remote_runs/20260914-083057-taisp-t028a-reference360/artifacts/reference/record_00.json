@@ -1,0 +1,88 @@
+{
+  "episode_index": 0,
+  "image_id": 480661,
+  "case": "clean_s0",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.2947992980480194,
+  "task_components": {
+    "loss_classifier": 0.10126939415931702,
+    "loss_box_reg": 0.16867241263389587,
+    "loss_objectness": 0.0035146705340594053,
+    "loss_rpn_box_reg": 0.021342815831303596
+  },
+  "task_gradient": [
+    -0.008908639430888099,
+    0.06801071453295354,
+    -0.1023549233394099,
+    0.030554040919503967,
+    -0.04813584572059866,
+    0.03198864148430107,
+    -0.00016436028820426482,
+    0.007874479355138488
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      202.23037103211283,
+      212.2802783786655,
+      225.79703505718393,
+      215.15032869836725,
+      186.65661073785884,
+      240.0,
+      91.60007658947323,
+      32.539025109235574
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        1.89086394308881e-12,
+        7.801071453295355e-12,
+        1.123549233394099e-11,
+        4.055404091950397e-12,
+        5.813584572059866e-12,
+        4.1988641484301074e-12,
+        1.0164360288204265e-12,
+        1.787447935513849e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999636,
+      "relative_l2_error": 2.708986152503704e-07,
+      "max_absolute_error": 3.142781974940778e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.025940299445816013,
+  "y": -1,
+  "integrity_passed": true
+}

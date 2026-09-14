@@ -1,0 +1,88 @@
+{
+  "episode_index": 287,
+  "image_id": 184858,
+  "case": "color_cast_s2",
+  "block": 1,
+  "partition": "holdout",
+  "task_loss": 0.04995720461010933,
+  "task_components": {
+    "loss_classifier": 0.016409864649176598,
+    "loss_box_reg": 0.03103814274072647,
+    "loss_objectness": 9.617404430173337e-05,
+    "loss_rpn_box_reg": 0.002413018373772502
+  },
+  "task_gradient": [
+    0.003609538618572633,
+    -0.009454293513713793,
+    -0.0007287403892420209,
+    -0.004855050789480864,
+    -0.0035059531633673934,
+    -0.008318673506816275,
+    -0.000994710496890541,
+    -0.0007608141672451262
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      200.2078927747436,
+      300.83791969898266,
+      240.73153920328457,
+      119.01164811676142,
+      170.93644134989216,
+      249.55961211702507,
+      97.50531448578093,
+      15.34957985175929
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        1.3609538618572633e-12,
+        1.945429351371379e-12,
+        1.072874038924202e-12,
+        1.4855050789480864e-12,
+        1.3505953163367394e-12,
+        1.8318673506816276e-12,
+        1.0994710496890542e-12,
+        1.0760814167245126e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999336,
+      "relative_l2_error": 3.752487414224657e-07,
+      "max_absolute_error": 4.037777535936815e-09,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": 0.0038382195592223394,
+  "y": 1,
+  "integrity_passed": true
+}

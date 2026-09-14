@@ -1,0 +1,88 @@
+{
+  "episode_index": 88,
+  "image_id": 10903,
+  "case": "clean_s0",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.7191935777664185,
+  "task_components": {
+    "loss_classifier": 0.24488268792629242,
+    "loss_box_reg": 0.39823201298713684,
+    "loss_objectness": 0.058758385479450226,
+    "loss_rpn_box_reg": 0.017320528626441956
+  },
+  "task_gradient": [
+    0.024646275646023792,
+    0.19045140126663906,
+    0.1386683056681517,
+    -0.007334452807116809,
+    0.1524933366736742,
+    0.12211832026793584,
+    -0.005541461762562407,
+    0.007227506097252716
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      175.0832324380378,
+      188.96678603168561,
+      169.04823749702769,
+      153.051872179282,
+      227.3102494733231,
+      240.0,
+      76.75168217823555,
+      24.4852334514259
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        3.4646275646023794e-12,
+        2.0045140126663906e-11,
+        1.486683056681517e-11,
+        1.733445280711681e-12,
+        1.624933366736742e-11,
+        1.3211832026793585e-11,
+        1.5541461762562406e-12,
+        1.7227506097252716e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999786,
+      "relative_l2_error": 2.3797147042471274e-07,
+      "max_absolute_error": 5.5927494913010634e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.22757739155048531,
+  "y": -1,
+  "integrity_passed": true
+}

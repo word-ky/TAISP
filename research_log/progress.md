@@ -814,3 +814,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 08:30+08 T028all360GT-freefeature records complete CUDAexit0;allhashes/isolation/parity verified. Raw source_revision accidentally placeholder; preservedraw plus codeSHA mapping3614d6e in candidate_provenance.json (verifiedequalcodepins), no rerun. Exactsplit/familybalances verified. Candidate lock before source references.
 
 2026-09-14 08:32+08 T028post-lock reference/fixed affine fit implemented.17focusedpass5.15s;full236pass11skip4warnings12.56s onA6000environment. Train-only populationstd/SVDcutoff,exactzero threshold,128PCG64pair/family permutations and tiedAUROC tested. Reference/fit launchnext usingcandidate lock08dd3fd.
+
+2026-09-14 08:35+08 T028-A completed:all360reference integritypassed, fixedfit/128nulls complete;holdoutAUROC.52625/.65767,precisiongain.02954/.08062,2/4blocks,bothbelow null95th=>FAIL.17focused/full236pass11skip. Report generatedfromexactSHAverifiedraw;freezeestimator,closefamily,stopNEEDS_REVIEW.

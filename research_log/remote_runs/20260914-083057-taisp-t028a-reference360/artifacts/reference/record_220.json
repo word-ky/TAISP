@@ -1,0 +1,88 @@
+{
+  "episode_index": 220,
+  "image_id": 187454,
+  "case": "clean_s0",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.5031337738037109,
+  "task_components": {
+    "loss_classifier": 0.2047446072101593,
+    "loss_box_reg": 0.27191072702407837,
+    "loss_objectness": 0.01840943656861782,
+    "loss_rpn_box_reg": 0.008068992756307125
+  },
+  "task_gradient": [
+    0.042533685993970394,
+    0.3026969549843812,
+    -0.0977410292143151,
+    0.005565566464503999,
+    0.082294182932023,
+    0.09249645550962202,
+    -0.02718588894398101,
+    0.026301579244903506
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      196.64372046766047,
+      200.2814809361344,
+      180.59849432187792,
+      155.50454272330123,
+      152.10535125486794,
+      226.09732417700127,
+      91.41103300593541,
+      13.354466015441307
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        5.253368599397039e-12,
+        3.126969549843812e-11,
+        1.077410292143151e-11,
+        1.5565566464503998e-12,
+        9.2294182932023e-12,
+        1.0249645550962202e-11,
+        3.718588894398101e-12,
+        3.6301579244903505e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999679,
+      "relative_l2_error": 2.7474070784835157e-07,
+      "max_absolute_error": 7.266013733742138e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.28212313026904107,
+  "y": -1,
+  "integrity_passed": true
+}

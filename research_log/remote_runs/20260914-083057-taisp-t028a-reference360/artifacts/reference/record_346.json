@@ -1,0 +1,88 @@
+{
+  "episode_index": 346,
+  "image_id": 326203,
+  "case": "clean_s0",
+  "block": 3,
+  "partition": "holdout",
+  "task_loss": 0.9221509099006653,
+  "task_components": {
+    "loss_classifier": 0.24752134084701538,
+    "loss_box_reg": 0.3157306909561157,
+    "loss_objectness": 0.05878957733511925,
+    "loss_rpn_box_reg": 0.300109326839447
+  },
+  "task_gradient": [
+    -0.07715090930572541,
+    -0.08282866819905195,
+    -0.05690152002716915,
+    -0.15208680189065357,
+    -0.2799675777167371,
+    -0.008547553078762996,
+    0.027152918174131537,
+    -0.01207610490815667
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      157.16158893596912,
+      175.90919018954943,
+      168.27228212298184,
+      155.46329779669148,
+      242.10752783137414,
+      240.0,
+      68.83863508952997,
+      17.458542531693215
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        8.71509093057254e-12,
+        9.282866819905195e-12,
+        6.6901520027169156e-12,
+        1.6208680189065356e-11,
+        2.899675777167371e-11,
+        1.8547553078762997e-12,
+        3.715291817413153e-12,
+        2.207610490815667e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999879,
+      "relative_l2_error": 1.5566566098225162e-07,
+      "max_absolute_error": 3.840171526603431e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.037240749211493146,
+  "y": -1,
+  "integrity_passed": true
+}

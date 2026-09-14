@@ -1,0 +1,88 @@
+{
+  "episode_index": 117,
+  "image_id": 489744,
+  "case": "contrast_s2",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.6446525454521179,
+  "task_components": {
+    "loss_classifier": 0.3662545382976532,
+    "loss_box_reg": 0.25435298681259155,
+    "loss_objectness": 0.01087102759629488,
+    "loss_rpn_box_reg": 0.013174014165997505
+  },
+  "task_gradient": [
+    -0.16904744199431848,
+    -0.006631190993006575,
+    0.26775263807497474,
+    -0.15617686786163404,
+    -0.13822030949260644,
+    0.17540638065197806,
+    0.05983082263300124,
+    0.059455768529649296
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      195.44084495086787,
+      143.41092173323324,
+      157.1583475234979,
+      148.64971382837058,
+      30.694697080931917,
+      199.37402037376887,
+      98.46739702150242,
+      3.3662390895074012
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        1.790474419943185e-11,
+        1.6631190993006575e-12,
+        2.7775263807497474e-11,
+        1.6617686786163403e-11,
+        1.4822030949260644e-11,
+        1.8540638065197805e-11,
+        6.983082263300124e-12,
+        6.94557685296493e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999997521,
+      "relative_l2_error": 9.605078536331664e-07,
+      "max_absolute_error": 3.2476104211420775e-07,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.22009832236014676,
+  "y": -1,
+  "integrity_passed": true
+}

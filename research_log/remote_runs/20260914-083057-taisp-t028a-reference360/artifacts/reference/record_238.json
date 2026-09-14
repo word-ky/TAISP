@@ -1,0 +1,88 @@
+{
+  "episode_index": 238,
+  "image_id": 137377,
+  "case": "clean_s0",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.2636662423610687,
+  "task_components": {
+    "loss_classifier": 0.06841196864843369,
+    "loss_box_reg": 0.16329564154148102,
+    "loss_objectness": 0.00982519518584013,
+    "loss_rpn_box_reg": 0.022133447229862213
+  },
+  "task_gradient": [
+    -0.023813255886959567,
+    -0.027675795995557348,
+    0.030749625804642893,
+    0.006073684122506803,
+    -0.026693653979319325,
+    0.025853937985869765,
+    0.008016051200814674,
+    -0.0005959876095100536
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      185.85722004626263,
+      159.77280583066957,
+      150.5877288670401,
+      143.11722140208332,
+      174.06962911196987,
+      226.36254107073458,
+      85.00844887515767,
+      30.860507490456847
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        3.3813255886959565e-12,
+        3.767579599555735e-12,
+        4.074962580464289e-12,
+        1.6073684122506803e-12,
+        3.669365397931933e-12,
+        3.585393798586977e-12,
+        1.8016051200814674e-12,
+        1.0595987609510053e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999996084,
+      "relative_l2_error": 8.943394997282937e-07,
+      "max_absolute_error": 4.9092787494930956e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": 0.029763733917080835,
+  "y": 1,
+  "integrity_passed": true
+}

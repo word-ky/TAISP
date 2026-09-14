@@ -1,0 +1,88 @@
+{
+  "episode_index": 324,
+  "image_id": 526337,
+  "case": "clean_s0",
+  "block": 2,
+  "partition": "holdout",
+  "task_loss": 0.9017993211746216,
+  "task_components": {
+    "loss_classifier": 0.2940726578235626,
+    "loss_box_reg": 0.543094277381897,
+    "loss_objectness": 0.030434848740696907,
+    "loss_rpn_box_reg": 0.03419758379459381
+  },
+  "task_gradient": [
+    0.00702851109092037,
+    0.09095235887405342,
+    -0.07678405777657424,
+    0.14760197491921656,
+    0.045563518796558636,
+    0.08382545203572664,
+    -0.019668318063275292,
+    0.04108612708738285
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      174.79238340244083,
+      202.13523415071842,
+      198.94087218851234,
+      204.83399671363367,
+      169.1609558337465,
+      225.8317958127243,
+      86.3911895290144,
+      22.89960364476776
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        1.7028511090920369e-12,
+        1.0095235887405342e-11,
+        8.678405777657423e-12,
+        1.5760197491921657e-11,
+        5.556351879655863e-12,
+        9.382545203572664e-12,
+        2.966831806327529e-12,
+        5.1086127087382854e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.999999999999953,
+      "relative_l2_error": 3.0719293253016923e-07,
+      "max_absolute_error": 5.338226358175824e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.14976997632617758,
+  "y": -1,
+  "integrity_passed": true
+}

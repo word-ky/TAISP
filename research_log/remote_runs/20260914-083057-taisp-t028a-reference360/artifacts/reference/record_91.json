@@ -1,0 +1,88 @@
+{
+  "episode_index": 91,
+  "image_id": 165334,
+  "case": "gamma_s2",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 1.014826774597168,
+  "task_components": {
+    "loss_classifier": 0.36411353945732117,
+    "loss_box_reg": 0.4187639355659485,
+    "loss_objectness": 0.029309019446372986,
+    "loss_rpn_box_reg": 0.20264028012752533
+  },
+  "task_gradient": [
+    -0.013092712856917564,
+    0.0732895372200812,
+    -0.07663772081294759,
+    0.004039243033747024,
+    0.04769945843563623,
+    -0.03390939089512425,
+    0.011954000542295777,
+    0.027451846351659787
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      192.4653611417695,
+      151.62008475334216,
+      156.5057035614987,
+      145.9777221146996,
+      191.9414343666897,
+      240.0,
+      92.45431673655573,
+      25.084874091487094
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        2.3092712856917564e-12,
+        8.328953722008121e-12,
+        8.663772081294758e-12,
+        1.4039243033747024e-12,
+        5.769945843563623e-12,
+        4.390939089512425e-12,
+        2.1954000542295778e-12,
+        3.7451846351659785e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999722,
+      "relative_l2_error": 2.4066484328154537e-07,
+      "max_absolute_error": 1.908792906374357e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.0031554807307448054,
+  "y": -1,
+  "integrity_passed": true
+}

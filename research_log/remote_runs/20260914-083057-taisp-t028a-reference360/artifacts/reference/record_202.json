@@ -1,0 +1,88 @@
+{
+  "episode_index": 202,
+  "image_id": 420515,
+  "case": "clean_s0",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.7394595146179199,
+  "task_components": {
+    "loss_classifier": 0.32071560621261597,
+    "loss_box_reg": 0.3704894185066223,
+    "loss_objectness": 0.027603305876255035,
+    "loss_rpn_box_reg": 0.020651156082749367
+  },
+  "task_gradient": [
+    0.19410114172614584,
+    0.05996426581414709,
+    -0.09057112990072963,
+    -0.017819913035346864,
+    -0.22127962079666244,
+    0.12468698198480205,
+    -0.04848255775966608,
+    -0.0088414771047612
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      127.29064639173443,
+      154.88228461023058,
+      129.23776827128086,
+      103.97303879516215,
+      219.2775527038451,
+      207.84609690826528,
+      56.149640871257674,
+      19.550300403889615
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        2.0410114172614585e-11,
+        6.996426581414709e-12,
+        1.0057112990072963e-11,
+        2.7819913035346864e-12,
+        2.3127962079666245e-11,
+        1.3468698198480205e-11,
+        5.848255775966608e-12,
+        1.88414771047612e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999998819,
+      "relative_l2_error": 5.898469910192499e-07,
+      "max_absolute_error": 1.9404270065748186e-07,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": 0.006012444765390842,
+  "y": 1,
+  "integrity_passed": true
+}

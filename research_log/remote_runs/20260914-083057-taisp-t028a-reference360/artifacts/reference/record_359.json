@@ -1,0 +1,88 @@
+{
+  "episode_index": 359,
+  "image_id": 340537,
+  "case": "color_cast_s2",
+  "block": 3,
+  "partition": "holdout",
+  "task_loss": 1.103764533996582,
+  "task_components": {
+    "loss_classifier": 0.34221088886260986,
+    "loss_box_reg": 0.568684458732605,
+    "loss_objectness": 0.10146145522594452,
+    "loss_rpn_box_reg": 0.09140777587890625
+  },
+  "task_gradient": [
+    0.1753296640191467,
+    0.06818346927785923,
+    0.002976014086159086,
+    -0.030873622234916097,
+    -0.057358846837334,
+    0.07043577097564294,
+    -0.07200765716033458,
+    0.043518587178254894
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      120.7058324430043,
+      258.5447685473987,
+      207.59684036250655,
+      123.77392006456513,
+      165.7621262151267,
+      181.40079933671737,
+      61.17721053312051,
+      20.80713495362298
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        1.853296640191467e-11,
+        7.818346927785923e-12,
+        1.2976014086159085e-12,
+        4.08736222349161e-12,
+        6.7358846837334e-12,
+        8.043577097564295e-12,
+        8.200765716033459e-12,
+        5.351858717825489e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999889,
+      "relative_l2_error": 3.013604120860118e-07,
+      "max_absolute_error": 5.0994357320144346e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": -0.0167505727432483,
+  "y": -1,
+  "integrity_passed": true
+}

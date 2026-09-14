@@ -1,0 +1,88 @@
+{
+  "episode_index": 349,
+  "image_id": 90925,
+  "case": "gamma_s2",
+  "block": 3,
+  "partition": "holdout",
+  "task_loss": 0.18946197628974915,
+  "task_components": {
+    "loss_classifier": 0.060306698083877563,
+    "loss_box_reg": 0.11454969644546509,
+    "loss_objectness": 0.002519724890589714,
+    "loss_rpn_box_reg": 0.012085847556591034
+  },
+  "task_gradient": [
+    0.05003754602606138,
+    0.021730037083102675,
+    -0.030686265116321283,
+    0.0011033413595450629,
+    0.09534029135703687,
+    -0.07443814360753521,
+    -0.01099430654600858,
+    0.0024812801764193663
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      133.112408881034,
+      155.70816142397445,
+      115.3997573141145,
+      93.06522852719844,
+      249.798326436561,
+      226.36254107073458,
+      52.12418910360703,
+      10.767536077638889
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        6.003754602606138e-12,
+        3.1730037083102676e-12,
+        4.068626511632129e-12,
+        1.1103341359545063e-12,
+        1.0534029135703686e-11,
+        8.443814360753521e-12,
+        2.099430654600858e-12,
+        1.2481280176419366e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999725,
+      "relative_l2_error": 2.4626567208697474e-07,
+      "max_absolute_error": 2.5991044191875368e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": 0.13057946310354188,
+  "y": 1,
+  "integrity_passed": true
+}

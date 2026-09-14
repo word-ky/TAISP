@@ -1,0 +1,88 @@
+{
+  "episode_index": 61,
+  "image_id": 426996,
+  "case": "gamma_s2",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.6056771278381348,
+  "task_components": {
+    "loss_classifier": 0.16338102519512177,
+    "loss_box_reg": 0.30710309743881226,
+    "loss_objectness": 0.031907856464385986,
+    "loss_rpn_box_reg": 0.10328510403633118
+  },
+  "task_gradient": [
+    0.08595385309409152,
+    0.08495629918333077,
+    -0.03785820086293573,
+    -0.14252115696841045,
+    0.09852167359127079,
+    -0.13990155833684242,
+    -0.02679136595662812,
+    0.023731114912464355
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      178.97919160216858,
+      187.9772590925643,
+      207.33843708667106,
+      211.1902774514405,
+      147.60683696145725,
+      226.09732417700127,
+      93.80258330120414,
+      29.45333227536218
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        9.595385309409152e-12,
+        9.495629918333077e-12,
+        4.785820086293573e-12,
+        1.5252115696841045e-11,
+        1.085216735912708e-11,
+        1.4990155833684243e-11,
+        3.679136595662812e-12,
+        3.3731114912464355e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999615,
+      "relative_l2_error": 3.0786926643987496e-07,
+      "max_absolute_error": 6.845726047144396e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": 0.09979585328462987,
+  "y": 1,
+  "integrity_passed": true
+}

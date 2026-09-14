@@ -1,0 +1,88 @@
+{
+  "episode_index": 171,
+  "image_id": 367666,
+  "case": "contrast_s2",
+  "block": -1,
+  "partition": "train",
+  "task_loss": 0.5143387913703918,
+  "task_components": {
+    "loss_classifier": 0.26316016912460327,
+    "loss_box_reg": 0.24649912118911743,
+    "loss_objectness": 0.001241480465978384,
+    "loss_rpn_box_reg": 0.0034379931166768074
+  },
+  "task_gradient": [
+    -0.08347673694421309,
+    -0.10224920233597928,
+    -0.03979839077013669,
+    -0.17185339829593976,
+    -0.36199866193986396,
+    0.034695123180736975,
+    -0.01990377789536829,
+    -0.06891143935558525
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      225.14378217873517,
+      201.49559214985388,
+      197.01087463378627,
+      194.71220841879506,
+      51.40315540016116,
+      240.0,
+      117.1748269860125,
+      6.6882385029529035
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        9.34767369442131e-12,
+        1.1224920233597929e-11,
+        4.97983907701367e-12,
+        1.8185339829593978e-11,
+        3.71998661939864e-11,
+        4.469512318073697e-12,
+        2.9903777895368292e-12,
+        7.891143935558524e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999991943,
+      "relative_l2_error": 1.2984583470435182e-06,
+      "max_absolute_error": 4.515498776003213e-07,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_orig": 0.21837519229252222,
+  "y": 1,
+  "integrity_passed": true
+}
