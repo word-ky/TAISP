@@ -826,3 +826,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14T11:43:05.579477 T029reference/gatefocused12pass5.84s;full243pass11skip4warnings15.43s. All120candidate locked4ec7df4beforeGT. Referencecode prepared, noAP/CLIP/modelchange.
 
 2026-09-14T11:48:12.486654 T029-A complete:all120candidate/referenceintegritypass;Ssoft63/120,31/60;Delta69/120,36/60,positivemedians but2/4blocks=>FAIL.12focused/full243pass11skip. RawSHAverified/reportcomplete;closeexactpower2family,stopNEEDS_REVIEW.
+
+2026-09-14T12:58:08.304508 R045/T030-A read;SSH intermittenttimeouts recovered withworkflowstatus/retry;no modeloutcomes started.60cohort2951prior excluded prepared;baseline10pass5.41s. Native samplingseed20260930/reference20260913 andsumtolerance predeclared.
