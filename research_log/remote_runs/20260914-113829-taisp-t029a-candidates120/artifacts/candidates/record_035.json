@@ -1,0 +1,106 @@
+{
+  "episode_index": 35,
+  "image_id": 374999,
+  "case": "color_cast_s2",
+  "block": 1,
+  "support_count": 0,
+  "support_ids": [],
+  "supports": {
+    "boxes": [],
+    "scores": [],
+    "labels": []
+  },
+  "supports_sha256": "dfc53066ccbd7a69a34a3579df09f311a2414badad84aaeb26ee563a3fb895ed",
+  "weights": [],
+  "original_logits": [],
+  "q": [],
+  "objectives": {
+    "hard": {
+      "gradient": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "norm": 0.0,
+      "loss": 0.0,
+      "direct_reverse": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parity": {
+        "cosine": 1.0,
+        "relative_l2": 0.0,
+        "passed": true
+      }
+    },
+    "soft": {
+      "gradient": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "norm": 0.0,
+      "loss": 0.0,
+      "direct_reverse": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parity": {
+        "cosine": 1.0,
+        "relative_l2": 0.0,
+        "passed": true
+      }
+    }
+  },
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      147.48710343453473,
+      230.6521133742155,
+      177.98061648885448,
+      117.14595575619362,
+      134.35825956934346,
+      187.5,
+      73.20274829113355,
+      18.60407114853286
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "support_match": true,
+  "target_valid": true,
+  "isolation": true
+}

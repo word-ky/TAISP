@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-113829-taisp-t029a-candidates120",
+  "releaseId": "20260914-113818-ttfl-t018-preflight",
+  "sessionName": "autodl-20260914-113829-taisp-t029a-candidates120",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-113707-taisp-t029a-candidate-tested && export TAISP_SOURCE_REVISION=a2bc921 && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.soft_pseudo_candidates --manifest research_log/T029A/candidate_images.json --output \"$AUTODL_ARTIFACTS_DIR/candidates\""
+}

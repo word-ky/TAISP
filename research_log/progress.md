@@ -820,3 +820,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 10:12+08 T029-A/R044read;fresh60cohortseed20260929 preparednooutcomes,2891prior excluded,balancedfourblocks. Baseline9pass2.92s. Exactalpha2/detached91class/sharedsupportweight and numericconventions pinned;actualcommit infuturelaunches.
 
 2026-09-14T11:38:10.405317 T029candidatefocused10pass5.62s. Initialtest usedliteral1.4 causingfloat32normalization mismatch; fixedtest toexisting scores.sum(), no methodchange. Ready120GPUcandidate;actualsourcecommit setbeforelaunch.
+
+2026-09-14T11:40:59.319298 T029120candidates CUDAexit0;source_revision correct a2bc921;archive/perfileSHA verified;all support/target/isolation/JVPpass. Commitall120beforeGTreference.
