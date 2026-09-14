@@ -1,1 +1,2 @@
 2026-09-14T20:28+08:00: Cohort/plan/permutations d14a1f3 pushed before models. Donor baseline 11 passed/1 skipped in5.75s; candidate+native focused9passed8.53s on A6000 environment. Candidate release20260914-202639-taisp-t034a-candidates. No reference annotations/task gradients opened.
+2026-09-14T20:31+08:00: Candidate run20260914-203002-taisp-t034a-candidates240 active, source0f1ddd264d392e0536953d29a632a6382a3c5cf2;75remote codepins verified. Math analytic/zero/paired-null/conjunction tests3passed2.03s on release20260914-203025-taisp-t034a-math. No reference reveal.
