@@ -834,3 +834,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14T13:05:53.321772 T030-A BLOCKED onfirstcandidate componentgradient sum,maxerror/bound13.68;allindividualJVPparity/targets/RNG/freeze flags pass. NoGTreference orremainingepisodes/rerun. Full249pass11skip;failure persistedraw/report,42protected unchanged45remotepinsmatch. Awaitresearch numericaldiagnosis scope.
 
 2026-09-14T13:24:35.139025 R046/T030-A1 acceptednewscope; first4pairs8episodes fixed,5reps, noGT. Pairwise/ordering/directparity/reverse-orderdiagnostic conventions precommitted. OriginalT030failure retained.
+
+2026-09-14T13:29:24.773000 T030-A1 numericaldiagnostic implemented;16focusedpass7.94s,full254pass11skip19.80s. Fourcotangents/rawtensors+projectedvectors, freshdirectphi, RNG/state/support hashes andfixed8x5 gate;non-gatingep0probe restorationtested. ReadyA6000run.
