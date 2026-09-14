@@ -3395,3 +3395,44 @@ Tests baseline11pass1skip5.75s;candidate9pass8.53s;math3pass2.03s;reference4pass
 Operational: intermittentSSH/GitHubtimeouts recovered, no modelrerun. ReferenceSCPvery slowintermittentprogress; stoppedonlymatchingSCP44496, workflowlegacyfallbackcompleted andarchivehashmatched. Preparationoldsharedimportpath repairedbeforecohortcreation. No numerical changes orartifactcleanup;git one-off gc.auto=0 maintenance.auto=false. Heartbeat15minutes; modelworkA6000CUDA. Noactiveexperiment; readLATEST/explicitnewresearchinstructionbeforefurtherwork. Finalcommit/reportSHA/remote-mirrorreceipt in .autodl/last-heartbeat.json.
 Files added: gradient_basis_candidates/math/reference.py, focused tests,prepare_t034a.py, frozenplan/cohort/permutations/codepins/candidatelock,rawruns andreport. Originalmethod/protectedfiles unchanged.
 
+
+
+## T035-A / R053 — NEEDS_REVIEW — 2026-09-14T23:32:09.128662+08:00
+
+Literature/design only; no model/GPU invocation, finite-step experiment, AP/K-step or implementation/deployment change. R053 at 44030b0 followed; T034 accepted FAIL stays closed.
+
+Exact reviewed recent papers and primary sources (full author metadata and methods in the linked audit):
+
+- P01 [NC-TTT: A Noise Constrastive Approach for Test-Time Training](https://openaccess.thecvf.com/content/CVPR2024/html/Osowiechi_NC-TTT_A_Noise_Constrastive_Approach_for_Test-Time_Training_CVPR_2024_paper.html); supplementary/author-method links are in the audit.
+- P02 [Depth-aware Test-Time Training for Zero-shot Video Object Segmentation](https://openaccess.thecvf.com/content/CVPR2024/html/Liu_Depth-aware_Test-Time_Training_for_Zero-shot_Video_Object_Segmentation_CVPR_2024_paper.html); supplementary/author-method links are in the audit.
+- P03 [What, How, and When Should Object Detectors Update in Continually Changing Test Domains?](https://openaccess.thecvf.com/content/CVPR2024/papers/Yoo_What_How_and_When_Should_Object_Detectors_Update_in_Continually_CVPR_2024_paper.pdf); supplementary/author-method links are in the audit.
+- P04 [Efficient Test-time Adaptive Object Detection via Sensitivity-Guided Pruning](https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Efficient_Test-time_Adaptive_Object_Detection_via_Sensitivity-Guided_Pruning_CVPR_2025_paper.pdf); supplementary/author-method links are in the audit.
+- P05 [Adaptive Dual Uncertainty Optimization: Boosting Monocular 3D Object Detection under Test-Time Shifts](https://openaccess.thecvf.com/content/ICCV2025/html/Hu_Adaptive_Dual_Uncertainty_Optimization_Boosting_Monocular_3D_Object_Detection_under_ICCV_2025_paper.html); supplementary/author-method links are in the audit.
+- P06 [InsCal: Calibrated Multi-Source Fully Test-Time Prompt Tuning for Object Detection](https://openaccess.thecvf.com/content/CVPR2026/html/Que_InsCal_Calibrated_Multi-Source_Fully_Test-Time_Prompt_Tuning_for_Object_Detection_CVPR_2026_paper.html); supplementary/author-method links are in the audit.
+- P07 [CD-Buffer: Complementary Dual-Buffer Framework for Test-Time Adaptation in Adverse Weather Object Detection](https://openaccess.thecvf.com/content/CVPR2026/html/Song_CD-Buffer_Complementary_Dual-Buffer_Framework_for_Test-Time_Adaptation_in_Adverse_Weather_CVPR_2026_paper.html); supplementary/author-method links are in the audit.
+- P08 [ViT³: Unlocking Test-Time Training in Vision](https://openaccess.thecvf.com/content/CVPR2026/papers/Han_ViT3_Unlocking_Test-Time_Training_in_Vision_CVPR_2026_paper.pdf); supplementary/author-method links are in the audit.
+- P09 [AdaptiveISP: Learning an Adaptive Image Signal Processor for Object Detection](https://proceedings.neurips.cc/paper_files/paper/2024/hash/cc596a803bedc7a03a87e98c77a22efe-Abstract-Conference.html); supplementary/author-method links are in the audit.
+- P10 [Each Test Image Deserves A Specific Prompt: Continual Test-Time Adaptation for 2D Medical Image Segmentation](https://openaccess.thecvf.com/content/CVPR2024/html/Chen_Each_Test_Image_Deserves_A_Specific_Prompt_Continual_Test-Time_Adaptation_CVPR_2024_paper.html); supplementary/author-method links are in the audit.
+- P11 [Entropy is not Enough for Test-Time Adaptation: From the Perspective of Disentangled Factors](https://proceedings.iclr.cc/paper_files/paper/2024/hash/cd0665986c1e9c15f6569ac944bcf88a-Abstract-Conference.html); supplementary/author-method links are in the audit.
+- P12 [Learning to Adapt Frozen CLIP for Few-Shot Test-Time Domain Adaptation](https://proceedings.iclr.cc/paper_files/paper/2025/hash/a5f2dc873f2971491d34b0e797411d82-Abstract-Conference.html); supplementary/author-method links are in the audit.
+- P13 [TTT-MIM: Test-Time Training with Masked Image Modeling for Denoising Distribution Shifts](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1921_ECCV_2024_paper.php); supplementary/author-method links are in the audit.
+- P14 [Image-adaptive 3D Lookup Tables for Real-time Image Enhancement with Bilateral Grids](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06517.pdf); supplementary/author-method links are in the audit.
+- P15 [Data-Driven Loss Functions for Inference-Time Optimization in Text-to-Image](https://openaccess.thecvf.com/content/WACV2026/papers/Yiflach_Data-Driven_Loss_Functions_for_Inference-Time_Optimization_in_Text-to-Image_WACV_2026_paper.pdf); supplementary/author-method links are in the audit.
+
+Historical novelty checks: O01 [Test Time Adaptation via Conjugate Pseudo-labels, NeurIPS2022](https://proceedings.neurips.cc/paper_files/paper/2022/hash/28e9eff897f98372409b40ae1ed3ea4c-Abstract-Conference.html); O02 [MT3: Meta Test-Time Training for Self-Supervised Test-Time Adaption, author preprint](https://arxiv.org/abs/2103.16201). These do not count toward the six recent independent additions.
+
+Three corrections: (1) frozen detector plus scene-adaptive ISP is already covered by AdaptiveISP; per-image frozen-model input optimization also exists in VPTTA; (2) source co-design is established, and learning a scalar is not itself novel, while source-likeness/confidence is not task utility; (3) geometry and spatial capacity require their own deployment-visible supervisory evidence—2D equivariance, 3D normals and a bilateral grid are not interchangeable. ViT3 is architectural sequence TTT; its specific inner architecture/step size is not imported.
+
+Strongest novelty threat: AdaptiveISP (NeurIPS2024) for the central task/carrier/frozen-detector story; Learn-to-Steer plus older meta-loss work further narrows learned-objective novelty. Strongest defensible remaining gap: a source-trained current-observation scalar whose fixed deployment gradient yields held-out, signed finite-step task usefulness beyond matched controls, outside an explicit H/C/N mixing family. This is untested in TAISP, not proven absent in the literature.
+
+Artifacts and SHA-256:
+
+- [T035A_literature_review.md](../research_log/T035A_literature_review.md) — `25bc890cfa322266c277c0ac91cf56954b5a2dd20ad5c27fac122630ec3b1908`
+- [T035A_overlap_matrix.md](../research_log/T035A_overlap_matrix.md) — `ebe68ab3270194e8c7a781f21e30a23e9a24c2c363b037e8de2c06096c2f34a6`
+- [T035A_method_cards.md](../research_log/T035A_method_cards.md) — `cb902fcdc0b65d1cd6d6f5e7ea34b3b960c8aeeb50127483d7f8cb67441eb619`
+
+[Search/access notes](../research_log/T035A/search-notes.md), [CSV registry](../research_log/T035A/papers.csv), and [handoff](../research_log/T035A_handoff.md) retained. P06 exact calibration equation, P10 reproduction details and P11 trainable subset are explicitly unverified; no formulas invented.
+
+One method card only: source-trained current-observation scalar, source one-step task-loss outer training, frozen detector and loss head at deployment, per-image ISP state only. **NOT IMPLEMENTED**. It compares NC-TTT/depth-aware TTT/AdaptiveISP/Learn-to-Steer and older meta-TTT, distinguishes the failed direct-phi predictor, and proposes a completely fresh source/holdout falsification plus precommitted stop criteria. Proposed numerical choices require the next research decision; they are not new experimental results. No second spatial card: signal evidence is insufficient.
+
+Verification: 15 recent bibliography entries (8 seeds + 7 additions, 6 additions in priority venues), 12 requested overlap branches, 7 evidence-graded principles, one unimplemented card; local document links and document-only Git diff checked. No model/regression suite rerun for documentation. Stop NEEDS_REVIEW per R053; no next experiment launched.
