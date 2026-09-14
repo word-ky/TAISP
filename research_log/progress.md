@@ -810,3 +810,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 08:24+08 R043/T028-A read and180freshcohort prepared withseed20260928;2711prior excluded. Baseline12pass2.82s. Predeclared std/null/ties/split beforemodeloutcomes; existing CLIP displacement identityloss retained, no objective change.
 
 2026-09-14 08:26+08 T028candidate21D tests and inheritedJVP12pass5.33s; GT-free transitive import check passed. Newcode uses unchanged original-view pseudo and genericCLIP loss, both global8D; candidate release082414 ready.
+
+2026-09-14 08:30+08 T028all360GT-freefeature records complete CUDAexit0;allhashes/isolation/parity verified. Raw source_revision accidentally placeholder; preservedraw plus codeSHA mapping3614d6e in candidate_provenance.json (verifiedequalcodepins), no rerun. Exactsplit/familybalances verified. Candidate lock before source references.

@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-082515-taisp-t028a-candidates360",
+  "releaseId": "20260914-082414-taisp-t028a-candidate",
+  "sessionName": "autodl-20260914-082515-taisp-t028a-candidates360",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-082414-taisp-t028a-candidate && export TAISP_SOURCE_REVISION=$(git_not_used=1; echo placeholder) && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.gradient_state_candidates --manifest research_log/T028A/candidate_images.json --output \"$AUTODL_ARTIFACTS_DIR/candidates\""
+}

@@ -1,0 +1,33 @@
+{
+  "source_revision": "placeholder",
+  "python": "3.12.12",
+  "torch": "2.4.0+cu121",
+  "gpu": "NVIDIA RTX A6000",
+  "cuda": "12.1",
+  "seed": 20260913,
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "weight_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "device": "cuda:0",
+  "optimizer_steps": 0,
+  "AP_calls": 0,
+  "clip_model": "openai/clip-vit-base-patch32",
+  "clip_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "clip_state_sha256": "6b38ac3696ff07a4e0cdbe436db05551707486e413df526256526b5777fe147c",
+  "positive_prompts": [
+    "a clear natural photograph",
+    "a well-lit photograph with natural colors",
+    "a sharp and clear photograph with good visibility"
+  ],
+  "negative_prompts": [
+    "a dark underexposed photograph",
+    "a poorly lit photograph with low visibility",
+    "a low contrast washed-out photograph",
+    "a hazy photograph with faded details",
+    "a photograph with an unnatural color cast",
+    "a photograph with distorted and unbalanced colors"
+  ],
+  "manifest_sha256": "8aa751886e92173756da8ac22f90035b0dc109e7f676b623d3e692c5f67d4b57",
+  "feature_dimension": 21
+}
