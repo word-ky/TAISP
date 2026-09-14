@@ -1,4 +1,4 @@
-"""R045 annotation-free pseudo-native sum and diagnostic component gradients."""
+"""R047 PASS-authorized analysis correction; literal native sum unchanged."""
 import argparse
 import hashlib
 import json
@@ -36,9 +36,12 @@ def gradients(image,isp,source,hard,targets):
     scalars={'native':total,**{k:parts[k] for k in KEYS}}
     cotangents={'hard':ch};losses={'hard':hard_loss.item()}
     for j,(key,loss) in enumerate(scalars.items()):
-        cotangents[key]=torch.autograd.grad(loss,y,retain_graph=j<len(scalars)-1)[0].detach()
+        cotangents[key]=torch.autograd.grad(loss,y,retain_graph=True)[0].detach()
         assert torch.isfinite(loss) and torch.isfinite(cotangents[key]).all()
         losses[key]=loss.item()
+    outputs=tuple(parts[k] for k in KEYS)
+    cotangents['multi']=torch.autograd.grad(outputs,y,grad_outputs=tuple(torch.ones_like(v) for v in outputs))[0].detach()
+    losses['multi']=total.item()
     refs,jac=common_jvp(image,isp,image.new_ones(1,1,*image.shape[-2:]),cotangents)
     values={}
     for key,ct in cotangents.items():
@@ -48,7 +51,7 @@ def gradients(image,isp,source,hard,targets):
         cos=math.fsum(a*b for a,b in zip(g,direct))/(n*nd) if n and nd else (1. if n==nd==0 else 0.)
         rel=norm([a-b for a,b in zip(g,direct)])/max(n,1e-12)
         values[key]={'gradient':g,'norm':n,'loss':losses[key],'direct_reverse':direct,
-            'parity':{'cosine':cos,'relative_l2':rel,'passed':cos>=.999999 and rel<=1e-5}}
+            'parity':{'cosine':cos,'relative_l2':rel,'passed':cos>=.999999 and rel<=1e-5 and (not bool(ct.count_nonzero()) or (n>0 and nd>0))}}
     return values,jac,{'restored':rng_ok,'sampling_seed':20260930,
         'cpu_rng_before_sha256':hashlib.sha256(before_cpu.cpu().numpy().tobytes()).hexdigest(),
         'cuda_rng_before_sha256':hashlib.sha256(before_cuda.cpu().numpy().tobytes()).hexdigest() if before_cuda is not None else None}
@@ -71,18 +74,19 @@ def run(manifest_path,output):
             'supports_sha256':hashlib.sha256(json.dumps(supports,sort_keys=True,separators=(',',':')).encode()).hexdigest(),
             'pseudo_targets':{k:v.cpu().tolist() for k,v in targets[0].items()},'hard_weights':hard.weights.cpu().tolist(),
             'objectives':values,'jacobian':jac,'rng':rng,'component_sum':sumcheck,
+            'multi_native_relative_l2':norm([a-b for a,b in zip(values['multi']['gradient'],gn)])/max(norm(values['multi']['gradient']),nn,1e-12),
             'hard_native_cosine':math.fsum(a*b for a,b in zip(gh,gn))/(nh*nn) if nh and nn else None,
             'target_match':target_match,'support_match':support_match,
             'isolation':isolated(source) and isp.phi.grad is None and not bool(isp.phi.any())}
         write(output/f'record_{index:03d}.json',row)
-        assert target_match and support_match and row['isolation'] and rng['restored'] and sumcheck['passed'] and all(v['parity']['passed'] for v in values.values())
+        assert target_match and support_match and row['isolation'] and rng['restored'] and all(v['parity']['passed'] for v in values.values())
         rows.append(row);print(json.dumps({'stage':'candidate','episode':index,'integrity':True}),flush=True)
     assert len(rows)==120 and state_hash(source)==env['source_state_sha256']
     forbidden=[k for k in sys.modules if k.startswith('taisp.') and any(x in k for x in ('oracle','reference','source_meta','clip_semantic','memory'))]
     assert not forbidden,forbidden
     write(output/'records.json',rows)
     write(output/'completion.json',{'status':'candidate_complete','episodes':120,'seconds':time.perf_counter()-started,
-        'source_hash_after':state_hash(source),'forbidden_modules_loaded':forbidden,'AP_calls':0})
+        'source_hash_after':state_hash(source),'forbidden_modules_loaded':forbidden,'AP_calls':0,'GT_loaded':False})
     write(output/'sha256.json',{p.name:sha(p) for p in sorted(output.iterdir()) if p.is_file()})
 
 

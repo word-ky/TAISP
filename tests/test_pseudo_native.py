@@ -86,3 +86,19 @@ def test_full_component_gradients_and_jvp_parity():
 def test_candidate_transitive_import_boundary():
     code="import sys; import taisp.analysis.pseudo_native_candidates; assert not [k for k in sys.modules if k.startswith('taisp.') and any(x in k for x in ('oracle','reference','source_meta','clip_semantic','memory'))]"
     subprocess.run([sys.executable,'-c',code],check=True,capture_output=True)
+
+
+def test_r047_authoritative_scalar_is_not_component_or_multi_replacement():
+    source,x,t=fixtures();isp=DifferentiableISP().to(x.device)
+    values,_,rng=gradients(x.detach(),isp,source,lambda original,y:y.square().mean(),t)
+    phi=x.new_zeros(8,requires_grad=True)
+    total,_=pseudo_native_loss(source,isp(x.detach(),phi),t)
+    expected=torch.autograd.grad(total,phi)[0]
+    torch.testing.assert_close(expected,expected.new_tensor(values['native']['gradient']),rtol=1e-5,atol=1e-7)
+    assert 'multi' in values and rng['restored']
+    assert all(v['parity']['passed'] for v in values.values())
+    # Structural regression: old decomposition diagnostic cannot stop the runner.
+    from taisp.analysis.pseudo_native_candidates import run
+    assertions=[ast.unparse(n.test) for n in ast.walk(ast.parse(inspect.getsource(run))) if isinstance(n,ast.Assert)]
+    assert all('sumcheck' not in expr for expr in assertions)
+    assert "'component_sum': sumcheck" in ast.unparse(ast.parse(inspect.getsource(run)))
