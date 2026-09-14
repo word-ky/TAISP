@@ -1,0 +1,95 @@
+{
+  "images": [
+    {
+      "image_id": 27717,
+      "path": "/home/wenchang/asdasdsad/wjq/dapd_query_opt44/assets/rexeval/coco/train2017/000000027717.jpg",
+      "file_name": "000000027717.jpg",
+      "sha256": "fea8109d23bc2fde1bd65a0eb636f355ccf6789e4dfdbaedd07172293fd56e30",
+      "width": 375,
+      "height": 500,
+      "block": 0,
+      "selection_hash": "0025125788df5cc02dd854febe010bb4a83fe8fc273dc3904fd0e5628030ccbc"
+    },
+    {
+      "image_id": 74938,
+      "path": "/home/wenchang/asdasdsad/wjq/dapd_query_opt44/assets/rexeval/coco/train2017/000000074938.jpg",
+      "file_name": "000000074938.jpg",
+      "sha256": "1f96f664948fe2dbc25cb713c88b67d3a32499c4fc211cf13d11d2e6b4c25d0c",
+      "width": 640,
+      "height": 480,
+      "block": 0,
+      "selection_hash": "0025e883902f6fa85f73cece591a6fae29f250ae409c8c3fce93f9fe3eded823"
+    },
+    {
+      "image_id": 347235,
+      "path": "/home/wenchang/asdasdsad/wjq/dapd_query_opt44/assets/rexeval/coco/train2017/000000347235.jpg",
+      "file_name": "000000347235.jpg",
+      "sha256": "1160b26c94253a983f436e663ba011244a12abf0bfff9d9bb7abd20ffda49291",
+      "width": 619,
+      "height": 640,
+      "block": 0,
+      "selection_hash": "0028eafe9cd8c85c1fd56d0f5db422a835aa023418da384cfed509afdc1822c1"
+    },
+    {
+      "image_id": 413056,
+      "path": "/home/wenchang/asdasdsad/wjq/dapd_query_opt44/assets/rexeval/coco/train2017/000000413056.jpg",
+      "file_name": "000000413056.jpg",
+      "sha256": "081c25fef3ebf6b821ecdaccd033042be0a00e2bc91dd47bf8c1507cd4e4cbdf",
+      "width": 480,
+      "height": 640,
+      "block": 0,
+      "selection_hash": "002b46d2ae1fb06d4228dbb5951aa22e8f3db541087bb65aeba8835a7fe0c63b"
+    }
+  ],
+  "corrupted_cases": [
+    "contrast_s2",
+    "color_cast_s2",
+    "gamma_s2",
+    "contrast_s2"
+  ],
+  "cohort_sha256": "3ac9eb54750f0a2b197fa37205d33f493e039b9932b785830288ba997dd32752",
+  "native_seed": 20260930,
+  "support_rule": ".50 stabletop20 originalonceperepisode",
+  "repetitions": 5,
+  "source_revision_before_diagnostic": "b083ffd",
+  "model_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "weight_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "device": "cuda:0",
+  "setup_seed": 20260913,
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "ordered_episodes": [
+    {
+      "image_id": 27717,
+      "case": "clean_s0"
+    },
+    {
+      "image_id": 27717,
+      "case": "contrast_s2"
+    },
+    {
+      "image_id": 74938,
+      "case": "clean_s0"
+    },
+    {
+      "image_id": 74938,
+      "case": "color_cast_s2"
+    },
+    {
+      "image_id": 347235,
+      "case": "clean_s0"
+    },
+    {
+      "image_id": 347235,
+      "case": "gamma_s2"
+    },
+    {
+      "image_id": 413056,
+      "case": "clean_s0"
+    },
+    {
+      "image_id": 413056,
+      "case": "contrast_s2"
+    }
+  ]
+}
