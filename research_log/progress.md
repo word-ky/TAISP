@@ -822,3 +822,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14T11:38:10.405317 T029candidatefocused10pass5.62s. Initialtest usedliteral1.4 causingfloat32normalization mismatch; fixedtest toexisting scores.sum(), no methodchange. Ready120GPUcandidate;actualsourcecommit setbeforelaunch.
 
 2026-09-14T11:40:59.319298 T029120candidates CUDAexit0;source_revision correct a2bc921;archive/perfileSHA verified;all support/target/isolation/JVPpass. Commitall120beforeGTreference.
+
+2026-09-14T11:43:05.579477 T029reference/gatefocused12pass5.84s;full243pass11skip4warnings15.43s. All120candidate locked4ec7df4beforeGT. Referencecode prepared, noAP/CLIP/modelchange.
