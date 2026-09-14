@@ -961,3 +961,7 @@ Noactivejob. StopNEEDS_REVIEWwaitexplicitresearchcontinuation. Futureadditional_
 
 2026-09-14T19:07:50.306002+08:00 # T033-A / R051 IN_PROGRESS
 Plan andfresh300cohort readybeforemodelcalls;seed20261004,3491prior excluded,train240/holdout60. Candidate600nextafterbaselineandfocusedtests. Noactivejob/no newmodelcalls yet. Read T033A_plan.md andR051fullcontinuation. A6000CUDA.
+
+2026-09-14T19:10:13.738299+08:00 T033baseline5pass3warnings5.12s existing orthogonal_candidates+source_roi_memory_audit tests onremote AFTER plan/cohortcommit4126a98. Candidate module reuseshardcandidate andfixedROI, newconfidencepool only; pendingfocusedtests.
+
+2026-09-14T19:11:14.4197677+08:00 T033candidate+existinghard focused5pass3warnings7.64s; reuse/pool/empty/classirrelevance/importboundary green. Commit code/pins beforecandidate600.
