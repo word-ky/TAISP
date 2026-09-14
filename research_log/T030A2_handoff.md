@@ -1,2 +1,3 @@
-# T030-A2 / R047 IN_PROGRESS
-Next four T030 pairs27717,74938,347235,413056 frozen;8episodes5reps; noGT. Pre-outcome manifest and gate plan saved. Baseline5tests passed5.15s onremote. Implement bounded samegraph/samecotangent audit; A6000CUDA; do not change old R046 result. No active run yet.
+# T030-A2 / R047 diagnostic PASS — conditional candidate correction in progress
+Manifest1d4b158;codee5ed293;run20260914-151141-taisp-t030a2-attribution8x5;40reps48.186700168s. Gates1-4allpass;8/8noiseexplained;maxnativepairrel.0017662375053865307;minnativecos.9999984580853699;maxchainrel8.961290554393774e-7. NoGT/AP.
+Diagnostic raw archiveSHA caede3c11bbf9c1d835c5ccb151d2950075f4aee5e814f4ada16f89ced36b5d6 verified, remoteallrawfilesSHAverifiedincluding40tensorfiles;localJSON+index retained. Nowauthorized mechanicalanalysisrunnercorrection+focused/fulltests thenfull120GTfreecandidatefrom0 undernewcommittedcode;stopbeforeGT. OldR046BLOCKED remains.

@@ -1,0 +1,18 @@
+{
+  "source_revision": "e5ed293",
+  "python": "3.12.12",
+  "torch": "2.4.0+cu121",
+  "gpu": "NVIDIA RTX A6000",
+  "cuda": "12.1",
+  "seed": 20260913,
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "weight_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "device": "cuda:0",
+  "optimizer_steps": 0,
+  "AP_calls": 0,
+  "manifest_sha256": "4b43fc9bb5ec5f94e9fd00fda3bdf37be16c44c6c53be9963f2589d07c6fbf82",
+  "native_sampling_seed": 20260930,
+  "repetitions": 5
+}

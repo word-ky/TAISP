@@ -854,3 +854,11 @@ Focused16passed; full254passed11skipped4warnings19.80s. Report generation verifi
 Next four T030 pairs27717,74938,347235,413056 frozen;8episodes5reps; noGT. Pre-outcome manifest and gate plan saved. Baseline5tests passed5.15s onremote. Implement bounded samegraph/samecotangent audit; A6000CUDA; do not change old R046 result. No active run yet.
 
 2026-09-14T15:10:46.728247+08:00 T030-A2 audit module focused15pass4warnings10.45s onA6000; samegraph3scalarcalls andsamecotangentchain verified synthetic; exactgate boundary tests/import boundary pass. Fullregression running before outcomes.
+
+2026-09-14T15:12:13.538692+08:00 # T030-A2 / R047 IN_PROGRESS — GPU audit running
+Manifest1d4b158; diagnosticcodee5ed293; release20260914-150932-taisp-t030a2-attribution. Run20260914-151141-taisp-t030a2-attribution8x5. Frozen next4pairs27717,74938,347235,413056;8episodes5reps. NoGT.
+Focused15pass10.45s/full258pass11skip22.76s;49remotehashesmatch. Check this exactrun before any relaunch; collect summary and apply R047Gates1-4. Onlyallpass authorizes mechanical120candidate correction/rerun, thenstopbeforeGT; anyfailBLOCKED. Large tensors retained server,fetchJSON/hashindex only due localdisk.
+
+2026-09-14T15:14:00.306506+08:00 # T030-A2 / R047 diagnostic PASS — conditional candidate correction in progress
+Manifest1d4b158;codee5ed293;run20260914-151141-taisp-t030a2-attribution8x5;40reps48.186700168s. Gates1-4allpass;8/8noiseexplained;maxnativepairrel.0017662375053865307;minnativecos.9999984580853699;maxchainrel8.961290554393774e-7. NoGT/AP.
+Diagnostic raw archiveSHA caede3c11bbf9c1d835c5ccb151d2950075f4aee5e814f4ada16f89ced36b5d6 verified, remoteallrawfilesSHAverifiedincluding40tensorfiles;localJSON+index retained. Nowauthorized mechanicalanalysisrunnercorrection+focused/fulltests thenfull120GTfreecandidatefrom0 undernewcommittedcode;stopbeforeGT. OldR046BLOCKED remains.
