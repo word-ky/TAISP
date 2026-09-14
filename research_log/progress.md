@@ -898,3 +898,9 @@ Baseline11pass7.87s;focused12pass7.77s;full264pass11skip4warnings25.03s. 53prote
 240freshimages prepared(seed20261001),3011prior/reservedexcluded plusval/evaluation;180train60holdout pair-preserving balancedfamiliesandblocks. No modeloutcomes yet. Baseline9pass5.42s. Candidate480label-free thenlocked; train360reference/SVDoneRcommit beforeholdout120taskgradient. Annotationpreparer wrote separatepartitionsonserver; candidatefile containsnopaths/GT. NoT030revival/AP/Kstep.
 
 2026-09-14T16:58:37.063731+08:00 T031candidatefocused6pass4warnings5.18s;unchangedoriginalviewhardreuse,zerorecord/RNG,noextraobjectiveimports tested. Ready480GTfreeCUDA.
+
+2026-09-14T17:02:49.636914+08:00 # T031-A / R049 IN_PROGRESS — 480candidate run active
+Cohortb019a89; candidatecode620076f; release20260914-165741-taisp-t031a-candidates; run20260914-165905-taisp-t031a-candidates480. Latest307/480 atcheck; no GT/reference/model fitting yet. Candidatefocused6passed5.18s;58pinsmatch.
+Reference/Procrustes analysis module and tests drafted locally, pendingtest/deploy. Awaitcompletecandidate,fetchall480/commitlock beforetrain360. Trainannotationsonlyfrompartitionfile; oneCPUfloat64SVD;commitRbeforeholdout120. No candidate rerun or T030revival/AP.
+
+2026-09-14T17:03:57.109067+08:00 T031reference/Procrustesfocused5pass3.88s; oneSVD O8reflection/columnconvention/zeros/meanoutliergate tests pass. Referencecodecommittedbeforetrainorholdoutgradients. FullsuitewillrunaftercandidateGPUjobcompletes.
