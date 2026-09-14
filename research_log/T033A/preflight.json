@@ -1,0 +1,27 @@
+{
+  "phase": "holdout",
+  "candidate_lock_sha256": "9dd19b7c5df3bf1cb0ea5ac623a75dd451dbb64da7367a9ba8bb8306260fc872",
+  "candidate_records_sha256": "265451316d20725999d7117788f0874cff1faa617351e5320957b854cc5cb64a",
+  "candidate_commit": "25d74e9142e58224d2589ac00be18872292606c5",
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "representation_commit": "d0080523a423a90321129fbfe34cc29d46a259fa",
+  "representation_lock_sha256": "f87461011ffc98a04f3bf03db694bc220a6a0789cefa0da5bab15d52342f4261",
+  "train_holdout_disjoint": true,
+  "before_annotations_and_oracle": true,
+  "map_lock": null,
+  "direction_lock": {
+    "status": "directions_complete",
+    "episodes": 120,
+    "GT_loaded": false,
+    "task_gradients_computed": 0,
+    "candidate_lock_sha256": "9dd19b7c5df3bf1cb0ea5ac623a75dd451dbb64da7367a9ba8bb8306260fc872",
+    "representation_lock_sha256": "f87461011ffc98a04f3bf03db694bc220a6a0789cefa0da5bab15d52342f4261",
+    "model_commit": "7976196999be1042452350c7ad7fc0cd9696735a",
+    "model_lock_sha256": "d3dcfa5a788c9e4ff06040dd805fba758356170baedc1fa1a8b929a6a458ceb0",
+    "model_sha256": "79dc0866f76d1f0fcb4c22ff7aaa0d1016ae27b770a6258d0a8667be6db0251e",
+    "AP_calls": 0,
+    "directions_commit": "21a0ee43bc012e4efb3ddcf225d559741d6fd5ed",
+    "directions_sha256": "cac18406ffc23a42b4d53a2d6384bb93926136d37b4fc1704e81caae3eb29786",
+    "directions_lock_sha256": "83def049f69306bcbc3b14ad3ae61c0a4ed39da9196b6d597d75fe1fea425a89"
+  }
+}

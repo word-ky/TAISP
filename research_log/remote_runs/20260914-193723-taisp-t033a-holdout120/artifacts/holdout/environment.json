@@ -1,0 +1,21 @@
+{
+  "source_revision": "9af1d15",
+  "python": "3.12.12",
+  "torch": "2.4.0+cu121",
+  "gpu": "NVIDIA RTX A6000",
+  "cuda": "12.1",
+  "seed": 20260913,
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "weight_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "device": "cuda:0",
+  "optimizer_steps": 0,
+  "AP_calls": 0,
+  "phase": "holdout",
+  "candidate_lock_sha256": "9dd19b7c5df3bf1cb0ea5ac623a75dd451dbb64da7367a9ba8bb8306260fc872",
+  "cohort_sha256": "690eadca95f37a40acc78f80284e55c802ea02a451ed8bed37e66aa99d5dd515",
+  "map_lock": null,
+  "annotation_path": "/home/liujianhua/wjq/TAISP/research_log/T033A/holdout_annotations.json",
+  "annotation_sha256": "f4e9306c3f9c5b34896f59634f981bbeb915fd115f4292bb54ecd79b098be4f2"
+}
