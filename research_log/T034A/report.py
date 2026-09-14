@@ -77,18 +77,19 @@ def main(project, candidate_run, reference_run):
         f"Every240 candidate and240 reference state/RNG/JVP check passed. Raw verified files {verified}; {len(pins)} protected/new code pins unchanged. Detector state {ce['source_state_sha256']}; CLIP state {ce['clip_state_sha256']}; CLIP weight {ce['clip_weight_sha256']}.",
         'Native literal fullscalar is authoritative. Component-additivity is retained as a non-gating R047 diagnostic. Support boxes/labels/weights, pseudo targets, source/CLIP state and RNG receipts, zero flags and direct-reverse comparisons retained.',
         f"Candidate records SHA {sha(croot/'records.json')}; reference records SHA {sha(rroot/'records.json')}; null raw SHA {sha(rroot/'null_episode_scores.json')}.", '',
-        '## Validation', '', 'Donor baseline:11passed1skipped5.75s. Candidate+native focused:9passed8.53s. Span/null math:3passed2.03s. Reference order+math:4passed4.75s. Full suite receipt:research_log/T034A_full_tests.txt. Opt-in real-model tests skipped by default; actual240 candidate and240 reference episodes are the real CUDA integration.', '',
+        '## Validation', '', 'Donor baseline:11passed1skipped5.75s. Candidate+native focused:9passed8.53s. Span/null math:3passed2.03s. Reference order+math:4passed4.75s. Full suite:292passed11skipped4warnings49.36s; receipt:research_log/T034A_full_tests.txt. Opt-in real-model tests skipped by default; actual240 candidate and240 reference episodes are the real CUDA integration.', '',
         '## Decision boundary', '']
     if summary['decision']=='PASS':
         lines.append('Full frozen conjunction passes. This supports only sample-specific task-direction information in the existing H/C/N span. Stop NEEDS_REVIEW before coefficient learning or AP.')
     else:
         lines.append('Full frozen conjunction fails. Close the exact old hard/CLIP/native gradient-basis mixing direction. No basis expansion, nonlinear mixer, threshold changes or outcome-driven rescue. Stop NEEDS_REVIEW for a new research instruction.')
-    lines += ['', 'Operational receipts: one transient SSH log-read disconnect; status confirmed the same candidate process continued, no restart. Preparer import precedence repaired before cohort generation. No numerical protocol change or deleted recovery artifact.', '']
+    lines += ['', 'Operational receipts: intermittent SSH/GitHub connection failures recovered; status confirmed the same candidate process continued without restart. Reference download made very slow intermittent progress; stopped only its matching SCP process44496 and the existing workflow legacy-SCP fallback completed. Both archive SHAs verified; no experiment rerun. Preparer import precedence repaired before cohort generation. No numerical protocol change or deleted recovery artifact.', '']
     (project/'research_log/T034A_report.md').write_text('\n'.join(lines), encoding='utf-8')
     paths = set(p for p in project.glob('research_log/T034A*') if p.is_file())
     paths.update(p for p in out.rglob('*') if p.is_file())
     paths.update(p for root in [cr,rr] for p in root.rglob('*') if p.is_file())
     paths.update(project/f for f in pins)
+    paths.update(project/f for f in ['research_log/project_state.md', 'coordination/CODEX_TO_CHATGPT.md', 'research_log/compute_preferences.md'])
     manifest = {str(p.relative_to(project)).replace('\\','/'):sha(p) for p in sorted(paths) if p.name!='artifact_manifest.json'}
     (out/'artifact_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({'decision':summary['decision'], 'verified_raw':verified, 'artifacts':len(manifest), 'report_sha256':sha(project/'research_log/T034A_report.md')}))
