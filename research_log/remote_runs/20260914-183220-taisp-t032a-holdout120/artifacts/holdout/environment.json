@@ -1,0 +1,25 @@
+{
+  "source_revision": "57bf9b6",
+  "python": "3.12.12",
+  "torch": "2.4.0+cu121",
+  "gpu": "NVIDIA RTX A6000",
+  "cuda": "12.1",
+  "seed": 20260913,
+  "source_state_sha256": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "weight_sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "deterministic_algorithms": false,
+  "cudnn_benchmark": false,
+  "device": "cuda:0",
+  "optimizer_steps": 0,
+  "AP_calls": 0,
+  "phase": "holdout",
+  "candidate_lock_sha256": "55db016f1a43d5ed04ccea7fc0ffd07ce547a7cea678af210f52aee66cd9e40e",
+  "cohort_sha256": "a51028db007f2530ef1ae01c7d683aa0c7e70dac2acd3cc0a78b31b1291325b0",
+  "map_lock": {
+    "map_commit": "a0ecfdab59b7425fb93ba298f647f1bf33794d6e",
+    "maps_sha256": "36a0e62b7696b8ea99bc92f6806c8f30dc7d1aa4a6414cfd2ae81dfb5219ec4e",
+    "map_lock_sha256": "611ce63d828fef3d74b6e48f53f3468ab60af67f3ff0b19920c49fce31be3cfd"
+  },
+  "annotation_path": "/home/liujianhua/wjq/TAISP/research_log/T032A/holdout_annotations.json",
+  "annotation_sha256": "f9a703aec3cda28ee471c1a48efe3373089ce48877cf7f2e5bf32c92c78ef4e3"
+}

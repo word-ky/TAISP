@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-183220-taisp-t032a-holdout120",
+  "releaseId": "20260914-183209-ttie-t030a-guard",
+  "sessionName": "autodl-20260914-183220-taisp-t032a-holdout120",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-181842-taisp-t032a-reference && export TAISP_SOURCE_REVISION=57bf9b6 && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.gradient_regime_reference --cohort research_log/T032A_train_cohort.json --candidate-root /home/liujianhua/wjq/TAISP/runs/20260914-181428-taisp-t032a-candidates480/artifacts/candidate --candidate-lock research_log/T032A_candidate_lock.json --router research_log/T032A/router.json --router-lock research_log/T032A_router_lock.json --phase holdout --map-root /home/liujianhua/wjq/TAISP/runs/20260914-182353-taisp-t032a-train360-maps/artifacts/train --map-lock research_log/T032A_map_lock.json --output \"$AUTODL_ARTIFACTS_DIR/holdout\""
+}
