@@ -1,0 +1,92 @@
+{
+  "episode_index": 103,
+  "image_id": 66507,
+  "case": "gamma_s2",
+  "block": 3,
+  "task_loss": 0.8961989879608154,
+  "task_components": {
+    "loss_classifier": 0.4331809878349304,
+    "loss_box_reg": 0.38797134160995483,
+    "loss_objectness": 0.03792223334312439,
+    "loss_rpn_box_reg": 0.03712437301874161
+  },
+  "task_gradient": [
+    0.5425834882723501,
+    0.16700378224456613,
+    -0.2705976629303956,
+    -0.03902276806797454,
+    0.26416725320388124,
+    -0.2934325613459602,
+    -0.12130552869706722,
+    -0.019801490367076065
+  ],
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      127.6516082810319,
+      90.83792384740367,
+      92.54842096776885,
+      132.48072854910583,
+      278.3575112582906,
+      240.0,
+      53.21448580926683,
+      16.710100481400925
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        5.525834882723502e-11,
+        1.7700378224456615e-11,
+        2.805976629303956e-11,
+        4.902276806797454e-12,
+        2.7416725320388125e-11,
+        3.0343256134596026e-11,
+        1.3130552869706722e-11,
+        2.980149036707607e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999961,
+      "relative_l2_error": 9.100909855432413e-08,
+      "max_absolute_error": 5.5603491810884975e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "S_hard": 0.7457754929698999,
+  "S_soft": 0.6798768031785101,
+  "Delta": -0.0658986897913898,
+  "norm_hard": 0.137700347660278,
+  "norm_soft": 0.11558213574762617,
+  "norm_ratio": 0.8393743204830543,
+  "gradient_cosine": 0.888038171819717,
+  "integrity_passed": true
+}

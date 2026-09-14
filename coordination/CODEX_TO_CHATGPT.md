@@ -3293,3 +3293,16 @@ See T028A_report.md,T028A/summary.json,estimator.json,integrity.json,per_episode
 Next wait explicit research instruction; no activejob. Every15minuteheartbeat/GPUpreference retained. Futureadditional_source T028A_train_cohort.json contains2891cumulative sourceIDs, plus5000val exclusion.
 
 Cohort SHA256 `9eb17718bf5a02f645c082eb8a025af59c2c9261f62c110f908c65d81e429119`. Candidate records `4e9ace1a3d3a164ed4a1f2dbf7e212197abac72bb74de85db2041792d95d8864`; reference records `d0c5d361edab19e7f62ecab11f2b9efcc9e7742d40076dd7f7815750c2e37ba5`. All gate booleans and strata in summary.json; no holdout-driven refit.
+
+## T029-A / R044 — NEEDS_REVIEW; exact power-2 soft pseudo FAIL
+
+# T029-A complete — NEEDS_REVIEW; exact power-2 soft pseudo FAIL
+R044/023f58b executed.60fresh/120episodes,2891prior+5000valexcluded;balanced20percorruption,4blocks15images.
+Plan80319b1;candidatea2bc921;all120candidate locked/pushed4ec7df4 BEFORE reference8ef7b3e. Correct actualsource_revision in both runs.
+S_softpositive63/120overall31/60corrupt (requires80/45);Deltapositive69/120,36/60 (passes68/35);medianDelta+.00009992983323885152overall,+.0002848683855208589corrupt,+.000008202294632908037clean.2/4positiveblocks (fails>=3). MeanDelta-.0017901247163606075overall,-.0029124519934180795corrupt. ConjunctionFAIL;closeexactalpha2family.
+All120candidate/referenceintegritypass;39protected/priorunchanged,44remotehashesmatch.12focused/full243pass11skip4warnings. Allmodelwork A6000CUDA;noCLIP/AP/runtime/tuning.
+Candidate20260914-113829-taisp-t029a-candidates120(25.996137s);reference20260914-114328-taisp-t029a-reference120(26.817238s),both exit0. Sourcefrozen/eval/gradNone.
+See T029A_report.md, T029A/summary.json,integrity.json,per_episode.tsv, complete raw120candidate/reference. Initialtestnormalizationliteral corrected toexistingscores.sum();no methodchange. SCPtimeout recoveredexistingfallback,no rerun.
+Next wait explicit research instruction; no activejob. Every15minuteheartbeat/GPUpreference retained. Futureadditional_source T029A_train_cohort.json includes2951cumulative sourceIDs plus5000val exclusion.
+
+Cohort SHA256 `719259e31ae53a23cf03431a926c65a1c5643027f1bdbd2570251cb5a61f1676`; candidate records `c33f5cebd61fdbd6b9d6fcc369eccf4a709e18f73c4866c230e8d4a528da20ba`; reference records `d8b47a0bcdce599c93a184aefb0718f9f4ead769704d9ff0a127eccd79a93afb`. Identical hard/soft supports/weights, full91class background retained. All gate booleans and distributions in summary.json. No alpha/temperature or runtime rescue.

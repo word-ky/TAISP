@@ -824,3 +824,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14T11:40:59.319298 T029120candidates CUDAexit0;source_revision correct a2bc921;archive/perfileSHA verified;all support/target/isolation/JVPpass. Commitall120beforeGTreference.
 
 2026-09-14T11:43:05.579477 T029reference/gatefocused12pass5.84s;full243pass11skip4warnings15.43s. All120candidate locked4ec7df4beforeGT. Referencecode prepared, noAP/CLIP/modelchange.
+
+2026-09-14T11:48:12.486654 T029-A complete:all120candidate/referenceintegritypass;Ssoft63/120,31/60;Delta69/120,36/60,positivemedians but2/4blocks=>FAIL.12focused/full243pass11skip. RawSHAverified/reportcomplete;closeexactpower2family,stopNEEDS_REVIEW.
