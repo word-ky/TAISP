@@ -896,3 +896,5 @@ Baseline11pass7.87s;focused12pass7.77s;full264pass11skip4warnings25.03s. 53prote
 
 2026-09-14T16:56:43.076206+08:00 # T031-A / R049 IN_PROGRESS
 240freshimages prepared(seed20261001),3011prior/reservedexcluded plusval/evaluation;180train60holdout pair-preserving balancedfamiliesandblocks. No modeloutcomes yet. Baseline9pass5.42s. Candidate480label-free thenlocked; train360reference/SVDoneRcommit beforeholdout120taskgradient. Annotationpreparer wrote separatepartitionsonserver; candidatefile containsnopaths/GT. NoT030revival/AP/Kstep.
+
+2026-09-14T16:58:37.063731+08:00 T031candidatefocused6pass4warnings5.18s;unchangedoriginalviewhardreuse,zerorecord/RNG,noextraobjectiveimports tested. Ready480GTfreeCUDA.
