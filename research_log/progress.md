@@ -908,3 +908,6 @@ Reference/Procrustes analysis module and tests drafted locally, pendingtest/depl
 2026-09-14T17:06:15.545699+08:00 T031all480candidate complete296.448390157s, sourcehashunchanged/noGT/imports/AP. ArchiveSHA6f4f44b12eec9f0de838290f23e021aba5f901b3b52aa347271be4a49386e433 currentlyfetching session2497. Full271pass11skip4warnings29.78s. No source train/holdoutgradients yet; nextcandidate commitlock.
 
 2026-09-14T17:07:50.365691+08:00 All480GTfreecandidates rawSHAverified,483filehashespass;lockingbeforeGT. SCPstalledat131072bytes; stoppedonlymatchingdownloadscpPID46952,existingworkflowlegacyretrycompleted. No modelrerun. recordsSHA4a4736c99da7f7baf2c332d397133f449418e6fad27aa1c2b4d428a3fb7863d3
+
+2026-09-14T17:08:46.391586+08:00 # T031-A / R049 candidate lock complete; trainreference next
+Cohortb019a89; candidatecode620076f;all480resultlockd997b61. Candidate recordsSHA4a4736c99da7f7baf2c332d397133f449418e6fad27aa1c2b4d428a3fb7863d3,manifest8fb32640c416ca237762be805c26d0d66105aba6f0d11c0dfc2fc96cea4d891c;0zeros/allintegrity. Referencecode14b5c68,5focusedpass3.88s/full271pass11skip29.78s;61remotepinsmatch. No modeljobactiveyet. Launchtrain360onlyafterdescriptorupload;oneRthencommitbeforeholdout.

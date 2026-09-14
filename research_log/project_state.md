@@ -1,3 +1,2 @@
-# T031-A / R049 IN_PROGRESS — 480candidate run active
-Cohortb019a89; candidatecode620076f; release20260914-165741-taisp-t031a-candidates; run20260914-165905-taisp-t031a-candidates480. Latest307/480 atcheck; no GT/reference/model fitting yet. Candidatefocused6passed5.18s;58pinsmatch.
-Reference/Procrustes analysis module and tests drafted locally, pendingtest/deploy. Awaitcompletecandidate,fetchall480/commitlock beforetrain360. Trainannotationsonlyfrompartitionfile; oneCPUfloat64SVD;commitRbeforeholdout120. No candidate rerun or T030revival/AP.
+# T031-A / R049 candidate lock complete; trainreference next
+Cohortb019a89; candidatecode620076f;all480resultlockd997b61. Candidate recordsSHA4a4736c99da7f7baf2c332d397133f449418e6fad27aa1c2b4d428a3fb7863d3,manifest8fb32640c416ca237762be805c26d0d66105aba6f0d11c0dfc2fc96cea4d891c;0zeros/allintegrity. Referencecode14b5c68,5focusedpass3.88s/full271pass11skip29.78s;61remotepinsmatch. No modeljobactiveyet. Launchtrain360onlyafterdescriptorupload;oneRthencommitbeforeholdout.
