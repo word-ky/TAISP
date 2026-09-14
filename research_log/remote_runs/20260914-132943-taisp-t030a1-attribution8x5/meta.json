@@ -1,0 +1,6 @@
+{
+  "runId": "20260914-132943-taisp-t030a1-attribution8x5",
+  "releaseId": "20260914-132745-taisp-t030a1-attribution",
+  "sessionName": "autodl-20260914-132943-taisp-t030a1-attribution8x5",
+  "command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-132745-taisp-t030a1-attribution && export TAISP_SOURCE_REVISION=a2844cd && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.native_vjp_attribution --manifest research_log/T030A1/diagnostic_images.json --output \"$AUTODL_ARTIFACTS_DIR/diagnostic\""
+}

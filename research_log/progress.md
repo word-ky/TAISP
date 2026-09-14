@@ -836,3 +836,16 @@ newregional self-supervised objective or any other experiment.
 2026-09-14T13:24:35.139025 R046/T030-A1 acceptednewscope; first4pairs8episodes fixed,5reps, noGT. Pairwise/ordering/directparity/reverse-orderdiagnostic conventions precommitted. OriginalT030failure retained.
 
 2026-09-14T13:29:24.773000 T030-A1 numericaldiagnostic implemented;16focusedpass7.94s,full254pass11skip19.80s. Fourcotangents/rawtensors+projectedvectors, freshdirectphi, RNG/state/support hashes andfixed8x5 gate;non-gatingep0probe restorationtested. ReadyA6000run.
+
+2026-09-14T13:32:30.278361 T030-A1 actualGPUrun133102 started;132943launcherSSHfailureconfirmedno tmux/process/train.log,rawmetadata retained. 46codepins match. All8x5regularreps useoriginalnondeterministicsetting;ep0probeonly/restored.
+
+2026-09-14T13:36:00.025186 T030-A1 complete8x5;replacementgatefaildirectfreshphi+multi3/8. Allnumericalreceipts/deterministicprobe restored;nofull120/noGT. Raw826MBcotangents preservedremote,fetchingandreporting.
+
+## 2026-09-14T13:44:13.716379+08:00 T030-A1 final attribution audit
+# T030-A1 / R046 — BLOCKED; numerical audit complete
+R046/27fed9c; plan9ce9b5e, codea2844cd. Run20260914-133102-taisp-t030a1-attribution8x5 completed8episodes x5repetitions onA6000CUDA in64.28838972502854s, exit0, replacementgate FAIL.
+Native repeatability all8pass: maximumrelative dispersion0.0014573985962872816, minimumcosine0.9999990149641096. Freshdirectphi relativeparity0/40pass (cosine40/40pass); multi-output no-worse3/8(required7). All40target/RNG/frozenstate/import checks pass. Non-gating deterministicprobe CuBLASRuntimeError, originalsettings/RNG/state restored.
+No assertion correction, full120rerun, GTreference, AP or scientific T030PASS/FAIL. Stop and await explicit research decision. No activejob; every15minuteheartbeat and A6000CUDA preference retained. Futureadditional_sourceT030A_train_cohort.json preserves3011reserved/prior IDs plus5000val.
+Report research_log/T030A1_report.md; all40 per-repetition and8episode JSON plus TSV, summary/integrity, code/tests and SHA index retained. Local complete archive .autodl/t030a1_diagnostic_raw.tar.gz SHA256 d1eeb81fdd7f1ea470a92a316e016c6154892c7636adfe2527bbd83864049be3 (664831514 bytes) contains all40 verified tensor files and both launcher receipts. Expanded tensor copies exhausted local D drive and only those new copies were removed; original archive retained. Full tensors also remain in remote runs/<run>/artifacts/diagnostic; tensor_storage_index.json records each path/size/hash. GitHub contains non-tensor receipts and tensor index, not826MB tensor objects.
+Initial launcher20260914-132943 failedSSH before train.log/process; absence checked before retry. All outcomes from successfulrun only. No seed/tolerance/objective/support/deterministic-mode changes.
+Focused16passed; full254passed11skipped4warnings19.80s. Report generation verified all raw file hashes; tensor hashes streamed from complete archive. See .autodl/last-heartbeat.json for final commit/mirror receipt after publication.
