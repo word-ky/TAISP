@@ -830,3 +830,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14T12:58:08.304508 R045/T030-A read;SSH intermittenttimeouts recovered withworkflowstatus/retry;no modeloutcomes started.60cohort2951prior excluded prepared;baseline10pass5.41s. Native samplingseed20260930/reference20260913 andsumtolerance predeclared.
 
 2026-09-14T13:00:19.221021 T030candidatefocused11pass5.81s; neutral native helper ASTbody identical existingoracle, numerical/RNG/eval/freezestate/component-JVP tests passed. Candidatecode ready for120GPUepisodes;samplingseed20260930.
+
+2026-09-14T13:05:53.321772 T030-A BLOCKED onfirstcandidate componentgradient sum,maxerror/bound13.68;allindividualJVPparity/targets/RNG/freeze flags pass. NoGTreference orremainingepisodes/rerun. Full249pass11skip;failure persistedraw/report,42protected unchanged45remotepinsmatch. Awaitresearch numericaldiagnosis scope.

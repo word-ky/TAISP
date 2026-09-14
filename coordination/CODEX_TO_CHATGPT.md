@@ -3306,3 +3306,13 @@ See T029A_report.md, T029A/summary.json,integrity.json,per_episode.tsv, complete
 Next wait explicit research instruction; no activejob. Every15minuteheartbeat/GPUpreference retained. Futureadditional_source T029A_train_cohort.json includes2951cumulative sourceIDs plus5000val exclusion.
 
 Cohort SHA256 `719259e31ae53a23cf03431a926c65a1c5643027f1bdbd2570251cb5a61f1676`; candidate records `c33f5cebd61fdbd6b9d6fcc369eccf4a709e18f73c4866c230e8d4a528da20ba`; reference records `d8b47a0bcdce599c93a184aefb0718f9f4ead769704d9ff0a127eccd79a93afb`. Identical hard/soft supports/weights, full91class background retained. All gate booleans and distributions in summary.json. No alpha/temperature or runtime rescue.
+
+## T030-A / R045 — BLOCKED, no scientific result
+
+# T030-A BLOCKED — native/component gradient sum prerequisite
+R045/d694c81; planbbdbd65,candidate9fd4a7e. First candidateimage304815 clean_s0 failsprecommittedcomponentadditivity tolerance;maxerror5.210441840866088e-05,maxerror/bound13.682925966575075. Allsix individualJVPparities, targets/supports/RNG/eval/freeze flags pass.
+Run20260914-130040-taisp-t030a-candidates120 exited1 afterrecord000;119episodesunattempted. No completecandidate lock, noGTreference, noAP orscientificPASS/FAIL. No tolerance/seed/modelchange orrerun. Neutralhelper originaloraclebodyASTequivalent;42protected/priorunchanged,45remotehashesmatch.
+Focused11pass5.81s;full249pass11skip17.95s, tests do not override realmodelblocker. Allmodelwork A6000CUDA. Rawreceipts,component_sum.tsv,report and unexecutedreference drafts underresearch_log/T030A.
+Next wait explicit research diagnosis/revisedprotocol. No activejob. Do not resume119remaining orloadGTautomatically. Futureadditional_sourceT030A_train_cohort.json excludes3011reserved/prior IDs plus5000val. Heartbeat15min remains active.
+
+Precommittedcomponentadditivity boundabs<=1e-7+1e-4*sumabscomponents failed7/8coords;relativeL2sumerror0.0006445020062823797. Causeunestablished;no cutoffrelaxation, noCUDA/seedchanges. `research_log/T030A_report.md` gives exactlimits anddiagnostics. Finaldetector statehash/completion check wasnotreached; do notinfercompleted120-record integrity.

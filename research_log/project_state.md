@@ -1,2 +1,5 @@
-# T030-A IN_PROGRESS
-R045/d694c81 authorized.60fresh120episodes,2951prior+5000valexcluded;balancedfourblocks. Precommitnative4loss sum andcomponentsum tolerance beforeoutcomes. Nextfocusedtests then120GT-free GPUcandidates lockbeforeGT. NoCLIP/AP/tuning/runtime.
+# T030-A BLOCKED — native/component gradient sum prerequisite
+R045/d694c81; planbbdbd65,candidate9fd4a7e. First candidateimage304815 clean_s0 failsprecommittedcomponentadditivity tolerance;maxerror5.210441840866088e-05,maxerror/bound13.682925966575075. Allsix individualJVPparities, targets/supports/RNG/eval/freeze flags pass.
+Run20260914-130040-taisp-t030a-candidates120 exited1 afterrecord000;119episodesunattempted. No completecandidate lock, noGTreference, noAP orscientificPASS/FAIL. No tolerance/seed/modelchange orrerun. Neutralhelper originaloraclebodyASTequivalent;42protected/priorunchanged,45remotehashesmatch.
+Focused11pass5.81s;full249pass11skip17.95s, tests do not override realmodelblocker. Allmodelwork A6000CUDA. Rawreceipts,component_sum.tsv,report and unexecutedreference drafts underresearch_log/T030A.
+Next wait explicit research diagnosis/revisedprotocol. No activejob. Do not resume119remaining orloadGTautomatically. Futureadditional_sourceT030A_train_cohort.json excludes3011reserved/prior IDs plus5000val. Heartbeat15min remains active.

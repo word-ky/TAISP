@@ -1,0 +1,16 @@
+[autodl] run_id=20260914-130040-taisp-t030a-candidates120
+[autodl] started_at=2026-09-14T13:00:46+08:00
+/home/wenchang/anaconda3/envs/python3.12-tk2-2.3/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/liujianhua/wjq/TAISP/releases/20260914-125919-taisp-t030a-candidate/taisp/analysis/pseudo_native_candidates.py", line 91, in <module>
+    p.add_argument('--output',type=Path,required=True);a=p.parse_args();run(a.manifest,a.output)
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/liujianhua/wjq/TAISP/releases/20260914-125919-taisp-t030a-candidate/taisp/analysis/pseudo_native_candidates.py", line 78, in run
+    assert target_match and support_match and row['isolation'] and rng['restored'] and sumcheck['passed'] and all(v['parity']['passed'] for v in values.values())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+[autodl] finished_at=2026-09-14T13:00:52+08:00
+[autodl] exit_code=1
