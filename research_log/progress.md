@@ -812,3 +812,5 @@ newregional self-supervised objective or any other experiment.
 2026-09-14 08:26+08 T028candidate21D tests and inheritedJVP12pass5.33s; GT-free transitive import check passed. Newcode uses unchanged original-view pseudo and genericCLIP loss, both global8D; candidate release082414 ready.
 
 2026-09-14 08:30+08 T028all360GT-freefeature records complete CUDAexit0;allhashes/isolation/parity verified. Raw source_revision accidentally placeholder; preservedraw plus codeSHA mapping3614d6e in candidate_provenance.json (verifiedequalcodepins), no rerun. Exactsplit/familybalances verified. Candidate lock before source references.
+
+2026-09-14 08:32+08 T028post-lock reference/fixed affine fit implemented.17focusedpass5.15s;full236pass11skip4warnings12.56s onA6000environment. Train-only populationstd/SVDcutoff,exactzero threshold,128PCG64pair/family permutations and tiedAUROC tested. Reference/fit launchnext usingcandidate lock08dd3fd.
