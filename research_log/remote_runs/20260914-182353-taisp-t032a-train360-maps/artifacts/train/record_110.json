@@ -1,0 +1,111 @@
+{
+  "episode_index": 110,
+  "image_id": 474390,
+  "case": "clean_s0",
+  "block": -1,
+  "partition": "train",
+  "g_hard": [
+    0.07906948529063415,
+    0.06818185081313222,
+    -0.2537391042793076,
+    0.10619129136691803,
+    0.05308738885190878,
+    -0.09554488787431134,
+    -0.027050283722084754,
+    -0.006830301839442457
+  ],
+  "task_gradient": [
+    0.012867971034817377,
+    0.21471486893609354,
+    -0.15417354023434082,
+    -0.039288576983203746,
+    0.026087546821880747,
+    -0.0034875959283993674,
+    -0.003212871324851291,
+    0.021017270029806127
+  ],
+  "task_loss": 0.7336629629135132,
+  "task_components": {
+    "loss_classifier": 0.19236329197883606,
+    "loss_box_reg": 0.4828300476074219,
+    "loss_objectness": 0.03197897598147392,
+    "loss_rpn_box_reg": 0.026490718126296997
+  },
+  "jacobian": {
+    "primal_identity_checks": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "column_l2_norms": [
+      161.3075345334854,
+      244.24951415559556,
+      246.17641120198374,
+      247.7593133159971,
+      140.83959404568097,
+      225.8317958127243,
+      91.5224089340639,
+      16.552567586147497
+    ],
+    "jacobian_dtype": "torch.float32",
+    "reduction_dtype": "torch.float64",
+    "device": "cuda:0",
+    "columns": 8
+  },
+  "reference_checks": {
+    "partition": {
+      "passed": true,
+      "absolute_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        2.2867971034817375e-12,
+        2.2471486893609354e-11,
+        1.6417354023434082e-11,
+        4.928857698320374e-12,
+        3.6087546821880745e-12,
+        1.3487595928399367e-12,
+        1.321287132485129e-12,
+        3.101727002980613e-12
+      ],
+      "max_absolute_error": 0.0,
+      "max_error_over_bound": 0.0
+    },
+    "parity": {
+      "passed": true,
+      "cosine": 0.9999999999999469,
+      "relative_l2_error": 3.2810250592283405e-07,
+      "max_absolute_error": 5.4305322488845675e-08,
+      "min_cosine": 0.999999,
+      "max_relative_l2": 1e-05
+    }
+  },
+  "state_before": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "state_after": "73eed6eae3ab74a76539b3f76ff544ff19f7e9e06a6d7e20131ee4ece4751ecf",
+  "rng": {
+    "before": {
+      "cpu": "e9dbcd0bba2e7f5b4a7a4584f2f4c370ca51be341b49c17b68fb4366dd3c3e3d",
+      "cuda": "590629ac1407332eb2a6bc880f011aa14dc7ea47660dd3935eed0a77892188e0"
+    },
+    "after": {
+      "cpu": "e9dbcd0bba2e7f5b4a7a4584f2f4c370ca51be341b49c17b68fb4366dd3c3e3d",
+      "cuda": "590629ac1407332eb2a6bc880f011aa14dc7ea47660dd3935eed0a77892188e0"
+    },
+    "restored": true
+  },
+  "candidate_recomputed": false,
+  "integrity_passed": true,
+  "route": 1
+}

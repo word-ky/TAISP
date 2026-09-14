@@ -941,3 +941,10 @@ Candidate manifest download failed because localnewdirectory absent; reproduced 
 
 2026-09-14T18:23:05.367468+08:00 # T032-A / R050 IN_PROGRESS — router complete, lock before train
 Candidate480 locked5ae8bb6,descriptor0401c8e. Router code d71bd34; onefit only,6iterations,clusters171/189,minimum72 passed; trainzero count1; routerSHA2e150aadf557db106ebf73a74372b91d91751d52e80b041de3bf8db6010f738a. No annotations/taskgradients yet. Referencecode0d22b7d;full278pass11skip4warnings33.75s;65remotehashesmatch. Next commitrouter before train360/twoSVD onA6000. Existing reference release20260914-181842-taisp-t032a-reference.
+
+2026-09-14T18:26:22.3858943+08:00 T032-A IN_PROGRESS train360 active:20260914-182353-taisp-t032a-train360-maps; release20260914-181842-taisp-t032a-reference; source2742f87. Routercommit844bc0d/descriptor2742f87 BEFOREannotations,counts171/189,6iterations. Candidate5ae8bb6/0401c8e locked. Full278pass11skip33.75s;65codepins pass. Fetchtrain360+two maps andcommitbeforeholdout120. No holdout taskgradients yet. Code frozen.
+
+2026-09-14T18:30:30.8998860+08:00 Train360 completed; SCP t032a_train_raw.tar.gz stalled229376bytes for over60s. Stopped only matching transfer PID54660 so existing workflow legacy fallback can complete. No experiment rerun; await archiveSHA before map commit.
+
+2026-09-14T18:31:09.371443+08:00 # T032-A train360 and two maps complete, lock before holdout
+Run20260914-182353-taisp-t032a-train360-maps; all360integritypass,180trainIDs only; oneSVDpercluster171/189. MapsSHA36a0e62b7696b8ea99bc92f6806c8f30dc7d1aa4a6414cfd2ae81dfb5219ec4e; trainrecordsSHA98f151f7351f2e77732e22f4a317c6f4ba43dd381bcdb6f74cf693e03b75e286. Both orthogonalityerrors<9e-16. No holdouttaskgradient yet. Commit/push alltrain andmaps now before holdout120. Full278pass11skip. Download legacyfallback recovered; archiveSHA24cb957225aa68e438bd0a260e45775fae55160b17ae3102dfc4786f22ff6ad9 and all365rawfile hashespass.

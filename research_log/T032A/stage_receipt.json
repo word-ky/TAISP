@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-09-14T18:27:04.537805+08:00",
+  "candidate_lock_commit": "5ae8bb68087d9739b5f69c7524a9f4b75effc829",
+  "candidate_descriptor_commit": "0401c8e",
+  "router_code_commit": "d71bd34",
+  "router_result_commit": "844bc0d0a8dbaf2f24b11ab35cbddc50aad6cb98",
+  "router_descriptor_commit": "2742f87",
+  "router_command": "cd /home/liujianhua/wjq/TAISP/releases/20260914-181842-taisp-t032a-reference && /home/liujianhua/wjq/TAISP/.venv/bin/python -m taisp.analysis.gradient_regime_router --candidate-root /home/liujianhua/wjq/TAISP/runs/20260914-181428-taisp-t032a-candidates480/artifacts/candidate --candidate-lock research_log/T032A_candidate_lock.json --output research_log/T032A/router.json",
+  "router_result": {
+    "status": "router_complete",
+    "counts": [
+      171,
+      189
+    ],
+    "iterations": 6
+  },
+  "fitted_once": true,
+  "train_task_gradients_before_router_commit": 0,
+  "train_run": "20260914-182353-taisp-t032a-train360-maps",
+  "holdout_task_gradients_so_far": 0,
+  "tests": "baseline7passed;router4passed;router+reference7passed;full278passed11skipped33.75s"
+}
